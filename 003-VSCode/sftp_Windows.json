@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Home-Dell",
+        "host": "192.168.31.101",
+        "protocol": "sftp",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22,
+        "username": "root",
+        "password": "661661Me?",
+        "ignore": [
+            ".vscode",
+            ".git",
+            ".DS_Store",
+            ".github/**",
+            ".ci"
+        ],
+        "context": "./context/home-dell-ONE",
+        "remotePath": "/",
+        "watcher": {
+            "files": "statics/**/*",
+            "autoUpload": true,
+            "autoDelete": true
+        },
+        "remoteExplorer": {
+            "filesExclude": [
+                ".git",
+                ".vscode",
+                ".github"
+            ]
+        },
+        "profiles": {}
+    },
+    {
+      "name": "172.16.208.2",
+      "host": "172.16.208.2",
+      "protocol": "sftp",
+      "uploadOnSave": true,
+      "useTempFile": true,
+      "port": 22,
+      "username": "root",
+      "privateKeyPath": "D:/100-VSCode/HelloWorld/201-SecureCRT/200Public_Priavte_Keys/id_rsa",
+      "passphrase": "660660Me?",
+      "ignore": [
+          ".vscode",
+          ".git",
+          ".DS_Store",
+          ".github/**",
+          ".ci"
+      ],
+      "context": "./context/172-16-208-2",
+      "remotePath": "/",
+      "watcher": {
+          "files": "statics/**/*",
+          "autoUpload": true,
+          "autoDelete": true
+      },
+      "remoteExplorer": {
+          "filesExclude": [
+              ".git",
+              ".vscode",
+              ".github"
+          ]
+      },
+      "password": "660660Me?",
+      "profiles": {}
+  },
+    {
+        "name": "172-16-208-14-Hysterai-Server",
+        "context": "./context/Hysterai-Server",
+        "host": "172.16.208.14",
+        "username": "root",
+        "password": "Tgqs@123",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "172-16-208-19-Hysterai-Clinet",
+        "context": "./context/Hysterai-Client",
+        "host": "172.16.208.19",
+        "username": "root",
+        "password": "Tgqs@123",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "172.16.208.14",
+        "context": "./context/172-16-208-14",
+        "host": "172.16.208.14",
+        "username": "root",
+        "password": "Tgqs@123",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "172.16.208.18-S3&DNS-生产",
+        "context": "./context/172-16-208-18",
+        "host": "172.16.208.18",
+        "username": "root",
+        "password": "Tgqs@123",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "172.16.208.24",
+        "context": "./context/172-16-208-24",
+        "host": "172.16.208.24",
+        "username": "root",
+        "password": "Tgqs@123",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "172.16.208.28",
+        "context": "./context/172-16-208-28",
+        "host": "172.16.208.28",
+        "username": "root",
+        "password": "Tgqs@123",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "国科-10.50.0.101",
+        "context": "./context/10-50-0-101",
+        "host": "10.50.0.101",
+        "username": "root",
+        "privateKeyPath": "D:/100-VSCode/HelloWorld/201-SecureCRT/201-GuoKe_Public_Private_Keys/A/id_rsa",
+        "remotePath": "/opt",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+      {
+        "name": "Home-DEll-Password",
+        "context": "./context/Home-Dell",
+        "host": "192.168.31.101",
+        "username": "root",
+        "password": "661661Me?",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      },
+            {
+        "name": "172-16-208-4",
+        "context": "./context/172-16-208-4",
+        "host": "172.16.208.4",
+        "username": "root",
+        "password": "661661Me?",
+        "remotePath": "/",
+        "uploadOnSave": true,
+        "useTempFile": true,
+        "port": 22
+      }
+]
