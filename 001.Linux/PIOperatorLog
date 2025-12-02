@@ -1,0 +1,203 @@
+/**
+ * 查找后缀名为"*.part"，且修改时间超过90天，文件大小超过500M
+ */
+ find /media/pi/linux -name "*.part" -ctime +90 -size +500M | grep -iv "x-art" | grep -iv "adn" | xargs -n 1 -t -d "\n" ls -l
+
+  find ./  -depth 1 | xargs -n 1 -t -d "\n" ls -l
+
+ find /media/pi/linux -size +500M | grep -iv "x-art" | grep -iv "Bad kids" | awk -F / '{print $5}'
+
+
+ 
+find ./ -size +1000M | grep -iv "x-art" | grep -iv "Bad.Kids" | grep -iv "FlowerOfEvil" | grep -iv "Black.Mirror" |  grep -iv "Vixen.com2019Siterip2160pPart1" | grep -iv "The.Long.Night" | grep -iv "Hanzawa.Naoki.S02.2020" | grep -iv "001.good" | awk -F / '{print $2}' | xargs -n 1 -t -d '\n' -I dir mv dir /media/pi/all/
+
+find ./ -name "stars-175-C" | awk -F / '{print $2}' | xargs -n 1 -t -d '\n' -I dir mv dir /media/pi/all/
+
+ls *.rar | xargs  -t -I {} unrar x -p[mywife.cc] {} ../../Picture/Photoprism/originals/
+
+
+find ./ -name "*.part" -ctime +90 -size +500M | grep -iv "x-art" | grep -iv "adn" | xargs -n 1 -t -d "\n" ls -l
+
+delete total file that size file named part:find ./ -name "*.part" -ctime +90 -size +500M | grep -iv "x-art" | grep -iv "adn" | awk -F / '{print $2}' | xargs -n 1 -t -d "\n" rm -rf
+
+delete empty folder: find -type d -empty | grep -iv "x-art" | awk -F / '{print $2}' | xargs -n 1 -d '\n' -t rm -rf
+
+delete small size's folder :
+        ls | xargs -n 1 -d "\n" -t du -s > 333xt
+        sort -n -k 1 -t " " 3.txt > 4.txt
+        sed -n '1,67p' 4.txt | awk -F " " '{print $2}' | grep -iv "x-art" | grep -iv "mywife" | xargs -n 1 -d "\n" -t rm -rf
+/**
+ * 删除文件名中的空格
+ */
+    /**
+     * 前提条件，将目录中的空格删除，顺序不能颠倒
+     */
+    find ./ -mindepth 1 -maxdepth 1 -type d |  xargs -n 1 -t -d '\n' rename 's/ /_/g'
+    find ./ -mindepth 2 -maxdepth 2 -type d |  xargs -n 1 -t -d '\n' rename 's/ /_/g'
+    find ./ -mindepth 3 -maxdepth 3 -type d |  xargs -n 1 -t -d '\n' rename 's/ /_/g'
+
+    find ./ -depth | grep -iv x-art | grep -iv jpg | grep -iv mywife |  xargs -n 1 -t -d '\n' rename 's/ //g'
+    find ./ -depth |  xargs -n 1 -t -d '\n' rename 's/ /_/g'
+    find ./ -depth |  xargs -n 1 -t -d '\n' rename 's/ //g'
+    find ./ -depth |  xargs -n 1 -t -d '\n' rename 's/，/_/g'
+    find ./ -depth |  xargs -n 1 -t -d '\n' rename 's/，//g'
+/**
+ * 将中文"，"修改为"_"
+ */
+    find ./ |  xargs -n 1 -t -d '\n' rename 's/，/_/g'
+
+/**
+ * 将MP4文件上移到前一个文件夹
+ */
+    find ./ -name "*.mp4" | xargs -t -I {} mv {} ./
+/**
+ * 将文件上移到执行命令的当前文件夹
+ */
+    find ./ -type f | xargs -t -I {} mv {} ./
+/**
+ * 删除文件夹
+ */
+    find ./ -type d | xargs -t -I {} rm -rf {} 
+
+/**
+ * "Q28017"目录下的文件不做任何动作
+ */
+     find ./ \( -path "./Q28017" \) -prune -o -name "*.png" | xargs -t -I {} rm -f {}
+/**
+ * 删除垃圾文件
+ */
+    find ./ -name "*.part" | xargs -t -I {} rm {}
+    find ./ -name "*.mht" | xargs -t -I {} rm {}
+    find ./ -name "*1024.jpg" | xargs -t -I {} rm {}
+    find ./ -name "jwdfj.jpg" | xargs -t -I {} rm {}
+    find ./ -name "*padding_file*" | xargs -t -I {} rm {}
+    find ./ -name "*.chm" | xargs -t -I {} rm {}
+    find ./ -name "*.htm" | xargs -t -I {} rm {}
+    find ./ -name "*.url" | xargs -t -I {} rm {}
+    find ./ -name "UUE29.mp4" | xargs -t -I {} rm {}
+    find ./ -name "安卓二维码.png" | xargs -t -I {} rm {}
+    find ./ -name "扫码获取最新地址.png" | xargs -t -I {} rm {}
+    find ./ -name "最新地址获取.txt" | xargs -t -I {} rm {}
+    find ./ -name "最新地址.png" | xargs -t -I {} rm {}
+    find ./ -name "uuv79.mp4" | xargs -t -I {} rm {}
+    find ./ -name "*加入.jpg" | xargs -t -I {} rm {}
+    find ./ -name "*日更新.TXT" | xargs -t -I {} rm {}
+    find ./ -name "*二维码*.png" | xargs -t -I {} rm {}
+    find ./ -name "*.torrent" | xargs -t -I {} rm {}
+    find ./ -name "*第一会所*.jpg" | xargs -t -I {} rm {}
+    find ./ -name "*联盟.gif" | xargs -t -I {} rm {}
+    find ./ -name "*安卓*二维码*.jpg" | xargs -t -I {} rm {}
+    find ./ -name "*最新地址*.txt" | xargs -t -I {} rm {}
+    find ./ -name "*春暖花开*.jpg" | xargs -t -I {} rm {}
+    find ./ -name "*伊甸园*.jpg" | xargs -t -I {} rm {}
+
+
+/** 
+ * 列出当前目录下目录里的文件个数
+ */
+
+mv QQ23003 Ee_0906007 ../
+
+/**
+ * 将含有RBD关键字的文件移到指定文件夹
+ */
+
+
+drwxrwxrwx 1 pi pi  28K Jan  6 17:16 001.ADN
+drwxrwxrwx 1 pi pi 4.0K Nov  4 23:18 002.JUL
+drwxrwxrwx 1 pi pi 4.0K Nov  4 23:34 003.JUY
+drwxrwxrwx 1 pi pi 4.0K Jan  6 17:36 004.MEYD
+drwxrwxrwx 1 pi pi 4.0K Jan  6 17:38 005.IPX
+drwxrwxrwx 1 pi pi    0 Jan  6 17:26 006.ATID
+drwxrwxrwx 1 pi pi  408 Jan  6 17:35 007.RBD&SHKD
+drwxrwxrwx 1 pi pi  16K Nov 11 20:31 008.mywife
+drwxrwxrwx 1 pi pi    0 Nov  4 23:23 009.200gana
+drwxrwxrwx 1 pi pi 4.0K Nov  4 23:24 010.S-Cute
+drwxrwxrwx 1 pi pi 8.0K Nov  4 23:33 011.JUX
+drwxrwxrwx 1 pi pi    0 Jan  6 17:26 012.ABP
+
+
+ls | grep -v "007.RBD" | grep -i rbd | xargs -t -I {} mv {} 007.RBD\&SHKD/
+ls | grep -v "007.RBD" | grep -i shkd | xargs -t -I {} mv {} 007.RBD\&SHKD/
+ls | grep -v "004.MEYD" | grep -i meyd | xargs -t -I {} mv {} 004.MEYD/
+ls | grep -v "005.IPX" | grep -i ipz | xargs -t -I {} mv {} 005.IPX/
+ls | grep -v "010.S-Cute" | grep -i s-cute | xargs -t -I {} mv {} 010.S-Cute/
+
+
+
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --set --name SSH
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update --seconds 60 --hitcount 5 --name SSH -j DROP
+
+
+iptable初始:
+iptables -A INPUT -s 192.168.31.0/24 -j ACCEPT
+iptables -A INPUT -s 113.125.74.234/32 -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --set --name SSH
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update --seconds  3600 --hitcount 3 --name SSH -j LOG --log-prefix 'SSH Attack'
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update --seconds  3600 --hitcount 3 --name SSH -j DROP
+
+
+iptables进阶版本：
+    Beta1:
+    iptables -A INPUT -s 192.168.31.0/24 -j ACCEPT
+    iptables -A INPUT -s 113.125.74.234/32 -j ACCEPT
+    iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+    iptables -A INPUT -p icmp --icmp-type 8 -m length --length 78 -j LOG --log-prefix 'SSH_OPEN_KEY'
+    iptables -A INPUT -p icmp --icmp-type 8 -m length --length 78 -m recent --name openssh --set --rsource 
+    iptables -A INPUT -p tcp --dport 22  --syn -m recent --name openssh --rcheck  --rsource -j ACCEPT
+
+
+    Beta2:
+    iptables -A INPUT -s 192.168.31.0/24 -j ACCEPT
+    iptables -A INPUT -s 113.125.74.234/32 -j ACCEPT
+    iptables -A INPUT -p tcp --dport 22 -j LOG --log-prefix 'SSH DROP'
+    iptables -A INPUT -p tcp --dport 22 -j DROP
+    iptables -A INPUT -p tcp --dport 5900 -j LOG --log-prefix 'VNC DROP'
+
+
+
+
+
+
+    iptables -I INPUT -p icmp --icmp-type 8 -s 0/0 -j DROP
+
+58.208.145.211
+
+    iptables -R INPUT 6 -p tcp --dport 22  --syn -m recent --name openssh --rcheck  --rsource -j ACCEPT
+
+
+    iptables -A INPUT -p icmp --icmp-type 8  -j LOG --log-prefix 'SSH_OPEN_KEY'
+
+    iptables -R INPUT 5  -p icmp --icmp-type 8  -m recent --name openssh --set --rsource 
+
+
+
+
+
+
+
+/usr/local/bin/clash/clash-linux-armv7-v1.1.0
+
+
+sudo iptables-restore /home/pi/iptables2
+
+
+sleep 60;usr/local/bin/clash/clash-linux-armv7-v1.1.0 &
+
+
+
+wget -O config.yml https://stc-spadesdns.com/link/d9d411nYDft7Xa0v?clash=1&log-level=info
+
+
+
+rename "s/，/_/g"
+
+
+git@github.com:rjgc2008/HelloWorld.git
+
+git@github.com:rjgc2008/HelloWorld.git
+
+
+
+
+

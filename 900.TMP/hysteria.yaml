@@ -1,0 +1,115 @@
+# 服务器地址和端口
+server: 172.16.208.14:443
+
+# 服务器匹配的认证密码
+auth: Se7RAuFZ8Lzg
+tls: 
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
+
+bandwidth:
+  # 上传速率限制 (Mbps)
+  up_mbps: 100
+  # 下载速率限制 (Mbps)
+  down_mbps: 100
+
+# 接收窗口大小
+recv_window: 67108864
+# 发送窗口大小vi c
+send_window: 67108864
+
+socks5:
+  # 本地 Socks5 代理监听地址
+  listen: 127.0.0.1:1080
+  # Socks5 代理超时时间
+  timeout: 30s
+
+# 日志级别
+log_level: info
+---------------------------------------------------
+openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && chown hysteria /etc/hysteria/server.key && chown hysteria /etc/hysteria/server.crt
+
+
+openssl req -newkey rsa:4096 -nodes -sha256 -keyout /etc/hysteria/server.key -x509 -days 36500 -out /etc/hysteria/server.crt -addext "subjectAltName = DNS:bing.com" && chown hysteria /etc/hysteria/server.key && chown hysteria /etc/hysteria/server.crt
+
+---------------------------------------------------
+server: 172.16.208.14:443 
+
+auth: Se7RAuFZ8Lzg 
+
+bandwidth: 
+  up: 20 mbps
+  down: 100 mbps:q
+
+socks5:
+  listen: 127.0.0.1:1080 
+
+http:
+  listen: 127.0.0.1:8080
+---------------------------------------------------
+server: IP:443
+auth: Se7RAuFZ8Lzg
+
+bandwidth:
+  up: 20 mbps  #设置最高上行带宽，从运营商查或不挂梯子测速speedtest.cn
+  down: 90 mbps #设置最高下行带宽，从运营商查或不挂梯子测速speedtest.cn
+  
+tls:
+  sni: bing.com  #自己域名，若没有填写伪装站点
+  insecure: true #使用自签名证书时时需要改成true,如为 CA 证书建议修改为 false
+
+socks5:
+  listen: 127.0.0.1:1080
+http:
+  listen: 127.0.0.1:8080
+---------------------------------------------------
+# 服务器地址和端口
+server: 172.16.208.14:443
+
+# 服务器匹配的认证密码
+auth: Se7RAuFZ8Lzg
+
+bandwidth:
+  # 上传速率限制 (Mbps)
+  up_mbps: 100
+  # 下载速率限制 (Mbps)
+  down_mbps: 100
+
+# 接收窗口大小
+recv_window: 67108864
+# 发送窗口大小
+send_window: 67108864
+
+socks5:
+  # 本地 Socks5 代理监听地址
+  listen: 127.0.0.1:1080
+  # Socks5 代理超时时间
+  timeout: 30s
+
+# 日志级别
+log_level: info
+---------------------------------------------------
+
+listen: :443 #监听端口
+
+#有域名，使用CA证书 
+#acme:
+#  domains:
+#    - test.heybro.bid #你的域名，需要先解析到服务器ip
+#  email: augustdoit@gmail.com
+
+#使用自签名证书
+tls:
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
+
+auth:
+  type: password
+  password: Se7RAuFZ8Lzg #设置认证密码
+
+#伪装
+masquerade:
+  type: proxy
+  proxy:
+    url: https://bing.com/ #伪装网址
+    rewriteHost: true

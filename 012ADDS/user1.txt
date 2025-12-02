@@ -1,0 +1,4 @@
+DN,ObjectClass,sAMAccountName,userPrincipalName,displayName,userAccountControl
+"CN=rita01,OU=IT,DC=tgqs,DC=org",user,rita01,rita01@tgqs.org,rita01,514
+"CN=rita02,OU=IT,DC=tgqs,DC=org",user,rita02,rita02@tgqs.org,rita02,514
+"CN=rita03,OU=IT,DC=tgqs,DC=org",user,rita03,rita03@tgqs.org,rita03,514

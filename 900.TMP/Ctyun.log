@@ -1,0 +1,123 @@
+select userid,username,orgid from bspuser ;
+select count(*) from bspuser ;
+
+DUMP QUERY "select userid,username,orgid from bspuser" INTO FILE '/tmp/user.sql' FIELDS ENCLOSED BY '"';
+
+DUMP QUERY "select userid,username,orgid from bspuser" INTO FILE '/tmp/user.sql';
+
+LOAD DATA INFILE "/tmp/topo2.sql" INTO TABLE TBL_TOPO_OBJECT IGNORE FLOSED BY '|';
+
+
+connect 'jdbc:derby:E:\Program Files\IDeaIU\100Projects\AlgorithmsByWYJ\102Derby\toursdb';
+run 'ToursDB_schema.sql';
+run 'loadTables.sql';
+
+
+
+
+
+
+
+su - dbuser -c "/opt/redis/bin/redis-cli --bigkeys -h 192.168.3.14 -p 26673 -cipherdir /opt/redis/etc/cipher -a campusportaldb@ossdbuser@Changeme_123"
+
+
+
+
+
+su - dbuser -c "/opt/redis/bin/redis-cli -h 192.168.3.14 -p 26673 -cipherdir /opt/redis/etc/cipher -a campusportaldb@ossdbuser@Changeme_123"
+
+
+hkeys
+
+ hkeys ac_campus_radiusrelay_acc_session
+
+  119675) "cc7cf723c37f1c8498fba1322892a8f6d415786ef6c7abe2df210a08808da257cb"
+
+ hget ac_campus_radiusrelay_acc_session 0956bb2313723b2b7f572eb4c1b7f46ee88a4c4c8061232ec7bf14e85e0bdf5b97
+
+ hdel ac_campus_radiusrelay_acc_session 0956bb2313723b2b7f572eb4c1b7f46ee88a4c4c8061232ec7bf14e85e0bdf5b97
+
+
+ del ac_campus_radiusrelay_acc_session
+
+ 192.168.3.14:26673> hget ac_campus_radiusrelay_acc_session 0956bb2313723b2b7f572eb4c1b7f46ee88a4c4c8061232ec7bf14e85e0bdf5b97
+ 192.168.3.14:26673> hget ac_campus_radiusrelay_acc_session 6c684b415706057af282fa23210c8309002ea7dc505b7f1fe9ca29b621a9b5654b
+
+ get 
+
+"{\"accTime\":1650428936284,\"acctSessionId\":\"0956bb2313723b2b7f572eb4c1b7f46ee88a4c4c8061232ec7bf14e85e0bdf5b97\",\"authenticator\":\"5kzqHoYkPyX/Ct2Pnngi1Q==\",\"devIp\":\"101.230.167.17\",\"devMac\":\"48:2C:D0:24:F1:E0\",\"devType\":\"AP\",\"deviceId\":\"6ccc7d08-e5d7-4db1-bc1b-9ce4c3805600\",\"sharedKey\":\"MDAwMDAwMDEwMDAwMDAwMUJDNTA2NUU2QzY2Q0Q2MkU4M0I5OUE5NjVGREYwQkQ5NkJDODBDRUZCMEM1MUE1REI5RjMxQzc0OERERkY1NEM=\",\"ssid\":\"\xe4\xb8\xad\xe5\x9b\xbd\xe7\x94\xb5\xe4\xbf\xa1\",\"userMac\":\"e2-e2-60-5c-85-35\",\"userName\":\"e2e2605c8535\"}"
+
+
+
+192.168.3.14:26673> hget ac_campus_radiusrelay_acc_session 6c684b415706057af282fa23210c8309002ea7dc505b7f1fe9ca29b621a9b5654b
+"{\"accTime\":1653264035900,\"acctSessionId\":\"6c684b415706057af282fa23210c8309002ea7dc505b7f1fe9ca29b621a9b5654b\",\"authenticator\":\"AfXGLgryjA9jNqE//scRSw==\",\"devIp\":\"101.230.166.228\",\"devMac\":\"5C:64:7A:BC:0F:C0\",\"devType\":\"AP\",\"deviceId\":\"4100b2da-a9a3-48f8-9136-50385df9bed5\",\"sharedKey\":\"MDAwMDAwMDEwMDAwMDAwMUJBMTgxNzFDQzNCQkM5MTU4REY5NEZBNENCODU3RENDMDg5NUUzNjgwNTIxRDc1NzRGMTZERjlFQzg3M0M5QzU=\",\"ssid\":\"\xe4\xb8\xad\xe5\x9b\xbd\xe7\x94\xb5\xe4\xbf\xa1\",\"userMac\":\"12-11-15-32-18-3f\",\"userName\":\"12111532183f\"}"
+192.168.3.14:26673> 
+
+#portal server全部日志
+
+
+
+
+
+t_campus_portalauth_tempcacheinfo
+
+select count(*) from t_campus_portalauth_tempcacheinfo ;
+
+
+SQL> select count(*) from t_campus_portalauth_tempcacheinfo ;
+
+COUNT(*)            
+--------------------
+0                   
+
+1 rows fetched.
+
+SQL> desc t_campus_portalauth_tempcacheinfo
+
+Name                                Null?    Type                                
+----------------------------------- -------- ------------------------------------
+ID                                  NOT NULL VARCHAR(256 BYTE)                   
+TENANTID                                     VARCHAR(128 BYTE)                   
+TYPE                                         VARCHAR(128 BYTE)                   
+CACHEKEY                                     VARCHAR(256 BYTE)                   
+CREATETIMELONG                               BINARY_BIGINT                       
+CONTENT  
+
+portalserverdb
+
+
+keys user:userForRedis*:*
+
+
+[00.00%] Biggest hash   found so far 'user:allTimeProfile:5f07c010-300a-433f-adc1-1941cf741079' with 1 fields
+[00.00%] Biggest set    found so far 'user:roleIdForUserId:79' with 1 members
+[00.00%] Biggest string found so far 'user:loginTimes:122' with 3 bytes
+[00.00%] Biggest string found so far 'user:accountProfile:accountProfileKey:9ba8866a-eccf-4118-9e27-fcf5a8a92748' with 521 bytes
+[02.21%] Biggest string found so far 'user:passwdProf:passwdProfKey:7493a9c1-3515-4ebe-8618-466ae75acde0' with 1099 bytes
+[02.21%] Biggest hash   found so far 'user:allRoles:bdca7b3889534099ad75c11640e4062e' with 3 fields
+[04.06%] Biggest string found so far 'user:passwdProf:passwdProfKey:3d6581d5-b37a-49ac-aef3-9d02af28dc9f' with 1100 bytes
+[05.90%] Biggest hash   found so far 'user:userNamesToIds:namesToIds:337b98ffee0548b79b088a2ff16a0fcd' with 9 fields
+[05.90%] Biggest set    found so far 'user:roleIdForUserId:213' with 2 members
+[09.59%] Biggest hash   found so far 'user:userForRedis:bdca7b3889534099ad75c11640e4062e:335' with 55 fields
+[16.97%] Biggest hash   found so far 'user:userForRedis:083cd847-843b-4932-918e-5d5cc0512ffe:97' with 58 fields
+[18.82%] Biggest string found so far 'user:passwdProf:passwdProfKey:65fec29ff1854c09a6ed1a8169528938' with 1101 bytes
+[26.38%] Biggest list   found so far 'user:noUserloginFailRecord:admin' or '1'='1:00000000-0000-0000-0000-000000000000' with 1 items
+[30.07%] Biggest list   found so far 'user:noUserRecords:userNames:00000000-0000-0000-0000-000000000000' with 20 items
+
+-------- summary -------
+
+Sampled 542 keys in the keyspace!
+Total key length in bytes is 28355 (avg len 52.32)
+
+Biggest   list found 'user:noUserRecords:userNames:00000000-0000-0000-0000-000000000000' has 20 items
+Biggest   hash found 'user:userForRedis:083cd847-843b-4932-918e-5d5cc0512ffe:97' has 58 fields
+Biggest string found 'user:passwdProf:passwdProfKey:65fec29ff1854c09a6ed1a8169528938' has 1101 bytes
+Biggest    set found 'user:roleIdForUserId:213' has 2 members
+
+8 lists with 30 items (01.48% of keys, avg size 3.75)
+178 hashs with 937 fields (32.84% of keys, avg size 5.26)
+223 strings with 70783 bytes (41.14% of keys, avg size 317.41)
+0 streams with 0 entries (00.00% of keys, avg size 0.00)
+133 sets with 137 members (24.54% of keys, avg size 1.03)
+0 zsets with 0 members (00.00% of keys, avg size 0.00)
+[root@controller-192-168-3-14 ~]# 

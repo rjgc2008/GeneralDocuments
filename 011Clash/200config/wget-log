@@ -1,0 +1,11 @@
+--2022-06-03 21:41:07--  https://stc-anycast.net/link/tlyGalr5jdh3Loky?client=clash
+Resolving stc-anycast.net (stc-anycast.net)... 2606:4700:3035::6815:1890, 2606:4700:3034::ac43:db3e, 104.21.24.144, ...
+Connecting to stc-anycast.net (stc-anycast.net)|2606:4700:3035::6815:1890|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 325266 (318K) [application/octet-stream]
+Saving to: ‘config.yaml’
+
+config.yaml                                    0%[                                                                                            ]       0  --.-KB/s               config.yaml                                   20%[=================>                                                                          ]  65.36K   206KB/s               config.yaml                                   42%[=====================================>                                                      ] 134.42K   213KB/s               config.yaml                                   55%[=================================================>                                          ] 175.73K   177KB/s               config.yaml                                  100%[===========================================================================================>] 317.64K   277KB/s    in 1.1s    
+
+2022-06-03 21:41:10 (277 KB/s) - ‘config.yaml’ saved [325266/325266]
+

@@ -1,0 +1,187 @@
+sh set-env.sh kafka-consumer-groups.sh --boot --command-config ../config/consumer.properties --describe --group  console-consumer-25778
+
+[ossuser@naas1-AC01 bin]$ sh set-env.sh kafka-consumer-groups.sh --boot --command-config ../config/consumer.properties --describe --group  console-consumer-25778
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/oss/envs/Product-DmqKafkaService/22.10.384/lib/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/oss/envs/Product-DmqKafkaService/22.10.384/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2022-06-13 11:49:38,735 WARN  [main] The configuration 'ssl.client.auth' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:38,739 WARN  [main] The configuration 'group.id' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:38,739 WARN  [main] The configuration 'auto.commit.interval.ms' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:38,739 WARN  [main] The configuration 'enable.auto.commit' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:38,739 WARN  [main] The configuration 'security.storage.workkey.name' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:38,739 WARN  [main] The configuration 'auto.offset.reset' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:38,739 WARN  [main] The configuration 'security.storage.cipher' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+2022-06-13 11:49:39,357 WARN  [main] The configuration 'ssl.client.auth' was supplied but isn't a known config. [org.apache.kafka.common.config.AbstractConfig.logUnused(AbstractConfig.java:355)]
+
+Consumer group 'console-consumer-25778' has no active members.
+
+GROUP                  TOPIC              PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+console-consumer-25778 __consumer_offsets 3          8421465         502257592       493836127       -               -               -
+[ossuser@naas1-AC01 bin]$
+
+
+[ossuser@naas1-AC01 bin]$ sh set-env.sh kafka-topics.sh --zk --describe --topic __consumer_offsets
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/oss/envs/Product-DmqKafkaService/22.10.384/lib/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/oss/envs/Product-DmqKafkaService/22.10.384/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+" caused by invalid character @4lang.IllegalArgumentException: Invalid path string "/dmq
+        at org.apache.zookeeper.common.PathUtils.validatePath(PathUtils.java:91)
+        at org.apache.zookeeper.client.ConnectStringParser.<init>(ConnectStringParser.java:61)
+        at org.apache.zookeeper.ZooKeeper.createDefaultHostProvider(ZooKeeper.java:1516)
+        at org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:1109)
+        at org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:819)
+        at kafka.zookeeper.ZooKeeperClient.<init>(ZooKeeperClient.scala:107)
+        at kafka.zk.KafkaZkClient$.apply(KafkaZkClient.scala:1911)
+        at kafka.admin.TopicCommand$ZookeeperTopicService$.apply(TopicCommand.scala:321)
+        at kafka.admin.TopicCommand$.main(TopicCommand.scala:54)
+        at kafka.admin.TopicCommand.main(TopicCommand.scala)
+[ossuser@naas1-AC01 bin]$ 
+
+##重要
+[ossuser@naas1-AC01 bin]$ dos2unix ../config/*
+dos2unix: converting file ../config/cipher-update-log4j2.xml to Unix format...
+dos2unix: converting file ../config/clusterbackup-log4j2.xml to Unix format...
+dos2unix: converting file ../config/consumer.properties to Unix format...
+dos2unix: converting file ../config/kafka-topic-manager-log4j2.xml to Unix format...
+dos2unix: converting file ../config/log4j2.xml to Unix format...
+dos2unix: converting file ../config/manifest_md5 to Unix format...
+dos2unix: converting file ../config/old2newupgrade-log4j2.xml to Unix format...
+dos2unix: converting file ../config/producer.properties to Unix format...
+dos2unix: converting file ../config/server.properties to Unix format...
+dos2unix: converting file ../config/serverstatuschekcer-log4j2.xml to Unix format...
+dos2unix: converting file ../config/tools-log4j2.xml to Unix format...
+
+dos2unix ../config/* 
+
+
+
+
+sh set-env.sh kafka-consumer-groups.sh --boot --command-config ../config/consumer.properties --delete --group console-consumer-25778
+
+
+
+
+
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE ;
+
+
+SQL> select count(*) from T_CAMPUS_DEVICEMGR_DEVICE ;
+
+COUNT(*)            
+--------------------
+137633              
+
+1 rows fetched.
+
+SQL> 
+
+
+
+desc T_CAMPUS_DEVICEMGR_DEVICE;
+
+
+SQL> desc T_CAMPUS_DEVICEMGR_DEVICE;
+
+Name                                Null?    Type                                
+----------------------------------- -------- ------------------------------------
+ID                                  NOT NULL VARCHAR(64 BYTE)                    
+TENANTID                                     VARCHAR(64 BYTE)                    
+LOGICLINKID                                  VARCHAR(128 BYTE)                   
+ESN                                          VARCHAR(512 BYTE)                   
+MANAGE_IP                                    VARCHAR(64 BYTE)                    
+NAME                                         VARCHAR(256 CHAR)                   
+DESCRIPTION                                  VARCHAR(768 CHAR)                   
+MANUFACTURER                                 VARCHAR(128 BYTE)                   
+LONGITUDE                                    VARCHAR(64 BYTE)                    
+LATITUDE                                     VARCHAR(64 BYTE)                    
+MODEL                                        VARCHAR(512 BYTE)                   
+TYPE                                         VARCHAR(64 BYTE)                    
+MAC                                          VARCHAR(64 BYTE)                    
+HARDWARE_VERSION                             VARCHAR(64 BYTE)                    
+SOFTWARE_VERSION                             VARCHAR(256 BYTE)                   
+PATCH_VERSION                                VARCHAR(256 BYTE)                   
+STARTUP_TIME                                 BINARY_BIGINT                       
+REGISTER_TIME                                BINARY_BIGINT                       
+LATEST_ONLINE_TIME                           BINARY_BIGINT                       
+OFFLINE_TIME                                 BINARY_BIGINT                       
+STATUS                                       BINARY_INTEGER                      
+NET_ENVIRONMENT                              BINARY_INTEGER                      
+DEVICEGROUPTYPE                              VARCHAR(32 BYTE)                    
+DEVICEGROUPID                                VARCHAR(64 BYTE)                    
+DEVICESERIES                                 VARCHAR(256 BYTE)                   
+APTYPE                                       VARCHAR(32 BYTE)                    
+SUBTYPE                                      VARCHAR(32 BYTE)                    
+TAGID                                        CLOB                                
+ORGANIZATIONID                               VARCHAR(64 BYTE)                    
+CONTROLLERADDRESS                            VARCHAR(32 BYTE)                    
+DEVICEIP                                     VARCHAR(32 BYTE)                    
+REGISTER                                     BOOLEAN                             
+TIMEZONE                                     VARCHAR(32 BYTE)                    
+VALIDTIME                                    BINARY_INTEGER                      
+VALIDTIMEUNIT                                BINARY_INTEGER                      
+GROUPID                                      VARCHAR(64 BYTE)                    
+CREATETIME                                   BINARY_BIGINT                       
+OFFLINEREASON                                VARCHAR(128 BYTE)                   
+OFFLINEINFO                                  VARCHAR(128 BYTE)                   
+SYNCHTIME                                    BINARY_BIGINT                       
+CONFIGCHANGETIME                             BINARY_BIGINT                       
+ALARMSTATUS                                  BINARY_INTEGER                      
+FAULTSTATUS                                  BINARY_INTEGER                      
+UPSTREAMINTERFACES                           CLOB                                
+CERTIFICATIONISOLD                           BOOLEAN                             
+SERIES                                       VARCHAR(32 BYTE)                    
+SYSTEMIP                                     VARCHAR(64 BYTE)                    
+MIRROR_GROUP_NAME                            VARCHAR(64 BYTE)                    
+MIRROR_GROUP_ID                              VARCHAR(64 BYTE)                    
+ROLE                                         BINARY_INTEGER                      
+MAC_SEQUENCE                        NOT NULL BINARY_BIGINT                       
+LOGIC_MAC                                    VARCHAR(64 BYTE)                    
+MANAGETYPE                                   BINARY_INTEGER                      
+MANAGEMODE                                   BINARY_INTEGER                      
+MODECHANGETIME                               BINARY_BIGINT                       
+MANAGEMENT_STATUS                            BINARY_INTEGER                      
+RESOURCEID                                   VARCHAR(256 CHAR)                   
+CLONEDEVICEID                                VARCHAR(64 BYTE)                    
+REGIONID                                     VARCHAR(64 BYTE)                    
+PLATFORM                                     VARCHAR(32 BYTE)                    
+UPDATETIME                          NOT NULL BINARY_BIGINT                       
+HARDWARE_MANUFACTURE                         VARCHAR(128 BYTE)                   
+PERFORMANCE                         NOT NULL BINARY_INTEGER                      
+DISCOVERPROTOCOL                             BINARY_INTEGER                      
+BUSINESSPROTOCOLS                            CLOB                                
+READLOGICLINKID                              VARCHAR(128 BYTE)                   
+BUSINESSCHANNELSTATUS                        BINARY_INTEGER                      
+NATIVEID                                     BINARY_BIGINT                       
+
+SQL> 
+
+select distinct status from T_CAMPUS_DEVICEMGR_DEVICE;
+SQL> select distinct status from T_CAMPUS_DEVICEMGR_DEVICE;
+
+STATUS      
+------------
+0           
+1           
+3           
+4           
+            
+
+5 rows fetched.
+
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE where status = 0;
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE where status = 1;
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE where status = 2;
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE where status = 3;
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE where status = null;
+
+
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE where esn != '';
+select count(distinct esn) from T_CAMPUS_DEVICEMGR_DEVICE ;
+select count(*) from T_CAMPUS_DEVICEMGR_DEVICE ;
+
+
+frps_full.ini

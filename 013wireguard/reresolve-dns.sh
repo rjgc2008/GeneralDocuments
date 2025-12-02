@@ -1,0 +1,49 @@
+#!/bin/bash
+# SPDX-License-Identifier: GPL-2.0
+#
+# Copyright (C) 2015-2020 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+# https://git.zx2c4.com/wireguard-tools/tree/contrib/reresolve-dns/reresolve-dns.sh
+
+# set -e 若指令传回值不等于0，则立即退出shell,使得脚本只要发生错误，就终止执行。
+set -e 
+# 自Bash 3.1版开始，引入新选项 nocasematch，可让Bash在对比样式时忽略大小写。
+shopt -s nocasematch
+# 打开扩展的模式匹配特征（正常的表达式元字符来自Korn shell的文件名扩展） 
+shopt -s extglob
+# 去除所有本地化的设置
+export LC_ALL=C
+
+CONFIG_FILE="$1"
+[[ $CONFIG_FILE =~ ^[a-zA-Z0-9_=+.-]{1,15}$ ]] && CONFIG_FILE="/etc/wireguard/$CONFIG_FILE.conf"
+[[ $CONFIG_FILE =~ /?([a-zA-Z0-9_=+.-]{1,15})\.conf$ ]]
+INTERFACE="${BASH_REMATCH[1]}"
+
+process_peer() {
+	[[ $PEER_SECTION -ne 1 || -z $PUBLIC_KEY || -z $ENDPOINT ]] && return 0
+	[[ $(wg show "$INTERFACE" latest-handshakes) =~ ${PUBLIC_KEY//+/\\+}\	([0-9]+) ]] || return 0
+	(( ($EPOCHSECONDS - ${BASH_REMATCH[1]}) > 135 )) || return 0
+	wg set "$INTERFACE" peer "$PUBLIC_KEY" endpoint "$ENDPOINT"
+	reset_peer_section
+}
+
+reset_peer_section() {
+	PEER_SECTION=0
+	PUBLIC_KEY=""
+	ENDPOINT=""
+}
+
+reset_peer_section
+while read -r line || [[ -n $line ]]; do
+	stripped="${line%%\#*}"
+	key="${stripped%%=*}"; key="${key##*([[:space:]])}"; key="${key%%*([[:space:]])}"
+	value="${stripped#*=}"; value="${value##*([[:space:]])}"; value="${value%%*([[:space:]])}"
+	[[ $key == "["* ]] && { process_peer; reset_peer_section; }
+	[[ $key == "[Peer]" ]] && PEER_SECTION=1
+	if [[ $PEER_SECTION -eq 1 ]]; then
+		case "$key" in
+		PublicKey) PUBLIC_KEY="$value"; continue ;;
+		Endpoint) ENDPOINT="$value"; continue ;;
+		esac
+	fi
+done < "$CONFIG_FILE"
+process_peer
