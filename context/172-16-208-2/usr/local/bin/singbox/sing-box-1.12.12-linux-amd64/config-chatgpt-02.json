@@ -1,0 +1,634 @@
+{
+    "inbounds": [
+        {
+            "tag": "mixed-in",
+            "type": "mixed",
+            "listen": "0.0.0.0",
+            "listen_port": 7890
+        },
+        {
+            "tag": "ss-in",
+            "type": "shadowsocks",
+            "listen": "172.16.208.2",
+            "listen_port": 1235,
+            "method": "chacha20-ietf-poly1305",
+            "password": "8JCsPssfgS8tiRwiMlhARg==",
+            "multiplex": {}
+        }
+    ],
+    "dns": {
+        "servers": [
+            {
+                "tag": "china",
+                "type": "https",
+                "server": "223.5.5.5"
+            },
+            {
+                "tag": "global",
+                "type": "https",
+                "server": "1.1.1.1"
+            },
+            {
+                "tag": "mobile",
+                "type": "udp",
+                "server": "112.4.0.55"
+            },
+            {
+                "tag": "local",
+                "type": "local"
+            },
+            {
+                "tag": "google",
+                "type": "https",
+                "server": "8.8.8.8"
+            }
+        ],
+        "rules": [
+            {
+                "domain": [
+                    "bxsdias461.zgwanzjxf76yyds.com"
+                ],
+                "action": "route",
+                "server": "china"
+            }
+        ],
+        "final": "google",
+        "disable_cache": false,
+        "independent_cache": true,
+        "strategy": "prefer_ipv4",
+        "client_subnet": "211.103.55.50"
+    },
+    "log": {
+        "level": "info",
+        "output": "/var/log/sing-box/sing-box.log",
+        "timestamp": true
+    },
+    "outbounds": [
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "WYJ_TW_Dedicate",
+            "type": "shadowsocks",
+            "server": "hinetiw0k.yooddns.stream",
+            "server_port": 11235,
+            "method": "chacha20-ietf-poly1305",
+            "password": "8JCsPssfgS8tiRwiMlhARg==",
+            "multiplex": {},
+            "domain_resolver": {
+                "server": "google",
+                "rewrite_ttl": 60,
+                "client_subnet": "114.114.114.114"
+            }
+        },
+        {
+            "tag": "WYJ_VN_Dedicate",
+            "type": "shadowsocks",
+            "server": "103.45.234.158",
+            "server_port": 11236,
+            "method": "chacha20-ietf-poly1305",
+            "password": "8JCsPssfgS8tiRwiMlhARg==",
+            "multiplex": {},
+            "domain_resolver": {
+                "server": "google",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "tag": "HK01_Dedicate",
+            "type": "trojan",
+            "server": "hk-hgc.cdn-yx.buzz",
+            "server_port": 20052,
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "hk-hgc.cdn-yx.buzz"
+            },
+            "routing_mark": 200,
+            "bind_interface": "ens3",
+            "inet4_bind_address": "172.16.208.2"
+        },
+        {
+            "tag": "HK02_Dedicate",
+            "type": "trojan",
+            "server": "hk-hkbn.cdn-yx.buzz",
+            "server_port": 20052,
+            "password": "d7d295bd-fdbf-4d76-bfbb-5ef0a4cc60af",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "hk-hkbn.cdn-yx.buzz"
+            },
+            "routing_mark": 200,
+            "bind_interface": "ens3",
+            "inet4_bind_address": "172.16.208.2"
+        },
+        {
+            "tag": "TW01_Dedicate",
+            "type": "trojan",
+            "server": "tw-taian.cdn-yx.buzz",
+            "server_port": 20052,
+            "password": "d7d295bd-fdbf-4d76-bfbb-5ef0a4cc60af",
+            "tls": {
+                "enabled": true,
+                "insecure": true,
+                "server_name": "tw-taian.cdn-yx.buzz"
+            },
+            "routing_mark": 200,
+            "bind_interface": "ens3",
+            "inet4_bind_address": "172.16.208.2"
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK01_Disney",
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 42052,
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK02_HBOMax",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 41223,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK03_Netflix",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 39648,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK04_Netflix",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 14987,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK05_Disney",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 10228,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK06_Disney",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 22191,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK07_HBOMax",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 23834,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "HK08_Disney",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 10518,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "TW01_Netflix",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 10875,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "TW02_Netflix",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 56749,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "TW03_Netflix",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 25417,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "TW04_Netflix",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 24521,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "SG01_HBOMax",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 20120,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "SG02_Disney",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 22875,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "SG03_Disney",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 28269,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "JP01_Disney",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 45983,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "JP02_HBOMax",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 34075,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "JP03_HBOMax",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 48082,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "KR01_ChatGPT",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 40904,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "KR02_ChatGPT",
+            "server": "bxsdias461.zgwanzjxf76yyds.com",
+            "server_port": 35230,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "YTQ3YmEwMTQ5NDUxYzAzOA==:ZDdkMjk1YmQtZmRiZi00ZA==",
+            "domain_resolver": {
+                "server": "china",
+                "rewrite_ttl": 60,
+                "client_subnet": "58.211.207.202"
+            }
+        },
+        {
+            "tag": "via_gw2",
+            "type": "direct",
+            "routing_mark": 200,
+            "bind_interface": "ens3",
+            "inet4_bind_address": "172.16.208.2"
+        },
+        {
+            "tag": "Dedicate_Group",
+            "type": "urltest",
+            "outbounds": [
+                "HK01_Dedicate",
+                "HK02_Dedicate",
+                "TW01_Dedicate",
+                "WYJ_TW_Dedicate",
+                "WYJ_VN_Dedicate"
+            ],
+            "url": "http://cp.cloudflare.com/generate_204",
+            "interval": "3m"
+        },
+        {
+            "tag": "Chatgpt_Group_URLTest",
+            "type": "urltest",
+            "outbounds": [
+                "WYJ_TW_Dedicate",
+                "WYJ_VN_Dedicate",
+                "TW01_Dedicate",
+                "TW01_Netflix",
+                "TW02_Netflix",
+                "TW03_Netflix",
+                "TW04_Netflix",
+                "SG01_HBOMax",
+                "SG02_Disney",
+                "SG03_Disney"
+            ],
+            "url": "http://cp.cloudflare.com/generate_204",
+            "interval": "3m"
+        },
+        {
+            "tag": "Chatgpt_Group_Selector",
+            "type": "selector",
+            "outbounds": [
+                "WYJ_TW_Dedicate",
+                "TW01_Dedicate",
+                "TW01_Netflix",
+                "TW02_Netflix",
+                "TW03_Netflix",
+                "TW04_Netflix",
+                "SG01_HBOMax",
+                "SG02_Disney",
+                "SG03_Disney",
+                "JP01_Disney",
+                "JP02_HBOMax",
+                "JP03_HBOMax"
+            ],
+            "default": "WYJ_TW_Dedicate",
+            "interrupt_exist_connections": false
+        },
+        {
+            "tag": "Overseas_Group",
+            "type": "urltest",
+            "outbounds": [
+                "WYJ_TW_Dedicate",
+                "WYJ_VN_Dedicate",
+                "HK01_Dedicate",
+                "HK02_Dedicate",
+                "TW01_Dedicate",
+                "HK01_Disney",
+                "HK02_HBOMax",
+                "HK03_Netflix",
+                "HK04_Netflix",
+                "HK05_Disney",
+                "HK06_Disney",
+                "HK07_HBOMax",
+                "HK08_Disney",
+                "TW01_Netflix",
+                "TW02_Netflix",
+                "TW03_Netflix",
+                "TW04_Netflix",
+                "SG01_HBOMax",
+                "SG02_Disney",
+                "SG03_Disney",
+                "JP01_Disney",
+                "JP02_HBOMax",
+                "JP03_HBOMax",
+                "KR01_ChatGPT",
+                "KR02_ChatGPT"
+            ],
+            "url": "http://cp.cloudflare.com/generate_204",
+            "interval": "3m"
+        }
+    ],
+    "route": {
+        "final": "direct",
+        "default_domain_resolver": {
+            "server": "google",
+            "rewrite_ttl": 60,
+            "client_subnet": "223.107.68.194"
+        },
+        "rules": [
+            {
+                "domain_suffix": [
+                    "google.com",
+                    "googleapis.com",
+                    "gstatic.com",
+                    "googleusercontent.com",
+                    "gmail.com",
+                    "accounts.google.com",
+                    "oauth2.googleapis.com",
+                    "youtube.com",
+                    "googlevideo.com",
+                    "gemini.google.com",
+                    "generativelanguage.googleapis.com",
+                    "ai.google.com",
+                    "ai.google.dev"
+                ],
+                "domain_keyword": [
+                    "google",
+                    "gemini",
+                    "aistudio",
+                    "gmail",
+                    "youtube"
+                ],
+                "outbound": "Chatgpt_Group_Selector"
+            },
+            {
+                "domain_suffix": [
+                    "openai.com",
+                    "ai.com",
+                    "chatgpt.com",
+                    "oaiusercontent.com",
+                    "cdn.oaistatic.com",
+                    "openaipublic.blob.core.windows.net",
+                    "auth0.com",
+                    "identrust.com",
+                    "hcaptcha.com",
+                    "assets.hcaptcha.com",
+                    "challenges.cloudflare.com"
+                ],
+                "domain_keyword": [
+                    "openai",
+                    "chatgpt"
+                ],
+                "outbound": "Chatgpt_Group_Selector"
+            },
+            {
+                "rule_set": "geosite-category-porn",
+                "outbound": "Overseas_Group"
+            },
+            {
+                "rule_set": "adblock",
+                "outbound": "block"
+            },
+            {
+                "ip_is_private": true,
+                "outbound": "direct"
+            },
+            {
+                "outbound": "via_gw2"
+            },
+            {
+                "domain_keyword": [
+                    "m-team"
+                ],
+                "outbound": "Overseas_Group"
+            },
+            {
+                "rule_set": [
+                    "geoip-cn",
+                    "geosite-cn"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "outbound": "Overseas_Group"
+            }
+        ],
+        "rule_set": [
+            {
+                "tag": "geosite-category-porn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-category-porn.srs",
+                "download_detour": "Overseas_Group"
+            },
+            {
+                "tag": "adblock",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.srs",
+                "download_detour": "Overseas_Group"
+            },
+            {
+                "tag": "geoip-cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+                "download_detour": "Overseas_Group"
+            },
+            {
+                "tag": "geosite-cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+                "download_detour": "Overseas_Group"
+            },
+            {
+                "tag": "ChinaDomain",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/KaringX/karing-ruleset/sing/ACL4SSR/ChinaDomain.srs",
+                "download_detour": "Overseas_Group"
+            }
+        ]
+    },
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "path": "rule-set"
+        },
+        "clash_api": {
+            "external_controller": "0.0.0.0:9092",
+            "external_ui": "yacd-gh-pages",
+            "access_control_allow_private_network": true
+        }
+    }
+}
