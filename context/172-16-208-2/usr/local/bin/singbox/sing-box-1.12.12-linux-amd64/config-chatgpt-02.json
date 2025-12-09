@@ -430,7 +430,6 @@
             "type": "urltest",
             "outbounds": [
                 "WYJ_TW_Dedicate",
-                "WYJ_VN_Dedicate",
                 "TW01_Dedicate",
                 "TW01_Netflix",
                 "TW02_Netflix",
@@ -528,7 +527,7 @@
                     "gmail",
                     "youtube"
                 ],
-                "outbound": "Chatgpt_Group_Selector"
+                "outbound": "Chatgpt_Group_URLTest"
             },
             {
                 "domain_suffix": [
@@ -548,7 +547,7 @@
                     "openai",
                     "chatgpt"
                 ],
-                "outbound": "Chatgpt_Group_Selector"
+                "outbound": "Chatgpt_Group_URLTest"
             },
             {
                 "rule_set": "geosite-category-porn",
