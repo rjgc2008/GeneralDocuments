@@ -87,6 +87,20 @@
             }
         },
         {
+            "tag": "WYJ_SG_Dedicate",
+            "type": "shadowsocks",
+            "server": "178.128.103.63",
+            "server_port": 11235,
+            "method": "chacha20-ietf-poly1305",
+            "password": "8JCsPssfgS8tiRwiMlhARg==",
+            "multiplex": {},
+            "domain_resolver": {
+                "server": "google",
+                "rewrite_ttl": 60,
+                "client_subnet": "114.114.114.114"
+            }
+        },
+        {
             "type": "vless",
             "tag": "HK-01",
             "server": "aws-link1.liangxin1.xyz",
@@ -985,7 +999,8 @@
                 "HK02_Dedicate",
                 "TW01_Dedicate",
                 "WYJ_TW_Dedicate",
-                "WYJ_VN_Dedicate"
+                "WYJ_VN_Dedicate",
+                "WYJ_SG_Dedicate"
             ],
             "url": "http://cp.cloudflare.com/generate_204",
             "interval": "3m"
@@ -995,6 +1010,7 @@
             "type": "urltest",
             "outbounds": [
                 "WYJ_TW_Dedicate",
+                "WYJ_SG_Dedicate",
                 "TW01_Dedicate",
                 "TW01_Netflix",
                 "TW02_Netflix",
@@ -1033,6 +1049,7 @@
             "type": "selector",
             "outbounds": [
                 "WYJ_TW_Dedicate",
+                "WYJ_SG_Dedicate",
                 "TW01_Dedicate",
                 "TW01_Netflix",
                 "TW02_Netflix",
