@@ -1,0 +1,113 @@
+﻿150633.178: [15:06:33][202602101-A-A10-管理-Hygon-10.50.0.100-15:06:33]
+150633.196: [15:06:33]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-56-generic x86_64)
+150633.197: [15:06:33]
+150633.197: [15:06:33] * Documentation:  https://help.ubuntu.com
+150633.197: [15:06:33] * Management:     https://landscape.canonical.com
+150633.197: [15:06:33] * Support:        https://ubuntu.com/pro
+150633.197: [15:06:33]
+150633.197: [15:06:33] System information as of Wed Feb  4 03:06:37 PM CST 2026
+150633.197: [15:06:33]
+150633.197: [15:06:33]  System load:                    0.11
+150633.197: [15:06:33]  Usage of /home:                 1.2% of 301.20GB
+150633.197: [15:06:33]  Memory usage:                   1%
+150633.197: [15:06:33]  Swap usage:                     0%
+150633.197: [15:06:33]  Temperature:                    54.0 C
+150633.197: [15:06:33]  Processes:                      1115
+150633.197: [15:06:33]  Users logged in:                0
+150633.197: [15:06:33]  IPv4 address for enp161s0f0np0: 10.50.0.100
+150633.197: [15:06:33]
+150633.197: [15:06:33]  => There is 1 zombie process.
+150633.197: [15:06:33]
+150633.197: [15:06:33]
+150633.197: [15:06:33]Expanded Security Maintenance for Applications is not enabled.
+150633.197: [15:06:33]
+150633.197: [15:06:33]55 updates can be applied immediately.
+150633.197: [15:06:33]To see these additional updates run: apt list --upgradable
+150633.197: [15:06:33]
+150633.197: [15:06:33]1 additional security update can be applied with ESM Apps.
+150633.197: [15:06:33]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+150633.197: [15:06:33]
+150633.197: [15:06:33]
+150633.197: [15:06:33]The list of available updates is more than a week old.
+150633.197: [15:06:33]To check for new updates run: sudo apt update
+150633.197: [15:06:33]
+150633.197: [15:06:33]Last login: Wed Jan  7 13:57:43 2026 from 10.50.0.100
+150633.324: [15:06:33]module: command not found
+150633.450: [15:06:33]module: command not found
+150633.596: [15:06:33]module: command not found
+150643.009: [15:06:43]root@suzhouproda100:~# ping 10.80.0.100
+150643.012: [15:06:43]PING 10.80.0.100 (10.80.0.100) 56(84) bytes of data.
+150643.012: [15:06:43]64 bytes from 10.80.0.100: icmp_seq=1 ttl=63 time=0.141 ms
+150643.672: [15:06:43]^C
+150643.672: [15:06:43]--- 10.80.0.100 ping statistics ---
+150643.672: [15:06:43]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+150643.672: [15:06:43]rtt min/avg/max/mdev = 0.141/0.141/0.141/0.000 ms
+150647.612: [15:06:47]root@suzhouproda100:~# ping 10.70.0.100
+150647.614: [15:06:47]PING 10.70.0.100 (10.70.0.100) 56(84) bytes of data.
+150906.366: [15:09:06]
+152542.227: [15:25:42]From 192.168.230.1 icmp_seq=1109 Time to live exceeded
+152543.229: [15:25:43]From 192.168.230.1 icmp_seq=1110 Time to live exceeded
+152544.219: [15:25:44]From 192.168.230.1 icmp_seq=1111 Time to live exceeded
+152545.223: [15:25:45]From 192.168.230.1 icmp_seq=1112 Time to live exceeded
+152546.224: [15:25:46]From 192.168.230.1 icmp_seq=1113 Time to live exceeded
+152547.229: [15:25:47]From 192.168.230.1 icmp_seq=1114 Time to live exceeded
+152548.225: [15:25:48]From 192.168.230.1 icmp_seq=1115 Time to live exceeded
+152549.236: [15:25:49]From 192.168.230.1 icmp_seq=1116 Time to live exceeded
+152550.231: [15:25:50]From 192.168.230.1 icmp_seq=1117 Time to live exceeded
+152551.232: [15:25:51]From 192.168.230.1 icmp_seq=1118 Time to live exceeded
+152552.234: [15:25:52]From 192.168.230.1 icmp_seq=1119 Time to live exceeded
+152553.237: [15:25:53]From 192.168.230.1 icmp_seq=1120 Time to live exceeded
+152554.236: [15:25:54]From 192.168.230.1 icmp_seq=1121 Time to live exceeded
+152555.238: [15:25:55]From 192.168.230.1 icmp_seq=1122 Time to live exceeded
+152556.240: [15:25:56]From 192.168.230.1 icmp_seq=1123 Time to live exceeded
+152556.691: [15:25:56]^C
+152556.691: [15:25:56]--- 10.70.0.100 ping statistics ---
+152556.691: [15:25:56]1123 packets transmitted, 0 received, +15 errors, 100% packet loss, time 1148641ms
+152556.691: [15:25:56]
+152559.694: [15:25:59]root@suzhouproda100:~# ping 10.70.0.100
+152559.695: [15:25:59]PING 10.70.0.100 (10.70.0.100) 56(84) bytes of data.
+152559.728: [15:25:59]From 192.168.230.1 icmp_seq=1 Time to live exceeded
+152600.708: [15:26:00]From 192.168.230.1 icmp_seq=2 Time to live exceeded
+152601.703: [15:26:01]From 192.168.230.1 icmp_seq=3 Time to live exceeded
+152602.702: [15:26:02]From 192.168.230.1 icmp_seq=4 Time to live exceeded
+152603.758: [15:26:03]From 192.168.230.1 icmp_seq=5 Time to live exceeded
+152604.705: [15:26:04]From 192.168.230.1 icmp_seq=6 Time to live exceeded
+152605.712: [15:26:05]From 192.168.230.1 icmp_seq=7 Time to live exceeded
+152606.707: [15:26:06]From 192.168.230.1 icmp_seq=8 Time to live exceeded
+152607.058: [15:26:07]^C
+152607.058: [15:26:07]--- 10.70.0.100 ping statistics ---
+152607.058: [15:26:07]8 packets transmitted, 0 received, +8 errors, 100% packet loss, time 7011ms
+152607.058: [15:26:07]
+152629.355: [15:26:29]root@suzhouproda100:~# 
+152629.480: [15:26:29]root@suzhouproda100:~# 
+152635.306: [15:26:35]root@suzhouproda100:~# ping 10.70.0.100
+152635.314: [15:26:35]PING 10.70.0.100 (10.70.0.100) 56(84) bytes of data.
+152635.321: [15:26:35]From 192.168.230.1 icmp_seq=1 Time to live exceeded
+152636.307: [15:26:36]From 192.168.230.1 icmp_seq=2 Time to live exceeded
+152637.310: [15:26:37]From 192.168.230.1 icmp_seq=3 Time to live exceeded
+152638.311: [15:26:38]From 192.168.230.1 icmp_seq=4 Time to live exceeded
+152639.312: [15:26:39]From 192.168.230.1 icmp_seq=5 Time to live exceeded
+152640.313: [15:26:40]From 192.168.230.1 icmp_seq=6 Time to live exceeded
+152640.822: [15:26:40]^C
+152640.822: [15:26:40]--- 10.70.0.100 ping statistics ---
+152640.823: [15:26:40]6 packets transmitted, 0 received, +6 errors, 100% packet loss, time 5007ms
+152640.823: [15:26:40]
+152826.779: [15:28:26]root@suzhouproda100:~# 
+152826.907: [15:28:26]root@suzhouproda100:~# 
+152827.773: [15:28:27]root@suzhouproda100:~# ping 10.70.0.100
+152827.783: [15:28:27]PING 10.70.0.100 (10.70.0.100) 56(84) bytes of data.
+152827.789: [15:28:27]From 192.168.230.1 icmp_seq=1 Time to live exceeded
+152828.793: [15:28:28]From 192.168.230.1 icmp_seq=2 Time to live exceeded
+152829.284: [15:28:29]^C
+152829.289: [15:28:29]--- 10.70.0.100 ping statistics ---
+152829.289: [15:28:29]2 packets transmitted, 0 received, +2 errors, 100% packet loss, time 1001ms
+152829.289: [15:28:29]
+153224.718: [15:32:24]root@suzhouproda100:~# ping 10.70.0.100
+153224.729: [15:32:24]PING 10.70.0.100 (10.70.0.100) 56(84) bytes of data.
+153224.729: [15:32:24]64 bytes from 10.70.0.100: icmp_seq=1 ttl=57 time=3.89 ms
+153225.728: [15:32:25]64 bytes from 10.70.0.100: icmp_seq=2 ttl=57 time=4.17 ms
+153226.730: [15:32:26]64 bytes from 10.70.0.100: icmp_seq=3 ttl=57 time=3.79 ms
+153226.752: [15:32:26]^C
+153226.752: [15:32:26]--- 10.70.0.100 ping statistics ---
+153226.752: [15:32:26]3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+153226.752: [15:32:26]rtt min/avg/max/mdev = 3.789/3.950/4.174/0.163 ms

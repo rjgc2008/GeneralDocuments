@@ -1,0 +1,468 @@
+﻿103849.566: [10:38:49][202602192.168.231.1-黄埭-核心交换机-10:38:49]
+103849.643: [10:38:49]
+103849.647: [10:38:49]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+103849.674: [10:38:49]      The current login time is 2025-11-29 17:50:12.
+103852.732: [10:38:52]<Core-SW>
+103852.904: [10:38:52]<Core-SW>
+103914.124: [10:39:14]<Core-SW>ping 10.0.1.1
+103914.405: [10:39:14]  PING 10.0.1.1: 56  data bytes, press CTRL_C to break
+103915.042: [10:39:15]    Reply from 10.0.1.1: bytes=56 Sequence=1 ttl=255 time=1 ms
+103915.498: [10:39:15]    Reply from 10.0.1.1: bytes=56 Sequence=2 ttl=255 time=1 ms
+103916.006: [10:39:16]    Reply from 10.0.1.1: bytes=56 Sequence=3 ttl=255 time=1 ms
+103916.609: [10:39:16]    Reply from 10.0.1.1: bytes=56 Sequence=4 ttl=255 time=1 ms
+103916.609: [10:39:16]    Reply from 10.0.1.1: bytes=56 Sequence=5 ttl=255 time=1 ms
+103916.609: [10:39:16]
+103916.610: [10:39:16]  --- 10.0.1.1 ping statistics ---
+103916.610: [10:39:16]    5 packet(s) transmitted
+103916.610: [10:39:16]    5 packet(s) received
+103916.610: [10:39:16]    0.00% packet loss
+103916.610: [10:39:16]    round-trip min/avg/max = 1/1/1 ms
+103916.610: [10:39:16] 
+103930.041: [10:39:30]<Core-SW>disp 
+103933.444: [10:39:33]<Core-SW>display ip in bri 
+103933.523: [10:39:33]*down: administratively down
+103933.523: [10:39:33]!down: FIB overload down
+103933.523: [10:39:33]^down: standby
+103933.523: [10:39:33](l): loopback
+103933.523: [10:39:33](s): spoofing
+103933.523: [10:39:33](d): Dampening Suppressed
+103933.523: [10:39:33](ed): error down
+103933.523: [10:39:33]The number of interface that is UP in Physical is 7
+103933.523: [10:39:33]The number of interface that is DOWN in Physical is 1
+103933.524: [10:39:33]The number of interface that is UP in Protocol is 7
+103933.524: [10:39:33]The number of interface that is DOWN in Protocol is 1
+103933.538: [10:39:33]Interface                   IP Address/Mask    Physical Protocol VPN           
+103933.539: [10:39:33]MEth0/0/0                   unassigned         down     down     --            
+103933.539: [10:39:33]NULL0                       unassigned         up       up(s)    --            
+103933.539: [10:39:33]Vlanif10                    192.168.10.1/24    up       up       --            
+103933.539: [10:39:33]Vlanif229                   10.0.1.2/30        up       up       --            
+103933.539: [10:39:33]Vlanif230                   192.168.230.1/30   up       up       --            
+103933.546: [10:39:33]Vlanif231                   192.168.231.1/30   up       up       --            
+103933.546: [10:39:33]Vlanif232                   192.168.232.1/24   up       up       --            
+103933.546: [10:39:33]Vlanif242                   192.168.242.1/24   up       up       --            
+104220.028: [10:42:20]<Core-SW>ping 192.168.52.1
+104220.266: [10:42:20]  PING 192.168.52.1: 56  data bytes, press CTRL_C to break
+104220.809: [10:42:20]    Reply from 192.168.52.1: bytes=56 Sequence=1 ttl=252 time=2 ms
+104221.338: [10:42:21]    Reply from 192.168.52.1: bytes=56 Sequence=2 ttl=252 time=2 ms
+104222.010: [10:42:22]    Reply from 192.168.52.1: bytes=56 Sequence=3 ttl=252 time=13 ms
+104222.550: [10:42:22]    Reply from 192.168.52.1: bytes=56 Sequence=4 ttl=252 time=3 ms
+104222.562: [10:42:22]    Reply from 192.168.52.1: bytes=56 Sequence=5 ttl=252 time=2 ms
+104222.562: [10:42:22]
+104222.562: [10:42:22]  --- 192.168.52.1 ping statistics ---
+104222.562: [10:42:22]    5 packet(s) transmitted
+104222.562: [10:42:22]    5 packet(s) received
+104222.562: [10:42:22]    0.00% packet loss
+104222.562: [10:42:22]    round-trip min/avg/max = 2/4/13 ms
+104222.568: [10:42:22] 
+104232.123: [10:42:32]<Core-SW>ping 192.168.10.1 
+104232.398: [10:42:32]  PING 192.168.10.1: 56  data bytes, press CTRL_C to break
+104232.920: [10:42:32]    Reply from 192.168.10.1: bytes=56 Sequence=1 ttl=255 time=4 ms
+104233.441: [10:42:33]    Reply from 192.168.10.1: bytes=56 Sequence=2 ttl=255 time=1 ms
+104234.041: [10:42:34]    Reply from 192.168.10.1: bytes=56 Sequence=3 ttl=255 time=1 ms
+104234.656: [10:42:34]    Reply from 192.168.10.1: bytes=56 Sequence=4 ttl=255 time=2 ms
+104234.656: [10:42:34]    Reply from 192.168.10.1: bytes=56 Sequence=5 ttl=255 time=3 ms
+104234.656: [10:42:34]
+104234.657: [10:42:34]  --- 192.168.10.1 ping statistics ---
+104234.657: [10:42:34]    5 packet(s) transmitted
+104234.657: [10:42:34]    5 packet(s) received
+104234.657: [10:42:34]    0.00% packet loss
+104234.657: [10:42:34]    round-trip min/avg/max = 1/2/4 ms
+104234.674: [10:42:34] 
+104237.337: [10:42:37]<Core-SW>ping 192.168.11.1
+104239.697: [10:42:39]  PING 192.168.11.1: 56  data bytes, press CTRL_C to break
+104239.712: [10:42:39]    Request time out
+104239.712: [10:42:39]
+104239.712: [10:42:39]  --- 192.168.11.1 ping statistics ---
+104239.712: [10:42:39]    1 packet(s) transmitted
+104239.712: [10:42:39]    0 packet(s) received
+104239.712: [10:42:39]    100.00% packet loss
+105239.711: [10:52:39]<Core-SW>
+105245.514: [10:52:45][202602192.168.231.1-黄埭-核心交换机-10:52:45]
+105245.561: [10:52:45]
+105245.568: [10:52:45]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+105245.615: [10:52:45]      The current login time is 2025-11-29 18:04:08.
+110245.664: [11:02:45]<Core-SW>
+110251.607: [11:02:51][202602192.168.231.1-黄埭-核心交换机-11:02:51]
+110252.059: [11:02:52]
+110252.064: [11:02:52]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+110252.113: [11:02:52]      The current login time is 2025-11-29 18:14:15.
+111252.152: [11:12:52]<Core-SW>
+111258.202: [11:12:58][202602192.168.231.1-黄埭-核心交换机-11:12:58]
+111258.250: [11:12:58]
+111258.258: [11:12:58]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+111258.301: [11:12:58]      The current login time is 2025-11-29 18:24:21.
+112258.360: [11:22:58]<Core-SW>
+112304.596: [11:23:04][202602192.168.231.1-黄埭-核心交换机-11:23:04]
+112304.633: [11:23:04]
+112304.633: [11:23:04]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+112304.677: [11:23:04]      The current login time is 2025-11-29 18:34:27.
+113304.723: [11:33:04]<Core-SW>
+113310.854: [11:33:10][202602192.168.231.1-黄埭-核心交换机-11:33:10]
+113310.900: [11:33:10]
+113310.901: [11:33:10]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+113311.358: [11:33:11]      The current login time is 2025-11-29 18:44:33.
+114311.032: [11:43:11]<Core-SW>
+114317.086: [11:43:17][202602192.168.231.1-黄埭-核心交换机-11:43:17]
+114317.130: [11:43:17]
+114317.131: [11:43:17]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+114317.247: [11:43:17]      The current login time is 2025-11-29 18:54:40.
+115317.214: [11:53:17]<Core-SW>
+115323.019: [11:53:23][202602192.168.231.1-黄埭-核心交换机-11:53:23]
+115323.068: [11:53:23]
+115323.069: [11:53:23]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+115323.110: [11:53:23]      The current login time is 2025-11-29 19:04:46.
+120323.194: [12:03:23]<Core-SW>
+120329.017: [12:03:29][202602192.168.231.1-黄埭-核心交换机-12:03:29]
+120329.078: [12:03:29]
+120329.082: [12:03:29]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+120329.108: [12:03:29]      The current login time is 2025-11-29 19:14:52.
+121329.165: [12:13:29]<Core-SW>
+121335.074: [12:13:35][202602192.168.231.1-黄埭-核心交换机-12:13:35]
+121335.183: [12:13:35]
+121335.184: [12:13:35]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+121335.184: [12:13:35]      The current login time is 2025-11-29 19:24:58.
+122335.245: [12:23:35]<Core-SW>
+122341.020: [12:23:41][202602192.168.231.1-黄埭-核心交换机-12:23:41]
+122341.074: [12:23:41]
+122341.075: [12:23:41]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+122341.108: [12:23:41]      The current login time is 2025-11-29 19:35:04.
+123341.203: [12:33:41]<Core-SW>
+123347.066: [12:33:47][202602192.168.231.1-黄埭-核心交换机-12:33:47]
+123347.124: [12:33:47]
+123347.125: [12:33:47]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+123347.179: [12:33:47]      The current login time is 2025-11-29 19:45:10.
+124347.228: [12:43:47]<Core-SW>
+124353.110: [12:43:53][202602192.168.231.1-黄埭-核心交换机-12:43:53]
+124353.169: [12:43:53]
+124353.174: [12:43:53]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+124353.210: [12:43:53]      The current login time is 2025-11-29 19:55:16.
+125353.265: [12:53:53]<Core-SW>
+125359.172: [12:53:59][202602192.168.231.1-黄埭-核心交换机-12:53:59]
+125359.222: [12:53:59]
+125359.225: [12:53:59]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+125359.261: [12:53:59]      The current login time is 2025-11-29 20:05:22.
+130359.366: [13:03:59]<Core-SW>
+130405.518: [13:04:05][202602192.168.231.1-黄埭-核心交换机-13:04:05]
+130405.582: [13:04:05]
+130405.583: [13:04:05]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+130405.613: [13:04:05]      The current login time is 2025-11-29 20:15:28.
+131405.669: [13:14:05]<Core-SW>
+131411.559: [13:14:11][202602192.168.231.1-黄埭-核心交换机-13:14:11]
+131411.621: [13:14:11]
+131411.624: [13:14:11]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+131411.662: [13:14:11]      The current login time is 2025-11-29 20:25:34.
+132411.712: [13:24:11]<Core-SW>
+132417.456: [13:24:17][202602192.168.231.1-黄埭-核心交换机-13:24:17]
+132417.497: [13:24:17]
+132417.508: [13:24:17]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+132417.621: [13:24:17]      The current login time is 2025-11-29 20:35:40.
+133417.650: [13:34:17]<Core-SW>
+133423.830: [13:34:23][202602192.168.231.1-黄埭-核心交换机-13:34:23]
+133423.877: [13:34:23]
+133423.900: [13:34:23]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+133423.935: [13:34:23]      The current login time is 2025-11-29 20:45:47.
+134424.071: [13:44:24]<Core-SW>
+134430.025: [13:44:30][202602192.168.231.1-黄埭-核心交换机-13:44:30]
+134430.086: [13:44:30]
+134430.087: [13:44:30]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+134430.120: [13:44:30]      The current login time is 2025-11-29 20:55:53.
+135430.211: [13:54:30]<Core-SW>
+135436.132: [13:54:36][202602192.168.231.1-黄埭-核心交换机-13:54:36]
+135436.190: [13:54:36]
+135436.199: [13:54:36]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+135436.231: [13:54:36]      The current login time is 2025-11-29 21:05:59.
+140436.327: [14:04:36]<Core-SW>
+140442.764: [14:04:42][202602192.168.231.1-黄埭-核心交换机-14:04:42]
+140442.830: [14:04:42]
+140442.838: [14:04:42]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+140442.891: [14:04:42]      The current login time is 2025-11-29 21:16:05.
+141443.433: [14:14:43]<Core-SW>
+141449.682: [14:14:49][202602192.168.231.1-黄埭-核心交换机-14:14:49]
+141449.735: [14:14:49]
+141449.747: [14:14:49]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+141449.775: [14:14:49]      The current login time is 2025-11-29 21:26:12.
+142449.833: [14:24:49]<Core-SW>
+142456.302: [14:24:56][202602192.168.231.1-黄埭-核心交换机-14:24:56]
+142456.373: [14:24:56]
+142456.380: [14:24:56]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+142456.391: [14:24:56]      The current login time is 2025-11-29 21:36:19.
+143456.571: [14:34:56]<Core-SW>
+143502.715: [14:35:02][202602192.168.231.1-黄埭-核心交换机-14:35:02]
+143502.863: [14:35:02]
+143502.864: [14:35:02]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+143502.864: [14:35:02]      The current login time is 2025-11-29 21:46:25.
+144502.907: [14:45:02]<Core-SW>
+144509.168: [14:45:09][202602192.168.231.1-黄埭-核心交换机-14:45:09]
+144509.222: [14:45:09]
+144509.222: [14:45:09]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+144509.252: [14:45:09]      The current login time is 2025-11-29 21:56:32.
+145509.387: [14:55:09]<Core-SW>
+145515.560: [14:55:15][202602192.168.231.1-黄埭-核心交换机-14:55:15]
+145515.601: [14:55:15]
+145515.609: [14:55:15]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+145515.634: [14:55:15]      The current login time is 2025-11-29 22:06:38.
+150515.701: [15:05:15]<Core-SW>
+150521.648: [15:05:21][202602192.168.231.1-黄埭-核心交换机-15:05:21]
+150521.703: [15:05:21]
+150521.704: [15:05:21]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+150521.731: [15:05:21]      The current login time is 2025-11-29 22:16:44.
+151521.808: [15:15:21]<Core-SW>
+151527.713: [15:15:27][202602192.168.231.1-黄埭-核心交换机-15:15:27]
+151527.764: [15:15:27]
+151527.764: [15:15:27]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+151527.823: [15:15:27]      The current login time is 2025-11-29 22:26:50.
+152527.894: [15:25:27]<Core-SW>
+152534.325: [15:25:34][202602192.168.231.1-黄埭-核心交换机-15:25:34]
+152534.368: [15:25:34]
+152534.371: [15:25:34]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+152534.410: [15:25:34]      The current login time is 2025-11-29 22:36:57.
+153534.620: [15:35:34]<Core-SW>
+153540.955: [15:35:40][202602192.168.231.1-黄埭-核心交换机-15:35:40]
+153541.075: [15:35:41]
+153541.076: [15:35:41]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+153541.101: [15:35:41]      The current login time is 2025-11-29 22:47:04.
+154541.226: [15:45:41]<Core-SW>
+154547.223: [15:45:47][202602192.168.231.1-黄埭-核心交换机-15:45:47]
+154547.266: [15:45:47]
+154547.267: [15:45:47]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+154547.336: [15:45:47]      The current login time is 2025-11-29 22:57:10.
+155547.495: [15:55:47]<Core-SW>
+155553.848: [15:55:53][202602192.168.231.1-黄埭-核心交换机-15:55:53]
+155553.892: [15:55:53]
+155553.894: [15:55:53]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+155553.930: [15:55:53]      The current login time is 2025-11-29 23:07:17.
+160554.001: [16:05:54]<Core-SW>
+160600.500: [16:06:00][202602192.168.231.1-黄埭-核心交换机-16:06:00]
+160600.556: [16:06:00]
+160600.558: [16:06:00]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+160600.617: [16:06:00]      The current login time is 2025-11-29 23:17:23.
+161600.737: [16:16:00]<Core-SW>
+161607.352: [16:16:07][202602192.168.231.1-黄埭-核心交换机-16:16:07]
+161607.407: [16:16:07]
+161607.409: [16:16:07]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+161607.440: [16:16:07]      The current login time is 2025-11-29 23:27:30.
+162607.563: [16:26:07]<Core-SW>
+162613.633: [16:26:13][202602192.168.231.1-黄埭-核心交换机-16:26:13]
+162613.685: [16:26:13]
+162613.686: [16:26:13]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+162613.719: [16:26:13]      The current login time is 2025-11-29 23:37:36.
+163613.806: [16:36:13]<Core-SW>
+163620.245: [16:36:20][202602192.168.231.1-黄埭-核心交换机-16:36:20]
+163620.304: [16:36:20]
+163620.306: [16:36:20]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+163620.351: [16:36:20]      The current login time is 2025-11-29 23:47:43.
+164620.392: [16:46:20]<Core-SW>
+164626.643: [16:46:26][202602192.168.231.1-黄埭-核心交换机-16:46:26]
+164626.687: [16:46:26]
+164626.688: [16:46:26]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+164626.721: [16:46:26]      The current login time is 2025-11-29 23:57:49.
+165626.799: [16:56:26]<Core-SW>
+165632.681: [16:56:32][202602192.168.231.1-黄埭-核心交换机-16:56:32]
+165632.738: [16:56:32]
+165632.739: [16:56:32]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+165632.769: [16:56:32]      The current login time is 2025-11-30 00:07:55.
+170632.873: [17:06:32]<Core-SW>
+170639.364: [17:06:39][202602192.168.231.1-黄埭-核心交换机-17:06:39]
+170639.423: [17:06:39]
+170639.424: [17:06:39]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+170639.461: [17:06:39]      The current login time is 2025-11-30 00:18:02.
+171639.542: [17:16:39]<Core-SW>
+171645.825: [17:16:45][202602192.168.231.1-黄埭-核心交换机-17:16:45]
+171645.872: [17:16:45]
+171645.873: [17:16:45]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+171645.913: [17:16:45]      The current login time is 2025-11-30 00:28:09.
+172646.018: [17:26:46]<Core-SW>
+172652.306: [17:26:52][202602192.168.231.1-黄埭-核心交换机-17:26:52]
+172652.359: [17:26:52]
+172652.360: [17:26:52]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+172652.400: [17:26:52]      The current login time is 2025-11-30 00:38:15.
+173652.484: [17:36:52]<Core-SW>
+173658.925: [17:36:58][202602192.168.231.1-黄埭-核心交换机-17:36:58]
+173658.977: [17:36:58]
+173658.978: [17:36:58]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+173659.020: [17:36:59]      The current login time is 2025-11-30 00:48:22.
+174659.083: [17:46:59]<Core-SW>
+174705.399: [17:47:05][202602192.168.231.1-黄埭-核心交换机-17:47:05]
+174705.506: [17:47:05]
+174705.507: [17:47:05]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+174705.520: [17:47:05]      The current login time is 2025-11-30 00:58:28.
+175705.582: [17:57:05]<Core-SW>
+175711.616: [17:57:11][202602192.168.231.1-黄埭-核心交换机-17:57:11]
+175711.652: [17:57:11]
+175711.653: [17:57:11]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+175711.721: [17:57:11]      The current login time is 2025-11-30 01:08:34.
+180711.803: [18:07:11]<Core-SW>
+180718.262: [18:07:18][202602192.168.231.1-黄埭-核心交换机-18:07:18]
+180718.298: [18:07:18]
+180718.299: [18:07:18]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+180718.384: [18:07:18]      The current login time is 2025-11-30 01:18:41.
+181718.512: [18:17:18]<Core-SW>
+181724.816: [18:17:24][202602192.168.231.1-黄埭-核心交换机-18:17:24]
+181724.862: [18:17:24]
+181724.862: [18:17:24]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+181724.897: [18:17:24]      The current login time is 2025-11-30 01:28:48.
+182724.943: [18:27:24]<Core-SW>
+182731.036: [18:27:31][202602192.168.231.1-黄埭-核心交换机-18:27:31]
+182731.078: [18:27:31]
+182731.078: [18:27:31]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+182731.120: [18:27:31]      The current login time is 2025-11-30 01:38:54.
+183731.174: [18:37:31]<Core-SW>
+183737.102: [18:37:37][202602192.168.231.1-黄埭-核心交换机-18:37:37]
+183737.148: [18:37:37]
+183737.149: [18:37:37]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+183737.191: [18:37:37]      The current login time is 2025-11-30 01:49:00.
+184737.254: [18:47:37]<Core-SW>
+184743.075: [18:47:43][202602192.168.231.1-黄埭-核心交换机-18:47:43]
+184743.126: [18:47:43]
+184743.127: [18:47:43]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+184743.160: [18:47:43]      The current login time is 2025-11-30 01:59:06.
+185743.413: [18:57:43]<Core-SW>
+185749.660: [18:57:49][202602192.168.231.1-黄埭-核心交换机-18:57:49]
+185749.721: [18:57:49]
+185749.721: [18:57:49]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+185749.753: [18:57:49]      The current login time is 2025-11-30 02:09:13.
+190749.823: [19:07:49]<Core-SW>
+190756.237: [19:07:56][202602192.168.231.1-黄埭-核心交换机-19:07:56]
+190756.286: [19:07:56]
+190756.287: [19:07:56]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+190756.348: [19:07:56]      The current login time is 2025-11-30 02:19:19.
+191756.557: [19:17:56]<Core-SW>
+191802.597: [19:18:02][202602192.168.231.1-黄埭-核心交换机-19:18:02]
+191802.650: [19:18:02]
+191802.651: [19:18:02]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+191802.707: [19:18:02]      The current login time is 2025-11-30 02:29:25.
+192802.770: [19:28:02]<Core-SW>
+192808.924: [19:28:08][202602192.168.231.1-黄埭-核心交换机-19:28:08]
+192808.995: [19:28:08]
+192808.999: [19:28:08]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+192809.035: [19:28:09]      The current login time is 2025-11-30 02:39:32.
+193809.283: [19:38:09]<Core-SW>
+193815.133: [19:38:15][202602192.168.231.1-黄埭-核心交换机-19:38:15]
+193815.204: [19:38:15]
+193815.208: [19:38:15]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+193815.246: [19:38:15]      The current login time is 2025-11-30 02:49:38.
+194815.392: [19:48:15]<Core-SW>
+194821.662: [19:48:21][202602192.168.231.1-黄埭-核心交换机-19:48:21]
+194821.701: [19:48:21]
+194821.706: [19:48:21]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+194821.741: [19:48:21]      The current login time is 2025-11-30 02:59:45.
+195821.906: [19:58:21]<Core-SW>
+195828.561: [19:58:28][202602192.168.231.1-黄埭-核心交换机-19:58:28]
+195828.611: [19:58:28]
+195828.612: [19:58:28]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+195828.707: [19:58:28]      The current login time is 2025-11-30 03:09:51.
+200828.760: [20:08:28]<Core-SW>
+200835.324: [20:08:35][202602192.168.231.1-黄埭-核心交换机-20:08:35]
+200835.371: [20:08:35]
+200835.372: [20:08:35]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+200835.411: [20:08:35]      The current login time is 2025-11-30 03:19:58.
+201835.463: [20:18:35]<Core-SW>
+201841.579: [20:18:41][202602192.168.231.1-黄埭-核心交换机-20:18:41]
+201841.641: [20:18:41]
+201841.641: [20:18:41]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+201841.673: [20:18:41]      The current login time is 2025-11-30 03:30:04.
+202841.770: [20:28:41]<Core-SW>
+202847.621: [20:28:47][202602192.168.231.1-黄埭-核心交换机-20:28:47]
+202847.665: [20:28:47]
+202847.668: [20:28:47]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+202847.729: [20:28:47]      The current login time is 2025-11-30 03:40:11.
+203847.884: [20:38:47]<Core-SW>
+203854.083: [20:38:54][202602192.168.231.1-黄埭-核心交换机-20:38:54]
+203854.134: [20:38:54]
+203854.141: [20:38:54]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+203854.182: [20:38:54]      The current login time is 2025-11-30 03:50:17.
+204854.408: [20:48:54]<Core-SW>
+204900.770: [20:49:00][202602192.168.231.1-黄埭-核心交换机-20:49:00]
+204900.822: [20:49:00]
+204900.822: [20:49:00]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+204900.856: [20:49:00]      The current login time is 2025-11-30 04:00:24.
+205901.025: [20:59:01]<Core-SW>
+205907.282: [20:59:07][202602192.168.231.1-黄埭-核心交换机-20:59:07]
+205907.339: [20:59:07]
+205907.339: [20:59:07]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+205907.387: [20:59:07]      The current login time is 2025-11-30 04:10:30.
+210907.449: [21:09:07]<Core-SW>
+210913.683: [21:09:13][202602192.168.231.1-黄埭-核心交换机-21:09:13]
+210913.745: [21:09:13]
+210913.745: [21:09:13]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+210913.868: [21:09:13]      The current login time is 2025-11-30 04:20:37.
+211913.859: [21:19:13]<Core-SW>
+211919.578: [21:19:19][202602192.168.231.1-黄埭-核心交换机-21:19:19]
+211919.647: [21:19:19]
+211919.648: [21:19:19]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+211919.722: [21:19:19]      The current login time is 2025-11-30 04:30:43.
+212919.867: [21:29:19]<Core-SW>
+212926.189: [21:29:26][202602192.168.231.1-黄埭-核心交换机-21:29:26]
+212926.230: [21:29:26]
+212926.235: [21:29:26]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+212926.274: [21:29:26]      The current login time is 2025-11-30 04:40:49.
+213926.363: [21:39:26]<Core-SW>
+213932.796: [21:39:32][202602192.168.231.1-黄埭-核心交换机-21:39:32]
+213932.844: [21:39:32]
+213932.845: [21:39:32]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+213932.884: [21:39:32]      The current login time is 2025-11-30 04:50:56.
+214932.931: [21:49:32]<Core-SW>
+214939.067: [21:49:39][202602192.168.231.1-黄埭-核心交换机-21:49:39]
+214939.130: [21:49:39]
+214939.130: [21:49:39]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+214939.221: [21:49:39]      The current login time is 2025-11-30 05:01:02.
+215939.217: [21:59:39]<Core-SW>
+215945.212: [21:59:45][202602192.168.231.1-黄埭-核心交换机-21:59:45]
+215945.348: [21:59:45]
+215945.348: [21:59:45]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+215945.394: [21:59:45]      The current login time is 2025-11-30 05:11:08.
+220945.457: [22:09:45]<Core-SW>
+220951.570: [22:09:51][202602192.168.231.1-黄埭-核心交换机-22:09:51]
+220951.649: [22:09:51]
+220951.649: [22:09:51]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+220951.682: [22:09:51]      The current login time is 2025-11-30 05:21:15.
+221951.729: [22:19:51]<Core-SW>
+221957.681: [22:19:57][202602192.168.231.1-黄埭-核心交换机-22:19:57]
+221957.731: [22:19:57]
+221957.735: [22:19:57]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 2.
+221957.772: [22:19:57]      The current login time is 2025-11-30 05:31:21.
+222957.822: [22:29:57]<Core-SW>
+223003.705: [22:30:03][202602192.168.231.1-黄埭-核心交换机-22:30:03]
+223003.761: [22:30:03]
+223003.761: [22:30:03]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+223003.793: [22:30:03]      The current login time is 2025-11-30 05:41:27.
+224003.849: [22:40:03]<Core-SW>
+224009.716: [22:40:09][202602192.168.231.1-黄埭-核心交换机-22:40:09]
+224009.768: [22:40:09]
+224009.769: [22:40:09]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+224009.799: [22:40:09]      The current login time is 2025-11-30 05:51:33.
+225009.973: [22:50:09]<Core-SW>
+225016.481: [22:50:16][202602192.168.231.1-黄埭-核心交换机-22:50:16]
+225016.548: [22:50:16]
+225016.548: [22:50:16]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+225016.578: [22:50:16]      The current login time is 2025-11-30 06:01:39.
+230016.696: [23:00:16]<Core-SW>
+230022.856: [23:00:22][202602192.168.231.1-黄埭-核心交换机-23:00:22]
+230022.907: [23:00:22]
+230022.908: [23:00:22]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+230022.944: [23:00:22]      The current login time is 2025-11-30 06:11:46.
+231023.187: [23:10:23]<Core-SW>
+231029.479: [23:10:29][202602192.168.231.1-黄埭-核心交换机-23:10:29]
+231029.529: [23:10:29]
+231029.533: [23:10:29]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+231029.585: [23:10:29]      The current login time is 2025-11-30 06:21:53.
+232029.735: [23:20:29]<Core-SW>
+232035.640: [23:20:35][202602192.168.231.1-黄埭-核心交换机-23:20:35]
+232035.748: [23:20:35]
+232035.749: [23:20:35]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+232035.800: [23:20:35]      The current login time is 2025-11-30 06:31:59.
+233035.947: [23:30:35]<Core-SW>
+233042.112: [23:30:42][202602192.168.231.1-黄埭-核心交换机-23:30:42]
+233042.163: [23:30:42]
+233042.174: [23:30:42]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+233042.207: [23:30:42]      The current login time is 2025-11-30 06:42:05.
+234042.466: [23:40:42]<Core-SW>
+234048.717: [23:40:48][202602192.168.231.1-黄埭-核心交换机-23:40:48]
+234048.763: [23:40:48]
+234048.768: [23:40:48]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+234048.805: [23:40:48]      The current login time is 2025-11-30 06:52:12.
+235048.881: [23:50:48]<Core-SW>
+235055.138: [23:50:55][202602192.168.231.1-黄埭-核心交换机-23:50:55]
+235055.182: [23:50:55]
+235055.183: [23:50:55]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+235055.296: [23:50:55]      The current login time is 2025-11-30 07:02:18.

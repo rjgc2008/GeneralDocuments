@@ -1,0 +1,482 @@
+﻿094113.919: [09:41:13][202602200-B-A08-25GE接入TCP交换机-192.168.101.20-09:41:13]
+094114.181: [09:41:14]
+110455.604: [11:04:55][202602200-B-A08-25GE接入TCP交换机-192.168.101.20-11:04:55]
+110455.845: [11:04:55]
+110457.011: [11:04:57]TCP_A08_39U# 
+110505.336: [11:05:05]TCP_A08_39U# sys
+110506.100: [11:05:06]TCP_A08_39U# sys
+110506.100: [11:05:06]% Ambiguous command:  "sys"
+110507.150: [11:05:07]TCP_A08_39U# 
+110507.301: [11:05:07]TCP_A08_39U# 
+110508.048: [11:05:08]TCP_A08_39U# ll
+110508.048: [11:05:08]              ^
+110508.048: [11:05:08]% Invalid input detected at '^' marker.
+110508.048: [11:05:08]
+110509.775: [11:05:09]TCP_A08_39U# disp
+110511.514: [11:05:11]TCP_A08_39U# disppl
+110512.523: [11:05:12]TCP_A08_39U# disp
+110535.408: [11:05:35]TCP_A08_39U# show ipr
+110536.083: [11:05:36]TCP_A08_39U# show ip
+110536.083: [11:05:36]ip            ip-intercept  ipfix         ipv6          
+110541.712: [11:05:41]TCP_A08_39U# show con
+110542.283: [11:05:42]TCP_A08_39U# show con
+110542.421: [11:05:42]TCP_A08_39U# show con
+110720.005: [11:07:20]TCP_A08_39U# configure terminal 
+110720.037: [11:07:20]Enter configuration commands, one per line.  End with CNTL/Z.
+110727.895: [11:07:27]TCP_A08_39U(config)# 
+110728.109: [11:07:28]TCP_A08_39U(config)# 
+110849.167: [11:08:49]TCP_A08_39U(config)# show running-config 
+110849.201: [11:08:49]Building configuration...
+110849.209: [11:08:49]version 10.011.003.71
+110849.209: [11:08:49]!
+110849.209: [11:08:49]service password-encryption
+110849.210: [11:08:49]!
+110849.210: [11:08:49]!
+110849.210: [11:08:49]clock set timezone BeiJing add 08 00 00
+110849.210: [11:08:49]!
+110849.210: [11:08:49]hostname TCP_A08_39U
+110849.210: [11:08:49]!
+110849.210: [11:08:49]!
+110849.210: [11:08:49]username admin privilege 4 password 8 e25bba7ce53dddeffbbc065100a19ce6
+110849.210: [11:08:49]!
+110849.210: [11:08:49]!
+110849.210: [11:08:49]ipv6 enable
+110849.210: [11:08:49]management ip address 192.168.101.20/22
+110849.211: [11:08:49]management route add gateway 192.168.100.1
+110849.211: [11:08:49]ip ssh server enable
+110849.211: [11:08:49]!
+110849.211: [11:08:49]snmp-server enable 
+110849.211: [11:08:49]snmp-server community public read-only 
+110849.211: [11:08:49]!
+110849.211: [11:08:49]!
+110849.211: [11:08:49]vlan database
+110849.211: [11:08:49] vlan 50,52,60,80,230
+110849.211: [11:08:49]!
+110849.211: [11:08:49]
+110849.211: [11:08:49]interface eth-0-1
+110849.212: [11:08:49] speed 25G
+110849.212: [11:08:49] duplex full
+110849.212: [11:08:49] switchport access vlan 60
+110849.212: [11:08:49] channel-group 1 mode active
+110849.212: [11:08:49]!
+110849.212: [11:08:49]interface eth-0-2
+110849.212: [11:08:49] speed 25G
+110849.212: [11:08:49] duplex full
+110849.212: [11:08:49] switchport access vlan 60
+110852.197: [11:08:52] channel-group 1 mode active
+110852.197: [11:08:52]!
+110852.197: [11:08:52]interface eth-0-3
+110852.197: [11:08:52] speed 25G
+110852.197: [11:08:52] duplex full
+110852.197: [11:08:52] switchport access vlan 60
+110852.197: [11:08:52] channel-group 3 mode active
+110852.197: [11:08:52]!
+110852.197: [11:08:52]interface eth-0-4
+110852.197: [11:08:52] speed 25G
+110852.197: [11:08:52] duplex full
+110852.197: [11:08:52] switchport access vlan 60
+110852.197: [11:08:52] channel-group 3 mode active
+110852.197: [11:08:52]!
+110852.197: [11:08:52]interface eth-0-5
+110852.197: [11:08:52] speed 25G
+110852.197: [11:08:52] duplex full
+110852.197: [11:08:52] switchport access vlan 60
+110852.203: [11:08:52] channel-group 5 mode active
+110852.203: [11:08:52]!
+110852.203: [11:08:52]interface eth-0-6
+110852.203: [11:08:52] speed 25G
+110852.203: [11:08:52] duplex full
+110852.203: [11:08:52] switchport access vlan 60
+110852.203: [11:08:52] channel-group 5 mode active
+110852.203: [11:08:52]!
+110852.203: [11:08:52]interface eth-0-7
+110852.203: [11:08:52] speed 25G
+110852.203: [11:08:52] duplex full
+110852.203: [11:08:52] switchport access vlan 60
+110852.203: [11:08:52] channel-group 7 mode active
+110852.204: [11:08:52]!
+110852.204: [11:08:52]interface eth-0-8
+110852.204: [11:08:52] speed 25G
+110852.204: [11:08:52] duplex full
+110852.204: [11:08:52] switchport access vlan 60
+110852.204: [11:08:52] channel-group 7 mode active
+110852.602: [11:08:52]!
+110852.602: [11:08:52]interface eth-0-9
+110852.602: [11:08:52] speed 25G
+110852.602: [11:08:52] duplex full
+110852.602: [11:08:52] switchport access vlan 60
+110852.602: [11:08:52] channel-group 9 mode active
+110852.602: [11:08:52]!
+110852.602: [11:08:52]interface eth-0-10
+110852.602: [11:08:52] speed 25G
+110852.602: [11:08:52] duplex full
+110852.602: [11:08:52] switchport access vlan 60
+110852.602: [11:08:52] channel-group 9 mode active
+110852.602: [11:08:52]!
+110852.602: [11:08:52]interface eth-0-11
+110852.602: [11:08:52] speed 25G
+110852.602: [11:08:52] duplex full
+110852.602: [11:08:52] switchport access vlan 60
+110852.602: [11:08:52] channel-group 11 mode active
+110852.602: [11:08:52]!
+110852.602: [11:08:52]interface eth-0-12
+110852.603: [11:08:52] speed 25G
+110852.603: [11:08:52] duplex full
+110852.603: [11:08:52] switchport access vlan 60
+110852.603: [11:08:52] channel-group 11 mode active
+110852.603: [11:08:52]!
+110852.603: [11:08:52]interface eth-0-13
+110852.603: [11:08:52] speed 25G
+110852.603: [11:08:52] duplex full
+110852.603: [11:08:52] switchport access vlan 60
+110852.603: [11:08:52] channel-group 13 mode active
+110852.603: [11:08:52]!
+110852.603: [11:08:52]interface eth-0-14
+110852.603: [11:08:52] speed 25G
+110852.603: [11:08:52] duplex full
+110852.603: [11:08:52] switchport access vlan 60
+110852.603: [11:08:52] channel-group 13 mode active
+110852.603: [11:08:52]!
+110852.812: [11:08:52]interface eth-0-15
+110852.812: [11:08:52] speed 25G
+110852.812: [11:08:52] duplex full
+110852.812: [11:08:52] switchport access vlan 60
+110852.812: [11:08:52] channel-group 15 mode active
+110852.812: [11:08:52]!
+110852.812: [11:08:52]interface eth-0-16
+110852.812: [11:08:52] speed 25G
+110852.812: [11:08:52] duplex full
+110852.812: [11:08:52] switchport access vlan 60
+110852.812: [11:08:52] channel-group 15 mode active
+110852.812: [11:08:52]!
+110852.812: [11:08:52]interface eth-0-17
+110852.812: [11:08:52] speed 25G
+110852.812: [11:08:52] duplex full
+110852.812: [11:08:52] switchport access vlan 60
+110852.812: [11:08:52] channel-group 17 mode active
+110852.812: [11:08:52]!
+110852.812: [11:08:52]interface eth-0-18
+110852.812: [11:08:52] speed 25G
+110852.812: [11:08:52] duplex full
+110852.812: [11:08:52] switchport access vlan 60
+110852.812: [11:08:52] channel-group 17 mode active
+110852.813: [11:08:52]!
+110852.813: [11:08:52]interface eth-0-19
+110852.813: [11:08:52] speed 25G
+110852.813: [11:08:52] duplex full
+110852.813: [11:08:52] switchport access vlan 60
+110852.813: [11:08:52] channel-group 19 mode active
+110852.813: [11:08:52]!
+110852.813: [11:08:52]interface eth-0-20
+110852.813: [11:08:52] speed 25G
+110852.813: [11:08:52] duplex full
+110852.813: [11:08:52] switchport access vlan 60
+110852.813: [11:08:52] channel-group 19 mode active
+110852.813: [11:08:52]!
+110852.813: [11:08:52]interface eth-0-21
+110853.022: [11:08:53] speed 25G
+110853.022: [11:08:53] duplex full
+110853.026: [11:08:53] switchport access vlan 60
+110853.026: [11:08:53] channel-group 21 mode active
+110853.027: [11:08:53]!
+110853.027: [11:08:53]interface eth-0-22
+110853.027: [11:08:53] speed 25G
+110853.027: [11:08:53] duplex full
+110853.027: [11:08:53] switchport access vlan 60
+110853.027: [11:08:53] channel-group 21 mode active
+110853.027: [11:08:53]!
+110853.027: [11:08:53]interface eth-0-23
+110853.027: [11:08:53] speed 25G
+110853.027: [11:08:53] duplex full
+110853.027: [11:08:53] switchport access vlan 80
+110853.027: [11:08:53] channel-group 23 mode active
+110853.027: [11:08:53]!
+110853.027: [11:08:53]interface eth-0-24
+110853.027: [11:08:53] speed 25G
+110853.027: [11:08:53] duplex full
+110853.027: [11:08:53] switchport access vlan 80
+110853.027: [11:08:53] channel-group 23 mode active
+110853.027: [11:08:53]!
+110853.027: [11:08:53]interface eth-0-25
+110853.027: [11:08:53] speed 25G
+110853.027: [11:08:53] duplex full
+110853.028: [11:08:53] switchport access vlan 80
+110853.028: [11:08:53] channel-group 25 mode active
+110853.028: [11:08:53]!
+110853.028: [11:08:53]interface eth-0-26
+110853.028: [11:08:53] speed 25G
+110853.028: [11:08:53] duplex full
+110853.028: [11:08:53] switchport access vlan 80
+110853.028: [11:08:53] channel-group 25 mode active
+110853.028: [11:08:53]!
+110853.028: [11:08:53]interface eth-0-27
+110853.028: [11:08:53] speed 25G
+110853.249: [11:08:53] duplex full
+110853.250: [11:08:53] switchport access vlan 80
+110853.250: [11:08:53] channel-group 27 mode active
+110853.250: [11:08:53]!
+110853.250: [11:08:53]interface eth-0-28
+110853.250: [11:08:53] speed 25G
+110853.250: [11:08:53] duplex full
+110853.250: [11:08:53] switchport access vlan 80
+110853.250: [11:08:53] channel-group 27 mode active
+110853.250: [11:08:53]!
+110853.250: [11:08:53]interface eth-0-29
+110853.250: [11:08:53] speed 25G
+110853.250: [11:08:53] duplex full
+110853.250: [11:08:53] switchport access vlan 80
+110853.250: [11:08:53] channel-group 29 mode active
+110853.250: [11:08:53]!
+110853.250: [11:08:53]interface eth-0-30
+110853.250: [11:08:53] speed 25G
+110853.250: [11:08:53] duplex full
+110853.250: [11:08:53] switchport access vlan 80
+110853.250: [11:08:53] channel-group 29 mode active
+110853.250: [11:08:53]!
+110853.250: [11:08:53]interface eth-0-31
+110853.250: [11:08:53] speed 25G
+110853.250: [11:08:53] duplex full
+110853.250: [11:08:53] switchport access vlan 80
+110853.250: [11:08:53] channel-group 31 mode active
+110853.250: [11:08:53]!
+110853.250: [11:08:53]interface eth-0-32
+110853.250: [11:08:53] speed 25G
+110853.250: [11:08:53] duplex full
+110853.250: [11:08:53] switchport access vlan 80
+110853.250: [11:08:53] channel-group 31 mode active
+110853.250: [11:08:53]!
+110853.250: [11:08:53]interface eth-0-33
+110853.250: [11:08:53] speed 25G
+110853.250: [11:08:53] duplex full
+110853.442: [11:08:53] switchport access vlan 80
+110853.442: [11:08:53] channel-group 33 mode active
+110853.442: [11:08:53]!
+110853.447: [11:08:53]interface eth-0-34
+110853.447: [11:08:53] speed 25G
+110853.447: [11:08:53] duplex full
+110853.448: [11:08:53] switchport access vlan 80
+110853.448: [11:08:53] channel-group 33 mode active
+110853.448: [11:08:53]!
+110853.448: [11:08:53]interface eth-0-35
+110853.448: [11:08:53] speed 25G
+110853.448: [11:08:53] duplex full
+110853.448: [11:08:53] switchport access vlan 80
+110853.448: [11:08:53] channel-group 35 mode active
+110853.448: [11:08:53]!
+110853.448: [11:08:53]interface eth-0-36
+110853.448: [11:08:53] speed 25G
+110853.448: [11:08:53] duplex full
+110853.448: [11:08:53] switchport access vlan 80
+110853.448: [11:08:53] channel-group 35 mode active
+110853.448: [11:08:53]!
+110853.448: [11:08:53]interface eth-0-37
+110853.448: [11:08:53] speed 25G
+110853.448: [11:08:53] duplex full
+110853.448: [11:08:53] switchport access vlan 80
+110853.448: [11:08:53] channel-group 37 mode active
+110853.448: [11:08:53]!
+110853.448: [11:08:53]interface eth-0-38
+110853.449: [11:08:53] speed 25G
+110853.449: [11:08:53] duplex full
+110853.449: [11:08:53] switchport access vlan 80
+110853.449: [11:08:53] channel-group 37 mode active
+110853.449: [11:08:53]!
+110853.449: [11:08:53]interface eth-0-39
+110853.449: [11:08:53] speed 25G
+110853.449: [11:08:53] duplex full
+110853.449: [11:08:53] switchport access vlan 80
+110853.609: [11:08:53] channel-group 39 mode active
+110853.609: [11:08:53]!
+110853.609: [11:08:53]interface eth-0-40
+110853.609: [11:08:53] speed 25G
+110853.609: [11:08:53] duplex full
+110853.609: [11:08:53] switchport access vlan 80
+110853.609: [11:08:53] channel-group 39 mode active
+110853.609: [11:08:53]!
+110853.609: [11:08:53]interface eth-0-41
+110853.609: [11:08:53] speed 25G
+110853.609: [11:08:53] duplex full
+110853.609: [11:08:53] switchport access vlan 80
+110853.609: [11:08:53] channel-group 41 mode active
+110853.609: [11:08:53]!
+110853.609: [11:08:53]interface eth-0-42
+110853.609: [11:08:53] speed 25G
+110853.609: [11:08:53] duplex full
+110853.609: [11:08:53] switchport access vlan 80
+110853.609: [11:08:53] channel-group 41 mode active
+110853.609: [11:08:53]!
+110853.609: [11:08:53]interface eth-0-43
+110853.609: [11:08:53] speed 25G
+110853.609: [11:08:53] duplex full
+110853.609: [11:08:53] switchport access vlan 80
+110853.609: [11:08:53] channel-group 43 mode active
+110853.609: [11:08:53]!
+110853.609: [11:08:53]interface eth-0-44
+110853.609: [11:08:53] speed 25G
+110853.609: [11:08:53] duplex full
+110853.610: [11:08:53] switchport access vlan 80
+110853.610: [11:08:53] channel-group 43 mode active
+110853.610: [11:08:53]!
+110853.610: [11:08:53]interface eth-0-45
+110853.610: [11:08:53] speed 25G
+110853.610: [11:08:53] duplex full
+110853.610: [11:08:53] switchport access vlan 80
+110853.610: [11:08:53] channel-group 45 mode active
+110854.111: [11:08:54]!
+110854.111: [11:08:54]interface eth-0-46
+110854.111: [11:08:54] speed 25G
+110854.111: [11:08:54] duplex full
+110854.111: [11:08:54] switchport access vlan 80
+110854.111: [11:08:54] channel-group 45 mode active
+110854.111: [11:08:54]!
+110854.111: [11:08:54]interface eth-0-47
+110854.111: [11:08:54] speed 1000
+110854.111: [11:08:54] duplex full
+110854.111: [11:08:54] switchport access vlan 80
+110854.111: [11:08:54]!
+110854.111: [11:08:54]interface eth-0-48
+110854.111: [11:08:54] speed auto
+110854.111: [11:08:54]!
+110854.111: [11:08:54]interface eth-0-49
+110854.111: [11:08:54] switchport mode trunk
+110854.111: [11:08:54] switchport trunk allowed vlan add 1,50,52,60,80
+110854.111: [11:08:54] channel-group 54 mode active
+110854.112: [11:08:54]!
+110854.112: [11:08:54]interface eth-0-50
+110854.112: [11:08:54] switchport mode trunk
+110854.112: [11:08:54] switchport trunk allowed vlan add 1,50,52,60,80
+110854.112: [11:08:54] channel-group 54 mode active
+110854.112: [11:08:54]!
+110854.112: [11:08:54]interface eth-0-51
+110854.112: [11:08:54] switchport mode trunk
+110854.112: [11:08:54] switchport trunk allowed vlan add 1,50,52,230
+110854.112: [11:08:54] channel-group 55 mode active
+110854.112: [11:08:54]!
+110854.112: [11:08:54]interface eth-0-52
+110854.112: [11:08:54] switchport mode trunk
+110854.112: [11:08:54] switchport trunk allowed vlan add 1,50,52,230
+110854.112: [11:08:54] channel-group 55 mode active
+110854.112: [11:08:54]!
+110854.112: [11:08:54]interface eth-0-53
+110854.112: [11:08:54]!
+110854.193: [11:08:54]interface eth-0-54
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface eth-0-55
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface eth-0-56
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg1
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg3
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg5
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg7
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg9
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg11
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg13
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg15
+110854.193: [11:08:54] switchport access vlan 60
+110854.193: [11:08:54]!
+110854.193: [11:08:54]interface agg17
+110854.193: [11:08:54] switchport access vlan 60
+110854.194: [11:08:54]!
+110854.194: [11:08:54]interface agg19
+110854.194: [11:08:54] switchport access vlan 60
+110854.194: [11:08:54]!
+110854.194: [11:08:54]interface agg21
+110854.276: [11:08:54] switchport access vlan 60
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg23
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg25
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg27
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg29
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg31
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg33
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg35
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg37
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg39
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg41
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg43
+110854.276: [11:08:54] switchport access vlan 80
+110854.276: [11:08:54]!
+110854.276: [11:08:54]interface agg45
+110854.276: [11:08:54] switchport access vlan 80
+110854.360: [11:08:54]!
+110854.360: [11:08:54]interface agg54
+110854.360: [11:08:54] switchport mode trunk
+110854.361: [11:08:54] switchport trunk allowed vlan add 1,50,52,60,80
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface agg55
+110854.361: [11:08:54] switchport mode trunk
+110854.361: [11:08:54] switchport trunk allowed vlan add 1,50,52,230
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface vlan1
+110854.361: [11:08:54] ip address 192.168.100.1/22
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface vlan50
+110854.361: [11:08:54] ip address 10.50.0.1/24
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface vlan52
+110854.361: [11:08:54] ip address 10.52.0.1/24
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface vlan60
+110854.361: [11:08:54] ip address 10.60.0.1/24
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface vlan80
+110854.361: [11:08:54] ip address 10.80.0.1/24
+110854.361: [11:08:54]!
+110854.361: [11:08:54]interface vlan230
+110854.361: [11:08:54] ip address 192.168.230.2/30
+110854.361: [11:08:54]!
+110854.361: [11:08:54]ip route 0.0.0.0/0 192.168.230.1
+110854.361: [11:08:54]!
+110854.361: [11:08:54]!
+110854.361: [11:08:54]logging operate enable
+110854.361: [11:08:54]!
+110854.361: [11:08:54]lldp enable
+110854.361: [11:08:54]!
+110854.361: [11:08:54]!
+110854.361: [11:08:54]line con 0
+110854.361: [11:08:54] no line-password
+110854.446: [11:08:54] no login
+110854.446: [11:08:54]line vty 0 7
+110854.454: [11:08:54] exec-timeout 35791 0
+110854.454: [11:08:54] privilege level 4
+110854.454: [11:08:54] no line-password
+110854.454: [11:08:54] login local
+110854.454: [11:08:54]!
+110854.454: [11:08:54]!
+110854.454: [11:08:54]end
+110854.454: [11:08:54]

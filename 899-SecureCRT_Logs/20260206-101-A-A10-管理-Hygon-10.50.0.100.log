@@ -1,0 +1,117 @@
+﻿112536.584: [11:25:36][202602101-A-A10-管理-Hygon-10.50.0.100-11:25:36]
+112536.604: [11:25:36]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-56-generic x86_64)
+112536.604: [11:25:36]
+112536.604: [11:25:36] * Documentation:  https://help.ubuntu.com
+112536.604: [11:25:36] * Management:     https://landscape.canonical.com
+112536.604: [11:25:36] * Support:        https://ubuntu.com/pro
+112536.604: [11:25:36]
+112536.605: [11:25:36] System information as of Fri Feb  6 11:25:42 AM CST 2026
+112536.605: [11:25:36]
+112536.605: [11:25:36]  System load:                    0.0
+112536.605: [11:25:36]  Usage of /home:                 1.2% of 301.20GB
+112536.605: [11:25:36]  Memory usage:                   1%
+112536.605: [11:25:36]  Swap usage:                     0%
+112536.605: [11:25:36]  Temperature:                    58.0 C
+112536.605: [11:25:36]  Processes:                      1114
+112536.605: [11:25:36]  Users logged in:                0
+112536.605: [11:25:36]  IPv4 address for enp161s0f0np0: 10.50.0.100
+112536.605: [11:25:36]
+112536.605: [11:25:36]
+112536.605: [11:25:36]Expanded Security Maintenance for Applications is not enabled.
+112536.605: [11:25:36]
+112536.605: [11:25:36]55 updates can be applied immediately.
+112536.605: [11:25:36]To see these additional updates run: apt list --upgradable
+112536.605: [11:25:36]
+112536.605: [11:25:36]1 additional security update can be applied with ESM Apps.
+112536.605: [11:25:36]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+112536.605: [11:25:36]
+112536.605: [11:25:36]
+112536.605: [11:25:36]The list of available updates is more than a week old.
+112536.605: [11:25:36]To check for new updates run: sudo apt update
+112536.605: [11:25:36]
+112536.605: [11:25:36]Last login: Wed Feb  4 15:06:38 2026 from 192.168.4.48
+112536.715: [11:25:36]module: command not found
+112536.837: [11:25:36]module: command not found
+112536.986: [11:25:36]module: command not found
+112543.155: [11:25:43]root@suzhouproda100:~# ping www.baidu.com
+112549.074: [11:25:49]^C
+112554.286: [11:25:54]root@suzhouproda100:~# ping www.baidu.com
+112554.697: [11:25:54]^C
+112557.686: [11:25:57]root@suzhouproda100:~# ping 172.16.101.1
+112557.690: [11:25:57]PING 172.16.101.1 (172.16.101.1) 56(84) bytes of data.
+112557.693: [11:25:57]64 bytes from 172.16.101.1: icmp_seq=1 ttl=60 time=2.72 ms
+112558.696: [11:25:58]64 bytes from 172.16.101.1: icmp_seq=2 ttl=60 time=2.43 ms
+112559.403: [11:25:59]^C
+112559.403: [11:25:59]--- 172.16.101.1 ping statistics ---
+112559.403: [11:25:59]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+112559.403: [11:25:59]rtt min/avg/max/mdev = 2.430/2.572/2.715/0.142 ms
+112633.821: [11:26:33]root@suzhouproda100:~# ping 172.16.101.1
+112633.824: [11:26:33]PING 172.16.101.1 (172.16.101.1) 56(84) bytes of data.
+112633.828: [11:26:33]64 bytes from 172.16.101.1: icmp_seq=1 ttl=60 time=2.87 ms
+112634.833: [11:26:34]64 bytes from 172.16.101.1: icmp_seq=2 ttl=60 time=2.55 ms
+112635.830: [11:26:35]64 bytes from 172.16.101.1: icmp_seq=3 ttl=60 time=2.39 ms
+112636.833: [11:26:36]64 bytes from 172.16.101.1: icmp_seq=4 ttl=60 time=2.32 ms
+112636.917: [11:26:36]^C
+112636.917: [11:26:36]--- 172.16.101.1 ping statistics ---
+112636.917: [11:26:36]4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+112636.917: [11:26:36]rtt min/avg/max/mdev = 2.318/2.531/2.871/0.213 ms
+112926.994: [11:29:26]root@suzhouproda100:~# ping 172.16.101.107
+112926.995: [11:29:26]PING 172.16.101.107 (172.16.101.107) 56(84) bytes of data.
+112927.001: [11:29:27]64 bytes from 172.16.101.107: icmp_seq=1 ttl=59 time=1.65 ms
+112928.001: [11:29:28]64 bytes from 172.16.101.107: icmp_seq=2 ttl=59 time=1.53 ms
+112929.000: [11:29:29]64 bytes from 172.16.101.107: icmp_seq=3 ttl=59 time=1.45 ms
+112930.028: [11:29:30]64 bytes from 172.16.101.107: icmp_seq=4 ttl=59 time=1.48 ms
+112931.002: [11:29:31]64 bytes from 172.16.101.107: icmp_seq=5 ttl=59 time=1.42 ms
+112931.166: [11:29:31]^C
+112931.166: [11:29:31]--- 172.16.101.107 ping statistics ---
+112931.166: [11:29:31]5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+112931.166: [11:29:31]rtt min/avg/max/mdev = 1.422/1.506/1.646/0.078 ms
+113307.865: [11:33:07]root@suzhouproda100:~# ping 172.16.101.107
+113307.882: [11:33:07]PING 172.16.101.107 (172.16.101.107) 56(84) bytes of data.
+113307.882: [11:33:07]64 bytes from 172.16.101.107: icmp_seq=1 ttl=59 time=1.59 ms
+113308.406: [11:33:08]^C
+113308.406: [11:33:08]--- 172.16.101.107 ping statistics ---
+113308.406: [11:33:08]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+113308.406: [11:33:08]rtt min/avg/max/mdev = 1.593/1.593/1.593/0.000 ms
+113311.956: [11:33:11]root@suzhouproda100:~# ping 172.16.208.2
+113311.974: [11:33:11]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+113311.974: [11:33:11]64 bytes from 172.16.208.2: icmp_seq=1 ttl=59 time=1.83 ms
+113312.794: [11:33:12]^C
+113312.794: [11:33:12]--- 172.16.208.2 ping statistics ---
+113312.795: [11:33:12]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+113312.795: [11:33:12]rtt min/avg/max/mdev = 1.829/1.829/1.829/0.000 ms
+113318.929: [11:33:18]root@suzhouproda100:~# ping 172.16.209.31
+113318.944: [11:33:18]PING 172.16.209.31 (172.16.209.31) 56(84) bytes of data.
+113318.944: [11:33:18]64 bytes from 172.16.209.31: icmp_seq=1 ttl=59 time=1.68 ms
+113319.756: [11:33:19]^C
+113319.756: [11:33:19]--- 172.16.209.31 ping statistics ---
+113319.756: [11:33:19]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+113319.756: [11:33:19]rtt min/avg/max/mdev = 1.679/1.679/1.679/0.000 ms
+114448.321: [11:44:48]root@suzhouproda100:~# 
+114448.402: [11:44:48]root@suzhouproda100:~# 
+114454.409: [11:44:54]root@suzhouproda100:~# ping 10.50.0.100
+114454.409: [11:44:54]PING 10.50.0.100 (10.50.0.100) 56(84) bytes of data.
+114454.409: [11:44:54]64 bytes from 10.50.0.100: icmp_seq=1 ttl=64 time=0.053 ms
+114454.870: [11:44:54]^C
+114454.870: [11:44:54]--- 10.50.0.100 ping statistics ---
+114454.870: [11:44:54]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+114454.870: [11:44:54]rtt min/avg/max/mdev = 0.053/0.053/0.053/0.000 ms
+114455.568: [11:44:55]root@suzhouproda100:~# ping 10.50.0.101
+114455.582: [11:44:55]PING 10.50.0.101 (10.50.0.101) 56(84) bytes of data.
+114455.582: [11:44:55]64 bytes from 10.50.0.101: icmp_seq=1 ttl=64 time=0.164 ms
+114456.061: [11:44:56]\^C
+114456.061: [11:44:56]--- 10.50.0.101 ping statistics ---
+114456.061: [11:44:56]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+114456.062: [11:44:56]rtt min/avg/max/mdev = 0.164/0.164/0.164/0.000 ms
+114456.813: [11:44:56]root@suzhouproda100:~# ping 10.50.0.102
+114456.828: [11:44:56]PING 10.50.0.102 (10.50.0.102) 56(84) bytes of data.
+114459.891: [11:44:59]From 10.50.0.100 icmp_seq=1 Destination Host Unreachable
+114459.891: [11:44:59]From 10.50.0.100 icmp_seq=2 Destination Host Unreachable
+114459.891: [11:44:59]From 10.50.0.100 icmp_seq=3 Destination Host Unreachable
+114502.962: [11:45:02]From 10.50.0.100 icmp_seq=4 Destination Host Unreachable
+114502.962: [11:45:02]From 10.50.0.100 icmp_seq=5 Destination Host Unreachable
+114502.962: [11:45:02]From 10.50.0.100 icmp_seq=6 Destination Host Unreachable
+114503.598: [11:45:03]^C
+114503.598: [11:45:03]--- 10.50.0.102 ping statistics ---
+114503.598: [11:45:03]7 packets transmitted, 0 received, +6 errors, 100% packet loss, time 6145ms
+114503.598: [11:45:03]pipe 4

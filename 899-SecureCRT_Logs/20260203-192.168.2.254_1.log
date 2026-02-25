@@ -1,0 +1,1422 @@
+﻿183716.403: [18:37:16][202602192.168.2.254-18:37:16]
+183716.886: [18:37:16]
+183717.112: [18:37:17]
+183717.431: [18:37:17]
+183717.432: [18:37:17]******************************************************************************
+183717.432: [18:37:17]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+183717.432: [18:37:17]* Without the owner's prior written consent,                                 *
+183717.432: [18:37:17]* no decompiling or reverse-engineering shall be allowed.                    *
+183717.432: [18:37:17]******************************************************************************
+183717.432: [18:37:17]
+183717.887: [18:37:17]
+183718.053: [18:37:18]
+183718.240: [18:37:18]<H3C>
+183718.240: [18:37:18]<H3C>
+183718.242: [18:37:18]<H3C>
+183718.242: [18:37:18]<H3C>
+183720.853: [18:37:20]<H3C>disp cu
+183721.401: [18:37:21]<H3C>disp current-configuration 
+183721.463: [18:37:21]#
+183721.464: [18:37:21] version 7.1.064, Release 9590P18
+183721.464: [18:37:21]#
+183721.464: [18:37:21] sysname H3C
+183721.464: [18:37:21]#
+183721.464: [18:37:21] clock protocol none
+183721.464: [18:37:21]#
+183721.466: [18:37:21]wlan global-configuration
+183721.466: [18:37:21]#
+183721.467: [18:37:21] irf mac-address persistent always
+183721.467: [18:37:21] irf auto-update enable
+183721.467: [18:37:21] undo irf link-delay
+183721.471: [18:37:21] irf member 1 priority 1
+183721.471: [18:37:21]#
+183721.471: [18:37:21] ip pool aa 10.6.0.100 10.6.0.200 
+183721.471: [18:37:21] ip pool aa gateway 10.6.0.1 
+183721.471: [18:37:21]#
+183721.473: [18:37:21] dhcp enable
+183721.473: [18:37:21] dhcp server always-broadcast
+183721.473: [18:37:21]#
+183721.473: [18:37:21] dns proxy enable
+183721.473: [18:37:21] dns server 112.4.0.55
+183721.473: [18:37:21] dns server 114.114.114.114
+183724.282: [18:37:24] ip host quicknet.h3c.com 192.168.2.254
+183724.282: [18:37:24]#
+183724.282: [18:37:24] lldp global enable
+183724.282: [18:37:24]#
+183724.282: [18:37:24] password-recovery enable
+183724.282: [18:37:24]#
+183724.282: [18:37:24]vlan 1
+183724.282: [18:37:24]#
+183724.282: [18:37:24]object-group ip address test
+183724.282: [18:37:24] 0 network subnet 172.16.208.2 255.255.255.255
+183724.282: [18:37:24] 10 network subnet 192.168.8.77 255.255.255.255
+183724.282: [18:37:24]#
+183724.282: [18:37:24]dhcp server ip-pool lan1
+183724.282: [18:37:24] gateway-list 192.168.0.1
+183724.282: [18:37:24] network 192.168.0.0 mask 255.255.255.0
+183724.282: [18:37:24] address range 192.168.0.2 192.168.0.254
+183724.282: [18:37:24] dns-list 192.168.0.1
+183724.282: [18:37:24]#
+183724.282: [18:37:24]policy-based-route SDWAN permit node 10
+183724.282: [18:37:24] if-match acl 2000
+183724.282: [18:37:24] apply next-hop 10.1.200.2
+183724.282: [18:37:24]#
+183724.282: [18:37:24]controller Cellular1/0/0
+183727.164: [18:37:27]#              
+183727.164: [18:37:27]controller Cellular1/0/1
+183727.164: [18:37:27]#
+183727.164: [18:37:27]interface Virtual-Template1
+183727.164: [18:37:27] ppp authentication-mode chap domain system 
+183727.164: [18:37:27] remote address pool aa 
+183727.164: [18:37:27] ip address 10.6.0.1 255.255.255.0
+183727.164: [18:37:27] dns server 114.114.114.114
+183727.164: [18:37:27]#
+183727.164: [18:37:27]interface NULL0
+183727.164: [18:37:27]#
+183727.164: [18:37:27]interface Vlan-interface1
+183727.164: [18:37:27] description LAN-interface
+183727.164: [18:37:27] tcp mss 1280
+183727.164: [18:37:27] undo dhcp select server
+183727.164: [18:37:27] gateway 192.168.2.1
+183727.164: [18:37:27]#
+183727.164: [18:37:27]interface GigabitEthernet1/0/0
+183727.164: [18:37:27] port link-mode route
+183727.164: [18:37:27] combo enable fiber
+183727.164: [18:37:27] ip address 192.168.231.2 255.255.255.252
+183727.164: [18:37:27] manage ping inbound
+183727.164: [18:37:27] manage ping outbound
+183727.599: [18:37:27]#              
+183727.599: [18:37:27]interface GigabitEthernet1/0/1
+183727.599: [18:37:27] port link-mode route
+183727.599: [18:37:27] combo enable copper
+183727.599: [18:37:27] ip address 223.107.68.194 255.255.255.252
+183727.599: [18:37:27] ip address 36.154.125.218 255.255.255.252 sub
+183727.599: [18:37:27] dns server 114.4.0.55
+183727.599: [18:37:27] nat outbound
+183727.599: [18:37:27] nat server protocol tcp global 223.107.68.194 1314 inside 172.16.208.4 1314 rule ServerRule_3 counting
+183727.600: [18:37:27] nat server protocol udp global 223.107.68.194 1341 inside 172.16.208.4 1341 rule ServerRule_4
+183727.600: [18:37:27] gateway 223.107.68.193
+183727.600: [18:37:27]#
+183727.600: [18:37:27]interface GigabitEthernet1/0/2
+183727.600: [18:37:27] port link-mode route
+183727.600: [18:37:27] ip address 192.168.2.254 255.255.255.0
+183727.600: [18:37:27] manage ssh inbound
+183727.600: [18:37:27] ip policy-based-route SDWAN
+183727.600: [18:37:27]#
+183727.600: [18:37:27]interface GigabitEthernet1/0/3
+183727.600: [18:37:27] port link-mode route
+183727.600: [18:37:27] ip address 10.1.200.1 255.255.255.252
+183727.600: [18:37:27]#
+183727.600: [18:37:27]interface GigabitEthernet1/0/4
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/5
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/6
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/7
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/8
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/9
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/10
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183728.780: [18:37:28]interface GigabitEthernet1/0/11
+183728.780: [18:37:28] port link-mode bridge
+183728.780: [18:37:28]#
+183729.515: [18:37:29]security-zone name Local
+183729.515: [18:37:29]#
+183729.515: [18:37:29]security-zone name Trust
+183729.515: [18:37:29] import interface GigabitEthernet1/0/0
+183729.515: [18:37:29] import interface GigabitEthernet1/0/2
+183729.515: [18:37:29] import interface GigabitEthernet1/0/3
+183729.515: [18:37:29]#
+183729.515: [18:37:29]security-zone name DMZ
+183729.515: [18:37:29]#
+183729.515: [18:37:29]security-zone name Untrust
+183729.515: [18:37:29] import interface GigabitEthernet1/0/1
+183729.515: [18:37:29]#
+183729.515: [18:37:29]security-zone name Management
+183729.516: [18:37:29] import interface Virtual-Template1
+183729.516: [18:37:29]#
+183729.516: [18:37:29]security-zone name LAN
+183729.516: [18:37:29] import interface Vlan-interface1
+183729.516: [18:37:29] import interface GigabitEthernet1/0/4 vlan 1
+183729.516: [18:37:29] import interface GigabitEthernet1/0/5 vlan 1
+183729.516: [18:37:29] import interface GigabitEthernet1/0/6 vlan 1
+183729.516: [18:37:29] import interface GigabitEthernet1/0/7 vlan 1
+183729.516: [18:37:29] import interface GigabitEthernet1/0/8 vlan 1
+183729.516: [18:37:29] import interface GigabitEthernet1/0/9 vlan 1
+183729.950: [18:37:29] import interface GigabitEthernet1/0/10 vlan 1
+183729.950: [18:37:29] import interface GigabitEthernet1/0/11 vlan 1
+183729.950: [18:37:29]#
+183729.950: [18:37:29]security-zone name t
+183729.950: [18:37:29]#
+183729.950: [18:37:29] scheduler logfile size 16
+183729.950: [18:37:29]#
+183729.950: [18:37:29]line class aux
+183729.950: [18:37:29] user-role network-operator
+183729.951: [18:37:29]#
+183729.951: [18:37:29]line class console
+183729.951: [18:37:29] authentication-mode scheme
+183729.951: [18:37:29] user-role network-admin
+183729.951: [18:37:29]#
+183729.951: [18:37:29]line class vty
+183729.951: [18:37:29] user-role network-operator
+183729.951: [18:37:29]#
+183729.951: [18:37:29]line aux 0
+183729.951: [18:37:29] user-role network-admin
+183729.951: [18:37:29]#
+183729.951: [18:37:29]line con 0
+183729.951: [18:37:29] user-role network-admin
+183729.951: [18:37:29]#
+183730.246: [18:37:30]line vty 0 63  
+183730.246: [18:37:30] authentication-mode scheme
+183730.246: [18:37:30] user-role network-admin
+183730.261: [18:37:30]#
+183730.261: [18:37:30] ip route-static 172.16.208.2 32 192.168.2.1
+183730.261: [18:37:30] ip route-static 172.16.208.4 32 192.168.2.1
+183730.261: [18:37:30] ip route-static 192.168.1.0 24 192.168.2.1
+183730.261: [18:37:30] ip route-static 192.168.3.0 24 192.168.2.1
+183730.261: [18:37:30] ip route-static 192.168.4.0 22 192.168.2.1
+183730.261: [18:37:30] ip route-static 192.168.8.160 27 192.168.2.1 description 20250715-9Cip route-static 192.168.12.0 22 192.168.2.1
+183730.261: [18:37:30] ip route-static 192.168.232.0 24 192.168.231.1
+183730.261: [18:37:30] ip route-static 192.168.242.0 24 192.168.231.1
+183730.261: [18:37:30]#
+183730.261: [18:37:30] undo info-center enable
+183730.261: [18:37:30] undo info-center logfile enable
+183730.261: [18:37:30]#
+183730.261: [18:37:30]performance-management
+183730.261: [18:37:30]#
+183730.261: [18:37:30] ssh server enable
+183730.261: [18:37:30]#
+183730.261: [18:37:30] arp ip-conflict log prompt
+183730.261: [18:37:30]#
+183730.730: [18:37:30]acl number 2000
+183730.730: [18:37:30] rule 15 permit source 192.168.4.0 0.0.0.255
+183730.730: [18:37:30] rule 20 permit source 192.168.5.0 0.0.0.255
+183730.730: [18:37:30] rule 25 permit source 192.168.6.0 0.0.0.255
+183730.730: [18:37:30] rule 30 permit source 192.168.7.0 0.0.0.255
+183730.730: [18:37:30] rule 35 permit source 192.168.12.0 0.0.0.255
+183730.731: [18:37:30] rule 40 permit source 192.168.13.0 0.0.0.255
+183730.731: [18:37:30] rule 45 permit source 192.168.14.0 0.0.0.255
+183730.731: [18:37:30] rule 50 permit source 192.168.15.0 0.0.0.255
+183730.731: [18:37:30] rule 55 permit source 172.16.208.2 0
+183730.731: [18:37:30] rule 60 permit source 192.168.8.160 0.0.0.31
+183730.731: [18:37:30] rule 65 permit source 172.16.208.4 0
+183730.731: [18:37:30]#
+183730.731: [18:37:30]radius scheme aa
+183730.731: [18:37:30] primary authentication 139.196.46.207
+183730.731: [18:37:30] primary accounting 139.196.46.207
+183730.731: [18:37:30] key authentication cipher $c$3$0awp44uQKUZG37scnJhwlt15tIHwd4yJflFBJryY
+183730.731: [18:37:30] key accounting cipher $c$3$Dn24i2rpVgT/uQ5Rxmco6mRQT8GCUthkaHoXP76d
+183730.731: [18:37:30] retry 5
+183730.731: [18:37:30] timer response-timeout 8
+183730.731: [18:37:30] user-name-format without-domain
+183730.731: [18:37:30]#
+183730.731: [18:37:30]domain system
+183730.810: [18:37:30] authentication ppp local radius-scheme aa
+183730.810: [18:37:30] authorization ppp local radius-scheme aa
+183730.810: [18:37:30] accounting ppp local radius-scheme aa
+183730.810: [18:37:30]#
+183730.810: [18:37:30] domain default enable system
+183730.810: [18:37:30]#
+183730.811: [18:37:30]role name level-0
+183730.811: [18:37:30] description Predefined level-0 role
+183730.811: [18:37:30]#
+183730.811: [18:37:30]role name level-1
+183730.811: [18:37:30] description Predefined level-1 role
+183730.811: [18:37:30]#
+183730.811: [18:37:30]role name level-2
+183730.811: [18:37:30] description Predefined level-2 role
+183730.811: [18:37:30]#
+183730.811: [18:37:30]role name level-3
+183730.811: [18:37:30] description Predefined level-3 role
+183730.811: [18:37:30]#
+183730.811: [18:37:30]role name level-4
+183730.811: [18:37:30] description Predefined level-4 role
+183730.811: [18:37:30]#
+183730.811: [18:37:30]role name level-5
+183730.811: [18:37:30] description Predefined level-5 role
+183730.888: [18:37:30]#              
+183730.888: [18:37:30]role name level-6
+183730.888: [18:37:30] description Predefined level-6 role
+183730.888: [18:37:30]#
+183730.888: [18:37:30]role name level-7
+183730.888: [18:37:30] description Predefined level-7 role
+183730.888: [18:37:30]#
+183730.888: [18:37:30]role name level-8
+183730.888: [18:37:30] description Predefined level-8 role
+183730.888: [18:37:30]#
+183730.888: [18:37:30]role name level-9
+183730.888: [18:37:30] description Predefined level-9 role
+183730.888: [18:37:30]#
+183730.888: [18:37:30]role name level-10
+183730.888: [18:37:30] description Predefined level-10 role
+183730.888: [18:37:30]#
+183730.888: [18:37:30]role name level-11
+183730.888: [18:37:30] description Predefined level-11 role
+183730.888: [18:37:30]#
+183730.888: [18:37:30]role name level-12
+183730.888: [18:37:30] description Predefined level-12 role
+183730.888: [18:37:30]#
+183730.889: [18:37:30]role name level-13
+183730.971: [18:37:30] description Predefined level-13 role
+183730.971: [18:37:30]#
+183730.971: [18:37:30]role name level-14
+183730.971: [18:37:30] description Predefined level-14 role
+183730.971: [18:37:30]#
+183730.971: [18:37:30]user-group system
+183730.971: [18:37:30]#
+183730.971: [18:37:30]local-user admin class manage
+183730.971: [18:37:30] password hash $h$6$dXohucgHFNpguYAJ$DzdcIgQKi3vIEx03geL/vCdz50Q5uok0af6U62qwmXzONmA2oKtLLP/0ns2Wc5JeKDQ3Dz8IRMIjMOvXtqt+jw==
+183730.971: [18:37:30] service-type ssh telnet terminal http https
+183730.971: [18:37:30] authorization-attribute user-role level-3
+183730.971: [18:37:30] authorization-attribute user-role network-admin
+183730.971: [18:37:30] authorization-attribute user-role network-operator
+183730.971: [18:37:30]#
+183730.971: [18:37:30]local-user system class manage
+183730.972: [18:37:30] password hash $h$6$Lcw92++5zRQ19NPr$RBDGXlgpgHiVeFmxNBb9F9qwks33uWBtA5m6mh42lFKPpLaFm0MxwaUQ5KfS0mIR9kEAnS68+vUPAjWyR+Vo5w==
+183730.972: [18:37:30] service-type ssh https
+183730.972: [18:37:30] authorization-attribute user-role level-3
+183730.972: [18:37:30] authorization-attribute user-role network-admin
+183730.972: [18:37:30] authorization-attribute user-role network-operator
+183730.972: [18:37:30]#
+183730.972: [18:37:30] ssl renegotiation disable
+183730.972: [18:37:30] ssl version ssl3.0 disable
+183731.381: [18:37:31] ssl version tls1.0 disable
+183731.381: [18:37:31] undo ssl version tls1.1 disable
+183731.381: [18:37:31]#
+183731.381: [18:37:31] ipsec logging negotiation enable
+183731.381: [18:37:31]#
+183731.381: [18:37:31]l2tp-group 1 mode lns
+183731.381: [18:37:31] allow l2tp virtual-template 1
+183731.381: [18:37:31] undo tunnel authentication
+183731.381: [18:37:31] tunnel name LNS
+183731.381: [18:37:31]#
+183731.381: [18:37:31] l2tp enable
+183731.381: [18:37:31]#
+183731.381: [18:37:31] ike logging negotiation enable
+183731.381: [18:37:31]#
+183731.382: [18:37:31] netconf soap http enable
+183731.382: [18:37:31]#
+183731.382: [18:37:31] ip http enable
+183731.382: [18:37:31] ip https enable
+183731.382: [18:37:31]#
+183731.382: [18:37:31]inspect block-source parameter-profile ips_block_default_parameter
+183731.382: [18:37:31]#
+183731.382: [18:37:31]inspect block-source parameter-profile url_block_default_parameter
+183731.382: [18:37:31]#
+183731.879: [18:37:31]inspect capture parameter-profile ips_capture_default_parameter
+183731.879: [18:37:31]#
+183731.879: [18:37:31] loadbalance isp file flash:/lbispinfo_v1.5.tp
+183731.879: [18:37:31]#
+183731.879: [18:37:31] smartmc tc enable
+183731.879: [18:37:31]#
+183731.879: [18:37:31]wlan ap-group default-group
+183731.879: [18:37:31] vlan 1
+183731.879: [18:37:31]#
+183731.879: [18:37:31]security-policy ip
+183731.879: [18:37:31] rule 23 name 11
+183731.879: [18:37:31]  action pass
+183731.879: [18:37:31]  source-zone Trust
+183731.879: [18:37:31]  destination-zone Trust
+183731.880: [18:37:31]  destination-ip-host 192.168.242.180 
+183731.880: [18:37:31] rule 22 name all
+183731.880: [18:37:31]  action pass
+183731.880: [18:37:31]  source-zone Trust
+183731.880: [18:37:31]  destination-zone Trust
+183731.880: [18:37:31]  source-ip-host 192.168.242.180 
+183731.880: [18:37:31] rule 0 name AUTONET_LOCAL2ANY_DONTMODIFY
+183731.880: [18:37:31]  action pass
+183731.880: [18:37:31]  source-zone local
+183731.962: [18:37:31] rule 1 name AUTONET_LAN2LOCAL_DONTMODIFY
+183731.962: [18:37:31]  action pass
+183731.962: [18:37:31]  source-zone LAN
+183731.962: [18:37:31]  destination-zone local
+183731.962: [18:37:31] rule 2 name AUTONET_LAN2LAN_DONTMODIFY
+183731.962: [18:37:31]  action pass
+183731.962: [18:37:31]  source-zone LAN
+183731.962: [18:37:31]  destination-zone LAN
+183731.962: [18:37:31] rule 3 name Any_Any_3_IPv4
+183731.962: [18:37:31]  action pass
+183731.962: [18:37:31] rule 10 name pas
+183731.963: [18:37:31]  action pass
+183731.963: [18:37:31] rule 21 name in-out
+183731.963: [18:37:31]  action pass
+183731.963: [18:37:31]#
+183731.963: [18:37:31] cloud-management server domain cloudnet.h3c.com
+183731.963: [18:37:31]#
+183731.963: [18:37:31]return
+183754.057: [18:37:54]<H3C>disp current-configuration | grep 2000
+183754.068: [18:37:54]                                  ^
+183754.068: [18:37:54] % Unrecognized command found at '^' position.
+183759.457: [18:37:59]<H3C>disp current-configuration | include 2000
+183759.958: [18:37:59] if-match acl 2000
+183759.958: [18:37:59]acl number 2000
+184152.078: [18:41:52]<H3C>
+184159.638: [18:41:59]<H3C>disp ip rout
+184201.176: [18:42:01]<H3C>disp  ip routing-table 
+184201.213: [18:42:01]
+184201.221: [18:42:01]Destinations : 42       Routes : 42
+184201.221: [18:42:01]
+184201.221: [18:42:01]Destination/Mask   Proto   Pre Cost        NextHop         Interface
+184201.222: [18:42:01]0.0.0.0/0          Static  60  0           223.107.68.193  GE1/0/1
+184201.222: [18:42:01]0.0.0.0/32         Direct  0   0           127.0.0.1       InLoop0
+184201.222: [18:42:01]10.1.200.0/30      Direct  0   0           10.1.200.1      GE1/0/3
+184201.222: [18:42:01]10.1.200.1/32      Direct  0   0           127.0.0.1       InLoop0
+184201.222: [18:42:01]10.1.200.3/32      Direct  0   0           10.1.200.1      GE1/0/3
+184201.222: [18:42:01]10.6.0.0/24        Direct  0   0           10.6.0.1        VA5
+184201.222: [18:42:01]10.6.0.1/32        Direct  0   0           127.0.0.1       InLoop0
+184201.231: [18:42:01]10.6.0.100/32      Direct  0   0           10.6.0.100      VA8
+184201.231: [18:42:01]10.6.0.101/32      Direct  0   0           10.6.0.101      VA0
+184201.231: [18:42:01]10.6.0.102/32      Direct  0   0           10.6.0.102      VA2
+184201.231: [18:42:01]10.6.0.103/32      Direct  0   0           10.6.0.103      VA6
+184201.231: [18:42:01]10.6.0.105/32      Direct  0   0           10.6.0.105      VA5
+184201.231: [18:42:01]10.6.0.106/32      Direct  0   0           10.6.0.106      VA4
+184201.231: [18:42:01]10.6.0.107/32      Direct  0   0           10.6.0.107      VA7
+184201.231: [18:42:01]10.6.0.255/32      Direct  0   0           10.6.0.1        VA5
+184201.231: [18:42:01]36.154.125.216/30  Direct  0   0           36.154.125.218  GE1/0/1
+184201.231: [18:42:01]36.154.125.218/32  Direct  0   0           127.0.0.1       InLoop0
+184201.232: [18:42:01]36.154.125.219/32  Direct  0   0           36.154.125.218  GE1/0/1
+184201.232: [18:42:01]127.0.0.0/8        Direct  0   0           127.0.0.1       InLoop0
+184208.217: [18:42:08]127.0.0.1/32       Direct  0   0           127.0.0.1       InLoop0
+184208.218: [18:42:08]127.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+184208.218: [18:42:08]172.16.208.2/32    Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]172.16.208.4/32    Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]192.168.1.0/24     Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]192.168.2.0/24     Direct  0   0           192.168.2.254   GE1/0/2
+184208.218: [18:42:08]192.168.2.254/32   Direct  0   0           127.0.0.1       InLoop0
+184208.218: [18:42:08]192.168.2.255/32   Direct  0   0           192.168.2.254   GE1/0/2
+184208.218: [18:42:08]192.168.3.0/24     Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]192.168.4.0/22     Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]192.168.8.160/27   Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]192.168.12.0/22    Static  60  0           192.168.2.1     GE1/0/2
+184208.218: [18:42:08]192.168.231.0/30   Direct  0   0           192.168.231.2   GE1/0/0
+184208.218: [18:42:08]192.168.231.2/32   Direct  0   0           127.0.0.1       InLoop0
+184208.218: [18:42:08]192.168.231.3/32   Direct  0   0           192.168.231.2   GE1/0/0
+184208.218: [18:42:08]192.168.232.0/24   Static  60  0           192.168.231.1   GE1/0/0
+184208.218: [18:42:08]192.168.242.0/24   Static  60  0           192.168.231.1   GE1/0/0
+184208.219: [18:42:08]223.107.68.192/30  Direct  0   0           223.107.68.194  GE1/0/1
+184208.219: [18:42:08]223.107.68.194/32  Direct  0   0           127.0.0.1       InLoop0
+184208.219: [18:42:08]223.107.68.195/32  Direct  0   0           223.107.68.194  GE1/0/1
+184208.219: [18:42:08]224.0.0.0/4        Direct  0   0           0.0.0.0         NULL0
+184208.219: [18:42:08]224.0.0.0/24       Direct  0   0           0.0.0.0         NULL0
+184208.219: [18:42:08]255.255.255.255/32 Direct  0   0           127.0.0.1       InLoop0
+184217.347: [18:42:17]<H3C>disp  ip routing-table  | inc Static
+184217.418: [18:42:17]0.0.0.0/0          Static  60  0           223.107.68.193  GE1/0/1
+184217.418: [18:42:17]172.16.208.2/32    Static  60  0           192.168.2.1     GE1/0/2
+184217.418: [18:42:17]172.16.208.4/32    Static  60  0           192.168.2.1     GE1/0/2
+184217.418: [18:42:17]192.168.1.0/24     Static  60  0           192.168.2.1     GE1/0/2
+184217.418: [18:42:17]192.168.3.0/24     Static  60  0           192.168.2.1     GE1/0/2
+184217.418: [18:42:17]192.168.4.0/22     Static  60  0           192.168.2.1     GE1/0/2
+184217.418: [18:42:17]192.168.8.160/27   Static  60  0           192.168.2.1     GE1/0/2
+184217.419: [18:42:17]192.168.12.0/22    Static  60  0           192.168.2.1     GE1/0/2
+184217.419: [18:42:17]192.168.232.0/24   Static  60  0           192.168.231.1   GE1/0/0
+184217.419: [18:42:17]192.168.242.0/24   Static  60  0           192.168.231.1   GE1/0/0
+185038.232: [18:50:38]<H3C>clear
+185038.245: [18:50:38]     ^
+185038.246: [18:50:38] % Unrecognized command found at '^' position.
+185040.632: [18:50:40]<H3C>
+185041.132: [18:50:41]<H3C>
+185041.213: [18:50:41]<H3C>
+185041.298: [18:50:41]<H3C>
+185041.384: [18:50:41]<H3C>
+185041.465: [18:50:41]<H3C>
+185041.549: [18:50:41]<H3C>
+185041.632: [18:50:41]<H3C>
+185041.719: [18:50:41]<H3C>
+185041.800: [18:50:41]<H3C>
+185041.887: [18:50:41]<H3C>
+185041.968: [18:50:41]<H3C>
+185042.051: [18:50:42]<H3C>
+185042.135: [18:50:42]<H3C>
+185042.221: [18:50:42]<H3C>
+185042.303: [18:50:42]<H3C>
+185042.388: [18:50:42]<H3C>
+185042.469: [18:50:42]<H3C>
+185042.553: [18:50:42]<H3C>
+185042.636: [18:50:42]<H3C>
+185042.719: [18:50:42]<H3C>
+185042.802: [18:50:42]<H3C>
+185042.886: [18:50:42]<H3C>
+185042.970: [18:50:42]<H3C>
+185044.007: [18:50:44]<H3C>disp cu
+185044.341: [18:50:44]<H3C>disp current-configuration 
+185044.398: [18:50:44]#
+185044.410: [18:50:44] version 7.1.064, Release 9590P18
+185044.410: [18:50:44]#
+185044.411: [18:50:44] sysname H3C
+185044.411: [18:50:44]#
+185044.411: [18:50:44] clock protocol none
+185044.411: [18:50:44]#
+185044.411: [18:50:44]wlan global-configuration
+185044.411: [18:50:44]#
+185044.418: [18:50:44] irf mac-address persistent always
+185044.419: [18:50:44] irf auto-update enable
+185044.419: [18:50:44] undo irf link-delay
+185044.419: [18:50:44] irf member 1 priority 1
+185044.419: [18:50:44]#
+185044.419: [18:50:44] ip pool aa 10.6.0.100 10.6.0.200 
+185044.419: [18:50:44] ip pool aa gateway 10.6.0.1 
+185044.419: [18:50:44]#
+185044.419: [18:50:44] dhcp enable
+185044.419: [18:50:44] dhcp server always-broadcast
+185044.419: [18:50:44]#
+185044.419: [18:50:44] dns proxy enable
+185044.419: [18:50:44] dns server 112.4.0.55
+185044.419: [18:50:44] dns server 114.114.114.114
+185044.921: [18:50:44] ip host quicknet.h3c.com 192.168.2.254
+185044.921: [18:50:44]#
+185044.921: [18:50:44] lldp global enable
+185044.921: [18:50:44]#
+185044.921: [18:50:44] password-recovery enable
+185044.921: [18:50:44]#
+185044.921: [18:50:44]vlan 1
+185044.921: [18:50:44]#
+185044.921: [18:50:44]object-group ip address test
+185044.922: [18:50:44] 0 network subnet 172.16.208.2 255.255.255.255
+185044.922: [18:50:44] 10 network subnet 192.168.8.77 255.255.255.255
+185044.922: [18:50:44]#
+185044.922: [18:50:44]dhcp server ip-pool lan1
+185044.922: [18:50:44] gateway-list 192.168.0.1
+185044.922: [18:50:44] network 192.168.0.0 mask 255.255.255.0
+185044.922: [18:50:44] address range 192.168.0.2 192.168.0.254
+185044.922: [18:50:44] dns-list 192.168.0.1
+185044.922: [18:50:44]#
+185044.922: [18:50:44]policy-based-route SDWAN permit node 10
+185044.922: [18:50:44] if-match acl 2000
+185044.922: [18:50:44] apply next-hop 10.1.200.2
+185044.922: [18:50:44]#
+185044.922: [18:50:44]controller Cellular1/0/0
+185045.421: [18:50:45]#              
+185045.422: [18:50:45]controller Cellular1/0/1
+185045.422: [18:50:45]#
+185045.422: [18:50:45]interface Virtual-Template1
+185045.422: [18:50:45] ppp authentication-mode chap domain system 
+185045.422: [18:50:45] remote address pool aa 
+185045.422: [18:50:45] ip address 10.6.0.1 255.255.255.0
+185045.422: [18:50:45] dns server 114.114.114.114
+185045.422: [18:50:45]#
+185045.422: [18:50:45]interface NULL0
+185045.422: [18:50:45]#
+185045.422: [18:50:45]interface Vlan-interface1
+185045.422: [18:50:45] description LAN-interface
+185045.422: [18:50:45] tcp mss 1280
+185045.422: [18:50:45] undo dhcp select server
+185045.422: [18:50:45] gateway 192.168.2.1
+185045.422: [18:50:45]#
+185045.422: [18:50:45]interface GigabitEthernet1/0/0
+185045.422: [18:50:45] port link-mode route
+185045.422: [18:50:45] combo enable fiber
+185045.422: [18:50:45] ip address 192.168.231.2 255.255.255.252
+185045.422: [18:50:45] manage ping inbound
+185045.422: [18:50:45] manage ping outbound
+185045.505: [18:50:45]#              
+185045.505: [18:50:45]interface GigabitEthernet1/0/1
+185045.505: [18:50:45] port link-mode route
+185045.505: [18:50:45] combo enable copper
+185045.505: [18:50:45] ip address 223.107.68.194 255.255.255.252
+185045.505: [18:50:45] ip address 36.154.125.218 255.255.255.252 sub
+185045.505: [18:50:45] dns server 114.4.0.55
+185045.505: [18:50:45] nat outbound
+185045.505: [18:50:45] nat server protocol tcp global 223.107.68.194 1314 inside 172.16.208.4 1314 rule ServerRule_3 counting
+185045.505: [18:50:45] nat server protocol udp global 223.107.68.194 1341 inside 172.16.208.4 1341 rule ServerRule_4
+185045.505: [18:50:45] gateway 223.107.68.193
+185045.505: [18:50:45]#
+185045.505: [18:50:45]interface GigabitEthernet1/0/2
+185045.505: [18:50:45] port link-mode route
+185045.505: [18:50:45] ip address 192.168.2.254 255.255.255.0
+185045.505: [18:50:45] manage ssh inbound
+185045.505: [18:50:45] ip policy-based-route SDWAN
+185045.505: [18:50:45]#
+185045.505: [18:50:45]interface GigabitEthernet1/0/3
+185045.505: [18:50:45] port link-mode route
+185045.506: [18:50:45] ip address 10.1.200.1 255.255.255.252
+185045.506: [18:50:45]#
+185045.506: [18:50:45]interface GigabitEthernet1/0/4
+185045.588: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/5
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/6
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/7
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/8
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/9
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/10
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.589: [18:50:45]interface GigabitEthernet1/0/11
+185045.589: [18:50:45] port link-mode bridge
+185045.589: [18:50:45]#
+185045.671: [18:50:45]security-zone name Local
+185045.671: [18:50:45]#
+185045.678: [18:50:45]security-zone name Trust
+185045.678: [18:50:45] import interface GigabitEthernet1/0/0
+185045.678: [18:50:45] import interface GigabitEthernet1/0/2
+185045.678: [18:50:45] import interface GigabitEthernet1/0/3
+185045.678: [18:50:45]#
+185045.678: [18:50:45]security-zone name DMZ
+185045.679: [18:50:45]#
+185045.679: [18:50:45]security-zone name Untrust
+185045.679: [18:50:45] import interface GigabitEthernet1/0/1
+185045.679: [18:50:45]#
+185045.679: [18:50:45]security-zone name Management
+185045.679: [18:50:45] import interface Virtual-Template1
+185045.679: [18:50:45]#
+185045.679: [18:50:45]security-zone name LAN
+185045.679: [18:50:45] import interface Vlan-interface1
+185045.679: [18:50:45] import interface GigabitEthernet1/0/4 vlan 1
+185045.679: [18:50:45] import interface GigabitEthernet1/0/5 vlan 1
+185045.679: [18:50:45] import interface GigabitEthernet1/0/6 vlan 1
+185045.679: [18:50:45] import interface GigabitEthernet1/0/7 vlan 1
+185045.679: [18:50:45] import interface GigabitEthernet1/0/8 vlan 1
+185045.680: [18:50:45] import interface GigabitEthernet1/0/9 vlan 1
+185045.754: [18:50:45] import interface GigabitEthernet1/0/10 vlan 1
+185045.754: [18:50:45] import interface GigabitEthernet1/0/11 vlan 1
+185045.754: [18:50:45]#
+185045.754: [18:50:45]security-zone name t
+185045.754: [18:50:45]#
+185045.754: [18:50:45] scheduler logfile size 16
+185045.754: [18:50:45]#
+185045.754: [18:50:45]line class aux
+185045.754: [18:50:45] user-role network-operator
+185045.755: [18:50:45]#
+185045.755: [18:50:45]line class console
+185045.755: [18:50:45] authentication-mode scheme
+185045.755: [18:50:45] user-role network-admin
+185045.755: [18:50:45]#
+185045.755: [18:50:45]line class vty
+185045.755: [18:50:45] user-role network-operator
+185045.755: [18:50:45]#
+185045.755: [18:50:45]line aux 0
+185045.755: [18:50:45] user-role network-admin
+185045.755: [18:50:45]#
+185045.755: [18:50:45]line con 0
+185045.755: [18:50:45] user-role network-admin
+185045.755: [18:50:45]#
+185045.837: [18:50:45]line vty 0 63  
+185045.837: [18:50:45] authentication-mode scheme
+185045.837: [18:50:45] user-role network-admin
+185045.837: [18:50:45]#
+185045.837: [18:50:45] ip route-static 172.16.208.2 32 192.168.2.1
+185045.837: [18:50:45] ip route-static 172.16.208.4 32 192.168.2.1
+185045.837: [18:50:45] ip route-static 192.168.1.0 24 192.168.2.1
+185045.837: [18:50:45] ip route-static 192.168.3.0 24 192.168.2.1
+185045.837: [18:50:45] ip route-static 192.168.4.0 22 192.168.2.1
+185045.838: [18:50:45] ip route-static 192.168.8.160 27 192.168.2.1 description 20250715-9Cip route-static 192.168.12.0 22 192.168.2.1
+185045.838: [18:50:45] ip route-static 192.168.232.0 24 192.168.231.1
+185045.838: [18:50:45] ip route-static 192.168.242.0 24 192.168.231.1
+185045.838: [18:50:45]#
+185045.838: [18:50:45] undo info-center enable
+185045.838: [18:50:45] undo info-center logfile enable
+185045.838: [18:50:45]#
+185045.838: [18:50:45]performance-management
+185045.838: [18:50:45]#
+185045.838: [18:50:45] ssh server enable
+185045.838: [18:50:45]#
+185045.838: [18:50:45] arp ip-conflict log prompt
+185045.838: [18:50:45]#
+185045.922: [18:50:45]acl number 2000
+185045.922: [18:50:45] rule 15 permit source 192.168.4.0 0.0.0.255
+185045.922: [18:50:45] rule 20 permit source 192.168.5.0 0.0.0.255
+185045.922: [18:50:45] rule 25 permit source 192.168.6.0 0.0.0.255
+185045.922: [18:50:45] rule 30 permit source 192.168.7.0 0.0.0.255
+185045.922: [18:50:45] rule 35 permit source 192.168.12.0 0.0.0.255
+185045.922: [18:50:45] rule 40 permit source 192.168.13.0 0.0.0.255
+185045.922: [18:50:45] rule 45 permit source 192.168.14.0 0.0.0.255
+185045.922: [18:50:45] rule 50 permit source 192.168.15.0 0.0.0.255
+185045.922: [18:50:45] rule 55 permit source 172.16.208.2 0
+185045.922: [18:50:45] rule 60 permit source 192.168.8.160 0.0.0.31
+185045.922: [18:50:45] rule 65 permit source 172.16.208.4 0
+185045.922: [18:50:45] rule 70 permit source 192.168.231.0 0.0.0.3
+185045.922: [18:50:45]#
+185045.922: [18:50:45]radius scheme aa
+185045.922: [18:50:45] primary authentication 139.196.46.207
+185045.922: [18:50:45] primary accounting 139.196.46.207
+185045.922: [18:50:45] key authentication cipher $c$3$0awp44uQKUZG37scnJhwlt15tIHwd4yJflFBJryY
+185045.922: [18:50:45] key accounting cipher $c$3$Dn24i2rpVgT/uQ5Rxmco6mRQT8GCUthkaHoXP76d
+185045.923: [18:50:45] retry 5
+185045.923: [18:50:45] timer response-timeout 8
+185045.923: [18:50:45] user-name-format without-domain
+185045.923: [18:50:45]#
+185046.004: [18:50:46]domain system  
+185046.005: [18:50:46] authentication ppp local radius-scheme aa
+185046.005: [18:50:46] authorization ppp local radius-scheme aa
+185046.005: [18:50:46] accounting ppp local radius-scheme aa
+185046.005: [18:50:46]#
+185046.005: [18:50:46] domain default enable system
+185046.005: [18:50:46]#
+185046.005: [18:50:46]role name level-0
+185046.005: [18:50:46] description Predefined level-0 role
+185046.005: [18:50:46]#
+185046.005: [18:50:46]role name level-1
+185046.005: [18:50:46] description Predefined level-1 role
+185046.005: [18:50:46]#
+185046.005: [18:50:46]role name level-2
+185046.005: [18:50:46] description Predefined level-2 role
+185046.005: [18:50:46]#
+185046.005: [18:50:46]role name level-3
+185046.005: [18:50:46] description Predefined level-3 role
+185046.005: [18:50:46]#
+185046.005: [18:50:46]role name level-4
+185046.005: [18:50:46] description Predefined level-4 role
+185046.005: [18:50:46]#
+185046.005: [18:50:46]role name level-5
+185046.088: [18:50:46] description Predefined level-5 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-6
+185046.088: [18:50:46] description Predefined level-6 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-7
+185046.088: [18:50:46] description Predefined level-7 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-8
+185046.088: [18:50:46] description Predefined level-8 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-9
+185046.088: [18:50:46] description Predefined level-9 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-10
+185046.088: [18:50:46] description Predefined level-10 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-11
+185046.088: [18:50:46] description Predefined level-11 role
+185046.088: [18:50:46]#
+185046.088: [18:50:46]role name level-12
+185046.088: [18:50:46] description Predefined level-12 role
+185046.089: [18:50:46]#
+185046.663: [18:50:46]role name level-13
+185046.664: [18:50:46] description Predefined level-13 role
+185046.664: [18:50:46]#
+185046.664: [18:50:46]role name level-14
+185046.664: [18:50:46] description Predefined level-14 role
+185046.664: [18:50:46]#
+185046.664: [18:50:46]user-group system
+185046.664: [18:50:46]#
+185046.664: [18:50:46]local-user admin class manage
+185046.664: [18:50:46] password hash $h$6$dXohucgHFNpguYAJ$DzdcIgQKi3vIEx03geL/vCdz50Q5uok0af6U62qwmXzONmA2oKtLLP/0ns2Wc5JeKDQ3Dz8IRMIjMOvXtqt+jw==
+185046.664: [18:50:46] service-type ssh telnet terminal http https
+185046.664: [18:50:46] authorization-attribute user-role level-3
+185046.664: [18:50:46] authorization-attribute user-role network-admin
+185046.664: [18:50:46] authorization-attribute user-role network-operator
+185046.664: [18:50:46]#
+185046.664: [18:50:46]local-user system class manage
+185046.664: [18:50:46] password hash $h$6$Lcw92++5zRQ19NPr$RBDGXlgpgHiVeFmxNBb9F9qwks33uWBtA5m6mh42lFKPpLaFm0MxwaUQ5KfS0mIR9kEAnS68+vUPAjWyR+Vo5w==
+185046.664: [18:50:46] service-type ssh https
+185046.664: [18:50:46] authorization-attribute user-role level-3
+185046.665: [18:50:46] authorization-attribute user-role network-admin
+185046.665: [18:50:46] authorization-attribute user-role network-operator
+185046.665: [18:50:46]#
+185046.665: [18:50:46] ssl renegotiation disable
+185046.899: [18:50:46] ssl version ssl3.0 disable
+185046.899: [18:50:46] ssl version tls1.0 disable
+185046.899: [18:50:46] undo ssl version tls1.1 disable
+185046.899: [18:50:46]#
+185046.899: [18:50:46] ipsec logging negotiation enable
+185046.899: [18:50:46]#
+185046.899: [18:50:46]l2tp-group 1 mode lns
+185046.899: [18:50:46] allow l2tp virtual-template 1
+185046.899: [18:50:46] undo tunnel authentication
+185046.899: [18:50:46] tunnel name LNS
+185046.900: [18:50:46]#
+185046.900: [18:50:46] l2tp enable
+185046.900: [18:50:46]#
+185046.900: [18:50:46] ike logging negotiation enable
+185046.900: [18:50:46]#
+185046.900: [18:50:46] netconf soap http enable
+185046.900: [18:50:46]#
+185046.900: [18:50:46] ip http enable
+185046.900: [18:50:46] ip https enable
+185046.900: [18:50:46]#
+185046.900: [18:50:46]inspect block-source parameter-profile ips_block_default_parameter
+185046.900: [18:50:46]#
+185046.900: [18:50:46]inspect block-source parameter-profile url_block_default_parameter
+185047.071: [18:50:47]#              
+185047.072: [18:50:47]inspect capture parameter-profile ips_capture_default_parameter
+185047.072: [18:50:47]#
+185047.072: [18:50:47] loadbalance isp file flash:/lbispinfo_v1.5.tp
+185047.072: [18:50:47]#
+185047.072: [18:50:47] smartmc tc enable
+185047.072: [18:50:47]#
+185047.072: [18:50:47]wlan ap-group default-group
+185047.072: [18:50:47] vlan 1
+185047.072: [18:50:47]#
+185047.072: [18:50:47]security-policy ip
+185047.072: [18:50:47] rule 23 name 11
+185047.072: [18:50:47]  action pass
+185047.072: [18:50:47]  source-zone Trust
+185047.072: [18:50:47]  destination-zone Trust
+185047.072: [18:50:47]  destination-ip-host 192.168.242.180 
+185047.072: [18:50:47] rule 22 name all
+185047.072: [18:50:47]  action pass
+185047.072: [18:50:47]  source-zone Trust
+185047.072: [18:50:47]  destination-zone Trust
+185047.072: [18:50:47]  source-ip-host 192.168.242.180 
+185047.073: [18:50:47] rule 0 name AUTONET_LOCAL2ANY_DONTMODIFY
+185047.073: [18:50:47]  action pass
+185047.549: [18:50:47]  source-zone local
+185047.549: [18:50:47] rule 1 name AUTONET_LAN2LOCAL_DONTMODIFY
+185047.549: [18:50:47]  action pass
+185047.549: [18:50:47]  source-zone LAN
+185047.549: [18:50:47]  destination-zone local
+185047.550: [18:50:47] rule 2 name AUTONET_LAN2LAN_DONTMODIFY
+185047.550: [18:50:47]  action pass
+185047.550: [18:50:47]  source-zone LAN
+185047.550: [18:50:47]  destination-zone LAN
+185047.550: [18:50:47] rule 3 name Any_Any_3_IPv4
+185047.550: [18:50:47]  action pass
+185047.550: [18:50:47] rule 10 name pas
+185047.550: [18:50:47]  action pass
+185047.550: [18:50:47] rule 21 name in-out
+185047.550: [18:50:47]  action pass
+185047.550: [18:50:47]#
+185047.550: [18:50:47] cloud-management server domain cloudnet.h3c.com
+185047.550: [18:50:47]#
+185047.550: [18:50:47]return
+190048.263: [19:00:48]<H3C>  
+190048.264: [19:00:48]Inactive timeout reached, logging out.
+190053.840: [19:00:53][202602192.168.2.254-19:00:53]
+190054.869: [19:00:54]
+190054.869: [19:00:54]******************************************************************************
+190054.870: [19:00:54]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+190054.870: [19:00:54]* Without the owner's prior written consent,                                 *
+190054.870: [19:00:54]* no decompiling or reverse-engineering shall be allowed.                    *
+190054.870: [19:00:54]******************************************************************************
+190054.870: [19:00:54]
+191057.450: [19:10:57]<H3C>
+191102.782: [19:11:02][202602192.168.2.254-19:11:02]
+191103.811: [19:11:03]
+191103.811: [19:11:03]******************************************************************************
+191103.812: [19:11:03]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+191103.812: [19:11:03]* Without the owner's prior written consent,                                 *
+191103.812: [19:11:03]* no decompiling or reverse-engineering shall be allowed.                    *
+191103.812: [19:11:03]******************************************************************************
+191103.812: [19:11:03]
+192106.041: [19:21:06]<H3C>
+192106.042: [19:21:06]Inactive timeout reached, logging out.
+192111.624: [19:21:11][202602192.168.2.254-19:21:11]
+192112.653: [19:21:12]
+192112.658: [19:21:12]******************************************************************************
+192112.658: [19:21:12]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+192112.658: [19:21:12]* Without the owner's prior written consent,                                 *
+192112.658: [19:21:12]* no decompiling or reverse-engineering shall be allowed.                    *
+192112.659: [19:21:12]******************************************************************************
+192112.659: [19:21:12]
+192849.678: [19:28:49]<H3C>
+192850.667: [19:28:50]<H3C>
+192854.234: [19:28:54]<H3C>disp cu
+192854.535: [19:28:54]<H3C>disp current-configuration 
+192854.590: [19:28:54]#
+192854.594: [19:28:54] version 7.1.064, Release 9590P18
+192854.600: [19:28:54]#
+192854.600: [19:28:54] sysname H3C
+192854.600: [19:28:54]#
+192854.600: [19:28:54] clock protocol none
+192854.600: [19:28:54]#
+192854.600: [19:28:54]wlan global-configuration
+192854.600: [19:28:54]#
+192854.600: [19:28:54] irf mac-address persistent always
+192854.600: [19:28:54] irf auto-update enable
+192854.601: [19:28:54] undo irf link-delay
+192854.601: [19:28:54] irf member 1 priority 1
+192854.601: [19:28:54]#
+192854.608: [19:28:54] ip pool aa 10.6.0.100 10.6.0.200 
+192854.608: [19:28:54] ip pool aa gateway 10.6.0.1 
+192854.608: [19:28:54]#
+192854.608: [19:28:54] dhcp enable
+192854.608: [19:28:54] dhcp server always-broadcast
+192854.608: [19:28:54]#
+192854.608: [19:28:54] dns proxy enable
+192854.608: [19:28:54] dns server 112.4.0.55
+192854.608: [19:28:54] dns server 114.114.114.114
+192854.910: [19:28:54] ip host quicknet.h3c.com 192.168.2.254
+192854.910: [19:28:54]#
+192854.910: [19:28:54] lldp global enable
+192854.910: [19:28:54]#
+192854.910: [19:28:54] password-recovery enable
+192854.910: [19:28:54]#
+192854.910: [19:28:54]vlan 1
+192854.910: [19:28:54]#
+192854.910: [19:28:54]object-group ip address test
+192854.910: [19:28:54] 0 network subnet 172.16.208.2 255.255.255.255
+192854.910: [19:28:54] 10 network subnet 192.168.8.77 255.255.255.255
+192854.910: [19:28:54]#
+192854.910: [19:28:54]dhcp server ip-pool lan1
+192854.910: [19:28:54] gateway-list 192.168.0.1
+192854.910: [19:28:54] network 192.168.0.0 mask 255.255.255.0
+192854.910: [19:28:54] address range 192.168.0.2 192.168.0.254
+192854.910: [19:28:54] dns-list 192.168.0.1
+192854.910: [19:28:54]#
+192854.910: [19:28:54]policy-based-route SDWAN permit node 10
+192854.910: [19:28:54] if-match acl 2000
+192854.910: [19:28:54] apply next-hop 10.1.200.2
+192854.910: [19:28:54]#
+192854.910: [19:28:54]controller Cellular1/0/0
+192855.408: [19:28:55]#              
+192855.408: [19:28:55]controller Cellular1/0/1
+192855.408: [19:28:55]#
+192855.408: [19:28:55]interface Virtual-Template1
+192855.408: [19:28:55] ppp authentication-mode chap domain system 
+192855.408: [19:28:55] remote address pool aa 
+192855.408: [19:28:55] ip address 10.6.0.1 255.255.255.0
+192855.408: [19:28:55] dns server 114.114.114.114
+192855.408: [19:28:55]#
+192855.408: [19:28:55]interface NULL0
+192855.408: [19:28:55]#
+192855.408: [19:28:55]interface Vlan-interface1
+192855.409: [19:28:55] description LAN-interface
+192855.409: [19:28:55] tcp mss 1280
+192855.409: [19:28:55] undo dhcp select server
+192855.409: [19:28:55] gateway 192.168.2.1
+192855.409: [19:28:55]#
+192855.409: [19:28:55]interface GigabitEthernet1/0/0
+192855.409: [19:28:55] port link-mode route
+192855.409: [19:28:55] combo enable fiber
+192855.409: [19:28:55] ip address 192.168.231.2 255.255.255.252
+192855.409: [19:28:55] manage ping inbound
+192855.409: [19:28:55] manage ping outbound
+192855.496: [19:28:55]#              
+192855.496: [19:28:55]interface GigabitEthernet1/0/1
+192855.496: [19:28:55] port link-mode route
+192855.496: [19:28:55] combo enable copper
+192855.496: [19:28:55] ip address 223.107.68.194 255.255.255.252
+192855.496: [19:28:55] ip address 36.154.125.218 255.255.255.252 sub
+192855.496: [19:28:55] dns server 114.4.0.55
+192855.496: [19:28:55] nat outbound
+192855.496: [19:28:55] nat server protocol tcp global 223.107.68.194 1314 inside 172.16.208.4 1314 rule ServerRule_3 counting
+192855.496: [19:28:55] nat server protocol udp global 223.107.68.194 1341 inside 172.16.208.4 1341 rule ServerRule_4
+192855.496: [19:28:55] gateway 223.107.68.193
+192855.496: [19:28:55]#
+192855.496: [19:28:55]interface GigabitEthernet1/0/2
+192855.496: [19:28:55] port link-mode route
+192855.496: [19:28:55] ip address 192.168.2.254 255.255.255.0
+192855.496: [19:28:55] manage ssh inbound
+192855.496: [19:28:55] ip policy-based-route SDWAN
+192855.496: [19:28:55]#
+192855.496: [19:28:55]interface GigabitEthernet1/0/3
+192855.497: [19:28:55] port link-mode route
+192855.497: [19:28:55] ip address 10.1.200.1 255.255.255.252
+192855.497: [19:28:55]#
+192855.497: [19:28:55]interface GigabitEthernet1/0/4
+192855.576: [19:28:55] port link-mode bridge
+192855.576: [19:28:55]#
+192855.576: [19:28:55]interface GigabitEthernet1/0/5
+192855.576: [19:28:55] port link-mode bridge
+192855.576: [19:28:55]#
+192855.579: [19:28:55]interface GigabitEthernet1/0/6
+192855.579: [19:28:55] port link-mode bridge
+192855.579: [19:28:55]#
+192855.579: [19:28:55]interface GigabitEthernet1/0/7
+192855.579: [19:28:55] port link-mode bridge
+192855.579: [19:28:55]#
+192855.580: [19:28:55]interface GigabitEthernet1/0/8
+192855.580: [19:28:55] port link-mode bridge
+192855.580: [19:28:55]#
+192855.580: [19:28:55]interface GigabitEthernet1/0/9
+192855.580: [19:28:55] port link-mode bridge
+192855.580: [19:28:55]#
+192855.580: [19:28:55]interface GigabitEthernet1/0/10
+192855.580: [19:28:55] port link-mode bridge
+192855.580: [19:28:55]#
+192855.581: [19:28:55]interface GigabitEthernet1/0/11
+192855.581: [19:28:55] port link-mode bridge
+192855.581: [19:28:55]#
+192855.666: [19:28:55]security-zone name Local
+192855.666: [19:28:55]#
+192855.666: [19:28:55]security-zone name Trust
+192855.666: [19:28:55] import interface GigabitEthernet1/0/0
+192855.666: [19:28:55] import interface GigabitEthernet1/0/2
+192855.666: [19:28:55] import interface GigabitEthernet1/0/3
+192855.666: [19:28:55]#
+192855.666: [19:28:55]security-zone name DMZ
+192855.666: [19:28:55]#
+192855.666: [19:28:55]security-zone name Untrust
+192855.666: [19:28:55] import interface GigabitEthernet1/0/1
+192855.667: [19:28:55]#
+192855.667: [19:28:55]security-zone name Management
+192855.667: [19:28:55] import interface Virtual-Template1
+192855.667: [19:28:55]#
+192855.667: [19:28:55]security-zone name LAN
+192855.668: [19:28:55] import interface Vlan-interface1
+192855.668: [19:28:55] import interface GigabitEthernet1/0/4 vlan 1
+192855.668: [19:28:55] import interface GigabitEthernet1/0/5 vlan 1
+192855.668: [19:28:55] import interface GigabitEthernet1/0/6 vlan 1
+192855.668: [19:28:55] import interface GigabitEthernet1/0/7 vlan 1
+192855.668: [19:28:55] import interface GigabitEthernet1/0/8 vlan 1
+192855.668: [19:28:55] import interface GigabitEthernet1/0/9 vlan 1
+192855.747: [19:28:55] import interface GigabitEthernet1/0/10 vlan 1
+192855.748: [19:28:55] import interface GigabitEthernet1/0/11 vlan 1
+192855.748: [19:28:55]#
+192855.748: [19:28:55]security-zone name t
+192855.748: [19:28:55]#
+192855.748: [19:28:55] scheduler logfile size 16
+192855.748: [19:28:55]#
+192855.748: [19:28:55]line class aux
+192855.748: [19:28:55] user-role network-operator
+192855.748: [19:28:55]#
+192855.748: [19:28:55]line class console
+192855.748: [19:28:55] authentication-mode scheme
+192855.748: [19:28:55] user-role network-admin
+192855.748: [19:28:55]#
+192855.748: [19:28:55]line class vty
+192855.748: [19:28:55] user-role network-operator
+192855.748: [19:28:55]#
+192855.748: [19:28:55]line aux 0
+192855.748: [19:28:55] user-role network-admin
+192855.748: [19:28:55]#
+192855.748: [19:28:55]line con 0
+192855.748: [19:28:55] user-role network-admin
+192855.748: [19:28:55]#
+192855.831: [19:28:55]line vty 0 63  
+192855.831: [19:28:55] authentication-mode scheme
+192855.831: [19:28:55] user-role network-admin
+192855.831: [19:28:55]#
+192855.832: [19:28:55] ip route-static 172.16.208.2 32 192.168.2.1
+192855.832: [19:28:55] ip route-static 172.16.208.4 32 192.168.2.1
+192855.832: [19:28:55] ip route-static 192.168.1.0 24 192.168.2.1
+192855.832: [19:28:55] ip route-static 192.168.3.0 24 192.168.2.1
+192855.832: [19:28:55] ip route-static 192.168.4.0 22 192.168.2.1
+192855.832: [19:28:55] ip route-static 192.168.8.160 27 192.168.2.1 description 20250715-9Cip route-static 192.168.12.0 22 192.168.2.1
+192855.832: [19:28:55] ip route-static 192.168.232.0 24 192.168.2.1 description 20260203ip route-static 192.168.242.0 24 192.168.2.1 description 20260203
+192855.832: [19:28:55] undo info-center enable
+192855.832: [19:28:55] undo info-center logfile enable
+192855.832: [19:28:55]#
+192855.832: [19:28:55]performance-management
+192855.832: [19:28:55]#
+192855.832: [19:28:55] ssh server enable
+192855.832: [19:28:55]#
+192855.832: [19:28:55] arp ip-conflict log prompt
+192855.832: [19:28:55]#
+192855.909: [19:28:55]acl number 2000
+192855.909: [19:28:55] rule 15 permit source 192.168.4.0 0.0.0.255
+192855.909: [19:28:55] rule 20 permit source 192.168.5.0 0.0.0.255
+192855.909: [19:28:55] rule 25 permit source 192.168.6.0 0.0.0.255
+192855.909: [19:28:55] rule 30 permit source 192.168.7.0 0.0.0.255
+192855.909: [19:28:55] rule 35 permit source 192.168.12.0 0.0.0.255
+192855.909: [19:28:55] rule 40 permit source 192.168.13.0 0.0.0.255
+192855.909: [19:28:55] rule 45 permit source 192.168.14.0 0.0.0.255
+192855.909: [19:28:55] rule 50 permit source 192.168.15.0 0.0.0.255
+192855.909: [19:28:55] rule 55 permit source 172.16.208.2 0
+192855.909: [19:28:55] rule 60 permit source 192.168.8.160 0.0.0.31
+192855.909: [19:28:55] rule 65 permit source 172.16.208.4 0
+192855.909: [19:28:55] rule 70 permit source 192.168.231.0 0.0.0.3
+192855.909: [19:28:55]#
+192855.909: [19:28:55]radius scheme aa
+192855.909: [19:28:55] primary authentication 139.196.46.207
+192855.909: [19:28:55] primary accounting 139.196.46.207
+192855.910: [19:28:55] key authentication cipher $c$3$0awp44uQKUZG37scnJhwlt15tIHwd4yJflFBJryY
+192855.910: [19:28:55] key accounting cipher $c$3$Dn24i2rpVgT/uQ5Rxmco6mRQT8GCUthkaHoXP76d
+192855.910: [19:28:55] retry 5
+192855.910: [19:28:55] timer response-timeout 8
+192855.910: [19:28:55] user-name-format without-domain
+192855.910: [19:28:55]#
+192855.994: [19:28:55]domain system  
+192855.994: [19:28:55] authentication ppp local radius-scheme aa
+192855.995: [19:28:55] authorization ppp local radius-scheme aa
+192855.995: [19:28:55] accounting ppp local radius-scheme aa
+192855.995: [19:28:55]#
+192855.995: [19:28:55] domain default enable system
+192855.995: [19:28:55]#
+192855.995: [19:28:55]role name level-0
+192855.995: [19:28:55] description Predefined level-0 role
+192855.995: [19:28:55]#
+192855.995: [19:28:55]role name level-1
+192855.995: [19:28:55] description Predefined level-1 role
+192855.995: [19:28:55]#
+192855.995: [19:28:55]role name level-2
+192855.995: [19:28:55] description Predefined level-2 role
+192855.995: [19:28:55]#
+192855.995: [19:28:55]role name level-3
+192855.995: [19:28:55] description Predefined level-3 role
+192855.995: [19:28:55]#
+192855.995: [19:28:55]role name level-4
+192855.995: [19:28:55] description Predefined level-4 role
+192855.995: [19:28:55]#
+192855.995: [19:28:55]role name level-5
+192856.075: [19:28:56] description Predefined level-5 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-6
+192856.076: [19:28:56] description Predefined level-6 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-7
+192856.076: [19:28:56] description Predefined level-7 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-8
+192856.076: [19:28:56] description Predefined level-8 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-9
+192856.076: [19:28:56] description Predefined level-9 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-10
+192856.076: [19:28:56] description Predefined level-10 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-11
+192856.076: [19:28:56] description Predefined level-11 role
+192856.076: [19:28:56]#
+192856.076: [19:28:56]role name level-12
+192856.076: [19:28:56] description Predefined level-12 role
+192856.076: [19:28:56]#
+192856.164: [19:28:56]role name level-13
+192856.165: [19:28:56] description Predefined level-13 role
+192856.165: [19:28:56]#
+192856.165: [19:28:56]role name level-14
+192856.165: [19:28:56] description Predefined level-14 role
+192856.165: [19:28:56]#
+192856.165: [19:28:56]user-group system
+192856.165: [19:28:56]#
+192856.165: [19:28:56]local-user admin class manage
+192856.165: [19:28:56] password hash $h$6$dXohucgHFNpguYAJ$DzdcIgQKi3vIEx03geL/vCdz50Q5uok0af6U62qwmXzONmA2oKtLLP/0ns2Wc5JeKDQ3Dz8IRMIjMOvXtqt+jw==
+192856.165: [19:28:56] service-type ssh telnet terminal http https
+192856.165: [19:28:56] authorization-attribute user-role level-3
+192856.165: [19:28:56] authorization-attribute user-role network-admin
+192856.165: [19:28:56] authorization-attribute user-role network-operator
+192856.165: [19:28:56]#
+192856.165: [19:28:56]local-user system class manage
+192856.165: [19:28:56] password hash $h$6$Lcw92++5zRQ19NPr$RBDGXlgpgHiVeFmxNBb9F9qwks33uWBtA5m6mh42lFKPpLaFm0MxwaUQ5KfS0mIR9kEAnS68+vUPAjWyR+Vo5w==
+192856.165: [19:28:56] service-type ssh https
+192856.165: [19:28:56] authorization-attribute user-role level-3
+192856.165: [19:28:56] authorization-attribute user-role network-admin
+192856.165: [19:28:56] authorization-attribute user-role network-operator
+192856.165: [19:28:56]#
+192856.165: [19:28:56] ssl renegotiation disable
+192856.245: [19:28:56] ssl version ssl3.0 disable
+192856.245: [19:28:56] ssl version tls1.0 disable
+192856.245: [19:28:56] undo ssl version tls1.1 disable
+192856.245: [19:28:56]#
+192856.245: [19:28:56] ipsec logging negotiation enable
+192856.245: [19:28:56]#
+192856.245: [19:28:56]l2tp-group 1 mode lns
+192856.245: [19:28:56] allow l2tp virtual-template 1
+192856.245: [19:28:56] undo tunnel authentication
+192856.245: [19:28:56] tunnel name LNS
+192856.245: [19:28:56]#
+192856.245: [19:28:56] l2tp enable
+192856.245: [19:28:56]#
+192856.245: [19:28:56] ike logging negotiation enable
+192856.245: [19:28:56]#
+192856.245: [19:28:56] netconf soap http enable
+192856.245: [19:28:56]#
+192856.245: [19:28:56] ip http enable
+192856.245: [19:28:56] ip https enable
+192856.245: [19:28:56]#
+192856.245: [19:28:56]inspect block-source parameter-profile ips_block_default_parameter
+192856.245: [19:28:56]#
+192856.245: [19:28:56]inspect block-source parameter-profile url_block_default_parameter
+192856.328: [19:28:56]#              
+192856.328: [19:28:56]inspect capture parameter-profile ips_capture_default_parameter
+192856.328: [19:28:56]#
+192856.328: [19:28:56] loadbalance isp file flash:/lbispinfo_v1.5.tp
+192856.328: [19:28:56]#
+192856.328: [19:28:56] smartmc tc enable
+192856.328: [19:28:56]#
+192856.329: [19:28:56]wlan ap-group default-group
+192856.329: [19:28:56] vlan 1
+192856.329: [19:28:56]#
+192856.329: [19:28:56]security-policy ip
+192856.329: [19:28:56] rule 23 name 11
+192856.329: [19:28:56]  action pass
+192856.329: [19:28:56]  source-zone Trust
+192856.329: [19:28:56]  destination-zone Trust
+192856.329: [19:28:56]  destination-ip-host 192.168.242.180 
+192856.329: [19:28:56] rule 22 name all
+192856.329: [19:28:56]  action pass
+192856.329: [19:28:56]  source-zone Trust
+192856.329: [19:28:56]  destination-zone Trust
+192856.329: [19:28:56]  source-ip-host 192.168.242.180 
+192856.329: [19:28:56] rule 0 name AUTONET_LOCAL2ANY_DONTMODIFY
+192856.329: [19:28:56]  action pass
+192856.413: [19:28:56]  source-zone local
+192856.413: [19:28:56] rule 1 name AUTONET_LAN2LOCAL_DONTMODIFY
+192856.413: [19:28:56]  action pass
+192856.413: [19:28:56]  source-zone LAN
+192856.413: [19:28:56]  destination-zone local
+192856.413: [19:28:56] rule 2 name AUTONET_LAN2LAN_DONTMODIFY
+192856.413: [19:28:56]  action pass
+192856.413: [19:28:56]  source-zone LAN
+192856.413: [19:28:56]  destination-zone LAN
+192856.413: [19:28:56] rule 3 name Any_Any_3_IPv4
+192856.413: [19:28:56]  action pass
+192856.413: [19:28:56] rule 10 name pas
+192856.413: [19:28:56]  action pass
+192856.413: [19:28:56] rule 21 name in-out
+192856.413: [19:28:56]  action pass
+192856.413: [19:28:56]#
+192856.413: [19:28:56] cloud-management server domain cloudnet.h3c.com
+192856.413: [19:28:56]#
+192856.413: [19:28:56]return
+193857.411: [19:38:57]<H3C>      
+193857.413: [19:38:57]Inactive timeout reached, logging out.
+193902.828: [19:39:02][202602192.168.2.254-19:39:02]
+193903.856: [19:39:03]
+193903.858: [19:39:03]******************************************************************************
+193903.859: [19:39:03]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+193903.859: [19:39:03]* Without the owner's prior written consent,                                 *
+193903.859: [19:39:03]* no decompiling or reverse-engineering shall be allowed.                    *
+193903.859: [19:39:03]******************************************************************************
+193903.859: [19:39:03]
+194905.797: [19:49:05]<H3C>
+194905.799: [19:49:05]Inactive timeout reached, logging out.
+194911.362: [19:49:11][202602192.168.2.254-19:49:11]
+194912.390: [19:49:12]
+194912.391: [19:49:12]******************************************************************************
+194912.391: [19:49:12]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+194912.392: [19:49:12]* Without the owner's prior written consent,                                 *
+194912.392: [19:49:12]* no decompiling or reverse-engineering shall be allowed.                    *
+194912.392: [19:49:12]******************************************************************************
+194912.392: [19:49:12]
+195914.601: [19:59:14]<H3C>
+195914.602: [19:59:14]Inactive timeout reached, logging out.
+195920.568: [19:59:20][202602192.168.2.254-19:59:20]
+195921.597: [19:59:21]
+195921.597: [19:59:21]******************************************************************************
+195921.598: [19:59:21]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+195921.598: [19:59:21]* Without the owner's prior written consent,                                 *
+195921.598: [19:59:21]* no decompiling or reverse-engineering shall be allowed.                    *
+195921.598: [19:59:21]******************************************************************************
+195921.598: [19:59:21]
+200924.143: [20:09:24]<H3C>
+200924.144: [20:09:24]Inactive timeout reached, logging out.
+200929.787: [20:09:29][202602192.168.2.254-20:09:29]
+200930.815: [20:09:30]
+200930.815: [20:09:30]******************************************************************************
+200930.816: [20:09:30]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+200930.816: [20:09:30]* Without the owner's prior written consent,                                 *
+200930.816: [20:09:30]* no decompiling or reverse-engineering shall be allowed.                    *
+200930.816: [20:09:30]******************************************************************************
+200930.816: [20:09:30]
+201932.705: [20:19:32]<H3C>
+201932.706: [20:19:32]Inactive timeout reached, logging out.
+201938.532: [20:19:38][202602192.168.2.254-20:19:38]
+201939.563: [20:19:39]
+201939.565: [20:19:39]******************************************************************************
+201939.566: [20:19:39]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+201939.566: [20:19:39]* Without the owner's prior written consent,                                 *
+201939.566: [20:19:39]* no decompiling or reverse-engineering shall be allowed.                    *
+201939.566: [20:19:39]******************************************************************************
+201939.566: [20:19:39]
+202941.592: [20:29:41]<H3C>
+202941.593: [20:29:41]Inactive timeout reached, logging out.
+202947.488: [20:29:47][202602192.168.2.254-20:29:47]
+202948.515: [20:29:48]
+202948.517: [20:29:48]******************************************************************************
+202948.517: [20:29:48]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+202948.517: [20:29:48]* Without the owner's prior written consent,                                 *
+202948.518: [20:29:48]* no decompiling or reverse-engineering shall be allowed.                    *
+202948.518: [20:29:48]******************************************************************************
+202948.518: [20:29:48]
+203950.582: [20:39:50]<H3C>
+203950.583: [20:39:50]Inactive timeout reached, logging out.
+203956.316: [20:39:56][202602192.168.2.254-20:39:56]
+203957.343: [20:39:57]
+203957.345: [20:39:57]******************************************************************************
+203957.345: [20:39:57]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+203957.345: [20:39:57]* Without the owner's prior written consent,                                 *
+203957.346: [20:39:57]* no decompiling or reverse-engineering shall be allowed.                    *
+203957.346: [20:39:57]******************************************************************************
+203957.346: [20:39:57]
+204959.558: [20:49:59]<H3C>
+204959.559: [20:49:59]Inactive timeout reached, logging out.
+205004.872: [20:50:04][202602192.168.2.254-20:50:04]
+205005.904: [20:50:05]
+205005.904: [20:50:05]******************************************************************************
+205005.904: [20:50:05]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+205005.904: [20:50:05]* Without the owner's prior written consent,                                 *
+205005.904: [20:50:05]* no decompiling or reverse-engineering shall be allowed.                    *
+205005.905: [20:50:05]******************************************************************************
+205005.905: [20:50:05]
+210007.948: [21:00:07]<H3C>
+210007.948: [21:00:07]Inactive timeout reached, logging out.
+210013.313: [21:00:13][202602192.168.2.254-21:00:13]
+210014.341: [21:00:14]
+210014.342: [21:00:14]******************************************************************************
+210014.342: [21:00:14]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+210014.342: [21:00:14]* Without the owner's prior written consent,                                 *
+210014.342: [21:00:14]* no decompiling or reverse-engineering shall be allowed.                    *
+210014.343: [21:00:14]******************************************************************************
+210014.343: [21:00:14]
+211016.422: [21:10:16]<H3C>
+211016.423: [21:10:16]Inactive timeout reached, logging out.
+211021.753: [21:10:21][202602192.168.2.254-21:10:21]
+211022.785: [21:10:22]
+211022.785: [21:10:22]******************************************************************************
+211022.786: [21:10:22]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+211022.786: [21:10:22]* Without the owner's prior written consent,                                 *
+211022.786: [21:10:22]* no decompiling or reverse-engineering shall be allowed.                    *
+211022.786: [21:10:22]******************************************************************************
+211022.786: [21:10:22]
+212024.724: [21:20:24]<H3C>
+212024.727: [21:20:24]Inactive timeout reached, logging out.
+212030.454: [21:20:30][202602192.168.2.254-21:20:30]
+212031.483: [21:20:31]
+212031.484: [21:20:31]******************************************************************************
+212031.484: [21:20:31]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+212031.484: [21:20:31]* Without the owner's prior written consent,                                 *
+212031.484: [21:20:31]* no decompiling or reverse-engineering shall be allowed.                    *
+212031.485: [21:20:31]******************************************************************************
+212031.485: [21:20:31]
+213033.509: [21:30:33]<H3C>
+213033.510: [21:30:33]Inactive timeout reached, logging out.
+213038.731: [21:30:38][202602192.168.2.254-21:30:38]
+213039.762: [21:30:39]
+213039.762: [21:30:39]******************************************************************************
+213039.762: [21:30:39]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+213039.762: [21:30:39]* Without the owner's prior written consent,                                 *
+213039.764: [21:30:39]* no decompiling or reverse-engineering shall be allowed.                    *
+213039.764: [21:30:39]******************************************************************************
+213039.764: [21:30:39]
+214041.871: [21:40:41]<H3C>
+214047.591: [21:40:47][202602192.168.2.254-21:40:47]
+214048.620: [21:40:48]
+214048.622: [21:40:48]******************************************************************************
+214048.622: [21:40:48]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+214048.622: [21:40:48]* Without the owner's prior written consent,                                 *
+214048.623: [21:40:48]* no decompiling or reverse-engineering shall be allowed.                    *
+214048.623: [21:40:48]******************************************************************************
+214048.623: [21:40:48]
+215050.673: [21:50:50]<H3C>
+215050.673: [21:50:50]Inactive timeout reached, logging out.
+215056.463: [21:50:56][202602192.168.2.254-21:50:56]
+215057.486: [21:50:57]
+215057.489: [21:50:57]******************************************************************************
+215057.489: [21:50:57]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+215057.489: [21:50:57]* Without the owner's prior written consent,                                 *
+215057.490: [21:50:57]* no decompiling or reverse-engineering shall be allowed.                    *
+215057.491: [21:50:57]******************************************************************************
+215057.491: [21:50:57]
+220059.569: [22:00:59]<H3C>
+220059.570: [22:00:59]Inactive timeout reached, logging out.
+220104.818: [22:01:04][202602192.168.2.254-22:01:04]
+220105.843: [22:01:05]
+220105.843: [22:01:05]******************************************************************************
+220105.843: [22:01:05]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+220105.843: [22:01:05]* Without the owner's prior written consent,                                 *
+220105.844: [22:01:05]* no decompiling or reverse-engineering shall be allowed.                    *
+220105.844: [22:01:05]******************************************************************************
+220105.844: [22:01:05]
+221107.844: [22:11:07]<H3C>
+221107.844: [22:11:07]Inactive timeout reached, logging out.
+221113.405: [22:11:13][202602192.168.2.254-22:11:13]
+221114.452: [22:11:14]
+221114.453: [22:11:14]******************************************************************************
+221114.453: [22:11:14]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+221114.453: [22:11:14]* Without the owner's prior written consent,                                 *
+221114.453: [22:11:14]* no decompiling or reverse-engineering shall be allowed.                    *
+221114.454: [22:11:14]******************************************************************************
+221114.454: [22:11:14]
+222116.537: [22:21:16]<H3C>
+222116.539: [22:21:16]Inactive timeout reached, logging out.
+222121.891: [22:21:21][202602192.168.2.254-22:21:21]
+222122.986: [22:21:22]
+222122.987: [22:21:22]******************************************************************************
+222122.987: [22:21:22]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+222122.988: [22:21:22]* Without the owner's prior written consent,                                 *
+222122.988: [22:21:22]* no decompiling or reverse-engineering shall be allowed.                    *
+222122.988: [22:21:22]******************************************************************************
+222122.988: [22:21:22]
+223124.768: [22:31:24]<H3C>
+223124.769: [22:31:24]Inactive timeout reached, logging out.
+223130.399: [22:31:30][202602192.168.2.254-22:31:30]
+223131.438: [22:31:31]
+223131.441: [22:31:31]******************************************************************************
+223131.441: [22:31:31]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+223131.441: [22:31:31]* Without the owner's prior written consent,                                 *
+223131.441: [22:31:31]* no decompiling or reverse-engineering shall be allowed.                    *
+223131.442: [22:31:31]******************************************************************************
+223131.442: [22:31:31]
+224133.634: [22:41:33]<H3C>
+224133.635: [22:41:33]Inactive timeout reached, logging out.
+224139.312: [22:41:39][202602192.168.2.254-22:41:39]
+224140.340: [22:41:40]
+224140.340: [22:41:40]******************************************************************************
+224140.340: [22:41:40]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+224140.340: [22:41:40]* Without the owner's prior written consent,                                 *
+224140.340: [22:41:40]* no decompiling or reverse-engineering shall be allowed.                    *
+224140.341: [22:41:40]******************************************************************************
+224140.341: [22:41:40]
+225142.420: [22:51:42]<H3C>
+225142.421: [22:51:42]Inactive timeout reached, logging out.
+225148.059: [22:51:48][202602192.168.2.254-22:51:48]
+225149.085: [22:51:49]
+225149.087: [22:51:49]******************************************************************************
+225149.087: [22:51:49]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+225149.087: [22:51:49]* Without the owner's prior written consent,                                 *
+225149.088: [22:51:49]* no decompiling or reverse-engineering shall be allowed.                    *
+225149.088: [22:51:49]******************************************************************************
+225149.088: [22:51:49]
+230150.904: [23:01:50]<H3C>
+230150.904: [23:01:50]Inactive timeout reached, logging out.
+230156.482: [23:01:56][202602192.168.2.254-23:01:56]
+230157.512: [23:01:57]
+230157.512: [23:01:57]******************************************************************************
+230157.513: [23:01:57]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+230157.513: [23:01:57]* Without the owner's prior written consent,                                 *
+230157.513: [23:01:57]* no decompiling or reverse-engineering shall be allowed.                    *
+230157.514: [23:01:57]******************************************************************************
+230157.514: [23:01:57]
+231159.331: [23:11:59]<H3C>
+231159.332: [23:11:59]Inactive timeout reached, logging out.
+231204.824: [23:12:04][202602192.168.2.254-23:12:04]
+231205.861: [23:12:05]
+231205.861: [23:12:05]******************************************************************************
+231205.862: [23:12:05]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+231205.862: [23:12:05]* Without the owner's prior written consent,                                 *
+231205.862: [23:12:05]* no decompiling or reverse-engineering shall be allowed.                    *
+231205.863: [23:12:05]******************************************************************************
+231205.863: [23:12:05]
+232208.227: [23:22:08]<H3C>
+232208.229: [23:22:08]Inactive timeout reached, logging out.
+232213.837: [23:22:13][202602192.168.2.254-23:22:13]
+232214.864: [23:22:14]
+232214.866: [23:22:14]******************************************************************************
+232214.866: [23:22:14]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+232214.867: [23:22:14]* Without the owner's prior written consent,                                 *
+232214.867: [23:22:14]* no decompiling or reverse-engineering shall be allowed.                    *
+232214.867: [23:22:14]******************************************************************************
+232214.867: [23:22:14]
+233216.812: [23:32:16]<H3C>
+233216.813: [23:32:16]Inactive timeout reached, logging out.
+233222.428: [23:32:22][202602192.168.2.254-23:32:22]
+233223.457: [23:32:23]
+233223.457: [23:32:23]******************************************************************************
+233223.458: [23:32:23]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+233223.458: [23:32:23]* Without the owner's prior written consent,                                 *
+233223.458: [23:32:23]* no decompiling or reverse-engineering shall be allowed.                    *
+233223.458: [23:32:23]******************************************************************************
+233223.458: [23:32:23]
+234225.307: [23:42:25]<H3C>
+234225.308: [23:42:25]Inactive timeout reached, logging out.
+234230.776: [23:42:30][202602192.168.2.254-23:42:30]
+234231.802: [23:42:31]
+234231.802: [23:42:31]******************************************************************************
+234231.802: [23:42:31]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+234231.802: [23:42:31]* Without the owner's prior written consent,                                 *
+234231.802: [23:42:31]* no decompiling or reverse-engineering shall be allowed.                    *
+234231.803: [23:42:31]******************************************************************************
+234231.803: [23:42:31]
+235233.700: [23:52:33]<H3C>
+235233.701: [23:52:33]Inactive timeout reached, logging out.
+235239.682: [23:52:39][202602192.168.2.254-23:52:39]
+235240.716: [23:52:40]
+235240.719: [23:52:40]******************************************************************************
+235240.719: [23:52:40]* Copyright (c) 2004-2024 New H3C Technologies Co., Ltd. All rights reserved.*
+235240.719: [23:52:40]* Without the owner's prior written consent,                                 *
+235240.719: [23:52:40]* no decompiling or reverse-engineering shall be allowed.                    *
+235240.720: [23:52:40]******************************************************************************
+235240.720: [23:52:40]

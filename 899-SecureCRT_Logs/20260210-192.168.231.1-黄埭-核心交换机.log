@@ -1,0 +1,224 @@
+﻿091824.326: [09:18:24][202602192.168.231.1-黄埭-核心交换机-09:18:24]
+091824.368: [09:18:24]
+091824.373: [09:18:24]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+091824.406: [09:18:24]      The current login time is 2025-11-15 16:29:34.
+091824.782: [09:18:24]<Core-SW>
+091827.953: [09:18:27]<Core-SW>show ip rout
+091831.606: [09:18:31]<Core-SW>disp        
+091833.238: [09:18:33]<Core-SW>display ip rou
+091834.705: [09:18:34]<Core-SW>display ip routing-table 
+091834.872: [09:18:34]<Core-SW>display ip routing-table 
+091835.525: [09:18:35]<Core-SW>display ip routing-table 
+091835.576: [09:18:35]Proto: Protocol        Pre: Preference
+091835.577: [09:18:35]Route Flags: R - relay, D - download to fib, T - to vpn-instance, B - black hole route
+091835.577: [09:18:35]------------------------------------------------------------------------------
+091835.577: [09:18:35]Routing Table : _public_
+091835.583: [09:18:35]         Destinations : 32       Routes : 32        
+091835.583: [09:18:35]
+091835.583: [09:18:35]Destination/Mask    Proto   Pre  Cost        Flags NextHop                                  Interface
+091835.583: [09:18:35]
+091835.596: [09:18:35]        0.0.0.0/0   Static  60   0             RD  192.168.10.2                             Vlanif10
+091835.596: [09:18:35]      10.50.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+091835.596: [09:18:35]      10.52.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+091835.596: [09:18:35]      10.60.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+091835.596: [09:18:35]      10.70.0.0/24  Static  60   0             RD  192.168.231.2                            Vlanif231
+091835.597: [09:18:35]      10.80.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+091835.597: [09:18:35]      127.0.0.0/8   Direct  0    0             D   127.0.0.1                                InLoopBack0
+091835.597: [09:18:35]      127.0.0.1/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+091835.597: [09:18:35]127.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+091835.597: [09:18:35]   172.16.101.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+091835.597: [09:18:35]   172.16.208.0/20  Static  60   0             D   192.168.231.2                            Vlanif231
+091835.597: [09:18:35]    192.168.2.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+091835.597: [09:18:35]    192.168.3.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+091835.597: [09:18:35]    192.168.4.0/22  Static  59   0             D   192.168.231.2                            Vlanif231
+091835.597: [09:18:35]   192.168.10.0/24  Direct  0    0             D   192.168.10.1                             Vlanif10
+091836.980: [09:18:36]   192.168.10.1/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+091836.981: [09:18:36] 192.168.10.255/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+091836.981: [09:18:36]   192.168.12.0/22  Static  60   0             D   192.168.231.2                            Vlanif231
+091836.981: [09:18:36]  192.168.100.0/22  Static  60   0             RD  192.168.230.2                            Vlanif230
+091836.981: [09:18:36]  192.168.230.0/30  Direct  0    0             D   192.168.230.1                            Vlanif230
+091836.981: [09:18:36]  192.168.230.1/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+091836.982: [09:18:36]  192.168.230.3/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+091836.982: [09:18:36]  192.168.231.0/30  Direct  0    0             D   192.168.231.1                            Vlanif231
+091836.982: [09:18:36]  192.168.231.1/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+091836.982: [09:18:36]  192.168.231.3/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+091836.983: [09:18:36]  192.168.232.0/24  Direct  0    0             D   192.168.232.1                            Vlanif232
+091836.983: [09:18:36]  192.168.232.1/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+091836.983: [09:18:36]192.168.232.255/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+091836.983: [09:18:36]  192.168.242.0/24  Direct  0    0             D   192.168.242.1                            Vlanif242
+091836.983: [09:18:36]  192.168.242.1/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+091836.984: [09:18:36]192.168.242.255/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+091836.984: [09:18:36]255.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+091841.061: [09:18:41]<Core-SW> ping 192.168.10.2
+091841.305: [09:18:41]  PING 192.168.10.2: 56  data bytes, press CTRL_C to break
+091841.801: [09:18:41]    Reply from 192.168.10.2: bytes=56 Sequence=1 ttl=255 time=1 ms
+091842.405: [09:18:42]    Reply from 192.168.10.2: bytes=56 Sequence=2 ttl=255 time=1 ms
+091842.405: [09:18:42]    Reply from 192.168.10.2: bytes=56 Sequence=3 ttl=255 time=1 ms
+091842.405: [09:18:42]
+091842.405: [09:18:42]  --- 192.168.10.2 ping statistics ---
+091842.405: [09:18:42]    3 packet(s) transmitted
+091842.405: [09:18:42]    3 packet(s) received
+091842.406: [09:18:42]    0.00% packet loss
+091842.406: [09:18:42]    round-trip min/avg/max = 1/1/1 ms
+091842.406: [09:18:42] 
+091849.608: [09:18:49]<Core-SW>ping 58.211.207.202
+091849.871: [09:18:49]  PING 58.211.207.202: 56  data bytes, press CTRL_C to break
+091850.394: [09:18:50]    Reply from 58.211.207.202: bytes=56 Sequence=1 ttl=113 time=14 ms
+091850.931: [09:18:50]    Reply from 58.211.207.202: bytes=56 Sequence=2 ttl=113 time=14 ms
+091851.474: [09:18:51]    Reply from 58.211.207.202: bytes=56 Sequence=3 ttl=113 time=14 ms
+091851.967: [09:18:51]    Reply from 58.211.207.202: bytes=56 Sequence=4 ttl=113 time=15 ms
+091851.977: [09:18:51]    Reply from 58.211.207.202: bytes=56 Sequence=5 ttl=113 time=15 ms
+091851.977: [09:18:51]
+091851.977: [09:18:51]  --- 58.211.207.202 ping statistics ---
+091851.977: [09:18:51]    5 packet(s) transmitted
+091851.978: [09:18:51]    5 packet(s) received
+091851.978: [09:18:51]    0.00% packet loss
+091851.978: [09:18:51]    round-trip min/avg/max = 14/14/15 ms
+091851.978: [09:18:51] 
+091928.345: [09:19:28]<Core-SW>ping 10.50.0.100
+091928.711: [09:19:28]  PING 10.50.0.100: 56  data bytes, press CTRL_C to break
+091929.232: [09:19:29]    Reply from 10.50.0.100: bytes=56 Sequence=1 ttl=63 time=1 ms
+091929.733: [09:19:29]    Reply from 10.50.0.100: bytes=56 Sequence=2 ttl=63 time=1 ms
+091930.302: [09:19:30]    Reply from 10.50.0.100: bytes=56 Sequence=3 ttl=63 time=1 ms
+091930.318: [09:19:30]    Reply from 10.50.0.100: bytes=56 Sequence=4 ttl=63 time=1 ms
+091930.318: [09:19:30]
+091930.318: [09:19:30]  --- 10.50.0.100 ping statistics ---
+091930.318: [09:19:30]    4 packet(s) transmitted
+091930.318: [09:19:30]    4 packet(s) received
+091930.318: [09:19:30]    0.00% packet loss
+091930.318: [09:19:30]    round-trip min/avg/max = 1/1/1 ms
+091930.318: [09:19:30] 
+092049.575: [09:20:49]<Core-SW>ping www.baidu.com
+092050.834: [09:20:50]Error: Unknown host www.baidu.com.
+092059.658: [09:20:59]<Core-SW>ping 58.211.207.202
+092059.903: [09:20:59]  PING 58.211.207.202: 56  data bytes, press CTRL_C to break
+092100.475: [09:21:00]    Reply from 58.211.207.202: bytes=56 Sequence=1 ttl=113 time=15 ms
+092101.010: [09:21:01]    Reply from 58.211.207.202: bytes=56 Sequence=2 ttl=113 time=14 ms
+092101.496: [09:21:01]    Reply from 58.211.207.202: bytes=56 Sequence=3 ttl=113 time=15 ms
+092102.136: [09:21:02]    Reply from 58.211.207.202: bytes=56 Sequence=4 ttl=113 time=15 ms
+092102.136: [09:21:02]    Reply from 58.211.207.202: bytes=56 Sequence=5 ttl=113 time=109 ms
+092102.136: [09:21:02]
+092102.136: [09:21:02]  --- 58.211.207.202 ping statistics ---
+092102.136: [09:21:02]    5 packet(s) transmitted
+092102.136: [09:21:02]    5 packet(s) received
+092102.136: [09:21:02]    0.00% packet loss
+092102.136: [09:21:02]    round-trip min/avg/max = 14/33/109 ms
+092102.136: [09:21:02] 
+092106.338: [09:21:06]<Core-SW>ping 114.114.114.114
+092108.719: [09:21:08]  PING 114.114.114.114: 56  data bytes, press CTRL_C to break
+092110.850: [09:21:10]    Request time out
+092110.865: [09:21:10]    Request time out
+092110.865: [09:21:10]
+092110.865: [09:21:10]  --- 114.114.114.114 ping statistics ---
+092110.865: [09:21:10]    2 packet(s) transmitted
+092110.865: [09:21:10]    0 packet(s) received
+092110.865: [09:21:10]    100.00% packet loss
+092401.597: [09:24:01]<Core-SW>disp 
+092402.360: [09:24:02]<Core-SW>display pl
+092404.623: [09:24:04]<Core-SW>display ip rout
+092404.954: [09:24:04]<Core-SW>display ip routing-table 
+092405.010: [09:24:05]Proto: Protocol        Pre: Preference
+092405.010: [09:24:05]Route Flags: R - relay, D - download to fib, T - to vpn-instance, B - black hole route
+092405.011: [09:24:05]------------------------------------------------------------------------------
+092405.011: [09:24:05]Routing Table : _public_
+092405.022: [09:24:05]         Destinations : 32       Routes : 32        
+092405.022: [09:24:05]
+092405.022: [09:24:05]Destination/Mask    Proto   Pre  Cost        Flags NextHop                                  Interface
+092405.022: [09:24:05]
+092405.029: [09:24:05]        0.0.0.0/0   Static  60   0             RD  192.168.10.2                             Vlanif10
+092405.029: [09:24:05]      10.50.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+092405.029: [09:24:05]      10.52.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+092405.029: [09:24:05]      10.60.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+092405.029: [09:24:05]      10.70.0.0/24  Static  60   0             RD  192.168.231.2                            Vlanif231
+092405.029: [09:24:05]      10.80.0.0/24  Static  60   0             RD  192.168.230.2                            Vlanif230
+092405.030: [09:24:05]      127.0.0.0/8   Direct  0    0             D   127.0.0.1                                InLoopBack0
+092405.030: [09:24:05]      127.0.0.1/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+092405.030: [09:24:05]127.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+092405.030: [09:24:05]   172.16.101.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+092405.030: [09:24:05]   172.16.208.0/20  Static  60   0             D   192.168.231.2                            Vlanif231
+092405.030: [09:24:05]    192.168.2.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+092405.030: [09:24:05]    192.168.3.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+092405.030: [09:24:05]    192.168.4.0/22  Static  59   0             D   192.168.231.2                            Vlanif231
+092405.030: [09:24:05]   192.168.10.0/24  Direct  0    0             D   192.168.10.1                             Vlanif10
+092406.218: [09:24:06]   192.168.10.1/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+092406.218: [09:24:06] 192.168.10.255/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+092406.219: [09:24:06]   192.168.12.0/22  Static  60   0             D   192.168.231.2                            Vlanif231
+092406.219: [09:24:06]  192.168.100.0/22  Static  60   0             RD  192.168.230.2                            Vlanif230
+092406.219: [09:24:06]  192.168.230.0/30  Direct  0    0             D   192.168.230.1                            Vlanif230
+092406.219: [09:24:06]  192.168.230.1/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+092406.219: [09:24:06]  192.168.230.3/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+092406.220: [09:24:06]  192.168.231.0/30  Direct  0    0             D   192.168.231.1                            Vlanif231
+092406.220: [09:24:06]  192.168.231.1/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+092406.220: [09:24:06]  192.168.231.3/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+092406.220: [09:24:06]  192.168.232.0/24  Direct  0    0             D   192.168.232.1                            Vlanif232
+092406.220: [09:24:06]  192.168.232.1/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+092406.221: [09:24:06]192.168.232.255/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+092406.221: [09:24:06]  192.168.242.0/24  Direct  0    0             D   192.168.242.1                            Vlanif242
+092406.221: [09:24:06]  192.168.242.1/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+092406.221: [09:24:06]192.168.242.255/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+092406.221: [09:24:06]255.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+092412.083: [09:24:12]<Core-SW> disp ip int
+092412.495: [09:24:12]<Core-SW> disp ip interface br
+092412.682: [09:24:12]<Core-SW> disp ip interface brief 
+092412.727: [09:24:12]*down: administratively down
+092412.727: [09:24:12]!down: FIB overload down
+092412.727: [09:24:12]^down: standby
+092412.727: [09:24:12](l): loopback
+092412.727: [09:24:12](s): spoofing
+092412.728: [09:24:12](d): Dampening Suppressed
+092412.728: [09:24:12](ed): error down
+092412.728: [09:24:12]The number of interface that is UP in Physical is 6
+092412.728: [09:24:12]The number of interface that is DOWN in Physical is 1
+092412.728: [09:24:12]The number of interface that is UP in Protocol is 6
+092412.728: [09:24:12]The number of interface that is DOWN in Protocol is 1
+092412.747: [09:24:12]Interface                   IP Address/Mask    Physical Protocol VPN           
+092412.747: [09:24:12]MEth0/0/0                   unassigned         down     down     --            
+092412.747: [09:24:12]NULL0                       unassigned         up       up(s)    --            
+092412.747: [09:24:12]Vlanif10                    192.168.10.1/24    up       up       --            
+092412.747: [09:24:12]Vlanif230                   192.168.230.1/30   up       up       --            
+092412.747: [09:24:12]Vlanif231                   192.168.231.1/30   up       up       --            
+092412.754: [09:24:12]Vlanif232                   192.168.232.1/24   up       up       --            
+092412.754: [09:24:12]Vlanif242                   192.168.242.1/24   up       up       --            
+092848.198: [09:28:48]<Core-SW>
+092848.330: [09:28:48]<Core-SW>
+092848.465: [09:28:48]<Core-SW>
+093848.476: [09:38:48]<Core-SW>
+093854.436: [09:38:54][202602192.168.231.1-黄埭-核心交换机-09:38:54]
+093854.484: [09:38:54]
+093854.489: [09:38:54]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+093854.519: [09:38:54]      The current login time is 2025-11-15 16:50:04.
+094854.591: [09:48:54]<Core-SW>
+094900.353: [09:49:00][202602192.168.231.1-黄埭-核心交换机-09:49:00]
+094900.398: [09:49:00]
+094900.404: [09:49:00]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+094900.436: [09:49:00]      The current login time is 2025-11-15 17:00:10.
+095900.477: [09:59:00]<Core-SW>
+095906.423: [09:59:06][202602192.168.231.1-黄埭-核心交换机-09:59:06]
+095906.474: [09:59:06]
+095906.480: [09:59:06]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+095906.532: [09:59:06]      The current login time is 2025-11-15 17:10:16.
+100906.599: [10:09:06]<Core-SW>
+100912.495: [10:09:12][202602192.168.231.1-黄埭-核心交换机-10:09:12]
+100912.559: [10:09:12]
+100912.560: [10:09:12]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+100912.586: [10:09:12]      The current login time is 2025-11-15 17:20:22.
+101912.662: [10:19:12]<Core-SW>
+101918.496: [10:19:18][202602192.168.231.1-黄埭-核心交换机-10:19:18]
+101918.563: [10:19:18]
+101918.563: [10:19:18]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+101918.602: [10:19:18]      The current login time is 2025-11-15 17:30:28.
+102918.679: [10:29:18]<Core-SW>
+102924.905: [10:29:24][202602192.168.231.1-黄埭-核心交换机-10:29:24]
+102924.945: [10:29:24]
+102924.946: [10:29:24]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+102925.008: [10:29:25]      The current login time is 2025-11-15 17:40:34.
+103925.098: [10:39:25]<Core-SW>
+103930.889: [10:39:30][202602192.168.231.1-黄埭-核心交换机-10:39:30]
+103930.934: [10:39:30]
+103930.941: [10:39:30]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+103930.986: [10:39:30]      The current login time is 2025-11-15 17:50:40.
+104931.036: [10:49:31]<Core-SW>
+104936.908: [10:49:36][202602192.168.231.1-黄埭-核心交换机-10:49:36]
+104936.993: [10:49:36]
+104936.994: [10:49:36]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+104937.022: [10:49:37]      The current login time is 2025-11-15 18:00:46.

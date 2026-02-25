@@ -1,0 +1,85 @@
+﻿144951.390: [14:49:51][202601300-C-B10-计算-Hygon-10.70.0.100-14:49:51]
+144951.433: [14:49:51]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-62-generic x86_64)
+144951.433: [14:49:51]
+144951.433: [14:49:51] * Documentation:  https://help.ubuntu.com
+144951.433: [14:49:51] * Management:     https://landscape.canonical.com
+144951.433: [14:49:51] * Support:        https://ubuntu.com/pro
+144951.433: [14:49:51]
+144951.433: [14:49:51] System information as of Mon Nov 24 09:52:51 AM CST 2025
+144951.433: [14:49:51]
+144951.434: [14:49:51]  System load:    109.72             Temperature:            58.0 C
+144951.434: [14:49:51]  Usage of /home: 0.1% of 301.67GB   Processes:              1406
+144951.434: [14:49:51]  Memory usage:   0%                 Users logged in:        1
+144951.434: [14:49:51]  Swap usage:     0%                 IPv4 address for bond0: 10.70.0.100
+144951.434: [14:49:51]
+144951.434: [14:49:51] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+144951.434: [14:49:51]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+144951.434: [14:49:51]
+144951.434: [14:49:51]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+144951.434: [14:49:51]
+144951.434: [14:49:51]Expanded Security Maintenance for Applications is not enabled.
+144951.434: [14:49:51]
+144951.434: [14:49:51]0 updates can be applied immediately.
+144951.434: [14:49:51]
+144951.434: [14:49:51]15 additional security updates can be applied with ESM Apps.
+144951.434: [14:49:51]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+144951.434: [14:49:51]
+144951.434: [14:49:51]
+144951.434: [14:49:51]*** System restart required ***
+144951.434: [14:49:51]You have mail.
+144951.434: [14:49:51]Last login: Thu Dec 25 17:25:13 2025 from 172.16.101.190
+144956.257: [14:49:56]root@suzhouprodc100:~# ip a
+144956.294: [14:49:56]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+144956.294: [14:49:56]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+144956.294: [14:49:56]    inet 127.0.0.1/8 scope host lo
+144956.294: [14:49:56]       valid_lft forever preferred_lft forever
+144956.294: [14:49:56]    inet6 ::1/128 scope host noprefixroute 
+144956.294: [14:49:56]       valid_lft forever preferred_lft forever
+144956.294: [14:49:56]2: ens101f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+144956.295: [14:49:56]    link/ether 4e:22:f3:d7:f2:8f brd ff:ff:ff:ff:ff:ff permaddr 9c:c2:c4:72:08:ca
+144956.295: [14:49:56]    altname enp13s0f0np0
+144956.295: [14:49:56]3: ens101f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+144956.295: [14:49:56]    link/ether 4e:22:f3:d7:f2:8f brd ff:ff:ff:ff:ff:ff permaddr 9c:c2:c4:72:08:cb
+144956.295: [14:49:56]    altname enp13s0f1np1
+144956.295: [14:49:56]4: ens1f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+144956.296: [14:49:56]    link/ether 96:85:fe:f1:b5:2c brd ff:ff:ff:ff:ff:ff permaddr 5c:25:73:61:c4:6e
+144956.296: [14:49:56]    altname enp34s0f0np0
+144956.296: [14:49:56]5: ens1f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+144956.296: [14:49:56]    link/ether 96:85:fe:f1:b5:2c brd ff:ff:ff:ff:ff:ff permaddr 5c:25:73:61:c4:6f
+144956.296: [14:49:56]    altname enp34s0f1np1
+144956.297: [14:49:56]6: ens2f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master bond1 state UP group default qlen 1000
+144956.297: [14:49:56]    link/ether 6a:79:0b:4e:ce:18 brd ff:ff:ff:ff:ff:ff permaddr 10:70:fd:48:63:c2
+144956.297: [14:49:56]    altname enp76s0f0np0
+144956.297: [14:49:56]7: ens2f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master bond1 state UP group default qlen 1000
+144956.297: [14:49:56]    link/ether 6a:79:0b:4e:ce:18 brd ff:ff:ff:ff:ff:ff permaddr 10:70:fd:48:63:c3
+144956.297: [14:49:56]    altname enp76s0f1np1
+144956.298: [14:49:56]8: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+144956.298: [14:49:56]    link/ether 4e:22:f3:d7:f2:8f brd ff:ff:ff:ff:ff:ff
+144956.298: [14:49:56]    inet 10.70.0.100/24 brd 10.70.0.255 scope global bond0
+144956.298: [14:49:56]       valid_lft forever preferred_lft forever
+144956.298: [14:49:56]    inet6 fe80::4c22:f3ff:fed7:f28f/64 scope link 
+144956.298: [14:49:56]       valid_lft forever preferred_lft forever
+144956.298: [14:49:56]9: bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+144956.298: [14:49:56]    link/ether 6a:79:0b:4e:ce:18 brd ff:ff:ff:ff:ff:ff
+144956.298: [14:49:56]    inet 10.72.0.100/24 brd 10.72.0.255 scope global bond1
+144956.298: [14:49:56]       valid_lft forever preferred_lft forever
+144956.298: [14:49:56]    inet6 fe80::6879:bff:fe4e:ce18/64 scope link 
+144956.298: [14:49:56]       valid_lft forever preferred_lft forever
+144956.298: [14:49:56]10: bond2: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+144956.298: [14:49:56]    link/ether 96:85:fe:f1:b5:2c brd ff:ff:ff:ff:ff:ff
+144956.299: [14:49:56]    inet 10.74.0.100/24 brd 10.74.0.255 scope global bond2
+144956.299: [14:49:56]       valid_lft forever preferred_lft forever
+144956.299: [14:49:56]    inet6 fe80::9485:feff:fef1:b52c/64 scope link 
+144956.299: [14:49:56]       valid_lft forever preferred_lft forever
+144958.382: [14:49:58]root@suzhouprodc100:~# lsblk
+144958.383: [14:49:58]NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+144958.383: [14:49:58]sda      8:0    0 447.1G  0 disk 
+144958.383: [14:49:58]├─sda1   8:1    0     1G  0 part /boot/efi
+144958.383: [14:49:58]├─sda2   8:2    0   500M  0 part /boot
+144958.383: [14:49:58]├─sda3   8:3    0    10G  0 part /tmp
+144958.383: [14:49:58]├─sda4   8:4    0    30G  0 part /var
+144958.383: [14:49:58]├─sda5   8:5    0    30G  0 part /usr
+144958.383: [14:49:58]├─sda6   8:6    0    60G  0 part /
+144958.384: [14:49:58]├─sda7   8:7    0     8G  0 part 
+144958.384: [14:49:58]└─sda8   8:8    0 307.6G  0 part /home
+144958.384: [14:49:58]sdb      8:16   0   6.5T  0 disk 

@@ -1,0 +1,30 @@
+﻿145023.630: [14:50:23][202601Ctyun3-14:50:23]
+145023.753: [14:50:23]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+145023.754: [14:50:23]
+145023.754: [14:50:23]The programs included with the Debian GNU/Linux system are free software;
+145023.754: [14:50:23]the exact distribution terms for each program are described in the
+145023.754: [14:50:23]individual files in /usr/share/doc/*/copyright.
+145023.754: [14:50:23]
+145023.754: [14:50:23]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+145023.754: [14:50:23]permitted by applicable law.
+145023.754: [14:50:23]Last login: Tue Jan 27 21:29:10 2026 from 10.253.0.11
+152014.165: [15:20:14][202601Ctyun3-15:20:14]
+152014.249: [15:20:14]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+152014.250: [15:20:14]
+152014.250: [15:20:14]The programs included with the Debian GNU/Linux system are free software;
+152014.250: [15:20:14]the exact distribution terms for each program are described in the
+152014.250: [15:20:14]individual files in /usr/share/doc/*/copyright.
+152014.250: [15:20:14]
+152014.250: [15:20:14]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+152014.250: [15:20:14]permitted by applicable law.
+152014.250: [15:20:14]Last login: Wed Jan 28 14:50:23 2026 from 223.107.68.194
+152020.068: [15:20:20][root@10-253-0-3 ~]# df -lh
+152020.090: [15:20:20]Filesystem         Size  Used Avail Use% Mounted on
+152020.090: [15:20:20]udev               7.8G     0  7.8G   0% /dev
+152020.090: [15:20:20]tmpfs              1.6G  2.3M  1.6G   1% /run
+152020.090: [15:20:20]/dev/vda2           36G  8.9G   25G  27% /
+152020.091: [15:20:20]tmpfs              7.9G     0  7.9G   0% /dev/shm
+152020.091: [15:20:20]tmpfs              5.0M  4.0K  5.0M   1% /run/lock
+152020.091: [15:20:20]/dev/mapper/vg-lv  8.9T  779G  7.8T   9% /DATA/Media
+152020.091: [15:20:20]overlay             36G  8.9G   25G  27% /var/lib/docker/overlay2/e75acff19d04043c2227c2b3357b956aa5f610069fbea4d288eaff1ec0b1189c/merged
+152020.091: [15:20:20]tmpfs              1.6G     0  1.6G   0% /run/user/0

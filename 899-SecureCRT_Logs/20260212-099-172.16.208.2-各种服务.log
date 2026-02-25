@@ -1,0 +1,20 @@
+﻿135108.493: [13:51:08][root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+135108.664: [13:51:08][root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+135113.381: [13:51:13][root@172-16-208-2 /DATA/AppData/Rustdesk]# ping 10.253.0.11
+135113.397: [13:51:13]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+135113.406: [13:51:13]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=6.02 ms
+135114.400: [13:51:14]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=6.23 ms
+135114.861: [13:51:14]^C
+135114.861: [13:51:14]--- 10.253.0.11 ping statistics ---
+135114.861: [13:51:14]2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+135114.861: [13:51:14]rtt min/avg/max/mdev = 6.020/6.127/6.234/0.107 ms
+135116.172: [13:51:16][root@172-16-208-2 /DATA/AppData/Rustdesk]# ping 10.253.0.11
+135116.189: [13:51:16]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+135116.189: [13:51:16]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=4.73 ms
+135117.181: [13:51:17]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=4.30 ms
+135118.182: [13:51:18]64 bytes from 10.253.0.11: icmp_seq=3 ttl=64 time=4.88 ms
+135119.184: [13:51:19]64 bytes from 10.253.0.11: icmp_seq=4 ttl=64 time=5.32 ms
+135120.137: [13:51:20]^C
+135120.137: [13:51:20]--- 10.253.0.11 ping statistics ---
+135120.137: [13:51:20]4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+135120.137: [13:51:20]rtt min/avg/max/mdev = 4.295/4.805/5.317/0.365 ms

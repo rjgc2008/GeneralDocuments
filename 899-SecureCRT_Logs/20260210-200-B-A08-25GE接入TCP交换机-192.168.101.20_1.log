@@ -1,0 +1,55 @@
+﻿101018.177: [10:10:18][202602200-B-A08-25GE接入TCP交换机-192.168.101.20-10:10:18]
+101018.396: [10:10:18]
+101020.065: [10:10:20]TCP_A08_39U# 
+101027.654: [10:10:27]TCP_A08_39U# show ip inte br
+101027.688: [10:10:27]Interface             IP-Address      Status                  Protocol
+101027.688: [10:10:27]vlan1                 192.168.100.1   up                      up
+101027.688: [10:10:27]vlan50                10.50.0.1       up                      up
+101027.688: [10:10:27]vlan52                10.52.0.1       up                      up
+101027.688: [10:10:27]vlan60                10.60.0.1       up                      up
+101027.688: [10:10:27]vlan80                10.80.0.1       up                      up
+101027.689: [10:10:27]vlan230               192.168.230.2   up                      up
+101032.905: [10:10:32]TCP_A08_39U# 
+101033.172: [10:10:33]TCP_A08_39U# 
+101033.385: [10:10:33]TCP_A08_39U# 
+101125.442: [10:11:25]TCP_A08_39U# show ip route 
+101125.442: [10:11:25]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+101125.675: [10:11:25]TCP_A08_39U# show ip route 
+101125.675: [10:11:25]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+101126.184: [10:11:26]TCP_A08_39U# show ip route 
+101126.219: [10:11:26]Codes: K - kernel, C - connected, S - static, R - RIP, B - BGP
+101126.219: [10:11:26]       O - OSPF, IA - OSPF inter area
+101126.219: [10:11:26]       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+101126.220: [10:11:26]       E1 - OSPF external type 1, E2 - OSPF external type 2
+101126.220: [10:11:26]       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+101126.220: [10:11:26]       Dc - DHCP Client
+101126.220: [10:11:26]       [*] - [AD/Metric]
+101126.220: [10:11:26]       A - Host Routing
+101126.220: [10:11:26]       * - candidate default
+101126.220: [10:11:26]
+101126.220: [10:11:26]Gateway of last resort is 192.168.230.1 to network 0.0.0.0
+101126.220: [10:11:26]
+101126.221: [10:11:26]S*       0.0.0.0/0 [1/0] via 192.168.230.1, vlan230
+101126.221: [10:11:26]C        10.50.0.0/24 is directly connected, vlan50
+101126.221: [10:11:26]C        10.50.0.1/32 is in local loopback, vlan50
+101126.221: [10:11:26]C        10.52.0.0/24 is directly connected, vlan52
+101126.221: [10:11:26]C        10.52.0.1/32 is in local loopback, vlan52
+101126.221: [10:11:26]C        10.60.0.0/24 is directly connected, vlan60
+101126.221: [10:11:26]C        10.60.0.1/32 is in local loopback, vlan60
+101126.222: [10:11:26]C        10.80.0.0/24 is directly connected, vlan80
+101126.222: [10:11:26]C        10.80.0.1/32 is in local loopback, vlan80
+101126.222: [10:11:26]C        192.168.100.0/22 is directly connected, vlan1
+101126.222: [10:11:26]C        192.168.100.1/32 is in local loopback, vlan1
+101126.222: [10:11:26]C        192.168.230.0/30 is directly connected, vlan230
+101126.222: [10:11:26]C        192.168.230.2/32 is in local loopback, vlan230
+101131.556: [10:11:31]TCP_A08_39U# 
+101131.766: [10:11:31]TCP_A08_39U# 
+101131.948: [10:11:31]TCP_A08_39U# 
+101132.110: [10:11:32]TCP_A08_39U# 
+101230.913: [10:12:30]TCP_A08_39U# ping 10.60.0.100
+101230.947: [10:12:30]PING 10.60.0.100 (10.60.0.100) 56(84) bytes of data.
+101230.947: [10:12:30]64 bytes from 10.60.0.100: icmp_seq=1 ttl=64 time=0.313 ms
+101231.904: [10:12:31]^C
+101231.907: [10:12:31]--- 10.60.0.100 ping statistics ---
+101231.907: [10:12:31]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+101231.907: [10:12:31]rtt min/avg/max/mdev = 0.313/0.313/0.313/0.000 ms

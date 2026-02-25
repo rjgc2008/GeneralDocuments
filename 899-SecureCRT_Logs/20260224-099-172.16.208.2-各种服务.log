@@ -1,0 +1,28 @@
+﻿141806.459: [14:18:06][202602099-172.16.208.2-各种服务-14:18:06]
+141806.495: [14:18:06]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+141806.495: [14:18:06]
+141806.495: [14:18:06]The programs included with the Debian GNU/Linux system are free software;
+141806.495: [14:18:06]the exact distribution terms for each program are described in the
+141806.495: [14:18:06]individual files in /usr/share/doc/*/copyright.
+141806.495: [14:18:06]
+141806.495: [14:18:06]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+141806.495: [14:18:06]permitted by applicable law.
+141806.496: [14:18:06]Last login: Sun Feb 22 16:13:18 2026 from 121.239.93.119
+141812.047: [14:18:12][root@172-16-208-2 ~]# ping 172.16.208.2
+141812.058: [14:18:12]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+141812.058: [14:18:12]64 bytes from 172.16.208.2: icmp_seq=1 ttl=64 time=0.068 ms
+141813.076: [14:18:13]64 bytes from 172.16.208.2: icmp_seq=2 ttl=64 time=0.024 ms
+141814.125: [14:18:14]64 bytes from 172.16.208.2: icmp_seq=3 ttl=64 time=0.038 ms
+141814.645: [14:18:14]^C
+141814.645: [14:18:14]--- 172.16.208.2 ping statistics ---
+141814.646: [14:18:14]3 packets transmitted, 3 received, 0% packet loss, time 2016ms
+141814.646: [14:18:14]rtt min/avg/max/mdev = 0.024/0.043/0.068/0.018 ms
+141817.464: [14:18:17][root@172-16-208-2 ~]# ping 172.16.208.11
+141817.471: [14:18:17]PING 172.16.208.11 (172.16.208.11) 56(84) bytes of data.
+141817.471: [14:18:17]64 bytes from 172.16.208.11: icmp_seq=1 ttl=64 time=1.96 ms
+141818.471: [14:18:18]64 bytes from 172.16.208.11: icmp_seq=2 ttl=64 time=0.705 ms
+141819.477: [14:18:19]64 bytes from 172.16.208.11: icmp_seq=3 ttl=64 time=0.806 ms
+141820.417: [14:18:20]^C
+141820.417: [14:18:20]--- 172.16.208.11 ping statistics ---
+141820.418: [14:18:20]3 packets transmitted, 3 received, 0% packet loss, time 2007ms
+141820.418: [14:18:20]rtt min/avg/max/mdev = 0.705/1.158/1.963/0.570 ms

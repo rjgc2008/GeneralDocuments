@@ -1,0 +1,274 @@
+﻿112616.243: [11:26:16][202602203-B-A08-管理-Hygon-10.60.0.100-iptables-11:26:16]
+112616.256: [11:26:16]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-64-generic x86_64)
+112616.256: [11:26:16]
+112616.256: [11:26:16] * Documentation:  https://help.ubuntu.com
+112616.256: [11:26:16] * Management:     https://landscape.canonical.com
+112616.256: [11:26:16] * Support:        https://ubuntu.com/pro
+112616.256: [11:26:16]
+112616.257: [11:26:16] System information as of Fri Feb  6 11:26:20 AM CST 2026
+112616.257: [11:26:16]
+112616.257: [11:26:16]  System load:    0.66               Temperature:            68.0 C
+112616.257: [11:26:16]  Usage of /home: 8.8% of 301.20GB   Processes:              1198
+112616.257: [11:26:16]  Memory usage:   6%                 Users logged in:        1
+112616.257: [11:26:16]  Swap usage:     0%                 IPv4 address for bond0: 10.60.0.100
+112616.257: [11:26:16]
+112616.257: [11:26:16]  => There is 1 zombie process.
+112616.257: [11:26:16]
+112616.257: [11:26:16]
+112616.257: [11:26:16]Expanded Security Maintenance for Applications is not enabled.
+112616.257: [11:26:16]
+112616.257: [11:26:16]289 updates can be applied immediately.
+112616.257: [11:26:16]To see these additional updates run: apt list --upgradable
+112616.257: [11:26:16]
+112616.257: [11:26:16]3 additional security updates can be applied with ESM Apps.
+112616.257: [11:26:16]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+112616.257: [11:26:16]
+112616.257: [11:26:16]
+112616.257: [11:26:16]The list of available updates is more than a week old.
+112616.257: [11:26:16]To check for new updates run: sudo apt update
+112616.257: [11:26:16]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+112616.257: [11:26:16]
+112616.257: [11:26:16]
+112616.257: [11:26:16]Last login: Thu Feb  5 10:37:37 2026 from 10.60.0.100
+112622.007: [11:26:22]root@suzhouprodb100:~# ping 172.16.101.1
+112622.013: [11:26:22]PING 172.16.101.1 (172.16.101.1) 56(84) bytes of data.
+112639.062: [11:26:39]^C
+112639.063: [11:26:39]--- 172.16.101.1 ping statistics ---
+112639.063: [11:26:39]17 packets transmitted, 0 received, 100% packet loss, time 16417ms
+112639.063: [11:26:39]
+112639.628: [11:26:39]root@suzhouprodb100:~# ip r
+112639.635: [11:26:39]default via 10.60.0.1 dev bond0 proto static metric 20010 
+112639.635: [11:26:39]default via 10.62.0.1 dev bond1 proto static metric 20020 
+112639.635: [11:26:39]default via 10.64.0.1 dev bond2 proto static metric 20030 
+112639.635: [11:26:39]10.54.0.0/24 via 10.64.0.1 dev bond2 proto static metric 302 
+112639.635: [11:26:39]10.60.0.0/24 dev bond0 proto kernel scope link src 10.60.0.100 metric 301 
+112639.635: [11:26:39]10.62.0.0/24 dev bond1 proto kernel scope link src 10.62.0.100 metric 300 
+112639.635: [11:26:39]10.64.0.0/24 dev bond2 proto kernel scope link src 10.64.0.100 metric 302 
+112639.636: [11:26:39]10.72.0.0/24 via 10.62.0.1 dev bond1 proto static metric 300 
+112639.636: [11:26:39]10.74.0.0/24 via 10.64.0.1 dev bond2 proto static metric 302 
+112639.636: [11:26:39]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+112639.636: [11:26:39]172.18.0.0/16 dev br-8a1f89966586 proto kernel scope link src 172.18.0.1 
+112657.081: [11:26:57]root@suzhouprodb100:~# pping 10.60.0.1
+112657.281: [11:26:57]Command 'pping' not found, did you mean:
+112657.281: [11:26:57]  command 'vping' from snap vping (3.1.0)
+112657.281: [11:26:57]  command 'gping' from snap gping (0+git.f7e3cea)
+112657.282: [11:26:57]  command 'phing' from deb phing (2.17.4-1)
+112657.282: [11:26:57]  command 'tping' from deb lam-runtime (7.1.4-7)
+112657.282: [11:26:57]  command 'nping' from deb nmap (7.94+git20230807.3be01efb1+dfsg-2)
+112657.282: [11:26:57]  command 'ping' from deb iputils-ping (3:20240117-1ubuntu0.1)
+112657.282: [11:26:57]  command 'ping' from deb inetutils-ping (2:2.4-3ubuntu1)
+112657.282: [11:26:57]  command 'fping' from deb fping (5.1-1)
+112657.282: [11:26:57]  command '2ping' from deb 2ping (4.5-1.2)
+112657.282: [11:26:57]  command 'oping' from deb oping (1.10.0-5build1)
+112657.282: [11:26:57]  command 'gping' from deb gping (1.15.1-2)
+112657.283: [11:26:57]  command 'qping' from deb gridengine-client (8.1.9+dfsg-11)
+112657.283: [11:26:57]  command 'rping' from deb rdmacm-utils (50.0-2ubuntu0.2)
+112657.283: [11:26:57]  command 'aping' from deb ripe-atlas-tools (2.3.0-2.1)
+112657.283: [11:26:57]See 'snap info <snapname>' for additional versions.
+112701.215: [11:27:01]root@suzhouprodb100:~# ping 10.60.0.1
+112701.231: [11:27:01]PING 10.60.0.1 (10.60.0.1) 56(84) bytes of data.
+112701.231: [11:27:01]64 bytes from 10.60.0.1: icmp_seq=1 ttl=64 time=0.314 ms
+112701.943: [11:27:01]^C
+112701.944: [11:27:01]--- 10.60.0.1 ping statistics ---
+112701.944: [11:27:01]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+112701.944: [11:27:01]rtt min/avg/max/mdev = 0.314/0.314/0.314/0.000 ms
+112705.131: [11:27:05]root@suzhouprodb100:~# ping 172.16.101.1
+112705.145: [11:27:05]PING 172.16.101.1 (172.16.101.1) 56(84) bytes of data.
+112707.219: [11:27:07]^C
+112707.219: [11:27:07]--- 172.16.101.1 ping statistics ---
+112707.220: [11:27:07]3 packets transmitted, 0 received, 100% packet loss, time 2029ms
+112707.220: [11:27:07]
+112707.964: [11:27:07]root@suzhouprodb100:~# ip r
+112707.972: [11:27:07]default via 10.60.0.1 dev bond0 proto static metric 20010 
+112707.972: [11:27:07]default via 10.62.0.1 dev bond1 proto static metric 20020 
+112707.972: [11:27:07]default via 10.64.0.1 dev bond2 proto static metric 20030 
+112707.972: [11:27:07]10.54.0.0/24 via 10.64.0.1 dev bond2 proto static metric 302 
+112707.972: [11:27:07]10.60.0.0/24 dev bond0 proto kernel scope link src 10.60.0.100 metric 301 
+112707.972: [11:27:07]10.62.0.0/24 dev bond1 proto kernel scope link src 10.62.0.100 metric 300 
+112707.972: [11:27:07]10.64.0.0/24 dev bond2 proto kernel scope link src 10.64.0.100 metric 302 
+112707.972: [11:27:07]10.72.0.0/24 via 10.62.0.1 dev bond1 proto static metric 300 
+112707.972: [11:27:07]10.74.0.0/24 via 10.64.0.1 dev bond2 proto static metric 302 
+112707.972: [11:27:07]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+112707.972: [11:27:07]172.18.0.0/16 dev br-8a1f89966586 proto kernel scope link src 172.18.0.1 
+112715.346: [11:27:15]root@suzhouprodb100:~# ip a
+112715.364: [11:27:15]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+112715.364: [11:27:15]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+112715.364: [11:27:15]    inet 127.0.0.1/8 scope host lo
+112715.364: [11:27:15]       valid_lft forever preferred_lft forever
+112715.364: [11:27:15]    inet6 ::1/128 scope host noprefixroute 
+112715.364: [11:27:15]       valid_lft forever preferred_lft forever
+112715.364: [11:27:15]2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+112715.364: [11:27:15]    link/ether c8:b4:ab:02:bc:4f brd ff:ff:ff:ff:ff:ff
+112715.364: [11:27:15]    altname enp1s0f0
+112715.365: [11:27:15]3: eno2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+112715.365: [11:27:15]    link/ether c8:b4:ab:02:bc:50 brd ff:ff:ff:ff:ff:ff
+112715.365: [11:27:15]    altname enp1s0f1
+112715.365: [11:27:15]10: bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+112715.365: [11:27:15]    link/ether b8:3f:d2:94:1c:d7 brd ff:ff:ff:ff:ff:ff
+112715.365: [11:27:15]    inet 10.62.0.100/24 brd 10.62.0.255 scope global noprefixroute bond1
+112715.365: [11:27:15]       valid_lft forever preferred_lft forever
+112715.366: [11:27:15]    inet6 fe80::88c0:7eff:fe70:91c0/64 scope link 
+112715.366: [11:27:15]       valid_lft forever preferred_lft forever
+112715.366: [11:27:15]11: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+112715.366: [11:27:15]    link/ether b8:3f:d2:94:14:f6 brd ff:ff:ff:ff:ff:ff
+112715.366: [11:27:15]    inet 10.60.0.100/24 brd 10.60.0.255 scope global noprefixroute bond0
+112715.366: [11:27:15]       valid_lft forever preferred_lft forever
+112715.366: [11:27:15]    inet6 fe80::348d:10ff:fe04:7fda/64 scope link 
+112715.366: [11:27:15]       valid_lft forever preferred_lft forever
+112715.367: [11:27:15]12: bond2: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+112715.367: [11:27:15]    link/ether b8:3f:d2:b7:ec:1c brd ff:ff:ff:ff:ff:ff
+112715.367: [11:27:15]    inet 10.64.0.100/24 brd 10.64.0.255 scope global noprefixroute bond2
+112715.367: [11:27:15]       valid_lft forever preferred_lft forever
+112715.367: [11:27:15]    inet6 fe80::ce2:b1ff:fe94:fd92/64 scope link 
+112715.367: [11:27:15]       valid_lft forever preferred_lft forever
+112715.367: [11:27:15]13: enp33s0f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+112715.367: [11:27:15]    link/ether b8:3f:d2:b7:ec:1c brd ff:ff:ff:ff:ff:ff
+112715.367: [11:27:15]14: enp33s0f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+112715.367: [11:27:15]    link/ether b8:3f:d2:b7:ec:1c brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:b7:ec:1d
+112715.368: [11:27:15]15: enp129s0f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond1 state UP group default qlen 1000
+112715.368: [11:27:15]    link/ether b8:3f:d2:94:1c:d7 brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:94:1c:d6
+112715.368: [11:27:15]16: enp129s0f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond1 state UP group default qlen 1000
+112715.368: [11:27:15]    link/ether b8:3f:d2:94:1c:d7 brd ff:ff:ff:ff:ff:ff
+112715.368: [11:27:15]17: enp161s0f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+112715.368: [11:27:15]    link/ether b8:3f:d2:94:14:f6 brd ff:ff:ff:ff:ff:ff
+112715.368: [11:27:15]18: enp161s0f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+112715.368: [11:27:15]    link/ether b8:3f:d2:94:14:f6 brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:94:14:f7
+112715.369: [11:27:15]19: br-8a1f89966586: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+112715.369: [11:27:15]    link/ether 62:d3:93:11:a7:01 brd ff:ff:ff:ff:ff:ff
+112715.369: [11:27:15]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-8a1f89966586
+112715.369: [11:27:15]       valid_lft forever preferred_lft forever
+112715.369: [11:27:15]    inet6 fe80::60d3:93ff:fe11:a701/64 scope link 
+112715.369: [11:27:15]       valid_lft forever preferred_lft forever
+112715.369: [11:27:15]20: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+112715.369: [11:27:15]    link/ether 42:d9:ac:df:4e:61 brd ff:ff:ff:ff:ff:ff
+112715.369: [11:27:15]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+112715.369: [11:27:15]       valid_lft forever preferred_lft forever
+112715.369: [11:27:15]21: vethd5ac642@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-8a1f89966586 state UP group default 
+112715.370: [11:27:15]    link/ether be:21:fd:17:1f:c8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+112715.370: [11:27:15]    inet6 fe80::bc21:fdff:fe17:1fc8/64 scope link 
+112715.370: [11:27:15]       valid_lft forever preferred_lft forever
+112715.370: [11:27:15]22: veth50b995a@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-8a1f89966586 state UP group default 
+112715.370: [11:27:15]    link/ether 7e:56:12:4e:61:18 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+112715.370: [11:27:15]    inet6 fe80::7c56:12ff:fe4e:6118/64 scope link 
+112715.370: [11:27:15]       valid_lft forever preferred_lft forever
+112804.425: [11:28:04]root@suzhouprodb100:~# ssh 10.80.0.100
+112804.557: [11:28:04]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+112804.557: [11:28:04]@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+112804.558: [11:28:04]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+112804.558: [11:28:04]IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+112804.558: [11:28:04]Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+112804.558: [11:28:04]It is also possible that a host key has just been changed.
+112804.558: [11:28:04]The fingerprint for the ED25519 key sent by the remote host is
+112804.558: [11:28:04]SHA256:m0Hqb2nwAsGkHEDlnL56Wrt2xql2+5aRrRAnycPOy5E.
+112804.558: [11:28:04]Please contact your system administrator.
+112804.558: [11:28:04]Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+112804.558: [11:28:04]Offending ECDSA key in /root/.ssh/known_hosts:73
+112804.559: [11:28:04]  remove with:
+112804.559: [11:28:04]  ssh-keygen -f '/root/.ssh/known_hosts' -R '10.80.0.100'
+112804.559: [11:28:04]Host key for 10.80.0.100 has changed and you have requested strict checking.
+112804.559: [11:28:04]Host key verification failed.
+112827.466: [11:28:27]root@suzhouprodb100:~# ping 172.16.101.2
+112827.483: [11:28:27]PING 172.16.101.2 (172.16.101.2) 56(84) bytes of data.
+112828.228: [11:28:28]^C
+112828.228: [11:28:28]--- 172.16.101.2 ping statistics ---
+112828.228: [11:28:28]1 packets transmitted, 0 received, 100% packet loss, time 0ms
+112828.228: [11:28:28]
+112838.478: [11:28:38]root@suzhouprodb100:~# ping 172.16.101.107
+112838.497: [11:28:38]PING 172.16.101.107 (172.16.101.107) 56(84) bytes of data.
+112847.076: [11:28:47]^C
+112847.077: [11:28:47]--- 172.16.101.107 ping statistics ---
+112847.077: [11:28:47]9 packets transmitted, 0 received, 100% packet loss, time 8202ms
+112847.077: [11:28:47]
+112848.515: [11:28:48]root@suzhouprodb100:~# ping 172.16.101.109
+112848.532: [11:28:48]PING 172.16.101.109 (172.16.101.109) 56(84) bytes of data.
+112912.891: [11:29:12]^C
+112912.891: [11:29:12]--- 172.16.101.109 ping statistics ---
+112912.891: [11:29:12]24 packets transmitted, 0 received, 100% packet loss, time 23574ms
+112912.891: [11:29:12]
+112915.213: [11:29:15]root@suzhouprodb100:~# ping 172.16.101.108
+112915.227: [11:29:15]PING 172.16.101.108 (172.16.101.108) 56(84) bytes of data.
+112916.525: [11:29:16]^C
+112916.525: [11:29:16]--- 172.16.101.108 ping statistics ---
+112916.525: [11:29:16]2 packets transmitted, 0 received, 100% packet loss, time 1035ms
+112916.525: [11:29:16]
+112919.504: [11:29:19]root@suzhouprodb100:~# ping 172.16.101.1
+112919.521: [11:29:19]PING 172.16.101.1 (172.16.101.1) 56(84) bytes of data.
+112922.660: [11:29:22]^C
+112922.660: [11:29:22]--- 172.16.101.1 ping statistics ---
+112922.660: [11:29:22]4 packets transmitted, 0 received, 100% packet loss, time 3080ms
+112922.660: [11:29:22]
+112943.341: [11:29:43]root@suzhouprodb100:~# ping 172.16.101.1
+112943.350: [11:29:43]PING 172.16.101.1 (172.16.101.1) 56(84) bytes of data.
+112945.535: [11:29:45]^C
+112945.535: [11:29:45]--- 172.16.101.1 ping statistics ---
+112945.535: [11:29:45]3 packets transmitted, 0 received, 100% packet loss, time 2027ms
+112945.535: [11:29:45]
+112950.683: [11:29:50]root@suzhouprodb100:~# ping 192.168.8.88
+112950.696: [11:29:50]PING 192.168.8.88 (192.168.8.88) 56(84) bytes of data.
+112953.296: [11:29:53]^C
+112953.296: [11:29:53]--- 192.168.8.88 ping statistics ---
+112953.297: [11:29:53]3 packets transmitted, 0 received, 100% packet loss, time 2051ms
+112953.297: [11:29:53]
+113046.453: [11:30:46]root@suzhouprodb100:~# ping 172.16.208.2
+113046.453: [11:30:46]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+113112.602: [11:31:12]^C
+113112.604: [11:31:12]--- 172.16.208.2 ping statistics ---
+113112.604: [11:31:12]26 packets transmitted, 0 received, 100% packet loss, time 25639ms
+113112.604: [11:31:12]
+113258.559: [11:32:58]root@suzhouprodb100:~# ping 172.16.208.2
+113258.566: [11:32:58]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+113301.729: [11:33:01]^C
+113301.729: [11:33:01]--- 172.16.208.2 ping statistics ---
+113301.729: [11:33:01]4 packets transmitted, 0 received, 100% packet loss, time 3097ms
+113301.729: [11:33:01]
+113343.453: [11:33:43]root@suzhouprodb100:~# ip r
+113343.465: [11:33:43]default via 10.60.0.1 dev bond0 proto static metric 20010 
+113343.465: [11:33:43]default via 10.62.0.1 dev bond1 proto static metric 20020 
+113343.465: [11:33:43]default via 10.64.0.1 dev bond2 proto static metric 20030 
+113343.465: [11:33:43]10.54.0.0/24 via 10.64.0.1 dev bond2 proto static metric 302 
+113343.465: [11:33:43]10.60.0.0/24 dev bond0 proto kernel scope link src 10.60.0.100 metric 301 
+113343.466: [11:33:43]10.62.0.0/24 dev bond1 proto kernel scope link src 10.62.0.100 metric 300 
+113343.466: [11:33:43]10.64.0.0/24 dev bond2 proto kernel scope link src 10.64.0.100 metric 302 
+113343.466: [11:33:43]10.72.0.0/24 via 10.62.0.1 dev bond1 proto static metric 300 
+113343.466: [11:33:43]10.74.0.0/24 via 10.64.0.1 dev bond2 proto static metric 302 
+113343.466: [11:33:43]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+113343.466: [11:33:43]172.18.0.0/16 dev br-8a1f89966586 proto kernel scope link src 172.18.0.1 
+113353.894: [11:33:53]root@suzhouprodb100:~# ping 10.60.0.1
+113353.909: [11:33:53]PING 10.60.0.1 (10.60.0.1) 56(84) bytes of data.
+113353.909: [11:33:53]64 bytes from 10.60.0.1: icmp_seq=1 ttl=64 time=0.224 ms
+113354.907: [11:33:54]64 bytes from 10.60.0.1: icmp_seq=2 ttl=64 time=0.311 ms
+113354.978: [11:33:54]^C
+113354.978: [11:33:54]--- 10.60.0.1 ping statistics ---
+113354.978: [11:33:54]2 packets transmitted, 2 received, 0% packet loss, time 1009ms
+113354.979: [11:33:54]rtt min/avg/max/mdev = 0.224/0.267/0.311/0.043 ms
+113401.628: [11:34:01]root@suzhouprodb100:~# ping 192.168.231.2
+113401.628: [11:34:01]PING 192.168.231.2 (192.168.231.2) 56(84) bytes of data.
+113401.628: [11:34:01]64 bytes from 192.168.231.2: icmp_seq=1 ttl=253 time=1.99 ms
+113402.464: [11:34:02]^C
+113402.465: [11:34:02]--- 192.168.231.2 ping statistics ---
+113402.465: [11:34:02]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+113402.465: [11:34:02]rtt min/avg/max/mdev = 1.985/1.985/1.985/0.000 ms
+113413.290: [11:34:13]root@suzhouprodb100:~# ping 192.168.253.3
+113413.304: [11:34:13]PING 192.168.253.3 (192.168.253.3) 56(84) bytes of data.
+113421.064: [11:34:21]^C
+113421.065: [11:34:21]--- 192.168.253.3 ping statistics ---
+113421.065: [11:34:21]8 packets transmitted, 0 received, 100% packet loss, time 7151ms
+113421.065: [11:34:21]
+113423.642: [11:34:23]root@suzhouprodb100:~# ping 192.168.3.254
+113423.657: [11:34:23]PING 192.168.3.254 (192.168.3.254) 56(84) bytes of data.
+113423.657: [11:34:23]64 bytes from 192.168.3.254: icmp_seq=1 ttl=253 time=2.12 ms
+113424.649: [11:34:24]64 bytes from 192.168.3.254: icmp_seq=2 ttl=253 time=1.88 ms
+113424.812: [11:34:24]^C
+113424.812: [11:34:24]--- 192.168.3.254 ping statistics ---
+113424.812: [11:34:24]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+113424.812: [11:34:24]rtt min/avg/max/mdev = 1.875/1.995/2.115/0.120 ms
+113425.853: [11:34:25]root@suzhouprodb100:~# ping 192.168.3.253
+113425.866: [11:34:25]PING 192.168.3.253 (192.168.3.253) 56(84) bytes of data.
+113546.782: [11:35:46]64 bytes from 192.168.3.253: icmp_seq=80 ttl=125 time=1.09 ms
+113547.783: [11:35:47]64 bytes from 192.168.3.253: icmp_seq=81 ttl=125 time=1.10 ms
+113548.786: [11:35:48]64 bytes from 192.168.3.253: icmp_seq=82 ttl=125 time=1.06 ms
+113549.785: [11:35:49]64 bytes from 192.168.3.253: icmp_seq=83 ttl=125 time=1.10 ms
+113550.514: [11:35:50]^C
+113550.514: [11:35:50]--- 192.168.3.253 ping statistics ---
+113550.515: [11:35:50]83 packets transmitted, 4 received, 95.1807% packet loss, time 83930ms
+113550.529: [11:35:50]rtt min/avg/max/mdev = 1.064/1.090/1.104/0.016 ms

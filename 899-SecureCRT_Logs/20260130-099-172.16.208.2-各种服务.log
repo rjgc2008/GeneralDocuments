@@ -1,0 +1,2200 @@
+﻿090252.506: [09:02:52][root@172-16-208-2 ~]# 
+090252.642: [09:02:52][root@172-16-208-2 ~]# 
+090252.773: [09:02:52][root@172-16-208-2 ~]# 
+090258.887: [09:02:58][root@172-16-208-2 ~]# ping 10.253.0.11
+090258.908: [09:02:58]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+090303.614: [09:03:03]^C
+090303.614: [09:03:03]--- 10.253.0.11 ping statistics ---
+090303.614: [09:03:03]5 packets transmitted, 0 received, 100% packet loss, time 4088ms
+090303.614: [09:03:03]
+090306.155: [09:03:06][root@172-16-208-2 ~]# cd /etc/wireguard/
+090306.803: [09:03:06][root@172-16-208-2 /etc/wireguard]# ll
+090306.809: [09:03:06]total 112K
+090306.809: [09:03:06]-rw-r--r-- 1 tcpdump tcpdump  52K Dec  5 21:43  1.cap
+090306.809: [09:03:06]-rw-r--r-- 1 root    root      45 Apr  7  2023  private.key
+090306.809: [09:03:06]-rw-r--r-- 1 root    root      45 Apr  7  2023  public.key
+090306.809: [09:03:06]-rwxrwxrwx 1 root    root    1.6K Apr 10  2023  reresolve-dns.sh
+090306.810: [09:03:06]-rwxr-xr-x 1 root    root     526 Nov 21 18:22  StartWG1.sh
+090306.810: [09:03:06]-rwxr-xr-x 1 root    root     361 Nov 21 18:21  StopWG1.sh
+090306.810: [09:03:06]-rw-r--r-- 1 root    root    4.2K Apr 30  2025  wg0.conf
+090306.810: [09:03:06]-rw-r--r-- 1 root    root    2.1K Apr 29  2025  wg0.conf-bak-20250429
+090306.810: [09:03:06]-rw-r--r-- 1 root    root    4.4K Sep 12 18:18 'wg0 copy.conf'
+090306.810: [09:03:06]-rw-rw-rw- 1 root    root    1.7K Sep 12 18:27  wg1-20250912.conf
+090306.811: [09:03:06]-rw-rw-rw- 1 root    root    1.9K Jan 29 13:41  wg1.conf
+090306.812: [09:03:06]-rw-r--r-- 1 root    root    1.6K Sep  1 19:15  wg1.conf-20250901
+090306.812: [09:03:06]-rw-rw-rw- 1 root    root    1.9K Dec  5 23:59  wg1.conf-20260127
+090318.336: [09:03:18][root@172-16-208-2 /etc/wireguard]# bash StopWG1.sh ;bash StartWG1.sh 
+090324.099: [09:03:24][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+090324.100: [09:03:24]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+090324.100: [09:03:24]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=7.45 ms
+090325.095: [09:03:25]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=5.43 ms
+090326.178: [09:03:26]64 bytes from 10.253.0.11: icmp_seq=3 ttl=64 time=5.27 ms
+090327.190: [09:03:27]64 bytes from 10.253.0.11: icmp_seq=4 ttl=64 time=96.5 ms
+090328.104: [09:03:28]64 bytes from 10.253.0.11: icmp_seq=5 ttl=64 time=5.33 ms
+090329.139: [09:03:29]64 bytes from 10.253.0.11: icmp_seq=6 ttl=64 time=44.3 ms
+090329.505: [09:03:29]^C
+090329.505: [09:03:29]--- 10.253.0.11 ping statistics ---
+090329.505: [09:03:29]6 packets transmitted, 6 received, 0% packet loss, time 5008ms
+090329.505: [09:03:29]rtt min/avg/max/mdev = 5.268/27.371/96.493/33.949 ms
+090352.169: [09:03:52][root@172-16-208-2 /etc/wireguard]# wg-quick --help
+090352.209: [09:03:52]Usage: wg-quick [ up | down | save | strip ] [ CONFIG_FILE | INTERFACE ]
+090352.209: [09:03:52]
+090352.209: [09:03:52]  CONFIG_FILE is a configuration file, whose filename is the interface name
+090352.209: [09:03:52]  followed by `.conf'. Otherwise, INTERFACE is an interface name, with
+090352.209: [09:03:52]  configuration found at /etc/wireguard/INTERFACE.conf. It is to be readable
+090352.209: [09:03:52]  by wg(8)'s `setconf' sub-command, with the exception of the following additions
+090352.209: [09:03:52]  to the [Interface] section, which are handled by wg-quick:
+090352.209: [09:03:52]
+090352.209: [09:03:52]  - Address: may be specified one or more times and contains one or more
+090352.210: [09:03:52]    IP addresses (with an optional CIDR mask) to be set for the interface.
+090352.210: [09:03:52]  - DNS: an optional DNS server to use while the device is up.
+090352.210: [09:03:52]  - MTU: an optional MTU for the interface; if unspecified, auto-calculated.
+090352.210: [09:03:52]  - Table: an optional routing table to which routes will be added; if
+090352.210: [09:03:52]    unspecified or `auto', the default table is used. If `off', no routes
+090352.210: [09:03:52]    are added.
+090352.210: [09:03:52]  - PreUp, PostUp, PreDown, PostDown: script snippets which will be executed
+090352.210: [09:03:52]    by bash(1) at the corresponding phases of the link, most commonly used
+090352.210: [09:03:52]    to configure DNS. The string `%i' is expanded to INTERFACE.
+090352.210: [09:03:52]  - SaveConfig: if set to `true', the configuration is saved from the current
+090352.210: [09:03:52]    state of the interface upon shutdown.
+090352.210: [09:03:52]
+090352.210: [09:03:52]See wg-quick(8) for more info and examples.
+090406.472: [09:04:06][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+090406.488: [09:04:06]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+090406.488: [09:04:06]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=5.96 ms
+090407.484: [09:04:07]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=5.30 ms
+090408.568: [09:04:08]64 bytes from 10.253.0.11: icmp_seq=3 ttl=64 time=5.28 ms
+090409.277: [09:04:09]^C
+090409.277: [09:04:09]--- 10.253.0.11 ping statistics ---
+090409.277: [09:04:09]3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+090409.277: [09:04:09]rtt min/avg/max/mdev = 5.281/5.515/5.964/0.317 ms
+090659.848: [09:06:59][root@172-16-208-2 /etc/wireguard]# cd /DATA/Media/
+090700.597: [09:07:00][root@172-16-208-2 /DATA/Media]# ll
+090700.652: [09:07:00]total 2.5G
+090700.653: [09:07:00]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14 20:09  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+090700.653: [09:07:00]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+090700.653: [09:07:00]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+090700.653: [09:07:00]drwxrwxrwx 10 root      root      4.0K Jan 16 23:08  Documents
+090700.653: [09:07:00]drwxrwxr-x  3 wyj       wyj       4.0K Dec 19 14:00  Doucuments
+090700.653: [09:07:00]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+090700.653: [09:07:00]drwxrwxrwx 50 wyj       wyj        24K Jan 18 21:55  Movies
+090700.654: [09:07:00]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+090700.654: [09:07:00]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+090700.654: [09:07:00]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+090700.654: [09:07:00]drwxrwxrwx 22 root      root      4.0K Jan 23 22:26  Tmp
+090700.654: [09:07:00]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+090700.654: [09:07:00]drwxrwxrwx 50 wyj       wyj        12K Jan 18 21:57 'TV Shows'
+090700.654: [09:07:00]drwxr-xr-x  5 sambauser sambauser 4.0K Dec 19 09:44  WYJ
+090700.655: [09:07:00]drwxrwxrwx  4 root      root      4.0K Jan 18 22:08  XTV-BACKUP
+090700.655: [09:07:00]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19 20:14  软考高级《网络规划设计师》资料包
+090708.939: [09:07:08][root@172-16-208-2 /DATA/Media]# find -name "精選國產自拍偷*"
+090813.954: [09:08:13]^C
+090817.487: [09:08:17][root@172-16-208-2 /DATA/Media]# ll
+090817.504: [09:08:17]total 2.5G
+090817.504: [09:08:17]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14 20:09  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+090817.504: [09:08:17]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+090817.504: [09:08:17]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+090817.504: [09:08:17]drwxrwxrwx 10 root      root      4.0K Jan 16 23:08  Documents
+090817.504: [09:08:17]drwxrwxr-x  3 wyj       wyj       4.0K Dec 19 14:00  Doucuments
+090817.504: [09:08:17]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+090817.504: [09:08:17]drwxrwxrwx 50 wyj       wyj        24K Jan 18 21:55  Movies
+090817.504: [09:08:17]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+090817.504: [09:08:17]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+090817.504: [09:08:17]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+090817.504: [09:08:17]drwxrwxrwx 22 root      root      4.0K Jan 23 22:26  Tmp
+090817.504: [09:08:17]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+090817.504: [09:08:17]drwxrwxrwx 50 wyj       wyj        12K Jan 18 21:57 'TV Shows'
+090817.505: [09:08:17]drwxr-xr-x  5 sambauser sambauser 4.0K Dec 19 09:44  WYJ
+090817.505: [09:08:17]drwxrwxrwx  4 root      root      4.0K Jan 18 22:08  XTV-BACKUP
+090817.505: [09:08:17]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19 20:14  软考高级《网络规划设计师》资料包
+090838.480: [09:08:38][root@172-16-208-2 /DATA/Media]# find ./ -name "*湖北陈纭菲*mp4" -type f
+154243.135: [15:42:43][root@172-16-208-2 /DATA/Media]# 
+154243.282: [15:42:43][root@172-16-208-2 /DATA/Media]# 
+154243.369: [15:42:43][root@172-16-208-2 /DATA/Media]# 
+154255.983: [15:42:55][root@172-16-208-2 /DATA/Media]# ping 10.253.0.11
+154256.022: [15:42:56]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+154256.045: [15:42:56]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=28.7 ms
+154257.042: [15:42:57]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=14.0 ms
+154257.308: [15:42:57]^C
+154257.308: [15:42:57]--- 10.253.0.11 ping statistics ---
+154257.308: [15:42:57]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+154257.308: [15:42:57]rtt min/avg/max/mdev = 14.031/21.350/28.670/7.319 ms
+154301.760: [15:43:01][root@172-16-208-2 /DATA/Media]# crontab -l
+154302.986: [15:43:02]# Edit this file to introduce tasks to be run by cron.
+154302.987: [15:43:02]# 
+154302.987: [15:43:02]# Each task to run has to be defined through a single line
+154302.987: [15:43:02]# indicating with different fields when the task will be run
+154302.987: [15:43:02]# and what command to run for the task
+154302.987: [15:43:02]# 
+154302.987: [15:43:02]# To define the time you can provide concrete values for
+154302.987: [15:43:02]# minute (m), hour (h), day of month (dom), month (mon),
+154302.987: [15:43:02]# and day of week (dow) or use '*' in these fields (for 'any').
+154302.987: [15:43:02]# 
+154302.987: [15:43:02]# Notice that tasks will be started based on the cron's system
+154302.987: [15:43:02]# daemon's notion of time and timezones.
+154302.987: [15:43:02]# 
+154302.988: [15:43:02]# Output of the crontab jobs (including errors) is sent through
+154302.988: [15:43:02]# email to the user the crontab file belongs to (unless redirected).
+154302.988: [15:43:02]# 
+154302.988: [15:43:02]# For example, you can run a backup of all your user accounts
+154302.988: [15:43:02]# at 5 a.m every week with:
+154302.988: [15:43:02]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154302.988: [15:43:02]# 
+154302.988: [15:43:02]# For more information see the manual pages of crontab(5) and cron(8)
+154302.988: [15:43:02]# 
+154302.988: [15:43:02]# m h  dom mon dow   command
+154302.989: [15:43:02]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154302.989: [15:43:02]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154302.989: [15:43:02]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154302.989: [15:43:02]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154302.989: [15:43:02]0 * * * * /usr/bin/bash /root/tmp.sh
+154334.705: [15:43:34][root@172-16-208-2 /DATA/Media]# cd /etc/wireguard/
+154335.405: [15:43:35][root@172-16-208-2 /etc/wireguard]# ll
+154335.415: [15:43:35]total 112K
+154335.416: [15:43:35]-rw-r--r-- 1 tcpdump tcpdump  52K Dec  5 21:43  1.cap
+154335.416: [15:43:35]-rw-r--r-- 1 root    root      45 Apr  7  2023  private.key
+154335.416: [15:43:35]-rw-r--r-- 1 root    root      45 Apr  7  2023  public.key
+154335.416: [15:43:35]-rwxrwxrwx 1 root    root    1.6K Apr 10  2023  reresolve-dns.sh
+154335.416: [15:43:35]-rwxr-xr-x 1 root    root     526 Nov 21 18:22  StartWG1.sh
+154335.416: [15:43:35]-rwxr-xr-x 1 root    root     361 Nov 21 18:21  StopWG1.sh
+154335.416: [15:43:35]-rw-r--r-- 1 root    root    4.2K Apr 30  2025  wg0.conf
+154335.417: [15:43:35]-rw-r--r-- 1 root    root    2.1K Apr 29  2025  wg0.conf-bak-20250429
+154335.417: [15:43:35]-rw-r--r-- 1 root    root    4.4K Sep 12 18:18 'wg0 copy.conf'
+154335.417: [15:43:35]-rw-rw-rw- 1 root    root    1.7K Sep 12 18:27  wg1-20250912.conf
+154335.417: [15:43:35]-rw-rw-rw- 1 root    root    1.9K Jan 29 13:41  wg1.conf
+154335.417: [15:43:35]-rw-r--r-- 1 root    root    1.6K Sep  1 19:15  wg1.conf-20250901
+154335.417: [15:43:35]-rw-rw-rw- 1 root    root    1.9K Dec  5 23:59  wg1.conf-20260127
+154344.440: [15:43:44][root@172-16-208-2 /etc/wireguard]# crontab -e
+154344.541: [15:43:44]Error detected while processing /root/.vimrc:
+154344.541: [15:43:44]line    2:
+154344.541: [15:43:44]E319: Sorry, the command is not available in this version: syntax on
+154346.420: [15:43:46]      1 # Edit this file to introduce tasks to be run by cron.
+154346.420: [15:43:46]      4 # indicating with different fields when the task will be run
+154346.420: [15:43:46]      5 # and what command to run for the task
+154346.420: [15:43:46]      6 #
+154346.420: [15:43:46]      7 # To define the time you can provide concrete values for
+154346.420: [15:43:46]      8 # minute (m), hour (h), day of month (dom), month (mon),
+154346.420: [15:43:46]      9 # and day of week (dow) or use '*' in these fields (for 'any').
+154346.420: [15:43:46]     10 #
+154346.420: [15:43:46]     11 # Notice that tasks will be started based on the cron's system
+154346.420: [15:43:46]     12 # daemon's notion of time and timezones.
+154346.420: [15:43:46]     13 #
+154346.420: [15:43:46]     14 # Output of the crontab jobs (including errors) is sent through
+154346.420: [15:43:46]     15 # email to the user the crontab file belongs to (unless redirected).
+154346.420: [15:43:46]     16 #
+154346.421: [15:43:46]     17 # For example, you can run a backup of all your user accounts
+154346.421: [15:43:46]     18 # at 5 a.m every week with:
+154346.421: [15:43:46]     19 # 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154346.421: [15:43:46]     20 #
+154346.421: [15:43:46]     21 # For more information see the manual pages of crontab(5) and cron(8)
+154346.421: [15:43:46]     22 #
+154346.421: [15:43:46]     23 # m h  dom mon dow   command
+154346.421: [15:43:46]     24 #0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154346.421: [15:43:46]     25 #30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154346.421: [15:43:46]     26 10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154346.421: [15:43:46]     27 0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154346.421: [15:43:46]     28 0 * * * * /usr/bin/bash /root/tmp.sh
+154541.859: [15:45:41]Press ENTER or type command to continue
+154541.860: [15:45:41]crontab: installing new crontab
+154543.360: [15:45:43][root@172-16-208-2 /etc/wireguard]# 
+154546.166: [15:45:46][root@172-16-208-2 /etc/wireguard]# crontab -l
+154546.179: [15:45:46]# Edit this file to introduce tasks to be run by cron.
+154546.179: [15:45:46]# 
+154546.179: [15:45:46]# Each task to run has to be defined through a single line
+154546.179: [15:45:46]# indicating with different fields when the task will be run
+154546.179: [15:45:46]# and what command to run for the task
+154546.179: [15:45:46]# 
+154546.179: [15:45:46]# To define the time you can provide concrete values for
+154546.180: [15:45:46]# minute (m), hour (h), day of month (dom), month (mon),
+154546.180: [15:45:46]# and day of week (dow) or use '*' in these fields (for 'any').
+154546.180: [15:45:46]# 
+154546.180: [15:45:46]# Notice that tasks will be started based on the cron's system
+154546.180: [15:45:46]# daemon's notion of time and timezones.
+154546.180: [15:45:46]# 
+154546.180: [15:45:46]# Output of the crontab jobs (including errors) is sent through
+154546.180: [15:45:46]# email to the user the crontab file belongs to (unless redirected).
+154546.180: [15:45:46]# 
+154546.180: [15:45:46]# For example, you can run a backup of all your user accounts
+154546.180: [15:45:46]# at 5 a.m every week with:
+154546.180: [15:45:46]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154546.180: [15:45:46]# 
+154546.181: [15:45:46]# For more information see the manual pages of crontab(5) and cron(8)
+154546.181: [15:45:46]# 
+154546.181: [15:45:46]# m h  dom mon dow   command
+154546.181: [15:45:46]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154546.181: [15:45:46]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154546.181: [15:45:46]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154546.181: [15:45:46]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154546.181: [15:45:46]0 * * * * /usr/bin/bash /root/tmp.sh
+154546.181: [15:45:46]0 5 * 8 * /usr/bin/bash /etc/wireguard/StopWG1.sh;/usr/bin/bash /etc/wireguard/StartWG1.sh
+154551.381: [15:45:51][root@172-16-208-2 /etc/wireguard]# crontab -e
+154551.391: [15:45:51]Error detected while processing /root/.vimrc:
+154551.391: [15:45:51]line    2:
+154551.392: [15:45:51]E319: Sorry, the command is not available in this version: syntax on
+154553.336: [15:45:53]      1 # Edit this file to introduce tasks to be run by cron.
+154553.336: [15:45:53]      4 # indicating with different fields when the task will be run
+154553.336: [15:45:53]      5 # and what command to run for the task
+154553.336: [15:45:53]      6 #
+154553.336: [15:45:53]      7 # To define the time you can provide concrete values for
+154553.336: [15:45:53]      8 # minute (m), hour (h), day of month (dom), month (mon),
+154553.336: [15:45:53]      9 # and day of week (dow) or use '*' in these fields (for 'any').
+154553.336: [15:45:53]     10 #
+154553.336: [15:45:53]     11 # Notice that tasks will be started based on the cron's system
+154553.337: [15:45:53]     12 # daemon's notion of time and timezones.
+154553.337: [15:45:53]     13 #
+154553.337: [15:45:53]     14 # Output of the crontab jobs (including errors) is sent through
+154553.337: [15:45:53]     15 # email to the user the crontab file belongs to (unless redirected).
+154553.337: [15:45:53]     16 #
+154553.337: [15:45:53]     17 # For example, you can run a backup of all your user accounts
+154553.337: [15:45:53]     18 # at 5 a.m every week with:
+154553.337: [15:45:53]     19 # 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154553.337: [15:45:53]     20 #
+154553.338: [15:45:53]     21 # For more information see the manual pages of crontab(5) and cron(8)
+154553.338: [15:45:53]     22 #
+154553.338: [15:45:53]     23 # m h  dom mon dow   command
+154553.338: [15:45:53]     24 #0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154553.338: [15:45:53]     25 #30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154553.339: [15:45:53]     26 10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154553.339: [15:45:53]     27 0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154553.339: [15:45:53]     28 0 * * * * /usr/bin/bash /root/tmp.sh
+154553.339: [15:45:53]     29 0 5 * 8 * /usr/bin/bash /etc/wireguard/StopWG1.sh;/usr/bin/bash /etc/wireguard/StartWG1.sh
+154604.867: [15:46:04]Press ENTER or type command to continue
+154604.867: [15:46:04]crontab: installing new crontab
+154621.334: [15:46:21][root@172-16-208-2 /etc/wireguard]# vi /root/.vimrc 
+154623.371: [15:46:23]  1 set nu
+154632.601: [15:46:32][root@172-16-208-2 /etc/wireguard]# crontab -l
+154632.618: [15:46:32]# Edit this file to introduce tasks to be run by cron.
+154632.618: [15:46:32]# 
+154632.618: [15:46:32]# Each task to run has to be defined through a single line
+154632.618: [15:46:32]# indicating with different fields when the task will be run
+154632.618: [15:46:32]# and what command to run for the task
+154632.618: [15:46:32]# 
+154632.618: [15:46:32]# To define the time you can provide concrete values for
+154632.618: [15:46:32]# minute (m), hour (h), day of month (dom), month (mon),
+154632.618: [15:46:32]# and day of week (dow) or use '*' in these fields (for 'any').
+154632.618: [15:46:32]# 
+154632.618: [15:46:32]# Notice that tasks will be started based on the cron's system
+154632.618: [15:46:32]# daemon's notion of time and timezones.
+154632.618: [15:46:32]# 
+154632.618: [15:46:32]# Output of the crontab jobs (including errors) is sent through
+154632.618: [15:46:32]# email to the user the crontab file belongs to (unless redirected).
+154632.618: [15:46:32]# 
+154632.618: [15:46:32]# For example, you can run a backup of all your user accounts
+154632.618: [15:46:32]# at 5 a.m every week with:
+154632.619: [15:46:32]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154632.619: [15:46:32]# 
+154632.619: [15:46:32]# For more information see the manual pages of crontab(5) and cron(8)
+154632.619: [15:46:32]# 
+154632.619: [15:46:32]# m h  dom mon dow   command
+154632.619: [15:46:32]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154632.619: [15:46:32]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154632.619: [15:46:32]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154632.619: [15:46:32]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154632.619: [15:46:32]0 * * * * /usr/bin/bash /root/tmp.sh
+154632.619: [15:46:32]0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh;/usr/bin/bash /etc/wireguard/StartWG1.sh
+154752.319: [15:47:52][root@172-16-208-2 /etc/wireguard]# 
+154752.483: [15:47:52][root@172-16-208-2 /etc/wireguard]# 
+154804.903: [15:48:04][root@172-16-208-2 /etc/wireguard]# crontab -e
+154804.912: [15:48:04]Error detected while processing /root/.vimrc:
+154804.913: [15:48:04]line    2:
+154804.913: [15:48:04]E319: Sorry, the command is not available in this version: syntax on
+154805.874: [15:48:05]      1 # Edit this file to introduce tasks to be run by cron.
+154805.874: [15:48:05]      4 # indicating with different fields when the task will be run
+154805.874: [15:48:05]      5 # and what command to run for the task
+154805.874: [15:48:05]      6 #
+154805.874: [15:48:05]      7 # To define the time you can provide concrete values for
+154805.875: [15:48:05]      8 # minute (m), hour (h), day of month (dom), month (mon),
+154805.875: [15:48:05]      9 # and day of week (dow) or use '*' in these fields (for 'any').
+154805.875: [15:48:05]     10 #
+154805.875: [15:48:05]     11 # Notice that tasks will be started based on the cron's system
+154805.875: [15:48:05]     12 # daemon's notion of time and timezones.
+154805.875: [15:48:05]     13 #
+154805.875: [15:48:05]     14 # Output of the crontab jobs (including errors) is sent through
+154805.875: [15:48:05]     15 # email to the user the crontab file belongs to (unless redirected).
+154805.876: [15:48:05]     16 #
+154805.876: [15:48:05]     17 # For example, you can run a backup of all your user accounts
+154805.876: [15:48:05]     18 # at 5 a.m every week with:
+154805.876: [15:48:05]     19 # 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154805.876: [15:48:05]     20 #
+154805.876: [15:48:05]     21 # For more information see the manual pages of crontab(5) and cron(8)
+154805.876: [15:48:05]     22 #
+154805.876: [15:48:05]     23 # m h  dom mon dow   command
+154805.877: [15:48:05]     24 #0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154805.877: [15:48:05]     25 #30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154805.877: [15:48:05]     26 10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154805.877: [15:48:05]     27 0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154805.877: [15:48:05]     28 0 * * * * /usr/bin/bash /root/tmp.sh
+154805.878: [15:48:05]     29 0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh;/usr/bin/bash /etc/wireguard/StartWG1.sh
+154819.606: [15:48:19]Press ENTER or type command to continue
+154819.606: [15:48:19]crontab: installing new crontab
+154824.299: [15:48:24][root@172-16-208-2 /etc/wireguard]# crontab -l
+154824.307: [15:48:24]# Edit this file to introduce tasks to be run by cron.
+154824.307: [15:48:24]# 
+154824.307: [15:48:24]# Each task to run has to be defined through a single line
+154824.307: [15:48:24]# indicating with different fields when the task will be run
+154824.307: [15:48:24]# and what command to run for the task
+154824.308: [15:48:24]# 
+154824.308: [15:48:24]# To define the time you can provide concrete values for
+154824.308: [15:48:24]# minute (m), hour (h), day of month (dom), month (mon),
+154824.308: [15:48:24]# and day of week (dow) or use '*' in these fields (for 'any').
+154824.308: [15:48:24]# 
+154824.308: [15:48:24]# Notice that tasks will be started based on the cron's system
+154824.308: [15:48:24]# daemon's notion of time and timezones.
+154824.308: [15:48:24]# 
+154824.308: [15:48:24]# Output of the crontab jobs (including errors) is sent through
+154824.308: [15:48:24]# email to the user the crontab file belongs to (unless redirected).
+154824.308: [15:48:24]# 
+154824.309: [15:48:24]# For example, you can run a backup of all your user accounts
+154824.309: [15:48:24]# at 5 a.m every week with:
+154824.309: [15:48:24]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+154824.309: [15:48:24]# 
+154824.309: [15:48:24]# For more information see the manual pages of crontab(5) and cron(8)
+154824.309: [15:48:24]# 
+154824.309: [15:48:24]# m h  dom mon dow   command
+154824.309: [15:48:24]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+154824.310: [15:48:24]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+154824.310: [15:48:24]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+154824.310: [15:48:24]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+154824.310: [15:48:24]0 * * * * /usr/bin/bash /root/tmp.sh
+154824.310: [15:48:24]0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+154831.925: [15:48:31][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StopWG1.sh ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+154835.065: [15:48:35][root@172-16-208-2 /etc/wireguard]# ip a
+154835.083: [15:48:35]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154835.083: [15:48:35]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154835.083: [15:48:35]    inet 127.0.0.1/8 scope host lo
+154835.083: [15:48:35]       valid_lft forever preferred_lft forever
+154835.083: [15:48:35]    inet6 ::1/128 scope host 
+154835.083: [15:48:35]       valid_lft forever preferred_lft forever
+154835.083: [15:48:35]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154835.083: [15:48:35]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+154835.083: [15:48:35]    altname enp0s3
+154835.083: [15:48:35]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+154835.083: [15:48:35]       valid_lft forever preferred_lft forever
+154835.083: [15:48:35]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+154835.083: [15:48:35]       valid_lft forever preferred_lft forever
+154835.083: [15:48:35]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154835.083: [15:48:35]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+154835.083: [15:48:35]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154835.083: [15:48:35]       valid_lft forever preferred_lft forever
+154835.084: [15:48:35]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+154835.084: [15:48:35]       valid_lft forever preferred_lft forever
+154835.084: [15:48:35]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.084: [15:48:35]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+154835.084: [15:48:35]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+154835.084: [15:48:35]       valid_lft forever preferred_lft forever
+154835.084: [15:48:35]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.084: [15:48:35]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+154835.084: [15:48:35]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+154835.084: [15:48:35]       valid_lft forever preferred_lft forever
+154835.084: [15:48:35]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.084: [15:48:35]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+154835.084: [15:48:35]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+154835.084: [15:48:35]       valid_lft forever preferred_lft forever
+154835.084: [15:48:35]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.084: [15:48:35]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+154835.084: [15:48:35]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+154835.084: [15:48:35]       valid_lft forever preferred_lft forever
+154835.084: [15:48:35]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.084: [15:48:35]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+154835.084: [15:48:35]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+154835.084: [15:48:35]       valid_lft forever preferred_lft forever
+154835.085: [15:48:35]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.085: [15:48:35]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+154835.085: [15:48:35]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+154835.085: [15:48:35]       valid_lft forever preferred_lft forever
+154835.085: [15:48:35]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.085: [15:48:35]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+154835.085: [15:48:35]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+154835.085: [15:48:35]       valid_lft forever preferred_lft forever
+154835.086: [15:48:35]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154835.086: [15:48:35]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+154835.086: [15:48:35]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+154835.086: [15:48:35]       valid_lft forever preferred_lft forever
+154835.086: [15:48:35]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+154835.086: [15:48:35]       valid_lft forever preferred_lft forever
+154835.086: [15:48:35]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.086: [15:48:35]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+154835.086: [15:48:35]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+154835.086: [15:48:35]       valid_lft forever preferred_lft forever
+154835.087: [15:48:35]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154835.087: [15:48:35]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+154835.087: [15:48:35]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+154835.087: [15:48:35]       valid_lft forever preferred_lft forever
+154835.087: [15:48:35]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.087: [15:48:35]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+154835.087: [15:48:35]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+154835.087: [15:48:35]       valid_lft forever preferred_lft forever
+154835.088: [15:48:35]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154835.088: [15:48:35]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+154835.088: [15:48:35]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+154835.088: [15:48:35]       valid_lft forever preferred_lft forever
+154835.088: [15:48:35]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.088: [15:48:35]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154835.088: [15:48:35]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+154835.088: [15:48:35]       valid_lft forever preferred_lft forever
+154835.088: [15:48:35]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154835.089: [15:48:35]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+154835.089: [15:48:35]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+154835.089: [15:48:35]       valid_lft forever preferred_lft forever
+154835.089: [15:48:35]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.089: [15:48:35]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+154835.089: [15:48:35]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+154835.089: [15:48:35]       valid_lft forever preferred_lft forever
+154835.089: [15:48:35]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154835.089: [15:48:35]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+154835.090: [15:48:35]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+154835.090: [15:48:35]       valid_lft forever preferred_lft forever
+154835.090: [15:48:35]333: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+154835.090: [15:48:35]    link/none 
+154835.090: [15:48:35]    inet 10.253.0.2/32 scope global wg0
+154835.090: [15:48:35]       valid_lft forever preferred_lft forever
+154835.090: [15:48:35]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+154835.090: [15:48:35]       valid_lft forever preferred_lft forever
+154835.090: [15:48:35]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.090: [15:48:35]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+154835.090: [15:48:35]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+154835.090: [15:48:35]       valid_lft forever preferred_lft forever
+154835.091: [15:48:35]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154835.091: [15:48:35]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+154835.091: [15:48:35]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+154835.091: [15:48:35]       valid_lft forever preferred_lft forever
+154837.814: [15:48:37][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+154837.833: [15:48:37]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+154837.833: [15:48:37]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+154837.833: [15:48:37]ping: sendmsg: Destination address required
+154838.821: [15:48:38]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+154838.821: [15:48:38]ping: sendmsg: Destination address required
+154839.850: [15:48:39]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+154839.850: [15:48:39]ping: sendmsg: Destination address required
+154840.521: [15:48:40]^C
+154840.522: [15:48:40]--- 10.253.0.11 ping statistics ---
+154840.532: [15:48:40]3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2032ms
+154840.532: [15:48:40]
+154843.365: [15:48:43][root@172-16-208-2 /etc/wireguard]# ip a
+154843.380: [15:48:43]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154843.380: [15:48:43]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154843.380: [15:48:43]    inet 127.0.0.1/8 scope host lo
+154843.380: [15:48:43]       valid_lft forever preferred_lft forever
+154843.380: [15:48:43]    inet6 ::1/128 scope host 
+154843.380: [15:48:43]       valid_lft forever preferred_lft forever
+154843.380: [15:48:43]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154843.380: [15:48:43]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+154843.380: [15:48:43]    altname enp0s3
+154843.380: [15:48:43]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+154843.380: [15:48:43]       valid_lft forever preferred_lft forever
+154843.380: [15:48:43]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+154843.380: [15:48:43]       valid_lft forever preferred_lft forever
+154843.380: [15:48:43]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154843.380: [15:48:43]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+154843.381: [15:48:43]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154843.381: [15:48:43]       valid_lft forever preferred_lft forever
+154843.381: [15:48:43]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+154843.381: [15:48:43]       valid_lft forever preferred_lft forever
+154843.381: [15:48:43]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.381: [15:48:43]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+154843.381: [15:48:43]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+154843.381: [15:48:43]       valid_lft forever preferred_lft forever
+154843.381: [15:48:43]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.381: [15:48:43]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+154843.381: [15:48:43]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+154843.381: [15:48:43]       valid_lft forever preferred_lft forever
+154843.381: [15:48:43]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.381: [15:48:43]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+154843.381: [15:48:43]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+154843.381: [15:48:43]       valid_lft forever preferred_lft forever
+154843.381: [15:48:43]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.381: [15:48:43]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+154843.381: [15:48:43]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+154843.381: [15:48:43]       valid_lft forever preferred_lft forever
+154843.381: [15:48:43]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.382: [15:48:43]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+154843.382: [15:48:43]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+154843.382: [15:48:43]       valid_lft forever preferred_lft forever
+154843.382: [15:48:43]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.382: [15:48:43]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+154843.382: [15:48:43]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+154843.382: [15:48:43]       valid_lft forever preferred_lft forever
+154843.382: [15:48:43]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.382: [15:48:43]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+154843.383: [15:48:43]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+154843.383: [15:48:43]       valid_lft forever preferred_lft forever
+154843.383: [15:48:43]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154843.383: [15:48:43]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+154843.383: [15:48:43]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+154843.383: [15:48:43]       valid_lft forever preferred_lft forever
+154843.383: [15:48:43]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+154843.383: [15:48:43]       valid_lft forever preferred_lft forever
+154843.383: [15:48:43]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.383: [15:48:43]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+154843.383: [15:48:43]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+154843.384: [15:48:43]       valid_lft forever preferred_lft forever
+154843.384: [15:48:43]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154843.384: [15:48:43]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+154843.384: [15:48:43]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+154843.384: [15:48:43]       valid_lft forever preferred_lft forever
+154843.384: [15:48:43]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.384: [15:48:43]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+154843.385: [15:48:43]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+154843.385: [15:48:43]       valid_lft forever preferred_lft forever
+154843.385: [15:48:43]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154843.385: [15:48:43]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+154843.385: [15:48:43]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+154843.385: [15:48:43]       valid_lft forever preferred_lft forever
+154843.385: [15:48:43]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.385: [15:48:43]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154843.385: [15:48:43]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+154843.385: [15:48:43]       valid_lft forever preferred_lft forever
+154843.386: [15:48:43]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154843.386: [15:48:43]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+154843.386: [15:48:43]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+154843.386: [15:48:43]       valid_lft forever preferred_lft forever
+154843.386: [15:48:43]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.386: [15:48:43]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+154843.386: [15:48:43]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+154843.386: [15:48:43]       valid_lft forever preferred_lft forever
+154843.387: [15:48:43]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154843.387: [15:48:43]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+154843.387: [15:48:43]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+154843.387: [15:48:43]       valid_lft forever preferred_lft forever
+154843.387: [15:48:43]333: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+154843.387: [15:48:43]    link/none 
+154843.387: [15:48:43]    inet 10.253.0.2/32 scope global wg0
+154843.387: [15:48:43]       valid_lft forever preferred_lft forever
+154843.387: [15:48:43]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+154843.387: [15:48:43]       valid_lft forever preferred_lft forever
+154843.387: [15:48:43]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.388: [15:48:43]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+154843.388: [15:48:43]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+154843.388: [15:48:43]       valid_lft forever preferred_lft forever
+154843.388: [15:48:43]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154843.388: [15:48:43]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+154843.388: [15:48:43]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+154843.388: [15:48:43]       valid_lft forever preferred_lft forever
+154846.848: [15:48:46][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+154846.864: [15:48:46]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+154846.864: [15:48:46]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+154846.864: [15:48:46]ping: sendmsg: Destination address required
+154847.881: [15:48:47]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+154847.881: [15:48:47]ping: sendmsg: Destination address required
+154848.482: [15:48:48]^C
+154848.482: [15:48:48]--- 10.253.0.11 ping statistics ---
+154848.482: [15:48:48]2 packets transmitted, 0 received, +2 errors, 100% packet loss, time 1032ms
+154848.482: [15:48:48]
+154850.325: [15:48:50][root@172-16-208-2 /etc/wireguard]# ll
+154850.340: [15:48:50]total 112K
+154850.340: [15:48:50]-rw-r--r-- 1 tcpdump tcpdump  52K Dec  5 21:43  1.cap
+154850.340: [15:48:50]-rw-r--r-- 1 root    root      45 Apr  7  2023  private.key
+154850.340: [15:48:50]-rw-r--r-- 1 root    root      45 Apr  7  2023  public.key
+154850.340: [15:48:50]-rwxrwxrwx 1 root    root    1.6K Apr 10  2023  reresolve-dns.sh
+154850.340: [15:48:50]-rwxr-xr-x 1 root    root     526 Nov 21 18:22  StartWG1.sh
+154850.340: [15:48:50]-rwxr-xr-x 1 root    root     361 Nov 21 18:21  StopWG1.sh
+154850.340: [15:48:50]-rw-r--r-- 1 root    root    4.2K Apr 30  2025  wg0.conf
+154850.341: [15:48:50]-rw-r--r-- 1 root    root    2.1K Apr 29  2025  wg0.conf-bak-20250429
+154850.341: [15:48:50]-rw-r--r-- 1 root    root    4.4K Sep 12 18:18 'wg0 copy.conf'
+154850.341: [15:48:50]-rw-rw-rw- 1 root    root    1.7K Sep 12 18:27  wg1-20250912.conf
+154850.341: [15:48:50]-rw-rw-rw- 1 root    root    1.9K Jan 29 13:41  wg1.conf
+154850.341: [15:48:50]-rw-r--r-- 1 root    root    1.6K Sep  1 19:15  wg1.conf-20250901
+154850.341: [15:48:50]-rw-rw-rw- 1 root    root    1.9K Dec  5 23:59  wg1.conf-20260127
+154855.639: [15:48:55][root@172-16-208-2 /etc/wireguard]# bash StartWG1.sh 
+154855.652: [15:48:55]RTNETLINK answers: File exists
+154855.652: [15:48:55]RTNETLINK answers: File exists
+154855.652: [15:48:55]RTNETLINK answers: File exists
+154855.705: [15:48:55]RTNETLINK answers: File exists
+154855.711: [15:48:55]RTNETLINK answers: File exists
+154855.711: [15:48:55]RTNETLINK answers: File exists
+154855.711: [15:48:55]RTNETLINK answers: File exists
+154855.719: [15:48:55]RTNETLINK answers: File exists
+154857.042: [15:48:57][root@172-16-208-2 /etc/wireguard]# ip a
+154857.050: [15:48:57]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154857.050: [15:48:57]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154857.050: [15:48:57]    inet 127.0.0.1/8 scope host lo
+154857.051: [15:48:57]       valid_lft forever preferred_lft forever
+154857.051: [15:48:57]    inet6 ::1/128 scope host 
+154857.051: [15:48:57]       valid_lft forever preferred_lft forever
+154857.051: [15:48:57]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154857.051: [15:48:57]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+154857.051: [15:48:57]    altname enp0s3
+154857.051: [15:48:57]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+154857.051: [15:48:57]       valid_lft forever preferred_lft forever
+154857.051: [15:48:57]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+154857.051: [15:48:57]       valid_lft forever preferred_lft forever
+154857.051: [15:48:57]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154857.051: [15:48:57]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+154857.051: [15:48:57]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154857.051: [15:48:57]       valid_lft forever preferred_lft forever
+154857.051: [15:48:57]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+154857.051: [15:48:57]       valid_lft forever preferred_lft forever
+154857.051: [15:48:57]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.051: [15:48:57]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+154857.052: [15:48:57]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+154857.052: [15:48:57]       valid_lft forever preferred_lft forever
+154857.052: [15:48:57]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.052: [15:48:57]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+154857.052: [15:48:57]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+154857.052: [15:48:57]       valid_lft forever preferred_lft forever
+154857.052: [15:48:57]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.052: [15:48:57]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+154857.052: [15:48:57]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+154857.052: [15:48:57]       valid_lft forever preferred_lft forever
+154857.052: [15:48:57]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.052: [15:48:57]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+154857.052: [15:48:57]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+154857.052: [15:48:57]       valid_lft forever preferred_lft forever
+154857.053: [15:48:57]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.053: [15:48:57]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+154857.053: [15:48:57]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+154857.053: [15:48:57]       valid_lft forever preferred_lft forever
+154857.054: [15:48:57]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.054: [15:48:57]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+154857.054: [15:48:57]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+154857.054: [15:48:57]       valid_lft forever preferred_lft forever
+154857.055: [15:48:57]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.055: [15:48:57]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+154857.055: [15:48:57]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+154857.055: [15:48:57]       valid_lft forever preferred_lft forever
+154857.056: [15:48:57]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154857.056: [15:48:57]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+154857.056: [15:48:57]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+154857.056: [15:48:57]       valid_lft forever preferred_lft forever
+154857.056: [15:48:57]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+154857.057: [15:48:57]       valid_lft forever preferred_lft forever
+154857.057: [15:48:57]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.057: [15:48:57]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+154857.057: [15:48:57]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+154857.057: [15:48:57]       valid_lft forever preferred_lft forever
+154857.057: [15:48:57]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154857.057: [15:48:57]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+154857.057: [15:48:57]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+154857.058: [15:48:57]       valid_lft forever preferred_lft forever
+154857.058: [15:48:57]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.058: [15:48:57]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+154857.058: [15:48:57]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+154857.058: [15:48:57]       valid_lft forever preferred_lft forever
+154857.058: [15:48:57]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154857.058: [15:48:57]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+154857.059: [15:48:57]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+154857.059: [15:48:57]       valid_lft forever preferred_lft forever
+154857.059: [15:48:57]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.059: [15:48:57]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154857.059: [15:48:57]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+154857.059: [15:48:57]       valid_lft forever preferred_lft forever
+154857.059: [15:48:57]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154857.059: [15:48:57]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+154857.059: [15:48:57]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+154857.059: [15:48:57]       valid_lft forever preferred_lft forever
+154857.060: [15:48:57]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.060: [15:48:57]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+154857.060: [15:48:57]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+154857.060: [15:48:57]       valid_lft forever preferred_lft forever
+154857.060: [15:48:57]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154857.060: [15:48:57]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+154857.060: [15:48:57]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+154857.060: [15:48:57]       valid_lft forever preferred_lft forever
+154857.060: [15:48:57]333: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+154857.060: [15:48:57]    link/none 
+154857.061: [15:48:57]    inet 10.253.0.2/32 scope global wg0
+154857.061: [15:48:57]       valid_lft forever preferred_lft forever
+154857.061: [15:48:57]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+154857.061: [15:48:57]       valid_lft forever preferred_lft forever
+154857.061: [15:48:57]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.061: [15:48:57]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+154857.061: [15:48:57]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+154857.061: [15:48:57]       valid_lft forever preferred_lft forever
+154857.061: [15:48:57]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154857.061: [15:48:57]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+154857.062: [15:48:57]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+154857.062: [15:48:57]       valid_lft forever preferred_lft forever
+154859.491: [15:48:59][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+154859.505: [15:48:59]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+154859.505: [15:48:59]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+154859.505: [15:48:59]ping: sendmsg: Destination address required
+154900.520: [15:49:00]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+154900.521: [15:49:00]ping: sendmsg: Destination address required
+154901.597: [15:49:01]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+154901.597: [15:49:01]ping: sendmsg: Destination address required
+154902.349: [15:49:02]^C
+154902.349: [15:49:02]--- 10.253.0.11 ping statistics ---
+154902.349: [15:49:02]3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2051ms
+154902.349: [15:49:02]
+154907.501: [15:49:07][root@172-16-208-2 /etc/wireguard]# bash StopWG1.sh 
+154910.515: [15:49:10][root@172-16-208-2 /etc/wireguard]# bash StartWG1.sh 
+154912.193: [15:49:12][root@172-16-208-2 /etc/wireguard]# ip a
+154912.207: [15:49:12]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154912.208: [15:49:12]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154912.208: [15:49:12]    inet 127.0.0.1/8 scope host lo
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]    inet6 ::1/128 scope host 
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154912.208: [15:49:12]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+154912.208: [15:49:12]    altname enp0s3
+154912.208: [15:49:12]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154912.208: [15:49:12]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+154912.208: [15:49:12]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.208: [15:49:12]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+154912.208: [15:49:12]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.208: [15:49:12]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+154912.208: [15:49:12]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.208: [15:49:12]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+154912.208: [15:49:12]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+154912.208: [15:49:12]       valid_lft forever preferred_lft forever
+154912.208: [15:49:12]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.208: [15:49:12]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+154912.208: [15:49:12]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+154912.209: [15:49:12]       valid_lft forever preferred_lft forever
+154912.209: [15:49:12]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.209: [15:49:12]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+154912.209: [15:49:12]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+154912.209: [15:49:12]       valid_lft forever preferred_lft forever
+154912.209: [15:49:12]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.209: [15:49:12]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+154912.209: [15:49:12]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+154912.209: [15:49:12]       valid_lft forever preferred_lft forever
+154912.210: [15:49:12]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.210: [15:49:12]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+154912.210: [15:49:12]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+154912.210: [15:49:12]       valid_lft forever preferred_lft forever
+154912.210: [15:49:12]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154912.210: [15:49:12]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+154912.210: [15:49:12]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+154912.210: [15:49:12]       valid_lft forever preferred_lft forever
+154912.210: [15:49:12]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+154912.210: [15:49:12]       valid_lft forever preferred_lft forever
+154912.211: [15:49:12]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.211: [15:49:12]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+154912.211: [15:49:12]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+154912.211: [15:49:12]       valid_lft forever preferred_lft forever
+154912.211: [15:49:12]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154912.211: [15:49:12]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+154912.211: [15:49:12]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+154912.211: [15:49:12]       valid_lft forever preferred_lft forever
+154912.211: [15:49:12]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.212: [15:49:12]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+154912.212: [15:49:12]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+154912.212: [15:49:12]       valid_lft forever preferred_lft forever
+154912.212: [15:49:12]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154912.212: [15:49:12]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+154912.212: [15:49:12]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+154912.212: [15:49:12]       valid_lft forever preferred_lft forever
+154912.212: [15:49:12]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.213: [15:49:12]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154912.213: [15:49:12]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+154912.213: [15:49:12]       valid_lft forever preferred_lft forever
+154912.213: [15:49:12]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154912.213: [15:49:12]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+154912.213: [15:49:12]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+154912.213: [15:49:12]       valid_lft forever preferred_lft forever
+154912.213: [15:49:12]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.213: [15:49:12]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+154912.214: [15:49:12]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+154912.214: [15:49:12]       valid_lft forever preferred_lft forever
+154912.214: [15:49:12]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154912.214: [15:49:12]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+154912.214: [15:49:12]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+154912.214: [15:49:12]       valid_lft forever preferred_lft forever
+154912.214: [15:49:12]334: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+154912.214: [15:49:12]    link/none 
+154912.214: [15:49:12]    inet 10.253.0.2/32 scope global wg0
+154912.214: [15:49:12]       valid_lft forever preferred_lft forever
+154912.214: [15:49:12]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+154912.214: [15:49:12]       valid_lft forever preferred_lft forever
+154912.215: [15:49:12]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.215: [15:49:12]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+154912.215: [15:49:12]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+154912.215: [15:49:12]       valid_lft forever preferred_lft forever
+154912.215: [15:49:12]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154912.215: [15:49:12]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+154912.215: [15:49:12]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+154912.215: [15:49:12]       valid_lft forever preferred_lft forever
+154914.643: [15:49:14][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+154914.654: [15:49:14]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+154914.661: [15:49:14]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=13.8 ms
+154915.718: [15:49:15]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=5.44 ms
+154916.752: [15:49:16]64 bytes from 10.253.0.11: icmp_seq=3 ttl=64 time=5.59 ms
+154917.662: [15:49:17]64 bytes from 10.253.0.11: icmp_seq=4 ttl=64 time=5.19 ms
+154918.240: [15:49:18]^C
+154918.241: [15:49:18]--- 10.253.0.11 ping statistics ---
+154918.241: [15:49:18]4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+154918.241: [15:49:18]rtt min/avg/max/mdev = 5.194/7.508/13.816/3.644 ms
+154929.436: [15:49:29][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StopWG1.sh ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+154931.628: [15:49:31][root@172-16-208-2 /etc/wireguard]# ip a
+154931.629: [15:49:31]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154931.629: [15:49:31]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154931.629: [15:49:31]    inet 127.0.0.1/8 scope host lo
+154931.629: [15:49:31]       valid_lft forever preferred_lft forever
+154931.629: [15:49:31]    inet6 ::1/128 scope host 
+154931.629: [15:49:31]       valid_lft forever preferred_lft forever
+154931.630: [15:49:31]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154931.630: [15:49:31]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+154931.630: [15:49:31]    altname enp0s3
+154931.630: [15:49:31]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+154931.630: [15:49:31]       valid_lft forever preferred_lft forever
+154931.630: [15:49:31]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+154931.630: [15:49:31]       valid_lft forever preferred_lft forever
+154931.631: [15:49:31]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154931.631: [15:49:31]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+154931.631: [15:49:31]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154931.631: [15:49:31]       valid_lft forever preferred_lft forever
+154931.631: [15:49:31]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+154931.632: [15:49:31]       valid_lft forever preferred_lft forever
+154931.632: [15:49:31]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.632: [15:49:31]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+154931.632: [15:49:31]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+154931.633: [15:49:31]       valid_lft forever preferred_lft forever
+154931.633: [15:49:31]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.646: [15:49:31]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+154931.646: [15:49:31]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+154931.646: [15:49:31]       valid_lft forever preferred_lft forever
+154931.646: [15:49:31]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.646: [15:49:31]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+154931.646: [15:49:31]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+154931.646: [15:49:31]       valid_lft forever preferred_lft forever
+154931.646: [15:49:31]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.646: [15:49:31]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+154931.646: [15:49:31]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+154931.646: [15:49:31]       valid_lft forever preferred_lft forever
+154931.646: [15:49:31]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.646: [15:49:31]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+154931.646: [15:49:31]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+154931.646: [15:49:31]       valid_lft forever preferred_lft forever
+154931.647: [15:49:31]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.647: [15:49:31]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+154931.647: [15:49:31]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+154931.647: [15:49:31]       valid_lft forever preferred_lft forever
+154931.647: [15:49:31]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.647: [15:49:31]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+154931.647: [15:49:31]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+154931.647: [15:49:31]       valid_lft forever preferred_lft forever
+154931.647: [15:49:31]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154931.648: [15:49:31]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+154931.648: [15:49:31]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+154931.648: [15:49:31]       valid_lft forever preferred_lft forever
+154931.648: [15:49:31]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+154931.648: [15:49:31]       valid_lft forever preferred_lft forever
+154931.648: [15:49:31]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.648: [15:49:31]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+154931.648: [15:49:31]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+154931.648: [15:49:31]       valid_lft forever preferred_lft forever
+154931.648: [15:49:31]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154931.649: [15:49:31]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+154931.649: [15:49:31]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+154931.649: [15:49:31]       valid_lft forever preferred_lft forever
+154931.649: [15:49:31]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.649: [15:49:31]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+154931.649: [15:49:31]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+154931.649: [15:49:31]       valid_lft forever preferred_lft forever
+154931.649: [15:49:31]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154931.649: [15:49:31]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+154931.650: [15:49:31]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+154931.650: [15:49:31]       valid_lft forever preferred_lft forever
+154931.650: [15:49:31]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.650: [15:49:31]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154931.650: [15:49:31]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+154931.650: [15:49:31]       valid_lft forever preferred_lft forever
+154931.650: [15:49:31]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154931.650: [15:49:31]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+154931.650: [15:49:31]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+154931.650: [15:49:31]       valid_lft forever preferred_lft forever
+154931.651: [15:49:31]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.651: [15:49:31]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+154931.651: [15:49:31]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+154931.651: [15:49:31]       valid_lft forever preferred_lft forever
+154931.651: [15:49:31]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154931.651: [15:49:31]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+154931.651: [15:49:31]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+154931.651: [15:49:31]       valid_lft forever preferred_lft forever
+154931.651: [15:49:31]335: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+154931.651: [15:49:31]    link/none 
+154931.652: [15:49:31]    inet 10.253.0.2/32 scope global wg0
+154931.652: [15:49:31]       valid_lft forever preferred_lft forever
+154931.652: [15:49:31]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+154931.652: [15:49:31]       valid_lft forever preferred_lft forever
+154931.652: [15:49:31]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.652: [15:49:31]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+154931.652: [15:49:31]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+154931.652: [15:49:31]       valid_lft forever preferred_lft forever
+154931.652: [15:49:31]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154931.653: [15:49:31]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+154931.653: [15:49:31]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+154931.653: [15:49:31]       valid_lft forever preferred_lft forever
+154934.067: [15:49:34][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+154934.078: [15:49:34]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+154934.078: [15:49:34]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+154934.078: [15:49:34]ping: sendmsg: Destination address required
+154935.174: [15:49:35]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+154935.174: [15:49:35]ping: sendmsg: Destination address required
+154936.104: [15:49:36]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+154936.104: [15:49:36]ping: sendmsg: Destination address required
+154936.379: [15:49:36]^C
+154936.379: [15:49:36]--- 10.253.0.11 ping statistics ---
+154936.379: [15:49:36]3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2036ms
+154936.379: [15:49:36]
+154938.131: [15:49:38][root@172-16-208-2 /etc/wireguard]# ip r
+154938.145: [15:49:38]default via 172.16.208.1 dev ens3 proto dhcp metric 100 
+154938.146: [15:49:38]1.168.160.131 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.160.195 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.163.46 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.164.252 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.166.206 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.168.48 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.174.45 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.174.74 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.174.132 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.174.149 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.176.167 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.178.172 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.178.204 via 172.16.208.4 dev ens3 
+154938.146: [15:49:38]1.168.179.90 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.168.182.40 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.168.182.48 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.168.186.182 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.168.190.122 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.194.218 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.196.110 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.198.126 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.199.252 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.200.97 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.207.55 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.207.178 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]1.170.208.67 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]3.0.55.191 via 172.16.208.4 dev ens3 
+154938.147: [15:49:38]3.0.102.232 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.0.184.30 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.1.101.105 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.1.202.21 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.1.205.70 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.38.40.113 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.38.217.66 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.38.218.76 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.38.221.82 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.112.45.52 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.113.19.221 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.113.24.102 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]3.113.29.82 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]8.8.8.8 via 172.16.208.4 dev ens3 
+154938.148: [15:49:38]10.253.0.3 dev wg0 scope link 
+154938.148: [15:49:38]10.253.0.11 dev wg0 scope link 
+154938.149: [15:49:38]13.112.118.243 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.112.142.153 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.112.183.12 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.113.215.194 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.114.122.89 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.114.139.41 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.158.54.184 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.158.131.230 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.192.165.129 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.192.166.27 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.192.166.211 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.213.48.122 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.213.51.9 via 172.16.208.4 dev ens3 
+154938.149: [15:49:38]13.213.72.98 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.215.205.107 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.215.253.196 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.229.224.81 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.230.197.110 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.230.239.83 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.231.151.67 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.231.155.81 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.231.224.31 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.250.46.240 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.250.47.175 via 172.16.208.4 dev ens3 
+154938.150: [15:49:38]13.250.97.96 via 172.16.208.4 dev ens3 
+154938.158: [15:49:38]15.165.38.216 via 172.16.208.4 dev ens3 
+154938.158: [15:49:38]18.136.118.137 via 172.16.208.4 dev ens3 
+154938.158: [15:49:38]18.140.56.130 via 172.16.208.4 dev ens3 
+154938.158: [15:49:38]18.141.147.30 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.141.164.208 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.141.202.163 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.51.105 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.51.190 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.53.255 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.110.92 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.113.251 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.124.168 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.210.110 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.243.45 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.162.246.126 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.177.141.190 via 172.16.208.4 dev ens3 
+154938.159: [15:49:38]18.179.15.59 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.179.61.132 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.179.120.92 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.181.199.47 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.182.42.85 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.183.126.98 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.183.132.212 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.183.170.195 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.183.172.244 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]18.183.179.20 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]35.77.32.246 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]35.77.84.44 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]35.77.85.122 via 172.16.208.4 dev ens3 
+154938.160: [15:49:38]35.77.92.7 via 172.16.208.4 dev ens3 
+154938.161: [15:49:38]35.166.29.70 via 172.16.208.4 dev ens3 
+154938.161: [15:49:38]35.166.68.224 via 172.16.208.4 dev ens3 
+154938.161: [15:49:38]43.198.72.129 via 172.16.208.4 dev ens3 
+154938.161: [15:49:38]43.198.82.45 via 172.16.208.4 dev ens3 
+154938.168: [15:49:38]43.198.86.175 via 172.16.208.4 dev ens3 
+154938.168: [15:49:38]43.198.95.12 via 172.16.208.4 dev ens3 
+154938.168: [15:49:38]43.198.97.168 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.198.111.18 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.198.114.122 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.198.152.121 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.198.233.1 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.29.178 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.30.133 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.32.163 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.34.225 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.35.145 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.36.13 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.41.207 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.44.205 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.59.89 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.60.55 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.60.152 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.67.131 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.70.63 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.74.81 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.134.124 via 172.16.208.4 dev ens3 
+154938.169: [15:49:38]43.199.163.75 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.187.65 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.195.63 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.200.174 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.208.134 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.210.145 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.211.160 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.230.152 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.252.26 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.199.252.176 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.202.252.32 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.203.160.172 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.203.164.166 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.206.219.86 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.207.68.152 via 172.16.208.4 dev ens3 
+154938.170: [15:49:38]43.207.85.182 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.212.113.213 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.212.191.9 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.213.41.59 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.213.67.65 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.213.71.141 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.213.75.49 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]43.213.76.165 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]44.248.109.95 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]44.249.20.105 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]47.128.77.42 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]47.128.250.101 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]47.129.6.132 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]47.129.6.175 via 172.16.208.4 dev ens3 
+154938.171: [15:49:38]47.129.46.34 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]47.129.56.73 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]47.129.58.159 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]47.129.222.20 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]47.130.3.210 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.68.183.176 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.69.157.199 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.77.233.71 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.194.185.161 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.195.182.33 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.195.218.57 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.195.232.114 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]52.196.233.35 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]54.46.52.43 via 172.16.208.4 dev ens3 
+154938.172: [15:49:38]54.64.65.208 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.65.202.188 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.95.60.8 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.95.168.115 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.95.205.182 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.150.216.155 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.151.226.129 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.151.229.238 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.168.120.230 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.169.113.36 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.169.184.46 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.169.223.69 via 172.16.208.4 dev ens3 
+154938.173: [15:49:38]54.189.115.146 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.199.66.192 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.199.117.60 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.201.52.27 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.238.153.163 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.238.193.73 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.238.219.107 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.249.132.192 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.254.128.202 via 172.16.208.4 dev ens3 
+154938.181: [15:49:38]54.255.243.29 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]57.180.14.121 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]57.180.243.199 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]57.180.248.224 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]59.37.173.107 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.50 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.51 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.52 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.53 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.54 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.55 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.56 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.57 via 172.16.208.4 dev ens3 
+154938.182: [15:49:38]61.93.255.59 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.93.255.60 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.93.255.62 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.192.38 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.193.252 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.200.88 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.205.175 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.210.38 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.211.138 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.214.190 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.218.239 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.223.15 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.226.253 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]61.228.246.242 via 172.16.208.4 dev ens3 
+154938.183: [15:49:38]103.45.234.158 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]104.18.43.89 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]112.4.0.55 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]114.25.102.52 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]114.25.102.239 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]114.25.104.219 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]120.232.153.120 via 172.16.208.4 dev ens3 
+154938.184: [15:49:38]169.254.169.254 via 172.16.221.131 dev ens3 proto dhcp metric 100 
+154938.184: [15:49:38]172.16.208.0/20 dev ens3 proto kernel scope link src 172.16.208.2 metric 100 
+154938.184: [15:49:38]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+154938.184: [15:49:38]172.18.0.0/16 dev br-c2f8d78d6e11 proto kernel scope link src 172.18.0.1 
+154938.184: [15:49:38]192.168.4.0/22 via 172.16.208.1 dev ens3 
+154938.184: [15:49:38]192.168.8.0/22 via 172.16.208.1 dev ens3 
+154938.185: [15:49:38]192.168.12.0/22 via 172.16.208.1 dev ens3 
+154938.185: [15:49:38]192.168.31.0/24 dev wg0 scope link 
+154938.185: [15:49:38]198.144.180.3 via 172.16.208.4 dev ens3 
+154938.185: [15:49:38]198.144.180.4 via 172.16.208.4 dev ens3 
+154938.185: [15:49:38]198.144.180.5 via 172.16.208.4 dev ens3 
+154938.185: [15:49:38]221.228.32.13 via 172.16.208.4 dev ens3 
+154938.185: [15:49:38]223.17.253.212 via 172.16.208.4 dev ens3 
+154953.761: [15:49:53][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StopWG1.sh ; 
+154955.591: [15:49:55][root@172-16-208-2 /etc/wireguard]# ip a
+154955.608: [15:49:55]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154955.608: [15:49:55]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154955.608: [15:49:55]    inet 127.0.0.1/8 scope host lo
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.608: [15:49:55]    inet6 ::1/128 scope host 
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.608: [15:49:55]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154955.608: [15:49:55]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+154955.608: [15:49:55]    altname enp0s3
+154955.608: [15:49:55]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.608: [15:49:55]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.608: [15:49:55]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154955.608: [15:49:55]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+154955.608: [15:49:55]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.608: [15:49:55]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.608: [15:49:55]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.608: [15:49:55]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+154955.608: [15:49:55]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+154955.608: [15:49:55]       valid_lft forever preferred_lft forever
+154955.609: [15:49:55]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.609: [15:49:55]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+154955.609: [15:49:55]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+154955.609: [15:49:55]       valid_lft forever preferred_lft forever
+154955.609: [15:49:55]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.609: [15:49:55]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+154955.609: [15:49:55]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+154955.609: [15:49:55]       valid_lft forever preferred_lft forever
+154955.609: [15:49:55]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.609: [15:49:55]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+154955.609: [15:49:55]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+154955.609: [15:49:55]       valid_lft forever preferred_lft forever
+154955.610: [15:49:55]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.610: [15:49:55]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+154955.610: [15:49:55]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+154955.610: [15:49:55]       valid_lft forever preferred_lft forever
+154955.610: [15:49:55]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.610: [15:49:55]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+154955.610: [15:49:55]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+154955.610: [15:49:55]       valid_lft forever preferred_lft forever
+154955.610: [15:49:55]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.611: [15:49:55]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+154955.611: [15:49:55]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+154955.611: [15:49:55]       valid_lft forever preferred_lft forever
+154955.611: [15:49:55]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+154955.611: [15:49:55]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+154955.611: [15:49:55]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+154955.611: [15:49:55]       valid_lft forever preferred_lft forever
+154955.611: [15:49:55]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+154955.611: [15:49:55]       valid_lft forever preferred_lft forever
+154955.611: [15:49:55]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.612: [15:49:55]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+154955.612: [15:49:55]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+154955.612: [15:49:55]       valid_lft forever preferred_lft forever
+154955.612: [15:49:55]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154955.612: [15:49:55]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+154955.612: [15:49:55]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+154955.612: [15:49:55]       valid_lft forever preferred_lft forever
+154955.612: [15:49:55]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.612: [15:49:55]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+154955.613: [15:49:55]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+154955.613: [15:49:55]       valid_lft forever preferred_lft forever
+154955.613: [15:49:55]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154955.613: [15:49:55]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+154955.613: [15:49:55]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+154955.613: [15:49:55]       valid_lft forever preferred_lft forever
+154955.613: [15:49:55]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.613: [15:49:55]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154955.614: [15:49:55]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+154955.614: [15:49:55]       valid_lft forever preferred_lft forever
+154955.614: [15:49:55]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154955.614: [15:49:55]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+154955.614: [15:49:55]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+154955.614: [15:49:55]       valid_lft forever preferred_lft forever
+154955.614: [15:49:55]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.614: [15:49:55]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+154955.614: [15:49:55]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+154955.614: [15:49:55]       valid_lft forever preferred_lft forever
+154955.615: [15:49:55]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+154955.615: [15:49:55]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+154955.615: [15:49:55]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+154955.615: [15:49:55]       valid_lft forever preferred_lft forever
+154955.615: [15:49:55]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.615: [15:49:55]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+154955.615: [15:49:55]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+154955.615: [15:49:55]       valid_lft forever preferred_lft forever
+154955.616: [15:49:55]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+154955.616: [15:49:55]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+154955.616: [15:49:55]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+154955.616: [15:49:55]       valid_lft forever preferred_lft forever
+155012.725: [15:50:12][root@172-16-208-2 /etc/wireguard]#  /usr/bin/bash /etc/wireguard/StartWG1.sh
+155013.908: [15:50:13][root@172-16-208-2 /etc/wireguard]# ip a
+155013.920: [15:50:13]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+155013.920: [15:50:13]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+155013.920: [15:50:13]    inet 127.0.0.1/8 scope host lo
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.920: [15:50:13]    inet6 ::1/128 scope host 
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.920: [15:50:13]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+155013.920: [15:50:13]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+155013.920: [15:50:13]    altname enp0s3
+155013.920: [15:50:13]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.920: [15:50:13]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.920: [15:50:13]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155013.920: [15:50:13]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+155013.920: [15:50:13]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.920: [15:50:13]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.920: [15:50:13]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.920: [15:50:13]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+155013.920: [15:50:13]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+155013.920: [15:50:13]       valid_lft forever preferred_lft forever
+155013.921: [15:50:13]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.921: [15:50:13]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+155013.921: [15:50:13]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+155013.921: [15:50:13]       valid_lft forever preferred_lft forever
+155013.921: [15:50:13]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.921: [15:50:13]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+155013.921: [15:50:13]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+155013.921: [15:50:13]       valid_lft forever preferred_lft forever
+155013.921: [15:50:13]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.921: [15:50:13]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+155013.921: [15:50:13]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+155013.921: [15:50:13]       valid_lft forever preferred_lft forever
+155013.921: [15:50:13]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.921: [15:50:13]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+155013.921: [15:50:13]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+155013.921: [15:50:13]       valid_lft forever preferred_lft forever
+155013.921: [15:50:13]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.922: [15:50:13]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+155013.922: [15:50:13]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+155013.922: [15:50:13]       valid_lft forever preferred_lft forever
+155013.922: [15:50:13]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.922: [15:50:13]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+155013.922: [15:50:13]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+155013.922: [15:50:13]       valid_lft forever preferred_lft forever
+155013.922: [15:50:13]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155013.923: [15:50:13]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+155013.923: [15:50:13]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+155013.923: [15:50:13]       valid_lft forever preferred_lft forever
+155013.923: [15:50:13]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+155013.923: [15:50:13]       valid_lft forever preferred_lft forever
+155013.923: [15:50:13]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.923: [15:50:13]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+155013.923: [15:50:13]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+155013.923: [15:50:13]       valid_lft forever preferred_lft forever
+155013.923: [15:50:13]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155013.924: [15:50:13]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+155013.924: [15:50:13]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+155013.924: [15:50:13]       valid_lft forever preferred_lft forever
+155013.924: [15:50:13]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.924: [15:50:13]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+155013.924: [15:50:13]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+155013.924: [15:50:13]       valid_lft forever preferred_lft forever
+155013.924: [15:50:13]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155013.925: [15:50:13]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+155013.925: [15:50:13]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+155013.925: [15:50:13]       valid_lft forever preferred_lft forever
+155013.925: [15:50:13]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.925: [15:50:13]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+155013.925: [15:50:13]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+155013.925: [15:50:13]       valid_lft forever preferred_lft forever
+155013.925: [15:50:13]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155013.926: [15:50:13]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+155013.926: [15:50:13]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+155013.926: [15:50:13]       valid_lft forever preferred_lft forever
+155013.926: [15:50:13]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.926: [15:50:13]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+155013.926: [15:50:13]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+155013.926: [15:50:13]       valid_lft forever preferred_lft forever
+155013.926: [15:50:13]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155013.926: [15:50:13]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+155013.926: [15:50:13]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+155013.927: [15:50:13]       valid_lft forever preferred_lft forever
+155013.927: [15:50:13]336: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+155013.927: [15:50:13]    link/none 
+155013.927: [15:50:13]    inet 10.253.0.2/32 scope global wg0
+155013.927: [15:50:13]       valid_lft forever preferred_lft forever
+155013.927: [15:50:13]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+155013.927: [15:50:13]       valid_lft forever preferred_lft forever
+155013.927: [15:50:13]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.927: [15:50:13]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+155013.927: [15:50:13]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+155013.927: [15:50:13]       valid_lft forever preferred_lft forever
+155013.928: [15:50:13]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155013.928: [15:50:13]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+155013.928: [15:50:13]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+155013.928: [15:50:13]       valid_lft forever preferred_lft forever
+155016.305: [15:50:16][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155016.319: [15:50:16]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155016.319: [15:50:16]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=5.76 ms
+155016.999: [15:50:16]^C
+155016.999: [15:50:16]--- 10.253.0.11 ping statistics ---
+155016.999: [15:50:16]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+155016.999: [15:50:16]rtt min/avg/max/mdev = 5.761/5.761/5.761/0.000 ms
+155026.073: [15:50:26][root@172-16-208-2 /etc/wireguard]# crontab -e
+155026.085: [15:50:26]Error detected while processing /root/.vimrc:
+155026.085: [15:50:26]line    2:
+155026.086: [15:50:26]E319: Sorry, the command is not available in this version: syntax on
+155027.267: [15:50:27]      1 # Edit this file to introduce tasks to be run by cron.
+155027.267: [15:50:27]      4 # indicating with different fields when the task will be run
+155027.267: [15:50:27]      5 # and what command to run for the task
+155027.268: [15:50:27]      6 #
+155027.268: [15:50:27]      7 # To define the time you can provide concrete values for
+155027.268: [15:50:27]      8 # minute (m), hour (h), day of month (dom), month (mon),
+155027.268: [15:50:27]      9 # and day of week (dow) or use '*' in these fields (for 'any').
+155027.268: [15:50:27]     10 #
+155027.268: [15:50:27]     11 # Notice that tasks will be started based on the cron's system
+155027.268: [15:50:27]     12 # daemon's notion of time and timezones.
+155027.268: [15:50:27]     13 #
+155027.268: [15:50:27]     14 # Output of the crontab jobs (including errors) is sent through
+155027.268: [15:50:27]     15 # email to the user the crontab file belongs to (unless redirected).
+155027.268: [15:50:27]     16 #
+155027.269: [15:50:27]     17 # For example, you can run a backup of all your user accounts
+155027.269: [15:50:27]     18 # at 5 a.m every week with:
+155027.269: [15:50:27]     19 # 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+155027.269: [15:50:27]     20 #
+155027.269: [15:50:27]     21 # For more information see the manual pages of crontab(5) and cron(8)
+155027.269: [15:50:27]     22 #
+155027.269: [15:50:27]     23 # m h  dom mon dow   command
+155027.269: [15:50:27]     24 #0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+155027.269: [15:50:27]     25 #30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+155027.269: [15:50:27]     26 10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+155027.269: [15:50:27]     27 0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+155027.269: [15:50:27]     28 0 * * * * /usr/bin/bash /root/tmp.sh
+155027.269: [15:50:27]     29 0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+155047.889: [15:50:47]Press ENTER or type command to continue
+155047.905: [15:50:47]crontab: installing new crontab
+155050.731: [15:50:50][root@172-16-208-2 /etc/wireguard]# crontab -l
+155050.731: [15:50:50]# Edit this file to introduce tasks to be run by cron.
+155050.731: [15:50:50]# 
+155050.731: [15:50:50]# Each task to run has to be defined through a single line
+155050.731: [15:50:50]# indicating with different fields when the task will be run
+155050.731: [15:50:50]# and what command to run for the task
+155050.731: [15:50:50]# 
+155050.731: [15:50:50]# To define the time you can provide concrete values for
+155050.731: [15:50:50]# minute (m), hour (h), day of month (dom), month (mon),
+155050.731: [15:50:50]# and day of week (dow) or use '*' in these fields (for 'any').
+155050.731: [15:50:50]# 
+155050.731: [15:50:50]# Notice that tasks will be started based on the cron's system
+155050.731: [15:50:50]# daemon's notion of time and timezones.
+155050.731: [15:50:50]# 
+155050.732: [15:50:50]# Output of the crontab jobs (including errors) is sent through
+155050.732: [15:50:50]# email to the user the crontab file belongs to (unless redirected).
+155050.732: [15:50:50]# 
+155050.732: [15:50:50]# For example, you can run a backup of all your user accounts
+155050.732: [15:50:50]# at 5 a.m every week with:
+155050.732: [15:50:50]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+155050.732: [15:50:50]# 
+155050.732: [15:50:50]# For more information see the manual pages of crontab(5) and cron(8)
+155050.732: [15:50:50]# 
+155050.732: [15:50:50]# m h  dom mon dow   command
+155050.732: [15:50:50]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+155050.741: [15:50:50]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+155050.741: [15:50:50]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+155050.741: [15:50:50]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+155050.741: [15:50:50]0 * * * * /usr/bin/bash /root/tmp.sh
+155050.741: [15:50:50]0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh ; sleep 3 ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+155104.299: [15:51:04][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StopWG1.sh ; sleep 3 ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+155109.235: [15:51:09][root@172-16-208-2 /etc/wireguard]# ip a
+155109.236: [15:51:09]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+155109.236: [15:51:09]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+155109.236: [15:51:09]    inet 127.0.0.1/8 scope host lo
+155109.236: [15:51:09]       valid_lft forever preferred_lft forever
+155109.236: [15:51:09]    inet6 ::1/128 scope host 
+155109.236: [15:51:09]       valid_lft forever preferred_lft forever
+155109.237: [15:51:09]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+155109.237: [15:51:09]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+155109.237: [15:51:09]    altname enp0s3
+155109.237: [15:51:09]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+155109.237: [15:51:09]       valid_lft forever preferred_lft forever
+155109.238: [15:51:09]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+155109.238: [15:51:09]       valid_lft forever preferred_lft forever
+155109.238: [15:51:09]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155109.238: [15:51:09]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+155109.238: [15:51:09]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+155109.238: [15:51:09]       valid_lft forever preferred_lft forever
+155109.239: [15:51:09]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+155109.239: [15:51:09]       valid_lft forever preferred_lft forever
+155109.239: [15:51:09]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.252: [15:51:09]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+155109.253: [15:51:09]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+155109.253: [15:51:09]       valid_lft forever preferred_lft forever
+155109.253: [15:51:09]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.253: [15:51:09]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+155109.253: [15:51:09]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+155109.253: [15:51:09]       valid_lft forever preferred_lft forever
+155109.253: [15:51:09]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.253: [15:51:09]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+155109.253: [15:51:09]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+155109.253: [15:51:09]       valid_lft forever preferred_lft forever
+155109.253: [15:51:09]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.253: [15:51:09]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+155109.253: [15:51:09]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+155109.253: [15:51:09]       valid_lft forever preferred_lft forever
+155109.253: [15:51:09]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.253: [15:51:09]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+155109.253: [15:51:09]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+155109.253: [15:51:09]       valid_lft forever preferred_lft forever
+155109.254: [15:51:09]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.254: [15:51:09]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+155109.254: [15:51:09]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+155109.254: [15:51:09]       valid_lft forever preferred_lft forever
+155109.254: [15:51:09]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.254: [15:51:09]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+155109.254: [15:51:09]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+155109.254: [15:51:09]       valid_lft forever preferred_lft forever
+155109.254: [15:51:09]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155109.254: [15:51:09]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+155109.255: [15:51:09]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+155109.255: [15:51:09]       valid_lft forever preferred_lft forever
+155109.255: [15:51:09]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+155109.255: [15:51:09]       valid_lft forever preferred_lft forever
+155109.255: [15:51:09]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.255: [15:51:09]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+155109.255: [15:51:09]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+155109.255: [15:51:09]       valid_lft forever preferred_lft forever
+155109.255: [15:51:09]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155109.256: [15:51:09]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+155109.256: [15:51:09]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+155109.256: [15:51:09]       valid_lft forever preferred_lft forever
+155109.256: [15:51:09]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.256: [15:51:09]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+155109.256: [15:51:09]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+155109.256: [15:51:09]       valid_lft forever preferred_lft forever
+155109.256: [15:51:09]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155109.256: [15:51:09]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+155109.256: [15:51:09]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+155109.257: [15:51:09]       valid_lft forever preferred_lft forever
+155109.257: [15:51:09]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.257: [15:51:09]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+155109.257: [15:51:09]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+155109.257: [15:51:09]       valid_lft forever preferred_lft forever
+155109.257: [15:51:09]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155109.257: [15:51:09]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+155109.257: [15:51:09]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+155109.257: [15:51:09]       valid_lft forever preferred_lft forever
+155109.258: [15:51:09]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.258: [15:51:09]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+155109.258: [15:51:09]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+155109.258: [15:51:09]       valid_lft forever preferred_lft forever
+155109.258: [15:51:09]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155109.258: [15:51:09]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+155109.258: [15:51:09]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+155109.258: [15:51:09]       valid_lft forever preferred_lft forever
+155109.258: [15:51:09]337: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+155109.258: [15:51:09]    link/none 
+155109.259: [15:51:09]    inet 10.253.0.2/32 scope global wg0
+155109.259: [15:51:09]       valid_lft forever preferred_lft forever
+155109.259: [15:51:09]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+155109.259: [15:51:09]       valid_lft forever preferred_lft forever
+155109.259: [15:51:09]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.259: [15:51:09]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+155109.259: [15:51:09]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+155109.259: [15:51:09]       valid_lft forever preferred_lft forever
+155109.259: [15:51:09]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155109.259: [15:51:09]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+155109.260: [15:51:09]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+155109.260: [15:51:09]       valid_lft forever preferred_lft forever
+155111.597: [15:51:11][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155111.610: [15:51:11]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155111.610: [15:51:11]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+155111.610: [15:51:11]ping: sendmsg: Destination address required
+155112.618: [15:51:12]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+155112.618: [15:51:12]ping: sendmsg: Destination address required
+155113.640: [15:51:13]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+155113.640: [15:51:13]ping: sendmsg: Destination address required
+155114.707: [15:51:14]From 10.253.0.2 icmp_seq=4 Destination Host Unreachable
+155115.834: [15:51:15]From 10.253.0.2 icmp_seq=5 Destination Host Unreachable
+155115.834: [15:51:15]ping: sendmsg: Destination address required
+155116.755: [15:51:16]From 10.253.0.2 icmp_seq=6 Destination Host Unreachable
+155116.755: [15:51:16]ping: sendmsg: Destination address required
+155117.736: [15:51:17]From 10.253.0.2 icmp_seq=7 Destination Host Unreachable
+155118.761: [15:51:18]From 10.253.0.2 icmp_seq=8 Destination Host Unreachable
+155118.761: [15:51:18]ping: sendmsg: Destination address required
+155119.640: [15:51:19]^C
+155119.640: [15:51:19]--- 10.253.0.11 ping statistics ---
+155119.640: [15:51:19]8 packets transmitted, 0 received, +8 errors, 100% packet loss, time 7162ms
+155119.640: [15:51:19]
+155202.920: [15:52:02][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StartWG1.sh 
+155202.935: [15:52:02]RTNETLINK answers: File exists
+155202.935: [15:52:02]RTNETLINK answers: File exists
+155202.935: [15:52:02]RTNETLINK answers: File exists
+155203.021: [15:52:03]RTNETLINK answers: File exists
+155203.030: [15:52:03]RTNETLINK answers: File exists
+155203.030: [15:52:03]RTNETLINK answers: File exists
+155203.030: [15:52:03]RTNETLINK answers: File exists
+155203.030: [15:52:03]RTNETLINK answers: File exists
+155206.510: [15:52:06][root@172-16-208-2 /etc/wireguard]# ip a
+155206.518: [15:52:06]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+155206.518: [15:52:06]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+155206.518: [15:52:06]    inet 127.0.0.1/8 scope host lo
+155206.518: [15:52:06]       valid_lft forever preferred_lft forever
+155206.518: [15:52:06]    inet6 ::1/128 scope host 
+155206.518: [15:52:06]       valid_lft forever preferred_lft forever
+155206.518: [15:52:06]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+155206.518: [15:52:06]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+155206.518: [15:52:06]    altname enp0s3
+155206.518: [15:52:06]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+155206.518: [15:52:06]       valid_lft forever preferred_lft forever
+155206.518: [15:52:06]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+155206.518: [15:52:06]       valid_lft forever preferred_lft forever
+155206.519: [15:52:06]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155206.519: [15:52:06]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+155206.519: [15:52:06]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+155206.519: [15:52:06]       valid_lft forever preferred_lft forever
+155206.519: [15:52:06]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+155206.519: [15:52:06]       valid_lft forever preferred_lft forever
+155206.519: [15:52:06]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.519: [15:52:06]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+155206.519: [15:52:06]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+155206.519: [15:52:06]       valid_lft forever preferred_lft forever
+155206.519: [15:52:06]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.519: [15:52:06]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+155206.519: [15:52:06]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+155206.519: [15:52:06]       valid_lft forever preferred_lft forever
+155206.519: [15:52:06]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.520: [15:52:06]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+155206.520: [15:52:06]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+155206.520: [15:52:06]       valid_lft forever preferred_lft forever
+155206.520: [15:52:06]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.520: [15:52:06]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+155206.521: [15:52:06]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+155206.521: [15:52:06]       valid_lft forever preferred_lft forever
+155206.521: [15:52:06]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.522: [15:52:06]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+155206.522: [15:52:06]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+155206.522: [15:52:06]       valid_lft forever preferred_lft forever
+155206.522: [15:52:06]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.522: [15:52:06]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+155206.522: [15:52:06]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+155206.522: [15:52:06]       valid_lft forever preferred_lft forever
+155206.522: [15:52:06]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.523: [15:52:06]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+155206.523: [15:52:06]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+155206.523: [15:52:06]       valid_lft forever preferred_lft forever
+155206.523: [15:52:06]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155206.523: [15:52:06]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+155206.523: [15:52:06]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+155206.523: [15:52:06]       valid_lft forever preferred_lft forever
+155206.523: [15:52:06]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+155206.523: [15:52:06]       valid_lft forever preferred_lft forever
+155206.523: [15:52:06]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.524: [15:52:06]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+155206.524: [15:52:06]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+155206.524: [15:52:06]       valid_lft forever preferred_lft forever
+155206.524: [15:52:06]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155206.524: [15:52:06]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+155206.524: [15:52:06]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+155206.524: [15:52:06]       valid_lft forever preferred_lft forever
+155206.524: [15:52:06]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.524: [15:52:06]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+155206.525: [15:52:06]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+155206.525: [15:52:06]       valid_lft forever preferred_lft forever
+155206.525: [15:52:06]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155206.525: [15:52:06]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+155206.525: [15:52:06]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+155206.525: [15:52:06]       valid_lft forever preferred_lft forever
+155206.525: [15:52:06]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.525: [15:52:06]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+155206.526: [15:52:06]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+155206.526: [15:52:06]       valid_lft forever preferred_lft forever
+155206.526: [15:52:06]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155206.526: [15:52:06]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+155206.526: [15:52:06]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+155206.526: [15:52:06]       valid_lft forever preferred_lft forever
+155206.526: [15:52:06]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.526: [15:52:06]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+155206.526: [15:52:06]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+155206.526: [15:52:06]       valid_lft forever preferred_lft forever
+155206.527: [15:52:06]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155206.527: [15:52:06]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+155206.527: [15:52:06]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+155206.527: [15:52:06]       valid_lft forever preferred_lft forever
+155206.527: [15:52:06]337: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+155206.527: [15:52:06]    link/none 
+155206.527: [15:52:06]    inet 10.253.0.2/32 scope global wg0
+155206.527: [15:52:06]       valid_lft forever preferred_lft forever
+155206.527: [15:52:06]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+155206.527: [15:52:06]       valid_lft forever preferred_lft forever
+155206.527: [15:52:06]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.528: [15:52:06]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+155206.528: [15:52:06]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+155206.535: [15:52:06]       valid_lft forever preferred_lft forever
+155206.535: [15:52:06]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155206.535: [15:52:06]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+155206.535: [15:52:06]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+155206.535: [15:52:06]       valid_lft forever preferred_lft forever
+155207.684: [15:52:07][root@172-16-208-2 /etc/wireguard]# ip r
+155207.692: [15:52:07]default via 172.16.208.1 dev ens3 proto dhcp metric 100 
+155207.692: [15:52:07]1.168.160.131 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.160.195 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.163.46 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.164.252 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.166.206 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.168.48 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.174.45 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.174.74 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.174.132 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.174.149 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.176.167 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.178.172 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.178.204 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.179.90 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.182.40 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.182.48 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.186.182 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.168.190.122 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.194.218 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.196.110 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.198.126 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.199.252 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.200.97 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.207.55 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.207.178 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]1.170.208.67 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]3.0.55.191 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]3.0.102.232 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]3.0.184.30 via 172.16.208.4 dev ens3 
+155207.692: [15:52:07]3.1.101.105 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.1.202.21 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.1.205.70 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.38.40.113 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.38.217.66 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.38.218.76 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.38.221.82 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.112.45.52 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.113.19.221 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.113.24.102 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]3.113.29.82 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]8.8.8.8 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]10.253.0.3 dev wg0 scope link 
+155207.693: [15:52:07]10.253.0.11 dev wg0 scope link 
+155207.693: [15:52:07]13.112.118.243 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.112.142.153 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.112.183.12 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.113.215.194 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.114.122.89 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.114.139.41 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.158.54.184 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.158.131.230 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.192.165.129 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.192.166.27 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.192.166.211 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.213.48.122 via 172.16.208.4 dev ens3 
+155207.693: [15:52:07]13.213.51.9 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.213.72.98 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.215.205.107 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.215.253.196 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.229.224.81 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.230.197.110 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.230.239.83 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.231.151.67 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.231.155.81 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.231.224.31 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.250.46.240 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.250.47.175 via 172.16.208.4 dev ens3 
+155207.694: [15:52:07]13.250.97.96 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]15.165.38.216 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.136.118.137 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.140.56.130 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.141.147.30 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.141.164.208 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.141.202.163 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.51.105 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.51.190 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.53.255 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.110.92 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.113.251 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.124.168 via 172.16.208.4 dev ens3 
+155207.695: [15:52:07]18.162.210.110 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.162.243.45 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.162.246.126 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.177.141.190 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.179.15.59 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.179.61.132 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.179.120.92 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.181.199.47 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.182.42.85 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.183.126.98 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.183.132.212 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.183.170.195 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.183.172.244 via 172.16.208.4 dev ens3 
+155207.696: [15:52:07]18.183.179.20 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]35.77.32.246 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]35.77.84.44 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]35.77.85.122 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]35.77.92.7 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]35.166.29.70 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]35.166.68.224 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.72.129 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.82.45 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.86.175 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.95.12 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.97.168 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.111.18 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.114.122 via 172.16.208.4 dev ens3 
+155207.697: [15:52:07]43.198.152.121 via 172.16.208.4 dev ens3 
+155207.698: [15:52:07]43.198.233.1 via 172.16.208.4 dev ens3 
+155207.698: [15:52:07]43.199.29.178 via 172.16.208.4 dev ens3 
+155207.698: [15:52:07]43.199.30.133 via 172.16.208.4 dev ens3 
+155207.698: [15:52:07]43.199.32.163 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.34.225 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.35.145 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.36.13 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.41.207 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.44.205 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.59.89 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.60.55 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.60.152 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.67.131 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.70.63 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.74.81 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.134.124 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.163.75 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.187.65 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.195.63 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.200.174 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.208.134 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.210.145 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.211.160 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.230.152 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.252.26 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.199.252.176 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.202.252.32 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.203.160.172 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.203.164.166 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.206.219.86 via 172.16.208.4 dev ens3 
+155207.706: [15:52:07]43.207.68.152 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.207.85.182 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.212.113.213 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.212.191.9 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.213.41.59 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.213.67.65 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.213.71.141 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.213.75.49 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]43.213.76.165 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]44.248.109.95 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]44.249.20.105 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.128.77.42 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.128.250.101 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.129.6.132 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.129.6.175 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.129.46.34 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.129.56.73 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.129.58.159 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.129.222.20 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]47.130.3.210 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.68.183.176 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.69.157.199 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.77.233.71 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.194.185.161 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.195.182.33 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.195.218.57 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.195.232.114 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]52.196.233.35 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.46.52.43 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.64.65.208 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.65.202.188 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.95.60.8 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.95.168.115 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.95.205.182 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.150.216.155 via 172.16.208.4 dev ens3 
+155207.707: [15:52:07]54.151.226.129 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.151.229.238 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.168.120.230 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.169.113.36 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.169.184.46 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.169.223.69 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.189.115.146 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.199.66.192 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.199.117.60 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.201.52.27 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.238.153.163 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.238.193.73 via 172.16.208.4 dev ens3 
+155207.708: [15:52:07]54.238.219.107 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]54.249.132.192 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]54.254.128.202 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]54.255.243.29 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]57.180.14.121 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]57.180.243.199 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]57.180.248.224 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]59.37.173.107 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.50 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.51 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.52 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.53 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.54 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.55 via 172.16.208.4 dev ens3 
+155207.709: [15:52:07]61.93.255.56 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.93.255.57 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.93.255.59 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.93.255.60 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.93.255.62 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.192.38 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.193.252 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.200.88 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.205.175 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.210.38 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.211.138 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.214.190 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.218.239 via 172.16.208.4 dev ens3 
+155207.710: [15:52:07]61.228.223.15 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]61.228.226.253 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]61.228.246.242 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]103.45.234.158 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]104.18.43.89 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]112.4.0.55 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]114.25.102.52 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]114.25.102.239 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]114.25.104.219 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]120.232.153.120 via 172.16.208.4 dev ens3 
+155207.711: [15:52:07]169.254.169.254 via 172.16.221.131 dev ens3 proto dhcp metric 100 
+155207.711: [15:52:07]172.16.208.0/20 dev ens3 proto kernel scope link src 172.16.208.2 metric 100 
+155207.711: [15:52:07]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+155207.712: [15:52:07]172.18.0.0/16 dev br-c2f8d78d6e11 proto kernel scope link src 172.18.0.1 
+155207.712: [15:52:07]192.168.4.0/22 via 172.16.208.1 dev ens3 
+155207.712: [15:52:07]192.168.8.0/22 via 172.16.208.1 dev ens3 
+155207.712: [15:52:07]192.168.12.0/22 via 172.16.208.1 dev ens3 
+155207.712: [15:52:07]192.168.31.0/24 dev wg0 scope link 
+155207.712: [15:52:07]198.144.180.3 via 172.16.208.4 dev ens3 
+155207.712: [15:52:07]198.144.180.4 via 172.16.208.4 dev ens3 
+155207.712: [15:52:07]198.144.180.5 via 172.16.208.4 dev ens3 
+155207.712: [15:52:07]221.228.32.13 via 172.16.208.4 dev ens3 
+155207.712: [15:52:07]223.17.253.212 via 172.16.208.4 dev ens3 
+155211.862: [15:52:11][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155211.879: [15:52:11]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155211.879: [15:52:11]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+155211.879: [15:52:11]ping: sendmsg: Destination address required
+155212.975: [15:52:12]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+155212.976: [15:52:12]ping: sendmsg: Destination address required
+155213.901: [15:52:13]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+155213.901: [15:52:13]ping: sendmsg: Destination address required
+155215.021: [15:52:15]From 10.253.0.2 icmp_seq=4 Destination Host Unreachable
+155215.022: [15:52:15]ping: sendmsg: Destination address required
+155216.047: [15:52:16]From 10.253.0.2 icmp_seq=5 Destination Host Unreachable
+155216.047: [15:52:16]ping: sendmsg: Destination address required
+155216.921: [15:52:16]^C
+155216.921: [15:52:16]--- 10.253.0.11 ping statistics ---
+155216.921: [15:52:16]5 packets transmitted, 0 received, +5 errors, 100% packet loss, time 4083ms
+155216.921: [15:52:16]
+155217.636: [15:52:17][root@172-16-208-2 /etc/wireguard]# ip a
+155217.646: [15:52:17]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+155217.646: [15:52:17]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+155217.646: [15:52:17]    inet 127.0.0.1/8 scope host lo
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.646: [15:52:17]    inet6 ::1/128 scope host 
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.646: [15:52:17]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+155217.646: [15:52:17]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+155217.646: [15:52:17]    altname enp0s3
+155217.646: [15:52:17]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.646: [15:52:17]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.646: [15:52:17]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155217.646: [15:52:17]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+155217.646: [15:52:17]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.646: [15:52:17]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.646: [15:52:17]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.646: [15:52:17]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+155217.646: [15:52:17]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+155217.646: [15:52:17]       valid_lft forever preferred_lft forever
+155217.647: [15:52:17]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.647: [15:52:17]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+155217.647: [15:52:17]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+155217.647: [15:52:17]       valid_lft forever preferred_lft forever
+155217.647: [15:52:17]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.647: [15:52:17]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+155217.647: [15:52:17]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+155217.647: [15:52:17]       valid_lft forever preferred_lft forever
+155217.647: [15:52:17]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.647: [15:52:17]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+155217.647: [15:52:17]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+155217.647: [15:52:17]       valid_lft forever preferred_lft forever
+155217.647: [15:52:17]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.647: [15:52:17]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+155217.647: [15:52:17]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+155217.647: [15:52:17]       valid_lft forever preferred_lft forever
+155217.647: [15:52:17]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.648: [15:52:17]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+155217.648: [15:52:17]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+155217.648: [15:52:17]       valid_lft forever preferred_lft forever
+155217.648: [15:52:17]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.648: [15:52:17]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+155217.648: [15:52:17]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+155217.648: [15:52:17]       valid_lft forever preferred_lft forever
+155217.648: [15:52:17]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155217.648: [15:52:17]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+155217.649: [15:52:17]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+155217.649: [15:52:17]       valid_lft forever preferred_lft forever
+155217.649: [15:52:17]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+155217.649: [15:52:17]       valid_lft forever preferred_lft forever
+155217.649: [15:52:17]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.649: [15:52:17]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+155217.649: [15:52:17]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+155217.649: [15:52:17]       valid_lft forever preferred_lft forever
+155217.649: [15:52:17]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155217.650: [15:52:17]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+155217.650: [15:52:17]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+155217.650: [15:52:17]       valid_lft forever preferred_lft forever
+155217.650: [15:52:17]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.650: [15:52:17]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+155217.650: [15:52:17]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+155217.650: [15:52:17]       valid_lft forever preferred_lft forever
+155217.650: [15:52:17]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155217.651: [15:52:17]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+155217.651: [15:52:17]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+155217.651: [15:52:17]       valid_lft forever preferred_lft forever
+155217.651: [15:52:17]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.651: [15:52:17]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+155217.651: [15:52:17]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+155217.651: [15:52:17]       valid_lft forever preferred_lft forever
+155217.651: [15:52:17]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155217.651: [15:52:17]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+155217.652: [15:52:17]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+155217.652: [15:52:17]       valid_lft forever preferred_lft forever
+155217.652: [15:52:17]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.652: [15:52:17]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+155217.652: [15:52:17]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+155217.652: [15:52:17]       valid_lft forever preferred_lft forever
+155217.652: [15:52:17]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155217.652: [15:52:17]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+155217.652: [15:52:17]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+155217.653: [15:52:17]       valid_lft forever preferred_lft forever
+155217.653: [15:52:17]337: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+155217.653: [15:52:17]    link/none 
+155217.653: [15:52:17]    inet 10.253.0.2/32 scope global wg0
+155217.653: [15:52:17]       valid_lft forever preferred_lft forever
+155217.653: [15:52:17]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+155217.653: [15:52:17]       valid_lft forever preferred_lft forever
+155217.653: [15:52:17]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.653: [15:52:17]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+155217.653: [15:52:17]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+155217.653: [15:52:17]       valid_lft forever preferred_lft forever
+155217.653: [15:52:17]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155217.654: [15:52:17]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+155217.654: [15:52:17]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+155217.654: [15:52:17]       valid_lft forever preferred_lft forever
+155220.782: [15:52:20][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.2
+155220.782: [15:52:20]PING 10.253.0.2 (10.253.0.2) 56(84) bytes of data.
+155220.782: [15:52:20]64 bytes from 10.253.0.2: icmp_seq=1 ttl=64 time=0.045 ms
+155221.735: [15:52:21]^C
+155221.735: [15:52:21]--- 10.253.0.2 ping statistics ---
+155221.736: [15:52:21]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+155221.736: [15:52:21]rtt min/avg/max/mdev = 0.045/0.045/0.045/0.000 ms
+155224.247: [15:52:24][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155224.259: [15:52:24]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155224.259: [15:52:24]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=4.60 ms
+155225.264: [15:52:25]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=5.34 ms
+155226.306: [15:52:26]64 bytes from 10.253.0.11: icmp_seq=3 ttl=64 time=5.34 ms
+155227.312: [15:52:27]64 bytes from 10.253.0.11: icmp_seq=4 ttl=64 time=4.34 ms
+155227.382: [15:52:27]^C
+155227.382: [15:52:27]--- 10.253.0.11 ping statistics ---
+155227.382: [15:52:27]4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+155227.382: [15:52:27]rtt min/avg/max/mdev = 4.341/4.906/5.340/0.443 ms
+155229.348: [15:52:29][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155229.360: [15:52:29]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155229.360: [15:52:29]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=5.29 ms
+155230.354: [15:52:30]^C
+155230.354: [15:52:30]--- 10.253.0.11 ping statistics ---
+155230.354: [15:52:30]2 packets transmitted, 1 received, 50% packet loss, time 1001ms
+155230.354: [15:52:30]rtt min/avg/max/mdev = 5.286/5.286/5.286/0.000 ms
+155232.174: [15:52:32][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.2
+155232.174: [15:52:32]PING 10.253.0.2 (10.253.0.2) 56(84) bytes of data.
+155232.175: [15:52:32]64 bytes from 10.253.0.2: icmp_seq=1 ttl=64 time=0.050 ms
+155232.712: [15:52:32]^C
+155232.712: [15:52:32]--- 10.253.0.2 ping statistics ---
+155232.712: [15:52:32]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+155232.712: [15:52:32]rtt min/avg/max/mdev = 0.050/0.050/0.050/0.000 ms
+155239.085: [15:52:39][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StopWG1.sh ; sleep 3 ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+155249.344: [15:52:49][root@172-16-208-2 /etc/wireguard]# 
+155249.519: [15:52:49][root@172-16-208-2 /etc/wireguard]# 
+155249.615: [15:52:49][root@172-16-208-2 /etc/wireguard]# 
+155250.968: [15:52:50][root@172-16-208-2 /etc/wireguard]# ip a
+155250.969: [15:52:50]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+155250.969: [15:52:50]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+155250.970: [15:52:50]    inet 127.0.0.1/8 scope host lo
+155250.970: [15:52:50]       valid_lft forever preferred_lft forever
+155250.970: [15:52:50]    inet6 ::1/128 scope host 
+155250.970: [15:52:50]       valid_lft forever preferred_lft forever
+155250.970: [15:52:50]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+155250.970: [15:52:50]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+155250.970: [15:52:50]    altname enp0s3
+155250.971: [15:52:50]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+155250.971: [15:52:50]       valid_lft forever preferred_lft forever
+155250.971: [15:52:50]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+155250.971: [15:52:50]       valid_lft forever preferred_lft forever
+155250.971: [15:52:50]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155250.971: [15:52:50]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+155250.972: [15:52:50]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+155250.972: [15:52:50]       valid_lft forever preferred_lft forever
+155250.972: [15:52:50]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+155250.972: [15:52:50]       valid_lft forever preferred_lft forever
+155250.972: [15:52:50]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.973: [15:52:50]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+155250.973: [15:52:50]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+155250.973: [15:52:50]       valid_lft forever preferred_lft forever
+155250.973: [15:52:50]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.974: [15:52:50]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+155250.974: [15:52:50]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+155250.974: [15:52:50]       valid_lft forever preferred_lft forever
+155250.974: [15:52:50]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.975: [15:52:50]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+155250.975: [15:52:50]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+155250.975: [15:52:50]       valid_lft forever preferred_lft forever
+155250.975: [15:52:50]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.976: [15:52:50]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+155250.976: [15:52:50]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+155250.976: [15:52:50]       valid_lft forever preferred_lft forever
+155250.976: [15:52:50]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.977: [15:52:50]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+155250.977: [15:52:50]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+155250.977: [15:52:50]       valid_lft forever preferred_lft forever
+155250.977: [15:52:50]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.977: [15:52:50]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+155250.978: [15:52:50]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+155250.978: [15:52:50]       valid_lft forever preferred_lft forever
+155250.978: [15:52:50]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.978: [15:52:50]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+155250.979: [15:52:50]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+155250.979: [15:52:50]       valid_lft forever preferred_lft forever
+155250.979: [15:52:50]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+155250.979: [15:52:50]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+155250.979: [15:52:50]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+155250.980: [15:52:50]       valid_lft forever preferred_lft forever
+155250.980: [15:52:50]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+155250.980: [15:52:50]       valid_lft forever preferred_lft forever
+155250.980: [15:52:50]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.981: [15:52:50]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+155250.981: [15:52:50]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+155250.981: [15:52:50]       valid_lft forever preferred_lft forever
+155250.990: [15:52:50]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155250.990: [15:52:50]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+155250.990: [15:52:50]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+155250.990: [15:52:50]       valid_lft forever preferred_lft forever
+155250.990: [15:52:50]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.990: [15:52:50]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+155250.991: [15:52:50]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+155250.991: [15:52:50]       valid_lft forever preferred_lft forever
+155250.991: [15:52:50]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155250.991: [15:52:50]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+155250.991: [15:52:50]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+155250.991: [15:52:50]       valid_lft forever preferred_lft forever
+155250.991: [15:52:50]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.991: [15:52:50]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+155250.991: [15:52:50]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+155250.991: [15:52:50]       valid_lft forever preferred_lft forever
+155250.992: [15:52:50]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155250.992: [15:52:50]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+155250.992: [15:52:50]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+155250.992: [15:52:50]       valid_lft forever preferred_lft forever
+155250.992: [15:52:50]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.992: [15:52:50]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+155250.992: [15:52:50]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+155250.992: [15:52:50]       valid_lft forever preferred_lft forever
+155250.993: [15:52:50]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+155250.993: [15:52:50]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+155250.993: [15:52:50]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+155250.993: [15:52:50]       valid_lft forever preferred_lft forever
+155250.993: [15:52:50]338: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+155250.993: [15:52:50]    link/none 
+155250.993: [15:52:50]    inet 10.253.0.2/32 scope global wg0
+155250.993: [15:52:50]       valid_lft forever preferred_lft forever
+155250.993: [15:52:50]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+155250.993: [15:52:50]       valid_lft forever preferred_lft forever
+155250.994: [15:52:50]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.994: [15:52:50]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+155250.994: [15:52:50]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+155250.994: [15:52:50]       valid_lft forever preferred_lft forever
+155250.994: [15:52:50]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+155250.994: [15:52:50]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+155250.994: [15:52:50]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+155250.994: [15:52:50]       valid_lft forever preferred_lft forever
+155254.566: [15:52:54][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155254.576: [15:52:54]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155254.576: [15:52:54]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=6.00 ms
+155255.577: [15:52:55]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=5.30 ms
+155255.959: [15:52:55]^C
+155255.959: [15:52:55]--- 10.253.0.11 ping statistics ---
+155255.959: [15:52:55]2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+155255.959: [15:52:55]rtt min/avg/max/mdev = 5.302/5.651/6.000/0.349 ms
+155257.025: [15:52:57][root@172-16-208-2 /etc/wireguard]# /usr/bin/bash /etc/wireguard/StopWG1.sh ; sleep 3 ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+155300.947: [15:53:00][root@172-16-208-2 /etc/wireguard]# 
+155301.134: [15:53:01][root@172-16-208-2 /etc/wireguard]# 
+155301.225: [15:53:01][root@172-16-208-2 /etc/wireguard]# 
+155305.497: [15:53:05][root@172-16-208-2 /etc/wireguard]# ping 10.253.0.11
+155305.510: [15:53:05]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+155305.510: [15:53:05]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+155305.510: [15:53:05]ping: sendmsg: Destination address required
+155306.508: [15:53:06]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+155306.508: [15:53:06]ping: sendmsg: Destination address required
+155307.533: [15:53:07]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+155307.533: [15:53:07]ping: sendmsg: Destination address required
+155308.584: [15:53:08]From 10.253.0.2 icmp_seq=4 Destination Host Unreachable
+155308.584: [15:53:08]ping: sendmsg: Destination address required
+155309.581: [15:53:09]From 10.253.0.2 icmp_seq=5 Destination Host Unreachable
+155309.581: [15:53:09]ping: sendmsg: Destination address required
+155310.629: [15:53:10]From 10.253.0.2 icmp_seq=6 Destination Host Unreachable
+155311.654: [15:53:11]From 10.253.0.2 icmp_seq=7 Destination Host Unreachable
+155311.654: [15:53:11]ping: sendmsg: Destination address required
+155312.780: [15:53:12]64 bytes from 10.253.0.11: icmp_seq=8 ttl=64 time=54.9 ms
+155313.803: [15:53:13]64 bytes from 10.253.0.11: icmp_seq=9 ttl=64 time=73.1 ms
+155314.670: [15:53:14]64 bytes from 10.253.0.11: icmp_seq=10 ttl=64 time=5.71 ms
+155315.663: [15:53:15]64 bytes from 10.253.0.11: icmp_seq=11 ttl=64 time=5.81 ms
+155316.772: [15:53:16]64 bytes from 10.253.0.11: icmp_seq=12 ttl=64 time=5.48 ms
+155317.297: [15:53:17]^C
+155317.297: [15:53:17]--- 10.253.0.11 ping statistics ---
+155317.297: [15:53:17]12 packets transmitted, 5 received, +7 errors, 58.3333% packet loss, time 11160ms
+155317.297: [15:53:17]rtt min/avg/max/mdev = 5.482/28.994/73.072/29.143 ms

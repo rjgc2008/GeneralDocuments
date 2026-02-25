@@ -1,0 +1,142 @@
+﻿152031.619: [15:20:31][202602300-C-B10-计算-Hygon-10.70.0.100-15:20:31]
+152031.650: [15:20:31]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-62-generic x86_64)
+152031.650: [15:20:31]
+152031.650: [15:20:31] * Documentation:  https://help.ubuntu.com
+152031.650: [15:20:31] * Management:     https://landscape.canonical.com
+152031.650: [15:20:31] * Support:        https://ubuntu.com/pro
+152031.650: [15:20:31]
+152031.650: [15:20:31] System information as of Mon Nov 24 09:52:51 AM CST 2025
+152031.650: [15:20:31]
+152031.650: [15:20:31]  System load:    109.72             Temperature:            58.0 C
+152031.650: [15:20:31]  Usage of /home: 0.1% of 301.67GB   Processes:              1406
+152031.651: [15:20:31]  Memory usage:   0%                 Users logged in:        1
+152031.651: [15:20:31]  Swap usage:     0%                 IPv4 address for bond0: 10.70.0.100
+152031.651: [15:20:31]
+152031.651: [15:20:31] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+152031.651: [15:20:31]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+152031.651: [15:20:31]
+152031.651: [15:20:31]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+152031.651: [15:20:31]
+152031.651: [15:20:31]Expanded Security Maintenance for Applications is not enabled.
+152031.651: [15:20:31]
+152031.651: [15:20:31]0 updates can be applied immediately.
+152031.651: [15:20:31]
+152031.651: [15:20:31]15 additional security updates can be applied with ESM Apps.
+152031.651: [15:20:31]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+152031.651: [15:20:31]
+152031.651: [15:20:31]
+152031.651: [15:20:31]The list of available updates is more than a week old.
+152031.651: [15:20:31]To check for new updates run: sudo apt update
+152031.651: [15:20:31]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+152031.651: [15:20:31]
+152031.651: [15:20:31]
+152031.651: [15:20:31]*** System restart required ***
+152031.651: [15:20:31]You have mail.
+152031.651: [15:20:31]Last login: Wed Jan 28 14:49:51 2026 from 192.168.4.48
+152037.308: [15:20:37]root@suzhouprodc100:~# ping 192.168.8.88
+152037.311: [15:20:37]PING 192.168.8.88 (192.168.8.88) 56(84) bytes of data.
+152037.315: [15:20:37]64 bytes from 192.168.8.88: icmp_seq=1 ttl=62 time=3.47 ms
+152037.968: [15:20:37]^C
+152037.969: [15:20:37]--- 192.168.8.88 ping statistics ---
+152037.969: [15:20:37]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+152037.969: [15:20:37]rtt min/avg/max/mdev = 3.469/3.469/3.469/0.000 ms
+152040.612: [15:20:40]root@suzhouprodc100:~# ping 192.168.50.1
+152040.617: [15:20:40]PING 192.168.50.1 (192.168.50.1) 56(84) bytes of data.
+152041.634: [15:20:41]^C
+152041.634: [15:20:41]--- 192.168.50.1 ping statistics ---
+152041.634: [15:20:41]2 packets transmitted, 0 received, 100% packet loss, time 1001ms
+152041.634: [15:20:41]
+152044.065: [15:20:44]root@suzhouprodc100:~# ping 192.168.8.1
+152044.069: [15:20:44]PING 192.168.8.1 (192.168.8.1) 56(84) bytes of data.
+152044.071: [15:20:44]64 bytes from 192.168.8.1: icmp_seq=1 ttl=125 time=3.37 ms
+152045.082: [15:20:45]64 bytes from 192.168.8.1: icmp_seq=2 ttl=125 time=3.20 ms
+152046.073: [15:20:46]64 bytes from 192.168.8.1: icmp_seq=3 ttl=125 time=3.12 ms
+152046.796: [15:20:46]^C
+152046.796: [15:20:46]--- 192.168.8.1 ping statistics ---
+152046.796: [15:20:46]3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+152046.796: [15:20:46]rtt min/avg/max/mdev = 3.120/3.231/3.371/0.104 ms
+152253.795: [15:22:53]root@suzhouprodc100:~# ping 192.168.3.254
+152253.802: [15:22:53]PING 192.168.3.254 (192.168.3.254) 56(84) bytes of data.
+152253.806: [15:22:53]64 bytes from 192.168.3.254: icmp_seq=1 ttl=251 time=4.83 ms
+152254.645: [15:22:54]^C
+152254.645: [15:22:54]--- 192.168.3.254 ping statistics ---
+152254.645: [15:22:54]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+152254.645: [15:22:54]rtt min/avg/max/mdev = 4.830/4.830/4.830/0.000 ms
+152255.691: [15:22:55]root@suzhouprodc100:~# ping 192.168.3.253
+152255.705: [15:22:55]PING 192.168.3.253 (192.168.3.253) 56(84) bytes of data.
+152255.705: [15:22:55]64 bytes from 192.168.3.253: icmp_seq=1 ttl=125 time=3.43 ms
+152256.317: [15:22:56]^C
+152256.317: [15:22:56]--- 192.168.3.253 ping statistics ---
+152256.317: [15:22:56]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+152256.317: [15:22:56]rtt min/avg/max/mdev = 3.427/3.427/3.427/0.000 ms
+152257.156: [15:22:57]root@suzhouprodc100:~# ping 192.168.3.254
+152257.164: [15:22:57]PING 192.168.3.254 (192.168.3.254) 56(84) bytes of data.
+152257.170: [15:22:57]64 bytes from 192.168.3.254: icmp_seq=1 ttl=251 time=5.19 ms
+152257.638: [15:22:57]^C
+152257.638: [15:22:57]--- 192.168.3.254 ping statistics ---
+152257.638: [15:22:57]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+152257.638: [15:22:57]rtt min/avg/max/mdev = 5.185/5.185/5.185/0.000 ms
+152304.819: [15:23:04]root@suzhouprodc100:~# ping 192.168.231.2
+152304.830: [15:23:04]PING 192.168.231.2 (192.168.231.2) 56(84) bytes of data.
+152307.043: [15:23:07]^C
+152307.043: [15:23:07]--- 192.168.231.2 ping statistics ---
+152307.043: [15:23:07]3 packets transmitted, 0 received, 100% packet loss, time 2000ms
+152307.043: [15:23:07]
+152617.587: [15:26:17]root@suzhouprodc100:~# ip a
+152617.595: [15:26:17]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+152617.595: [15:26:17]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+152617.595: [15:26:17]    inet 127.0.0.1/8 scope host lo
+152617.595: [15:26:17]       valid_lft forever preferred_lft forever
+152617.595: [15:26:17]    inet6 ::1/128 scope host noprefixroute 
+152617.595: [15:26:17]       valid_lft forever preferred_lft forever
+152617.595: [15:26:17]2: ens101f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+152617.595: [15:26:17]    link/ether 4e:22:f3:d7:f2:8f brd ff:ff:ff:ff:ff:ff permaddr 9c:c2:c4:72:08:ca
+152617.595: [15:26:17]    altname enp13s0f0np0
+152617.595: [15:26:17]3: ens101f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+152617.595: [15:26:17]    link/ether 4e:22:f3:d7:f2:8f brd ff:ff:ff:ff:ff:ff permaddr 9c:c2:c4:72:08:cb
+152617.596: [15:26:17]    altname enp13s0f1np1
+152617.596: [15:26:17]4: ens1f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+152617.596: [15:26:17]    link/ether 96:85:fe:f1:b5:2c brd ff:ff:ff:ff:ff:ff permaddr 5c:25:73:61:c4:6e
+152617.596: [15:26:17]    altname enp34s0f0np0
+152617.596: [15:26:17]5: ens1f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+152617.596: [15:26:17]    link/ether 96:85:fe:f1:b5:2c brd ff:ff:ff:ff:ff:ff permaddr 5c:25:73:61:c4:6f
+152617.596: [15:26:17]    altname enp34s0f1np1
+152617.596: [15:26:17]6: ens2f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master bond1 state UP group default qlen 1000
+152617.597: [15:26:17]    link/ether 6a:79:0b:4e:ce:18 brd ff:ff:ff:ff:ff:ff permaddr 10:70:fd:48:63:c2
+152617.597: [15:26:17]    altname enp76s0f0np0
+152617.597: [15:26:17]7: ens2f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master bond1 state UP group default qlen 1000
+152617.597: [15:26:17]    link/ether 6a:79:0b:4e:ce:18 brd ff:ff:ff:ff:ff:ff permaddr 10:70:fd:48:63:c3
+152617.597: [15:26:17]    altname enp76s0f1np1
+152617.597: [15:26:17]8: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+152617.597: [15:26:17]    link/ether 4e:22:f3:d7:f2:8f brd ff:ff:ff:ff:ff:ff
+152617.598: [15:26:17]    inet 10.70.0.100/24 brd 10.70.0.255 scope global bond0
+152617.598: [15:26:17]       valid_lft forever preferred_lft forever
+152617.598: [15:26:17]    inet6 fe80::4c22:f3ff:fed7:f28f/64 scope link 
+152617.598: [15:26:17]       valid_lft forever preferred_lft forever
+152617.598: [15:26:17]9: bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+152617.598: [15:26:17]    link/ether 6a:79:0b:4e:ce:18 brd ff:ff:ff:ff:ff:ff
+152617.598: [15:26:17]    inet 10.72.0.100/24 brd 10.72.0.255 scope global bond1
+152617.598: [15:26:17]       valid_lft forever preferred_lft forever
+152617.599: [15:26:17]    inet6 fe80::6879:bff:fe4e:ce18/64 scope link 
+152617.599: [15:26:17]       valid_lft forever preferred_lft forever
+152617.599: [15:26:17]10: bond2: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+152617.599: [15:26:17]    link/ether 96:85:fe:f1:b5:2c brd ff:ff:ff:ff:ff:ff
+152617.599: [15:26:17]    inet 10.74.0.100/24 brd 10.74.0.255 scope global bond2
+152617.599: [15:26:17]       valid_lft forever preferred_lft forever
+152617.599: [15:26:17]    inet6 fe80::9485:feff:fef1:b52c/64 scope link 
+152617.599: [15:26:17]       valid_lft forever preferred_lft forever
+152621.489: [15:26:21]root@suzhouprodc100:~# ping 10.50.0.100
+152621.496: [15:26:21]PING 10.50.0.100 (10.50.0.100) 56(84) bytes of data.
+152836.292: [15:28:36]^C
+152836.294: [15:28:36]--- 10.50.0.100 ping statistics ---
+152836.294: [15:28:36]135 packets transmitted, 0 received, 100% packet loss, time 134457ms
+152836.294: [15:28:36]
+153219.629: [15:32:19]root@suzhouprodc100:~# ping 10.50.0.100
+153219.639: [15:32:19]PING 10.50.0.100 (10.50.0.100) 56(84) bytes of data.
+153219.644: [15:32:19]64 bytes from 10.50.0.100: icmp_seq=1 ttl=57 time=4.26 ms
+153220.634: [15:32:20]64 bytes from 10.50.0.100: icmp_seq=2 ttl=57 time=4.26 ms
+153221.634: [15:32:21]64 bytes from 10.50.0.100: icmp_seq=3 ttl=57 time=3.99 ms
+153222.159: [15:32:22]^C
+153222.159: [15:32:22]--- 10.50.0.100 ping statistics ---
+153222.159: [15:32:22]3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+153222.159: [15:32:22]rtt min/avg/max/mdev = 3.985/4.167/4.261/0.129 ms

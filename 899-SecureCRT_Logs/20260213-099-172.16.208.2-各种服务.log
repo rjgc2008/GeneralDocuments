@@ -1,0 +1,14 @@
+﻿081404.747: [08:14:04][root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+081404.911: [08:14:04][root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+081405.063: [08:14:05][root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+081411.402: [08:14:11][root@172-16-208-2 /DATA/AppData/Rustdesk]# ping 10.253.0.11
+081411.414: [08:14:11]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+081411.414: [08:14:11]64 bytes from 10.253.0.11: icmp_seq=1 ttl=64 time=5.52 ms
+081412.411: [08:14:12]64 bytes from 10.253.0.11: icmp_seq=2 ttl=64 time=4.83 ms
+081413.413: [08:14:13]64 bytes from 10.253.0.11: icmp_seq=3 ttl=64 time=4.79 ms
+081414.415: [08:14:14]64 bytes from 10.253.0.11: icmp_seq=4 ttl=64 time=3.87 ms
+081415.486: [08:14:15]64 bytes from 10.253.0.11: icmp_seq=5 ttl=64 time=5.27 ms
+081416.121: [08:14:16]^C
+081416.121: [08:14:16]--- 10.253.0.11 ping statistics ---
+081416.121: [08:14:16]5 packets transmitted, 5 received, 0% packet loss, time 4008ms
+081416.121: [08:14:16]rtt min/avg/max/mdev = 3.866/4.855/5.524/0.565 ms

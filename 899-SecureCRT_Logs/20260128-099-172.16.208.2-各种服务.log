@@ -1,0 +1,244 @@
+﻿144029.147: [14:40:29][202601099-172.16.208.2-各种服务-14:40:29]
+144029.156: [14:40:29]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+144029.156: [14:40:29]
+144029.156: [14:40:29]The programs included with the Debian GNU/Linux system are free software;
+144029.156: [14:40:29]the exact distribution terms for each program are described in the
+144029.156: [14:40:29]individual files in /usr/share/doc/*/copyright.
+144029.156: [14:40:29]
+144029.156: [14:40:29]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+144029.156: [14:40:29]permitted by applicable law.
+144029.157: [14:40:29]Last login: Wed Jan 28 14:28:54 2026 from 192.168.15.253
+145047.472: [14:50:47][202601099-172.16.208.2-各种服务-14:50:47]
+145047.498: [14:50:47]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+145047.498: [14:50:47]
+145047.498: [14:50:47]The programs included with the Debian GNU/Linux system are free software;
+145047.498: [14:50:47]the exact distribution terms for each program are described in the
+145047.498: [14:50:47]individual files in /usr/share/doc/*/copyright.
+145047.498: [14:50:47]
+145047.498: [14:50:47]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+145047.498: [14:50:47]permitted by applicable law.
+145047.498: [14:50:47]Last login: Wed Jan 28 14:40:29 2026 from 192.168.4.48
+145056.222: [14:50:56][root@172-16-208-2 ~]# ip a
+145056.230: [14:50:56]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+145056.230: [14:50:56]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+145056.230: [14:50:56]    inet 127.0.0.1/8 scope host lo
+145056.230: [14:50:56]       valid_lft forever preferred_lft forever
+145056.230: [14:50:56]    inet6 ::1/128 scope host 
+145056.231: [14:50:56]       valid_lft forever preferred_lft forever
+145056.234: [14:50:56]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+145056.234: [14:50:56]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+145056.234: [14:50:56]    altname enp0s3
+145056.234: [14:50:56]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+145056.235: [14:50:56]       valid_lft forever preferred_lft forever
+145056.235: [14:50:56]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+145056.235: [14:50:56]       valid_lft forever preferred_lft forever
+145056.235: [14:50:56]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+145056.235: [14:50:56]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+145056.236: [14:50:56]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+145056.236: [14:50:56]       valid_lft forever preferred_lft forever
+145056.236: [14:50:56]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+145056.236: [14:50:56]       valid_lft forever preferred_lft forever
+145056.236: [14:50:56]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.242: [14:50:56]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+145056.242: [14:50:56]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+145056.242: [14:50:56]       valid_lft forever preferred_lft forever
+145056.243: [14:50:56]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.243: [14:50:56]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+145056.243: [14:50:56]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+145056.243: [14:50:56]       valid_lft forever preferred_lft forever
+145056.243: [14:50:56]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.243: [14:50:56]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+145056.243: [14:50:56]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+145056.243: [14:50:56]       valid_lft forever preferred_lft forever
+145056.243: [14:50:56]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.244: [14:50:56]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+145056.244: [14:50:56]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+145056.244: [14:50:56]       valid_lft forever preferred_lft forever
+145056.244: [14:50:56]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.244: [14:50:56]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+145056.244: [14:50:56]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+145056.244: [14:50:56]       valid_lft forever preferred_lft forever
+145056.244: [14:50:56]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.244: [14:50:56]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+145056.244: [14:50:56]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+145056.244: [14:50:56]       valid_lft forever preferred_lft forever
+145056.245: [14:50:56]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.245: [14:50:56]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+145056.245: [14:50:56]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+145056.245: [14:50:56]       valid_lft forever preferred_lft forever
+145056.245: [14:50:56]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+145056.245: [14:50:56]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+145056.245: [14:50:56]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+145056.245: [14:50:56]       valid_lft forever preferred_lft forever
+145056.245: [14:50:56]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+145056.245: [14:50:56]       valid_lft forever preferred_lft forever
+145056.245: [14:50:56]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.245: [14:50:56]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+145056.245: [14:50:56]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+145056.245: [14:50:56]       valid_lft forever preferred_lft forever
+145056.246: [14:50:56]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+145056.246: [14:50:56]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+145056.246: [14:50:56]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+145056.246: [14:50:56]       valid_lft forever preferred_lft forever
+145056.246: [14:50:56]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.246: [14:50:56]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+145056.246: [14:50:56]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+145056.246: [14:50:56]       valid_lft forever preferred_lft forever
+145056.246: [14:50:56]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+145056.247: [14:50:56]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+145056.247: [14:50:56]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+145056.247: [14:50:56]       valid_lft forever preferred_lft forever
+145056.247: [14:50:56]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.247: [14:50:56]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+145056.247: [14:50:56]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+145056.247: [14:50:56]       valid_lft forever preferred_lft forever
+145056.247: [14:50:56]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+145056.248: [14:50:56]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+145056.248: [14:50:56]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+145056.248: [14:50:56]       valid_lft forever preferred_lft forever
+145056.248: [14:50:56]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.248: [14:50:56]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+145056.248: [14:50:56]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+145056.248: [14:50:56]       valid_lft forever preferred_lft forever
+145056.248: [14:50:56]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+145056.248: [14:50:56]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+145056.249: [14:50:56]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+145056.249: [14:50:56]       valid_lft forever preferred_lft forever
+145056.249: [14:50:56]326: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+145056.249: [14:50:56]    link/none 
+145056.249: [14:50:56]    inet 10.253.0.2/32 scope global wg0
+145056.249: [14:50:56]       valid_lft forever preferred_lft forever
+145056.249: [14:50:56]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+145056.249: [14:50:56]       valid_lft forever preferred_lft forever
+145056.249: [14:50:56]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.249: [14:50:56]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+145056.249: [14:50:56]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+145056.249: [14:50:56]       valid_lft forever preferred_lft forever
+145056.250: [14:50:56]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+145056.250: [14:50:56]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+145056.250: [14:50:56]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+145056.250: [14:50:56]       valid_lft forever preferred_lft forever
+145104.255: [14:51:04][root@172-16-208-2 ~]# ping www.google.com.hk
+145104.273: [14:51:04]PING www-wide.l.google.com (108.177.98.199) 56(84) bytes of data.
+145107.204: [14:51:07]^C
+145107.204: [14:51:07]--- www-wide.l.google.com ping statistics ---
+145107.205: [14:51:07]3 packets transmitted, 0 received, 100% packet loss, time 2025ms
+145107.205: [14:51:07]
+145109.937: [14:51:09][root@172-16-208-2 ~]# cat /etc/os-release 
+145109.937: [14:51:09]PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+145109.937: [14:51:09]NAME="Debian GNU/Linux"
+145109.937: [14:51:09]VERSION_ID="11"
+145109.937: [14:51:09]VERSION="11 (bullseye)"
+145109.937: [14:51:09]VERSION_CODENAME=bullseye
+145109.937: [14:51:09]ID=debian
+145109.938: [14:51:09]HOME_URL="https://www.debian.org/"
+145109.938: [14:51:09]SUPPORT_URL="https://www.debian.org/support"
+145109.938: [14:51:09]BUG_REPORT_URL="https://bugs.debian.org/"
+151343.976: [15:13:43][root@172-16-208-2 ~]# df -lh
+151343.992: [15:13:43]Filesystem                 Size  Used Avail Use% Mounted on
+151343.992: [15:13:43]udev                       7.8G     0  7.8G   0% /dev
+151343.992: [15:13:43]tmpfs                      1.6G   11M  1.6G   1% /run
+151343.992: [15:13:43]/dev/vda1                   97G   66G   27G  72% /
+151343.992: [15:13:43]tmpfs                      7.9G     0  7.9G   0% /dev/shm
+151343.992: [15:13:43]tmpfs                      5.0M  4.0K  5.0M   1% /run/lock
+151343.992: [15:13:43]/dev/mapper/data-datalv     14T   14T   41G 100% /DATA/Media
+151343.992: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/ad7464f3b04db576d0308e3e0102cf3480ddb32ac242dec4bff57a6f0bc5405e/merge151343.992: d
+151343.993: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/cab1dec8f98e168f6ebd0890c23c563d6b1ffcff414f28e3d8a1bf6c2761033d/merge151343.993: d
+151343.993: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/5f32f1dfa35af8ea78a9fcbabe0d06d9c5a8c112a2a4c5650ff68840a3fbc08f/merge151343.993: d
+151343.993: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/c37b91b3a1d81b2b4b4b9b97de8d45e7503ecce359821d09ef31983655cb4e52/merge151343.993: d
+151343.993: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/e9e83947222cf159696283b563d55f1c03a8784d5c2f09dd6f092c600a297f5b/merge151343.993: d
+151343.993: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/178aee37071729ca261883335d47ab495214a98830b72e42324b7c090e0c60ea/merge151343.993: d
+151343.994: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/3c8085ec6d162a2b244810b100e39faeac6766771c1129fe19110608e72ab0e8/merge151343.994: d
+151343.994: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/5c1772a6815275737ab4729520d6485e9eb228dca950c5ca9480821afd23c331/merge151343.994: d
+151343.994: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/5b179abe593fe6023b70f00a8b8fa8870af0f65a9d257a93c8674b46187d02b3/merge151343.994: d
+151343.994: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/dacbbc4d8f73512eb46f2f5bc074bd8f9bc9af6f98f9996453ce2ad991047648/merge151343.994: d
+151343.994: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/df8ccd0a058968ad982529d4e6520e74389d512c5cbb9c2ee650d920840b6962/merge151343.995: d
+151343.995: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/f27db95fc6a187109e4902ee10a92a822a4a0a6664acc4333c92c404c5a7d9eb/merge151343.995: d
+151343.995: [15:13:43]/dev/mapper/data2-data2lv  6.0T  4.4T  1.3T  78% /DATA/Media/Tmp
+151343.995: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/c256c651b3606a2b0bd97265904e73b9b5d427605bbfb113c26b91412671a8dc/merge151343.995: d
+151343.995: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/36405dd3188c588b4aa5d092f2e5dcb5e1f73735d9e2fe15471e2ae613c807e8/merge151343.995: d
+151343.995: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/fec9b9e1cb387fee7500d060d0703f2c0573ff37107c3dfcb6be047c62960bba/merge151343.995: d
+151343.996: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/71d44c3a74f497939dcb09d15573f69259b0c2eca3db98f2d88f5a884a267421/merge151343.996: d
+151343.996: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/f37c98d6612fb3445962d77333799e9ee020f70c98f21e43e0994121521ad3ec/merge151343.996: d
+151343.996: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/1a835e6ae66574f532450791d550153247cab4f273b9926649b1d64f1c49855e/merge151343.996: d
+151343.996: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/2f49a0b0a668bff5faf4dddb0155e717bd2b04ec9c9f20fe51e72f1ab1105a8f/merge151343.996: d
+151343.996: [15:13:43]overlay                     97G   66G   27G  72% /var/lib/docker/overlay2/4bf80f043542c0b5db8d4f0bc877655d7246a8c975cc750175031f24c8db0123/merge151343.996: d
+151343.997: [15:13:43]tmpfs                      1.6G   76K  1.6G   1% /run/user/0
+151455.534: [15:14:55][202601099-172.16.208.2-各种服务-15:14:55]
+151455.567: [15:14:55]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+151455.568: [15:14:55]
+151455.568: [15:14:55]The programs included with the Debian GNU/Linux system are free software;
+151455.568: [15:14:55]the exact distribution terms for each program are described in the
+151455.568: [15:14:55]individual files in /usr/share/doc/*/copyright.
+151455.568: [15:14:55]
+151455.568: [15:14:55]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+151455.568: [15:14:55]permitted by applicable law.
+151455.568: [15:14:55]Last login: Wed Jan 28 14:50:47 2026 from 192.168.4.48
+151501.236: [15:15:01][root@172-16-208-2 ~]# cd /DATA/Media/
+151501.892: [15:15:01][root@172-16-208-2 /DATA/Media]# ll
+151501.935: [15:15:01]total 2.5G
+151501.935: [15:15:01]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14 20:09  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+151501.935: [15:15:01]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+151501.935: [15:15:01]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+151501.935: [15:15:01]drwxrwxrwx 10 root      root      4.0K Jan 16 23:08  Documents
+151501.936: [15:15:01]drwxrwxr-x  3 wyj       wyj       4.0K Dec 19 14:00  Doucuments
+151501.936: [15:15:01]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+151501.936: [15:15:01]drwxrwxrwx 50 wyj       wyj        24K Jan 18 21:55  Movies
+151501.936: [15:15:01]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+151501.936: [15:15:01]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+151501.936: [15:15:01]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+151501.936: [15:15:01]drwxrwxrwx 22 root      root      4.0K Jan 23 22:26  Tmp
+151501.936: [15:15:01]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+151501.936: [15:15:01]drwxrwxrwx 50 wyj       wyj        12K Jan 18 21:57 'TV Shows'
+151501.936: [15:15:01]drwxr-xr-x  5 sambauser sambauser 4.0K Dec 19 09:44  WYJ
+151501.936: [15:15:01]drwxrwxrwx  4 root      root      4.0K Jan 18 22:08  XTV-BACKUP
+151501.936: [15:15:01]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19 20:14  软考高级《网络规划设计师》资料包
+151507.378: [15:15:07][root@172-16-208-2 /DATA/Media]# cd Tmp
+151507.969: [15:15:07][root@172-16-208-2 /DATA/Media/Tmp]# ll
+151508.033: [15:15:08]total 85G
+151508.033: [15:15:08]drwxrwxrwx   6 sambauser sambauser 4.0K Jan 21 18:24  100-备份移动硬盘
+151508.033: [15:15:08]drwxrwxrwx   8 root      root      4.0K Jan 23 21:15  200-Work
+151508.033: [15:15:08]drwxrwxr-x   2 wyj       wyj        12K Jun  3  2025 '2020.02.22 神ぱら 天使もえ (らぶぱら)'
+151508.033: [15:15:08]drwxrwxr-x  21 wyj       wyj       4.0K Jan 23 22:26  China
+151508.034: [15:15:08]drwxrwxr-x   5 wyj       wyj       4.0K Sep 26 17:21  Documents
+151508.034: [15:15:08]drwxrwxr-x   3 wyj       wyj       4.0K Dec  2 08:59  Europe
+151508.034: [15:15:08]drwxrwxrwx   6 root      root      4.0K Sep 26 17:21  Home
+151508.034: [15:15:08]drwxrwxr-x  10 wyj       wyj       4.0K Oct 10 15:22  Japan
+151508.034: [15:15:08]drwxrwxrwx   2 root      root       16K May 21  2025  lost+found
+151508.034: [15:15:08]-rw-rw-r--   1 wyj       wyj        26G May 23  2025 'Malabimba 1979 1080p Blu-ray Remux AVC DTS-HD MA 2.0 - KRaLiMaRKo.mkv'
+151508.035: [15:15:08]drwxrwxr-x   9 wyj       wyj       4.0K Dec 16 19:25  Movies
+151508.050: [15:15:08]drwxrwxr-x   3 wyj       wyj        12K May 28  2025  Nana_taipei合集
+151508.050: [15:15:08]drwxrwxr-x 161 wyj       wyj        16K Jan  3 00:00  Pictures
+151508.050: [15:15:08]-rw-rw-r--   1 wyj       wyj       5.4G May 23  2025  ROE-265.mp4
+151508.050: [15:15:08]drwxrwxrwx   3 root      root      4.0K May 26  2023  SexArt
+151508.050: [15:15:08]-rw-rw-r--   1 wyj       wyj       6.2G May 22  2025  sone-702.mp4
+151508.050: [15:15:08]drwxrwxr-x   2 wyj       wyj       4.0K May 26  2025 'Sybil - PART 1 - The Supermodel SERIES - MegaPACK by SoreForDays'
+151508.050: [15:15:08]drwxrwxr-x   9 wyj       wyj       4.0K Jan 12 18:18 'TV Shows'
+151508.050: [15:15:08]drwxrwxr-x   3 wyj       wyj       4.0K Dec 19 16:23 '台湾高雄超甜美睫师「Chloe Lin」不雅视频曝光 沦为摄影师的母狗'
+151508.050: [15:15:08]-rw-rw-r--   1 wyj       wyj       2.8G Jul 19  2025 '小陈头星选经典作之白衣长相甜美大奶妹第2部 1018加钟场 单纯芳心已暗许 做完还要亲亲你 听译字幕4K增强版.mp4'
+151508.051: [15:15:08]-rw-rw-r--   1 wyj       wyj        24G Jul 16  2025 '白嫖探花经典作之卖酒妹第1部 无日期PUA部分 超长前摇骗良家 三个小时没拿下 机翻字幕4K增强版.mp4'
+151508.051: [15:15:08]-rw-rw-r--   1 wyj       wyj       7.2G Jul 16  2025 '白嫖探花经典作之卖酒妹第2部 无日期上半场 淫荡开关已解锁 大喊老公操死我 听译字幕4K增强版.mp4'
+151508.051: [15:15:08]-rw-rw-r--   1 wyj       wyj       6.5G Jul 16  2025 '白嫖探花经典作之卖酒妹第3部 无日期缠绵场 中场缠绵继续哄 哄到流水再来拱 听译字幕4K增强版.mp4'
+151508.051: [15:15:08]-rw-rw-r--   1 wyj       wyj       7.0G Jul 16  2025 '白嫖探花经典作之卖酒妹第4部 无日期最终场 叫床叫到声音哑 彻彻底底拿下她 听译字幕4K增强版.mp4'
+151508.051: [15:15:08]drwxrwxr-x   2 wyj       wyj       4.0K Jun 25  2025  连裤袜（1-15）
+151508.051: [15:15:08]drwxrwxr-x  20 wyj       wyj       4.0K Jun  3  2025  陆萱萱
+151508.051: [15:15:08]drwxrwxr-x   4 wyj       wyj       4.0K Dec  9 17:53  香港三级182部
+151508.051: [15:15:08]drwxrwxr-x   2 wyj       wyj        12K May 24  2025  高清三级剪辑片
+151510.218: [15:15:10][root@172-16-208-2 /DATA/Media/Tmp]# cd 200-Work/
+151510.964: [15:15:10][root@172-16-208-2 /DATA/Media/Tmp/200-Work]# ll
+151510.964: [15:15:10]total 28K
+151510.964: [15:15:10]-rwx------  1 wyj wyj   97 Nov  6  2024 desktop.ini
+151510.964: [15:15:10]-rwx------  1 wyj wyj 1.2K Jan 22 13:34 个人保管库-DESKTOP-NGM289T.lnk
+151510.965: [15:15:10]drwx------ 43 wyj wyj 4.0K Jan 23 08:37 图片
+151510.966: [15:15:10]drwx------  3 wyj wyj 4.0K Jan 23 08:36 文档
+151510.966: [15:15:10]drwx------  4 wyj wyj 4.0K Jan 23 08:34 桌面
+151510.966: [15:15:10]drwx------  2 wyj wyj 4.0K Jan 23 01:33 视频
+151510.967: [15:15:10]drwx------  2 wyj wyj 4.0K Jan 22 17:41 附件
+151514.036: [15:15:14][root@172-16-208-2 /DATA/Media/Tmp/200-Work]# du -sh *
+151514.056: [15:15:14]4.0K    desktop.ini
+151514.056: [15:15:14]4.0K    个人保管库-DESKTOP-NGM289T.lnk
+151514.088: [15:15:14]195G    图片
+151514.220: [15:15:14]189G    文档
+151514.220: [15:15:14]41M     桌面
+151514.220: [15:15:14]6.0M    视频
+151514.221: [15:15:14]4.0K    附件

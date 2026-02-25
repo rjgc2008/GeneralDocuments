@@ -1,0 +1,151 @@
+﻿091757.236: [09:17:57][202602101-A-A10-管理-Hygon-10.50.0.100-09:17:57]
+091757.269: [09:17:57]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-56-generic x86_64)
+091757.269: [09:17:57]
+091757.269: [09:17:57] * Documentation:  https://help.ubuntu.com
+091757.269: [09:17:57] * Management:     https://landscape.canonical.com
+091757.269: [09:17:57] * Support:        https://ubuntu.com/pro
+091757.269: [09:17:57]
+091757.269: [09:17:57] System information as of Tue Feb 10 09:17:56 AM CST 2026
+091757.269: [09:17:57]
+091757.269: [09:17:57]  System load:                    0.13
+091757.269: [09:17:57]  Usage of /home:                 1.2% of 301.20GB
+091757.269: [09:17:57]  Memory usage:                   1%
+091757.269: [09:17:57]  Swap usage:                     0%
+091757.269: [09:17:57]  Temperature:                    56.0 C
+091757.269: [09:17:57]  Processes:                      1123
+091757.269: [09:17:57]  Users logged in:                1
+091757.269: [09:17:57]  IPv4 address for enp161s0f0np0: 10.50.0.100
+091757.269: [09:17:57]
+091757.269: [09:17:57]
+091757.269: [09:17:57]Expanded Security Maintenance for Applications is not enabled.
+091757.269: [09:17:57]
+091757.270: [09:17:57]55 updates can be applied immediately.
+091757.270: [09:17:57]To see these additional updates run: apt list --upgradable
+091757.270: [09:17:57]
+091757.270: [09:17:57]1 additional security update can be applied with ESM Apps.
+091757.270: [09:17:57]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+091757.270: [09:17:57]
+091757.270: [09:17:57]
+091757.270: [09:17:57]The list of available updates is more than a week old.
+091757.270: [09:17:57]To check for new updates run: sudo apt update
+091757.270: [09:17:57]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+091757.270: [09:17:57]
+091757.270: [09:17:57]
+091757.270: [09:17:57]Last login: Mon Feb  9 16:12:12 2026 from 10.50.0.100
+091757.279: [09:17:57]
+091757.394: [09:17:57]module: command not found
+091757.517: [09:17:57]module: command not found
+091757.642: [09:17:57]module: command not found
+091757.676: [09:17:57]root@suzhouproda100:~# 
+091806.039: [09:18:06]root@suzhouproda100:~# ping www.baidu.com
+091809.166: [09:18:09]^C
+091813.556: [09:18:13]root@suzhouproda100:~# ping 58.211.207.202
+091813.558: [09:18:13]PING 58.211.207.202 (58.211.207.202) 56(84) bytes of data.
+091815.133: [09:18:15]^C
+091815.133: [09:18:15]--- 58.211.207.202 ping statistics ---
+091815.133: [09:18:15]2 packets transmitted, 0 received, 100% packet loss, time 1016ms
+091815.133: [09:18:15]
+091816.030: [09:18:16]root@suzhouproda100:~# ip r
+091816.034: [09:18:16]default via 10.50.0.1 dev enp161s0f0np0 proto static metric 10 
+091816.035: [09:18:16]default via 10.52.0.1 dev enp161s0f1np1 proto static metric 20 
+091816.035: [09:18:16]default via 10.54.0.1 dev bond2 proto static metric 30 
+091816.035: [09:18:16]10.50.0.0/24 dev enp161s0f0np0 proto kernel scope link src 10.50.0.100 
+091816.035: [09:18:16]10.52.0.0/24 dev enp161s0f1np1 proto kernel scope link src 10.52.0.100 
+091816.035: [09:18:16]10.54.0.0/24 dev bond2 proto kernel scope link src 10.54.0.100 
+091816.035: [09:18:16]10.64.0.0/24 via 10.54.0.1 dev bond2 proto static 
+091816.036: [09:18:16]10.74.0.0/24 via 10.54.0.1 dev bond2 proto static 
+091816.036: [09:18:16]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+091816.036: [09:18:16]172.18.0.0/16 dev br-f1e5b72fd503 proto kernel scope link src 172.18.0.1 
+091936.946: [09:19:36]root@suzhouproda100:~# ping www.baidu.com
+091936.949: [09:19:36]ping: www.baidu.com: Name or service not known
+091937.473: [09:19:37]root@suzhouproda100:~# ^C
+091941.518: [09:19:41]root@suzhouproda100:~# ping 58.211.207.202
+091941.520: [09:19:41]PING 58.211.207.202 (58.211.207.202) 56(84) bytes of data.
+091955.670: [09:19:55]^C
+091955.671: [09:19:55]--- 58.211.207.202 ping statistics ---
+091955.671: [09:19:55]14 packets transmitted, 0 received, 100% packet loss, time 13343ms
+091955.671: [09:19:55]
+092851.970: [09:28:51]root@suzhouproda100:~# 
+092852.119: [09:28:52]root@suzhouproda100:~# 
+092856.545: [09:28:56]root@suzhouproda100:~# ping www.baidu.com
+092858.336: [09:28:58]^C
+092905.200: [09:29:05]root@suzhouproda100:~# ping 58.211.207.202
+092905.211: [09:29:05]PING 58.211.207.202 (58.211.207.202) 56(84) bytes of data.
+092917.760: [09:29:17]^C
+092917.761: [09:29:17]--- 58.211.207.202 ping statistics ---
+092917.761: [09:29:17]13 packets transmitted, 0 received, 100% packet loss, time 12286ms
+092917.761: [09:29:17]
+093039.251: [09:30:39]root@suzhouproda100:~# ping www.baidu.com
+093043.305: [09:30:43]^C
+093509.205: [09:35:09]root@suzhouproda100:~# ping 58.211.207.202
+093509.215: [09:35:09]PING 58.211.207.202 (58.211.207.202) 56(84) bytes of data.
+093509.223: [09:35:09]64 bytes from 58.211.207.202: icmp_seq=1 ttl=110 time=14.9 ms
+093510.227: [09:35:10]64 bytes from 58.211.207.202: icmp_seq=2 ttl=110 time=14.1 ms
+093511.226: [09:35:11]64 bytes from 58.211.207.202: icmp_seq=3 ttl=110 time=14.0 ms
+093512.228: [09:35:12]64 bytes from 58.211.207.202: icmp_seq=4 ttl=110 time=14.9 ms
+093513.238: [09:35:13]64 bytes from 58.211.207.202: icmp_seq=5 ttl=110 time=14.6 ms
+093513.647: [09:35:13]^C
+093513.647: [09:35:13]--- 58.211.207.202 ping statistics ---
+093513.647: [09:35:13]5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+093513.647: [09:35:13]rtt min/avg/max/mdev = 13.957/14.474/14.876/0.389 ms
+093514.663: [09:35:14]root@suzhouproda100:~# 
+093514.814: [09:35:14]root@suzhouproda100:~# 
+093514.980: [09:35:14]root@suzhouproda100:~# 
+093515.085: [09:35:15]root@suzhouproda100:~# 
+153836.342: [15:38:36][202602101-A-A10-管理-Hygon-10.50.0.100-15:38:36]
+153836.362: [15:38:36]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-56-generic x86_64)
+153836.362: [15:38:36]
+153836.363: [15:38:36] * Documentation:  https://help.ubuntu.com
+153836.363: [15:38:36] * Management:     https://landscape.canonical.com
+153836.363: [15:38:36] * Support:        https://ubuntu.com/pro
+153836.363: [15:38:36]
+153836.363: [15:38:36] System information as of Tue Feb 10 03:38:35 PM CST 2026
+153836.363: [15:38:36]
+153836.363: [15:38:36]  System load:                    0.0
+153836.363: [15:38:36]  Usage of /home:                 1.2% of 301.20GB
+153836.363: [15:38:36]  Memory usage:                   1%
+153836.363: [15:38:36]  Swap usage:                     0%
+153836.363: [15:38:36]  Temperature:                    58.0 C
+153836.363: [15:38:36]  Processes:                      1127
+153836.364: [15:38:36]  Users logged in:                1
+153836.364: [15:38:36]  IPv4 address for enp161s0f0np0: 10.50.0.100
+153836.364: [15:38:36]
+153836.364: [15:38:36] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+153836.364: [15:38:36]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+153836.364: [15:38:36]
+153836.364: [15:38:36]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+153836.364: [15:38:36]
+153836.364: [15:38:36]Expanded Security Maintenance for Applications is not enabled.
+153836.364: [15:38:36]
+153836.364: [15:38:36]55 updates can be applied immediately.
+153836.365: [15:38:36]To see these additional updates run: apt list --upgradable
+153836.365: [15:38:36]
+153836.365: [15:38:36]1 additional security update can be applied with ESM Apps.
+153836.365: [15:38:36]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+153836.365: [15:38:36]
+153836.365: [15:38:36]
+153836.365: [15:38:36]Last login: Tue Feb 10 09:17:57 2026 from 192.168.4.222
+153836.372: [15:38:36]
+153836.372: [15:38:36]
+153836.480: [15:38:36]module: command not found
+153836.605: [15:38:36]module: command not found
+153836.745: [15:38:36]module: command not found
+153836.777: [15:38:36]root@suzhouproda100:~# 
+153836.777: [15:38:36]root@suzhouproda100:~# 
+153842.160: [15:38:42]root@suzhouproda100:~# ping 192.168.10.1
+153842.165: [15:38:42]PING 192.168.10.1 (192.168.10.1) 56(84) bytes of data.
+153842.168: [15:38:42]64 bytes from 192.168.10.1: icmp_seq=1 ttl=254 time=0.666 ms
+153842.736: [15:38:42]^C
+153842.736: [15:38:42]--- 192.168.10.1 ping statistics ---
+153842.736: [15:38:42]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+153842.736: [15:38:42]rtt min/avg/max/mdev = 0.666/0.666/0.666/0.000 ms
+153843.541: [15:38:43]root@suzhouproda100:~# ping 192.168.10.2
+153843.546: [15:38:43]PING 192.168.10.2 (192.168.10.2) 56(84) bytes of data.
+153849.153: [15:38:49]^C
+153849.153: [15:38:49]--- 192.168.10.2 ping statistics ---
+153849.154: [15:38:49]6 packets transmitted, 0 received, 100% packet loss, time 5133ms
+153849.154: [15:38:49]
+161318.140: [16:13:18]root@suzhouproda100:~# 
+161318.150: [16:13:18]root@suzhouproda100:~# 
+161318.257: [16:13:18]root@suzhouproda100:~# 
+161318.420: [16:13:18]root@suzhouproda100:~# 

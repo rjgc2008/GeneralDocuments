@@ -1,0 +1,18 @@
+﻿154440.971: [15:44:40][202601099-172.16.208.2-各种服务-15:44:40]
+154441.014: [15:44:41]Last login: Thu Jan 29 18:06:52 2026 from 192.168.7.67
+154444.617: [15:44:44][root@172-16-208-2 ~]# cd /etc/wireguard/
+154445.245: [15:44:45][root@172-16-208-2 /etc/wireguard]# ll
+154445.247: [15:44:45]total 112K
+154445.247: [15:44:45]-rw-r--r-- 1 tcpdump tcpdump  52K Dec  5 21:43  1.cap
+154445.247: [15:44:45]-rw-r--r-- 1 root    root      45 Apr  7  2023  private.key
+154445.247: [15:44:45]-rw-r--r-- 1 root    root      45 Apr  7  2023  public.key
+154445.248: [15:44:45]-rwxrwxrwx 1 root    root    1.6K Apr 10  2023  reresolve-dns.sh
+154445.248: [15:44:45]-rwxr-xr-x 1 root    root     526 Nov 21 18:22  StartWG1.sh
+154445.248: [15:44:45]-rwxr-xr-x 1 root    root     361 Nov 21 18:21  StopWG1.sh
+154445.249: [15:44:45]-rw-r--r-- 1 root    root    4.2K Apr 30  2025  wg0.conf
+154445.250: [15:44:45]-rw-r--r-- 1 root    root    2.1K Apr 29  2025  wg0.conf-bak-20250429
+154445.250: [15:44:45]-rw-r--r-- 1 root    root    4.4K Sep 12 18:18 'wg0 copy.conf'
+154445.250: [15:44:45]-rw-rw-rw- 1 root    root    1.7K Sep 12 18:27  wg1-20250912.conf
+154445.250: [15:44:45]-rw-rw-rw- 1 root    root    1.9K Jan 29 13:41  wg1.conf
+154445.250: [15:44:45]-rw-r--r-- 1 root    root    1.6K Sep  1 19:15  wg1.conf-20250901
+154445.250: [15:44:45]-rw-rw-rw- 1 root    root    1.9K Dec  5 23:59  wg1.conf-20260127

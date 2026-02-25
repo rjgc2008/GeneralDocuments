@@ -1,0 +1,271 @@
+﻿161415.607: [16:14:15][202602099-172.16.208.2-各种服务-16:14:15]
+161415.626: [16:14:15]
+161415.626: [16:14:15]
+161415.644: [16:14:15]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+161415.644: [16:14:15]
+161415.644: [16:14:15]The programs included with the Debian GNU/Linux system are free software;
+161415.644: [16:14:15]the exact distribution terms for each program are described in the
+161415.644: [16:14:15]individual files in /usr/share/doc/*/copyright.
+161415.644: [16:14:15]
+161415.644: [16:14:15]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+161415.644: [16:14:15]permitted by applicable law.
+161415.644: [16:14:15]Last login: Thu Feb  5 21:40:30 2026 from 117.82.216.130
+161416.263: [16:14:16][root@172-16-208-2 ~]# 
+161416.263: [16:14:16][root@172-16-208-2 ~]# 
+161417.417: [16:14:17][root@172-16-208-2 ~]# ip a
+161417.450: [16:14:17]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+161417.451: [16:14:17]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+161417.451: [16:14:17]    inet 127.0.0.1/8 scope host lo
+161417.451: [16:14:17]       valid_lft forever preferred_lft forever
+161417.452: [16:14:17]    inet6 ::1/128 scope host 
+161417.452: [16:14:17]       valid_lft forever preferred_lft forever
+161417.452: [16:14:17]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+161417.452: [16:14:17]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+161417.452: [16:14:17]    altname enp0s3
+161417.453: [16:14:17]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+161417.453: [16:14:17]       valid_lft forever preferred_lft forever
+161417.453: [16:14:17]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+161417.453: [16:14:17]       valid_lft forever preferred_lft forever
+161417.453: [16:14:17]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+161417.454: [16:14:17]    link/ether 02:42:35:3a:d2:b6 brd ff:ff:ff:ff:ff:ff
+161417.454: [16:14:17]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+161417.454: [16:14:17]       valid_lft forever preferred_lft forever
+161417.454: [16:14:17]    inet6 fe80::42:35ff:fe3a:d2b6/64 scope link 
+161417.454: [16:14:17]       valid_lft forever preferred_lft forever
+161417.455: [16:14:17]37: veth2ac69da@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.455: [16:14:17]    link/ether d2:2b:e7:94:67:54 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+161417.455: [16:14:17]    inet6 fe80::d02b:e7ff:fe94:6754/64 scope link 
+161417.455: [16:14:17]       valid_lft forever preferred_lft forever
+161417.456: [16:14:17]39: veth2e2016a@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.456: [16:14:17]    link/ether 7a:df:ea:18:95:00 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+161417.457: [16:14:17]    inet6 fe80::78df:eaff:fe18:9500/64 scope link 
+161417.457: [16:14:17]       valid_lft forever preferred_lft forever
+161417.457: [16:14:17]41: veth415ed3b@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.458: [16:14:17]    link/ether 5e:33:2c:00:01:29 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+161417.458: [16:14:17]    inet6 fe80::5c33:2cff:fe00:129/64 scope link 
+161417.458: [16:14:17]       valid_lft forever preferred_lft forever
+161417.458: [16:14:17]45: veth9b58094@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.459: [16:14:17]    link/ether 12:82:d9:83:8d:69 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+161417.459: [16:14:17]    inet6 fe80::1082:d9ff:fe83:8d69/64 scope link 
+161417.459: [16:14:17]       valid_lft forever preferred_lft forever
+161417.460: [16:14:17]47: vethe9ecff3@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.460: [16:14:17]    link/ether 26:cf:4e:59:60:45 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+161417.460: [16:14:17]    inet6 fe80::24cf:4eff:fe59:6045/64 scope link 
+161417.460: [16:14:17]       valid_lft forever preferred_lft forever
+161417.461: [16:14:17]51: veth5c35b57@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.461: [16:14:17]    link/ether 6e:fd:90:e9:70:09 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+161417.461: [16:14:17]    inet6 fe80::6cfd:90ff:fee9:7009/64 scope link 
+161417.462: [16:14:17]       valid_lft forever preferred_lft forever
+161417.462: [16:14:17]53: vethd637082@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.462: [16:14:17]    link/ether c2:bc:40:32:3d:96 brd ff:ff:ff:ff:ff:ff link-netnsid 9
+161417.463: [16:14:17]    inet6 fe80::c0bc:40ff:fe32:3d96/64 scope link 
+161417.463: [16:14:17]       valid_lft forever preferred_lft forever
+161417.463: [16:14:17]54: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+161417.463: [16:14:17]    link/ether 02:42:65:12:8d:87 brd ff:ff:ff:ff:ff:ff
+161417.464: [16:14:17]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+161417.464: [16:14:17]       valid_lft forever preferred_lft forever
+161417.464: [16:14:17]    inet6 fe80::42:65ff:fe12:8d87/64 scope link 
+161417.464: [16:14:17]       valid_lft forever preferred_lft forever
+161417.472: [16:14:17]311: vethc9a46ca@if310: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.473: [16:14:17]    link/ether 52:2d:2d:7c:fa:3a brd ff:ff:ff:ff:ff:ff link-netnsid 15
+161417.473: [16:14:17]    inet6 fe80::502d:2dff:fe7c:fa3a/64 scope link 
+161417.473: [16:14:17]       valid_lft forever preferred_lft forever
+161417.473: [16:14:17]56: veth1234742@if55: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+161417.473: [16:14:17]    link/ether 0e:0b:ab:f0:7e:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+161417.473: [16:14:17]    inet6 fe80::c0b:abff:fef0:7ed6/64 scope link 
+161417.473: [16:14:17]       valid_lft forever preferred_lft forever
+161417.473: [16:14:17]313: veth598d4d1@if312: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.474: [16:14:17]    link/ether 5a:9d:c2:77:3c:f1 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+161417.474: [16:14:17]    inet6 fe80::589d:c2ff:fe77:3cf1/64 scope link 
+161417.474: [16:14:17]       valid_lft forever preferred_lft forever
+161417.474: [16:14:17]58: vethf5b3621@if57: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+161417.474: [16:14:17]    link/ether 32:43:c5:b3:23:5d brd ff:ff:ff:ff:ff:ff link-netnsid 12
+161417.474: [16:14:17]    inet6 fe80::3043:c5ff:feb3:235d/64 scope link 
+161417.474: [16:14:17]       valid_lft forever preferred_lft forever
+161417.474: [16:14:17]315: veth03af352@if314: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.474: [16:14:17]    link/ether 5a:88:72:b2:e8:5e brd ff:ff:ff:ff:ff:ff link-netnsid 1
+161417.475: [16:14:17]    inet6 fe80::5888:72ff:feb2:e85e/64 scope link 
+161417.475: [16:14:17]       valid_lft forever preferred_lft forever
+161417.475: [16:14:17]60: veth3ecc052@if59: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+161417.475: [16:14:17]    link/ether 86:72:f2:6c:f4:7f brd ff:ff:ff:ff:ff:ff link-netnsid 11
+161417.475: [16:14:17]    inet6 fe80::8472:f2ff:fe6c:f47f/64 scope link 
+161417.475: [16:14:17]       valid_lft forever preferred_lft forever
+161417.475: [16:14:17]317: veth31ee45c@if316: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.476: [16:14:17]    link/ether 6e:53:0c:8c:61:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+161417.476: [16:14:17]    inet6 fe80::6c53:cff:fe8c:61d6/64 scope link 
+161417.476: [16:14:17]       valid_lft forever preferred_lft forever
+161417.476: [16:14:17]62: veth62906d7@if61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+161417.477: [16:14:17]    link/ether b2:4d:17:a4:fe:dd brd ff:ff:ff:ff:ff:ff link-netnsid 13
+161417.477: [16:14:17]    inet6 fe80::b04d:17ff:fea4:fedd/64 scope link 
+161417.477: [16:14:17]       valid_lft forever preferred_lft forever
+161417.477: [16:14:17]351: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+161417.477: [16:14:17]    link/none 
+161417.477: [16:14:17]    inet 10.253.0.2/32 scope global wg0
+161417.480: [16:14:17]       valid_lft forever preferred_lft forever
+161417.480: [16:14:17]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+161417.480: [16:14:17]       valid_lft forever preferred_lft forever
+161417.480: [16:14:17]137: vethabd7df4@if136: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.480: [16:14:17]    link/ether 02:b8:c4:b9:e4:44 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+161417.480: [16:14:17]    inet6 fe80::b8:c4ff:feb9:e444/64 scope link 
+161417.480: [16:14:17]       valid_lft forever preferred_lft forever
+161417.480: [16:14:17]243: veth393530a@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+161417.480: [16:14:17]    link/ether 2e:dd:8a:03:a4:69 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+161417.480: [16:14:17]    inet6 fe80::2cdd:8aff:fe03:a469/64 scope link 
+161417.480: [16:14:17]       valid_lft forever preferred_lft forever
+161420.346: [16:14:20][root@172-16-208-2 ~]# cd /DATA/Media/
+161420.989: [16:14:20][root@172-16-208-2 /DATA/Media]# ll
+161421.003: [16:14:21]total 2.5G
+161421.004: [16:14:21]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14 20:09  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+161421.004: [16:14:21]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+161421.004: [16:14:21]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+161421.004: [16:14:21]drwxrwxrwx 10 root      root      4.0K Jan 16 23:08  Documents
+161421.004: [16:14:21]drwxrwxr-x  3 wyj       wyj       4.0K Jan 30 22:55  Doucuments
+161421.004: [16:14:21]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+161421.005: [16:14:21]drwxrwxrwx 50 wyj       wyj        24K Jan 18 21:55  Movies
+161421.005: [16:14:21]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+161421.005: [16:14:21]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+161421.005: [16:14:21]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+161421.005: [16:14:21]drwxrwxrwx 22 root      root      4.0K Jan 23 22:26  Tmp
+161421.005: [16:14:21]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+161421.005: [16:14:21]drwxrwxrwx 50 wyj       wyj        12K Jan 18 21:57 'TV Shows'
+161421.006: [16:14:21]drwxr-xr-x  5 sambauser sambauser 4.0K Dec 19 09:44  WYJ
+161421.006: [16:14:21]drwxrwxrwx  4 root      root      4.0K Jan 18 22:08  XTV-BACKUP
+161421.006: [16:14:21]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19 20:14  软考高级《网络规划设计师》资料包
+161421.006: [16:14:21]-rwxrw-rw-  1 sambauser sambauser  19M Feb  5 18:39  量子中心组网图-样板间.png
+161426.150: [16:14:26][root@172-16-208-2 /DATA/Media]# cd AppData/
+161426.733: [16:14:26][root@172-16-208-2 /DATA/Media/AppData]# ll
+161426.750: [16:14:26]total 4.0K
+161426.750: [16:14:26]drwxrwxrwx 3 root root 4.0K Sep 29 10:28 prometheus
+161429.222: [16:14:29][root@172-16-208-2 /DATA/Media/AppData]# cd ..
+161429.778: [16:14:29][root@172-16-208-2 /DATA/Media]# ll
+161429.796: [16:14:29]total 2.5G
+161429.796: [16:14:29]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14 20:09  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+161429.796: [16:14:29]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+161429.796: [16:14:29]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+161429.796: [16:14:29]drwxrwxrwx 10 root      root      4.0K Jan 16 23:08  Documents
+161429.796: [16:14:29]drwxrwxr-x  3 wyj       wyj       4.0K Jan 30 22:55  Doucuments
+161429.796: [16:14:29]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+161429.796: [16:14:29]drwxrwxrwx 50 wyj       wyj        24K Jan 18 21:55  Movies
+161429.796: [16:14:29]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+161429.796: [16:14:29]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+161429.796: [16:14:29]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+161429.796: [16:14:29]drwxrwxrwx 22 root      root      4.0K Jan 23 22:26  Tmp
+161429.797: [16:14:29]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+161429.797: [16:14:29]drwxrwxrwx 50 wyj       wyj        12K Jan 18 21:57 'TV Shows'
+161429.797: [16:14:29]drwxr-xr-x  5 sambauser sambauser 4.0K Dec 19 09:44  WYJ
+161429.797: [16:14:29]drwxrwxrwx  4 root      root      4.0K Jan 18 22:08  XTV-BACKUP
+161429.797: [16:14:29]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19 20:14  软考高级《网络规划设计师》资料包
+161429.797: [16:14:29]-rwxrw-rw-  1 sambauser sambauser  19M Feb  5 18:39  量子中心组网图-样板间.png
+161430.572: [16:14:30][root@172-16-208-2 /DATA/Media]# cd ..
+161431.146: [16:14:31][root@172-16-208-2 /DATA]# ll\
+161433.274: [16:14:33]> ^C
+161434.353: [16:14:34][root@172-16-208-2 /DATA]# ll
+161434.371: [16:14:34]total 5.3G
+161434.371: [16:14:34]drwxrwxrwx 29 root root 4.0K Jan  7 17:35 AppData
+161434.371: [16:14:34]drwxrwxrwx  2 root root 4.0K Apr  6  2023 Documents
+161434.371: [16:14:34]drwxrwxrwx  2 wyj  wyj  4.0K Aug 15 09:28 Downloads
+161434.371: [16:14:34]drwxrwxrwx  3 root root 4.0K May 15  2025 Gallery
+161434.371: [16:14:34]drwxrwxrwx 17 wyj  wyj  4.0K Feb  5 18:41 Media
+161434.371: [16:14:34]-rw-r--r--  1 root root 5.3G Sep 12 08:29 VisioPro2024Retail.img
+161438.283: [16:14:38][root@172-16-208-2 /DATA]# cd AppData/
+161438.888: [16:14:38][root@172-16-208-2 /DATA/AppData]# ll
+161438.907: [16:14:38]total 108K
+161438.907: [16:14:38]drwxr-xr-x 3 root root 4.0K May 15  2025 adguard-home
+161438.907: [16:14:38]drwxr-xr-x 9 root root 4.0K Sep 29 14:04 CAdvisor
+161438.907: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr  3  2024 calibre-web
+161438.907: [16:14:38]drwxr-xr-x 3 root root 4.0K Dec 22  2023 casaos-cloudflared
+161438.907: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr  6  2023 Emby
+161438.907: [16:14:38]drwxr-xr-x 3 root root 4.0K May  8  2023 FileBrowser
+161438.907: [16:14:38]drwxr-xr-x 3 root root 4.0K Jul  2  2024 firefly
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K May 20  2025 gitea
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Jan  2  2025 grafana
+161438.908: [16:14:38]drwxr-xr-x 5 root root 4.0K May 15  2025 immich
+161438.908: [16:14:38]drwxr-xr-x 4 root root 4.0K Apr 11  2023 InfluxDB
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr  6  2023 Jellyfin
+161438.908: [16:14:38]drwxr-xr-x 4 root root 4.0K Apr  3  2024 mtphotos
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Sep 26  2024 myspeed
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K May 16  2025 navidrome
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Sep 26  2024 nextcloud
+161438.908: [16:14:38]drwxr-xr-x 5 root root 4.0K Sep 26 15:06 nginx
+161438.908: [16:14:38]drwxr-xr-x 4 root root 4.0K Sep 26 14:04 nginxproxymanager
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr  6  2023 PhotoPrism
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K May 16  2025 plex
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr 23  2023 Plex
+161438.908: [16:14:38]drwxr-xr-x 3 root root 4.0K Sep 29 14:27 Prometheus
+161438.909: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr  6  2023 qBittorrent
+161438.909: [16:14:38]drwxrwxrwx 2 root root 4.0K Sep  4 10:55 Rustdesk
+161438.909: [16:14:38]drwxr-xr-x 3 root root 4.0K Jul 27  2023 Syncthing
+161438.909: [16:14:38]drwxr-xr-x 3 root root 4.0K Apr  6  2023 Transmission
+161438.909: [16:14:38]drwxr-xr-x 3 root root 4.0K Jan 23  2024 wg-easy
+161444.886: [16:14:44][root@172-16-208-2 /DATA/AppData]# \cd Rustdesk/
+161445.514: [16:14:45][root@172-16-208-2 /DATA/AppData/Rustdesk]# ll
+161445.525: [16:14:45]total 152K
+161445.525: [16:14:45]-rw-r--r-- 1 root root 24K Sep  4 10:54 db_v2.sqlite3
+161445.525: [16:14:45]-rw-r--r-- 1 root root 32K Feb  3 09:40 db_v2.sqlite3-shm
+161445.525: [16:14:45]-rw-r--r-- 1 root root 85K Jan 15 08:19 db_v2.sqlite3-wal
+161445.525: [16:14:45]-rw-r--r-- 1 root root  88 Sep  4 10:19 id_ed25519
+161445.525: [16:14:45]-rw-r--r-- 1 root root  44 Sep  4 10:19 id_ed25519.pub
+161605.478: [16:16:05][root@172-16-208-2 /DATA/AppData/Rustdesk]# cat cat id_ed25519
+161605.489: [16:16:05]cat: cat: No such file or directory
+161612.639: [16:16:12]q4CU4zVI/d2cp5YiW/ji2SsnJZz9J3zva2683at6g0D4P4E3qdPnCLrFbaYCvp5viMo6LyCzuoikfh509gRU/w==[root@172-16-208-2 /DATA/AppData/Rustdesk]# cat id_ed25519.pub 
+161848.976: [16:18:48]+D+BN6nT5wi6xW2mAr6eb4jKOi8gs7qIpH4edPYEVP8=[root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+161849.046: [16:18:49][root@172-16-208-2 /DATA/AppData/Rustdesk]# 
+161856.715: [16:18:56][root@172-16-208-2 /DATA/AppData/Rustdesk]# ps -ef | grep rusk
+161856.734: [16:18:56]root     2897945 2896047  0 16:18 pts/0    00:00:00 grep --color=auto rusk
+161859.504: [16:18:59][root@172-16-208-2 /DATA/AppData/Rustdesk]# ps -ef | grep rusk -i
+161859.521: [16:18:59]root     2897949 2896047  0 16:18 pts/0    00:00:00 grep --color=auto rusk -i
+161904.482: [16:19:04][root@172-16-208-2 /DATA/AppData/Rustdesk]# ps 0ef 
+161904.492: [16:19:04]error: process ID list syntax error
+161904.492: [16:19:04]
+161904.492: [16:19:04]Usage:
+161904.492: [16:19:04] ps [options]
+161904.492: [16:19:04]
+161904.492: [16:19:04] Try 'ps --help <simple|list|output|threads|misc|all>'
+161904.492: [16:19:04]  or 'ps --help <s|l|o|t|m|a>'
+161904.492: [16:19:04] for additional help text.
+161904.492: [16:19:04]
+161904.492: [16:19:04]For more details see ps(1).
+161910.081: [16:19:10][root@172-16-208-2 /DATA/AppData/Rustdesk]# docker ps
+161911.763: [16:19:11]CONTAINER ID   IMAGE                                         COMMAND                  CREATED         STATUS                    PORTS                         161911.764:                                                                                                                                                            NAM161911.764: ES
+161911.764: [16:19:11]42597469b535   bitnami/cadvisor:latest                       "/opt/bitnami/cadvis…"   4 months ago    Up 4 months               0.0.0.0:7070->8080/tcp, :::707161911.764: 0->8080/tcp                                                                                                                                                cad161911.765: visor
+161911.765: [16:19:11]17617ba5baf6   grafana/grafana:11.5.2                        "/run.sh"                4 months ago    Up 4 months               0.0.0.0:3003->3000/tcp, :::300161911.783: 3->3000/tcp                                                                                                                                                gra161911.783: fana
+161911.783: [16:19:11]6de73805f464   prom/prometheus:latest                        "/bin/prometheus --c…"   4 months ago    Up 4 months               0.0.0.0:9091->9090/tcp, :::909161911.783: 1->9090/tcp                                                                                                                                                ser161911.783: ene_alexandre-main_app-1
+161911.783: [16:19:11]d33f0272d2e0   nginx:latest                                  "/docker-entrypoint.…"   4 months ago    Up 4 months               0.0.0.0:6080->80/tcp, :::6080-161911.784: >80/tcp                                                                                                                                                    upb161911.784: eat_noel-main_app-1
+161911.784: [16:19:11]764ecdfcd987   rustdesk/rustdesk-server:latest               "hbbs"                   5 months ago    Up 5 months                                             161911.784:                                                                                                                                                            awe161911.784: some_kharytonov-main_app-1
+161911.784: [16:19:11]11a574bc723a   altran1502/immich-server:v1.129.0             "tini -- /bin/bash s…"   8 months ago    Up 8 months (healthy)     0.0.0.0:2283->2283/tcp, :::228161911.784: 3->2283/tcp                                                                                                                                                imm161911.784: ich-server
+161911.785: [16:19:11]2eb2c5779752   altran1502/immich-machine-learning:v1.129.0   "tini -- ./start.sh"     8 months ago    Up 8 months (healthy)                                   161911.785:                                                                                                                                                            imm161911.785: ich-machine-learning
+161911.785: [16:19:11]4127597a32a4   tensorchord/pgvecto-rs:pg14-v0.2.0            "docker-entrypoint.s…"   8 months ago    Up 8 months (unhealthy)   5432/tcp                      161911.785:                                                                                                                                                            imm161911.785: ich-postgres
+161911.785: [16:19:11]eceeedca99ae   redis:6.2-alpine                              "docker-entrypoint.s…"   8 months ago    Up 8 months (healthy)     6379/tcp                      161911.785:                                                                                                                                                            imm161911.785: ich-redis
+161911.786: [16:19:11]5a88f76d21fb   deluan/navidrome:0.55.1                       "/app/navidrome"         8 months ago    Up 8 months (healthy)     0.0.0.0:4533->4533/tcp, :::453161911.786: 3->4533/tcp                                                                                                                                                nav161911.786: idrome
+161911.786: [16:19:11]90dd30cbf67d   ghcr.io/wg-easy/wg-easy:13                    "docker-entrypoint.s…"   9 months ago    Up 8 months (healthy)     0.0.0.0:51820->51820/udp, :::5161911.786: 1820->51820/udp, 0.0.0.0:51821->51821/tcp, :::51821->51821/tcp                                                                                             wg-161911.786: easy
+161911.786: [16:19:11]43b0322f384f   lscr.io/linuxserver/plex:1.41.3               "/init"                  9 months ago    Up 8 months                                             161911.786:                                                                                                                                                            ple161911.786: x
+161911.787: [16:19:11]9387c7bcbf50   diygod/rsshub:latest                          "dumb-init -- npm ru…"   12 months ago   Up 8 months               0.0.0.0:1200->1200/tcp, :::120161911.787: 0->1200/tcp                                                                                                                                                rss161911.787: hub-rsshub-1
+161911.787: [16:19:11]d2aed57733de   linuxserver/syncthing:1.27.3                  "/init"                  22 months ago   Up 2 months               0.0.0.0:8384->8384/tcp, 0.0.0.161911.787: 0:21027->21027/udp, :::8384->8384/tcp, :::21027->21027/udp, 0.0.0.0:22000->22000/tcp, :::22000->22000/tcp, 0.0.0.0:22000->22000/udp, :::22000->22000/udp   syn161911.787: cthing-syncthing-1
+161911.787: [16:19:11]301647fe0ffb   mtphotos/mt-photos:latest                     "sh /usr/src/app/ent…"   22 months ago   Up 8 months               0.0.0.0:8063->8063/tcp, :::806161911.788: 3->8063/tcp                                                                                                                                                fun161911.788: ny_ohm-main_app-1
+161911.788: [16:19:11]bd2e38d8338c   photoprism/photoprism:231011                  "/scripts/entrypoint…"   22 months ago   Up 8 months               0.0.0.0:2342->2342/tcp, :::234161911.788: 2->2342/tcp, 2442-2443/tcp                                                                                                                                 pho161911.788: toprism-photoprism-1
+161911.788: [16:19:11]3aef450c326e   linuxserver/calibre-web:0.6.21                "/init"                  22 months ago   Up 8 months               0.0.0.0:8083->8083/tcp, :::808161911.788: 3->8083/tcp                                                                                                                                                cal161911.788: ibre-web
+161911.789: [16:19:11]90076de60608   hotio/qbittorrent:release-4.6.2               "/init"                  24 months ago   Up 8 months                                             161911.789:                                                                                                                                                            qbi161911.789: ttorrent-qbittorrent-1
+161911.789: [16:19:11]20d6b6bf6874   linuxserver/emby:4.7.14                       "/init"                  2 years ago     Up 8 months               0.0.0.0:42557->8096/tcp, :::42161911.789: 557->8096/tcp, 0.0.0.0:41343->8920/tcp, :::41343->8920/tcp                                                                                                 emb161911.789: y-emby-1
+161911.789: [16:19:11]f747aa7d7069   influxdb:2.7.0                                "/entrypoint.sh infl…"   2 years ago     Up 8 months               0.0.0.0:8086->8086/tcp, :::808161911.789: 6->8086/tcp                                                                                                                                                inf161911.790: luxdb-influxdb-1
+161919.546: [16:19:19][root@172-16-208-2 /DATA/AppData/Rustdesk]# docker ps | grep desk
+161919.668: [16:19:19]764ecdfcd987   rustdesk/rustdesk-server:latest               "hbbs"                   5 months ago    Up 5 months                                             161919.668:                                                                                                                                                            awe161919.669: some_kharytonov-main_app-1
+161937.113: [16:19:37][root@172-16-208-2 /DATA/AppData/Rustdesk]# docker ls 764ecdfcd987
+161937.185: [16:19:37]docker: 'ls' is not a docker command.
+161937.185: [16:19:37]See 'docker --help'
+161944.331: [16:19:44][root@172-16-208-2 /DATA/AppData/Rustdesk]# docker ll 764ecdfcd987
+161944.413: [16:19:44]docker: 'll' is not a docker command.
+161944.413: [16:19:44]See 'docker --help'
+162053.383: [16:20:53][root@172-16-208-2 /DATA/AppData/Rustdesk]# ss -tlnp | grep 2111
+162053.422: [16:20:53]LISTEN 0      128                                         *:21115            *:*    users:(("hbbs",pid=3343883,fd=19))                          
+162053.423: [16:20:53]LISTEN 0      128                                         *:21116            *:*    users:(("hbbs",pid=3343883,fd=18))                          
+162053.423: [16:20:53]LISTEN 0      128                                         *:21118            *:*    users:(("hbbs",pid=3343883,fd=20))                          
+162101.577: [16:21:01][root@172-16-208-2 /DATA/AppData/Rustdesk]# ss -tlnp | grep 211
+162101.619: [16:21:01]LISTEN 0      128                                         *:21115            *:*    users:(("hbbs",pid=3343883,fd=19))                          
+162101.619: [16:21:01]LISTEN 0      128                                         *:21116            *:*    users:(("hbbs",pid=3343883,fd=18))                          
+162101.620: [16:21:01]LISTEN 0      128                                         *:21118            *:*    users:(("hbbs",pid=3343883,fd=20))                          
+162405.846: [16:24:05][root@172-16-208-2 /DATA/AppData/Rustdesk]# ss -lnp | grep 211
+162406.235: [16:24:06]u_str LISTEN 0      4096   /run/containerd/s/56cdce64b30ea533de9689b5c2d3e8658fb7c1363d62cc6cae21102913da16db 98792354                   * 0          users:((162406.236: "containerd-shim",pid=2977135,fd=10))                                               
+162406.251: [16:24:06]udp   UNCONN 0      0                                                                                       *:21116                      *:*          users:((162406.251: "hbbs",pid=3343883,fd=17))                                                          
+162406.251: [16:24:06]tcp   LISTEN 0      128                                                                                     *:21115                      *:*          users:((162406.251: "hbbs",pid=3343883,fd=19))                                                          
+162406.251: [16:24:06]tcp   LISTEN 0      128                                                                                     *:21116                      *:*          users:((162406.252: "hbbs",pid=3343883,fd=18))                                                          
+162406.252: [16:24:06]tcp   LISTEN 0      128                                                                                     *:21118                      *:*          users:((162406.252: "hbbs",pid=3343883,fd=20))                                                          

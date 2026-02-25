@@ -1,0 +1,53 @@
+﻿151845.407: [15:18:45][202602329-C-B07-25GE-TCP-接入交换机-192.168.102.21-15:18:45]
+151845.664: [15:18:45]
+151851.739: [15:18:51]TCP_B07_39U# show ip inter brief 
+151851.772: [15:18:51]Interface             IP-Address      Status                  Protocol
+151851.772: [15:18:51]vlan40                10.40.0.4       up                      up
+151851.772: [15:18:51]vlan50                10.50.0.1       administratively down   down
+151851.772: [15:18:51]vlan52                10.52.0.1       administratively down   down
+151851.772: [15:18:51]vlan60                10.60.0.1       administratively down   down
+151851.772: [15:18:51]vlan70                10.70.0.1       up                      up
+151851.772: [15:18:51]vlan80                10.80.0.1       administratively down   down
+151901.682: [15:19:01]TCP_B07_39U# ping 10.50.0.1
+151901.717: [15:19:01]PING 10.50.0.1 (10.50.0.1) 56(84) bytes of data.
+151903.900: [15:19:03]^C
+151903.900: [15:19:03]--- 10.50.0.1 ping statistics ---
+151903.900: [15:19:03]3 packets transmitted, 0 received, 100% packet loss, time 2035ms
+151903.900: [15:19:03]
+151910.502: [15:19:10]TCP_B07_39U# show ip route 
+151910.502: [15:19:10]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+151910.640: [15:19:10]TCP_B07_39U# show ip route 
+151910.640: [15:19:10]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+151915.075: [15:19:15]TCP_B07_39U# show ip route  
+151915.075: [15:19:15]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+151915.297: [15:19:15]TCP_B07_39U# show ip route  
+151915.297: [15:19:15]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+151915.457: [15:19:15]TCP_B07_39U# show ip route  
+151915.458: [15:19:15]add-fib-fail  bgp           connected     database      isis          ospf          rip           static        summary       vrf           
+151920.862: [15:19:20]TCP_B07_39U# show ip route  summary ?
+151920.863: [15:19:20]  |  Output modifiers
+151920.863: [15:19:20]  >  Output redirection
+151920.863: [15:19:20]  <cr>
+151920.863: [15:19:20]
+151921.632: [15:19:21]TCP_B07_39U# show ip route  summary 
+151921.667: [15:19:21]IP routing table name is Default-IP-Routing-Table(0)
+151921.668: [15:19:21]IP routing table maximum-paths is 64
+151921.668: [15:19:21]Route source    networks
+151921.668: [15:19:21]connected       4
+151921.668: [15:19:21]static          2
+151921.668: [15:19:21]Total           6
+151944.796: [15:19:44]TCP_B07_39U# show ip route static 
+151944.826: [15:19:44]S*       0.0.0.0/0 [1/0] via 10.40.0.1, vlan40
+151944.826: [15:19:44]S        10.72.0.0/24 [1/0] via 10.70.0.127, vlan70
+152003.376: [15:20:03]TCP_B07_39U# ping 192.168.8.88
+152003.413: [15:20:03]PING 192.168.8.88 (192.168.8.88) 56(84) bytes of data.
+152007.566: [15:20:07]^C
+152007.566: [15:20:07]--- 192.168.8.88 ping statistics ---
+152007.566: [15:20:07]5 packets transmitted, 0 received, 100% packet loss, time 4084ms
+152007.566: [15:20:07]
+152015.902: [15:20:15]TCP_B07_39U# ping 192.168.8.1
+152015.935: [15:20:15]PING 192.168.8.1 (192.168.8.1) 56(84) bytes of data.
+152017.394: [15:20:17]^C
+152017.394: [15:20:17]--- 192.168.8.1 ping statistics ---
+152017.394: [15:20:17]2 packets transmitted, 0 received, 100% packet loss, time 1030ms
+152017.394: [15:20:17]

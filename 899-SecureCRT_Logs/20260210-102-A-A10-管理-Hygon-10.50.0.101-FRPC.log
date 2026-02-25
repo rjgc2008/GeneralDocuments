@@ -1,0 +1,1538 @@
+﻿102629.559: [10:26:29][202602102-A-A10-管理-Hygon-10.50.0.101-FRPC-10:26:29]
+102629.566: [10:26:29]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+102629.567: [10:26:29]
+102629.567: [10:26:29] * Documentation:  https://help.ubuntu.com
+102629.567: [10:26:29] * Management:     https://landscape.canonical.com
+102629.567: [10:26:29] * Support:        https://ubuntu.com/pro
+102629.567: [10:26:29]
+102629.567: [10:26:29] System information as of Tue Jan 13 11:25:20 AM CST 2026
+102629.567: [10:26:29]
+102629.567: [10:26:29]  System load:                    0.61
+102629.567: [10:26:29]  Usage of /home:                 1.0% of 301.20GB
+102629.567: [10:26:29]  Memory usage:                   54%
+102629.567: [10:26:29]  Swap usage:                     0%
+102629.567: [10:26:29]  Temperature:                    62.0 C
+102629.567: [10:26:29]  Processes:                      1608
+102629.567: [10:26:29]  Users logged in:                1
+102629.568: [10:26:29]  IPv4 address for enp161s0f0np0: 10.50.0.101
+102629.568: [10:26:29]
+102629.568: [10:26:29]
+102629.568: [10:26:29]Expanded Security Maintenance for Applications is not enabled.
+102629.568: [10:26:29]
+102629.568: [10:26:29]152 updates can be applied immediately.
+102629.568: [10:26:29]To see these additional updates run: apt list --upgradable
+102629.568: [10:26:29]
+102629.568: [10:26:29]5 additional security updates can be applied with ESM Apps.
+102629.568: [10:26:29]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+102629.568: [10:26:29]
+102629.568: [10:26:29]
+102629.568: [10:26:29]The list of available updates is more than a week old.
+102629.568: [10:26:29]To check for new updates run: sudo apt update
+102629.568: [10:26:29]
+102629.568: [10:26:29]Last login: Tue Feb 10 09:29:30 2026 from 10.50.0.100
+102629.691: [10:26:29]module: command not found
+102629.832: [10:26:29]module: command not found
+102637.914: [10:26:37]root@suzhouproda101:~# systemctl status frpc
+102637.914: [10:26:37]frpc_02.service  frpc_03.service  frpc.service     
+102640.629: [10:26:40]root@suzhouproda101:~# systemctl status frpc.service 
+102640.678: [10:26:40]● frpc.service - FRP Client Service (frpc)
+102640.679: [10:26:40]     Loaded: loaded (/etc/systemd/system/frpc.service; enabled; preset: enabled)
+102640.680: [10:26:40]     Active: active (running) since Tue 2026-02-10 10:26:40 CST; 170ms ago
+102640.680: [10:26:40]   Main PID: 3483862 (frpc)
+102640.680: [10:26:40]      Tasks: 9 (limit: 309283)
+102640.680: [10:26:40]     Memory: 3.5M (peak: 4.8M)
+102640.680: [10:26:40]        CPU: 14ms
+102640.680: [10:26:40]     CGroup: /system.slice/frpc.service
+102640.680: [10:26:40]             └─3483862 /opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+102640.680: [10:26:40]
+102640.681: [10:26:40]Feb 10 10:26:40 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27468.
+102640.681: [10:26:40]Feb 10 10:26:40 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+102658.288: [10:26:58]root@suzhouproda101:~# systemctl status frpc_02 
+102658.343: [10:26:58]● frpc_02.service - FRP Client Service (frpc)
+102658.343: [10:26:58]     Loaded: loaded (/etc/systemd/system/frpc_02.service; enabled; preset: enabled)
+102658.344: [10:26:58]     Active: active (running) since Tue 2026-02-10 10:26:55 CST; 2s ago
+102658.344: [10:26:58]   Main PID: 3485010 (frpc)
+102658.344: [10:26:58]      Tasks: 8 (limit: 309283)
+102658.344: [10:26:58]     Memory: 3.2M (peak: 4.2M)
+102658.344: [10:26:58]        CPU: 20ms
+102658.344: [10:26:58]     CGroup: /system.slice/frpc_02.service
+102658.345: [10:26:58]             └─3485010 /opt/frp_0.63.0_linux_amd64_02/frpc -c /opt/frp_0.63.0_linux_amd64_02/frpc.toml
+102658.345: [10:26:58]
+102658.345: [10:26:58]Feb 10 10:26:55 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27466.
+102658.346: [10:26:58]Feb 10 10:26:55 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+102701.163: [10:27:01]root@suzhouproda101:~# systemctl status frpc_03
+102701.219: [10:27:01]● frpc_03.service - FRP Client Service (frpc)
+102701.220: [10:27:01]     Loaded: loaded (/etc/systemd/system/frpc_03.service; enabled; preset: enabled)
+102701.221: [10:27:01]     Active: active (running) since Tue 2026-02-10 10:26:55 CST; 5s ago
+102701.221: [10:27:01]   Main PID: 3485018 (frpc)
+102701.221: [10:27:01]      Tasks: 7 (limit: 309283)
+102701.221: [10:27:01]     Memory: 3.2M (peak: 4.6M)
+102701.221: [10:27:01]        CPU: 18ms
+102701.221: [10:27:01]     CGroup: /system.slice/frpc_03.service
+102701.221: [10:27:01]             └─3485018 /opt/frp_0.63.0_linux_amd64_03/frpc -c /opt/frp_0.63.0_linux_amd64_03/frpc.toml
+102701.221: [10:27:01]
+102701.222: [10:27:01]Feb 10 10:26:55 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61840.
+102701.222: [10:27:01]Feb 10 10:26:55 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+102930.048: [10:29:30]root@suzhouproda101:~# cd /etc/systemd/system
+102930.718: [10:29:30]root@suzhouproda101:/etc/systemd/system# ll
+102930.725: [10:29:30]total 128
+102930.725: [10:29:30]drwxr-xr-x 28 root root 4096 Nov 26 17:07  ./
+102930.725: [10:29:30]drwxr-xr-x  6 root root 4096 Jun 18  2025  ../
+102930.725: [10:29:30]lrwxrwxrwx  1 root root   38 Jun 18  2025  chronyd.service -> /usr/lib/systemd/system/chrony.service
+102930.726: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  cloud-final.service.wants/
+102930.726: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  cloud-init.target.wants/
+102930.726: [10:29:30]lrwxrwxrwx  1 root root   44 Apr 23  2024  dbus-org.freedesktop.ModemManager1.service -> /usr/lib/systemd/system/ModemManager.service
+102930.726: [10:29:30]lrwxrwxrwx  1 root root   48 Apr 23  2024  dbus-org.freedesktop.resolve1.service -> /usr/lib/systemd/system/systemd-resolved.service
+102930.726: [10:29:30]lrwxrwxrwx  1 root root   40 Jun  7  2025  dbus-org.freedesktop.thermald.service -> /usr/lib/systemd/system/thermald.service
+102930.726: [10:29:30]lrwxrwxrwx  1 root root   49 Apr 23  2024  dbus-org.freedesktop.timesync1.service -> /usr/lib/systemd/system/systemd-timesyncd.service
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  display-manager.service.wants/
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  emergency.target.wants/
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  final.target.wants/
+102930.727: [10:29:30]-rw-r--r--  1 root root  315 Sep  3 16:38  frpc_02.service
+102930.727: [10:29:30]-rw-r--r--  1 root root  315 Sep 19 10:37  frpc_03.service
+102930.727: [10:29:30]-rw-r--r--  1 root root  309 Jul 15  2025  frpc.service
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  getty.target.wants/
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  graphical.target.wants/
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  hibernate.target.wants/
+102930.727: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  hybrid-sleep.target.wants/
+102930.728: [10:29:30]lrwxrwxrwx  1 root root   42 Apr 23  2024  iscsi.service -> /usr/lib/systemd/system/open-iscsi.service
+102930.728: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  mdmonitor.service.wants/
+102930.728: [10:29:30]drwxr-xr-x  2 root root 4096 Nov 10 14:56  multi-user.target.wants/
+102930.728: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  network-online.target.wants/
+102930.737: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  oem-config.service.wants/
+102930.737: [10:29:30]-rw-r--r--  1 root root  290 Jun 20  2025  openp2p.service
+102930.737: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  open-vm-tools.service.requires/
+102930.737: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  paths.target.wants/
+102930.737: [10:29:30]drwxr-xr-x  2 root root 4096 Jun 24  2025  remote-fs.target.wants/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  rescue.target.wants/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  sleep.target.wants/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Jun 24  2025  sockets.target.wants/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024 'sshd-keygen@.service.d'/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  ssh.service.requires/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  suspend.target.wants/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Jun  7  2025  suspend-then-hibernate.target.wants/
+102930.738: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  sysinit.target.wants/
+102930.738: [10:29:30]lrwxrwxrwx  1 root root   39 Apr 23  2024  syslog.service -> /usr/lib/systemd/system/rsyslog.service
+102930.739: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  sysstat.service.wants/
+102930.739: [10:29:30]drwxr-xr-x  2 root root 4096 Apr 23  2024  timers.target.wants/
+102930.739: [10:29:30]lrwxrwxrwx  1 root root   45 Apr 23  2024  vmtoolsd.service -> /usr/lib/systemd/system/open-vm-tools.service
+102939.767: [10:29:39]root@suzhouproda101:/etc/systemd/system# cat frpc.service 
+102939.777: [10:29:39][Unit]
+102939.777: [10:29:39]Description=FRP Client Service (frpc)
+102939.777: [10:29:39]After=network.target
+102939.777: [10:29:39]
+102939.777: [10:29:39][Service]
+102939.777: [10:29:39]Type=simple
+102939.777: [10:29:39]User=root
+102939.777: [10:29:39]Restart=on-failure
+102939.777: [10:29:39]RestartSec=5s
+102939.778: [10:29:39]ExecStart=/opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+102939.778: [10:29:39]ExecReload=/bin/kill -HUP $MAINPID
+102939.778: [10:29:39]LimitNOFILE=1048576
+102939.778: [10:29:39]
+102939.778: [10:29:39][Install]
+102939.778: [10:29:39]WantedBy=multi-user.target
+102942.157: [10:29:42]root@suzhouproda101:/etc/systemd/system# cd /opt/
+102942.764: [10:29:42]root@suzhouproda101:/opt# ll
+102942.777: [10:29:42]total 12972
+102942.777: [10:29:42]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+102942.777: [10:29:42]drwxr-xr-x 26 root      root       4096 Feb 10 00:00 ../
+102942.777: [10:29:42]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+102942.777: [10:29:42]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+102942.778: [10:29:42]drwxr-xr-x  3 klmy_test docker     4096 Feb 10 00:00 frp_0.63.0_linux_amd64/
+102942.778: [10:29:42]drwxr-xr-x  3 klmy_test docker     4096 Dec 23 11:18 frp_0.63.0_linux_amd64_02/
+102942.778: [10:29:42]drwxr-xr-x  3 klmy_test docker     4096 Dec 26 08:24 frp_0.63.0_linux_amd64_03/
+102942.778: [10:29:42]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+102942.778: [10:29:42]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+102942.778: [10:29:42]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+102942.778: [10:29:42]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+102942.778: [10:29:42]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+102949.906: [10:29:49]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64
+102950.912: [10:29:50]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ll
+102950.929: [10:29:50]total 42824
+102950.929: [10:29:50]drwxr-xr-x 3 klmy_test docker     4096 Feb 10 00:00 ./
+102950.930: [10:29:50]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+102950.930: [10:29:50]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+102950.930: [10:29:50]-rw------- 1 root      root    2511367 Feb  7 23:59 frpc.20260208-000000.log
+102950.930: [10:29:50]-rw------- 1 root      root    5022734 Feb  9 23:59 frpc.20260210-000000.log
+102950.930: [10:29:50]-rw------- 1 root      root    1098640 Feb 10 10:29 frpc.log
+102950.930: [10:29:50]-rw-rw-rw- 1 root      root       4951 Jan  8 14:57 frpc.toml
+102950.930: [10:29:50]-rw-rw-rw- 1 root      root       4208 Sep 19 13:34 frpc.toml-20250919
+102950.930: [10:29:50]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+102950.930: [10:29:50]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+102950.930: [10:29:50]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+102950.930: [10:29:50]drwxr-xr-x 2 root      root       4096 Sep  3 16:42 ssl/
+102957.391: [10:29:57]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# vi frpc.toml
+102957.480: [10:29:57]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+102957.480: [10:29:57]# 日志配置
+102957.480: [10:29:57]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+102957.480: [10:29:57]log.level = "info"
+102957.481: [10:29:57]log.maxDays = 3
+102957.481: [10:29:57]
+102957.481: [10:29:57]# ------172.16.101.190------
+102957.481: [10:29:57]# 普罗米修斯监控
+102957.481: [10:29:57][[proxies]]
+102957.481: [10:29:57]name = "172-16-101-190-prometheus"
+102957.481: [10:29:57]type = "tcp"
+102957.481: [10:29:57]localIP = "172.16.101.190"
+102957.481: [10:29:57]localPort = 3000
+102957.481: [10:29:57]remotePort = 3000
+102957.481: [10:29:57]
+102957.481: [10:29:57]# ------192.168.12.134------
+102957.481: [10:29:57][[proxies]]
+102957.481: [10:29:57]name = "192-168-12-134-OpenAPI"
+102957.481: [10:29:57]type = "tcp"
+102957.481: [10:29:57]localIP = "192.168.12.134"
+102957.481: [10:29:57]localPort = 9999
+102957.481: [10:29:57]remotePort = 9999
+102957.481: [10:29:57]# 134-ssh
+102957.481: [10:29:57][[proxies]]
+102957.481: [10:29:57]name = "192-168-12-134-ssh"
+102957.481: [10:29:57]type = "tcp"
+102957.481: [10:29:57]localIP = "192.168.12.134"
+102957.482: [10:29:57]localPort = 22
+102957.482: [10:29:57]remotePort = 19443
+102957.482: [10:29:57]
+102957.482: [10:29:57]# 平台测试环境
+102957.482: [10:29:57]#[[proxies]]
+102957.482: [10:29:57]#name = "192-168-12-134-platform-test"
+102957.482: [10:29:57]#type = "tcp"
+102957.482: [10:29:57]#localIP = "192.168.12.134"
+102957.482: [10:29:57]#localPort = 80
+102957.482: [10:29:57]#remotePort = 8880
+102957.482: [10:29:57]
+102957.482: [10:29:57]# ------10.50.0.101------
+102957.482: [10:29:57][[proxies]]
+102957.482: [10:29:57]name = "10-50-0-101"
+102957.482: [10:29:57]type = "tcp"
+102957.482: [10:29:57]localIP = "10.50.0.101"
+102957.482: [10:29:57]localPort = 22
+103019.939: [10:30:19]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# head 3 frpc.toml
+103019.949: [10:30:19]head: cannot open '3' for reading: No such file or directory
+103019.949: [10:30:19]==> frpc.toml <==
+103019.949: [10:30:19]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+103019.949: [10:30:19]serverAddr = "118.31.115.234"
+103019.949: [10:30:19]serverPort = 6000
+103019.949: [10:30:19]
+103019.949: [10:30:19]# 日志配置
+103019.949: [10:30:19]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+103019.949: [10:30:19]log.level = "info"
+103019.949: [10:30:19]log.maxDays = 3
+103019.949: [10:30:19]
+103019.949: [10:30:19]# ------172.16.101.190------
+103024.343: [10:30:24]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# 
+103028.293: [10:30:28]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ping 118.31.115.234
+103028.302: [10:30:28]PING 118.31.115.234 (118.31.115.234) 56(84) bytes of data.
+103028.315: [10:30:28]64 bytes from 118.31.115.234: icmp_seq=1 ttl=50 time=18.6 ms
+103029.316: [10:30:29]64 bytes from 118.31.115.234: icmp_seq=2 ttl=50 time=18.3 ms
+103030.084: [10:30:30]^C
+103030.084: [10:30:30]--- 118.31.115.234 ping statistics ---
+103030.084: [10:30:30]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+103030.084: [10:30:30]rtt min/avg/max/mdev = 18.255/18.410/18.565/0.155 ms
+103255.943: [10:32:55]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ll
+103255.959: [10:32:55]total 42828
+103255.959: [10:32:55]drwxr-xr-x 3 klmy_test docker     4096 Feb 10 10:30 ./
+103255.959: [10:32:55]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+103255.959: [10:32:55]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+103255.960: [10:32:55]-rw------- 1 root      root    2511367 Feb  7 23:59 frpc.20260208-000000.log
+103255.960: [10:32:55]-rw------- 1 root      root    5022734 Feb  9 23:59 frpc.20260210-000000.log
+103255.960: [10:32:55]-rw------- 1 root      root    1105709 Feb 10 10:32 frpc.log
+103255.960: [10:32:55]-rw-rw-rw- 1 root      root       4951 Jan  8 14:57 frpc.toml
+103255.960: [10:32:55]-rw-rw-rw- 1 root      root       4208 Sep 19 13:34 frpc.toml-20250919
+103255.960: [10:32:55]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+103255.960: [10:32:55]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+103255.960: [10:32:55]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+103255.960: [10:32:55]drwxr-xr-x 2 root      root       4096 Sep  3 16:42 ssl/
+103257.158: [10:32:57]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# cd ..
+103257.769: [10:32:57]root@suzhouproda101:/opt# ll
+103257.778: [10:32:57]total 12972
+103257.779: [10:32:57]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+103257.779: [10:32:57]drwxr-xr-x 26 root      root       4096 Feb 10 00:00 ../
+103257.779: [10:32:57]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+103257.779: [10:32:57]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+103257.780: [10:32:57]drwxr-xr-x  3 klmy_test docker     4096 Feb 10 10:30 frp_0.63.0_linux_amd64/
+103257.780: [10:32:57]drwxr-xr-x  3 klmy_test docker     4096 Dec 23 11:18 frp_0.63.0_linux_amd64_02/
+103257.780: [10:32:57]drwxr-xr-x  3 klmy_test docker     4096 Dec 26 08:24 frp_0.63.0_linux_amd64_03/
+103257.780: [10:32:57]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+103257.781: [10:32:57]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+103257.781: [10:32:57]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+103257.781: [10:32:57]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+103257.781: [10:32:57]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+103301.370: [10:33:01]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_02/
+103302.075: [10:33:02]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# ll
+103302.090: [10:33:02]total 34364
+103302.090: [10:33:02]drwxr-xr-x 3 klmy_test docker     4096 Dec 23 11:18 ./
+103302.090: [10:33:02]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+103302.091: [10:33:02]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+103302.091: [10:33:02]-rw------- 1 root      root       3254 Sep  3 16:37 frpc.log
+103302.091: [10:33:02]-rw-rw-rw- 1 root      root       1575 Dec 23 11:17 frpc.toml
+103302.091: [10:33:02]-rw-r--r-- 1 root      root       1276 Dec 23 11:16 frpc.toml-20251223
+103302.091: [10:33:02]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+103302.091: [10:33:02]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+103302.091: [10:33:02]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+103302.091: [10:33:02]drwxr-xr-x 2 root      root       4096 Oct 21 11:35 ssl/
+103308.618: [10:33:08]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# head 3 frpc.toml
+103308.635: [10:33:08]head: cannot open '3' for reading: No such file or directory
+103308.635: [10:33:08]==> frpc.toml <==
+103308.636: [10:33:08]# 用于 https://guojiqe.tiangongqs.net/ 的映射，原因是只有该公网IP有未使用的443端口
+103308.636: [10:33:08]serverAddr = "47.102.101.163"
+103308.636: [10:33:08]serverPort = 7000
+103308.636: [10:33:08]
+103308.636: [10:33:08]# 日志配置
+103308.636: [10:33:08]log.to = "./frpc.log"
+103308.636: [10:33:08]log.level = "info"
+103308.636: [10:33:08]log.maxDays = 3
+103308.636: [10:33:08]
+103308.636: [10:33:08]# ------10.70.0.128------
+103410.264: [10:34:10]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# cd ..
+103410.908: [10:34:10]root@suzhouproda101:/opt# ll
+103410.922: [10:34:10]total 12972
+103410.922: [10:34:10]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+103410.922: [10:34:10]drwxr-xr-x 26 root      root       4096 Feb 10 00:00 ../
+103410.922: [10:34:10]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+103410.922: [10:34:10]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+103410.923: [10:34:10]drwxr-xr-x  3 klmy_test docker     4096 Feb 10 10:30 frp_0.63.0_linux_amd64/
+103410.923: [10:34:10]drwxr-xr-x  3 klmy_test docker     4096 Dec 23 11:18 frp_0.63.0_linux_amd64_02/
+103410.923: [10:34:10]drwxr-xr-x  3 klmy_test docker     4096 Dec 26 08:24 frp_0.63.0_linux_amd64_03/
+103410.923: [10:34:10]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+103410.923: [10:34:10]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+103410.923: [10:34:10]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+103410.923: [10:34:10]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+103410.923: [10:34:10]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+103417.588: [10:34:17]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_03/
+103418.279: [10:34:18]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+103418.287: [10:34:18]total 34364
+103418.287: [10:34:18]drwxr-xr-x 3 klmy_test docker     4096 Dec 26 08:24 ./
+103418.287: [10:34:18]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+103418.287: [10:34:18]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+103418.287: [10:34:18]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+103418.287: [10:34:18]-rw-rw-rw- 1 root      root        448 Oct 21 09:36 frpc.toml
+103418.287: [10:34:18]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+103418.287: [10:34:18]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+103418.288: [10:34:18]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+103418.288: [10:34:18]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+103423.441: [10:34:23]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# head 3 frpc.toml 
+103423.441: [10:34:23]head: cannot open '3' for reading: No such file or directory
+103423.441: [10:34:23]==> frpc.toml <==
+103423.442: [10:34:23]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+103423.442: [10:34:23]serverAddr = "139.224.61.203"
+103423.442: [10:34:23]serverPort = 7000
+103423.442: [10:34:23]
+103423.442: [10:34:23]# 日志配置
+103423.442: [10:34:23]log.to = "./frpc.log"
+103423.442: [10:34:23]log.level = "info"
+103423.442: [10:34:23]log.maxDays = 3
+103423.442: [10:34:23]
+103423.443: [10:34:23]# ------10.70.0.128------
+103657.107: [10:36:57]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc
+103657.107: [10:36:57]frpc_02.service  frpc_03.service  frpc.service     
+103658.840: [10:36:58]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc
+103701.222: [10:37:01]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc_02
+103702.590: [10:37:02]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc_03
+103829.155: [10:38:29]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# 
+103829.326: [10:38:29]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# 
+103830.415: [10:38:30]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+103830.425: [10:38:30]total 34364
+103830.426: [10:38:30]drwxr-xr-x 3 klmy_test docker     4096 Dec 26 08:24 ./
+103830.426: [10:38:30]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+103830.426: [10:38:30]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+103830.426: [10:38:30]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+103830.426: [10:38:30]-rw-rw-rw- 1 root      root        448 Oct 21 09:36 frpc.toml
+103830.426: [10:38:30]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+103830.427: [10:38:30]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+103830.427: [10:38:30]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+103830.427: [10:38:30]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+103845.123: [10:38:45]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cd /etc/systemd/system
+103845.123: [10:38:45]system/            system-generators/ 
+103845.331: [10:38:45]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cd /etc/systemd/system
+103845.331: [10:38:45]system/            system-generators/ 
+103847.061: [10:38:47]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cd /etc/systemd/system/
+103847.061: [10:38:47]cloud-final.service.wants/           hibernate.target.wants/              paths.target.wants/                  suspend.target.wants/
+103847.061: [10:38:47]cloud-init.target.wants/             hybrid-sleep.target.wants/           remote-fs.target.wants/              suspend-then-hibernate.target.wants/
+103847.062: [10:38:47]display-manager.service.wants/       mdmonitor.service.wants/             rescue.target.wants/                 sysinit.target.wants/
+103847.062: [10:38:47]emergency.target.wants/              multi-user.target.wants/             sleep.target.wants/                  sysstat.service.wants/
+103847.062: [10:38:47]final.target.wants/                  network-online.target.wants/         sockets.target.wants/                timers.target.wants/
+103847.077: [10:38:47]getty.target.wants/                  oem-config.service.wants/            sshd-keygen@.service.d/              
+103847.077: [10:38:47]graphical.target.wants/              open-vm-tools.service.requires/      ssh.service.requires/                
+103902.769: [10:39:02]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl status frpc
+103902.795: [10:39:02]● frpc.service - FRP Client Service (frpc)
+103902.795: [10:39:02]     Loaded: loaded (/etc/systemd/system/frpc.service; enabled; preset: enabled)
+103902.795: [10:39:02]     Active: active (running) since Tue 2026-02-10 10:36:58 CST; 2min 3s ago
+103902.795: [10:39:02]   Main PID: 3517356 (frpc)
+103902.796: [10:39:02]      Tasks: 8 (limit: 309283)
+103902.796: [10:39:02]     Memory: 4.3M (peak: 5.2M)
+103902.796: [10:39:02]        CPU: 35ms
+103902.796: [10:39:02]     CGroup: /system.slice/frpc.service
+103902.796: [10:39:02]             └─3517356 /opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+103902.796: [10:39:02]
+103902.796: [10:39:02]Feb 10 10:36:58 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103912.504: [10:39:12]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cat /etc/systemd/system/frpc.service 
+103912.516: [10:39:12][Unit]
+103912.516: [10:39:12]Description=FRP Client Service (frpc)
+103912.516: [10:39:12]After=network.target
+103912.516: [10:39:12]
+103912.516: [10:39:12][Service]
+103912.516: [10:39:12]Type=simple
+103912.516: [10:39:12]User=root
+103912.516: [10:39:12]Restart=on-failure
+103912.516: [10:39:12]RestartSec=5s
+103912.516: [10:39:12]ExecStart=/opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+103912.516: [10:39:12]ExecReload=/bin/kill -HUP $MAINPID
+103912.516: [10:39:12]LimitNOFILE=1048576
+103912.516: [10:39:12]
+103912.516: [10:39:12][Install]
+103912.517: [10:39:12]WantedBy=multi-user.target
+103927.161: [10:39:27]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# journalctl -u frpc.service 
+103927.312: [10:39:27]Dec 09 11:19:56 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+103927.312: [10:39:27]Dec 09 11:19:56 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+103927.313: [10:39:27]Dec 09 11:19:56 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+103927.313: [10:39:27]Dec 09 11:19:56 suzhouproda101 systemd[1]: frpc.service: Consumed 3h 5.941s CPU time, 54.1M memory peak, 0B memory swap peak.
+103927.314: [10:39:27]Dec 09 11:19:56 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.314: [10:39:27]Jan 08 14:57:40 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+103927.314: [10:39:27]Jan 08 14:57:40 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+103927.314: [10:39:27]Jan 08 14:57:40 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+103927.315: [10:39:27]Jan 08 14:57:40 suzhouproda101 systemd[1]: frpc.service: Consumed 1h 18min 32.667s CPU time, 45.1M memory peak, 0B memory swap peak.
+103927.315: [10:39:27]Jan 08 14:57:40 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.315: [10:39:27]Jan 28 10:08:27 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+103927.316: [10:39:27]Jan 28 10:08:27 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+103927.316: [10:39:27]Jan 28 10:08:27 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+103927.316: [10:39:27]Jan 28 10:08:27 suzhouproda101 systemd[1]: frpc.service: Consumed 17min 9.094s CPU time.
+103927.316: [10:39:27]-- Boot 4397852399d54d0a9fcde738f8a60cac --
+103927.317: [10:39:27]Jan 29 16:28:02 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.317: [10:39:27]Jan 29 16:28:03 suzhouproda101 frpc[2371]: login to the server failed: dial tcp 118.31.115.234:6000: connect: network is unreachable. With loginFailExit enabled, n>
+103927.317: [10:39:27]Jan 29 16:28:03 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103927.329: [10:39:27]Jan 29 16:28:03 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+103927.329: [10:39:27]Jan 29 16:28:08 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 1.
+103927.329: [10:39:27]Jan 29 16:28:08 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.329: [10:39:27]Jan 29 16:28:18 suzhouproda101 frpc[2677]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+103927.330: [10:39:27]Jan 29 16:28:18 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103927.330: [10:39:27]Jan 29 16:28:18 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+103927.330: [10:39:27]Jan 29 16:28:23 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 2.
+103927.330: [10:39:27]Jan 29 16:28:23 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.330: [10:39:27]Jan 29 16:28:33 suzhouproda101 frpc[2723]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+103927.330: [10:39:27]Jan 29 16:28:33 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103927.330: [10:39:27]Jan 29 16:28:33 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+103927.330: [10:39:27]Jan 29 16:28:38 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 3.
+103927.331: [10:39:27]Jan 29 16:28:38 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.331: [10:39:27]Jan 29 16:28:48 suzhouproda101 frpc[2763]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+103927.331: [10:39:27]Jan 29 16:28:48 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103927.331: [10:39:27]Jan 29 16:28:48 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+103927.340: [10:39:27]Jan 29 16:28:53 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 4.
+103927.340: [10:39:27]Jan 29 16:28:53 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.341: [10:39:27]Jan 29 16:29:03 suzhouproda101 frpc[2794]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+103927.341: [10:39:27]Jan 29 16:29:03 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103927.341: [10:39:27]Jan 29 16:29:03 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+103927.341: [10:39:27]Jan 29 16:29:09 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 5.
+103927.341: [10:39:27]Jan 29 16:29:09 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.341: [10:39:27]Jan 29 16:29:12 suzhouproda101 frpc[2836]: login to the server failed: dial tcp 118.31.115.234:6000: connect: no route to host. With loginFailExit enabled, no addi>
+103927.341: [10:39:27]Jan 29 16:29:12 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103927.341: [10:39:27]Jan 29 16:29:12 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+103927.342: [10:39:27]Jan 29 16:29:17 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 6.
+103927.342: [10:39:27]Jan 29 16:29:17 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+103927.342: [10:39:27]Jan 29 16:29:20 suzhouproda101 frpc[2873]: login to the server failed: dial tcp 118.31.115.234:6000: connect: no route to host. With loginFailExit enabled, no addi>
+103927.342: [10:39:27]Jan 29 16:29:20 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+103955.270: [10:39:55]...skipping...
+103955.283: [10:39:55]
+104000.597: [10:40:00]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# journalctl -u frpc.service  
+104000.632: [10:40:00]Dec 09 11:19:56 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+104000.632: [10:40:00]Dec 09 11:19:56 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+104000.633: [10:40:00]Dec 09 11:19:56 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+104000.633: [10:40:00]Dec 09 11:19:56 suzhouproda101 systemd[1]: frpc.service: Consumed 3h 5.941s CPU time, 54.1M memory peak, 0B memory swap peak.
+104000.633: [10:40:00]Dec 09 11:19:56 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.633: [10:40:00]Jan 08 14:57:40 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+104000.633: [10:40:00]Jan 08 14:57:40 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+104000.633: [10:40:00]Jan 08 14:57:40 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+104000.633: [10:40:00]Jan 08 14:57:40 suzhouproda101 systemd[1]: frpc.service: Consumed 1h 18min 32.667s CPU time, 45.1M memory peak, 0B memory swap peak.
+104000.633: [10:40:00]Jan 08 14:57:40 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.633: [10:40:00]Jan 28 10:08:27 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+104000.634: [10:40:00]Jan 28 10:08:27 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+104000.634: [10:40:00]Jan 28 10:08:27 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+104000.634: [10:40:00]Jan 28 10:08:27 suzhouproda101 systemd[1]: frpc.service: Consumed 17min 9.094s CPU time.
+104000.634: [10:40:00]-- Boot 4397852399d54d0a9fcde738f8a60cac --
+104000.634: [10:40:00]Jan 29 16:28:02 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.634: [10:40:00]Jan 29 16:28:03 suzhouproda101 frpc[2371]: login to the server failed: dial tcp 118.31.115.234:6000: connect: network is unreachable. With loginFailExit enabled, n>
+104000.634: [10:40:00]Jan 29 16:28:03 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104000.634: [10:40:00]Jan 29 16:28:03 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104000.634: [10:40:00]Jan 29 16:28:08 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 1.
+104000.635: [10:40:00]Jan 29 16:28:08 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.635: [10:40:00]Jan 29 16:28:18 suzhouproda101 frpc[2677]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+104000.635: [10:40:00]Jan 29 16:28:18 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104000.635: [10:40:00]Jan 29 16:28:18 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104000.635: [10:40:00]Jan 29 16:28:23 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 2.
+104000.635: [10:40:00]Jan 29 16:28:23 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.635: [10:40:00]Jan 29 16:28:33 suzhouproda101 frpc[2723]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+104000.636: [10:40:00]Jan 29 16:28:33 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104000.636: [10:40:00]Jan 29 16:28:33 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104000.636: [10:40:00]Jan 29 16:28:38 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 3.
+104000.636: [10:40:00]Jan 29 16:28:38 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.636: [10:40:00]Jan 29 16:28:48 suzhouproda101 frpc[2763]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+104000.636: [10:40:00]Jan 29 16:28:48 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104000.636: [10:40:00]Jan 29 16:28:48 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104000.644: [10:40:00]Jan 29 16:28:53 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 4.
+104000.644: [10:40:00]Jan 29 16:28:53 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.644: [10:40:00]Jan 29 16:29:03 suzhouproda101 frpc[2794]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retries>
+104000.644: [10:40:00]Jan 29 16:29:03 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104000.644: [10:40:00]Jan 29 16:29:03 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104000.644: [10:40:00]Jan 29 16:29:09 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 5.
+104000.645: [10:40:00]Jan 29 16:29:09 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.645: [10:40:00]Jan 29 16:29:12 suzhouproda101 frpc[2836]: login to the server failed: dial tcp 118.31.115.234:6000: connect: no route to host. With loginFailExit enabled, no addi>
+104000.645: [10:40:00]Jan 29 16:29:12 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104000.645: [10:40:00]Jan 29 16:29:12 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104000.645: [10:40:00]Jan 29 16:29:17 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 6.
+104000.645: [10:40:00]Jan 29 16:29:17 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104000.646: [10:40:00]Jan 29 16:29:20 suzhouproda101 frpc[2873]: login to the server failed: dial tcp 118.31.115.234:6000: connect: no route to host. With loginFailExit enabled, no addi>
+104000.646: [10:40:00]Jan 29 16:29:20 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.046: [10:41:09]...skipping...
+104109.047: [10:41:09]Feb 10 10:30:39 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.047: [10:41:09]Feb 10 10:30:39 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.047: [10:41:09]Feb 10 10:30:44 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27484.
+104109.047: [10:41:09]Feb 10 10:30:44 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.048: [10:41:09]Feb 10 10:30:54 suzhouproda101 frpc[3496813]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.048: [10:41:09]Feb 10 10:30:54 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.048: [10:41:09]Feb 10 10:30:54 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.049: [10:41:09]Feb 10 10:30:59 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27485.
+104109.049: [10:41:09]Feb 10 10:30:59 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.050: [10:41:09]Feb 10 10:31:09 suzhouproda101 frpc[3497627]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.050: [10:41:09]Feb 10 10:31:09 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.050: [10:41:09]Feb 10 10:31:09 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.051: [10:41:09]Feb 10 10:31:14 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27486.
+104109.051: [10:41:09]Feb 10 10:31:14 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.052: [10:41:09]Feb 10 10:31:24 suzhouproda101 frpc[3499121]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.052: [10:41:09]Feb 10 10:31:24 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.052: [10:41:09]Feb 10 10:31:24 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.053: [10:41:09]Feb 10 10:31:30 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27487.
+104109.053: [10:41:09]Feb 10 10:31:30 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.053: [10:41:09]Feb 10 10:31:40 suzhouproda101 frpc[3499566]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.054: [10:41:09]Feb 10 10:31:40 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.054: [10:41:09]Feb 10 10:31:40 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.054: [10:41:09]Feb 10 10:31:45 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27488.
+104109.054: [10:41:09]Feb 10 10:31:45 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.055: [10:41:09]Feb 10 10:31:55 suzhouproda101 frpc[3500279]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.055: [10:41:09]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.056: [10:41:09]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.056: [10:41:09]Feb 10 10:32:00 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27489.
+104109.056: [10:41:09]Feb 10 10:32:00 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.057: [10:41:09]Feb 10 10:32:10 suzhouproda101 frpc[3501246]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.057: [10:41:09]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.057: [10:41:09]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.057: [10:41:09]Feb 10 10:32:15 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27490.
+104109.058: [10:41:09]Feb 10 10:32:15 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.058: [10:41:09]Feb 10 10:32:25 suzhouproda101 frpc[3502180]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.058: [10:41:09]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.059: [10:41:09]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.059: [10:41:09]Feb 10 10:32:31 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27491.
+104109.059: [10:41:09]Feb 10 10:32:31 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.060: [10:41:09]Feb 10 10:32:41 suzhouproda101 frpc[3503190]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104109.060: [10:41:09]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104109.060: [10:41:09]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104109.060: [10:41:09]Feb 10 10:32:46 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27492.
+104109.060: [10:41:09]Feb 10 10:32:46 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104109.060: [10:41:09]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+104109.060: [10:41:09]Feb 10 10:36:58 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+104109.061: [10:41:09]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+104109.451: [10:41:09]Feb 10 10:36:58 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104139.672: [10:41:39]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# journalctl --disk-usage
+104139.687: [10:41:39]Archived and active journals take up 2.5G in the file system.
+104203.539: [10:42:03]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll /var/log/journal/
+104203.557: [10:42:03]total 28
+104203.557: [10:42:03]drwxr-sr-x+  3 root systemd-journal  4096 Jun  8  2025 ./
+104203.558: [10:42:03]drwxrwxr-x  16 root syslog           4096 Feb  8 00:00 ../
+104203.558: [10:42:03]drwxr-sr-x+  2 root systemd-journal 20480 Feb 10 04:41 e1e2eaa3690f4525ac16de589021caac/
+104218.869: [10:42:18]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cd /var/log/journal/e1e2eaa3690f4525ac16de589021caac/
+104219.601: [10:42:19]root@suzhouproda101:/var/log/journal/e1e2eaa3690f4525ac16de589021caac# ll
+104219.622: [10:42:19]total 2649156
+104219.622: [10:42:19]drwxr-sr-x+ 2 root systemd-journal    20480 Feb 10 04:41  ./
+104219.622: [10:42:19]drwxr-sr-x+ 3 root systemd-journal     4096 Jun  8  2025  ../
+104219.622: [10:42:19]-rw-r-----+ 1 root systemd-journal 16777216 Feb  2 10:12 'system@23b2d9ee7fb449eeabdf0786facc5db3-00000000006ed1a7-00064982a20d87c7.journal'
+104219.622: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  2 15:45 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000006f0a76-000649cddaaefeb4.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  2 21:29 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000070675f-000649d281670878.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  3 03:14 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000071c64f-000649d7516515db.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  3 08:58 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000073252a-000649dc21a3afda.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  3 14:42 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000007483f5-000649e0efc879ee.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  3 20:27 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000075e2c0-000649e5bf279d43.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  4 02:11 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000007741a6-000649ea8f9b8908.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  4 07:55 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000078a048-000649ef5cab2121.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  4 16:08 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000079ff05-000649f42c8f9560.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  5 01:10 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000007b63d0-000649fb0e2765ad.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  5 10:12 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000007ccad6-00064a02a280f66e.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  5 19:09 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000007e3194-00064a0a33a4cf97.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  6 04:04 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000007f95b8-00064a11b3dea52d.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Feb  6 11:38 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000080f838-00064a192dfc0fd8.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  6 20:31 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000008225ca-00064a1f86e1e88d.journal'
+104219.623: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  7 05:27 'system@6971129ce9fa47b6bf08bf63de3e953e-0000000000838795-00064a26f914c13a.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  7 14:23 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000084ea14-00064a2e7356d21e.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  7 23:18 'system@6971129ce9fa47b6bf08bf63de3e953e-0000000000864c97-00064a35f04f0746.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  8 08:13 'system@6971129ce9fa47b6bf08bf63de3e953e-000000000087af2c-00064a3d6b14f486.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  8 17:09 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000008911a5-00064a44e5fef86c.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  9 02:05 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000008a7422-00064a4c6168db7f.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  9 11:00 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000008bd6b6-00064a53dd82015f.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb  9 19:50 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000008d3953-00064a5b5765082b.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Feb 10 04:41 'system@6971129ce9fa47b6bf08bf63de3e953e-00000000008e9c89-00064a62be2f9b0c.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Nov 18 14:05 'system@abadc0d5c80248d89cdd54a5634bc2c8-0000000000538074-000643531b298682.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Nov 23 23:26 'system@abadc0d5c80248d89cdd54a5634bc2c8-0000000000547efa-000643d8403ac69f.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Nov 29 14:15 'system@abadc0d5c80248d89cdd54a5634bc2c8-0000000000557d7e-00064444ab5a8466.journal'
+104219.624: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec  1 08:39 'system@abadc0d5c80248d89cdd54a5634bc2c8-0000000000569559-000644b5ac3319e9.journal'
+104219.625: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec  2 13:52 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000057b013-000644d9360585f1.journal'
+104219.625: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec  2 16:59 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000058bb04-000644f1b30cd43a.journal'
+104219.625: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec  2 20:08 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000059e963-000644f4514ec74f.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec  6 15:50 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000005b171b-000644f6f4998211.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec  9 08:50 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000005c2227-00064543d0325cf2.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 10 11:14 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000005d2407-0006457a4a9ac0ed.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Dec 10 11:33 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000005e39c9-000645906bbf9331.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 10 16:40 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000005f7b2e-00064590afea4ca3.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 13 11:52 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000060a632-00064594fbc9f0b1.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 16 13:25 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000061a254-000645cd4f954bec.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 18 23:55 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000062b815-0006460af56f247c.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 21 23:25 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000063c03b-0006463bfd9a8f7e.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 23 17:50 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000064c0fa-00064677e9fd8be9.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 26 21:08 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000065cd69-0006469b77c1c82f.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 29 06:48 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000066d798-000646da97d8d53b.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Dec 31 07:54 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000067e3ab-0006470aed75e74e.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Dec 31 08:14 'system@abadc0d5c80248d89cdd54a5634bc2c8-000000000068d947-0006473414ffc81c.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 58720256 Dec 31 08:32 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000006a1a7c-000647345a77b46f.journal'
+104219.626: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Jan  3 17:55 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000006b5c73-000647349c54b231.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Jan  5 10:26 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000006c6f66-00064778d1c76d08.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal 50331648 Jan  8 15:03 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000006d7222-0006479ac81e1744.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal 25165824 Jan 29 16:27 'system@abadc0d5c80248d89cdd54a5634bc2c8-00000000006e7b36-000647db01759f66.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal 41943040 Feb 10 10:42  system.journal
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Feb  5 19:09 'user-1000@6971129ce9fa47b6bf08bf63de3e953e-00000000007ec0fe-00064a0d392788b1.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Feb  9 11:00 'user-1000@6971129ce9fa47b6bf08bf63de3e953e-00000000008d0ecd-00064a5a73332fa7.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Feb  9 19:50 'user-1000@6971129ce9fa47b6bf08bf63de3e953e-00000000008e0431-00064a5f99a676ee.journal'
+104219.627: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 11 23:14 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-0000000000529c4a-0006431f97b77440.journal'
+104219.628: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 18 14:05 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000053a8ba-0006435bfbf82948.journal'
+104219.628: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 23 23:26 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000054c93b-000643e8e5e47a62.journal'
+104219.628: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 29 14:15 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000055b3e8-0006444d8cfafd52.journal'
+104219.628: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  1 08:39 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-0000000000571ed8-000644c6557c6737.journal'
+104219.628: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  2 13:52 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000057b2c7-000644da76e74e70.journal'
+104219.629: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  6 15:50 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000005b7790-00064502b9bd1c35.journal'
+104219.629: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  9 08:50 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000005c9338-000645533f68b835.journal'
+104219.629: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 10 11:14 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000005d24e9-0006457b823e8643.journal'
+104219.629: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 13 11:52 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000061155e-000645a3c514542e.journal'
+104219.629: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 16 13:25 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-0000000000623c4c-000645e02955093b.journal'
+104219.629: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 18 23:55 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000062da9b-0006460c732575d0.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 21 23:25 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-0000000000640bdf-00064644d06b8c32.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 23 17:50 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-0000000000651f39-0006468134ac4147.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 26 21:08 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000065f4fe-000646a977820f25.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 29 06:48 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000066fc56-000646e5dbc2c432.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 31 07:54 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-000000000067e90a-0006470e1e989258.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Jan  3 17:55 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000006b7e5a-00064736616e6046.journal'
+104219.630: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Jan  5 10:26 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000006cd388-00064786e719fc5b.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Jan  8 15:03 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000006d76cb-0006479b0884e348.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Feb  2 15:45 'user-1000@abadc0d5c80248d89cdd54a5634bc2c8-00000000006e8097-000647eb8e307f0f.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Feb 10 04:43  user-1000.journal
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 11 23:14 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000052f0d8-0006432575c0f05b.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 18 14:05 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000053b323-00064361da01a541.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 23 23:26 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-0000000000548106-000643daa2830f40.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 29 14:15 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000055b817-000644536b04793d.journal'
+104219.631: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  1 08:39 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000056a430-000644b8121afc51.journal'
+104219.632: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  2 13:52 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000057dc80-000644e054f0ca34.journal'
+104219.632: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  2 20:08 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000059f5bb-000644f4765bb12e.journal'
+104219.632: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  6 15:50 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000005b93c7-0006450897c69838.journal'
+104219.632: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec  9 08:50 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000005c26d2-00064544fc074d31.journal'
+104219.632: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 10 11:14 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000005d2a34-000645816048023b.journal'
+104219.632: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 13 11:52 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000060aef1-0006459581b2e938.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 16 13:25 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000061f823-000645d1e5f39e32.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 18 23:55 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000062db1b-0006460e4a34532f.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 21 23:25 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000064399d-0006464aae750833.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 23 17:50 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000006530a0-0006468712b5bd2a.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 26 21:08 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000066267b-000646af558b8b42.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 29 06:48 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-0000000000673703-000646ebb9cc403a.journal'
+104219.633: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Dec 31 07:54 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-000000000067f28a-00064713fca20e35.journal'
+104219.634: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Jan  3 17:55 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000006b85be-0006473c3f77dc37.journal'
+104219.634: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Jan  5 10:26 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000006cfdde-0006478cc5237854.journal'
+104219.634: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Jan  8 15:03 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000006dd87e-000647a0e68e5f4e.journal'
+104219.634: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Feb  2 15:45 'user-1001@abadc0d5c80248d89cdd54a5634bc2c8-00000000006e7d8e-000647dd4acf1424.journal'
+104219.634: [10:42:19]-rw-r-----+ 1 root systemd-journal  8388608 Nov 29 14:15 'user-66001@abadc0d5c80248d89cdd54a5634bc2c8-000000000056345a-0006448904a16522.journal'
+104221.422: [10:42:21]root@suzhouproda101:/var/log/journal/e1e2eaa3690f4525ac16de589021caac# cd ..
+104222.021: [10:42:22]root@suzhouproda101:/var/log/journal# ll
+104222.036: [10:42:22]total 28
+104222.036: [10:42:22]drwxr-sr-x+  3 root systemd-journal  4096 Jun  8  2025 ./
+104222.036: [10:42:22]drwxrwxr-x  16 root syslog           4096 Feb  8 00:00 ../
+104222.036: [10:42:22]drwxr-sr-x+  2 root systemd-journal 20480 Feb 10 04:41 e1e2eaa3690f4525ac16de589021caac/
+104223.488: [10:42:23]root@suzhouproda101:/var/log/journal# du -sh *
+104223.504: [10:42:23]2.6G    e1e2eaa3690f4525ac16de589021caac
+104331.217: [10:43:31]root@suzhouproda101:/var/log/journal# journalctl --since -24h -u frpc
+104331.258: [10:43:31]Feb 09 10:43:37 suzhouproda101 frpc[2984235]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.258: [10:43:31]Feb 09 10:43:37 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.258: [10:43:31]Feb 09 10:43:37 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.259: [10:43:31]Feb 09 10:43:42 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21866.
+104331.259: [10:43:31]Feb 09 10:43:42 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.259: [10:43:31]Feb 09 10:43:52 suzhouproda101 frpc[2984882]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.259: [10:43:31]Feb 09 10:43:52 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.259: [10:43:31]Feb 09 10:43:52 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.259: [10:43:31]Feb 09 10:43:57 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21867.
+104331.259: [10:43:31]Feb 09 10:43:57 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.260: [10:43:31]Feb 09 10:44:07 suzhouproda101 frpc[2985325]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.260: [10:43:31]Feb 09 10:44:07 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.260: [10:43:31]Feb 09 10:44:07 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.260: [10:43:31]Feb 09 10:44:12 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21868.
+104331.260: [10:43:31]Feb 09 10:44:12 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.260: [10:43:31]Feb 09 10:44:22 suzhouproda101 frpc[2987069]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.260: [10:43:31]Feb 09 10:44:22 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.261: [10:43:31]Feb 09 10:44:22 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.261: [10:43:31]Feb 09 10:44:27 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21869.
+104331.261: [10:43:31]Feb 09 10:44:27 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.261: [10:43:31]Feb 09 10:44:37 suzhouproda101 frpc[2987573]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.262: [10:43:31]Feb 09 10:44:37 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.271: [10:43:31]Feb 09 10:44:37 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.271: [10:43:31]Feb 09 10:44:43 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21870.
+104331.271: [10:43:31]Feb 09 10:44:43 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.271: [10:43:31]Feb 09 10:44:53 suzhouproda101 frpc[2988156]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.271: [10:43:31]Feb 09 10:44:53 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.271: [10:43:31]Feb 09 10:44:53 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.271: [10:43:31]Feb 09 10:44:58 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21871.
+104331.272: [10:43:31]Feb 09 10:44:58 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.284: [10:43:31]Feb 09 10:45:08 suzhouproda101 frpc[2988682]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.284: [10:43:31]Feb 09 10:45:08 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.284: [10:43:31]Feb 09 10:45:08 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.284: [10:43:31]Feb 09 10:45:13 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21872.
+104331.284: [10:43:31]Feb 09 10:45:13 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.284: [10:43:31]Feb 09 10:45:23 suzhouproda101 frpc[2989975]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.284: [10:43:31]Feb 09 10:45:23 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.285: [10:43:31]Feb 09 10:45:23 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.285: [10:43:31]Feb 09 10:45:28 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21873.
+104331.285: [10:43:31]Feb 09 10:45:28 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.285: [10:43:31]Feb 09 10:45:38 suzhouproda101 frpc[2990993]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.285: [10:43:31]Feb 09 10:45:38 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.285: [10:43:31]Feb 09 10:45:38 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104331.286: [10:43:31]Feb 09 10:45:44 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 21874.
+104331.286: [10:43:31]Feb 09 10:45:44 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104331.286: [10:43:31]Feb 09 10:45:54 suzhouproda101 frpc[2991469]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104331.286: [10:43:31]Feb 09 10:45:54 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104331.286: [10:43:31]Feb 09 10:45:54 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.670: [10:43:37]...skipping...
+104337.671: [10:43:37]Feb 10 10:30:39 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.671: [10:43:37]Feb 10 10:30:39 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.671: [10:43:37]Feb 10 10:30:44 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27484.
+104337.671: [10:43:37]Feb 10 10:30:44 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.672: [10:43:37]Feb 10 10:30:54 suzhouproda101 frpc[3496813]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.672: [10:43:37]Feb 10 10:30:54 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.672: [10:43:37]Feb 10 10:30:54 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.673: [10:43:37]Feb 10 10:30:59 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27485.
+104337.673: [10:43:37]Feb 10 10:30:59 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.674: [10:43:37]Feb 10 10:31:09 suzhouproda101 frpc[3497627]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.674: [10:43:37]Feb 10 10:31:09 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.674: [10:43:37]Feb 10 10:31:09 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.675: [10:43:37]Feb 10 10:31:14 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27486.
+104337.675: [10:43:37]Feb 10 10:31:14 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.675: [10:43:37]Feb 10 10:31:24 suzhouproda101 frpc[3499121]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.675: [10:43:37]Feb 10 10:31:24 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.676: [10:43:37]Feb 10 10:31:24 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.676: [10:43:37]Feb 10 10:31:30 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27487.
+104337.676: [10:43:37]Feb 10 10:31:30 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.677: [10:43:37]Feb 10 10:31:40 suzhouproda101 frpc[3499566]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.677: [10:43:37]Feb 10 10:31:40 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.677: [10:43:37]Feb 10 10:31:40 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.677: [10:43:37]Feb 10 10:31:45 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27488.
+104337.678: [10:43:37]Feb 10 10:31:45 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.678: [10:43:37]Feb 10 10:31:55 suzhouproda101 frpc[3500279]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.679: [10:43:37]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.679: [10:43:37]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.679: [10:43:37]Feb 10 10:32:00 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27489.
+104337.679: [10:43:37]Feb 10 10:32:00 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.680: [10:43:37]Feb 10 10:32:10 suzhouproda101 frpc[3501246]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.680: [10:43:37]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.680: [10:43:37]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.681: [10:43:37]Feb 10 10:32:15 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27490.
+104337.681: [10:43:37]Feb 10 10:32:15 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.681: [10:43:37]Feb 10 10:32:25 suzhouproda101 frpc[3502180]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.682: [10:43:37]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.682: [10:43:37]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.682: [10:43:37]Feb 10 10:32:31 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27491.
+104337.682: [10:43:37]Feb 10 10:32:31 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.683: [10:43:37]Feb 10 10:32:41 suzhouproda101 frpc[3503190]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104337.683: [10:43:37]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104337.683: [10:43:37]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104337.684: [10:43:37]Feb 10 10:32:46 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27492.
+104337.684: [10:43:37]Feb 10 10:32:46 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104337.684: [10:43:37]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+104337.684: [10:43:37]Feb 10 10:36:58 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+104337.684: [10:43:37]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+104337.701: [10:43:37]Feb 10 10:36:58 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.244: [10:43:42]...skipping...
+104342.244: [10:43:42]Feb 10 10:30:39 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.244: [10:43:42]Feb 10 10:30:39 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.244: [10:43:42]Feb 10 10:30:44 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27484.
+104342.244: [10:43:42]Feb 10 10:30:44 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.245: [10:43:42]Feb 10 10:30:54 suzhouproda101 frpc[3496813]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.245: [10:43:42]Feb 10 10:30:54 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.245: [10:43:42]Feb 10 10:30:54 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.245: [10:43:42]Feb 10 10:30:59 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27485.
+104342.245: [10:43:42]Feb 10 10:30:59 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.246: [10:43:42]Feb 10 10:31:09 suzhouproda101 frpc[3497627]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.246: [10:43:42]Feb 10 10:31:09 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.246: [10:43:42]Feb 10 10:31:09 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.246: [10:43:42]Feb 10 10:31:14 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27486.
+104342.247: [10:43:42]Feb 10 10:31:14 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.247: [10:43:42]Feb 10 10:31:24 suzhouproda101 frpc[3499121]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.248: [10:43:42]Feb 10 10:31:24 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.248: [10:43:42]Feb 10 10:31:24 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.248: [10:43:42]Feb 10 10:31:30 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27487.
+104342.248: [10:43:42]Feb 10 10:31:30 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.249: [10:43:42]Feb 10 10:31:40 suzhouproda101 frpc[3499566]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.249: [10:43:42]Feb 10 10:31:40 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.250: [10:43:42]Feb 10 10:31:40 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.250: [10:43:42]Feb 10 10:31:45 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27488.
+104342.250: [10:43:42]Feb 10 10:31:45 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.250: [10:43:42]Feb 10 10:31:55 suzhouproda101 frpc[3500279]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.251: [10:43:42]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.251: [10:43:42]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.251: [10:43:42]Feb 10 10:32:00 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27489.
+104342.252: [10:43:42]Feb 10 10:32:00 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.252: [10:43:42]Feb 10 10:32:10 suzhouproda101 frpc[3501246]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.252: [10:43:42]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.253: [10:43:42]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.253: [10:43:42]Feb 10 10:32:15 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27490.
+104342.253: [10:43:42]Feb 10 10:32:15 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.254: [10:43:42]Feb 10 10:32:25 suzhouproda101 frpc[3502180]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.254: [10:43:42]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.254: [10:43:42]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.255: [10:43:42]Feb 10 10:32:31 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27491.
+104342.255: [10:43:42]Feb 10 10:32:31 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.255: [10:43:42]Feb 10 10:32:41 suzhouproda101 frpc[3503190]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+104342.256: [10:43:42]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+104342.256: [10:43:42]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+104342.256: [10:43:42]Feb 10 10:32:46 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27492.
+104342.256: [10:43:42]Feb 10 10:32:46 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104342.256: [10:43:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+104342.257: [10:43:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+104342.257: [10:43:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+104342.257: [10:43:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+104346.022: [10:43:46]root@suzhouproda101:/var/log/journal# journalctl --since -24h -u frpc_02
+104346.155: [10:43:46]Feb 09 10:43:52 suzhouproda101 frpc[2984887]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.156: [10:43:46]Feb 09 10:43:52 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.156: [10:43:46]Feb 09 10:43:52 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.156: [10:43:46]Feb 09 10:43:57 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21864.
+104346.157: [10:43:46]Feb 09 10:43:57 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.157: [10:43:46]Feb 09 10:44:07 suzhouproda101 frpc[2985327]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.158: [10:43:46]Feb 09 10:44:07 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.158: [10:43:46]Feb 09 10:44:07 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.158: [10:43:46]Feb 09 10:44:12 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21865.
+104346.158: [10:43:46]Feb 09 10:44:12 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.159: [10:43:46]Feb 09 10:44:22 suzhouproda101 frpc[2987074]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.159: [10:43:46]Feb 09 10:44:22 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.159: [10:43:46]Feb 09 10:44:22 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.160: [10:43:46]Feb 09 10:44:27 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21866.
+104346.160: [10:43:46]Feb 09 10:44:27 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.160: [10:43:46]Feb 09 10:44:37 suzhouproda101 frpc[2987582]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.161: [10:43:46]Feb 09 10:44:37 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.161: [10:43:46]Feb 09 10:44:37 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.161: [10:43:46]Feb 09 10:44:43 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21867.
+104346.161: [10:43:46]Feb 09 10:44:43 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.162: [10:43:46]Feb 09 10:44:53 suzhouproda101 frpc[2988162]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.162: [10:43:46]Feb 09 10:44:53 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.163: [10:43:46]Feb 09 10:44:53 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.163: [10:43:46]Feb 09 10:44:58 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21868.
+104346.163: [10:43:46]Feb 09 10:44:58 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.164: [10:43:46]Feb 09 10:45:08 suzhouproda101 frpc[2988687]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.164: [10:43:46]Feb 09 10:45:08 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.164: [10:43:46]Feb 09 10:45:08 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.165: [10:43:46]Feb 09 10:45:13 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21869.
+104346.165: [10:43:46]Feb 09 10:45:13 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.176: [10:43:46]Feb 09 10:45:23 suzhouproda101 frpc[2989980]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.176: [10:43:46]Feb 09 10:45:23 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.176: [10:43:46]Feb 09 10:45:23 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.176: [10:43:46]Feb 09 10:45:28 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21870.
+104346.176: [10:43:46]Feb 09 10:45:28 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.176: [10:43:46]Feb 09 10:45:38 suzhouproda101 frpc[2990998]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.177: [10:43:46]Feb 09 10:45:38 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.177: [10:43:46]Feb 09 10:45:38 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.177: [10:43:46]Feb 09 10:45:44 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21871.
+104346.177: [10:43:46]Feb 09 10:45:44 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.177: [10:43:46]Feb 09 10:45:54 suzhouproda101 frpc[2991474]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.177: [10:43:46]Feb 09 10:45:54 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.177: [10:43:46]Feb 09 10:45:54 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104346.178: [10:43:46]Feb 09 10:45:59 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 21872.
+104346.178: [10:43:46]Feb 09 10:45:59 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104346.178: [10:43:46]Feb 09 10:46:09 suzhouproda101 frpc[2992083]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104346.178: [10:43:46]Feb 09 10:46:09 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104346.178: [10:43:46]Feb 09 10:46:09 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.438: [10:43:52]...skipping...
+104352.438: [10:43:52]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.438: [10:43:52]Feb 10 10:31:55 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.439: [10:43:52]Feb 10 10:32:00 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27486.
+104352.439: [10:43:52]Feb 10 10:32:00 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.439: [10:43:52]Feb 10 10:32:10 suzhouproda101 frpc[3501249]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.439: [10:43:52]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.439: [10:43:52]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.439: [10:43:52]Feb 10 10:32:15 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27487.
+104352.439: [10:43:52]Feb 10 10:32:15 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.440: [10:43:52]Feb 10 10:32:25 suzhouproda101 frpc[3502183]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.440: [10:43:52]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.440: [10:43:52]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.440: [10:43:52]Feb 10 10:32:31 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27488.
+104352.440: [10:43:52]Feb 10 10:32:31 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.441: [10:43:52]Feb 10 10:32:41 suzhouproda101 frpc[3503193]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.441: [10:43:52]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.441: [10:43:52]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.441: [10:43:52]Feb 10 10:32:46 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27489.
+104352.441: [10:43:52]Feb 10 10:32:46 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.442: [10:43:52]Feb 10 10:32:56 suzhouproda101 frpc[3503725]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.442: [10:43:52]Feb 10 10:32:56 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.443: [10:43:52]Feb 10 10:32:56 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.443: [10:43:52]Feb 10 10:33:01 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27490.
+104352.443: [10:43:52]Feb 10 10:33:01 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.443: [10:43:52]Feb 10 10:33:11 suzhouproda101 frpc[3504720]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.444: [10:43:52]Feb 10 10:33:11 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.444: [10:43:52]Feb 10 10:33:11 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.444: [10:43:52]Feb 10 10:33:16 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27491.
+104352.444: [10:43:52]Feb 10 10:33:16 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.445: [10:43:52]Feb 10 10:33:26 suzhouproda101 frpc[3505606]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.445: [10:43:52]Feb 10 10:33:26 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.445: [10:43:52]Feb 10 10:33:26 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.446: [10:43:52]Feb 10 10:33:32 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27492.
+104352.446: [10:43:52]Feb 10 10:33:32 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.447: [10:43:52]Feb 10 10:33:42 suzhouproda101 frpc[3506704]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.447: [10:43:52]Feb 10 10:33:42 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.447: [10:43:52]Feb 10 10:33:42 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.459: [10:43:52]Feb 10 10:33:47 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27493.
+104352.460: [10:43:52]Feb 10 10:33:47 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.460: [10:43:52]Feb 10 10:33:57 suzhouproda101 frpc[3507103]: login to the server failed: dial tcp 47.102.101.163:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104352.460: [10:43:52]Feb 10 10:33:57 suzhouproda101 systemd[1]: frpc_02.service: Main process exited, code=exited, status=1/FAILURE
+104352.460: [10:43:52]Feb 10 10:33:57 suzhouproda101 systemd[1]: frpc_02.service: Failed with result 'exit-code'.
+104352.460: [10:43:52]Feb 10 10:34:02 suzhouproda101 systemd[1]: frpc_02.service: Scheduled restart job, restart counter is at 27494.
+104352.460: [10:43:52]Feb 10 10:34:02 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104352.460: [10:43:52]Feb 10 10:37:01 suzhouproda101 systemd[1]: Stopping frpc_02.service - FRP Client Service (frpc)...
+104352.460: [10:43:52]Feb 10 10:37:01 suzhouproda101 systemd[1]: frpc_02.service: Deactivated successfully.
+104352.475: [10:43:52]Feb 10 10:37:01 suzhouproda101 systemd[1]: Stopped frpc_02.service - FRP Client Service (frpc).
+104352.475: [10:43:52]Feb 10 10:37:01 suzhouproda101 systemd[1]: Started frpc_02.service - FRP Client Service (frpc).
+104406.061: [10:44:06]root@suzhouproda101:/var/log/journal# journalctl --since -24h -u frpc_03
+104406.186: [10:44:06]Feb 09 10:44:07 suzhouproda101 frpc[2985340]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.186: [10:44:06]Feb 09 10:44:07 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.188: [10:44:06]Feb 09 10:44:07 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.188: [10:44:06]Feb 09 10:44:12 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56239.
+104406.189: [10:44:06]Feb 09 10:44:12 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.189: [10:44:06]Feb 09 10:44:22 suzhouproda101 frpc[2987078]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.190: [10:44:06]Feb 09 10:44:22 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.206: [10:44:06]Feb 09 10:44:22 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.207: [10:44:06]Feb 09 10:44:27 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56240.
+104406.207: [10:44:06]Feb 09 10:44:27 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.207: [10:44:06]Feb 09 10:44:37 suzhouproda101 frpc[2987583]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.207: [10:44:06]Feb 09 10:44:37 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.207: [10:44:06]Feb 09 10:44:37 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.207: [10:44:06]Feb 09 10:44:43 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56241.
+104406.207: [10:44:06]Feb 09 10:44:43 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.208: [10:44:06]Feb 09 10:44:53 suzhouproda101 frpc[2988165]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.208: [10:44:06]Feb 09 10:44:53 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.208: [10:44:06]Feb 09 10:44:53 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.208: [10:44:06]Feb 09 10:44:58 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56242.
+104406.208: [10:44:06]Feb 09 10:44:58 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.208: [10:44:06]Feb 09 10:45:08 suzhouproda101 frpc[2988691]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.208: [10:44:06]Feb 09 10:45:08 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.209: [10:44:06]Feb 09 10:45:08 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.209: [10:44:06]Feb 09 10:45:13 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56243.
+104406.209: [10:44:06]Feb 09 10:45:13 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.209: [10:44:06]Feb 09 10:45:23 suzhouproda101 frpc[2989984]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.209: [10:44:06]Feb 09 10:45:23 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.209: [10:44:06]Feb 09 10:45:23 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.209: [10:44:06]Feb 09 10:45:28 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56244.
+104406.209: [10:44:06]Feb 09 10:45:28 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.219: [10:44:06]Feb 09 10:45:38 suzhouproda101 frpc[2991003]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.219: [10:44:06]Feb 09 10:45:38 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.220: [10:44:06]Feb 09 10:45:38 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.220: [10:44:06]Feb 09 10:45:44 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56245.
+104406.220: [10:44:06]Feb 09 10:45:44 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.220: [10:44:06]Feb 09 10:45:54 suzhouproda101 frpc[2991478]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.220: [10:44:06]Feb 09 10:45:54 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.220: [10:44:06]Feb 09 10:45:54 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.220: [10:44:06]Feb 09 10:45:59 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56246.
+104406.221: [10:44:06]Feb 09 10:45:59 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.221: [10:44:06]Feb 09 10:46:09 suzhouproda101 frpc[2992088]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.221: [10:44:06]Feb 09 10:46:09 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.221: [10:44:06]Feb 09 10:46:09 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104406.221: [10:44:06]Feb 09 10:46:14 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 56247.
+104406.221: [10:44:06]Feb 09 10:46:14 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104406.221: [10:44:06]Feb 09 10:46:24 suzhouproda101 frpc[2992896]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104406.222: [10:44:06]Feb 09 10:46:24 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104406.222: [10:44:06]Feb 09 10:46:24 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.579: [10:44:13]...skipping...
+104413.580: [10:44:13]Feb 10 10:32:56 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.580: [10:44:13]Feb 10 10:32:56 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.580: [10:44:13]Feb 10 10:33:01 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61864.
+104413.580: [10:44:13]Feb 10 10:33:01 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.581: [10:44:13]Feb 10 10:33:11 suzhouproda101 frpc[3504721]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.581: [10:44:13]Feb 10 10:33:11 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.581: [10:44:13]Feb 10 10:33:11 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.599: [10:44:13]Feb 10 10:33:16 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61865.
+104413.600: [10:44:13]Feb 10 10:33:16 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.600: [10:44:13]Feb 10 10:33:26 suzhouproda101 frpc[3505609]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.600: [10:44:13]Feb 10 10:33:26 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.600: [10:44:13]Feb 10 10:33:26 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.600: [10:44:13]Feb 10 10:33:32 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61866.
+104413.600: [10:44:13]Feb 10 10:33:32 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.600: [10:44:13]Feb 10 10:33:42 suzhouproda101 frpc[3506706]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.600: [10:44:13]Feb 10 10:33:42 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.601: [10:44:13]Feb 10 10:33:42 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.601: [10:44:13]Feb 10 10:33:47 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61867.
+104413.601: [10:44:13]Feb 10 10:33:47 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.601: [10:44:13]Feb 10 10:33:57 suzhouproda101 frpc[3507106]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.601: [10:44:13]Feb 10 10:33:57 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.602: [10:44:13]Feb 10 10:33:57 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.602: [10:44:13]Feb 10 10:34:02 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61868.
+104413.602: [10:44:13]Feb 10 10:34:02 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.602: [10:44:13]Feb 10 10:34:12 suzhouproda101 frpc[3507763]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.602: [10:44:13]Feb 10 10:34:12 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.603: [10:44:13]Feb 10 10:34:12 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.603: [10:44:13]Feb 10 10:34:17 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61869.
+104413.603: [10:44:13]Feb 10 10:34:17 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.603: [10:44:13]Feb 10 10:34:27 suzhouproda101 frpc[3508571]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.603: [10:44:13]Feb 10 10:34:27 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.603: [10:44:13]Feb 10 10:34:27 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.603: [10:44:13]Feb 10 10:34:33 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61870.
+104413.603: [10:44:13]Feb 10 10:34:33 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.604: [10:44:13]Feb 10 10:34:43 suzhouproda101 frpc[3510043]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.604: [10:44:13]Feb 10 10:34:43 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.604: [10:44:13]Feb 10 10:34:43 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.604: [10:44:13]Feb 10 10:34:48 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61871.
+104413.605: [10:44:13]Feb 10 10:34:48 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.605: [10:44:13]Feb 10 10:34:58 suzhouproda101 frpc[3510461]: login to the server failed: dial tcp 139.224.61.203:7000: i/o timeout. With loginFailExit enabled, no additional retr>
+104413.605: [10:44:13]Feb 10 10:34:58 suzhouproda101 systemd[1]: frpc_03.service: Main process exited, code=exited, status=1/FAILURE
+104413.605: [10:44:13]Feb 10 10:34:58 suzhouproda101 systemd[1]: frpc_03.service: Failed with result 'exit-code'.
+104413.605: [10:44:13]Feb 10 10:35:03 suzhouproda101 systemd[1]: frpc_03.service: Scheduled restart job, restart counter is at 61872.
+104413.605: [10:44:13]Feb 10 10:35:03 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104413.605: [10:44:13]Feb 10 10:37:02 suzhouproda101 systemd[1]: Stopping frpc_03.service - FRP Client Service (frpc)...
+104413.605: [10:44:13]Feb 10 10:37:02 suzhouproda101 systemd[1]: frpc_03.service: Deactivated successfully.
+104413.619: [10:44:13]Feb 10 10:37:02 suzhouproda101 systemd[1]: Stopped frpc_03.service - FRP Client Service (frpc).
+104413.619: [10:44:13]Feb 10 10:37:02 suzhouproda101 systemd[1]: Started frpc_03.service - FRP Client Service (frpc).
+104424.227: [10:44:24]root@suzhouproda101:/var/log/journal# cd 
+104427.690: [10:44:27]root@suzhouproda101:~# cd /opt/frp_0.63.0_linux_amd64
+104428.364: [10:44:28]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ll
+104428.385: [10:44:28]total 42832
+104428.385: [10:44:28]drwxr-xr-x 3 klmy_test docker     4096 Feb 10 10:30 ./
+104428.385: [10:44:28]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+104428.385: [10:44:28]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+104428.385: [10:44:28]-rw------- 1 root      root    2511367 Feb  7 23:59 frpc.20260208-000000.log
+104428.385: [10:44:28]-rw------- 1 root      root    5022734 Feb  9 23:59 frpc.20260210-000000.log
+104428.385: [10:44:28]-rw------- 1 root      root    1108047 Feb 10 10:37 frpc.log
+104428.385: [10:44:28]-rw-rw-rw- 1 root      root       4951 Jan  8 14:57 frpc.toml
+104428.385: [10:44:28]-rw-rw-rw- 1 root      root       4208 Sep 19 13:34 frpc.toml-20250919
+104428.386: [10:44:28]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+104428.386: [10:44:28]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+104428.386: [10:44:28]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+104428.386: [10:44:28]drwxr-xr-x 2 root      root       4096 Sep  3 16:42 ssl/
+104438.701: [10:44:38]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# less frpc.toml
+104438.721: [10:44:38]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+104438.721: [10:44:38]serverAddr = "118.31.115.234"
+104438.721: [10:44:38]serverPort = 6000
+104438.721: [10:44:38]
+104438.721: [10:44:38]# 日志配置
+104438.721: [10:44:38]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+104438.721: [10:44:38]log.level = "info"
+104438.721: [10:44:38]log.maxDays = 3
+104438.721: [10:44:38]
+104438.721: [10:44:38]# ------172.16.101.190------
+104438.721: [10:44:38]# 普罗米修斯监控
+104438.721: [10:44:38][[proxies]]
+104438.721: [10:44:38]name = "172-16-101-190-prometheus"
+104438.721: [10:44:38]type = "tcp"
+104438.721: [10:44:38]localIP = "172.16.101.190"
+104438.722: [10:44:38]localPort = 3000
+104438.722: [10:44:38]remotePort = 3000
+104438.722: [10:44:38]
+104438.722: [10:44:38]# ------192.168.12.134------
+104438.722: [10:44:38][[proxies]]
+104438.722: [10:44:38]name = "192-168-12-134-OpenAPI"
+104438.722: [10:44:38]type = "tcp"
+104438.722: [10:44:38]localIP = "192.168.12.134"
+104438.722: [10:44:38]localPort = 9999
+104438.722: [10:44:38]remotePort = 9999
+104438.722: [10:44:38]# 134-ssh
+104438.722: [10:44:38][[proxies]]
+104438.722: [10:44:38]name = "192-168-12-134-ssh"
+104438.722: [10:44:38]type = "tcp"
+104438.722: [10:44:38]localIP = "192.168.12.134"
+104438.722: [10:44:38]localPort = 22
+104438.722: [10:44:38]remotePort = 19443
+104438.722: [10:44:38]
+104438.722: [10:44:38]# 平台测试环境
+104438.722: [10:44:38]#[[proxies]]
+104438.722: [10:44:38]#name = "192-168-12-134-platform-test"
+104438.722: [10:44:38]#type = "tcp"
+104438.722: [10:44:38]#localIP = "192.168.12.134"
+104438.722: [10:44:38]#localPort = 80
+104438.722: [10:44:38]#remotePort = 8880
+104438.722: [10:44:38]
+104438.722: [10:44:38]# ------10.50.0.101------
+104438.722: [10:44:38][[proxies]]
+104438.722: [10:44:38]name = "10-50-0-101"
+104438.722: [10:44:38]type = "tcp"
+104438.722: [10:44:38]localIP = "10.50.0.101"
+104438.722: [10:44:38]localPort = 22
+104438.723: [10:44:38]remotePort = 10122
+104442.921: [10:44:42]
+104443.429: [10:44:43][[proxies]]
+104443.499: [10:44:43]name = "10-50-0-101-app"
+104443.585: [10:44:43]type = "tcp"
+104443.672: [10:44:43]localIP = "10.50.0.101"
+104443.753: [10:44:43]localPort = 9443
+104443.835: [10:44:43]remotePort = 9443  
+104443.912: [10:44:43]
+104444.005: [10:44:44]# ------10.50.0.106------
+104444.085: [10:44:44][[proxies]]
+104444.168: [10:44:44]name = "10-50-0-106"
+104444.254: [10:44:44]type = "tcp"
+104444.334: [10:44:44]localIP = "10.50.0.106"
+104444.417: [10:44:44]localPort = 22
+104444.502: [10:44:44]remotePort = 10622
+104444.584: [10:44:44]
+104444.664: [10:44:44][[proxies]]
+104444.756: [10:44:44]name = "10-50-0-106-app"
+104444.840: [10:44:44]type = "tcp"
+104444.924: [10:44:44]localIP = "10.50.0.106"
+104444.999: [10:44:45]localPort = 8800
+104445.084: [10:44:45]remotePort = 8800 
+104445.162: [10:44:45]
+104445.248: [10:44:45][[proxies]]
+104445.335: [10:44:45]name = "10-50-0-106-app-2"
+104445.416: [10:44:45]type = "tcp"
+104445.502: [10:44:45]localIP = "10.50.0.106"
+104445.585: [10:44:45]localPort = 9000
+104445.677: [10:44:45]remotePort = 9000
+104445.753: [10:44:45]
+104445.830: [10:44:45][[proxies]]
+104445.914: [10:44:45]name = "10-50-0-106-app-3"
+104446.008: [10:44:46]type = "tcp"
+104446.088: [10:44:46]localIP = "10.50.0.106"
+104446.173: [10:44:46]localPort = 9090
+104446.249: [10:44:46]remotePort = 9090
+104446.331: [10:44:46]
+104446.423: [10:44:46][[proxies]]
+104447.078: [10:44:47]name = "10-50-0-106-app-4"
+104447.568: [10:44:47]type = "tcp"
+104447.667: [10:44:47]localIP = "10.50.0.106"
+104447.742: [10:44:47]localPort = 3306
+104447.824: [10:44:47]remotePort = 3306
+104447.915: [10:44:47]
+104447.993: [10:44:47][[proxies]]
+104448.068: [10:44:48]name = "10-50-0-107-SSH"
+104448.152: [10:44:48]type = "tcp"
+104449.350: [10:44:49]localIP = "10.50.0.107"
+104449.854: [10:44:49]localPort = 22
+104449.933: [10:44:49]remotePort = 1107
+104450.016: [10:44:50]
+104450.110: [10:44:50]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+104450.187: [10:44:50]#[[proxies]]
+104450.266: [10:44:50]#name = "10-60-0-109-SSH"
+104450.351: [10:44:50]#type = "tcp"
+104450.434: [10:44:50]#localIP = "10.60.0.109"
+104450.517: [10:44:50]#localPort = 22
+104450.602: [10:44:50]#remotePort = 1108
+104453.578: [10:44:53]
+104453.774: [10:44:53]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+104453.926: [10:44:53]#[[proxies]]
+104454.163: [10:44:54]#name = "10-60-0-110-SSH"
+104458.113: [10:44:58]remotePort = 10622
+104458.113: [10:44:58]
+104458.113: [10:44:58][[proxies]]
+104458.113: [10:44:58]name = "10-50-0-106-app"
+104458.113: [10:44:58]type = "tcp"
+104458.113: [10:44:58]localIP = "10.50.0.106"
+104458.113: [10:44:58]localPort = 8800
+104458.113: [10:44:58]remotePort = 8800 
+104458.113: [10:44:58]
+104458.113: [10:44:58][[proxies]]
+104458.113: [10:44:58]name = "10-50-0-106-app-2"
+104458.114: [10:44:58]type = "tcp"
+104458.114: [10:44:58]localIP = "10.50.0.106"
+104458.114: [10:44:58]localPort = 9000
+104458.114: [10:44:58]remotePort = 9000
+104458.114: [10:44:58]
+104458.114: [10:44:58][[proxies]]
+104458.114: [10:44:58]name = "10-50-0-106-app-3"
+104458.114: [10:44:58]type = "tcp"
+104458.114: [10:44:58]localIP = "10.50.0.106"
+104458.114: [10:44:58]localPort = 9090
+104458.114: [10:44:58]remotePort = 9090
+104458.114: [10:44:58]
+104458.114: [10:44:58][[proxies]]
+104458.114: [10:44:58]name = "10-50-0-106-app-4"
+104458.114: [10:44:58]type = "tcp"
+104458.114: [10:44:58]localIP = "10.50.0.106"
+104458.114: [10:44:58]localPort = 3306
+104458.114: [10:44:58]remotePort = 3306
+104458.114: [10:44:58]
+104458.114: [10:44:58][[proxies]]
+104458.115: [10:44:58]name = "10-50-0-107-SSH"
+104458.115: [10:44:58]type = "tcp"
+104458.115: [10:44:58]localIP = "10.50.0.107"
+104458.115: [10:44:58]localPort = 22
+104458.115: [10:44:58]remotePort = 1107
+104458.115: [10:44:58]
+104458.115: [10:44:58]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+104458.115: [10:44:58]#[[proxies]]
+104458.115: [10:44:58]#name = "10-60-0-109-SSH"
+104458.115: [10:44:58]#type = "tcp"
+104458.115: [10:44:58]#localIP = "10.60.0.109"
+104458.115: [10:44:58]#localPort = 22
+104458.115: [10:44:58]#remotePort = 1108
+104458.115: [10:44:58]
+104458.115: [10:44:58]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+104458.115: [10:44:58]#[[proxies]]
+104458.116: [10:44:58]#name = "10-60-0-110-SSH"
+104458.116: [10:44:58]remotePort = 10622
+104458.116: [10:44:58]
+104458.116: [10:44:58][[proxies]]
+104458.116: [10:44:58]name = "10-50-0-106-app"
+104458.116: [10:44:58]type = "tcp"
+104458.116: [10:44:58]localIP = "10.50.0.106"
+104458.116: [10:44:58]localPort = 8800
+104458.116: [10:44:58]remotePort = 8800 
+104458.116: [10:44:58]
+104458.116: [10:44:58][[proxies]]
+104458.116: [10:44:58]name = "10-50-0-106-app-2"
+104458.116: [10:44:58]type = "tcp"
+104458.116: [10:44:58]localIP = "10.50.0.106"
+104458.116: [10:44:58]localPort = 9000
+104458.116: [10:44:58]remotePort = 9000
+104458.116: [10:44:58]
+104458.116: [10:44:58][[proxies]]
+104458.117: [10:44:58]name = "10-50-0-106-app-3"
+104458.117: [10:44:58]type = "tcp"
+104458.117: [10:44:58]localIP = "10.50.0.106"
+104458.117: [10:44:58]localPort = 9090
+104458.117: [10:44:58]remotePort = 9090
+104458.117: [10:44:58]
+104458.117: [10:44:58][[proxies]]
+104458.117: [10:44:58]name = "10-50-0-106-app-4"
+104458.117: [10:44:58]type = "tcp"
+104458.117: [10:44:58]localIP = "10.50.0.106"
+104458.117: [10:44:58]localPort = 3306
+104458.117: [10:44:58]remotePort = 3306
+104458.117: [10:44:58]
+104458.117: [10:44:58][[proxies]]
+104458.117: [10:44:58]name = "10-50-0-107-SSH"
+104458.117: [10:44:58]type = "tcp"
+104458.117: [10:44:58]localIP = "10.50.0.107"
+104458.118: [10:44:58]localPort = 22
+104458.118: [10:44:58]remotePort = 1107
+104458.118: [10:44:58]
+104458.118: [10:44:58]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+104458.118: [10:44:58]#[[proxies]]
+104458.118: [10:44:58]#name = "10-60-0-109-SSH"
+104458.118: [10:44:58]#type = "tcp"
+104458.118: [10:44:58]#localIP = "10.60.0.109"
+104458.118: [10:44:58]#localPort = 22
+104458.118: [10:44:58]#remotePort = 1108
+104458.118: [10:44:58]
+104458.118: [10:44:58]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+104458.118: [10:44:58]#[[proxies]]
+104458.119: [10:44:58]#name = "10-60-0-110-SSH"
+104458.119: [10:44:58]#type = "tcp"
+104458.119: [10:44:58]#localIP = "10.60.0.110"
+104458.119: [10:44:58]#localPort = 22
+104458.119: [10:44:58]#remotePort = 1109
+104458.119: [10:44:58]
+104458.119: [10:44:58]# 20250918 借给吴庆前的主机映射端口
+104458.119: [10:44:58][[proxies]]
+104458.119: [10:44:58]name = "10-60-0-102-SSH"
+104458.119: [10:44:58]type = "tcp"
+104458.119: [10:44:58]localIP = "10.60.0.102"
+104458.119: [10:44:58]localPort = 22
+104458.119: [10:44:58]remotePort = 1202
+104458.119: [10:44:58]
+104458.119: [10:44:58]# ------10.70.0.128------
+104458.119: [10:44:58]#[[proxies]]
+104458.120: [10:44:58]#name = "guojiqe_platform_https2http"
+104458.120: [10:44:58]#type = "https"
+104458.120: [10:44:58]#customDomains = ["guoji.tiangongqs.net"]
+104458.120: [10:44:58]
+104458.120: [10:44:58]#[proxies.plugin]
+104458.120: [10:44:58]#type = "https2http"
+104458.120: [10:44:58]#localAddr = "10.70.0.128:80"
+104458.120: [10:44:58]#crtPath = "/opt/frp_0.63.0_linux_amd64/ssl/tiangongqs.net.crt"
+104458.120: [10:44:58]#keyPath = "/opt/frp_0.63.0_linux_amd64/ssl/tiangongqs.net.key"
+104458.120: [10:44:58]#hostHeaderRewrite = "10.70.0.128"
+104458.120: [10:44:58]#requestHeaders.set.x-from-where = "frp"
+104458.120: [10:44:58]
+104458.120: [10:44:58]
+104458.120: [10:44:58]# HTTPS代理配置
+104458.120: [10:44:58]#[[proxies]]
+104458.120: [10:44:58]#name = "guojiqe-platform_web_service_https"
+104458.120: [10:44:58]#type = "https"
+104458.121: [10:44:58]#customDomains = ["guoji.tiangongqs.com"]
+104458.121: [10:44:58]#localIP = "127.0.0.1"
+104459.756: [10:44:59]#localPort = 443
+104459.756: [10:44:59]# HTTP代理配置（重定向到HTTPS）
+104459.756: [10:44:59]#[[proxies]]
+104459.756: [10:44:59]#name = "guojiqe-platform_web_service_http"
+104459.756: [10:44:59]#type = "http"
+104459.757: [10:44:59]#customDomains = ["guojiqe.com"]  
+104459.757: [10:44:59]#localIP = "127.0.0.1"
+104459.757: [10:44:59]#localPort = 80
+104501.297: [10:45:01]remotePort = 10122
+104501.297: [10:45:01]localPort = 22
+104501.297: [10:45:01]localIP = "10.50.0.101"
+104501.297: [10:45:01]type = "tcp"
+104501.297: [10:45:01]name = "10-50-0-101"
+104501.297: [10:45:01][[proxies]]
+104501.297: [10:45:01]# ------10.50.0.101------
+104501.297: [10:45:01]
+104501.297: [10:45:01]#remotePort = 8880
+104501.297: [10:45:01]#localPort = 80
+104501.297: [10:45:01]#localIP = "192.168.12.134"
+104501.297: [10:45:01]#type = "tcp"
+104501.297: [10:45:01]#name = "192-168-12-134-platform-test"
+104501.297: [10:45:01]#[[proxies]]
+104501.297: [10:45:01]# 平台测试环境
+104501.297: [10:45:01]
+104501.297: [10:45:01]remotePort = 19443
+104501.297: [10:45:01]localPort = 22
+104501.297: [10:45:01]localIP = "192.168.12.134"
+104501.297: [10:45:01]type = "tcp"
+104501.297: [10:45:01]name = "192-168-12-134-ssh"
+104501.298: [10:45:01][[proxies]]
+104501.298: [10:45:01]# 134-ssh
+104501.298: [10:45:01]remotePort = 9999
+104501.298: [10:45:01]localPort = 9999
+104501.298: [10:45:01]localIP = "192.168.12.134"
+104501.298: [10:45:01]type = "tcp"
+104501.298: [10:45:01]name = "192-168-12-134-OpenAPI"
+104501.298: [10:45:01][[proxies]]
+104501.298: [10:45:01]# ------192.168.12.134------
+104501.298: [10:45:01]
+104501.298: [10:45:01]remotePort = 3000
+104501.298: [10:45:01]localPort = 3000
+104501.298: [10:45:01]localIP = "172.16.101.190"
+104501.298: [10:45:01]type = "tcp"
+104501.298: [10:45:01]name = "172-16-101-190-prometheus"
+104501.298: [10:45:01][[proxies]]
+104501.298: [10:45:01]# 普罗米修斯监控
+104501.298: [10:45:01]# ------172.16.101.190------
+104501.298: [10:45:01]
+104501.298: [10:45:01]log.maxDays = 3
+104501.298: [10:45:01]log.level = "info"
+104501.298: [10:45:01]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+104501.298: [10:45:01]# 日志配置
+104501.298: [10:45:01]
+104501.298: [10:45:01]serverPort = 6000
+104501.298: [10:45:01]serverAddr = "118.31.115.234"
+104501.299: [10:45:01]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+104502.185: [10:45:02]
+104502.185: [10:45:02][[proxies]]
+104502.185: [10:45:02]name = "10-50-0-101-app"
+104502.185: [10:45:02]type = "tcp"
+104502.185: [10:45:02]localIP = "10.50.0.101"
+104502.185: [10:45:02]localPort = 9443
+104502.185: [10:45:02]remotePort = 9443  
+104502.185: [10:45:02]
+104502.185: [10:45:02]# ------10.50.0.106------
+104502.185: [10:45:02][[proxies]]
+104502.186: [10:45:02]name = "10-50-0-106"
+104502.186: [10:45:02]type = "tcp"
+104502.186: [10:45:02]localIP = "10.50.0.106"
+104502.186: [10:45:02]localPort = 22
+104502.186: [10:45:02]remotePort = 10622
+104502.186: [10:45:02]
+104502.186: [10:45:02][[proxies]]
+104502.186: [10:45:02]name = "10-50-0-106-app"
+104502.186: [10:45:02]type = "tcp"
+104502.186: [10:45:02]localIP = "10.50.0.106"
+104502.186: [10:45:02]localPort = 8800
+104502.186: [10:45:02]remotePort = 8800 
+104502.186: [10:45:02]
+104502.186: [10:45:02][[proxies]]
+104502.187: [10:45:02]name = "10-50-0-106-app-2"
+104502.187: [10:45:02]type = "tcp"
+104502.187: [10:45:02]localIP = "10.50.0.106"
+104502.187: [10:45:02]localPort = 9000
+104502.187: [10:45:02]remotePort = 9000
+104502.187: [10:45:02]
+104511.466: [10:45:11]localIP = "192.168.12.134"
+104511.967: [10:45:11]type = "tcp"
+104512.052: [10:45:12]name = "192-168-12-134-ssh"
+104512.138: [10:45:12][[proxies]]
+104512.212: [10:45:12]# 134-ssh
+104512.295: [10:45:12]remotePort = 9999
+104512.383: [10:45:12]localPort = 9999
+104512.477: [10:45:12]localIP = "192.168.12.134"
+104512.545: [10:45:12]type = "tcp"
+104512.630: [10:45:12]name = "192-168-12-134-OpenAPI"
+104512.712: [10:45:12][[proxies]]
+104512.795: [10:45:12]# ------192.168.12.134------
+104512.879: [10:45:12]
+104512.962: [10:45:12]remotePort = 3000
+104513.048: [10:45:13]localPort = 3000
+104513.145: [10:45:13]localIP = "172.16.101.190"
+104513.218: [10:45:13]type = "tcp"
+104513.303: [10:45:13]name = "172-16-101-190-prometheus"
+104513.385: [10:45:13][[proxies]]
+104513.477: [10:45:13]# 普罗米修斯监控
+104513.552: [10:45:13]# ------172.16.101.190------
+104513.636: [10:45:13]
+104513.719: [10:45:13]log.maxDays = 3
+104513.818: [10:45:13]log.level = "info"
+104513.884: [10:45:13]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+104513.969: [10:45:13]# 日志配置
+104514.052: [10:45:14]
+104514.143: [10:45:14]serverPort = 6000
+104514.225: [10:45:14]serverAddr = "118.31.115.234"
+104514.461: [10:45:14]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+105042.466: [10:50:42]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# journalctl -n 20 -u frpc
+105042.528: [10:50:42]Feb 10 10:32:00 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+105042.528: [10:50:42]Feb 10 10:32:10 suzhouproda101 frpc[3501246]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+105042.529: [10:50:42]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+105042.529: [10:50:42]Feb 10 10:32:10 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+105042.529: [10:50:42]Feb 10 10:32:15 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27490.
+105042.530: [10:50:42]Feb 10 10:32:15 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+105042.530: [10:50:42]Feb 10 10:32:25 suzhouproda101 frpc[3502180]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+105042.530: [10:50:42]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+105042.531: [10:50:42]Feb 10 10:32:25 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+105042.531: [10:50:42]Feb 10 10:32:31 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27491.
+105042.531: [10:50:42]Feb 10 10:32:31 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+105042.532: [10:50:42]Feb 10 10:32:41 suzhouproda101 frpc[3503190]: login to the server failed: dial tcp 118.31.115.234:6000: i/o timeout. With loginFailExit enabled, no additional retr>
+105042.532: [10:50:42]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Main process exited, code=exited, status=1/FAILURE
+105042.532: [10:50:42]Feb 10 10:32:41 suzhouproda101 systemd[1]: frpc.service: Failed with result 'exit-code'.
+105042.533: [10:50:42]Feb 10 10:32:46 suzhouproda101 systemd[1]: frpc.service: Scheduled restart job, restart counter is at 27492.
+105042.533: [10:50:42]Feb 10 10:32:46 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+105042.533: [10:50:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopping frpc.service - FRP Client Service (frpc)...
+105042.533: [10:50:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: frpc.service: Deactivated successfully.
+105042.533: [10:50:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: Stopped frpc.service - FRP Client Service (frpc).
+105042.534: [10:50:42]Feb 10 10:36:58 suzhouproda101 systemd[1]: Started frpc.service - FRP Client Service (frpc).
+105216.164: [10:52:16]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# 
+105216.324: [10:52:16]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# 
+105217.327: [10:52:17]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# journalctl -p 3 -xb
+105217.441: [10:52:17]Feb 02 10:14:27 suzhouproda101 systemd-networkd-wait-online[1758]: Timeout occurred while waiting for network connectivity.
+105217.442: [10:52:17]Feb 02 10:14:27 suzhouproda101 systemd[1]: Failed to start systemd-networkd-wait-online.service - Wait for Network to be Configured.
+105217.442: [10:52:17]░░ Subject: A start job for unit systemd-networkd-wait-online.service has failed
+105217.442: [10:52:17]░░ Defined-By: systemd
+105217.442: [10:52:17]░░ Support: http://www.ubuntu.com/support
+105217.442: [10:52:17]░░ 
+105217.442: [10:52:17]░░ A start job for unit systemd-networkd-wait-online.service has finished with a failure.
+105217.442: [10:52:17]░░ 
+105217.442: [10:52:17]░░ The job identifier is 20 and the job result is failed.
+105217.442: [10:52:17]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to mount sharedata.mount - /sharedata.
+105217.455: [10:52:17]░░ Subject: A start job for unit sharedata.mount has failed
+105217.455: [10:52:17]░░ Defined-By: systemd
+105217.455: [10:52:17]░░ Support: http://www.ubuntu.com/support
+105217.455: [10:52:17]░░ 
+105217.455: [10:52:17]░░ A start job for unit sharedata.mount has finished with a failure.
+105217.455: [10:52:17]░░ 
+105217.455: [10:52:17]░░ The job identifier is 221 and the job result is failed.
+105217.455: [10:52:17]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to start slurmctld.service - Slurm controller daemon.
+105217.455: [10:52:17]░░ Subject: A start job for unit slurmctld.service has failed
+105217.455: [10:52:17]░░ Defined-By: systemd
+105217.455: [10:52:17]░░ Support: http://www.ubuntu.com/support
+105217.455: [10:52:17]░░ 
+105217.455: [10:52:17]░░ A start job for unit slurmctld.service has finished with a failure.
+105217.455: [10:52:17]░░ 
+105217.456: [10:52:17]░░ The job identifier is 192 and the job result is failed.
+105217.456: [10:52:17]Feb 02 10:14:29 suzhouproda101 slurmd[3368]: fatal: Unable to determine this slurmd's NodeName
+105217.456: [10:52:17]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to start slurmd.service - Slurm node daemon.
+105217.456: [10:52:17]░░ Subject: A start job for unit slurmd.service has failed
+105217.456: [10:52:17]░░ Defined-By: systemd
+105217.456: [10:52:17]░░ Support: http://www.ubuntu.com/support
+105217.456: [10:52:17]░░ 
+105217.456: [10:52:17]░░ A start job for unit slurmd.service has finished with a failure.
+105217.456: [10:52:17]░░ 
+105217.456: [10:52:17]░░ The job identifier is 181 and the job result is failed.
+105217.456: [10:52:17]Feb 02 10:14:29 suzhouproda101 slurmd[3502]: fatal: Unable to determine this slurmd's NodeName
+105217.456: [10:52:17]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to start slurmd.service - Slurm node daemon.
+105217.456: [10:52:17]░░ Subject: A start job for unit slurmd.service has failed
+105217.457: [10:52:17]░░ Defined-By: systemd
+105217.457: [10:52:17]░░ Support: http://www.ubuntu.com/support
+105217.457: [10:52:17]░░ 
+105217.457: [10:52:17]░░ A start job for unit slurmd.service has finished with a failure.
+105217.457: [10:52:17]░░ 
+105217.457: [10:52:17]░░ The job identifier is 9666 and the job result is failed.
+105217.457: [10:52:17]Feb 02 10:14:30 suzhouproda101 slurmd[3551]: fatal: Unable to determine this slurmd's NodeName
+105217.457: [10:52:17]Feb 02 10:14:30 suzhouproda101 systemd[1]: Failed to start slurmd.service - Slurm node daemon.
+105217.457: [10:52:17]░░ Subject: A start job for unit slurmd.service has failed
+105217.457: [10:52:17]░░ Defined-By: systemd
+105217.458: [10:52:17]░░ Support: http://www.ubuntu.com/support
+105230.819: [10:52:30]...skipping...
+105230.819: [10:52:30]Feb 10 10:37:58 suzhouproda101 networkctl[3520665]: Interface "veth319df43" not found.
+105230.819: [10:52:30]Feb 10 10:38:35 suzhouproda101 networkctl[3522247]: Interface "veth41ba82e" not found.
+105230.819: [10:52:30]Feb 10 10:38:58 suzhouproda101 networkctl[3523911]: Interface "vethf6cbaa6" not found.
+105230.819: [10:52:30]Feb 10 10:39:05 suzhouproda101 networkctl[3524146]: Interface "veth71235c4" not found.
+105230.819: [10:52:30]Feb 10 10:39:41 suzhouproda101 networkctl[3525737]: Interface "veth7ed6574" not found.
+105230.819: [10:52:30]Feb 10 10:40:05 suzhouproda101 networkctl[3527333]: Interface "vethf9a4c17" not found.
+105230.819: [10:52:30]Feb 10 10:40:12 suzhouproda101 networkctl[3527640]: Interface "vethc5ecbd4" not found.
+105230.820: [10:52:30]Feb 10 10:40:47 suzhouproda101 networkctl[3529203]: Interface "vethc8d6bb0" not found.
+105230.832: [10:52:30]Feb 10 10:41:12 suzhouproda101 networkctl[3530868]: Interface "vethdfb39d1" not found.
+105230.832: [10:52:30]Feb 10 10:41:19 suzhouproda101 networkctl[3531112]: Interface "veth4dd7eed" not found.
+105230.832: [10:52:30]Feb 10 10:41:53 suzhouproda101 networkctl[3532647]: Interface "veth9581c4d" not found.
+105230.832: [10:52:30]Feb 10 10:42:19 suzhouproda101 networkctl[3534344]: Interface "veth3dcdc5e" not found.
+105230.832: [10:52:30]Feb 10 10:42:26 suzhouproda101 networkctl[3534601]: Interface "vethb1e0233" not found.
+105230.833: [10:52:30]Feb 10 10:42:59 suzhouproda101 networkctl[3536101]: Interface "veth0b68951" not found.
+105230.833: [10:52:30]Feb 10 10:43:26 suzhouproda101 networkctl[3537816]: Interface "veth7e91c83" not found.
+105230.833: [10:52:30]Feb 10 10:43:26 suzhouproda101 networkctl[3537825]: Interface "vetha8dfa72" not found.
+105230.833: [10:52:30]Feb 10 10:43:33 suzhouproda101 networkctl[3538110]: Interface "veth1684413" not found.
+105230.833: [10:52:30]Feb 10 10:44:05 suzhouproda101 networkctl[3539556]: Interface "veth1f0208a" not found.
+105230.833: [10:52:30]Feb 10 10:44:33 suzhouproda101 networkctl[3541318]: Interface "veth0ab0fd7" not found.
+105230.833: [10:52:30]Feb 10 10:44:40 suzhouproda101 networkctl[3541608]: Interface "veth72c6f0d" not found.
+105230.833: [10:52:30]Feb 10 10:45:11 suzhouproda101 networkctl[3543038]: Interface "veth75919fb" not found.
+105230.834: [10:52:30]Feb 10 10:45:41 suzhouproda101 networkctl[3544931]: Interface "veth7caa7ee" not found.
+105230.834: [10:52:30]Feb 10 10:45:47 suzhouproda101 networkctl[3545226]: Interface "vethbc5dee2" not found.
+105230.834: [10:52:30]Feb 10 10:46:17 suzhouproda101 networkctl[3546568]: Interface "vethf1d236f" not found.
+105230.834: [10:52:30]Feb 10 10:46:48 suzhouproda101 networkctl[3548382]: Interface "veth14b00ed" not found.
+105230.834: [10:52:30]Feb 10 10:46:48 suzhouproda101 networkctl[3548393]: Interface "veth2cf8df8" not found.
+105230.834: [10:52:30]Feb 10 10:46:54 suzhouproda101 networkctl[3548728]: Interface "veth428fd5e" not found.
+105230.834: [10:52:30]Feb 10 10:46:54 suzhouproda101 networkctl[3548744]: Interface "veth7517880" not found.
+105230.834: [10:52:30]Feb 10 10:47:22 suzhouproda101 networkctl[3550019]: Interface "veth7f1e0e1" not found.
+105230.835: [10:52:30]Feb 10 10:47:55 suzhouproda101 networkctl[3551900]: Interface "veth6b4e8c3" not found.
+105230.835: [10:52:30]Feb 10 10:48:01 suzhouproda101 networkctl[3552242]: Interface "veth05b2440" not found.
+105230.835: [10:52:30]Feb 10 10:48:29 suzhouproda101 networkctl[3553473]: Interface "veth7cc527c" not found.
+105230.835: [10:52:30]Feb 10 10:49:02 suzhouproda101 networkctl[3555380]: Interface "veth76a95bf" not found.
+105230.835: [10:52:30]Feb 10 10:49:08 suzhouproda101 networkctl[3555745]: Interface "vethb8b2e17" not found.
+105230.835: [10:52:30]Feb 10 10:49:35 suzhouproda101 networkctl[3556925]: Interface "veth3822632" not found.
+105230.835: [10:52:30]Feb 10 10:49:35 suzhouproda101 networkctl[3556937]: Interface "veth09820c2" not found.
+105230.835: [10:52:30]Feb 10 10:50:09 suzhouproda101 networkctl[3558888]: Interface "veth6df08df" not found.
+105230.835: [10:52:30]Feb 10 10:50:15 suzhouproda101 networkctl[3559278]: Interface "veth53c883e" not found.
+105230.835: [10:52:30]Feb 10 10:50:41 suzhouproda101 networkctl[3560432]: Interface "vethc96a164" not found.
+105230.836: [10:52:30]Feb 10 10:51:16 suzhouproda101 networkctl[3562429]: Interface "vethe46f193" not found.
+105230.836: [10:52:30]Feb 10 10:51:22 suzhouproda101 networkctl[3562770]: Interface "vethc9dc737" not found.
+105230.836: [10:52:30]Feb 10 10:51:22 suzhouproda101 networkctl[3562780]: Interface "veth9fcc9a2" not found.
+105230.859: [10:52:30]Feb 10 10:51:47 suzhouproda101 networkctl[3563870]: Interface "vethdc90582" not found.
+105230.860: [10:52:30]Feb 10 10:51:47 suzhouproda101 networkctl[3563881]: Interface "vethb888ee4" not found.
+105230.860: [10:52:30]Feb 10 10:52:23 suzhouproda101 networkctl[3565921]: Interface "vethd94acb4" not found.
+105230.860: [10:52:30]Feb 10 10:52:23 suzhouproda101 networkctl[3565936]: Interface "vethe18ebea" not found.
+105230.860: [10:52:30]Feb 10 10:52:30 suzhouproda101 networkctl[3566239]: Interface "veth79422ba" not found.
+105230.860: [10:52:30]Feb 10 10:52:30 suzhouproda101 networkctl[3566249]: Interface "veth81cc876" not found.
+105230.861: [10:52:30]░░ Support: http://www.ubuntu.com/support
+105230.861: [10:52:30]░░ Defined-By: systemd
+105230.861: [10:52:30]░░ Subject: A start job for unit slurmd.service has failed
+105230.861: [10:52:30]Feb 02 10:14:30 suzhouproda101 systemd[1]: Failed to start slurmd.service - Slurm node daemon.
+105230.861: [10:52:30]Feb 02 10:14:30 suzhouproda101 slurmd[3551]: fatal: Unable to determine this slurmd's NodeName
+105230.861: [10:52:30]░░ The job identifier is 9666 and the job result is failed.
+105230.861: [10:52:30]░░ 
+105230.861: [10:52:30]░░ A start job for unit slurmd.service has finished with a failure.
+105230.861: [10:52:30]░░ 
+105230.862: [10:52:30]░░ Support: http://www.ubuntu.com/support
+105230.862: [10:52:30]░░ Defined-By: systemd
+105230.869: [10:52:30]░░ Subject: A start job for unit slurmd.service has failed
+105230.869: [10:52:30]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to start slurmd.service - Slurm node daemon.
+105230.869: [10:52:30]Feb 02 10:14:29 suzhouproda101 slurmd[3502]: fatal: Unable to determine this slurmd's NodeName
+105230.869: [10:52:30]░░ The job identifier is 181 and the job result is failed.
+105230.869: [10:52:30]░░ 
+105230.869: [10:52:30]░░ A start job for unit slurmd.service has finished with a failure.
+105230.869: [10:52:30]░░ 
+105230.870: [10:52:30]░░ Support: http://www.ubuntu.com/support
+105230.870: [10:52:30]░░ Defined-By: systemd
+105230.870: [10:52:30]░░ Subject: A start job for unit slurmd.service has failed
+105230.870: [10:52:30]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to start slurmd.service - Slurm node daemon.
+105230.870: [10:52:30]Feb 02 10:14:29 suzhouproda101 slurmd[3368]: fatal: Unable to determine this slurmd's NodeName
+105230.870: [10:52:30]░░ The job identifier is 192 and the job result is failed.
+105230.870: [10:52:30]░░ 
+105230.870: [10:52:30]░░ A start job for unit slurmctld.service has finished with a failure.
+105230.870: [10:52:30]░░ 
+105230.870: [10:52:30]░░ Support: http://www.ubuntu.com/support
+105230.870: [10:52:30]░░ Defined-By: systemd
+105230.871: [10:52:30]░░ Subject: A start job for unit slurmctld.service has failed
+105230.871: [10:52:30]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to start slurmctld.service - Slurm controller daemon.
+105230.871: [10:52:30]░░ The job identifier is 221 and the job result is failed.
+105230.871: [10:52:30]░░ 
+105230.871: [10:52:30]░░ A start job for unit sharedata.mount has finished with a failure.
+105230.871: [10:52:30]░░ 
+105230.871: [10:52:30]░░ Support: http://www.ubuntu.com/support
+105230.872: [10:52:30]░░ Defined-By: systemd
+105230.872: [10:52:30]░░ Subject: A start job for unit sharedata.mount has failed
+105230.872: [10:52:30]Feb 02 10:14:29 suzhouproda101 systemd[1]: Failed to mount sharedata.mount - /sharedata.
+105230.872: [10:52:30]░░ The job identifier is 20 and the job result is failed.
+105230.872: [10:52:30]░░ 
+105230.872: [10:52:30]░░ A start job for unit systemd-networkd-wait-online.service has finished with a failure.
+105230.872: [10:52:30]░░ 
+105230.872: [10:52:30]░░ Support: http://www.ubuntu.com/support
+105230.872: [10:52:30]░░ Defined-By: systemd
+105230.872: [10:52:30]░░ Subject: A start job for unit systemd-networkd-wait-online.service has failed
+105230.872: [10:52:30]Feb 02 10:14:27 suzhouproda101 systemd[1]: Failed to start systemd-networkd-wait-online.service - Wait for Network to be Configured.
+105230.873: [10:52:30]Feb 02 10:14:27 suzhouproda101 systemd-networkd-wait-online[1758]: Timeout occurred while waiting for network connectivity.

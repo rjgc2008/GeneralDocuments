@@ -1,0 +1,408 @@
+﻿094119.232: [09:41:19][202602203-B-A08-管理-Hygon-10.60.0.100-iptables-09:41:19]
+094119.243: [09:41:19]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-64-generic x86_64)
+094119.243: [09:41:19]
+094119.243: [09:41:19] * Documentation:  https://help.ubuntu.com
+094119.243: [09:41:19] * Management:     https://landscape.canonical.com
+094119.243: [09:41:19] * Support:        https://ubuntu.com/pro
+094119.243: [09:41:19]
+094119.244: [09:41:19] System information as of Tue Feb 10 09:41:18 AM CST 2026
+094119.244: [09:41:19]
+094119.244: [09:41:19]  System load:    0.4                Temperature:            67.0 C
+094119.244: [09:41:19]  Usage of /home: 8.8% of 301.20GB   Processes:              1198
+094119.244: [09:41:19]  Memory usage:   7%                 Users logged in:        1
+094119.244: [09:41:19]  Swap usage:     0%                 IPv4 address for bond0: 10.60.0.100
+094119.244: [09:41:19]
+094119.244: [09:41:19]  => There is 1 zombie process.
+094119.244: [09:41:19]
+094119.244: [09:41:19]
+094119.244: [09:41:19]Expanded Security Maintenance for Applications is not enabled.
+094119.244: [09:41:19]
+094119.244: [09:41:19]289 updates can be applied immediately.
+094119.244: [09:41:19]To see these additional updates run: apt list --upgradable
+094119.244: [09:41:19]
+094119.245: [09:41:19]3 additional security updates can be applied with ESM Apps.
+094119.245: [09:41:19]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+094119.245: [09:41:19]
+094119.245: [09:41:19]
+094119.245: [09:41:19]The list of available updates is more than a week old.
+094119.245: [09:41:19]To check for new updates run: sudo apt update
+094119.245: [09:41:19]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+094119.245: [09:41:19]
+094119.245: [09:41:19]
+094119.245: [09:41:19]Last login: Fri Feb  6 11:40:40 2026 from 10.60.0.100
+094119.544: [09:41:19]root@suzhouprodb100:~# 
+094126.168: [09:41:26]root@suzhouprodb100:~# ping 58.211.207.202
+094126.171: [09:41:26]PING 58.211.207.202 (58.211.207.202) 56(84) bytes of data.
+094126.187: [09:41:26]64 bytes from 58.211.207.202: icmp_seq=1 ttl=110 time=14.5 ms
+094127.189: [09:41:27]64 bytes from 58.211.207.202: icmp_seq=2 ttl=110 time=14.0 ms
+094127.434: [09:41:27]^C
+094127.435: [09:41:27]--- 58.211.207.202 ping statistics ---
+094127.435: [09:41:27]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+094127.435: [09:41:27]rtt min/avg/max/mdev = 14.044/14.258/14.473/0.214 ms
+094130.488: [09:41:30]root@suzhouprodb100:~# ping www.baidu.com
+094133.386: [09:41:33]^C
+094136.474: [09:41:36]root@suzhouprodb100:~# ping 114.114.114.114
+094136.477: [09:41:36]PING 114.114.114.114 (114.114.114.114) 56(84) bytes of data.
+094137.571: [09:41:37]^C
+094137.571: [09:41:37]--- 114.114.114.114 ping statistics ---
+094137.571: [09:41:37]2 packets transmitted, 0 received, 100% packet loss, time 1001ms
+094137.571: [09:41:37]
+094139.595: [09:41:39]root@suzhouprodb100:~# ping 223.5.5.5
+094139.597: [09:41:39]PING 223.5.5.5 (223.5.5.5) 56(84) bytes of data.
+094139.607: [09:41:39]64 bytes from 223.5.5.5: icmp_seq=1 ttl=116 time=9.38 ms
+094140.608: [09:41:40]64 bytes from 223.5.5.5: icmp_seq=2 ttl=116 time=8.97 ms
+094140.809: [09:41:40]^C
+094140.809: [09:41:40]--- 223.5.5.5 ping statistics ---
+094140.809: [09:41:40]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+094140.809: [09:41:40]rtt min/avg/max/mdev = 8.973/9.176/9.380/0.203 ms
+095336.198: [09:53:36]root@suzhouprodb100:~# 
+095340.660: [09:53:40]root@suzhouprodb100:~# iptables -L -nxv --line 
+095340.665: [09:53:40]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+095340.666: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.666: [09:53:40]
+095340.666: [09:53:40]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+095340.666: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.666: [09:53:40]1    36994011 19372696225 DOCKER-USER  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095340.666: [09:53:40]2    36994011 19372696225 DOCKER-FORWARD  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095340.666: [09:53:40]
+095340.667: [09:53:40]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+095340.667: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.667: [09:53:40]
+095340.667: [09:53:40]Chain DOCKER (2 references)
+095340.667: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.674: [09:53:40]1         105     6300 ACCEPT     6    --  !br-8a1f89966586 br-8a1f89966586  0.0.0.0/0            172.18.0.2           tcp dpt:9300
+095340.674: [09:53:40]2      162664  9759840 ACCEPT     6    --  !br-8a1f89966586 br-8a1f89966586  0.0.0.0/0            172.18.0.2           tcp dpt:9200
+095340.675: [09:53:40]3           0        0 DROP       0    --  !br-8a1f89966586 br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095340.675: [09:53:40]4           0        0 DROP       0    --  !docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+095340.675: [09:53:40]
+095340.675: [09:53:40]Chain DOCKER-BRIDGE (1 references)
+095340.675: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.675: [09:53:40]1      162769  9766140 DOCKER     0    --  *      br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095340.675: [09:53:40]2           0        0 DOCKER     0    --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+095340.675: [09:53:40]
+095340.675: [09:53:40]Chain DOCKER-CT (1 references)
+095340.675: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.675: [09:53:40]1    21911995 10993437250 ACCEPT     0    --  *      br-8a1f89966586  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+095340.675: [09:53:40]2           0        0 ACCEPT     0    --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+095340.675: [09:53:40]
+095340.676: [09:53:40]Chain DOCKER-FORWARD (1 references)
+095340.676: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.676: [09:53:40]1    36994011 19372696225 DOCKER-CT  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095340.676: [09:53:40]2    15082016 8379258975 DOCKER-ISOLATION-STAGE-1  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095340.676: [09:53:40]3    15082016 8379258975 DOCKER-BRIDGE  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095340.676: [09:53:40]4    14919247 8369492835 ACCEPT     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+095340.676: [09:53:40]5           0        0 ACCEPT     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+095340.676: [09:53:40]
+095340.676: [09:53:40]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+095340.676: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.676: [09:53:40]1    14919247 8369492835 DOCKER-ISOLATION-STAGE-2  0    --  br-8a1f89966586 !br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095340.676: [09:53:40]2           0        0 DOCKER-ISOLATION-STAGE-2  0    --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+095340.677: [09:53:40]
+095340.677: [09:53:40]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+095340.677: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095340.677: [09:53:40]1           0        0 DROP       0    --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+095340.677: [09:53:40]2           0        0 DROP       0    --  *      br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095340.677: [09:53:40]
+095340.677: [09:53:40]Chain DOCKER-USER (1 references)
+095340.677: [09:53:40]num      pkts      bytes target     prot opt in     out     source               destination         
+095551.361: [09:55:51]root@suzhouprodb100:~# cd /opt/
+095551.983: [09:55:51]root@suzhouprodb100:/opt# ll
+095551.991: [09:55:51]total 44
+095551.991: [09:55:51]drwxr-xr-x  8 root root 4096 Dec 10 09:38 ./
+095551.991: [09:55:51]drwxr-xr-x 28 root root 4096 Dec 26 16:24 ../
+095551.991: [09:55:51]-rwxr-xr-x  1 root root 1987 Jul  7  2025 1.html*
+095551.991: [09:55:51]drwx--x--x  4 root root 4096 Jun 20  2025 containerd/
+095551.991: [09:55:51]drwxr-xr-x  4 root root 4096 Dec 24 11:31 guojiqe-sync/
+095551.992: [09:55:51]drwxr-xr-x  4 root root 4096 Oct 28 09:07 intel/
+095551.992: [09:55:51]drwxr-xr-x  7 root root 4096 Aug 29 16:07 knem-1.1.4.90mlnx3/
+095551.992: [09:55:51]drwxr-xr-x  7 root root 4096 Aug 29 16:08 mellanox/
+095551.992: [09:55:51]-rw-r--r--  1 root root  641 Nov  4 14:28 slurmd.conf
+095551.992: [09:55:51]-rwxr-xr-x  1 root root 1987 Jul  4  2025 total.html*
+095551.992: [09:55:51]drwxr-xr-x  5 root root 4096 Dec 10 09:38 TurboVNC/
+095603.811: [09:56:03]root@suzhouprodb100:/opt# cd /usr/local/bin/
+095606.123: [09:56:06]root@suzhouprodb100:/usr/local/bin# ll
+095606.132: [09:56:06]total 8840
+095606.132: [09:56:06]drwxr-xr-x  2 root root    4096 Dec 19 09:59 ./
+095606.133: [09:56:06]drwxr-xr-x 13 root root    4096 Nov 10 14:49 ../
+095606.133: [09:56:06]-rwxr-xr-x  1 root root     101 Dec 19 09:56 2to3*
+095606.133: [09:56:06]-rwxr-xr-x  1 root root      99 Dec 19 09:56 idle*
+095606.133: [09:56:06]-rwxr-xr-x  1 root root      84 Dec 19 09:56 pydoc*
+095606.133: [09:56:06]-rwxr-xr-x  1 root root 9007088 Dec 19 09:59 python2.7*
+095606.133: [09:56:06]-rwxr-xr-x  1 root root    1687 Dec 19 09:59 python2.7-config*
+095606.134: [09:56:06]-rwxr-xr-x  1 root root   18547 Dec 19 09:56 smtpd.py*
+095610.144: [09:56:10]root@suzhouprodb100:/usr/local/bin# crontab -l
+095610.153: [09:56:10]# Edit this file to introduce tasks to be run by cron.
+095610.153: [09:56:10]# 
+095610.153: [09:56:10]# Each task to run has to be defined through a single line
+095610.154: [09:56:10]# indicating with different fields when the task will be run
+095610.154: [09:56:10]# and what command to run for the task
+095610.154: [09:56:10]# 
+095610.154: [09:56:10]# To define the time you can provide concrete values for
+095610.154: [09:56:10]# minute (m), hour (h), day of month (dom), month (mon),
+095610.154: [09:56:10]# and day of week (dow) or use '*' in these fields (for 'any').
+095610.154: [09:56:10]# 
+095610.154: [09:56:10]# Notice that tasks will be started based on the cron's system
+095610.154: [09:56:10]# daemon's notion of time and timezones.
+095610.154: [09:56:10]# 
+095610.154: [09:56:10]# Output of the crontab jobs (including errors) is sent through
+095610.155: [09:56:10]# email to the user the crontab file belongs to (unless redirected).
+095610.155: [09:56:10]# 
+095610.155: [09:56:10]# For example, you can run a backup of all your user accounts
+095610.155: [09:56:10]# at 5 a.m every week with:
+095610.155: [09:56:10]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+095610.155: [09:56:10]# 
+095610.155: [09:56:10]# For more information see the manual pages of crontab(5) and cron(8)
+095610.155: [09:56:10]# 
+095610.155: [09:56:10]# m h  dom mon dow   command
+095610.156: [09:56:10]@reboot /bin/bash -c "sleep 30 && iptables -t nat -A POSTROUTING -o bond1 -d 10.62.0.0/24 -j SNAT --to-source 10.62.0.100"
+095610.156: [09:56:10]23 9 * * * /bin/bash /home/mhh/50_storage.sh >>/home/mhh/storage_check.log 2>&1
+095610.156: [09:56:10]25 9 * * * /bin/bash /home/mhh/678_storage.sh >>/home/mhh/storage_check.log 2>&1
+095625.610: [09:56:25]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line 
+095625.618: [09:56:25]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+095625.618: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.618: [09:56:25]
+095625.618: [09:56:25]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+095625.619: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.619: [09:56:25]1    37005648 19379635798 DOCKER-USER  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095625.619: [09:56:25]2    37005648 19379635798 DOCKER-FORWARD  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095625.619: [09:56:25]
+095625.619: [09:56:25]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+095625.619: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.619: [09:56:25]
+095625.619: [09:56:25]Chain DOCKER (2 references)
+095625.620: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.620: [09:56:25]1         105     6300 ACCEPT     6    --  !br-8a1f89966586 br-8a1f89966586  0.0.0.0/0            172.18.0.2           tcp dpt:9300
+095625.620: [09:56:25]2      162733  9763980 ACCEPT     6    --  !br-8a1f89966586 br-8a1f89966586  0.0.0.0/0            172.18.0.2           tcp dpt:9200
+095625.620: [09:56:25]3           0        0 DROP       0    --  !br-8a1f89966586 br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095625.621: [09:56:25]4           0        0 DROP       0    --  !docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+095625.621: [09:56:25]
+095625.621: [09:56:25]Chain DOCKER-BRIDGE (1 references)
+095625.621: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.621: [09:56:25]1      162838  9770280 DOCKER     0    --  *      br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095625.621: [09:56:25]2           0        0 DOCKER     0    --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+095625.621: [09:56:25]
+095625.621: [09:56:25]Chain DOCKER-CT (1 references)
+095625.622: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.622: [09:56:25]1    21918634 10997392961 ACCEPT     0    --  *      br-8a1f89966586  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+095625.622: [09:56:25]2           0        0 ACCEPT     0    --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+095625.622: [09:56:25]
+095625.622: [09:56:25]Chain DOCKER-FORWARD (1 references)
+095625.622: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.629: [09:56:25]1    37005648 19379635798 DOCKER-CT  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095625.629: [09:56:25]2    15087014 8382242837 DOCKER-ISOLATION-STAGE-1  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095625.629: [09:56:25]3    15087014 8382242837 DOCKER-BRIDGE  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]4    14924176 8372472557 ACCEPT     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]5           0        0 ACCEPT     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]
+095625.630: [09:56:25]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+095625.630: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.630: [09:56:25]1    14924176 8372472557 DOCKER-ISOLATION-STAGE-2  0    --  br-8a1f89966586 !br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]2           0        0 DOCKER-ISOLATION-STAGE-2  0    --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]
+095625.630: [09:56:25]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+095625.630: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095625.630: [09:56:25]1           0        0 DROP       0    --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]2           0        0 DROP       0    --  *      br-8a1f89966586  0.0.0.0/0            0.0.0.0/0           
+095625.630: [09:56:25]
+095625.630: [09:56:25]Chain DOCKER-USER (1 references)
+095625.631: [09:56:25]num      pkts      bytes target     prot opt in     out     source               destination         
+095640.043: [09:56:40]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -type nat
+095640.051: [09:56:40]Bad argument `nat'
+095640.051: [09:56:40]Try `iptables -h' or 'iptables --help' for more information.
+095643.835: [09:56:43]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -nat
+095643.842: [09:56:43]iptables v1.8.10 (nf_tables): multiple -n flags not allowed
+095643.842: [09:56:43]Try `iptables -h' or 'iptables --help' for more information.
+095804.015: [09:58:04]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -t nat
+095804.026: [09:58:04]Chain PREROUTING (policy ACCEPT 102384 packets, 6462787 bytes)
+095804.026: [09:58:04]num      pkts      bytes target     prot opt in     out     source               destination         
+095804.026: [09:58:04]1      193073 11896756 DOCKER     0    --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL
+095804.026: [09:58:04]
+095804.026: [09:58:04]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+095804.027: [09:58:04]num      pkts      bytes target     prot opt in     out     source               destination         
+095804.027: [09:58:04]
+095804.027: [09:58:04]Chain OUTPUT (policy ACCEPT 1137458 packets, 71830274 bytes)
+095804.027: [09:58:04]num      pkts      bytes target     prot opt in     out     source               destination         
+095804.027: [09:58:04]1           2      120 DOCKER     0    --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+095804.027: [09:58:04]
+095804.027: [09:58:04]Chain POSTROUTING (policy ACCEPT 1245764 packets, 77226718 bytes)
+095804.028: [09:58:04]num      pkts      bytes target     prot opt in     out     source               destination         
+095804.028: [09:58:04]1           0        0 MASQUERADE  0    --  *      !docker0  172.17.0.0/16        0.0.0.0/0           
+095804.028: [09:58:04]2       71622  4297320 MASQUERADE  0    --  *      !br-8a1f89966586  172.18.0.0/16        0.0.0.0/0           
+095804.028: [09:58:04]3       54572  4376236 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.029: [09:58:04]4           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.029: [09:58:04]5           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.029: [09:58:04]6           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.030: [09:58:04]7           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.030: [09:58:04]8           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.030: [09:58:04]9           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.030: [09:58:04]10          0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.030: [09:58:04]11          0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095804.030: [09:58:04]
+095804.031: [09:58:04]Chain DOCKER (2 references)
+095804.031: [09:58:04]num      pkts      bytes target     prot opt in     out     source               destination         
+095804.031: [09:58:04]1           0        0 RETURN     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+095804.031: [09:58:04]2           0        0 RETURN     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+095804.031: [09:58:04]3      162773  9766380 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:172.18.0.2:9200
+095804.031: [09:58:04]4         105     6300 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9300 to:172.18.0.2:9300
+095813.945: [09:58:13]root@suzhouprodb100:/usr/local/bin# uptime
+095813.954: [09:58:13] 09:58:13 up 7 days, 20:40,  3 users,  load average: 0.48, 0.49, 0.49
+095840.075: [09:58:40]root@suzhouprodb100:/usr/local/bin# clear
+095841.980: [09:58:41]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -t nat
+095841.986: [09:58:41]Chain PREROUTING (policy ACCEPT 102385 packets, 6462863 bytes)
+095841.986: [09:58:41]num      pkts      bytes target     prot opt in     out     source               destination         
+095841.986: [09:58:41]1      193092 11897912 DOCKER     0    --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL
+095841.986: [09:58:41]
+095841.986: [09:58:41]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+095841.986: [09:58:41]num      pkts      bytes target     prot opt in     out     source               destination         
+095841.986: [09:58:41]
+095841.986: [09:58:41]Chain OUTPUT (policy ACCEPT 1137534 packets, 71834895 bytes)
+095841.986: [09:58:41]num      pkts      bytes target     prot opt in     out     source               destination         
+095841.992: [09:58:41]1           2      120 DOCKER     0    --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+095841.993: [09:58:41]
+095841.993: [09:58:41]Chain POSTROUTING (policy ACCEPT 1245858 packets, 77232419 bytes)
+095841.993: [09:58:41]num      pkts      bytes target     prot opt in     out     source               destination         
+095841.993: [09:58:41]1           0        0 MASQUERADE  0    --  *      !docker0  172.17.0.0/16        0.0.0.0/0           
+095841.993: [09:58:41]2       71622  4297320 MASQUERADE  0    --  *      !br-8a1f89966586  172.18.0.0/16        0.0.0.0/0           
+095841.993: [09:58:41]3       54572  4376236 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.994: [09:58:41]4           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.994: [09:58:41]5           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.994: [09:58:41]6           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.994: [09:58:41]7           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.995: [09:58:41]8           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.995: [09:58:41]9           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.995: [09:58:41]10          0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.995: [09:58:41]11          0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+095841.995: [09:58:41]
+095841.995: [09:58:41]Chain DOCKER (2 references)
+095841.996: [09:58:41]num      pkts      bytes target     prot opt in     out     source               destination         
+095841.996: [09:58:41]1           0        0 RETURN     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+095841.996: [09:58:41]2           0        0 RETURN     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+095841.996: [09:58:41]3      162791  9767460 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:172.18.0.2:9200
+095841.997: [09:58:41]4         105     6300 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9300 to:172.18.0.2:9300
+095920.321: [09:59:20]root@suzhouprodb100:/usr/local/bin# crontab -l
+095920.326: [09:59:20]# Edit this file to introduce tasks to be run by cron.
+095920.327: [09:59:20]# 
+095920.327: [09:59:20]# Each task to run has to be defined through a single line
+095920.327: [09:59:20]# indicating with different fields when the task will be run
+095920.327: [09:59:20]# and what command to run for the task
+095920.327: [09:59:20]# 
+095920.327: [09:59:20]# To define the time you can provide concrete values for
+095920.327: [09:59:20]# minute (m), hour (h), day of month (dom), month (mon),
+095920.327: [09:59:20]# and day of week (dow) or use '*' in these fields (for 'any').
+095920.327: [09:59:20]# 
+095920.327: [09:59:20]# Notice that tasks will be started based on the cron's system
+095920.327: [09:59:20]# daemon's notion of time and timezones.
+095920.327: [09:59:20]# 
+095920.327: [09:59:20]# Output of the crontab jobs (including errors) is sent through
+095920.327: [09:59:20]# email to the user the crontab file belongs to (unless redirected).
+095920.327: [09:59:20]# 
+095920.328: [09:59:20]# For example, you can run a backup of all your user accounts
+095920.328: [09:59:20]# at 5 a.m every week with:
+095920.328: [09:59:20]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+095920.328: [09:59:20]# 
+095920.328: [09:59:20]# For more information see the manual pages of crontab(5) and cron(8)
+095920.328: [09:59:20]# 
+095920.328: [09:59:20]# m h  dom mon dow   command
+095920.329: [09:59:20]@reboot /bin/bash -c "sleep 30 && iptables -t nat -A POSTROUTING -o bond1 -d 10.62.0.0/24 -j SNAT --to-source 10.62.0.100"
+095920.329: [09:59:20]23 9 * * * /bin/bash /home/mhh/50_storage.sh >>/home/mhh/storage_check.log 2>&1
+095920.329: [09:59:20]25 9 * * * /bin/bash /home/mhh/678_storage.sh >>/home/mhh/storage_check.log 2>&1
+100212.872: [10:02:12]root@suzhouprodb100:/usr/local/bin# 
+100214.237: [10:02:14]root@suzhouprodb100:/usr/local/bin# iptables -t nat -D POSTROUTING 11
+100216.474: [10:02:16]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -t nat
+100216.486: [10:02:16]Chain PREROUTING (policy ACCEPT 102401 packets, 6464035 bytes)
+100216.486: [10:02:16]num      pkts      bytes target     prot opt in     out     source               destination         
+100216.486: [10:02:16]1      193205 11904904 DOCKER     0    --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL
+100216.486: [10:02:16]
+100216.486: [10:02:16]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+100216.486: [10:02:16]num      pkts      bytes target     prot opt in     out     source               destination         
+100216.486: [10:02:16]
+100216.486: [10:02:16]Chain OUTPUT (policy ACCEPT 1138012 packets, 71863953 bytes)
+100216.486: [10:02:16]num      pkts      bytes target     prot opt in     out     source               destination         
+100216.486: [10:02:16]1           2      120 DOCKER     0    --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+100216.486: [10:02:16]
+100216.487: [10:02:16]Chain POSTROUTING (policy ACCEPT 1246429 packets, 77266977 bytes)
+100216.487: [10:02:16]num      pkts      bytes target     prot opt in     out     source               destination         
+100216.487: [10:02:16]1           0        0 MASQUERADE  0    --  *      !docker0  172.17.0.0/16        0.0.0.0/0           
+100216.487: [10:02:16]2       71622  4297320 MASQUERADE  0    --  *      !br-8a1f89966586  172.18.0.0/16        0.0.0.0/0           
+100216.487: [10:02:16]3       54576  4376556 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.487: [10:02:16]4           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.487: [10:02:16]5           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.487: [10:02:16]6           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.487: [10:02:16]7           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.487: [10:02:16]8           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.488: [10:02:16]9           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.488: [10:02:16]10          0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100216.488: [10:02:16]
+100216.488: [10:02:16]Chain DOCKER (2 references)
+100216.488: [10:02:16]num      pkts      bytes target     prot opt in     out     source               destination         
+100216.488: [10:02:16]1           0        0 RETURN     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+100216.488: [10:02:16]2           0        0 RETURN     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+100216.488: [10:02:16]3      162888  9773280 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:172.18.0.2:9200
+100216.488: [10:02:16]4         105     6300 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9300 to:172.18.0.2:9300
+100235.751: [10:02:35]root@suzhouprodb100:/usr/local/bin# iptables -t nat -D POSTROUTING 10
+100235.752: [10:02:35]iptables -t nat -D POSTROUTING 9
+100235.752: [10:02:35]iptables -t nat -D POSTROUTING 8
+100235.752: [10:02:35]iptables -t nat -D POSTROUTING 7
+100235.752: [10:02:35]iptables -t nat -D POSTROUTING 6
+100236.231: [10:02:36]root@suzhouprodb100:/usr/local/bin# iptables -t nat -D POSTROUTING 10
+100236.231: [10:02:36]iptables -t nat -D POSTROUTING 9
+100236.231: [10:02:36]iptables -t nat -D POSTROUTING 8
+100236.231: [10:02:36]iptables -t nat -D POSTROUTING 7
+100236.231: [10:02:36]iptables -t nat -D POSTROUTING 6
+100236.231: [10:02:36]iptables -t nat -D POSTROUTING 5
+100236.664: [10:02:36]root@suzhouprodb100:/usr/local/bin# 
+100236.813: [10:02:36]root@suzhouprodb100:/usr/local/bin# 
+100239.348: [10:02:39]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -t nat
+100239.362: [10:02:39]Chain PREROUTING (policy ACCEPT 102402 packets, 6464111 bytes)
+100239.363: [10:02:39]num      pkts      bytes target     prot opt in     out     source               destination         
+100239.363: [10:02:39]1      193215 11905520 DOCKER     0    --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL
+100239.363: [10:02:39]
+100239.363: [10:02:39]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+100239.363: [10:02:39]num      pkts      bytes target     prot opt in     out     source               destination         
+100239.363: [10:02:39]
+100239.363: [10:02:39]Chain OUTPUT (policy ACCEPT 1138067 packets, 71867253 bytes)
+100239.363: [10:02:39]num      pkts      bytes target     prot opt in     out     source               destination         
+100239.363: [10:02:39]1           2      120 DOCKER     0    --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+100239.363: [10:02:39]
+100239.363: [10:02:39]Chain POSTROUTING (policy ACCEPT 1246493 packets, 77270817 bytes)
+100239.363: [10:02:39]num      pkts      bytes target     prot opt in     out     source               destination         
+100239.363: [10:02:39]1           0        0 MASQUERADE  0    --  *      !docker0  172.17.0.0/16        0.0.0.0/0           
+100239.363: [10:02:39]2       71622  4297320 MASQUERADE  0    --  *      !br-8a1f89966586  172.18.0.0/16        0.0.0.0/0           
+100239.363: [10:02:39]3       54576  4376556 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100239.364: [10:02:39]4           0        0 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100239.364: [10:02:39]
+100239.364: [10:02:39]Chain DOCKER (2 references)
+100239.364: [10:02:39]num      pkts      bytes target     prot opt in     out     source               destination         
+100239.364: [10:02:39]1           0        0 RETURN     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+100239.364: [10:02:39]2           0        0 RETURN     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+100239.364: [10:02:39]3      162897  9773820 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:172.18.0.2:9200
+100239.364: [10:02:39]4         105     6300 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9300 to:172.18.0.2:9300
+100247.678: [10:02:47]root@suzhouprodb100:/usr/local/bin# iptables -t nat -D POSTROUTING 4
+100249.369: [10:02:49]root@suzhouprodb100:/usr/local/bin# 
+100249.520: [10:02:49]root@suzhouprodb100:/usr/local/bin# 
+100249.639: [10:02:49]root@suzhouprodb100:/usr/local/bin# 
+100251.441: [10:02:51]root@suzhouprodb100:/usr/local/bin# iptables -L -nxv --line -t nat
+100251.453: [10:02:51]Chain PREROUTING (policy ACCEPT 102403 packets, 6464187 bytes)
+100251.453: [10:02:51]num      pkts      bytes target     prot opt in     out     source               destination         
+100251.454: [10:02:51]1      193222 11905956 DOCKER     0    --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL
+100251.454: [10:02:51]
+100251.454: [10:02:51]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+100251.454: [10:02:51]num      pkts      bytes target     prot opt in     out     source               destination         
+100251.454: [10:02:51]
+100251.454: [10:02:51]Chain OUTPUT (policy ACCEPT 1138084 packets, 71868273 bytes)
+100251.454: [10:02:51]num      pkts      bytes target     prot opt in     out     source               destination         
+100251.454: [10:02:51]1           2      120 DOCKER     0    --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+100251.454: [10:02:51]
+100251.454: [10:02:51]Chain POSTROUTING (policy ACCEPT 1246516 packets, 77272197 bytes)
+100251.454: [10:02:51]num      pkts      bytes target     prot opt in     out     source               destination         
+100251.454: [10:02:51]1           0        0 MASQUERADE  0    --  *      !docker0  172.17.0.0/16        0.0.0.0/0           
+100251.454: [10:02:51]2       71622  4297320 MASQUERADE  0    --  *      !br-8a1f89966586  172.18.0.0/16        0.0.0.0/0           
+100251.454: [10:02:51]3       54576  4376556 SNAT       0    --  *      bond1   0.0.0.0/0            10.62.0.0/24         to:10.62.0.100
+100251.454: [10:02:51]
+100251.454: [10:02:51]Chain DOCKER (2 references)
+100251.455: [10:02:51]num      pkts      bytes target     prot opt in     out     source               destination         
+100251.455: [10:02:51]1           0        0 RETURN     0    --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+100251.455: [10:02:51]2           0        0 RETURN     0    --  br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0           
+100251.455: [10:02:51]3      162903  9774180 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:172.18.0.2:9200
+100251.455: [10:02:51]4         105     6300 DNAT       6    --  !br-8a1f89966586 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9300 to:172.18.0.2:9300
+100414.625: [10:04:14]root@suzhouprodb100:/usr/local/bin# 
