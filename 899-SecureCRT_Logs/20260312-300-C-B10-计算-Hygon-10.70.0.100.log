@@ -1,0 +1,185 @@
+﻿145408.929: [14:54:08][202603300-C-B10-计算-Hygon-10.70.0.100-14:54:08]
+145408.940: [14:54:08]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-62-generic x86_64)
+145408.940: [14:54:08]
+145408.941: [14:54:08] * Documentation:  https://help.ubuntu.com
+145408.941: [14:54:08] * Management:     https://landscape.canonical.com
+145408.941: [14:54:08] * Support:        https://ubuntu.com/pro
+145408.941: [14:54:08]
+145408.941: [14:54:08] System information as of Thu Mar 12 02:53:13 PM CST 2026
+145408.941: [14:54:08]
+145408.941: [14:54:08]  System load:    0.28               Temperature:            80.0 C
+145408.941: [14:54:08]  Usage of /home: 0.1% of 301.67GB   Processes:              1384
+145408.941: [14:54:08]  Memory usage:   1%                 Users logged in:        1
+145408.941: [14:54:08]  Swap usage:     0%                 IPv4 address for bond0: 10.70.0.100
+145408.941: [14:54:08]
+145408.941: [14:54:08]
+145408.941: [14:54:08]Expanded Security Maintenance for Applications is not enabled.
+145408.941: [14:54:08]
+145408.941: [14:54:08]0 updates can be applied immediately.
+145408.941: [14:54:08]
+145408.941: [14:54:08]15 additional security updates can be applied with ESM Apps.
+145408.941: [14:54:08]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+145408.941: [14:54:08]
+145408.941: [14:54:08]
+145408.942: [14:54:08]The list of available updates is more than a week old.
+145408.942: [14:54:08]To check for new updates run: sudo apt update
+145408.942: [14:54:08]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+145408.942: [14:54:08]
+145408.942: [14:54:08]
+145408.942: [14:54:08]You have new mail.
+145408.942: [14:54:08]Last login: Mon Mar  9 15:02:48 2026 from 10.70.0.127
+145414.355: [14:54:14]root@suzhouprodc100:~# ping www.baidu.com
+145416.022: [14:54:16]^C
+145419.925: [14:54:19]root@suzhouprodc100:~# ping 114.114.114.114
+145419.931: [14:54:19]PING 114.114.114.114 (114.114.114.114) 56(84) bytes of data.
+145421.859: [14:54:21]^C
+145421.859: [14:54:21]--- 114.114.114.114 ping statistics ---
+145421.859: [14:54:21]2 packets transmitted, 0 received, 100% packet loss, time 1014ms
+145421.859: [14:54:21]
+145539.106: [14:55:39]root@suzhouprodc100:~# ping 192.168.231.1
+145539.109: [14:55:39]PING 192.168.231.1 (192.168.231.1) 56(84) bytes of data.
+145539.109: [14:55:39]64 bytes from 192.168.231.1: icmp_seq=1 ttl=253 time=0.679 ms
+145540.176: [14:55:40]64 bytes from 192.168.231.1: icmp_seq=2 ttl=253 time=0.778 ms
+145541.199: [14:55:41]64 bytes from 192.168.231.1: icmp_seq=3 ttl=253 time=0.649 ms
+145541.610: [14:55:41]^C
+145541.610: [14:55:41]--- 192.168.231.1 ping statistics ---
+145541.611: [14:55:41]3 packets transmitted, 3 received, 0% packet loss, time 2089ms
+145541.611: [14:55:41]rtt min/avg/max/mdev = 0.649/0.702/0.778/0.055 ms
+150315.649: [15:03:15]root@suzhouprodc100:~# 
+150319.815: [15:03:19]root@suzhouprodc100:~# ping www.baidu.com
+150319.838: [15:03:19]PING www.baidu.com (36.152.44.132) 56(84) bytes of data.
+150343.948: [15:03:43]64 bytes from 36.152.44.132: icmp_seq=1 ttl=49 time=9.93 ms
+150343.950: [15:03:43]64 bytes from 36.152.44.132: icmp_seq=2 ttl=49 time=9.76 ms
+150344.960: [15:03:44]64 bytes from 36.152.44.132: icmp_seq=3 ttl=49 time=9.62 ms
+150345.888: [15:03:45]64 bytes from 36.152.44.132: icmp_seq=4 ttl=49 time=10.9 ms
+150346.890: [15:03:46]64 bytes from 36.152.44.132: icmp_seq=5 ttl=49 time=9.94 ms
+150347.891: [15:03:47]64 bytes from 36.152.44.132: icmp_seq=6 ttl=49 time=9.91 ms
+150348.968: [15:03:48]64 bytes from 36.152.44.132: icmp_seq=7 ttl=49 time=10.3 ms
+150349.898: [15:03:49]64 bytes from 36.152.44.132: icmp_seq=8 ttl=49 time=9.74 ms
+150350.897: [15:03:50]64 bytes from 36.152.44.132: icmp_seq=9 ttl=49 time=10.0 ms
+150351.939: [15:03:51]64 bytes from 36.152.44.132: icmp_seq=10 ttl=49 time=9.91 ms
+150352.968: [15:03:52]64 bytes from 36.152.44.132: icmp_seq=11 ttl=49 time=10.1 ms
+150353.904: [15:03:53]64 bytes from 36.152.44.132: icmp_seq=12 ttl=49 time=9.86 ms
+150354.905: [15:03:54]64 bytes from 36.152.44.132: icmp_seq=13 ttl=49 time=10.0 ms
+150355.930: [15:03:55]64 bytes from 36.152.44.132: icmp_seq=14 ttl=49 time=9.80 ms
+150356.905: [15:03:56]64 bytes from 36.152.44.132: icmp_seq=15 ttl=49 time=9.95 ms
+150357.920: [15:03:57]64 bytes from 36.152.44.132: icmp_seq=16 ttl=49 time=10.5 ms
+150359.004: [15:03:59]64 bytes from 36.152.44.132: icmp_seq=17 ttl=49 time=10.4 ms
+150359.911: [15:03:59]64 bytes from 36.152.44.132: icmp_seq=18 ttl=49 time=9.96 ms
+150400.953: [15:04:00]64 bytes from 36.152.44.132: icmp_seq=19 ttl=49 time=9.81 ms
+150401.914: [15:04:01]64 bytes from 36.152.44.132: icmp_seq=20 ttl=49 time=9.77 ms
+150402.935: [15:04:02]64 bytes from 36.152.44.132: icmp_seq=21 ttl=49 time=9.61 ms
+150403.982: [15:04:03]64 bytes from 36.152.44.132: icmp_seq=22 ttl=49 time=9.89 ms
+150405.031: [15:04:05]64 bytes from 36.152.44.132: icmp_seq=23 ttl=49 time=10.2 ms
+150405.969: [15:04:05]64 bytes from 36.152.44.132: icmp_seq=24 ttl=49 time=9.77 ms
+150406.988: [15:04:06]64 bytes from 36.152.44.132: icmp_seq=25 ttl=49 time=9.62 ms
+150407.924: [15:04:07]64 bytes from 36.152.44.132: icmp_seq=26 ttl=49 time=9.84 ms
+150408.925: [15:04:08]64 bytes from 36.152.44.132: icmp_seq=27 ttl=49 time=9.94 ms
+150409.928: [15:04:09]64 bytes from 36.152.44.132: icmp_seq=28 ttl=49 time=9.80 ms
+150410.982: [15:04:10]64 bytes from 36.152.44.132: icmp_seq=29 ttl=49 time=9.62 ms
+150411.931: [15:04:11]64 bytes from 36.152.44.132: icmp_seq=30 ttl=49 time=10.2 ms
+150412.933: [15:04:12]64 bytes from 36.152.44.132: icmp_seq=31 ttl=49 time=9.91 ms
+150413.944: [15:04:13]64 bytes from 36.152.44.132: icmp_seq=32 ttl=49 time=10.1 ms
+150414.996: [15:04:14]64 bytes from 36.152.44.132: icmp_seq=33 ttl=49 time=9.92 ms
+150415.939: [15:04:15]64 bytes from 36.152.44.132: icmp_seq=34 ttl=49 time=9.79 ms
+150416.939: [15:04:16]64 bytes from 36.152.44.132: icmp_seq=35 ttl=49 time=10.2 ms
+150417.946: [15:04:17]64 bytes from 36.152.44.132: icmp_seq=36 ttl=49 time=9.69 ms
+150418.969: [15:04:18]64 bytes from 36.152.44.132: icmp_seq=37 ttl=49 time=9.82 ms
+150419.948: [15:04:19]64 bytes from 36.152.44.132: icmp_seq=38 ttl=49 time=9.95 ms
+150420.946: [15:04:20]64 bytes from 36.152.44.132: icmp_seq=39 ttl=49 time=9.97 ms
+150422.044: [15:04:22]64 bytes from 36.152.44.132: icmp_seq=40 ttl=49 time=9.75 ms
+150422.950: [15:04:22]64 bytes from 36.152.44.132: icmp_seq=41 ttl=49 time=9.94 ms
+150423.991: [15:04:23]64 bytes from 36.152.44.132: icmp_seq=42 ttl=49 time=9.76 ms
+150424.957: [15:04:24]64 bytes from 36.152.44.132: icmp_seq=43 ttl=49 time=9.83 ms
+150426.004: [15:04:26]64 bytes from 36.152.44.132: icmp_seq=44 ttl=49 time=10.0 ms
+150426.956: [15:04:26]64 bytes from 36.152.44.132: icmp_seq=45 ttl=49 time=10.0 ms
+150427.956: [15:04:27]64 bytes from 36.152.44.132: icmp_seq=46 ttl=49 time=10.2 ms
+150429.006: [15:04:29]64 bytes from 36.152.44.132: icmp_seq=47 ttl=49 time=9.84 ms
+150429.960: [15:04:29]64 bytes from 36.152.44.132: icmp_seq=48 ttl=49 time=10.1 ms
+150430.973: [15:04:30]64 bytes from 36.152.44.132: icmp_seq=49 ttl=49 time=10.2 ms
+150431.962: [15:04:31]64 bytes from 36.152.44.132: icmp_seq=50 ttl=49 time=9.85 ms
+150433.000: [15:04:33]64 bytes from 36.152.44.132: icmp_seq=51 ttl=49 time=9.84 ms
+150433.975: [15:04:33]64 bytes from 36.152.44.132: icmp_seq=52 ttl=49 time=17.8 ms
+150434.972: [15:04:34]64 bytes from 36.152.44.132: icmp_seq=53 ttl=49 time=14.2 ms
+150435.971: [15:04:35]64 bytes from 36.152.44.132: icmp_seq=54 ttl=49 time=9.90 ms
+150437.008: [15:04:37]64 bytes from 36.152.44.132: icmp_seq=55 ttl=49 time=9.78 ms
+150438.054: [15:04:38]64 bytes from 36.152.44.132: icmp_seq=56 ttl=49 time=10.3 ms
+150438.974: [15:04:38]64 bytes from 36.152.44.132: icmp_seq=57 ttl=49 time=9.93 ms
+150439.975: [15:04:39]64 bytes from 36.152.44.132: icmp_seq=58 ttl=49 time=10.1 ms
+150440.991: [15:04:40]64 bytes from 36.152.44.132: icmp_seq=59 ttl=49 time=9.80 ms
+150441.978: [15:04:41]64 bytes from 36.152.44.132: icmp_seq=60 ttl=49 time=9.91 ms
+150442.984: [15:04:42]64 bytes from 36.152.44.132: icmp_seq=61 ttl=49 time=10.1 ms
+150443.963: [15:04:43]^C
+150443.963: [15:04:43]--- www.baidu.com ping statistics ---
+150443.963: [15:04:43]61 packets transmitted, 61 received, 0% packet loss, time 83132ms
+150443.963: [15:04:43]rtt min/avg/max/mdev = 9.610/10.147/17.827/1.149 ms
+150449.742: [15:04:49]root@suzhouprodc100:~# ping www.google.com.hk
+150449.756: [15:04:49]PING www.google.com.hk (199.16.158.9) 56(84) bytes of data.
+150455.197: [15:04:55]^C
+150455.197: [15:04:55]--- www.google.com.hk ping statistics ---
+150455.198: [15:04:55]6 packets transmitted, 0 received, 100% packet loss, time 5105ms
+150455.198: [15:04:55]
+150459.029: [15:04:59]root@suzhouprodc100:~# ping www.sina.com
+150459.051: [15:04:59]PING www.sina.com (112.25.53.216) 56(84) bytes of data.
+150459.062: [15:04:59]64 bytes from 112.25.53.216: icmp_seq=1 ttl=52 time=9.05 ms
+150500.076: [15:05:00]64 bytes from 112.25.53.216: icmp_seq=2 ttl=52 time=8.77 ms
+150501.125: [15:05:01]64 bytes from 112.25.53.216: icmp_seq=3 ttl=52 time=8.80 ms
+150502.057: [15:05:02]64 bytes from 112.25.53.216: icmp_seq=4 ttl=52 time=8.60 ms
+150502.249: [15:05:02]^C
+150502.249: [15:05:02]--- www.sina.com ping statistics ---
+150502.249: [15:05:02]4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+150502.249: [15:05:02]rtt min/avg/max/mdev = 8.598/8.804/9.053/0.162 ms
+150503.444: [15:05:03]root@suzhouprodc100:~# 
+150503.544: [15:05:03]root@suzhouprodc100:~# 
+150503.753: [15:05:03]root@suzhouprodc100:~# 
+150659.096: [15:06:59]root@suzhouprodc100:~# ping 172.16.208.2
+150659.118: [15:06:59]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+150700.918: [15:07:00]^C
+150700.918: [15:07:00]--- 172.16.208.2 ping statistics ---
+150700.918: [15:07:00]2 packets transmitted, 0 received, 100% packet loss, time 1011ms
+150700.918: [15:07:00]
+151300.858: [15:13:00]root@suzhouprodc100:~# ping www.google.com.hk
+151300.884: [15:13:00]PING www.google.com.hk (108.177.97.199) 56(84) bytes of data.
+151301.139: [15:13:01]64 bytes from tm-in-f199.1e100.net (108.177.97.199): icmp_seq=1 ttl=103 time=127 ms
+151301.980: [15:13:01]64 bytes from tm-in-f199.1e100.net (108.177.97.199): icmp_seq=2 ttl=103 time=117 ms
+151302.992: [15:13:02]64 bytes from tm-in-f199.1e100.net (108.177.97.199): icmp_seq=3 ttl=103 time=119 ms
+151304.007: [15:13:04]64 bytes from tm-in-f199.1e100.net (108.177.97.199): icmp_seq=4 ttl=103 time=116 ms
+151304.524: [15:13:04]^C
+151304.524: [15:13:04]--- www.google.com.hk ping statistics ---
+151304.525: [15:13:04]4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+151304.525: [15:13:04]rtt min/avg/max/mdev = 115.888/119.601/126.929/4.394 ms
+152922.844: [15:29:22]root@suzhouprodc100:~# ping 172.16.208.2
+152922.869: [15:29:22]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+152923.927: [15:29:23]^C
+152923.928: [15:29:23]--- 172.16.208.2 ping statistics ---
+152923.928: [15:29:23]2 packets transmitted, 0 received, 100% packet loss, time 1045ms
+152923.928: [15:29:23]
+152926.516: [15:29:26]root@suzhouprodc100:~# ping 192.168.8.1
+152926.535: [15:29:26]PING 192.168.8.1 (192.168.8.1) 56(84) bytes of data.
+152926.535: [15:29:26]64 bytes from 192.168.8.1: icmp_seq=1 ttl=124 time=1.24 ms
+152927.627: [15:29:27]64 bytes from 192.168.8.1: icmp_seq=2 ttl=124 time=1.16 ms
+152927.735: [15:29:27]^C
+152927.735: [15:29:27]--- 192.168.8.1 ping statistics ---
+152927.735: [15:29:27]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+152927.735: [15:29:27]rtt min/avg/max/mdev = 1.164/1.204/1.244/0.040 ms
+152931.290: [15:29:31]root@suzhouprodc100:~# ping 192.168.8.88
+152931.290: [15:29:31]PING 192.168.8.88 (192.168.8.88) 56(84) bytes of data.
+152935.439: [15:29:35]^C
+152935.439: [15:29:35]--- 192.168.8.88 ping statistics ---
+152935.440: [15:29:35]5 packets transmitted, 0 received, 100% packet loss, time 4074ms
+152935.440: [15:29:35]
+153038.918: [15:30:38]root@suzhouprodc100:~# ping 192.168.8.88
+153038.919: [15:30:38]PING 192.168.8.88 (192.168.8.88) 56(84) bytes of data.
+153038.919: [15:30:38]64 bytes from 192.168.8.88: icmp_seq=1 ttl=59 time=5.48 ms
+153039.928: [15:30:39]64 bytes from 192.168.8.88: icmp_seq=2 ttl=59 time=3.48 ms
+153040.175: [15:30:40]^C
+153040.176: [15:30:40]--- 192.168.8.88 ping statistics ---
+153040.176: [15:30:40]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+153040.176: [15:30:40]rtt min/avg/max/mdev = 3.478/4.478/5.478/1.000 ms
+153044.156: [15:30:44]root@suzhouprodc100:~# ping 172.16.208.2
+153044.178: [15:30:44]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+153044.178: [15:30:44]64 bytes from 172.16.208.2: icmp_seq=1 ttl=58 time=1.89 ms
+153044.806: [15:30:44]^C
+153044.806: [15:30:44]--- 172.16.208.2 ping statistics ---
+153044.806: [15:30:44]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+153044.806: [15:30:44]rtt min/avg/max/mdev = 1.886/1.886/1.886/0.000 ms

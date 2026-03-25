@@ -1,0 +1,154 @@
+﻿161039.097: [16:10:39][202603103-172.16.101.45-16:10:39]
+161039.122: [16:10:39]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+161039.122: [16:10:39]
+161039.122: [16:10:39] * Documentation:  https://help.ubuntu.com
+161039.122: [16:10:39] * Management:     https://landscape.canonical.com
+161039.123: [16:10:39] * Support:        https://ubuntu.com/pro
+161039.123: [16:10:39]
+161039.123: [16:10:39]扩展安全维护（ESM）Applications 未启用。
+161039.123: [16:10:39]
+161039.123: [16:10:39]47 更新可以立即应用。
+161039.123: [16:10:39]这些更新中有 32 个是标准安全更新。
+161039.123: [16:10:39]要查看这些附加更新，请运行：apt list --upgradable
+161039.123: [16:10:39]
+161039.123: [16:10:39]启用 ESM Apps 来获取未来的额外安全更新
+161039.123: [16:10:39]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+161039.123: [16:10:39]
+161039.123: [16:10:39]Last login: Tue Mar 24 16:08:14 2026 from 192.168.6.173
+161043.541: [16:10:43]root@user:~# cd /etc/netplan/
+161044.168: [16:10:44]root@user:/etc/netplan# ll
+161044.171: [16:10:44]总计 20
+161044.172: [16:10:44]drwxr-xr-x   2 root root  4096  3月 24 16:04 ./
+161044.172: [16:10:44]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+161044.172: [16:10:44]-rw-------   1 root root   380  3月 24 16:04 01-network-manager-all.yaml
+161046.795: [16:10:46]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+161046.811: [16:10:46]# Let NetworkManager manage all devices on this system
+161046.811: [16:10:46]network:
+161046.811: [16:10:46]  version: 2
+161046.811: [16:10:46]  renderer: networkd
+161046.811: [16:10:46]  ethernets:
+161046.812: [16:10:46]          - 223.5.5.5
+161046.812: [16:10:46]        - 10.0.0.45/24
+161050.844: [16:10:50]"01-network-manager-all.yaml" 19 lines, 380 bytes written
+161100.760: [16:11:00]root@user:/etc/netplan# ping 10.0.0.46
+161100.763: [16:11:00]PING 10.0.0.46 (10.0.0.46) 56(84) bytes of data.
+161103.307: [16:11:03]^C
+161103.307: [16:11:03]--- 10.0.0.46 ping statistics ---
+161103.307: [16:11:03]3 packets transmitted, 0 received, 100% packet loss, time 2027ms
+161103.307: [16:11:03]
+161106.922: [16:11:06]root@user:/etc/netplan# ping 10.0.0.44
+161106.929: [16:11:06]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+161108.871: [16:11:08]^C
+161108.871: [16:11:08]--- 10.0.0.44 ping statistics ---
+161108.871: [16:11:08]2 packets transmitted, 0 received, 100% packet loss, time 1055ms
+161108.871: [16:11:08]
+161109.884: [16:11:09]root@user:/etc/netplan# ll
+161109.892: [16:11:09]总计 20
+161109.892: [16:11:09]drwxr-xr-x   2 root root  4096  3月 24 16:10 ./
+161109.892: [16:11:09]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+161109.892: [16:11:09]-rw-------   1 root root   380  3月 24 16:10 01-network-manager-all.yaml
+161110.796: [16:11:10]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+161110.814: [16:11:10]# Let NetworkManager manage all devices on this system
+161110.814: [16:11:10]network:
+161110.814: [16:11:10]  version: 2
+161110.814: [16:11:10]  renderer: networkd
+161110.814: [16:11:10]  ethernets:
+161110.815: [16:11:10]          - 223.5.5.5
+161110.815: [16:11:10]        - 10.0.0.45/24
+161120.653: [16:11:20]root@user:/etc/netplan# ll
+161120.657: [16:11:20]总计 20
+161120.657: [16:11:20]drwxr-xr-x   2 root root  4096  3月 24 16:11 ./
+161120.657: [16:11:20]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+161120.657: [16:11:20]-rw-------   1 root root   380  3月 24 16:10 01-network-manager-all.yaml
+161323.266: [16:13:23][202603103-172.16.101.45-16:13:23]
+161323.280: [16:13:23]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+161323.280: [16:13:23]
+161323.280: [16:13:23] * Documentation:  https://help.ubuntu.com
+161323.281: [16:13:23] * Management:     https://landscape.canonical.com
+161323.281: [16:13:23] * Support:        https://ubuntu.com/pro
+161323.281: [16:13:23]
+161323.281: [16:13:23]扩展安全维护（ESM）Applications 未启用。
+161323.281: [16:13:23]
+161323.281: [16:13:23]47 更新可以立即应用。
+161323.282: [16:13:23]这些更新中有 32 个是标准安全更新。
+161323.282: [16:13:23]要查看这些附加更新，请运行：apt list --upgradable
+161323.282: [16:13:23]
+161323.282: [16:13:23]启用 ESM Apps 来获取未来的额外安全更新
+161323.282: [16:13:23]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+161323.283: [16:13:23]
+161323.283: [16:13:23]Last login: Tue Mar 24 16:13:21 2026 from 192.168.6.173
+161434.263: [16:14:34]root@user:~# cd /etc/netplan/
+161434.948: [16:14:34]root@user:/etc/netplan# ll
+161434.952: [16:14:34]总计 20
+161434.952: [16:14:34]drwxr-xr-x   2 root root  4096  3月 24 16:11 ./
+161434.952: [16:14:34]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+161434.952: [16:14:34]-rw-------   1 root root   380  3月 24 16:10 01-network-manager-all.yaml
+161436.234: [16:14:36]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+161436.242: [16:14:36]# Let NetworkManager manage all devices on this system
+161436.243: [16:14:36]network:
+161436.243: [16:14:36]  version: 2
+161436.243: [16:14:36]  renderer: networkd
+161436.243: [16:14:36]  ethernets:
+161436.243: [16:14:36]          - 223.5.5.5
+161436.244: [16:14:36]        - 10.0.0.45/24
+161439.253: [16:14:39]# Let NetworkManager manage all devices on this system
+161439.455: [16:14:39]network:
+161439.642: [16:14:39]  version: 2
+161440.001: [16:14:40]  renderer: networkd
+161440.205: [16:14:40]  ethernets:
+161440.392: [16:14:40]    ens4f0np0:
+161440.595: [16:14:40]      dhcp4: no
+161440.799: [16:14:40]      addresses:
+161440.982: [16:14:40]       - 172.16.101.45/24
+161441.201: [16:14:41]      routes:
+161441.420: [16:14:41]        - to: default
+161441.698: [16:14:41]          via: 172.16.101.1
+161442.032: [16:14:42]      nameservers:
+161445.129: [16:14:45]        addresses:
+161512.862: [16:15:12]root@user:/etc/netplan# netplan apply
+161519.750: [16:15:19]root@user:/etc/netplan# ping 10.0.0.45
+161519.757: [16:15:19]PING 10.0.0.45 (10.0.0.45) 56(84) bytes of data.
+161519.757: [16:15:19]64 bytes from 10.0.0.45: icmp_seq=1 ttl=64 time=0.024 ms
+161520.780: [16:15:20]64 bytes from 10.0.0.45: icmp_seq=2 ttl=64 time=0.022 ms
+161520.831: [16:15:20]^C
+161520.832: [16:15:20]--- 10.0.0.45 ping statistics ---
+161520.832: [16:15:20]2 packets transmitted, 2 received, 0% packet loss, time 1022ms
+161520.832: [16:15:20]rtt min/avg/max/mdev = 0.022/0.023/0.024/0.001 ms
+161521.893: [16:15:21]root@user:/etc/netplan# ping 10.0.0.44
+161521.894: [16:15:21]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+161521.894: [16:15:21]64 bytes from 10.0.0.44: icmp_seq=1 ttl=64 time=0.166 ms
+161522.885: [16:15:22]^C
+161522.885: [16:15:22]--- 10.0.0.44 ping statistics ---
+161522.890: [16:15:22]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161522.890: [16:15:22]rtt min/avg/max/mdev = 0.166/0.166/0.166/0.000 ms
+161527.589: [16:15:27]root@user:/etc/netplan# ping 10.0.0.43
+161527.608: [16:15:27]PING 10.0.0.43 (10.0.0.43) 56(84) bytes of data.
+161527.608: [16:15:27]64 bytes from 10.0.0.43: icmp_seq=1 ttl=64 time=0.087 ms
+161528.178: [16:15:28]^C
+161528.178: [16:15:28]--- 10.0.0.43 ping statistics ---
+161528.178: [16:15:28]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161528.179: [16:15:28]rtt min/avg/max/mdev = 0.087/0.087/0.087/0.000 ms
+161529.584: [16:15:29]root@user:/etc/netplan# ping 10.0.0.46
+161529.594: [16:15:29]PING 10.0.0.46 (10.0.0.46) 56(84) bytes of data.
+161529.594: [16:15:29]64 bytes from 10.0.0.46: icmp_seq=1 ttl=64 time=0.161 ms
+161530.370: [16:15:30]^C
+161530.370: [16:15:30]--- 10.0.0.46 ping statistics ---
+161530.370: [16:15:30]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161530.370: [16:15:30]rtt min/avg/max/mdev = 0.161/0.161/0.161/0.000 ms
+161834.756: [16:18:34][202603103-172.16.101.45-16:18:34]
+161834.795: [16:18:34]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+161834.795: [16:18:34]
+161834.796: [16:18:34] * Documentation:  https://help.ubuntu.com
+161834.796: [16:18:34] * Management:     https://landscape.canonical.com
+161834.796: [16:18:34] * Support:        https://ubuntu.com/pro
+161834.796: [16:18:34]
+161834.796: [16:18:34]扩展安全维护（ESM）Applications 未启用。
+161834.796: [16:18:34]
+161834.796: [16:18:34]47 更新可以立即应用。
+161834.797: [16:18:34]这些更新中有 32 个是标准安全更新。
+161834.797: [16:18:34]要查看这些附加更新，请运行：apt list --upgradable
+161834.797: [16:18:34]
+161834.797: [16:18:34]启用 ESM Apps 来获取未来的额外安全更新
+161834.797: [16:18:34]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+161834.797: [16:18:34]
+161834.797: [16:18:34]Last login: Tue Mar 24 16:18:20 2026 from 192.168.6.173

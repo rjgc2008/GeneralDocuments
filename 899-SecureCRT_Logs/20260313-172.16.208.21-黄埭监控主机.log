@@ -1,0 +1,282 @@
+﻿095951.259: [09:59:51][202603172.16.208.21-黄埭监控主机-09:59:51]
+095951.275: [09:59:51]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+095951.275: [09:59:51]
+095951.275: [09:59:51] * Documentation:  https://help.ubuntu.com
+095951.275: [09:59:51] * Management:     https://landscape.canonical.com
+095951.275: [09:59:51] * Support:        https://ubuntu.com/pro
+095951.275: [09:59:51]
+095951.275: [09:59:51] System information as of Fri Mar 13 09:59:50 AM CST 2026
+095951.275: [09:59:51]
+095951.275: [09:59:51]  System load:  0.02               Processes:             219
+095951.275: [09:59:51]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+095951.275: [09:59:51]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+095951.275: [09:59:51]  Swap usage:   0%
+095951.275: [09:59:51]
+095951.275: [09:59:51] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+095951.276: [09:59:51]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+095951.276: [09:59:51]
+095951.276: [09:59:51]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+095951.276: [09:59:51]
+095951.276: [09:59:51]Expanded Security Maintenance for Applications is not enabled.
+095951.276: [09:59:51]
+095951.276: [09:59:51]66 updates can be applied immediately.
+095951.276: [09:59:51]To see these additional updates run: apt list --upgradable
+095951.276: [09:59:51]
+095951.276: [09:59:51]Enable ESM Apps to receive additional future security updates.
+095951.276: [09:59:51]See https://ubuntu.com/esm or run: sudo pro status
+095951.276: [09:59:51]
+095951.276: [09:59:51]
+095951.276: [09:59:51]Last login: Thu Mar 12 08:06:19 2026 from 192.168.4.222
+100011.787: [10:00:11][202603172.16.208.21-黄埭监控主机-10:00:11]
+100011.802: [10:00:11]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+100011.802: [10:00:11]
+100011.802: [10:00:11] * Documentation:  https://help.ubuntu.com
+100011.802: [10:00:11] * Management:     https://landscape.canonical.com
+100011.802: [10:00:11] * Support:        https://ubuntu.com/pro
+100011.802: [10:00:11]
+100011.802: [10:00:11] System information as of Fri Mar 13 09:59:50 AM CST 2026
+100011.802: [10:00:11]
+100011.802: [10:00:11]  System load:  0.02               Processes:             219
+100011.802: [10:00:11]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+100011.802: [10:00:11]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+100011.802: [10:00:11]  Swap usage:   0%
+100011.802: [10:00:11]
+100011.803: [10:00:11] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+100011.803: [10:00:11]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+100011.803: [10:00:11]
+100011.803: [10:00:11]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+100011.803: [10:00:11]
+100011.803: [10:00:11]Expanded Security Maintenance for Applications is not enabled.
+100011.803: [10:00:11]
+100011.803: [10:00:11]66 updates can be applied immediately.
+100011.803: [10:00:11]To see these additional updates run: apt list --upgradable
+100011.803: [10:00:11]
+100011.803: [10:00:11]Enable ESM Apps to receive additional future security updates.
+100011.803: [10:00:11]See https://ubuntu.com/esm or run: sudo pro status
+100011.803: [10:00:11]
+100011.803: [10:00:11]New release '24.04.4 LTS' available.
+100011.803: [10:00:11]Run 'do-release-upgrade' to upgrade to it.
+100011.803: [10:00:11]
+100011.803: [10:00:11]
+100011.803: [10:00:11]Last login: Fri Mar 13 09:59:51 2026 from 192.168.4.222
+100015.294: [10:00:15]root@huangdai-monitor:~# ss -tlnp | sort -k 6  
+100015.363: [10:00:15]LISTEN 0      64                    0.0.0.0:2049       0.0.0.0:*                                                              
+100015.363: [10:00:15]LISTEN 0      64                    0.0.0.0:34941      0.0.0.0:*                                                              
+100015.363: [10:00:15]LISTEN 0      64                       [::]:2049          [::]:*                                                              
+100015.363: [10:00:15]LISTEN 0      64                       [::]:44823         [::]:*                                                              
+100015.364: [10:00:15]State  Recv-Q Send-Q          Local Address:Port  Peer Address:PortProcess                                                    
+100015.364: [10:00:15]LISTEN 0      4096                        *:32422            *:*    users:(("ibootnode",pid=27251,fd=3))                      
+100015.364: [10:00:15]LISTEN 0      4096                        *:8086             *:*    users:(("influxd",pid=13329,fd=9))                        
+100015.365: [10:00:15]LISTEN 0      50                          *:44203            *:*    users:(("java",pid=27596,fd=10))                          
+100015.365: [10:00:15]LISTEN 0      50                          *:9002             *:*    users:(("java",pid=27596,fd=12))                          
+100015.365: [10:00:15]LISTEN 0      50                          *:39895            *:*    users:(("java",pid=27596,fd=14))                          
+100015.366: [10:00:15]LISTEN 0      100                         *:32382            *:*    users:(("java",pid=27596,fd=269))                         
+100015.366: [10:00:15]LISTEN 0      100                         *:32380            *:*    users:(("java",pid=27596,fd=322))                         
+100015.366: [10:00:15]LISTEN 0      1                     0.0.0.0:10002      0.0.0.0:*    users:(("java",pid=27596,fd=4))                           
+100015.367: [10:00:15]LISTEN 0      50                          *:44179            *:*    users:(("java",pid=27712,fd=10))                          
+100015.367: [10:00:15]LISTEN 0      50                          *:9016             *:*    users:(("java",pid=27712,fd=12))                          
+100015.367: [10:00:15]LISTEN 0      100                         *:30105            *:*    users:(("java",pid=27712,fd=136))                         
+100015.368: [10:00:15]LISTEN 0      50                          *:43465            *:*    users:(("java",pid=27712,fd=14))                          
+100015.368: [10:00:15]LISTEN 0      1                     0.0.0.0:10016      0.0.0.0:*    users:(("java",pid=27712,fd=4))                           
+100015.368: [10:00:15]LISTEN 0      1                     0.0.0.0:10001      0.0.0.0:*    users:(("java",pid=27834,fd=10))                          
+100015.369: [10:00:15]LISTEN 0      100                         *:32320            *:*    users:(("java",pid=27834,fd=1159))                        
+100015.369: [10:00:15]LISTEN 0      100                         *:30100            *:*    users:(("java",pid=27834,fd=1160))                        
+100015.369: [10:00:15]LISTEN 0      100                         *:32370            *:*    users:(("java",pid=27834,fd=1161))                        
+100015.370: [10:00:15]LISTEN 0      100                         *:32330            *:*    users:(("java",pid=27834,fd=1162))                        
+100015.370: [10:00:15]LISTEN 0      100                         *:32372            *:*    users:(("java",pid=27834,fd=1163))                        
+100015.370: [10:00:15]LISTEN 0      100                         *:9140             *:*    users:(("java",pid=27834,fd=1164))                        
+100015.370: [10:00:15]LISTEN 0      50                          *:46321            *:*    users:(("java",pid=27834,fd=12))                          
+100015.370: [10:00:15]LISTEN 0      50                          *:9001             *:*    users:(("java",pid=27834,fd=14))                          
+100015.371: [10:00:15]LISTEN 0      50                          *:44279            *:*    users:(("java",pid=27834,fd=16))                          
+100015.371: [10:00:15]LISTEN 0      4096                        *:9999             *:*    users:(("java",pid=27834,fd=1885))                        
+100015.371: [10:00:15]LISTEN 0      100                         *:9141             *:*    users:(("java",pid=27834,fd=1886))                        
+100015.371: [10:00:15]LISTEN 0      1024                        *:32371            *:*    users:(("java",pid=27834,fd=1972))                        
+100015.372: [10:00:15]LISTEN 0      50     [::ffff:172.16.208.21]:5060             *:*    users:(("java",pid=27834,fd=1973))                        
+100015.372: [10:00:15]LISTEN 0      1024                        *:32329            *:*    users:(("java",pid=27834,fd=2175))                        
+100015.373: [10:00:15]LISTEN 0      1024                        *:34444            *:*    users:(("java",pid=27834,fd=2176))                        
+100015.373: [10:00:15]LISTEN 0      511                         *:443              *:*    users:(("node",pid=27207,fd=21))                          
+100015.373: [10:00:15]LISTEN 0      511                         *:80               *:*    users:(("node",pid=27207,fd=22))                          
+100015.373: [10:00:15]LISTEN 0      511                 127.0.0.1:37813      0.0.0.0:*    users:(("node",pid=27214,fd=24))                          
+100015.374: [10:00:15]LISTEN 0      600                   0.0.0.0:5432       0.0.0.0:*    users:(("postgres",pid=13007,fd=7))                       
+100015.374: [10:00:15]LISTEN 0      600                      [::]:5432          [::]:*    users:(("postgres",pid=13007,fd=8))                       
+100015.374: [10:00:15]LISTEN 0      4096                  0.0.0.0:111        0.0.0.0:*    users:(("rpcbind",pid=15819,fd=4),("systemd",pid=1,fd=53))
+100015.375: [10:00:15]LISTEN 0      4096                     [::]:111           [::]:*    users:(("rpcbind",pid=15819,fd=6),("systemd",pid=1,fd=56))
+100015.375: [10:00:15]LISTEN 0      4096                     [::]:59743         [::]:*    users:(("rpc.mountd",pid=16412,fd=11))                    
+100015.375: [10:00:15]LISTEN 0      4096                  0.0.0.0:37539      0.0.0.0:*    users:(("rpc.mountd",pid=16412,fd=13))                    
+100015.375: [10:00:15]LISTEN 0      4096                     [::]:33839         [::]:*    users:(("rpc.mountd",pid=16412,fd=15))                    
+100015.387: [10:00:15]LISTEN 0      4096                  0.0.0.0:52845      0.0.0.0:*    users:(("rpc.mountd",pid=16412,fd=5))                     
+100015.387: [10:00:15]LISTEN 0      4096                     [::]:51659         [::]:*    users:(("rpc.mountd",pid=16412,fd=7))                     
+100015.387: [10:00:15]LISTEN 0      4096                  0.0.0.0:55653      0.0.0.0:*    users:(("rpc.mountd",pid=16412,fd=9))                     
+100015.387: [10:00:15]LISTEN 0      4096                     [::]:54361         [::]:*    users:(("rpc.statd",pid=16404,fd=11))                     
+100015.387: [10:00:15]LISTEN 0      4096                  0.0.0.0:46535      0.0.0.0:*    users:(("rpc.statd",pid=16404,fd=9))                      
+100015.388: [10:00:15]LISTEN 0      50                       [::]:445           [::]:*    users:(("smbd",pid=19459,fd=44))                          
+100015.388: [10:00:15]LISTEN 0      50                       [::]:139           [::]:*    users:(("smbd",pid=19459,fd=45))                          
+100015.388: [10:00:15]LISTEN 0      50                    0.0.0.0:445        0.0.0.0:*    users:(("smbd",pid=19459,fd=46))                          
+100015.388: [10:00:15]LISTEN 0      50                    0.0.0.0:139        0.0.0.0:*    users:(("smbd",pid=19459,fd=47))                          
+100015.388: [10:00:15]LISTEN 0      128                   0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=9602,fd=3))                            
+100015.388: [10:00:15]LISTEN 0      128                      [::]:22            [::]:*    users:(("sshd",pid=9602,fd=4))                            
+100015.388: [10:00:15]LISTEN 0      4096            127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=673,fd=14))                 
+103828.406: [10:38:28][202603172.16.208.21-黄埭监控主机-10:38:28]
+103828.425: [10:38:28]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+103828.425: [10:38:28]
+103828.425: [10:38:28] * Documentation:  https://help.ubuntu.com
+103828.425: [10:38:28] * Management:     https://landscape.canonical.com
+103828.425: [10:38:28] * Support:        https://ubuntu.com/pro
+103828.425: [10:38:28]
+103828.425: [10:38:28] System information as of Fri Mar 13 10:38:27 AM CST 2026
+103828.425: [10:38:28]
+103828.425: [10:38:28]  System load:  0.17               Processes:             228
+103828.426: [10:38:28]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+103828.426: [10:38:28]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+103828.426: [10:38:28]  Swap usage:   0%
+103828.426: [10:38:28]
+103828.426: [10:38:28] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+103828.426: [10:38:28]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+103828.426: [10:38:28]
+103828.426: [10:38:28]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+103828.426: [10:38:28]
+103828.426: [10:38:28]Expanded Security Maintenance for Applications is not enabled.
+103828.426: [10:38:28]
+103828.426: [10:38:28]66 updates can be applied immediately.
+103828.426: [10:38:28]To see these additional updates run: apt list --upgradable
+103828.426: [10:38:28]
+103828.426: [10:38:28]Enable ESM Apps to receive additional future security updates.
+103828.426: [10:38:28]See https://ubuntu.com/esm or run: sudo pro status
+103828.426: [10:38:28]
+103828.426: [10:38:28]New release '24.04.4 LTS' available.
+103828.426: [10:38:28]Run 'do-release-upgrade' to upgrade to it.
+103828.426: [10:38:28]
+103828.426: [10:38:28]
+103828.426: [10:38:28]Last login: Fri Mar 13 10:20:24 2026 from 121.239.147.244
+133019.223: [13:30:19][202603172.16.208.21-黄埭监控主机-13:30:19]
+133019.242: [13:30:19]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+133019.243: [13:30:19]
+133019.243: [13:30:19] * Documentation:  https://help.ubuntu.com
+133019.243: [13:30:19] * Management:     https://landscape.canonical.com
+133019.243: [13:30:19] * Support:        https://ubuntu.com/pro
+133019.243: [13:30:19]
+133019.243: [13:30:19] System information as of Fri Mar 13 01:30:18 PM CST 2026
+133019.243: [13:30:19]
+133019.243: [13:30:19]  System load:  0.22               Processes:             222
+133019.243: [13:30:19]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+133019.243: [13:30:19]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+133019.243: [13:30:19]  Swap usage:   0%
+133019.244: [13:30:19]
+133019.244: [13:30:19] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+133019.244: [13:30:19]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+133019.244: [13:30:19]
+133019.244: [13:30:19]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+133019.244: [13:30:19]
+133019.244: [13:30:19]Expanded Security Maintenance for Applications is not enabled.
+133019.244: [13:30:19]
+133019.244: [13:30:19]85 updates can be applied immediately.
+133019.244: [13:30:19]17 of these updates are standard security updates.
+133019.244: [13:30:19]To see these additional updates run: apt list --upgradable
+133019.244: [13:30:19]
+133019.245: [13:30:19]Enable ESM Apps to receive additional future security updates.
+133019.245: [13:30:19]See https://ubuntu.com/esm or run: sudo pro status
+133019.245: [13:30:19]
+133019.245: [13:30:19]New release '24.04.4 LTS' available.
+133019.245: [13:30:19]Run 'do-release-upgrade' to upgrade to it.
+133019.245: [13:30:19]
+133019.245: [13:30:19]
+133019.245: [13:30:19]Last login: Fri Mar 13 13:00:04 2026 from 121.239.147.244
+141828.133: [14:18:28][202603172.16.208.21-黄埭监控主机-14:18:28]
+141828.152: [14:18:28]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+141828.152: [14:18:28]
+141828.152: [14:18:28] * Documentation:  https://help.ubuntu.com
+141828.152: [14:18:28] * Management:     https://landscape.canonical.com
+141828.152: [14:18:28] * Support:        https://ubuntu.com/pro
+141828.152: [14:18:28]
+141828.152: [14:18:28] System information as of Fri Mar 13 02:18:27 PM CST 2026
+141828.152: [14:18:28]
+141828.152: [14:18:28]  System load:  0.02               Processes:             223
+141828.153: [14:18:28]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+141828.153: [14:18:28]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+141828.153: [14:18:28]  Swap usage:   0%
+141828.153: [14:18:28]
+141828.153: [14:18:28] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+141828.153: [14:18:28]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+141828.153: [14:18:28]
+141828.153: [14:18:28]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+141828.153: [14:18:28]
+141828.154: [14:18:28]Expanded Security Maintenance for Applications is not enabled.
+141828.154: [14:18:28]
+141828.154: [14:18:28]85 updates can be applied immediately.
+141828.154: [14:18:28]17 of these updates are standard security updates.
+141828.154: [14:18:28]To see these additional updates run: apt list --upgradable
+141828.154: [14:18:28]
+141828.154: [14:18:28]Enable ESM Apps to receive additional future security updates.
+141828.154: [14:18:28]See https://ubuntu.com/esm or run: sudo pro status
+141828.154: [14:18:28]
+141828.154: [14:18:28]New release '24.04.4 LTS' available.
+141828.154: [14:18:28]Run 'do-release-upgrade' to upgrade to it.
+141828.154: [14:18:28]
+141828.154: [14:18:28]
+141828.154: [14:18:28]Last login: Fri Mar 13 13:30:19 2026 from 192.168.4.222
+175858.897: [17:58:58][202603172.16.208.21-黄埭监控主机-17:58:58]
+175858.910: [17:58:58]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+175858.910: [17:58:58]
+175858.910: [17:58:58] * Documentation:  https://help.ubuntu.com
+175858.910: [17:58:58] * Management:     https://landscape.canonical.com
+175858.910: [17:58:58] * Support:        https://ubuntu.com/pro
+175858.910: [17:58:58]
+175858.910: [17:58:58] System information as of Fri Mar 13 05:58:58 PM CST 2026
+175858.910: [17:58:58]
+175858.910: [17:58:58]  System load:  0.1                Processes:             219
+175858.911: [17:58:58]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+175858.911: [17:58:58]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+175858.911: [17:58:58]  Swap usage:   0%
+175858.911: [17:58:58]
+175858.911: [17:58:58] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+175858.911: [17:58:58]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+175858.911: [17:58:58]
+175858.911: [17:58:58]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+175858.911: [17:58:58]
+175858.911: [17:58:58]Expanded Security Maintenance for Applications is not enabled.
+175858.911: [17:58:58]
+175858.911: [17:58:58]85 updates can be applied immediately.
+175858.912: [17:58:58]17 of these updates are standard security updates.
+175858.912: [17:58:58]To see these additional updates run: apt list --upgradable
+175858.912: [17:58:58]
+175858.912: [17:58:58]Enable ESM Apps to receive additional future security updates.
+175858.912: [17:58:58]See https://ubuntu.com/esm or run: sudo pro status
+175858.912: [17:58:58]
+175858.912: [17:58:58]New release '24.04.4 LTS' available.
+175858.912: [17:58:58]Run 'do-release-upgrade' to upgrade to it.
+175858.913: [17:58:58]
+175858.913: [17:58:58]
+175858.913: [17:58:58]Last login: Fri Mar 13 16:33:45 2026 from 121.239.147.244
+184556.543: [18:45:56][202603172.16.208.21-黄埭监控主机-18:45:56]
+184556.556: [18:45:56]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+184556.556: [18:45:56]
+184556.556: [18:45:56] * Documentation:  https://help.ubuntu.com
+184556.556: [18:45:56] * Management:     https://landscape.canonical.com
+184556.556: [18:45:56] * Support:        https://ubuntu.com/pro
+184556.557: [18:45:56]
+184556.557: [18:45:56] System information as of Fri Mar 13 06:45:56 PM CST 2026
+184556.557: [18:45:56]
+184556.557: [18:45:56]  System load:  0.11               Processes:             223
+184556.557: [18:45:56]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+184556.557: [18:45:56]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+184556.557: [18:45:56]  Swap usage:   0%
+184556.557: [18:45:56]
+184556.557: [18:45:56] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+184556.557: [18:45:56]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+184556.557: [18:45:56]
+184556.558: [18:45:56]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+184556.558: [18:45:56]
+184556.558: [18:45:56]Expanded Security Maintenance for Applications is not enabled.
+184556.558: [18:45:56]
+184556.558: [18:45:56]85 updates can be applied immediately.
+184556.558: [18:45:56]17 of these updates are standard security updates.
+184556.558: [18:45:56]To see these additional updates run: apt list --upgradable
+184556.558: [18:45:56]
+184556.558: [18:45:56]Enable ESM Apps to receive additional future security updates.
+184556.558: [18:45:56]See https://ubuntu.com/esm or run: sudo pro status
+184556.558: [18:45:56]
+184556.558: [18:45:56]New release '24.04.4 LTS' available.
+184556.558: [18:45:56]Run 'do-release-upgrade' to upgrade to it.
+184556.558: [18:45:56]
+184556.558: [18:45:56]
+184556.559: [18:45:56]Last login: Fri Mar 13 17:58:58 2026 from 192.168.4.222

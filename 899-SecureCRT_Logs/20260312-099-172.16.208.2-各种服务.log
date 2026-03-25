@@ -1,0 +1,433 @@
+﻿092710.289: [09:27:10][202603099-172.16.208.2-各种服务-09:27:10]
+092710.314: [09:27:10]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+092710.314: [09:27:10]
+092710.315: [09:27:10]The programs included with the Debian GNU/Linux system are free software;
+092710.315: [09:27:10]the exact distribution terms for each program are described in the
+092710.315: [09:27:10]individual files in /usr/share/doc/*/copyright.
+092710.315: [09:27:10]
+092710.315: [09:27:10]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+092710.315: [09:27:10]permitted by applicable law.
+092710.315: [09:27:10]Last login: Wed Mar 11 09:35:03 2026 from 192.168.4.222
+092716.166: [09:27:16][root@172-16-208-2 ~]# wyj
+092716.828: [09:27:16][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk/200.JAPAN]# ll
+092716.852: [09:27:16]total 123G
+092716.853: [09:27:16]drwxr-xr-x  4 sambauser sambauser  36K Jan 28 18:16  1000-收藏
+092716.853: [09:27:16]drwxr-xr-x  5 sambauser sambauser  20K Jan 29 22:47  2000-一般
+092716.853: [09:27:16]drwxr-xr-x  2 sambauser sambauser  20K May  9  2025  2100-字幕文件
+092716.854: [09:27:16]drwxr-xr-x  2 sambauser sambauser  36K Aug  1  2025 '2200-海报&九宫格'
+092716.855: [09:27:16]-rw-rwxr--+ 1 sambauser sambauser  70K Feb  2 22:07 '[activehlj.com]@HMN476.FHD-poster.jpg'
+092716.855: [09:27:16]-rwxrwxrwx  1 wyj       wyj        35K Aug 21  2024 '[activehlj.com]@HMN479.FHD.srt'
+092716.855: [09:27:16]-rwxrwxrwx  1 wyj       wyj        69K Aug 21  2024 '[activehlj.com]@HMN480.FHD.srt'
+092716.856: [09:27:16]-rwxrwxrwx  1 wyj       wyj        77K Aug 21  2024 '[activehlj.com]@HMN481.FHD.srt'
+092716.856: [09:27:16]-rwxrwxrwx  1 wyj       wyj        43K Aug 21  2024 '[activehlj.com]@HMN484.FHD.srt'
+092716.856: [09:27:16]-rwxrwxrwx  1 wyj       wyj        39K Aug 21  2024 '[activehlj.com]@HMN485.FHD.srt'
+092716.857: [09:27:16]-rwxrwxrwx  1 wyj       wyj        57K Aug 21  2024 '[activehlj.com]@HMN486.FHD.srt'
+092716.857: [09:27:16]-rwxrwxrwx  1 wyj       wyj        71K Aug 21  2024 '[activehlj.com]@HMN489.FHD.srt'
+092716.857: [09:27:16]-rwxrwxrwx  1 wyj       wyj       5.0G Aug 29  2024 '[activehlj.com]@HMN493.FHD.mkv'
+092716.857: [09:27:16]-rw-rwxr--  1 wyj       wyj       162K Aug 29  2024 '[activehlj.com]@HMN493.FHD-poster.jpg'
+092716.858: [09:27:16]-rwxrwxrwx  1 wyj       wyj        85K Aug 21  2024 '[activehlj.com]@HMN493.FHD.srt'
+092716.858: [09:27:16]-rwxrwxrwx  1 wyj       wyj        55K Aug 21  2024 '[activehlj.com]@HMN497.FHD.srt'
+092716.858: [09:27:16]-rwxrwxrwx  1 wyj       wyj        72K Aug 21  2024 '[activehlj.com]@HMN498.FHD.srt'
+092716.859: [09:27:16]-rwxrwxrwx  1 wyj       wyj       4.9G Aug 29  2024 '[activehlj.com]@HMN502.FHD.mkv'
+092716.859: [09:27:16]-rw-rwxr--  1 wyj       wyj       132K Aug 29  2024 '[activehlj.com]@HMN502.FHD-poster.jpg'
+092716.859: [09:27:16]-rwxrwxrwx  1 wyj       wyj        43K Aug 21  2024 '[activehlj.com]@HMN502.FHD.srt'
+092716.859: [09:27:16]-rwxrwxrwx  1 wyj       wyj        60K Aug 21  2024 '[activehlj.com]@HMN505.FHD.srt'
+092716.860: [09:27:16]-rwxrwxrwx  1 wyj       wyj       104K Aug 21  2024 '[activehlj.com]@HMN506.FHD.srt'
+092716.860: [09:27:16]-rw-rwxr--  1 wyj       wyj       132K Aug 29  2024 '[activehlj.com]_poster.jpg'
+092716.860: [09:27:16]-rwxr--r--  1 sambauser sambauser 5.0G Jul  9  2025  ADN-091-UC.mp4
+092716.860: [09:27:16]-rw-r--r--  1 wyj       wyj        42K Apr 25  2025  ADN-344-U-poster.jpg
+092716.861: [09:27:16]-rw-rw-r--  1 wyj       wyj       6.6G Apr 24  2025  ADN-679-U.mp4
+092716.861: [09:27:16]-rw-r--r--  1 wyj       wyj        69K Apr 24  2025  ADN-679-U-poster.jpg
+092716.861: [09:27:16]-rw-rw-r--  1 wyj       wyj       2.2G Apr 22  2025  FC2PPV-4669209-1.mp4
+092716.861: [09:27:16]-rw-r--r--  1 wyj       wyj       108K Apr 22  2025  FC2PPV-4669209-1-poster.jpg
+092716.862: [09:27:16]-rw-rw-r--  1 wyj       wyj       303M Apr 22  2025  FC2PPV-4669209-2.mp4
+092716.862: [09:27:16]-rw-r--r--  1 wyj       wyj        43K Apr 22  2025  FC2PPV-4669209-2-poster.jpg
+092716.862: [09:27:16]-rw-rw-r--  1 wyj       wyj       2.6G Apr 22  2025  FC2PPV-4669351.mp4
+092716.862: [09:27:16]-rw-r--r--  1 wyj       wyj        64K Apr 22  2025  FC2PPV-4669351-poster.jpg
+092716.862: [09:27:16]-rwxrwxrwx  1 wyj       wyj       323K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa01.jpg
+092716.863: [09:27:16]-rwxrwxrwx  1 wyj       wyj       230K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa02.jpg
+092716.863: [09:27:16]-rwxrwxrwx  1 wyj       wyj       196K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa03.jpg
+092716.863: [09:27:16]-rwxrwxrwx  1 wyj       wyj       246K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa04.jpg
+092716.864: [09:27:16]-rwxrwxrwx  1 wyj       wyj       258K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa05.jpg
+092716.864: [09:27:16]-rwxrwxrwx  1 wyj       wyj       251K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa06.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       233K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa07.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       231K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa08.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       241K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa09.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       239K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa10.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       272K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa11.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       269K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa12.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       246K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa13.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       277K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa14.jpg
+092716.941: [09:27:16]-rwxrwxrwx  1 wyj       wyj       256K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa15.jpg
+092716.942: [09:27:16]-rwxrwxrwx  1 wyj       wyj       255K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa16.jpg
+092716.942: [09:27:16]-rwxrwxrwx  1 wyj       wyj       233K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa17.jpg
+092716.942: [09:27:16]-rwxrwxrwx  1 wyj       wyj       284K Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇_aa18.jpg
+092716.942: [09:27:16]-rwxrwxrwx  1 wyj       wyj       1.2G Jul  3  2023  FISH321@18P2P江戶性愛技巧~三十六種篇.avi
+092716.951: [09:27:16]-rw-r--r--  1 wyj       wyj        30K Aug  1  2025  FISH321@18P2P江戶性愛技巧~三十六種篇-poster.jpg
+092716.951: [09:27:16]drwxrwxrwx  3 wyj       wyj       4.0K Aug  1  2025 'Haruka Aizawa'
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       208K Jul  4  2023  heyzo_hd_0863_full_001.jpg
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       164K Jul  4  2023  heyzo_hd_0863_full_002.jpg
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       182K Jul  4  2023  heyzo_hd_0863_full_003.jpg
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       144K Jul  4  2023  heyzo_hd_0863_full_004.jpg
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       176K Jul  4  2023  heyzo_hd_0863_full_005.jpg
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       176K Jul  4  2023  heyzo_hd_0863_full_006.jpg
+092716.951: [09:27:16]-rw-rwx---  1 wyj       wyj       164K Jul  4  2023  heyzo_hd_0863_full_007.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       186K Jul  4  2023  heyzo_hd_0863_full_008.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       164K Jul  4  2023  heyzo_hd_0863_full_009.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       172K Jul  4  2023  heyzo_hd_0863_full_010.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       156K Jul  4  2023  heyzo_hd_0863_full_011.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       190K Jul  4  2023  heyzo_hd_0863_full_012.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       186K Jul  4  2023  heyzo_hd_0863_full_013.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       162K Jul  4  2023  heyzo_hd_0863_full_014.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       160K Jul  4  2023  heyzo_hd_0863_full_015.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       179K Jul  4  2023  heyzo_hd_0863_full_016.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       128K Jul  4  2023  heyzo_hd_0863_full_017.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       158K Jul  4  2023  heyzo_hd_0863_full_018.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       128K Jul  4  2023  heyzo_hd_0863_full_019.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       161K Jul  4  2023  heyzo_hd_0863_full_020.jpg
+092716.952: [09:27:16]-rw-rwx---  1 wyj       wyj       107K Jul  4  2023  heyzo_hd_0863_full_021.jpg
+092716.952: [09:27:16]-rw-r--r--  1 wyj       wyj        60K Apr 10  2025  heyzo_hd_0863_full-poster.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       147K Aug 21  2024  hmn00475pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       149K Aug 21  2024  hmn00476pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       147K Aug 21  2024  hmn00477pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       151K Aug 21  2024  hmn00479pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       188K Aug 21  2024  hmn00480pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       132K Aug 21  2024  hmn00481pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       187K Aug 21  2024  hmn00482pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       161K Aug 21  2024  hmn00483pl.jpg
+092716.952: [09:27:16]-rwxrwxrwx  1 wyj       wyj       157K Aug 21  2024  hmn00484pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       177K Aug 21  2024  hmn00485pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       135K Aug 21  2024  hmn00486pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       148K Aug 21  2024  hmn00487pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       139K Aug 21  2024  hmn00488pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       157K Aug 21  2024  hmn00489pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       162K Aug 21  2024  hmn00491pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       163K Aug 21  2024  hmn00492pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       160K Aug 21  2024  hmn00493pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       164K Aug 21  2024  hmn00494pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       169K Aug 21  2024  hmn00495pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       148K Aug 21  2024  hmn00496pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       162K Aug 21  2024  hmn00497pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       132K Aug 21  2024  hmn00498pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       138K Aug 21  2024  hmn00502pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       161K Aug 21  2024  hmn00504pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       151K Aug 21  2024  hmn00505pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       186K Aug 21  2024  hmn00506pl.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       289K Aug 21  2024  HMN475.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       253K Aug 21  2024  HMN476.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       257K Aug 21  2024  HMN477.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       264K Aug 21  2024  HMN479.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       249K Aug 21  2024  HMN480.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       261K Aug 21  2024  HMN481.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       308K Aug 21  2024  HMN482.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       261K Aug 21  2024  HMN483.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       242K Aug 21  2024  HMN484.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       287K Aug 21  2024  HMN485.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       242K Aug 21  2024  HMN486.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       271K Aug 21  2024  HMN487.FHD.mkv.jpg
+092716.953: [09:27:16]-rwxrwxrwx  1 wyj       wyj       266K Aug 21  2024  HMN488.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       258K Aug 21  2024  HMN489.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       257K Aug 21  2024  HMN491.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       257K Aug 21  2024  HMN492.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       275K Aug 21  2024  HMN493.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       265K Aug 21  2024  HMN494.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       276K Aug 21  2024  HMN495.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       274K Aug 21  2024  HMN496.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       270K Aug 21  2024  HMN497.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       248K Aug 21  2024  HMN498.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       245K Aug 21  2024  HMN502.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       265K Aug 21  2024  HMN504.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       268K Aug 21  2024  HMN505.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxrwxrwx  1 wyj       wyj       265K Aug 21  2024  HMN506.FHD.mkv.jpg
+092716.954: [09:27:16]-rwxr--r--  1 sambauser sambauser 7.7G Jul  1  2025  IPX-885-UC.mp4
+092716.954: [09:27:16]-rw-r--r--  1 wyj       wyj        59K Aug  1  2025  IPX-885-UC-poster.jpg
+092716.954: [09:27:16]-rwxr--r--  1 sambauser sambauser 5.8G Jul  1  2025  JUR-046-C.mp4
+092716.954: [09:27:16]-rw-r--r--  1 wyj       wyj        64K Aug  1  2025  JUR-046-C-poster.jpg
+092716.954: [09:27:16]-rw-rw-r--  1 wyj       wyj        85K May 15  2025  JUR-292_fanart10.jpg
+092716.954: [09:27:16]-rw-rw-r--  1 wyj       wyj        88K May 15  2025  JUR-292_fanart1.jpg
+092716.954: [09:27:16]-rw-rw-r--  1 wyj       wyj        81K May 15  2025  JUR-292_fanart2.jpg
+092716.954: [09:27:16]-rw-rw-r--  1 wyj       wyj       104K May 15  2025  JUR-292_fanart3.jpg
+092716.954: [09:27:16]-rw-rw-r--  1 wyj       wyj        89K May 15  2025  JUR-292_fanart4.jpg
+092716.954: [09:27:16]-rw-rw-r--  1 wyj       wyj        99K May 15  2025  JUR-292_fanart5.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       105K May 15  2025  JUR-292_fanart6.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       107K May 15  2025  JUR-292_fanart7.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj        93K May 15  2025  JUR-292_fanart8.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj        73K May 15  2025  JUR-292_fanart9.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       159K May 15  2025  JUR-292-fanart.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       7.2G May 15  2025  JUR-292.mp4
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       4.6K May 15  2025  JUR-292.nfo
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       159K May 15  2025  JUR-292-poster.jpg
+092716.955: [09:27:16]-rw-rw-r--  1 wyj       wyj       159K May 15  2025  JUR-292-thumb.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser 7.3G Jul  1  2025  JUR-316-UC.mp4
+092716.955: [09:27:16]-rw-r--r--  1 wyj       wyj        30K Aug  1  2025  JUR-316-UC-poster.jpg
+092716.955: [09:27:16]-rw-r--r--  1 wyj       wyj        87K Aug  1  2025  JUR-324-UC-poster.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser 6.8G Jul  1  2025  JUR-340-C.mp4
+092716.955: [09:27:16]-rw-r--r--  1 wyj       wyj       180K Aug  1  2025  JUR-340-C-poster.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser 5.6G Jul  1  2025  JUR-381-C.mp4
+092716.955: [09:27:16]-rw-r--r--  1 wyj       wyj       248K Aug  1  2025  JUR-381-C-poster.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser 5.6G Jun 30  2025  JUR-382-C.mp4
+092716.955: [09:27:16]-rw-r--r--  1 wyj       wyj       126K Aug  1  2025  JUR-382-C-poster.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser 6.4G Jul  1  2025  MIDA-201-UC.mp4
+092716.955: [09:27:16]-rw-r--r--  1 wyj       wyj        63K Aug  1  2025  MIDA-201-UC-poster.jpg
+092716.955: [09:27:16]-rw-rwxr--  1 wyj       wyj       101K Aug 25  2024  poster.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser 177K May 22  2025  ROE-279-C_fanart10.jpg
+092716.955: [09:27:16]-rwxr--r--  1 sambauser sambauser  56K May 22  2025  ROE-279-C_fanart1.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 253K May 22  2025  ROE-279-C_fanart2.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 209K May 22  2025  ROE-279-C_fanart3.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser  73K May 22  2025  ROE-279-C_fanart4.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 189K May 22  2025  ROE-279-C_fanart5.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 209K May 22  2025  ROE-279-C_fanart6.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 208K May 22  2025  ROE-279-C_fanart7.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser  72K May 22  2025  ROE-279-C_fanart8.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 175K May 22  2025  ROE-279-C_fanart9.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 321K May 22  2025  ROE-279-C-fanart.jpg
+092716.956: [09:27:16]-rwxr--r--  1 sambauser sambauser 328K May 22  2025  ROE-279-C-poster.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 328K May 22  2025  ROE-279-C-thumb.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 156K May 22  2025  ROE-332-C_fanart10.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser  94K May 22  2025  ROE-332-C_fanart1.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser  83K May 22  2025  ROE-332-C_fanart2.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 161K May 22  2025  ROE-332-C_fanart3.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser  95K May 22  2025  ROE-332-C_fanart4.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 211K May 22  2025  ROE-332-C_fanart5.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser  99K May 22  2025  ROE-332-C_fanart6.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 235K May 22  2025  ROE-332-C_fanart7.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 228K May 22  2025  ROE-332-C_fanart8.jpg
+092716.957: [09:27:16]-rwxr--r--  1 sambauser sambauser 167K May 22  2025  ROE-332-C_fanart9.jpg
+092716.958: [09:27:16]-rwxr--r--  1 sambauser sambauser 327K May 22  2025  ROE-332-C-fanart.jpg
+092716.958: [09:27:16]-rwxr--r--  1 sambauser sambauser 336K May 22  2025  ROE-332-C-poster.jpg
+092716.958: [09:27:16]-rwxr--r--  1 sambauser sambauser 336K May 22  2025  ROE-332-C-thumb.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       156K May 21  2025  ROE-332_fanart10.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj        94K May 21  2025  ROE-332_fanart1.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj        83K May 21  2025  ROE-332_fanart2.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       161K May 21  2025  ROE-332_fanart3.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj        95K May 21  2025  ROE-332_fanart4.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       211K May 21  2025  ROE-332_fanart5.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj        99K May 21  2025  ROE-332_fanart6.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       235K May 21  2025  ROE-332_fanart7.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       228K May 21  2025  ROE-332_fanart8.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       167K May 21  2025  ROE-332_fanart9.jpg
+092716.958: [09:27:16]-rw-rw-r--  1 wyj       wyj       327K May 21  2025  ROE-332-fanart.jpg
+092716.959: [09:27:16]-rw-rw-r--  1 wyj       wyj       3.9K May 21  2025  ROE-332.nfo
+092716.959: [09:27:16]-rw-rw-r--  1 wyj       wyj       327K May 21  2025  ROE-332-poster.jpg
+092716.959: [09:27:16]-rw-rw-r--  1 wyj       wyj       327K May 21  2025  ROE-332-thumb.jpg
+092716.959: [09:27:16]-rw-r--r--  1 wyj       wyj        60K Aug  1  2025  ROE-361-U-poster.jpg
+092716.959: [09:27:16]-rwxr--r--  1 sambauser sambauser 8.5G Jul  1  2025  SAME-160-U.mp4
+092716.959: [09:27:16]-rw-r--r--  1 wyj       wyj       105K Aug  1  2025  SAME-160-U-poster.jpg
+092716.959: [09:27:16]-rwxr--r--  1 sambauser sambauser 6.5G Jul  1  2025  SAME-183-U.mp4
+092716.959: [09:27:16]-rw-r--r--  1 wyj       wyj        55K Aug  1  2025  SAME-183-U-poster.jpg
+092716.959: [09:27:16]-rw-rw-r--  1 wyj       wyj        77K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX_fanart1.jpg'
+092716.959: [09:27:16]-rw-rw-r--  1 wyj       wyj        95K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX_fanart2.jpg'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj        67K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX_fanart3.jpg'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj        60K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX_fanart4.jpg'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj        69K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX_fanart5.jpg'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj        49K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX-fanart.jpg'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj       1.3G Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX.mp4'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj       1.8K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX.nfo'
+092716.960: [09:27:16]-rw-rw-r--  1 wyj       wyj        58K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX-poster.jpg'
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj        49K Apr 30  2025 'SCUTE-1008 はとり(20) S-Cute 见ることで兴奋する色白娘とSEX-thumb.jpg'
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj       131K Apr 10  2025  sone-467.jpg
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj       6.2G Apr 18  2025  sone-467.mp4
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj       5.1G Apr 14  2025  sone-482.mp4
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj        98K Aug  1  2025  sone-482-poster.jpg
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj       6.0G Apr 17  2025  sone-483.mp4
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj        91K Aug  1  2025  sone-483-poster.jpg
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj       146K Apr 17  2025  sone-486.jpg
+092716.961: [09:27:16]-rw-rw-r--  1 wyj       wyj       5.3G Apr 19  2025  sone-495.mp4
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj       171K Aug  1  2025  sone-495-poster.jpg
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj        89K Aug  1  2025  sone-496-poster.jpg
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj        99K Aug  1  2025  sone-499-poster.jpg
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj       182K Aug  1  2025  sone-504-poster.jpg
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj       100K Aug  1  2025  SONE-760-UC-poster.jpg
+092716.961: [09:27:16]-rw-r--r--  1 wyj       wyj        60K Aug  1  2025  SONE-763-UC-poster.jpg
+092716.962: [09:27:16]-rw-r--r--  1 wyj       wyj       101K Aug  1  2025 'START-108_000^WM-poster.jpg'
+092716.962: [09:27:16]-rw-r--r--  1 root      root      150K Sep 19 17:23  tmp2.txt
+092716.962: [09:27:16]-rw-r--r--  1 root      root      150K Sep 19 17:26  tmp3.txt
+092716.962: [09:27:16]-rwxrwxrwx  1 wyj       wyj       4.6G May 23  2024  Tushy.24.04.28.Vanessa.Alessia.and.Stefany.Kyler.mp4
+092717.997: [09:27:17][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk/200.JAPAN]# cd ..
+092718.649: [09:27:18][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk]# ll
+092718.669: [09:27:18]total 160K
+092718.670: [09:27:18]drwxr-sr-x  2 sambauser sambauser 4.0K Apr  5  2025 100.优秀
+092718.670: [09:27:18]drwxrwxrwx 15 sambauser sambauser 4.0K Jan 23 18:42 199.China
+092718.670: [09:27:18]drwxrwxrwx  7 wyj       wyj       100K Feb  5 18:02 200.JAPAN
+092718.670: [09:27:18]drwxrwx--- 15 wyj       wyj       4.0K Apr 15  2025 201.Cartoon
+092718.670: [09:27:18]drwxrwx---  4 wyj       wyj       4.0K Jul  4  2023 201.Paper
+092718.670: [09:27:18]drwxr-xr-x  3 sambauser sambauser 4.0K Feb  5 22:59 201-网上收集
+092718.670: [09:27:18]drwxrwx---  3 wyj       wyj       4.0K Nov 21 15:05 202.三级片
+092718.670: [09:27:18]drwxrwxrwx 34 wyj       wyj        20K Feb 28 10:38 300.Europe
+092718.670: [09:27:18]drwxr-xr-x  3 sambauser sambauser 4.0K Apr 15  2025 401-声音
+092718.670: [09:27:18]drwxr-xr-x  5 sambauser sambauser 4.0K May  9  2025 402-小说
+092719.623: [09:27:19][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk]# cd ..
+092720.236: [09:27:20][root@172-16-208-2 /DATA/Media]# ll
+092720.258: [09:27:20]total 2.5G
+092720.258: [09:27:20]-rw-r--r--  1 sambauser sambauser  589 Feb 12 09:44  1.txt
+092720.258: [09:27:20]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14  2025  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+092720.258: [09:27:20]-rwxrw-rw-  1 sambauser sambauser    0 Feb 25 13:43 '20260213 信息网络根服务验证系统进展项目汇报.pptx'
+092720.258: [09:27:20]drwxrwxrwx 28 root      root      4.0K Mar  3 14:23  AppData
+092720.258: [09:27:20]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+092720.259: [09:27:20]drwxrwxrwx  9 root      root      4.0K Mar  3 11:09  Documents
+092720.259: [09:27:20]drwxrwxr-x  3 wyj       wyj       4.0K Jan 30 22:55  Doucuments
+092720.259: [09:27:20]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+092720.259: [09:27:20]drwxrwxrwx 61 wyj       wyj        24K Mar  9 19:53  Movies
+092720.259: [09:27:20]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+092720.259: [09:27:20]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+092720.259: [09:27:20]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+092720.259: [09:27:20]drwxrwxr-x  2 wyj       wyj       4.0K Mar  3 11:09  The.Water.Babies-iFree
+092720.259: [09:27:20]drwxrwxrwx 23 root      root      4.0K Feb 27 08:12  Tmp
+092720.259: [09:27:20]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+092720.259: [09:27:20]drwxrwxrwx 53 wyj       wyj        12K Mar 12 09:26 'TV Shows'
+092720.259: [09:27:20]drwxr-xr-x  6 sambauser sambauser 4.0K Mar  2 16:27  WYJ
+092720.259: [09:27:20]drwxrwxrwx  4 root      root      4.0K Feb 27 15:33  XTV-BACKUP
+092720.260: [09:27:20]drwxrwxr-x  2 wyj       wyj        12K Mar  3 11:09  怪医黑杰克.BLACK.JACK.2004.S01.2160p.WEB-DL.H.265.HDR.AAC-rainweb
+092720.260: [09:27:20]-rwxrw-rw-  1 sambauser sambauser 152K Feb 13 16:48  方案拓扑.png
+092720.260: [09:27:20]-rwx------  1 sambauser sambauser 368K Feb 13 15:17  方案拓扑.vsdx
+092720.260: [09:27:20]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19  2025  软考高级《网络规划设计师》资料包
+092720.260: [09:27:20]-rwxrw-rw-  1 sambauser sambauser  19M Feb  5 18:39  量子中心组网图-样板间.png
+092724.294: [09:27:24][root@172-16-208-2 /DATA/Media]# cd Tmp2
+092724.903: [09:27:24][root@172-16-208-2 /DATA/Media/Tmp2]# ll
+092724.926: [09:27:24]total 5.8G
+092724.926: [09:27:24]-rwxr--r--   1 sambauser sambauser  57M Jan  3  2025  0001.韓國2023.阿姨的家教課PDF.pdf
+092724.926: [09:27:24]-rwxr--r--   1 sambauser sambauser  73M Jan  3  2025  0002.韓國2023.把妹鬼達人PDF.pdf
+092724.926: [09:27:24]-rwxr--r--   1 sambauser sambauser  79M Jan  3  2025  0003.韓國2023.大嫂的裙子PDF.pdf
+092724.926: [09:27:24]drwxrwxr-x   5 wyj       wyj       4.0K Mar  1  2025 '8woman 2021-2023'
+092724.926: [09:27:24]drwxrwxr-x  13 wyj       wyj       4.0K Mar  1  2025 '8woman Last Dance weekly post digital photo collection part'
+092724.926: [09:27:24]drwxrwxrwx   4 wyj       wyj       4.0K Jul 26  2024 'Anna L AKA Anna Ralphs MegaPack'
+092724.926: [09:27:24]drwxrwxrwx   3 wyj       wyj       4.0K Aug 19  2023 'B_YE0729_2_牛逼团队深夜企划大合集 带剧情写真+视频!!'
+092724.927: [09:27:24]drwxrwxrwx 130 wyj       wyj        36K Feb 11  2025 'Connie Carter Pictures Collection'
+092724.927: [09:27:24]drwxrwxr-x 379 wyj       wyj        88K Mar  5  2025 'Deeper Photos'
+092724.927: [09:27:24]drwxrwxr-x 405 wyj       wyj        40K Mar  1  2025 'Graphis Gals'
+092724.927: [09:27:24]drwxrwxrwx   7 root      root      4.0K May 26  2023  JUNE_LIU_合集
+092724.927: [09:27:24]drwxrwxrwx 114 root      root       12K Feb 11  2025  Korea_棒子嫖娼达人金先生完整版
+092724.927: [09:27:24]-rw-rw-r--   1 wyj       wyj       1.1G Apr 23  2025 '[Loliiiiipop99]下面有跟棒棒糖 OnlyFans 以性换租系列 第1集.mp4'
+092724.927: [09:27:24]-rw-rw-r--   1 wyj       wyj       636M Apr 23  2025 '[Loliiiiipop99]下面有跟棒棒糖 OnlyFans 以性换租系列 第2集.mp4'
+092724.927: [09:27:24]-rw-rw-r--   1 wyj       wyj       1.5G Apr 23  2025 '[Loliiiiipop99]下面有跟棒棒糖 OnlyFans 以性换租系列 第3集.mp4'
+092724.927: [09:27:24]drwxrwxr-x  73 wyj       wyj       4.0K Jan 18 22:14  MetArt-ID224
+092724.927: [09:27:24]drwxrwxr-x   3 wyj       wyj        12K Feb 27  2025  MixMico
+092724.928: [09:27:24]drwxrwxr-x   2 wyj       wyj       4.0K Mar  7  2025  NONREMU秘宝館　涼森れむ野々浦暖【ヌード写真集】
+092724.928: [09:27:24]drwxrwxr-x   3 wyj       wyj        52K Jan 23  2025  NYMF
+092724.928: [09:27:24]drwxrwxr-x   2 wyj       wyj       4.0K Mar  7  2025  ol
+092724.928: [09:27:24]drwxr-xr-x   2 root      root      4.0K Mar 14  2025  rose
+092724.928: [09:27:24]-rw-rw-r--   1 wyj       wyj        41M Mar  7  2025  rose.zip
+092724.928: [09:27:24]drwxrwxrwx   4 root      root      4.0K Jul 26  2024 '[StasyQ.com] Siterip 0-199'
+092724.928: [09:27:24]drwxrwxr-x 529 wyj       wyj       124K Jan 16 18:00 'Vixen Photos'
+092724.928: [09:27:24]drwxrwxrwx   3 wyj       wyj        24K Nov 21  2023 'WowGirls.com Siterip Part 4'
+092724.928: [09:27:24]drwxrwxr-x   2 wyj       wyj       4.0K Mar  1  2025  www.98T.la@IKOF-6
+092724.928: [09:27:24]drwxrwxr-x  10 wyj       wyj       4.0K Mar  1  2025 'yeha 8套合集'
+092724.928: [09:27:24]-rw-rw-r--   1 wyj       wyj       1.2G May 15  2025  一边被闺蜜玩弄，一边读着我特别喜欢的一本书《遥远的救世主》.mp4
+092724.928: [09:27:24]drwxr-xr-x  22 root      root      4.0K Mar 14  2025  乌克兰美女20套
+092724.929: [09:27:24]-rw-rw-r--   1 wyj       wyj       1.1G Mar  1  2025  乌克兰美女20套.zip
+092724.929: [09:27:24]drwxrwxrwx   3 wyj       wyj       4.0K Jan 16 23:08  书山书海
+092724.929: [09:27:24]drwxrwxr-x   3 wyj       wyj       4.0K Mar  1  2025  写真系列2001-3000
+092724.929: [09:27:24]drwxrwxr-x   5 wyj       wyj       4.0K Mar  1  2025  写真系列3001-4000
+092724.929: [09:27:24]drwxrwxrwx   4 wyj       wyj       4.0K Jul 27  2024  北京天使
+092724.929: [09:27:24]drwxrwxrwx   3 wyj       wyj       4.0K Sep 16  2024 '【反差婊子】20套反差婊子生活淫乱视图合集 109V_243P'
+092724.929: [09:27:24]drwxrwxr-x  34 wyj       wyj       4.0K Mar  1  2025  可乐
+092724.929: [09:27:24]drwxr-xr-x   7 root      root      4.0K Mar 14  2025  吉岡里帆
+092724.929: [09:27:24]-rw-rw-r--   1 wyj       wyj       168M Mar 11  2025  吉岡里帆.rar
+092724.929: [09:27:24]drwxrwxr-x  47 wyj       wyj       4.0K Mar  1  2025  年年合集
+092724.929: [09:27:24]drwxrwxrwx   5 root      root      4.0K May 26  2023 '张津瑜两部全集(含无水印版本）'
+092724.929: [09:27:24]drwxrwxr-x   2 wyj       wyj        16K Mar  7  2025  强奸女邻居
+092724.930: [09:27:24]drwxrwxrwx   2 root      root       12K May 26  2023  探花系列高颜值合集.1
+092724.930: [09:27:24]drwxrwxr-x   4 wyj       wyj       4.0K Jan 18 22:17  杨晨晨
+092724.930: [09:27:24]drwxrwxr-x 152 wyj       wyj        20K Mar  1  2025  林星阑
+092724.930: [09:27:24]drwxr-xr-x   2 root      root      4.0K Mar 14  2025  橘梨纱
+092724.930: [09:27:24]-rw-rw-r--   1 wyj       wyj        80M Mar 11  2025  橘梨纱.rar
+092724.930: [09:27:24]drwxrwxr-x 256 wyj       wyj        44K Dec  8 16:50  海角论坛大佬精心收集各类轰动一时的新闻及門事件合集
+092724.930: [09:27:24]drwxrwxr-x   9 wyj       wyj       4.0K Mar  1  2025 '清纯白嫩的越南妹子Tunlita写真 779P_2G'
+092724.930: [09:27:24]drwxrwxr-x   5 wyj       wyj       4.0K Mar  1  2025  爆机少女喵小吉十一月番T3合集
+092724.930: [09:27:24]drwxrwxr-x  12 wyj       wyj       4.0K Mar  1  2025 '秀人网XIUREN No.5111-5120 Photo Set Collection'
+092724.930: [09:27:24]drwxrwxr-x  24 wyj       wyj       4.0K Mar  7  2025  筱山纪信作品集
+092724.930: [09:27:24]drwxrwxrwx  12 root      root      4.0K May 26  2023  罗南希全套
+092724.931: [09:27:24]drwxrwxr-x   3 wyj       wyj       4.0K Aug 21  2025  《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G
+092724.931: [09:27:24]drwxrwxr-x  83 wyj       wyj        12K Mar  1  2025  轩萧学姐
+092724.931: [09:27:24]drwxrwxrwx 188 wyj       wyj        24K Jan 18 22:08 '韩国写真Bimilstory - 全套186期含随包视频[538G] - 合集珍藏超清无水印'
+092724.931: [09:27:24]drwxrwxr-x  24 wyj       wyj       4.0K Mar  1  2025 '頂級網紅攝影大神『抖叔+酒徒+王動+小玉』眾色影大神開年更新 唯美性愛[3597P79V3.57G]'
+092724.931: [09:27:24]drwxrwxr-x  13 wyj       wyj       4.0K Mar  1  2025 '頂級超顏『秋億琳 桃暖醬 稀雅 』11位網紅女神最新私拍流出[644P16V2.33G]'
+092724.931: [09:27:24]drwxrwxr-x   3 wyj       wyj       4.0K Feb 28  2025  黑绳-荒木
+092739.813: [09:27:39][root@172-16-208-2 /DATA/Media/Tmp2]# ll | grep 上海
+092739.840: [09:27:39]drwxrwxr-x   3 wyj       wyj       4.0K Aug 21  2025 《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G
+092748.703: [09:27:48][root@172-16-208-2 /DATA/Media/Tmp2]# cd 《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G/
+092750.057: [09:27:50][root@172-16-208-2 /DATA/Media/Tmp2/《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G]# ll
+092750.076: [09:27:50]total 680M
+092750.076: [09:27:50]-rw-rw-r-- 1 wyj wyj 205M Feb 28  2025 【行走在上海之selena】流出精彩视图被老公调教后，宾馆和几个单男群P变淫妇.mp4
+092750.077: [09:27:50]-rw-rw-r-- 1 wyj wyj 135M Feb 28  2025 【行走在上海之闺蜜三姐妹】大胆福利视图高质量美眉各种SM户外露出群P尺度令人乍舌附图127P+视频2V1.mp4
+092750.077: [09:27:50]-rw-rw-r-- 1 wyj wyj 340M Feb 28  2025 【行走在上海之闺蜜三姐妹】大胆福利视图高质量美眉各种SM户外露出群P尺度令人乍舌附图127P+视频2V2.mp4
+092750.077: [09:27:50]drwxrwxr-x 2 wyj wyj 4.0K Feb 28  2025 【行走在上海之闺蜜三姐妹】照片121P
+145121.440: [14:51:21][root@172-16-208-2 /DATA/Media/Tmp2/《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G]# lsblk
+145121.469: [14:51:21]NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+145121.469: [14:51:21]sda                 8:0    0    2T  0 disk 
+145121.469: [14:51:21]└─sda1              8:1    0    2T  0 part 
+145121.470: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.470: [14:51:21]sdb                 8:16   0    2T  0 disk 
+145121.470: [14:51:21]└─sdb1              8:17   0    2T  0 part 
+145121.470: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.470: [14:51:21]sdc                 8:32   0    2T  0 disk 
+145121.470: [14:51:21]└─sdc1              8:33   0    2T  0 part 
+145121.470: [14:51:21]  └─data2-data2lv 253:2    0    6T  0 lvm  /DATA/Media/Tmp
+145121.470: [14:51:21]sr0                11:0    1  384M  0 rom  
+145121.470: [14:51:21]vda               254:0    0  200G  0 disk 
+145121.470: [14:51:21]├─vda1            254:1    0   99G  0 part /
+145121.471: [14:51:21]├─vda2            254:2    0    1K  0 part 
+145121.471: [14:51:21]└─vda5            254:5    0  975M  0 part [SWAP]
+145121.471: [14:51:21]vdb               254:16   0    2T  0 disk 
+145121.471: [14:51:21]└─vdb1            254:17   0    2T  0 part 
+145121.471: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.471: [14:51:21]vdc               254:32   0    2T  0 disk 
+145121.471: [14:51:21]└─vdc1            254:33   0    2T  0 part 
+145121.471: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.471: [14:51:21]vdd               254:48   0    2T  0 disk 
+145121.471: [14:51:21]└─vdd1            254:49   0    2T  0 part 
+145121.471: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.471: [14:51:21]vde               254:64   0    2T  0 disk 
+145121.471: [14:51:21]└─vde1            254:65   0    2T  0 part 
+145121.471: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.471: [14:51:21]vdf               254:80   0    2T  0 disk 
+145121.471: [14:51:21]└─vdf1            254:81   0    2T  0 part 
+145121.471: [14:51:21]  └─data-datalv   253:1    0   14T  0 lvm  /DATA/Media
+145121.471: [14:51:21]vdg               254:96   0    2T  0 disk 
+145121.471: [14:51:21]└─vdg1            254:97   0    2T  0 part 
+145121.471: [14:51:21]  └─data2-data2lv 253:2    0    6T  0 lvm  /DATA/Media/Tmp
+145121.471: [14:51:21]vdh               254:112  0    2T  0 disk 
+145121.471: [14:51:21]└─vdh1            254:113  0    2T  0 part 
+145121.471: [14:51:21]  └─data2-data2lv 253:2    0    6T  0 lvm  /DATA/Media/Tmp
+145121.471: [14:51:21]vdi               254:128  0    2T  0 disk 
+145121.471: [14:51:21]└─vdi1            254:129  0    2T  0 part 
+145121.471: [14:51:21]  └─video-videolv 253:0    0    4T  0 lvm  /DATA/Media/XTV-BACKUP
+145121.471: [14:51:21]vdj               254:144  0    2T  0 disk 
+145121.471: [14:51:21]└─vdj1            254:145  0    2T  0 part 
+145121.471: [14:51:21]  └─video-videolv 253:0    0    4T  0 lvm  /DATA/Media/XTV-BACKUP
+145124.083: [14:51:24][root@172-16-208-2 /DATA/Media/Tmp2/《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G]# df -lh
+145124.128: [14:51:24]Filesystem                 Size  Used Avail Use% Mounted on
+145124.129: [14:51:24]udev                       7.8G     0  7.8G   0% /dev
+145124.129: [14:51:24]tmpfs                      1.6G  6.4M  1.6G   1% /run
+145124.129: [14:51:24]/dev/vda1                   97G   56G   37G  61% /
+145124.129: [14:51:24]tmpfs                      7.9G     0  7.9G   0% /dev/shm
+145124.129: [14:51:24]tmpfs                      5.0M  4.0K  5.0M   1% /run/lock
+145124.129: [14:51:24]/dev/mapper/data-datalv     14T   12T  1.3T  91% /DATA/Media
+145124.129: [14:51:24]/dev/mapper/data2-data2lv  6.0T  4.5T  1.2T  80% /DATA/Media/Tmp
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/dacbbc4d8f73512eb46f2f5bc074bd8f9bc9af6f98f9996453ce2ad991047648/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/2f49a0b0a668bff5faf4dddb0155e717bd2b04ec9c9f20fe51e72f1ab1105a8f/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/71d44c3a74f497939dcb09d15573f69259b0c2eca3db98f2d88f5a884a267421/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/f37c98d6612fb3445962d77333799e9ee020f70c98f21e43e0994121521ad3ec/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/ad7464f3b04db576d0308e3e0102cf3480ddb32ac242dec4bff57a6f0bc5405e/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/5f32f1dfa35af8ea78a9fcbabe0d06d9c5a8c112a2a4c5650ff68840a3fbc08f/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/1a835e6ae66574f532450791d550153247cab4f273b9926649b1d64f1c49855e/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/3c8085ec6d162a2b244810b100e39faeac6766771c1129fe19110608e72ab0e8/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/c256c651b3606a2b0bd97265904e73b9b5d427605bbfb113c26b91412671a8dc/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/4bf80f043542c0b5db8d4f0bc877655d7246a8c975cc750175031f24c8db0123/merged
+145124.129: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/5c1772a6815275737ab4729520d6485e9eb228dca950c5ca9480821afd23c331/merged
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/df8ccd0a058968ad982529d4e6520e74389d512c5cbb9c2ee650d920840b6962/merged
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/5b179abe593fe6023b70f00a8b8fa8870af0f65a9d257a93c8674b46187d02b3/merged
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/e9e83947222cf159696283b563d55f1c03a8784d5c2f09dd6f092c600a297f5b/merged
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/cab1dec8f98e168f6ebd0890c23c563d6b1ffcff414f28e3d8a1bf6c2761033d/merged
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/f27db95fc6a187109e4902ee10a92a822a4a0a6664acc4333c92c404c5a7d9eb/merged
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/178aee37071729ca261883335d47ab495214a98830b72e42324b7c090e0c60ea/merged
+145124.130: [14:51:24]tmpfs                      1.6G   76K  1.6G   1% /run/user/0
+145124.130: [14:51:24]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/fec9b9e1cb387fee7500d060d0703f2c0573ff37107c3dfcb6be047c62960bba/merged
+145124.130: [14:51:24]/dev/mapper/video-videolv  4.0T  1.7T  2.2T  43% /DATA/Media/XTV-BACKUP
+145124.130: [14:51:24]tmpfs                      1.6G   80K  1.6G   1% /run/user/1002
+145131.538: [14:51:31][root@172-16-208-2 /DATA/Media/Tmp2/《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G]# du -sh *
+145131.629: [14:51:31]205M    【行走在上海之selena】流出精彩视图被老公调教后，宾馆和几个单男群P变淫妇.mp4
+145131.629: [14:51:31]135M    【行走在上海之闺蜜三姐妹】大胆福利视图高质量美眉各种SM户外露出群P尺度令人乍舌附图127P+视频2V1.mp4
+145131.630: [14:51:31]340M    【行走在上海之闺蜜三姐妹】大胆福利视图高质量美眉各种SM户外露出群P尺度令人乍舌附图127P+视频2V2.mp4
+145131.630: [14:51:31]32M     【行走在上海之闺蜜三姐妹】照片121P
+145402.142: [14:54:02][root@172-16-208-2 /DATA/Media/Tmp2/《行走在上海》高质量群P尺度令人乍舌【3V335P1.42G]# clear

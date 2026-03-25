@@ -1,0 +1,154 @@
+﻿075215.753: [07:52:15][202603172.16.208.21-黄埭监控主机-07:52:15]
+075216.679: [07:52:16]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+075216.845: [07:52:16]
+075216.845: [07:52:16] * Documentation:  https://help.ubuntu.com
+075216.845: [07:52:16] * Management:     https://landscape.canonical.com
+075216.845: [07:52:16] * Support:        https://ubuntu.com/pro
+075216.845: [07:52:16]
+075216.845: [07:52:16] System information as of Mon Mar 16 07:52:15 AM CST 2026
+075216.845: [07:52:16]
+075216.845: [07:52:16]  System load:  0.08               Processes:             221
+075216.845: [07:52:16]  Usage of /:   5.4% of 294.23GB   Users logged in:       2
+075216.845: [07:52:16]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+075216.845: [07:52:16]  Swap usage:   0%
+075216.845: [07:52:16]
+075216.845: [07:52:16] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+075216.845: [07:52:16]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+075216.845: [07:52:16]
+075216.845: [07:52:16]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+075216.845: [07:52:16]
+075216.845: [07:52:16]Expanded Security Maintenance for Applications is not enabled.
+075216.845: [07:52:16]
+075216.845: [07:52:16]76 updates can be applied immediately.
+075216.845: [07:52:16]To see these additional updates run: apt list --upgradable
+075216.845: [07:52:16]
+075216.845: [07:52:16]Enable ESM Apps to receive additional future security updates.
+075216.845: [07:52:16]See https://ubuntu.com/esm or run: sudo pro status
+075216.845: [07:52:16]
+075216.845: [07:52:16]
+075216.845: [07:52:16]Last login: Sun Mar 15 13:08:38 2026 from 192.168.4.222
+100558.823: [10:05:58][202603172.16.208.21-黄埭监控主机-10:05:58]
+100558.832: [10:05:58]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+100558.832: [10:05:58]
+100558.833: [10:05:58] * Documentation:  https://help.ubuntu.com
+100558.833: [10:05:58] * Management:     https://landscape.canonical.com
+100558.833: [10:05:58] * Support:        https://ubuntu.com/pro
+100558.833: [10:05:58]
+100558.833: [10:05:58] System information as of Mon Mar 16 10:05:58 AM CST 2026
+100558.833: [10:05:58]
+100558.833: [10:05:58]  System load:  0.0                Processes:             226
+100558.833: [10:05:58]  Usage of /:   5.4% of 294.23GB   Users logged in:       2
+100558.833: [10:05:58]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+100558.833: [10:05:58]  Swap usage:   0%
+100558.833: [10:05:58]
+100558.833: [10:05:58] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+100558.834: [10:05:58]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+100558.834: [10:05:58]
+100558.834: [10:05:58]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+100558.834: [10:05:58]
+100558.834: [10:05:58]Expanded Security Maintenance for Applications is not enabled.
+100558.834: [10:05:58]
+100558.834: [10:05:58]76 updates can be applied immediately.
+100558.834: [10:05:58]8 of these updates are standard security updates.
+100558.834: [10:05:58]To see these additional updates run: apt list --upgradable
+100558.834: [10:05:58]
+100558.834: [10:05:58]Enable ESM Apps to receive additional future security updates.
+100558.834: [10:05:58]See https://ubuntu.com/esm or run: sudo pro status
+100558.834: [10:05:58]
+100558.834: [10:05:58]
+100558.835: [10:05:58]Last login: Mon Mar 16 09:31:24 2026 from 192.168.4.222
+100559.533: [10:05:59]root@huangdai-monitor:~# 
+100606.236: [10:06:06]root@huangdai-monitor:~# ping 192.168.100.100
+100606.238: [10:06:06]PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+101111.566: [10:11:11]^C
+101111.566: [10:11:11]--- 192.168.100.100 ping statistics ---
+101111.571: [10:11:11]299 packets transmitted, 0 received, 100% packet loss, time 305148ms
+101111.571: [10:11:11]
+101122.208: [10:11:22]root@huangdai-monitor:~# aptitude install tcpdump
+101124.026: [10:11:24]tcpdump is already installed at the requested version (4.99.1-3ubuntu0.2)
+101124.027: [10:11:24]tcpdump is already installed at the requested version (4.99.1-3ubuntu0.2)
+101124.300: [10:11:24]No packages will be installed, upgraded, or removed.
+101124.301: [10:11:24]0 packages upgraded, 0 newly installed, 0 to remove and 70 not upgraded.
+101124.367: [10:11:24]Need to get 0 B of archives. After unpacking 0 B will be used.
+101132.187: [10:11:32]                                         
+101230.262: [10:12:30]root@huangdai-monitor:~# ping 10.50.0.100
+101230.266: [10:12:30]PING 10.50.0.100 (10.50.0.100) 56(84) bytes of data.
+101230.268: [10:12:30]64 bytes from 10.50.0.100: icmp_seq=1 ttl=58 time=2.54 ms
+101231.298: [10:12:31]64 bytes from 10.50.0.100: icmp_seq=2 ttl=58 time=1.99 ms
+101232.322: [10:12:32]64 bytes from 10.50.0.100: icmp_seq=3 ttl=58 time=2.26 ms
+101233.272: [10:12:33]64 bytes from 10.50.0.100: icmp_seq=4 ttl=58 time=2.15 ms
+101234.370: [10:12:34]64 bytes from 10.50.0.100: icmp_seq=5 ttl=58 time=2.18 ms
+101235.291: [10:12:35]64 bytes from 10.50.0.100: icmp_seq=6 ttl=58 time=2.45 ms
+101235.759: [10:12:35]^C
+101235.759: [10:12:35]--- 10.50.0.100 ping statistics ---
+101235.760: [10:12:35]6 packets transmitted, 6 received, 0% packet loss, time 5006ms
+101235.760: [10:12:35]rtt min/avg/max/mdev = 1.990/2.261/2.544/0.186 ms
+101245.036: [10:12:45]root@huangdai-monitor:~# ping 192.168.100.100
+101245.055: [10:12:45]PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+101500.301: [10:15:00]^[[A^C
+101500.301: [10:15:00]--- 192.168.100.100 ping statistics ---
+101500.301: [10:15:00]133 packets transmitted, 0 received, 100% packet loss, time 135181ms
+101500.301: [10:15:00]
+101504.724: [10:15:04]root@huangdai-monitor:~# ping 192.168.100.1
+101504.732: [10:15:04]PING 192.168.100.1 (192.168.100.1) 56(84) bytes of data.
+101516.166: [10:15:16]^C
+101516.167: [10:15:16]--- 192.168.100.1 ping statistics ---
+101516.167: [10:15:16]12 packets transmitted, 0 received, 100% packet loss, time 11265ms
+101516.167: [10:15:16]
+103900.284: [10:39:00]root@huangdai-monitor:~# ping 192.168.100.100
+103900.301: [10:39:00]PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+103900.301: [10:39:00]64 bytes from 192.168.100.100: icmp_seq=1 ttl=59 time=2.86 ms
+103901.376: [10:39:01]64 bytes from 192.168.100.100: icmp_seq=2 ttl=59 time=2.44 ms
+103901.566: [10:39:01]^C
+103901.566: [10:39:01]--- 192.168.100.100 ping statistics ---
+103901.566: [10:39:01]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+103901.566: [10:39:01]rtt min/avg/max/mdev = 2.440/2.650/2.861/0.210 ms
+103902.400: [10:39:02]root@huangdai-monitor:~# ping 192.168.100.101
+103902.407: [10:39:02]PING 192.168.100.101 (192.168.100.101) 56(84) bytes of data.
+103902.407: [10:39:02]64 bytes from 192.168.100.101: icmp_seq=1 ttl=59 time=2.48 ms
+103902.975: [10:39:02]^C
+103902.975: [10:39:02]--- 192.168.100.101 ping statistics ---
+103902.975: [10:39:02]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+103902.975: [10:39:02]rtt min/avg/max/mdev = 2.482/2.482/2.482/0.000 ms
+104155.475: [10:41:55]root@huangdai-monitor:~# ping 192.168.100.2
+104155.476: [10:41:55]PING 192.168.100.2 (192.168.100.2) 56(84) bytes of data.
+104155.476: [10:41:55]64 bytes from 192.168.100.2: icmp_seq=1 ttl=60 time=2.31 ms
+104156.167: [10:41:56]^C
+104156.167: [10:41:56]--- 192.168.100.2 ping statistics ---
+104156.167: [10:41:56]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+104156.167: [10:41:56]rtt min/avg/max/mdev = 2.305/2.305/2.305/0.000 ms
+104157.008: [10:41:57]root@huangdai-monitor:~# ping 192.168.100.3
+104157.026: [10:41:57]PING 192.168.100.3 (192.168.100.3) 56(84) bytes of data.
+104203.278: [10:42:03]^C
+104203.278: [10:42:03]--- 192.168.100.3 ping statistics ---
+104203.278: [10:42:03]7 packets transmitted, 0 received, 100% packet loss, time 6147ms
+104203.278: [10:42:03]
+104203.817: [10:42:03]root@huangdai-monitor:~# 
+104203.861: [10:42:03]root@huangdai-monitor:~# 
+104204.012: [10:42:04]root@huangdai-monitor:~# 
+104204.115: [10:42:04]root@huangdai-monitor:~# 
+104205.288: [10:42:05]root@huangdai-monitor:~# ping 192.168.100.2
+104205.305: [10:42:05]PING 192.168.100.2 (192.168.100.2) 56(84) bytes of data.
+104205.305: [10:42:05]64 bytes from 192.168.100.2: icmp_seq=1 ttl=60 time=2.56 ms
+104206.319: [10:42:06]64 bytes from 192.168.100.2: icmp_seq=2 ttl=60 time=2.03 ms
+104207.295: [10:42:07]64 bytes from 192.168.100.2: icmp_seq=3 ttl=60 time=1.94 ms
+104208.296: [10:42:08]64 bytes from 192.168.100.2: icmp_seq=4 ttl=60 time=2.15 ms
+104208.688: [10:42:08]^C
+104208.688: [10:42:08]--- 192.168.100.2 ping statistics ---
+104208.689: [10:42:08]4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+104208.689: [10:42:08]rtt min/avg/max/mdev = 1.939/2.169/2.559/0.237 ms
+104210.747: [10:42:10]root@huangdai-monitor:~# ping 192.168.100.3
+104210.768: [10:42:10]PING 192.168.100.3 (192.168.100.3) 56(84) bytes of data.
+104217.309: [10:42:17]^C
+104217.309: [10:42:17]--- 192.168.100.3 ping statistics ---
+104217.309: [10:42:17]7 packets transmitted, 0 received, 100% packet loss, time 6136ms
+104217.309: [10:42:17]
+104219.174: [10:42:19]root@huangdai-monitor:~# ping 192.168.100.1
+104219.190: [10:42:19]PING 192.168.100.1 (192.168.100.1) 56(84) bytes of data.
+104219.190: [10:42:19]64 bytes from 192.168.100.1: icmp_seq=1 ttl=60 time=3.38 ms
+104220.238: [10:42:20]64 bytes from 192.168.100.1: icmp_seq=2 ttl=60 time=3.60 ms
+104221.183: [10:42:21]64 bytes from 192.168.100.1: icmp_seq=3 ttl=60 time=3.49 ms
+104221.626: [10:42:21]^C
+104221.626: [10:42:21]--- 192.168.100.1 ping statistics ---
+104221.626: [10:42:21]3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+104221.626: [10:42:21]rtt min/avg/max/mdev = 3.381/3.490/3.598/0.088 ms

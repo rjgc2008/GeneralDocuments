@@ -1,0 +1,2074 @@
+﻿153202.842: [15:32:02][202603103-172.16.101.45-15:32:02]
+153202.868: [15:32:02]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+153202.868: [15:32:02]
+153202.868: [15:32:02] * Documentation:  https://help.ubuntu.com
+153202.868: [15:32:02] * Management:     https://landscape.canonical.com
+153202.868: [15:32:02] * Support:        https://ubuntu.com/pro
+153202.869: [15:32:02]
+153202.869: [15:32:02]扩展安全维护（ESM）Applications 未启用。
+153202.869: [15:32:02]
+153202.869: [15:32:02]47 更新可以立即应用。
+153202.869: [15:32:02]这些更新中有 32 个是标准安全更新。
+153202.869: [15:32:02]要查看这些附加更新，请运行：apt list --upgradable
+153202.869: [15:32:02]
+153202.869: [15:32:02]启用 ESM Apps 来获取未来的额外安全更新
+153202.869: [15:32:02]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+153202.869: [15:32:02]
+153214.338: [15:32:14]root@user:~# systemctl status systemd-networkd
+153214.402: [15:32:14]● systemd-networkd.service - Network Configuration
+153214.404: [15:32:14]     Loaded: loaded (/usr/lib/systemd/system/systemd-networkd.service; enabled; preset: enabled)
+153214.404: [15:32:14]     Active: active (running) since Tue 2026-03-24 15:16:07 CST; 16min ago
+153214.405: [15:32:14]TriggeredBy: ● systemd-networkd.socket
+153214.405: [15:32:14]       Docs: man:systemd-networkd.service(8)
+153214.405: [15:32:14]             man:org.freedesktop.network1(5)
+153214.405: [15:32:14]   Main PID: 15032 (systemd-network)
+153214.405: [15:32:14]     Status: "Processing requests..."
+153214.405: [15:32:14]      Tasks: 1 (limit: 618236)
+153214.405: [15:32:14]   FD Store: 0 (limit: 512)
+153214.405: [15:32:14]     Memory: 4.7M (peak: 5.5M)
+153214.405: [15:32:14]        CPU: 138ms
+153214.406: [15:32:14]     CGroup: /system.slice/systemd-networkd.service
+153214.406: [15:32:14]             └─15032 /usr/lib/systemd/systemd-networkd
+153214.406: [15:32:14]
+153214.406: [15:32:14]3月 24 15:16:07 user systemd-networkd[15032]: ens5f1np1: Link UP
+153214.406: [15:32:14]3月 24 15:16:07 user systemd-networkd[15032]: ens6f0np0: Link UP
+153214.406: [15:32:14]3月 24 15:16:07 user systemd-networkd[15032]: ens6f1np1: Link UP
+153214.407: [15:32:14]3月 24 15:16:07 user systemd-networkd[15032]: ens4f0np0: Gained IPv6LL
+153214.407: [15:32:14]3月 24 15:16:07 user systemd-networkd[15032]: ens4f1np1: Gained IPv6LL
+153214.407: [15:32:14]3月 24 15:16:07 user systemd-networkd[15032]: Enumeration completed
+153214.407: [15:32:14]3月 24 15:16:07 user systemd[1]: Started systemd-networkd.service - Network Configuration.
+153214.408: [15:32:14]3月 24 15:25:14 user systemd-networkd[15032]: ens4f0np0: Reconfiguring with /run/systemd/network/10-netplan-ens4f0np0.network.
+153214.408: [15:32:14]3月 24 15:25:14 user systemd-networkd[15032]: ens4f0np0: Configuring with /run/systemd/network/10-netplan-ens4f0np0.network.
+153214.408: [15:32:14]3月 24 15:25:14 user systemd-networkd[15032]: ens4f0np0: DHCPv6 lease lost
+153216.490: [15:32:16]root@user:~# ip a
+153216.495: [15:32:16]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+153216.496: [15:32:16]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+153216.496: [15:32:16]    inet 127.0.0.1/8 scope host lo
+153216.496: [15:32:16]       valid_lft forever preferred_lft forever
+153216.497: [15:32:16]    inet6 ::1/128 scope host noprefixroute 
+153216.497: [15:32:16]       valid_lft forever preferred_lft forever
+153216.497: [15:32:16]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+153216.497: [15:32:16]    link/ether 50:6b:4b:1d:4b:16 brd ff:ff:ff:ff:ff:ff
+153216.497: [15:32:16]    altname enp49s0f0np0
+153216.497: [15:32:16]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+153216.497: [15:32:16]    link/ether 50:6b:4b:1d:4b:17 brd ff:ff:ff:ff:ff:ff
+153216.497: [15:32:16]    altname enp49s0f1np1
+153216.498: [15:32:16]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+153216.498: [15:32:16]    link/ether 98:03:9b:7d:3f:32 brd ff:ff:ff:ff:ff:ff
+153216.498: [15:32:16]    altname enp152s0f0np0
+153216.510: [15:32:16]    inet 172.16.101.45/24 brd 172.16.101.255 scope global ens4f0np0
+153216.510: [15:32:16]       valid_lft forever preferred_lft forever
+153216.510: [15:32:16]    inet6 fe80::9a03:9bff:fe7d:3f32/64 scope link 
+153216.510: [15:32:16]       valid_lft forever preferred_lft forever
+153216.510: [15:32:16]    inet6 fe80::1399:e538:d170:5279/64 scope link noprefixroute 
+153216.510: [15:32:16]       valid_lft forever preferred_lft forever
+153216.511: [15:32:16]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+153216.511: [15:32:16]    link/ether 98:03:9b:7d:3f:33 brd ff:ff:ff:ff:ff:ff
+153216.511: [15:32:16]    altname enp152s0f1np1
+153216.511: [15:32:16]    inet6 fe80::bdf6:e851:9a73:a9d0/64 scope link noprefixroute 
+153216.511: [15:32:16]       valid_lft forever preferred_lft forever
+153216.511: [15:32:16]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+153216.511: [15:32:16]    link/ether b8:59:9f:54:e7:48 brd ff:ff:ff:ff:ff:ff
+153216.511: [15:32:16]    altname enp177s0f0np0
+153216.511: [15:32:16]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+153216.511: [15:32:16]    link/ether b8:59:9f:54:e7:49 brd ff:ff:ff:ff:ff:ff
+153216.511: [15:32:16]    altname enp177s0f1np1
+153216.511: [15:32:16]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+153216.512: [15:32:16]    link/ether b8:59:9f:0a:7e:30 brd ff:ff:ff:ff:ff:ff
+153216.512: [15:32:16]    altname enp178s0f0np0
+153216.512: [15:32:16]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+153216.512: [15:32:16]    link/ether b8:59:9f:0a:7e:31 brd ff:ff:ff:ff:ff:ff
+153216.512: [15:32:16]    altname enp178s0f1np1
+153659.238: [15:36:59][202603103-172.16.101.45-15:36:59]
+153659.257: [15:36:59]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+153659.257: [15:36:59]
+153659.257: [15:36:59] * Documentation:  https://help.ubuntu.com
+153659.257: [15:36:59] * Management:     https://landscape.canonical.com
+153659.257: [15:36:59] * Support:        https://ubuntu.com/pro
+153659.258: [15:36:59]
+153659.258: [15:36:59]扩展安全维护（ESM）Applications 未启用。
+153659.258: [15:36:59]
+153659.258: [15:36:59]47 更新可以立即应用。
+153659.258: [15:36:59]这些更新中有 32 个是标准安全更新。
+153659.266: [15:36:59]要查看这些附加更新，请运行：apt list --upgradable
+153659.266: [15:36:59]
+153659.266: [15:36:59]启用 ESM Apps 来获取未来的额外安全更新
+153659.266: [15:36:59]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+153659.266: [15:36:59]
+153659.266: [15:36:59]Last login: Tue Mar 24 15:32:02 2026 from 192.168.6.173
+154208.724: [15:42:08][202603103-172.16.101.45-15:42:08]
+154208.734: [15:42:08]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+154208.734: [15:42:08]
+154208.734: [15:42:08] * Documentation:  https://help.ubuntu.com
+154208.734: [15:42:08] * Management:     https://landscape.canonical.com
+154208.734: [15:42:08] * Support:        https://ubuntu.com/pro
+154208.734: [15:42:08]
+154208.735: [15:42:08]扩展安全维护（ESM）Applications 未启用。
+154208.735: [15:42:08]
+154208.735: [15:42:08]47 更新可以立即应用。
+154208.735: [15:42:08]这些更新中有 32 个是标准安全更新。
+154208.735: [15:42:08]要查看这些附加更新，请运行：apt list --upgradable
+154208.735: [15:42:08]
+154208.736: [15:42:08]启用 ESM Apps 来获取未来的额外安全更新
+154208.736: [15:42:08]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+154208.736: [15:42:08]
+154208.736: [15:42:08]Last login: Tue Mar 24 15:36:59 2026 from 192.168.6.173
+154725.238: [15:47:25][202603103-172.16.101.45-15:47:25]
+154725.258: [15:47:25]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+154725.259: [15:47:25]
+154725.259: [15:47:25] * Documentation:  https://help.ubuntu.com
+154725.259: [15:47:25] * Management:     https://landscape.canonical.com
+154725.259: [15:47:25] * Support:        https://ubuntu.com/pro
+154725.259: [15:47:25]
+154725.259: [15:47:25]扩展安全维护（ESM）Applications 未启用。
+154725.260: [15:47:25]
+154725.260: [15:47:25]47 更新可以立即应用。
+154725.260: [15:47:25]这些更新中有 32 个是标准安全更新。
+154725.260: [15:47:25]要查看这些附加更新，请运行：apt list --upgradable
+154725.260: [15:47:25]
+154725.260: [15:47:25]启用 ESM Apps 来获取未来的额外安全更新
+154725.261: [15:47:25]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+154725.261: [15:47:25]
+154725.261: [15:47:25]Last login: Tue Mar 24 15:42:08 2026 from 192.168.6.173
+155241.236: [15:52:41][202603103-172.16.101.45-15:52:41]
+155241.249: [15:52:41]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+155241.249: [15:52:41]
+155241.249: [15:52:41] * Documentation:  https://help.ubuntu.com
+155241.249: [15:52:41] * Management:     https://landscape.canonical.com
+155241.249: [15:52:41] * Support:        https://ubuntu.com/pro
+155241.249: [15:52:41]
+155241.249: [15:52:41]扩展安全维护（ESM）Applications 未启用。
+155241.249: [15:52:41]
+155241.249: [15:52:41]47 更新可以立即应用。
+155241.250: [15:52:41]这些更新中有 32 个是标准安全更新。
+155241.250: [15:52:41]要查看这些附加更新，请运行：apt list --upgradable
+155241.250: [15:52:41]
+155241.250: [15:52:41]启用 ESM Apps 来获取未来的额外安全更新
+155241.250: [15:52:41]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+155241.250: [15:52:41]
+155241.251: [15:52:41]Last login: Tue Mar 24 15:47:25 2026 from 192.168.6.173
+155516.789: [15:55:16]root@user:~# cd /etc/netplan/
+155529.999: [15:55:29]root@user:/etc/netplan# ll
+155530.000: [15:55:30]总计 20
+155530.000: [15:55:30]drwxr-xr-x   2 root root  4096  3月 24 15:24 ./
+155530.000: [15:55:30]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+155530.000: [15:55:30]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+155532.684: [15:55:32]root@user:/etc/netplan# cd 01
+155532.687: [15:55:32]-bash: cd: 01: 没有那个文件或目录
+155535.469: [15:55:35]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+155535.481: [15:55:35]# Let NetworkManager manage all devices on this system
+155535.481: [15:55:35]network:
+155535.481: [15:55:35]  version: 2
+155535.481: [15:55:35]  renderer: networkd
+155535.481: [15:55:35]  ethernets:
+155535.482: [15:55:35]          - 223.5.5.5
+155537.254: [15:55:37]# Let NetworkManager manage all devices on this system
+155537.427: [15:55:37]network:
+155537.579: [15:55:37]  version: 2
+155537.725: [15:55:37]  renderer: networkd
+155537.866: [15:55:37]  ethernets:
+155538.016: [15:55:38]    ens4f0np0:
+155538.178: [15:55:38]      dhcp4: no
+155538.328: [15:55:38]      addresses:
+155538.518: [15:55:38]       - 172.16.101.45/24
+155538.677: [15:55:38]      routes:
+155538.868: [15:55:38]        - to: default
+155539.067: [15:55:39]          via: 172.16.101.1
+155539.274: [15:55:39]      nameservers:
+155539.475: [15:55:39]        addresses:
+155741.248: [15:57:41][202603103-172.16.101.45-15:57:41]
+155741.263: [15:57:41]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+155741.263: [15:57:41]
+155741.263: [15:57:41] * Documentation:  https://help.ubuntu.com
+155741.264: [15:57:41] * Management:     https://landscape.canonical.com
+155741.264: [15:57:41] * Support:        https://ubuntu.com/pro
+155741.264: [15:57:41]
+155741.264: [15:57:41]扩展安全维护（ESM）Applications 未启用。
+155741.264: [15:57:41]
+155741.265: [15:57:41]47 更新可以立即应用。
+155741.265: [15:57:41]这些更新中有 32 个是标准安全更新。
+155741.265: [15:57:41]要查看这些附加更新，请运行：apt list --upgradable
+155741.265: [15:57:41]
+155741.265: [15:57:41]启用 ESM Apps 来获取未来的额外安全更新
+155741.266: [15:57:41]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+155741.266: [15:57:41]
+155741.266: [15:57:41]Last login: Tue Mar 24 15:52:41 2026 from 192.168.6.173
+155859.016: [15:58:59]root@user:~# 
+155859.207: [15:58:59]root@user:~# 
+155859.316: [15:58:59]root@user:~# 
+155906.758: [15:59:06]root@user:~# cd /etc/netla
+155906.759: [15:59:06]-bash: cd: /etc/netla: 没有那个文件或目录
+155913.720: [15:59:13]root@user:~# cd /etc/netplan/
+155914.390: [15:59:14]root@user:/etc/netplan# ll
+155914.396: [15:59:14]总计 32
+155914.396: [15:59:14]drwxr-xr-x   2 root root  4096  3月 24 15:55 ./
+155914.396: [15:59:14]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+155914.397: [15:59:14]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+155914.397: [15:59:14]-rw-------   1 root root 12288  3月 24 15:55 .01-network-manager-all.yaml.swp
+155919.687: [15:59:19]root@user:/etc/netplan# rm *.swp
+155919.687: [15:59:19]rm: 无法删除 '*.swp': 没有那个文件或目录
+155921.765: [15:59:21]root@user:/etc/netplan# ll
+155921.765: [15:59:21]总计 32
+155921.765: [15:59:21]drwxr-xr-x   2 root root  4096  3月 24 15:55 ./
+155921.766: [15:59:21]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+155921.766: [15:59:21]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+155921.766: [15:59:21]-rw-------   1 root root 12288  3月 24 15:55 .01-network-manager-all.yaml.swp
+155924.493: [15:59:24]root@user:/etc/netplan# rm *swp
+155924.503: [15:59:24]rm: 无法删除 '*swp': 没有那个文件或目录
+160001.944: [16:00:01]root@user:/etc/netplan# ll -a
+160001.962: [16:00:01]总计 32
+160001.962: [16:00:01]drwxr-xr-x   2 root root  4096  3月 24 15:55 ./
+160001.962: [16:00:01]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+160001.962: [16:00:01]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+160001.962: [16:00:01]-rw-------   1 root root 12288  3月 24 15:55 .01-network-manager-all.yaml.swp
+160006.590: [16:00:06]root@user:/etc/netplan# rm .01-network-manager-all.yaml.swp 
+160007.497: [16:00:07]root@user:/etc/netplan# ll
+160007.497: [16:00:07]总计 20
+160007.498: [16:00:07]drwxr-xr-x   2 root root  4096  3月 24 16:00 ./
+160007.498: [16:00:07]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+160007.498: [16:00:07]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+160008.798: [16:00:08]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+160008.821: [16:00:08]# Let NetworkManager manage all devices on this system
+160008.821: [16:00:08]network:
+160008.821: [16:00:08]  version: 2
+160008.821: [16:00:08]  renderer: networkd
+160008.821: [16:00:08]  ethernets:
+160008.822: [16:00:08]          - 223.5.5.5
+160020.298: [16:00:20]~                                                                                                                                                                                                          
+160029.983: [16:00:29]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+160029.993: [16:00:29]# Let NetworkManager manage all devices on this system
+160029.993: [16:00:29]network:
+160029.993: [16:00:29]  version: 2
+160029.993: [16:00:29]  renderer: networkd
+160029.993: [16:00:29]  ethernets:
+160029.994: [16:00:29]          - 223.5.5.5
+160030.580: [16:00:30]# Let NetworkManager manage all devices on this system
+160248.777: [16:02:48][202603103-172.16.101.45-16:02:48]
+160248.819: [16:02:48]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+160248.819: [16:02:48]
+160248.819: [16:02:48] * Documentation:  https://help.ubuntu.com
+160248.819: [16:02:48] * Management:     https://landscape.canonical.com
+160248.819: [16:02:48] * Support:        https://ubuntu.com/pro
+160248.819: [16:02:48]
+160248.819: [16:02:48]扩展安全维护（ESM）Applications 未启用。
+160248.819: [16:02:48]
+160248.819: [16:02:48]47 更新可以立即应用。
+160248.819: [16:02:48]这些更新中有 32 个是标准安全更新。
+160248.819: [16:02:48]要查看这些附加更新，请运行：apt list --upgradable
+160248.819: [16:02:48]
+160248.819: [16:02:48]启用 ESM Apps 来获取未来的额外安全更新
+160248.819: [16:02:48]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+160248.819: [16:02:48]
+160248.820: [16:02:48]Last login: Tue Mar 24 15:57:41 2026 from 192.168.6.173
+160306.136: [16:03:06]root@user:~# 
+160306.972: [16:03:06]root@user:~# ll
+160306.977: [16:03:06]总计 44
+160306.978: [16:03:06]drwx------  7 root root 4096  3月 24 15:32 ./
+160306.978: [16:03:06]drwxr-xr-x 23 root root 4096  3月 19 18:38 ../
+160306.978: [16:03:06]-rw-------  1 root root   37  3月 21 10:28 .bash_history
+160306.978: [16:03:06]-rw-r--r--  1 root root 3106  4月 22  2024 .bashrc
+160306.978: [16:03:06]drwx------  2 root root 4096  3月 21 10:27 .cache/
+160306.978: [16:03:06]drwxr-xr-x  3 root root 4096  3月 20 14:04 .config/
+160306.978: [16:03:06]-rw-------  1 root root   20  3月 24 15:32 .lesshst
+160306.979: [16:03:06]drwxr-xr-x  3 root root 4096  3月 24 15:22 .local/
+160306.979: [16:03:06]-rw-r--r--  1 root root  161  4月 22  2024 .profile
+160306.979: [16:03:06]drwx------  6 root root 4096  3月 19 18:58 snap/
+160306.979: [16:03:06]drwx------  2 root root 4096  3月 19 18:58 .ssh/
+160313.140: [16:03:13]root@user:~# cd  /etc/netplan/
+160313.803: [16:03:13]root@user:/etc/netplan# ll
+160313.807: [16:03:13]总计 32
+160313.807: [16:03:13]drwxr-xr-x   2 root root  4096  3月 24 16:00 ./
+160313.807: [16:03:13]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+160313.807: [16:03:13]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+160313.807: [16:03:13]-rw-------   1 root root 12288  3月 24 16:01 .01-network-manager-all.yaml.swp
+160318.122: [16:03:18]root@user:/etc/netplan# rm .01-network-manager-all.yaml.swp 
+160318.895: [16:03:18]root@user:/etc/netplan# ll
+160318.907: [16:03:18]总计 20
+160318.907: [16:03:18]drwxr-xr-x   2 root root  4096  3月 24 16:03 ./
+160318.907: [16:03:18]drwxr-xr-x 139 root root 12288  3月 20 12:45 ../
+160318.908: [16:03:18]-rw-------   1 root root   309  3月 24 15:24 01-network-manager-all.yaml
+160325.776: [16:03:25]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+160325.799: [16:03:25]# Let NetworkManager manage all devices on this system
+160325.799: [16:03:25]network:
+160325.799: [16:03:25]  version: 2
+160325.799: [16:03:25]  renderer: networkd
+160325.799: [16:03:25]  ethernets:
+160325.799: [16:03:25]          - 223.5.5.5
+160408.494: [16:04:08]~                                                                                                                     
+160409.178: [16:04:09]~                                                                                                                     
+160409.558: [16:04:09]~                                                                                                                     
+160409.905: [16:04:09]~                                                                                                                     
+160410.356: [16:04:10]~                                                                                                                     
+160410.802: [16:04:10]~                                                                                                                     
+160411.164: [16:04:11]~                                                                                                                     
+160411.553: [16:04:11]~                                                                                                                     
+160411.899: [16:04:11]~                                                                                                                     
+160413.633: [16:04:13]~                                                                                                                     
+160413.954: [16:04:13]~                                                                                                                     
+160414.359: [16:04:14]~                                                                                                                     
+160414.728: [16:04:14]~                                                                                                                     
+160415.073: [16:04:15]~                                                                                                                     
+160415.456: [16:04:15]~                                                                                                                     
+160415.884: [16:04:15]~                                                                                                                     
+160416.190: [16:04:16]~                                                                                                                     
+160416.620: [16:04:16]~                                                                                                                     
+160416.968: [16:04:16]~                                                                                                                     
+160417.676: [16:04:17]~                                                                                                                     
+160421.968: [16:04:21]"01-network-manager-all.yaml" 18 lines, 357 bytes written
+160428.601: [16:04:28]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+160428.607: [16:04:28]# Let NetworkManager manage all devices on this system
+160428.607: [16:04:28]network:
+160428.607: [16:04:28]  version: 2
+160428.607: [16:04:28]  renderer: networkd
+160428.607: [16:04:28]  ethernets:
+160428.608: [16:04:28]          - 223.5.5.5
+160428.608: [16:04:28]      addresses:
+160429.328: [16:04:29]# Let NetworkManager manage all devices on this system
+160429.818: [16:04:29]network:
+160429.922: [16:04:29]  version: 2
+160429.994: [16:04:29]  renderer: networkd
+160430.072: [16:04:30]  ethernets:
+160430.149: [16:04:30]    ens4f0np0:
+160430.239: [16:04:30]      dhcp4: no
+160430.318: [16:04:30]      addresses:
+160430.400: [16:04:30]       - 172.16.101.45/24
+160430.482: [16:04:30]      routes:
+160430.567: [16:04:30]        - to: default
+160430.650: [16:04:30]          via: 172.16.101.1
+160430.734: [16:04:30]      nameservers:
+160430.826: [16:04:30]        addresses:
+160431.091: [16:04:31]          - 223.5.5.5
+160431.531: [16:04:31]    ens4f1np1:
+160431.981: [16:04:31]      dhcp4: no
+160435.440: [16:04:35]~                                                                                                                     
+160452.299: [16:04:52]"01-network-manager-all.yaml" 19 lines, 380 bytes written
+160455.907: [16:04:55]root@user:/etc/netplan# netplan apply
+160500.983: [16:05:00]root@user:/etc/netplan# ping 10.0.0.43
+160500.983: [16:05:00]PING 10.0.0.43 (10.0.0.43) 56(84) bytes of data.
+160500.983: [16:05:00]64 bytes from 10.0.0.43: icmp_seq=1 ttl=64 time=0.230 ms
+160502.022: [16:05:02]64 bytes from 10.0.0.43: icmp_seq=2 ttl=64 time=0.066 ms
+160502.027: [16:05:02]^C
+160502.027: [16:05:02]--- 10.0.0.43 ping statistics ---
+160502.027: [16:05:02]2 packets transmitted, 2 received, 0% packet loss, time 1040ms
+160502.027: [16:05:02]rtt min/avg/max/mdev = 0.066/0.148/0.230/0.082 ms
+160505.924: [16:05:05]root@user:/etc/netplan# ping 10.0.0.44
+160505.925: [16:05:05]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+160505.925: [16:05:05]64 bytes from 10.0.0.44: icmp_seq=1 ttl=64 time=0.210 ms
+160506.952: [16:05:06]64 bytes from 10.0.0.44: icmp_seq=2 ttl=64 time=0.060 ms
+160507.012: [16:05:07]^C
+160507.012: [16:05:07]--- 10.0.0.44 ping statistics ---
+160507.012: [16:05:07]2 packets transmitted, 2 received, 0% packet loss, time 1026ms
+160507.012: [16:05:07]rtt min/avg/max/mdev = 0.060/0.135/0.210/0.075 ms
+160814.761: [16:08:14][202603103-172.16.101.45-16:08:14]
+160814.776: [16:08:14]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+160814.776: [16:08:14]
+160814.776: [16:08:14] * Documentation:  https://help.ubuntu.com
+160814.776: [16:08:14] * Management:     https://landscape.canonical.com
+160814.776: [16:08:14] * Support:        https://ubuntu.com/pro
+160814.776: [16:08:14]
+160814.776: [16:08:14]扩展安全维护（ESM）Applications 未启用。
+160814.776: [16:08:14]
+160814.776: [16:08:14]47 更新可以立即应用。
+160814.776: [16:08:14]这些更新中有 32 个是标准安全更新。
+160814.776: [16:08:14]要查看这些附加更新，请运行：apt list --upgradable
+160814.776: [16:08:14]
+160814.776: [16:08:14]启用 ESM Apps 来获取未来的额外安全更新
+160814.776: [16:08:14]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+160814.776: [16:08:14]
+160814.776: [16:08:14]Last login: Tue Mar 24 16:02:48 2026 from 192.168.6.173
+160819.824: [16:08:19]root@user:~# 
+160819.995: [16:08:19]root@user:~# 
+160820.106: [16:08:20]root@user:~# 
+160826.063: [16:08:26]root@user:~# echo $TERM
+160826.063: [16:08:26]xterm-256color
+160833.260: [16:08:33]root@user:~# ll
+160833.260: [16:08:33]总计 44
+160833.260: [16:08:33]drwx------  7 root root 4096  3月 24 15:32 ./
+160833.261: [16:08:33]drwxr-xr-x 23 root root 4096  3月 19 18:38 ../
+160833.261: [16:08:33]-rw-------  1 root root   37  3月 21 10:28 .bash_history
+160833.261: [16:08:33]-rw-r--r--  1 root root 3106  4月 22  2024 .bashrc
+160833.261: [16:08:33]drwx------  2 root root 4096  3月 21 10:27 .cache/
+160833.262: [16:08:33]drwxr-xr-x  3 root root 4096  3月 20 14:04 .config/
+160833.262: [16:08:33]-rw-------  1 root root   20  3月 24 15:32 .lesshst
+160833.262: [16:08:33]drwxr-xr-x  3 root root 4096  3月 24 15:22 .local/
+160833.262: [16:08:33]-rw-r--r--  1 root root  161  4月 22  2024 .profile
+160833.263: [16:08:33]drwx------  6 root root 4096  3月 19 18:58 snap/
+160833.263: [16:08:33]drwx------  2 root root 4096  3月 19 18:58 .ssh/
+160840.190: [16:08:40]root@user:~# ping 10.0.0.44
+160840.190: [16:08:40]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+160840.191: [16:08:40]64 bytes from 10.0.0.44: icmp_seq=1 ttl=64 time=0.131 ms
+160840.888: [16:08:40]^C
+160840.888: [16:08:40]--- 10.0.0.44 ping statistics ---
+160840.888: [16:08:40]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+160840.888: [16:08:40]rtt min/avg/max/mdev = 0.131/0.131/0.131/0.000 ms
+160841.658: [16:08:41]root@user:~# ping 10.0.0.45
+160841.678: [16:08:41]PING 10.0.0.45 (10.0.0.45) 56(84) bytes of data.
+160841.678: [16:08:41]64 bytes from 10.0.0.45: icmp_seq=1 ttl=64 time=0.020 ms
+160842.476: [16:08:42]^C
+160842.476: [16:08:42]--- 10.0.0.45 ping statistics ---
+160842.476: [16:08:42]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+160842.476: [16:08:42]rtt min/avg/max/mdev = 0.020/0.020/0.020/0.000 ms
+161321.235: [16:13:21][202603103-172.16.101.45-16:13:21]
+161321.261: [16:13:21]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+161321.261: [16:13:21]
+161321.261: [16:13:21] * Documentation:  https://help.ubuntu.com
+161321.261: [16:13:21] * Management:     https://landscape.canonical.com
+161321.261: [16:13:21] * Support:        https://ubuntu.com/pro
+161321.261: [16:13:21]
+161321.261: [16:13:21]扩展安全维护（ESM）Applications 未启用。
+161321.261: [16:13:21]
+161321.262: [16:13:21]47 更新可以立即应用。
+161321.262: [16:13:21]这些更新中有 32 个是标准安全更新。
+161321.262: [16:13:21]要查看这些附加更新，请运行：apt list --upgradable
+161321.262: [16:13:21]
+161321.262: [16:13:21]启用 ESM Apps 来获取未来的额外安全更新
+161321.263: [16:13:21]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+161321.263: [16:13:21]
+161321.263: [16:13:21]Last login: Tue Mar 24 16:10:39 2026 from 192.168.6.173
+161820.297: [16:18:20][202603103-172.16.101.45-16:18:20]
+161820.334: [16:18:20]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+161820.334: [16:18:20]
+161820.334: [16:18:20] * Documentation:  https://help.ubuntu.com
+161820.334: [16:18:20] * Management:     https://landscape.canonical.com
+161820.334: [16:18:20] * Support:        https://ubuntu.com/pro
+161820.334: [16:18:20]
+161820.334: [16:18:20]扩展安全维护（ESM）Applications 未启用。
+161820.334: [16:18:20]
+161820.334: [16:18:20]47 更新可以立即应用。
+161820.334: [16:18:20]这些更新中有 32 个是标准安全更新。
+161820.335: [16:18:20]要查看这些附加更新，请运行：apt list --upgradable
+161820.335: [16:18:20]
+161820.335: [16:18:20]启用 ESM Apps 来获取未来的额外安全更新
+161820.335: [16:18:20]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+161820.335: [16:18:20]
+161820.335: [16:18:20]Last login: Tue Mar 24 16:13:23 2026 from 192.168.6.173
+161842.792: [16:18:42]root@user:~# 
+161842.934: [16:18:42]root@user:~# 
+161843.050: [16:18:43]root@user:~# 
+161846.863: [16:18:46]root@user:~# ping 10.0.0.47
+161846.864: [16:18:46]PING 10.0.0.47 (10.0.0.47) 56(84) bytes of data.
+161846.864: [16:18:46]64 bytes from 10.0.0.47: icmp_seq=1 ttl=64 time=0.177 ms
+161847.879: [16:18:47]64 bytes from 10.0.0.47: icmp_seq=2 ttl=64 time=0.045 ms
+161848.597: [16:18:48]^C
+161848.597: [16:18:48]--- 10.0.0.47 ping statistics ---
+161848.598: [16:18:48]2 packets transmitted, 2 received, 0% packet loss, time 1018ms
+161848.598: [16:18:48]rtt min/avg/max/mdev = 0.045/0.111/0.177/0.066 ms
+161850.482: [16:18:50]root@user:~# ping 10.0.0.46
+161850.482: [16:18:50]PING 10.0.0.46 (10.0.0.46) 56(84) bytes of data.
+161850.483: [16:18:50]64 bytes from 10.0.0.46: icmp_seq=1 ttl=64 time=0.079 ms
+161851.321: [16:18:51]^C
+161851.321: [16:18:51]--- 10.0.0.46 ping statistics ---
+161851.321: [16:18:51]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161851.321: [16:18:51]rtt min/avg/max/mdev = 0.079/0.079/0.079/0.000 ms
+161853.403: [16:18:53]root@user:~# ping 10.0.0.45
+161853.403: [16:18:53]PING 10.0.0.45 (10.0.0.45) 56(84) bytes of data.
+161853.404: [16:18:53]64 bytes from 10.0.0.45: icmp_seq=1 ttl=64 time=0.019 ms
+161854.105: [16:18:54]^C
+161854.106: [16:18:54]--- 10.0.0.45 ping statistics ---
+161854.106: [16:18:54]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161854.106: [16:18:54]rtt min/avg/max/mdev = 0.019/0.019/0.019/0.000 ms
+161855.698: [16:18:55]root@user:~# ping 10.0.0.44
+161855.715: [16:18:55]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+161855.716: [16:18:55]64 bytes from 10.0.0.44: icmp_seq=1 ttl=64 time=0.106 ms
+161856.456: [16:18:56]^C
+161856.456: [16:18:56]--- 10.0.0.44 ping statistics ---
+161856.457: [16:18:56]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161856.457: [16:18:56]rtt min/avg/max/mdev = 0.106/0.106/0.106/0.000 ms
+161858.359: [16:18:58]root@user:~# ping 10.0.0.43
+161858.368: [16:18:58]PING 10.0.0.43 (10.0.0.43) 56(84) bytes of data.
+161858.368: [16:18:58]64 bytes from 10.0.0.43: icmp_seq=1 ttl=64 time=0.097 ms
+161859.400: [16:18:59]64 bytes from 10.0.0.43: icmp_seq=2 ttl=64 time=0.058 ms
+161859.754: [16:18:59]^C
+161859.754: [16:18:59]--- 10.0.0.43 ping statistics ---
+161859.755: [16:18:59]2 packets transmitted, 2 received, 0% packet loss, time 1036ms
+161859.755: [16:18:59]rtt min/avg/max/mdev = 0.058/0.077/0.097/0.019 ms
+164545.933: [16:45:45][202603103-172.16.101.45-16:45:45]
+164545.945: [16:45:45]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+164545.945: [16:45:45]
+164545.945: [16:45:45] * Documentation:  https://help.ubuntu.com
+164545.945: [16:45:45] * Management:     https://landscape.canonical.com
+164545.945: [16:45:45] * Support:        https://ubuntu.com/pro
+164545.945: [16:45:45]
+164545.945: [16:45:45]扩展安全维护（ESM）Applications 未启用。
+164545.945: [16:45:45]
+164545.945: [16:45:45]47 更新可以立即应用。
+164545.945: [16:45:45]这些更新中有 32 个是标准安全更新。
+164545.945: [16:45:45]要查看这些附加更新，请运行：apt list --upgradable
+164545.945: [16:45:45]
+164545.945: [16:45:45]启用 ESM Apps 来获取未来的额外安全更新
+164545.945: [16:45:45]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+164545.945: [16:45:45]
+164545.945: [16:45:45]Last login: Tue Mar 24 16:18:34 2026 from 192.168.6.173
+164642.340: [16:46:42]root@user:~# 
+164642.511: [16:46:42]root@user:~# 
+164642.639: [16:46:42]root@user:~# 
+164646.254: [16:46:46]root@user:~# clear
+164652.479: [16:46:52]root@user:~# ip a
+164652.479: [16:46:52]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+164652.480: [16:46:52]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+164652.480: [16:46:52]    inet 127.0.0.1/8 scope host lo
+164652.480: [16:46:52]       valid_lft forever preferred_lft forever
+164652.480: [16:46:52]    inet6 ::1/128 scope host noprefixroute 
+164652.480: [16:46:52]       valid_lft forever preferred_lft forever
+164652.480: [16:46:52]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.480: [16:46:52]    link/ether 50:6b:4b:1d:4b:16 brd ff:ff:ff:ff:ff:ff
+164652.480: [16:46:52]    altname enp49s0f0np0
+164652.480: [16:46:52]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.480: [16:46:52]    link/ether 50:6b:4b:1d:4b:17 brd ff:ff:ff:ff:ff:ff
+164652.480: [16:46:52]    altname enp49s0f1np1
+164652.480: [16:46:52]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+164652.480: [16:46:52]    link/ether 98:03:9b:7d:3f:32 brd ff:ff:ff:ff:ff:ff
+164652.480: [16:46:52]    altname enp152s0f0np0
+164652.481: [16:46:52]    inet 172.16.101.45/24 brd 172.16.101.255 scope global ens4f0np0
+164652.481: [16:46:52]       valid_lft forever preferred_lft forever
+164652.481: [16:46:52]    inet6 fe80::9a03:9bff:fe7d:3f32/64 scope link 
+164652.481: [16:46:52]       valid_lft forever preferred_lft forever
+164652.481: [16:46:52]    inet6 fe80::1399:e538:d170:5279/64 scope link noprefixroute 
+164652.481: [16:46:52]       valid_lft forever preferred_lft forever
+164652.516: [16:46:52]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+164652.516: [16:46:52]    link/ether 98:03:9b:7d:3f:33 brd ff:ff:ff:ff:ff:ff
+164652.516: [16:46:52]    altname enp152s0f1np1
+164652.516: [16:46:52]    inet 10.0.0.45/24 brd 10.0.0.255 scope global ens4f1np1
+164652.517: [16:46:52]       valid_lft forever preferred_lft forever
+164652.517: [16:46:52]    inet6 fe80::9a03:9bff:fe7d:3f33/64 scope link 
+164652.517: [16:46:52]       valid_lft forever preferred_lft forever
+164652.517: [16:46:52]    inet6 fe80::bdf6:e851:9a73:a9d0/64 scope link noprefixroute 
+164652.517: [16:46:52]       valid_lft forever preferred_lft forever
+164652.517: [16:46:52]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.517: [16:46:52]    link/ether b8:59:9f:54:e7:48 brd ff:ff:ff:ff:ff:ff
+164652.517: [16:46:52]    altname enp177s0f0np0
+164652.517: [16:46:52]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.517: [16:46:52]    link/ether b8:59:9f:54:e7:49 brd ff:ff:ff:ff:ff:ff
+164652.517: [16:46:52]    altname enp177s0f1np1
+164652.517: [16:46:52]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.517: [16:46:52]    link/ether b8:59:9f:0a:7e:30 brd ff:ff:ff:ff:ff:ff
+164652.517: [16:46:52]    altname enp178s0f0np0
+164652.518: [16:46:52]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.518: [16:46:52]    link/ether b8:59:9f:0a:7e:31 brd ff:ff:ff:ff:ff:ff
+164652.518: [16:46:52]    altname enp178s0f1np1
+164936.213: [16:49:36][202603103-172.16.101.45-16:49:36]
+164936.228: [16:49:36]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+164936.228: [16:49:36]
+164936.228: [16:49:36] * Documentation:  https://help.ubuntu.com
+164936.229: [16:49:36] * Management:     https://landscape.canonical.com
+164936.229: [16:49:36] * Support:        https://ubuntu.com/pro
+164936.229: [16:49:36]
+164936.229: [16:49:36]扩展安全维护（ESM）Applications 未启用。
+164936.229: [16:49:36]
+164936.229: [16:49:36]47 更新可以立即应用。
+164936.230: [16:49:36]这些更新中有 32 个是标准安全更新。
+164936.230: [16:49:36]要查看这些附加更新，请运行：apt list --upgradable
+164936.230: [16:49:36]
+164936.230: [16:49:36]启用 ESM Apps 来获取未来的额外安全更新
+164936.230: [16:49:36]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+164936.230: [16:49:36]
+164936.230: [16:49:36]Last login: Tue Mar 24 16:45:45 2026 from 192.168.6.173
+164946.279: [16:49:46]root@user:~# ip r
+164946.294: [16:49:46]default via 172.16.101.1 dev ens4f0np0 proto static 
+164946.294: [16:49:46]10.0.0.0/24 dev ens4f1np1 proto kernel scope link src 10.0.0.45 
+164946.294: [16:49:46]172.16.101.0/24 dev ens4f0np0 proto kernel scope link src 172.16.101.45 
+165442.723: [16:54:42][202603103-172.16.101.45-16:54:42]
+165442.742: [16:54:42]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+165442.742: [16:54:42]
+165442.742: [16:54:42] * Documentation:  https://help.ubuntu.com
+165442.742: [16:54:42] * Management:     https://landscape.canonical.com
+165442.742: [16:54:42] * Support:        https://ubuntu.com/pro
+165442.742: [16:54:42]
+165442.742: [16:54:42]扩展安全维护（ESM）Applications 未启用。
+165442.742: [16:54:42]
+165442.742: [16:54:42]47 更新可以立即应用。
+165442.742: [16:54:42]这些更新中有 32 个是标准安全更新。
+165442.742: [16:54:42]要查看这些附加更新，请运行：apt list --upgradable
+165442.742: [16:54:42]
+165442.742: [16:54:42]启用 ESM Apps 来获取未来的额外安全更新
+165442.742: [16:54:42]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+165442.742: [16:54:42]
+165442.742: [16:54:42]Last login: Tue Mar 24 16:49:36 2026 from 192.168.6.173
+165557.194: [16:55:57]root@user:~# 
+165557.543: [16:55:57]root@user:~# 
+165557.705: [16:55:57]root@user:~# 
+165559.316: [16:55:59]root@user:~# ip link show ens4f0np0
+165559.317: [16:55:59]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+165559.317: [16:55:59]    link/ether 98:03:9b:7d:3f:32 brd ff:ff:ff:ff:ff:ff
+165559.317: [16:55:59]    altname enp152s0f0np0
+165610.303: [16:56:10]root@user:~# ip link show ens4f0np0
+165610.303: [16:56:10]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+165610.303: [16:56:10]    link/ether 98:03:9b:7d:3f:32 brd ff:ff:ff:ff:ff:ff
+165610.303: [16:56:10]    altname enp152s0f0np0
+170001.255: [17:00:01][202603103-172.16.101.45-17:00:01]
+170001.277: [17:00:01]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+170001.277: [17:00:01]
+170001.277: [17:00:01] * Documentation:  https://help.ubuntu.com
+170001.277: [17:00:01] * Management:     https://landscape.canonical.com
+170001.277: [17:00:01] * Support:        https://ubuntu.com/pro
+170001.277: [17:00:01]
+170001.277: [17:00:01]扩展安全维护（ESM）Applications 未启用。
+170001.277: [17:00:01]
+170001.278: [17:00:01]47 更新可以立即应用。
+170001.278: [17:00:01]这些更新中有 32 个是标准安全更新。
+170001.278: [17:00:01]要查看这些附加更新，请运行：apt list --upgradable
+170001.278: [17:00:01]
+170001.278: [17:00:01]启用 ESM Apps 来获取未来的额外安全更新
+170001.278: [17:00:01]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+170001.278: [17:00:01]
+170001.278: [17:00:01]Last login: Tue Mar 24 16:54:42 2026 from 192.168.6.173
+170501.724: [17:05:01][202603103-172.16.101.45-17:05:01]
+170501.741: [17:05:01]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+170501.741: [17:05:01]
+170501.742: [17:05:01] * Documentation:  https://help.ubuntu.com
+170501.742: [17:05:01] * Management:     https://landscape.canonical.com
+170501.743: [17:05:01] * Support:        https://ubuntu.com/pro
+170501.743: [17:05:01]
+170501.743: [17:05:01]扩展安全维护（ESM）Applications 未启用。
+170501.743: [17:05:01]
+170501.743: [17:05:01]47 更新可以立即应用。
+170501.744: [17:05:01]这些更新中有 32 个是标准安全更新。
+170501.744: [17:05:01]要查看这些附加更新，请运行：apt list --upgradable
+170501.744: [17:05:01]
+170501.744: [17:05:01]启用 ESM Apps 来获取未来的额外安全更新
+170501.744: [17:05:01]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+170501.744: [17:05:01]
+170501.745: [17:05:01]Last login: Tue Mar 24 17:00:01 2026 from 192.168.6.173
+170751.235: [17:07:51]root@user:~# apt-get install aptitude
+170751.252: [17:07:51]正在读取软件包列表... 完成
+170751.489: [17:07:51]正在分析软件包的依赖关系树... 完成
+170751.490: [17:07:51]正在读取状态信息... 完成                 
+170751.743: [17:07:51]将会同时安装下列软件：
+170751.744: [17:07:51]  aptitude-common bzip2 libboost-iostreams1.83.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl libsigc++-2.0-0v5
+170751.744: [17:07:51]  libxapian30
+170751.746: [17:07:51]建议安装：
+170751.746: [17:07:51]  apt-xapian-index aptitude-doc-en | aptitude-doc debtags tasksel bzip2-doc libcwidget-dev debian-keyring git bzr
+170751.746: [17:07:51]  xapian-tools
+170751.777: [17:07:51]下列【新】软件包将被安装：
+170751.777: [17:07:51]  aptitude aptitude-common bzip2 libboost-iostreams1.83.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl libsigc++-2.0-0v5
+170751.782: [17:07:51]  libxapian30
+170751.798: [17:07:51]升级了 0 个软件包，新安装了 9 个软件包，要卸载 0 个软件包，有 41 个软件包未被升级。
+170751.798: [17:07:51]需要下载 4,593 kB 的归档。
+170751.798: [17:07:51]解压缩后会消耗 21.1 MB 的额外空间。
+170753.124: [17:07:53]您希望继续执行吗？ [Y/n] y
+170753.640: [17:07:53]获取:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude-common all 0.8.13-5ubuntu5 [1,800 kB]
+170758.189: [17:07:58]获取:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-iostreams1.83.0 amd64 1.83.0-2.1ubuntu3.2 [260 kB]
+170759.098: [17:07:59]获取:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libsigc++-2.0-0v5 amd64 2.12.1-2 [12.8 kB]
+170759.099: [17:07:59]获取:4 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcwidget4 amd64 0.5.18-6build1 [241 kB]
+170759.146: [17:07:59]获取:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 libxapian30 amd64 1.4.22-1build1 [716 kB]                       
+170800.047: [17:08:00]获取:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude amd64 0.8.13-5ubuntu5 [1,229 kB]                       
+170802.349: [17:08:02]获取:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]                     
+170802.350: [17:08:02]获取:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5 [269 kB]                   
+170802.362: [17:08:02]获取:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5 [30.7 kB]                
+170802.367: [17:08:02]已下载 4,593 kB，耗时 9秒 (497 kB/s)                                                                                         
+170803.260: [17:08:03]正在选中未选择的软件包 aptitude-common。
+170804.235: [17:08:04](正在读取数据库 ... 系统当前共安装有 155270 个文件和目录。)
+170804.247: [17:08:04]准备解压 .../0-aptitude-common_0.8.13-5ubuntu5_all.deb  ...
+170804.247: [17:08:04]正在解压 aptitude-common (0.8.13-5ubuntu5) ...
+170804.571: [17:08:04]正在选中未选择的软件包 libboost-iostreams1.83.0:amd64。
+170804.584: [17:08:04]准备解压 .../1-libboost-iostreams1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb  ...
+170804.591: [17:08:04]正在解压 libboost-iostreams1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+170804.653: [17:08:04]正在选中未选择的软件包 libsigc++-2.0-0v5:amd64。
+170804.673: [17:08:04]准备解压 .../2-libsigc++-2.0-0v5_2.12.1-2_amd64.deb  ...
+170804.673: [17:08:04]正在解压 libsigc++-2.0-0v5:amd64 (2.12.1-2) ...
+170804.722: [17:08:04]正在选中未选择的软件包 libcwidget4:amd64。
+170804.739: [17:08:04]准备解压 .../3-libcwidget4_0.5.18-6build1_amd64.deb  ...
+170804.747: [17:08:04]正在解压 libcwidget4:amd64 (0.5.18-6build1) ...
+170804.840: [17:08:04]正在选中未选择的软件包 libxapian30:amd64。
+170804.871: [17:08:04]准备解压 .../4-libxapian30_1.4.22-1build1_amd64.deb  ...
+170804.893: [17:08:04]正在解压 libxapian30:amd64 (1.4.22-1build1) ...
+170804.943: [17:08:04]正在选中未选择的软件包 aptitude。
+170804.953: [17:08:04]准备解压 .../5-aptitude_0.8.13-5ubuntu5_amd64.deb  ...
+170804.959: [17:08:04]正在解压 aptitude (0.8.13-5ubuntu5) ...
+170805.016: [17:08:05]正在选中未选择的软件包 bzip2。
+170805.031: [17:08:05]准备解压 .../6-bzip2_1.0.8-5.1build0.1_amd64.deb  ...
+170805.037: [17:08:05]正在解压 bzip2 (1.0.8-5.1build0.1) ...
+170805.074: [17:08:05]正在选中未选择的软件包 libdpkg-perl。
+170805.095: [17:08:05]准备解压 .../7-libdpkg-perl_1.22.6ubuntu6.5_all.deb  ...
+170805.095: [17:08:05]正在解压 libdpkg-perl (1.22.6ubuntu6.5) ...
+170805.199: [17:08:05]正在选中未选择的软件包 libfile-fcntllock-perl。
+170805.219: [17:08:05]准备解压 .../8-libfile-fcntllock-perl_0.22-4ubuntu5_amd64.deb  ...
+170805.226: [17:08:05]正在解压 libfile-fcntllock-perl (0.22-4ubuntu5) ...
+170805.289: [17:08:05]正在设置 libxapian30:amd64 (1.4.22-1build1) ...
+170805.302: [17:08:05]正在设置 libfile-fcntllock-perl (0.22-4ubuntu5) ...
+170805.302: [17:08:05]正在设置 bzip2 (1.0.8-5.1build0.1) ...
+170805.307: [17:08:05]正在设置 libboost-iostreams1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+170805.317: [17:08:05]正在设置 libsigc++-2.0-0v5:amd64 (2.12.1-2) ...
+170805.317: [17:08:05]正在设置 aptitude-common (0.8.13-5ubuntu5) ...
+170805.321: [17:08:05]正在设置 libdpkg-perl (1.22.6ubuntu6.5) ...
+170805.321: [17:08:05]正在设置 libcwidget4:amd64 (0.5.18-6build1) ...
+170805.327: [17:08:05]正在设置 aptitude (0.8.13-5ubuntu5) ...
+170805.379: [17:08:05]update-alternatives: 使用 /usr/bin/aptitude-curses 来在自动模式中提供 /usr/bin/aptitude (aptitude)
+170805.407: [17:08:05]正在处理用于 man-db (2.12.0-4build2) 的触发器 ...
+170807.510: [17:08:07]正在处理用于 libc-bin (2.39-0ubuntu8.7) 的触发器 ...
+171025.725: [17:10:25][202603103-172.16.101.45-17:10:25]
+171025.737: [17:10:25]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+171025.737: [17:10:25]
+171025.737: [17:10:25] * Documentation:  https://help.ubuntu.com
+171025.737: [17:10:25] * Management:     https://landscape.canonical.com
+171025.737: [17:10:25] * Support:        https://ubuntu.com/pro
+171025.738: [17:10:25]
+171025.738: [17:10:25]扩展安全维护（ESM）Applications 未启用。
+171025.738: [17:10:25]
+171025.738: [17:10:25]47 更新可以立即应用。
+171025.738: [17:10:25]这些更新中有 32 个是标准安全更新。
+171025.738: [17:10:25]要查看这些附加更新，请运行：apt list --upgradable
+171025.738: [17:10:25]
+171025.738: [17:10:25]启用 ESM Apps 来获取未来的额外安全更新
+171025.738: [17:10:25]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+171025.738: [17:10:25]
+171025.738: [17:10:25]Last login: Tue Mar 24 17:05:01 2026 from 192.168.6.173
+171109.613: [17:11:09]root@user:~# 
+171109.809: [17:11:09]root@user:~# 
+171126.125: [17:11:26]root@user:~# apt-get install aptitude
+171126.154: [17:11:26]正在读取软件包列表... 完成
+171126.360: [17:11:26]正在分析软件包的依赖关系树... 完成
+171126.385: [17:11:26]正在读取状态信息... 完成                 
+171126.385: [17:11:26]aptitude 已经是最新版 (0.8.13-5ubuntu5)。
+171126.647: [17:11:26]升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 41 个软件包未被升级。
+171127.644: [17:11:27]root@user:~# y
+171127.871: [17:11:27]y：未找到命令
+171132.858: [17:11:32]root@user:~# apt-get install aptitude
+171132.890: [17:11:32]正在读取软件包列表... 完成
+171133.102: [17:11:33]正在分析软件包的依赖关系树... 完成
+171133.107: [17:11:33]正在读取状态信息... 完成                 
+171133.131: [17:11:33]aptitude 已经是最新版 (0.8.13-5ubuntu5)。
+171133.398: [17:11:33]升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 41 个软件包未被升级。
+171518.710: [17:15:18][202603103-172.16.101.45-17:15:18]
+171518.725: [17:15:18]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+171518.725: [17:15:18]
+171518.725: [17:15:18] * Documentation:  https://help.ubuntu.com
+171518.725: [17:15:18] * Management:     https://landscape.canonical.com
+171518.725: [17:15:18] * Support:        https://ubuntu.com/pro
+171518.725: [17:15:18]
+171518.725: [17:15:18]扩展安全维护（ESM）Applications 未启用。
+171518.725: [17:15:18]
+171518.725: [17:15:18]47 更新可以立即应用。
+171518.725: [17:15:18]这些更新中有 32 个是标准安全更新。
+171518.725: [17:15:18]要查看这些附加更新，请运行：apt list --upgradable
+171518.725: [17:15:18]
+171518.725: [17:15:18]启用 ESM Apps 来获取未来的额外安全更新
+171518.725: [17:15:18]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+171518.725: [17:15:18]
+171518.725: [17:15:18]Last login: Tue Mar 24 17:10:25 2026 from 192.168.6.173
+172030.719: [17:20:30][202603103-172.16.101.45-17:20:30]
+172030.733: [17:20:30]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+172030.733: [17:20:30]
+172030.734: [17:20:30] * Documentation:  https://help.ubuntu.com
+172030.734: [17:20:30] * Management:     https://landscape.canonical.com
+172030.734: [17:20:30] * Support:        https://ubuntu.com/pro
+172030.734: [17:20:30]
+172030.734: [17:20:30]扩展安全维护（ESM）Applications 未启用。
+172030.734: [17:20:30]
+172030.734: [17:20:30]47 更新可以立即应用。
+172030.735: [17:20:30]这些更新中有 32 个是标准安全更新。
+172030.735: [17:20:30]要查看这些附加更新，请运行：apt list --upgradable
+172030.735: [17:20:30]
+172030.735: [17:20:30]启用 ESM Apps 来获取未来的额外安全更新
+172030.735: [17:20:30]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+172030.735: [17:20:30]
+172030.736: [17:20:30]Last login: Tue Mar 24 17:15:18 2026 from 192.168.6.173
+172543.217: [17:25:43][202603103-172.16.101.45-17:25:43]
+172543.242: [17:25:43]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+172543.242: [17:25:43]
+172543.242: [17:25:43] * Documentation:  https://help.ubuntu.com
+172543.243: [17:25:43] * Management:     https://landscape.canonical.com
+172543.243: [17:25:43] * Support:        https://ubuntu.com/pro
+172543.243: [17:25:43]
+172543.243: [17:25:43]扩展安全维护（ESM）Applications 未启用。
+172543.243: [17:25:43]
+172543.243: [17:25:43]47 更新可以立即应用。
+172543.243: [17:25:43]这些更新中有 32 个是标准安全更新。
+172543.243: [17:25:43]要查看这些附加更新，请运行：apt list --upgradable
+172543.243: [17:25:43]
+172543.244: [17:25:43]启用 ESM Apps 来获取未来的额外安全更新
+172543.244: [17:25:43]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+172543.244: [17:25:43]
+172543.244: [17:25:43]Last login: Tue Mar 24 17:20:30 2026 from 192.168.6.173
+173058.797: [17:30:58][202603103-172.16.101.45-17:30:58]
+173058.808: [17:30:58]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+173058.808: [17:30:58]
+173058.809: [17:30:58] * Documentation:  https://help.ubuntu.com
+173058.809: [17:30:58] * Management:     https://landscape.canonical.com
+173058.809: [17:30:58] * Support:        https://ubuntu.com/pro
+173058.809: [17:30:58]
+173058.809: [17:30:58]扩展安全维护（ESM）Applications 未启用。
+173058.809: [17:30:58]
+173058.810: [17:30:58]47 更新可以立即应用。
+173058.810: [17:30:58]这些更新中有 32 个是标准安全更新。
+173058.810: [17:30:58]要查看这些附加更新，请运行：apt list --upgradable
+173058.810: [17:30:58]
+173058.810: [17:30:58]启用 ESM Apps 来获取未来的额外安全更新
+173058.811: [17:30:58]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+173058.811: [17:30:58]
+173058.811: [17:30:58]Last login: Tue Mar 24 17:25:43 2026 from 192.168.6.173
+173602.717: [17:36:02][202603103-172.16.101.45-17:36:02]
+173602.725: [17:36:02]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+173602.725: [17:36:02]
+173602.725: [17:36:02] * Documentation:  https://help.ubuntu.com
+173602.725: [17:36:02] * Management:     https://landscape.canonical.com
+173602.726: [17:36:02] * Support:        https://ubuntu.com/pro
+173602.726: [17:36:02]
+173602.726: [17:36:02]扩展安全维护（ESM）Applications 未启用。
+173602.726: [17:36:02]
+173602.726: [17:36:02]47 更新可以立即应用。
+173602.727: [17:36:02]这些更新中有 32 个是标准安全更新。
+173602.727: [17:36:02]要查看这些附加更新，请运行：apt list --upgradable
+173602.727: [17:36:02]
+173602.727: [17:36:02]启用 ESM Apps 来获取未来的额外安全更新
+173602.728: [17:36:02]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+173602.728: [17:36:02]
+173602.728: [17:36:02]Last login: Tue Mar 24 17:30:58 2026 from 192.168.6.173
+174113.250: [17:41:13][202603103-172.16.101.45-17:41:13]
+174113.266: [17:41:13]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+174113.266: [17:41:13]
+174113.266: [17:41:13] * Documentation:  https://help.ubuntu.com
+174113.266: [17:41:13] * Management:     https://landscape.canonical.com
+174113.266: [17:41:13] * Support:        https://ubuntu.com/pro
+174113.266: [17:41:13]
+174113.266: [17:41:13]扩展安全维护（ESM）Applications 未启用。
+174113.266: [17:41:13]
+174113.266: [17:41:13]47 更新可以立即应用。
+174113.266: [17:41:13]这些更新中有 32 个是标准安全更新。
+174113.266: [17:41:13]要查看这些附加更新，请运行：apt list --upgradable
+174113.267: [17:41:13]
+174113.267: [17:41:13]启用 ESM Apps 来获取未来的额外安全更新
+174113.267: [17:41:13]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+174113.267: [17:41:13]
+174113.267: [17:41:13]Last login: Tue Mar 24 17:36:02 2026 from 192.168.6.173
+174625.269: [17:46:25][202603103-172.16.101.45-17:46:25]
+174625.279: [17:46:25]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+174625.279: [17:46:25]
+174625.279: [17:46:25] * Documentation:  https://help.ubuntu.com
+174625.279: [17:46:25] * Management:     https://landscape.canonical.com
+174625.279: [17:46:25] * Support:        https://ubuntu.com/pro
+174625.279: [17:46:25]
+174625.280: [17:46:25]扩展安全维护（ESM）Applications 未启用。
+174625.280: [17:46:25]
+174625.280: [17:46:25]47 更新可以立即应用。
+174625.280: [17:46:25]这些更新中有 32 个是标准安全更新。
+174625.280: [17:46:25]要查看这些附加更新，请运行：apt list --upgradable
+174625.280: [17:46:25]
+174625.280: [17:46:25]启用 ESM Apps 来获取未来的额外安全更新
+174625.281: [17:46:25]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+174625.281: [17:46:25]
+174625.281: [17:46:25]Last login: Tue Mar 24 17:41:13 2026 from 192.168.6.173
+175134.232: [17:51:34][202603103-172.16.101.45-17:51:34]
+175134.246: [17:51:34]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+175134.246: [17:51:34]
+175134.246: [17:51:34] * Documentation:  https://help.ubuntu.com
+175134.246: [17:51:34] * Management:     https://landscape.canonical.com
+175134.246: [17:51:34] * Support:        https://ubuntu.com/pro
+175134.246: [17:51:34]
+175134.246: [17:51:34]扩展安全维护（ESM）Applications 未启用。
+175134.246: [17:51:34]
+175134.246: [17:51:34]47 更新可以立即应用。
+175134.247: [17:51:34]这些更新中有 32 个是标准安全更新。
+175134.247: [17:51:34]要查看这些附加更新，请运行：apt list --upgradable
+175134.247: [17:51:34]
+175134.247: [17:51:34]启用 ESM Apps 来获取未来的额外安全更新
+175134.247: [17:51:34]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+175134.247: [17:51:34]
+175134.247: [17:51:34]Last login: Tue Mar 24 17:46:25 2026 from 192.168.6.173
+175644.249: [17:56:44][202603103-172.16.101.45-17:56:44]
+175644.258: [17:56:44]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+175644.259: [17:56:44]
+175644.259: [17:56:44] * Documentation:  https://help.ubuntu.com
+175644.259: [17:56:44] * Management:     https://landscape.canonical.com
+175644.259: [17:56:44] * Support:        https://ubuntu.com/pro
+175644.259: [17:56:44]
+175644.259: [17:56:44]扩展安全维护（ESM）Applications 未启用。
+175644.259: [17:56:44]
+175644.259: [17:56:44]47 更新可以立即应用。
+175644.259: [17:56:44]这些更新中有 32 个是标准安全更新。
+175644.260: [17:56:44]要查看这些附加更新，请运行：apt list --upgradable
+175644.260: [17:56:44]
+175644.260: [17:56:44]启用 ESM Apps 来获取未来的额外安全更新
+175644.260: [17:56:44]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+175644.260: [17:56:44]
+175644.260: [17:56:44]Last login: Tue Mar 24 17:51:34 2026 from 192.168.6.173
+180158.730: [18:01:58][202603103-172.16.101.45-18:01:58]
+180158.748: [18:01:58]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+180158.748: [18:01:58]
+180158.749: [18:01:58] * Documentation:  https://help.ubuntu.com
+180158.749: [18:01:58] * Management:     https://landscape.canonical.com
+180158.749: [18:01:58] * Support:        https://ubuntu.com/pro
+180158.749: [18:01:58]
+180158.749: [18:01:58]扩展安全维护（ESM）Applications 未启用。
+180158.749: [18:01:58]
+180158.749: [18:01:58]47 更新可以立即应用。
+180158.750: [18:01:58]这些更新中有 32 个是标准安全更新。
+180158.750: [18:01:58]要查看这些附加更新，请运行：apt list --upgradable
+180158.750: [18:01:58]
+180158.750: [18:01:58]启用 ESM Apps 来获取未来的额外安全更新
+180158.751: [18:01:58]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+180158.751: [18:01:58]
+180158.751: [18:01:58]Last login: Tue Mar 24 17:56:44 2026 from 192.168.6.173
+180712.241: [18:07:12][202603103-172.16.101.45-18:07:12]
+180712.266: [18:07:12]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+180712.266: [18:07:12]
+180712.267: [18:07:12] * Documentation:  https://help.ubuntu.com
+180712.267: [18:07:12] * Management:     https://landscape.canonical.com
+180712.267: [18:07:12] * Support:        https://ubuntu.com/pro
+180712.267: [18:07:12]
+180712.267: [18:07:12]扩展安全维护（ESM）Applications 未启用。
+180712.267: [18:07:12]
+180712.268: [18:07:12]47 更新可以立即应用。
+180712.268: [18:07:12]这些更新中有 32 个是标准安全更新。
+180712.268: [18:07:12]要查看这些附加更新，请运行：apt list --upgradable
+180712.268: [18:07:12]
+180712.268: [18:07:12]启用 ESM Apps 来获取未来的额外安全更新
+180712.269: [18:07:12]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+180712.269: [18:07:12]
+180712.269: [18:07:12]Last login: Tue Mar 24 18:01:58 2026 from 192.168.6.173
+181214.716: [18:12:14][202603103-172.16.101.45-18:12:14]
+181214.727: [18:12:14]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+181214.727: [18:12:14]
+181214.727: [18:12:14] * Documentation:  https://help.ubuntu.com
+181214.727: [18:12:14] * Management:     https://landscape.canonical.com
+181214.727: [18:12:14] * Support:        https://ubuntu.com/pro
+181214.727: [18:12:14]
+181214.727: [18:12:14]扩展安全维护（ESM）Applications 未启用。
+181214.727: [18:12:14]
+181214.727: [18:12:14]47 更新可以立即应用。
+181214.727: [18:12:14]这些更新中有 32 个是标准安全更新。
+181214.727: [18:12:14]要查看这些附加更新，请运行：apt list --upgradable
+181214.727: [18:12:14]
+181214.727: [18:12:14]启用 ESM Apps 来获取未来的额外安全更新
+181214.728: [18:12:14]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+181214.728: [18:12:14]
+181214.728: [18:12:14]Last login: Tue Mar 24 18:07:12 2026 from 192.168.6.173
+181725.754: [18:17:25][202603103-172.16.101.45-18:17:25]
+181725.767: [18:17:25]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+181725.767: [18:17:25]
+181725.767: [18:17:25] * Documentation:  https://help.ubuntu.com
+181725.767: [18:17:25] * Management:     https://landscape.canonical.com
+181725.768: [18:17:25] * Support:        https://ubuntu.com/pro
+181725.768: [18:17:25]
+181725.768: [18:17:25]扩展安全维护（ESM）Applications 未启用。
+181725.768: [18:17:25]
+181725.768: [18:17:25]47 更新可以立即应用。
+181725.768: [18:17:25]这些更新中有 32 个是标准安全更新。
+181725.769: [18:17:25]要查看这些附加更新，请运行：apt list --upgradable
+181725.769: [18:17:25]
+181725.769: [18:17:25]启用 ESM Apps 来获取未来的额外安全更新
+181725.769: [18:17:25]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+181725.769: [18:17:25]
+181725.769: [18:17:25]Last login: Tue Mar 24 18:12:14 2026 from 192.168.6.173
+182240.248: [18:22:40][202603103-172.16.101.45-18:22:40]
+182240.275: [18:22:40]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+182240.275: [18:22:40]
+182240.275: [18:22:40] * Documentation:  https://help.ubuntu.com
+182240.275: [18:22:40] * Management:     https://landscape.canonical.com
+182240.275: [18:22:40] * Support:        https://ubuntu.com/pro
+182240.275: [18:22:40]
+182240.276: [18:22:40]扩展安全维护（ESM）Applications 未启用。
+182240.276: [18:22:40]
+182240.276: [18:22:40]47 更新可以立即应用。
+182240.276: [18:22:40]这些更新中有 32 个是标准安全更新。
+182240.276: [18:22:40]要查看这些附加更新，请运行：apt list --upgradable
+182240.276: [18:22:40]
+182240.276: [18:22:40]启用 ESM Apps 来获取未来的额外安全更新
+182240.277: [18:22:40]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+182240.277: [18:22:40]
+182240.277: [18:22:40]Last login: Tue Mar 24 18:17:25 2026 from 192.168.6.173
+182754.724: [18:27:54][202603103-172.16.101.45-18:27:54]
+182754.733: [18:27:54]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+182754.733: [18:27:54]
+182754.733: [18:27:54] * Documentation:  https://help.ubuntu.com
+182754.734: [18:27:54] * Management:     https://landscape.canonical.com
+182754.734: [18:27:54] * Support:        https://ubuntu.com/pro
+182754.734: [18:27:54]
+182754.734: [18:27:54]扩展安全维护（ESM）Applications 未启用。
+182754.734: [18:27:54]
+182754.734: [18:27:54]47 更新可以立即应用。
+182754.735: [18:27:54]这些更新中有 32 个是标准安全更新。
+182754.735: [18:27:54]要查看这些附加更新，请运行：apt list --upgradable
+182754.735: [18:27:54]
+182754.735: [18:27:54]启用 ESM Apps 来获取未来的额外安全更新
+182754.735: [18:27:54]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+182754.735: [18:27:54]
+182754.736: [18:27:54]Last login: Tue Mar 24 18:22:40 2026 from 192.168.6.173
+183304.741: [18:33:04][202603103-172.16.101.45-18:33:04]
+183304.750: [18:33:04]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+183304.750: [18:33:04]
+183304.750: [18:33:04] * Documentation:  https://help.ubuntu.com
+183304.750: [18:33:04] * Management:     https://landscape.canonical.com
+183304.751: [18:33:04] * Support:        https://ubuntu.com/pro
+183304.751: [18:33:04]
+183304.751: [18:33:04]扩展安全维护（ESM）Applications 未启用。
+183304.751: [18:33:04]
+183304.751: [18:33:04]47 更新可以立即应用。
+183304.751: [18:33:04]这些更新中有 32 个是标准安全更新。
+183304.751: [18:33:04]要查看这些附加更新，请运行：apt list --upgradable
+183304.751: [18:33:04]
+183304.752: [18:33:04]启用 ESM Apps 来获取未来的额外安全更新
+183304.752: [18:33:04]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+183304.752: [18:33:04]
+183304.752: [18:33:04]Last login: Tue Mar 24 18:27:54 2026 from 192.168.6.173
+183806.206: [18:38:06][202603103-172.16.101.45-18:38:06]
+183806.223: [18:38:06]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+183806.223: [18:38:06]
+183806.224: [18:38:06] * Documentation:  https://help.ubuntu.com
+183806.224: [18:38:06] * Management:     https://landscape.canonical.com
+183806.224: [18:38:06] * Support:        https://ubuntu.com/pro
+183806.224: [18:38:06]
+183806.224: [18:38:06]扩展安全维护（ESM）Applications 未启用。
+183806.224: [18:38:06]
+183806.225: [18:38:06]47 更新可以立即应用。
+183806.225: [18:38:06]这些更新中有 32 个是标准安全更新。
+183806.225: [18:38:06]要查看这些附加更新，请运行：apt list --upgradable
+183806.225: [18:38:06]
+183806.225: [18:38:06]启用 ESM Apps 来获取未来的额外安全更新
+183806.226: [18:38:06]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+183806.226: [18:38:06]
+183806.226: [18:38:06]Last login: Tue Mar 24 18:33:04 2026 from 192.168.6.173
+184317.212: [18:43:17][202603103-172.16.101.45-18:43:17]
+184317.222: [18:43:17]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+184317.222: [18:43:17]
+184317.222: [18:43:17] * Documentation:  https://help.ubuntu.com
+184317.222: [18:43:17] * Management:     https://landscape.canonical.com
+184317.222: [18:43:17] * Support:        https://ubuntu.com/pro
+184317.222: [18:43:17]
+184317.222: [18:43:17]扩展安全维护（ESM）Applications 未启用。
+184317.223: [18:43:17]
+184317.223: [18:43:17]47 更新可以立即应用。
+184317.223: [18:43:17]这些更新中有 32 个是标准安全更新。
+184317.223: [18:43:17]要查看这些附加更新，请运行：apt list --upgradable
+184317.223: [18:43:17]
+184317.223: [18:43:17]启用 ESM Apps 来获取未来的额外安全更新
+184317.224: [18:43:17]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+184317.224: [18:43:17]
+184317.224: [18:43:17]Last login: Tue Mar 24 18:38:06 2026 from 192.168.6.173
+184828.248: [18:48:28][202603103-172.16.101.45-18:48:28]
+184828.264: [18:48:28]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+184828.264: [18:48:28]
+184828.264: [18:48:28] * Documentation:  https://help.ubuntu.com
+184828.264: [18:48:28] * Management:     https://landscape.canonical.com
+184828.264: [18:48:28] * Support:        https://ubuntu.com/pro
+184828.264: [18:48:28]
+184828.265: [18:48:28]扩展安全维护（ESM）Applications 未启用。
+184828.265: [18:48:28]
+184828.265: [18:48:28]47 更新可以立即应用。
+184828.265: [18:48:28]这些更新中有 32 个是标准安全更新。
+184828.265: [18:48:28]要查看这些附加更新，请运行：apt list --upgradable
+184828.265: [18:48:28]
+184828.265: [18:48:28]启用 ESM Apps 来获取未来的额外安全更新
+184828.265: [18:48:28]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+184828.265: [18:48:28]
+184828.265: [18:48:28]Last login: Tue Mar 24 18:43:17 2026 from 192.168.6.173
+185341.243: [18:53:41][202603103-172.16.101.45-18:53:41]
+185341.255: [18:53:41]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+185341.255: [18:53:41]
+185341.255: [18:53:41] * Documentation:  https://help.ubuntu.com
+185341.256: [18:53:41] * Management:     https://landscape.canonical.com
+185341.256: [18:53:41] * Support:        https://ubuntu.com/pro
+185341.256: [18:53:41]
+185341.256: [18:53:41]扩展安全维护（ESM）Applications 未启用。
+185341.256: [18:53:41]
+185341.256: [18:53:41]47 更新可以立即应用。
+185341.256: [18:53:41]这些更新中有 32 个是标准安全更新。
+185341.257: [18:53:41]要查看这些附加更新，请运行：apt list --upgradable
+185341.257: [18:53:41]
+185341.257: [18:53:41]启用 ESM Apps 来获取未来的额外安全更新
+185341.257: [18:53:41]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+185341.257: [18:53:41]
+185341.257: [18:53:41]Last login: Tue Mar 24 18:48:28 2026 from 192.168.6.173
+185854.735: [18:58:54][202603103-172.16.101.45-18:58:54]
+185854.753: [18:58:54]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+185854.753: [18:58:54]
+185854.753: [18:58:54] * Documentation:  https://help.ubuntu.com
+185854.753: [18:58:54] * Management:     https://landscape.canonical.com
+185854.753: [18:58:54] * Support:        https://ubuntu.com/pro
+185854.753: [18:58:54]
+185854.753: [18:58:54]扩展安全维护（ESM）Applications 未启用。
+185854.753: [18:58:54]
+185854.753: [18:58:54]47 更新可以立即应用。
+185854.753: [18:58:54]这些更新中有 32 个是标准安全更新。
+185854.753: [18:58:54]要查看这些附加更新，请运行：apt list --upgradable
+185854.754: [18:58:54]
+185854.754: [18:58:54]启用 ESM Apps 来获取未来的额外安全更新
+185854.754: [18:58:54]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+185854.754: [18:58:54]
+185854.754: [18:58:54]Last login: Tue Mar 24 18:53:41 2026 from 192.168.6.173
+190407.738: [19:04:07][202603103-172.16.101.45-19:04:07]
+190407.749: [19:04:07]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+190407.749: [19:04:07]
+190407.749: [19:04:07] * Documentation:  https://help.ubuntu.com
+190407.749: [19:04:07] * Management:     https://landscape.canonical.com
+190407.749: [19:04:07] * Support:        https://ubuntu.com/pro
+190407.749: [19:04:07]
+190407.750: [19:04:07]扩展安全维护（ESM）Applications 未启用。
+190407.750: [19:04:07]
+190407.750: [19:04:07]47 更新可以立即应用。
+190407.750: [19:04:07]这些更新中有 32 个是标准安全更新。
+190407.750: [19:04:07]要查看这些附加更新，请运行：apt list --upgradable
+190407.750: [19:04:07]
+190407.750: [19:04:07]启用 ESM Apps 来获取未来的额外安全更新
+190407.750: [19:04:07]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+190407.750: [19:04:07]
+190407.751: [19:04:07]Last login: Tue Mar 24 18:58:54 2026 from 192.168.6.173
+190920.719: [19:09:20][202603103-172.16.101.45-19:09:20]
+190920.727: [19:09:20]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+190920.727: [19:09:20]
+190920.728: [19:09:20] * Documentation:  https://help.ubuntu.com
+190920.728: [19:09:20] * Management:     https://landscape.canonical.com
+190920.728: [19:09:20] * Support:        https://ubuntu.com/pro
+190920.728: [19:09:20]
+190920.728: [19:09:20]扩展安全维护（ESM）Applications 未启用。
+190920.728: [19:09:20]
+190920.728: [19:09:20]47 更新可以立即应用。
+190920.729: [19:09:20]这些更新中有 32 个是标准安全更新。
+190920.729: [19:09:20]要查看这些附加更新，请运行：apt list --upgradable
+190920.729: [19:09:20]
+190920.729: [19:09:20]启用 ESM Apps 来获取未来的额外安全更新
+190920.729: [19:09:20]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+190920.729: [19:09:20]
+190920.729: [19:09:20]Last login: Tue Mar 24 19:04:07 2026 from 192.168.6.173
+191433.731: [19:14:33][202603103-172.16.101.45-19:14:33]
+191433.739: [19:14:33]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+191433.739: [19:14:33]
+191433.739: [19:14:33] * Documentation:  https://help.ubuntu.com
+191433.740: [19:14:33] * Management:     https://landscape.canonical.com
+191433.740: [19:14:33] * Support:        https://ubuntu.com/pro
+191433.740: [19:14:33]
+191433.740: [19:14:33]扩展安全维护（ESM）Applications 未启用。
+191433.740: [19:14:33]
+191433.740: [19:14:33]47 更新可以立即应用。
+191433.740: [19:14:33]这些更新中有 32 个是标准安全更新。
+191433.740: [19:14:33]要查看这些附加更新，请运行：apt list --upgradable
+191433.740: [19:14:33]
+191433.741: [19:14:33]启用 ESM Apps 来获取未来的额外安全更新
+191433.741: [19:14:33]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+191433.741: [19:14:33]
+191433.741: [19:14:33]Last login: Tue Mar 24 19:09:20 2026 from 192.168.6.173
+191945.252: [19:19:45][202603103-172.16.101.45-19:19:45]
+191945.261: [19:19:45]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+191945.261: [19:19:45]
+191945.262: [19:19:45] * Documentation:  https://help.ubuntu.com
+191945.262: [19:19:45] * Management:     https://landscape.canonical.com
+191945.262: [19:19:45] * Support:        https://ubuntu.com/pro
+191945.262: [19:19:45]
+191945.262: [19:19:45]扩展安全维护（ESM）Applications 未启用。
+191945.262: [19:19:45]
+191945.263: [19:19:45]47 更新可以立即应用。
+191945.263: [19:19:45]这些更新中有 32 个是标准安全更新。
+191945.263: [19:19:45]要查看这些附加更新，请运行：apt list --upgradable
+191945.263: [19:19:45]
+191945.263: [19:19:45]启用 ESM Apps 来获取未来的额外安全更新
+191945.263: [19:19:45]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+191945.263: [19:19:45]
+191945.263: [19:19:45]Last login: Tue Mar 24 19:14:33 2026 from 192.168.6.173
+192449.226: [19:24:49][202603103-172.16.101.45-19:24:49]
+192449.239: [19:24:49]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+192449.239: [19:24:49]
+192449.239: [19:24:49] * Documentation:  https://help.ubuntu.com
+192449.239: [19:24:49] * Management:     https://landscape.canonical.com
+192449.239: [19:24:49] * Support:        https://ubuntu.com/pro
+192449.239: [19:24:49]
+192449.239: [19:24:49]扩展安全维护（ESM）Applications 未启用。
+192449.239: [19:24:49]
+192449.239: [19:24:49]47 更新可以立即应用。
+192449.239: [19:24:49]这些更新中有 32 个是标准安全更新。
+192449.240: [19:24:49]要查看这些附加更新，请运行：apt list --upgradable
+192449.240: [19:24:49]
+192449.240: [19:24:49]启用 ESM Apps 来获取未来的额外安全更新
+192449.240: [19:24:49]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+192449.240: [19:24:49]
+192449.240: [19:24:49]Last login: Tue Mar 24 19:19:45 2026 from 192.168.6.173
+192959.740: [19:29:59][202603103-172.16.101.45-19:29:59]
+192959.749: [19:29:59]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+192959.749: [19:29:59]
+192959.749: [19:29:59] * Documentation:  https://help.ubuntu.com
+192959.749: [19:29:59] * Management:     https://landscape.canonical.com
+192959.749: [19:29:59] * Support:        https://ubuntu.com/pro
+192959.749: [19:29:59]
+192959.750: [19:29:59]扩展安全维护（ESM）Applications 未启用。
+192959.750: [19:29:59]
+192959.750: [19:29:59]47 更新可以立即应用。
+192959.750: [19:29:59]这些更新中有 32 个是标准安全更新。
+192959.751: [19:29:59]要查看这些附加更新，请运行：apt list --upgradable
+192959.751: [19:29:59]
+192959.751: [19:29:59]启用 ESM Apps 来获取未来的额外安全更新
+192959.751: [19:29:59]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+192959.751: [19:29:59]
+192959.751: [19:29:59]Last login: Tue Mar 24 19:24:49 2026 from 192.168.6.173
+193509.219: [19:35:09][202603103-172.16.101.45-19:35:09]
+193509.230: [19:35:09]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+193509.230: [19:35:09]
+193509.230: [19:35:09] * Documentation:  https://help.ubuntu.com
+193509.231: [19:35:09] * Management:     https://landscape.canonical.com
+193509.231: [19:35:09] * Support:        https://ubuntu.com/pro
+193509.231: [19:35:09]
+193509.231: [19:35:09]扩展安全维护（ESM）Applications 未启用。
+193509.231: [19:35:09]
+193509.231: [19:35:09]47 更新可以立即应用。
+193509.231: [19:35:09]这些更新中有 32 个是标准安全更新。
+193509.231: [19:35:09]要查看这些附加更新，请运行：apt list --upgradable
+193509.232: [19:35:09]
+193509.232: [19:35:09]启用 ESM Apps 来获取未来的额外安全更新
+193509.232: [19:35:09]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+193509.232: [19:35:09]
+193509.232: [19:35:09]Last login: Tue Mar 24 19:29:59 2026 from 192.168.6.173
+194023.245: [19:40:23][202603103-172.16.101.45-19:40:23]
+194023.254: [19:40:23]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+194023.254: [19:40:23]
+194023.254: [19:40:23] * Documentation:  https://help.ubuntu.com
+194023.254: [19:40:23] * Management:     https://landscape.canonical.com
+194023.255: [19:40:23] * Support:        https://ubuntu.com/pro
+194023.255: [19:40:23]
+194023.255: [19:40:23]扩展安全维护（ESM）Applications 未启用。
+194023.255: [19:40:23]
+194023.255: [19:40:23]47 更新可以立即应用。
+194023.255: [19:40:23]这些更新中有 32 个是标准安全更新。
+194023.255: [19:40:23]要查看这些附加更新，请运行：apt list --upgradable
+194023.255: [19:40:23]
+194023.255: [19:40:23]启用 ESM Apps 来获取未来的额外安全更新
+194023.256: [19:40:23]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+194023.256: [19:40:23]
+194023.256: [19:40:23]Last login: Tue Mar 24 19:35:09 2026 from 192.168.6.173
+194534.736: [19:45:34][202603103-172.16.101.45-19:45:34]
+194534.755: [19:45:34]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+194534.755: [19:45:34]
+194534.755: [19:45:34] * Documentation:  https://help.ubuntu.com
+194534.756: [19:45:34] * Management:     https://landscape.canonical.com
+194534.756: [19:45:34] * Support:        https://ubuntu.com/pro
+194534.756: [19:45:34]
+194534.756: [19:45:34]扩展安全维护（ESM）Applications 未启用。
+194534.756: [19:45:34]
+194534.756: [19:45:34]47 更新可以立即应用。
+194534.756: [19:45:34]这些更新中有 32 个是标准安全更新。
+194534.756: [19:45:34]要查看这些附加更新，请运行：apt list --upgradable
+194534.757: [19:45:34]
+194534.757: [19:45:34]启用 ESM Apps 来获取未来的额外安全更新
+194534.757: [19:45:34]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+194534.757: [19:45:34]
+194534.757: [19:45:34]Last login: Tue Mar 24 19:40:23 2026 from 192.168.6.173
+195038.841: [19:50:38][202603103-172.16.101.45-19:50:38]
+195038.852: [19:50:38]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+195038.852: [19:50:38]
+195038.852: [19:50:38] * Documentation:  https://help.ubuntu.com
+195038.852: [19:50:38] * Management:     https://landscape.canonical.com
+195038.853: [19:50:38] * Support:        https://ubuntu.com/pro
+195038.853: [19:50:38]
+195038.853: [19:50:38]扩展安全维护（ESM）Applications 未启用。
+195038.853: [19:50:38]
+195038.853: [19:50:38]47 更新可以立即应用。
+195038.853: [19:50:38]这些更新中有 32 个是标准安全更新。
+195038.854: [19:50:38]要查看这些附加更新，请运行：apt list --upgradable
+195038.854: [19:50:38]
+195038.854: [19:50:38]启用 ESM Apps 来获取未来的额外安全更新
+195038.854: [19:50:38]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+195038.854: [19:50:38]
+195038.854: [19:50:38]Last login: Tue Mar 24 19:45:34 2026 from 192.168.6.173
+195553.745: [19:55:53][202603103-172.16.101.45-19:55:53]
+195553.758: [19:55:53]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+195553.758: [19:55:53]
+195553.759: [19:55:53] * Documentation:  https://help.ubuntu.com
+195553.759: [19:55:53] * Management:     https://landscape.canonical.com
+195553.759: [19:55:53] * Support:        https://ubuntu.com/pro
+195553.759: [19:55:53]
+195553.759: [19:55:53]扩展安全维护（ESM）Applications 未启用。
+195553.759: [19:55:53]
+195553.759: [19:55:53]47 更新可以立即应用。
+195553.760: [19:55:53]这些更新中有 32 个是标准安全更新。
+195553.760: [19:55:53]要查看这些附加更新，请运行：apt list --upgradable
+195553.760: [19:55:53]
+195553.760: [19:55:53]启用 ESM Apps 来获取未来的额外安全更新
+195553.761: [19:55:53]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+195553.761: [19:55:53]
+195553.761: [19:55:53]Last login: Tue Mar 24 19:50:38 2026 from 192.168.6.173
+200106.214: [20:01:06][202603103-172.16.101.45-20:01:06]
+200106.229: [20:01:06]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+200106.229: [20:01:06]
+200106.229: [20:01:06] * Documentation:  https://help.ubuntu.com
+200106.229: [20:01:06] * Management:     https://landscape.canonical.com
+200106.229: [20:01:06] * Support:        https://ubuntu.com/pro
+200106.229: [20:01:06]
+200106.230: [20:01:06]扩展安全维护（ESM）Applications 未启用。
+200106.230: [20:01:06]
+200106.230: [20:01:06]47 更新可以立即应用。
+200106.230: [20:01:06]这些更新中有 32 个是标准安全更新。
+200106.230: [20:01:06]要查看这些附加更新，请运行：apt list --upgradable
+200106.230: [20:01:06]
+200106.231: [20:01:06]启用 ESM Apps 来获取未来的额外安全更新
+200106.231: [20:01:06]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+200106.231: [20:01:06]
+200106.231: [20:01:06]Last login: Tue Mar 24 19:55:53 2026 from 192.168.6.173
+200613.246: [20:06:13][202603103-172.16.101.45-20:06:13]
+200613.260: [20:06:13]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+200613.260: [20:06:13]
+200613.260: [20:06:13] * Documentation:  https://help.ubuntu.com
+200613.260: [20:06:13] * Management:     https://landscape.canonical.com
+200613.260: [20:06:13] * Support:        https://ubuntu.com/pro
+200613.260: [20:06:13]
+200613.261: [20:06:13]扩展安全维护（ESM）Applications 未启用。
+200613.261: [20:06:13]
+200613.261: [20:06:13]47 更新可以立即应用。
+200613.261: [20:06:13]这些更新中有 32 个是标准安全更新。
+200613.261: [20:06:13]要查看这些附加更新，请运行：apt list --upgradable
+200613.261: [20:06:13]
+200613.261: [20:06:13]启用 ESM Apps 来获取未来的额外安全更新
+200613.261: [20:06:13]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+200613.261: [20:06:13]
+200613.261: [20:06:13]Last login: Tue Mar 24 20:01:06 2026 from 192.168.6.173
+201127.735: [20:11:27][202603103-172.16.101.45-20:11:27]
+201127.749: [20:11:27]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+201127.749: [20:11:27]
+201127.749: [20:11:27] * Documentation:  https://help.ubuntu.com
+201127.749: [20:11:27] * Management:     https://landscape.canonical.com
+201127.749: [20:11:27] * Support:        https://ubuntu.com/pro
+201127.749: [20:11:27]
+201127.749: [20:11:27]扩展安全维护（ESM）Applications 未启用。
+201127.749: [20:11:27]
+201127.749: [20:11:27]47 更新可以立即应用。
+201127.750: [20:11:27]这些更新中有 32 个是标准安全更新。
+201127.750: [20:11:27]要查看这些附加更新，请运行：apt list --upgradable
+201127.750: [20:11:27]
+201127.750: [20:11:27]启用 ESM Apps 来获取未来的额外安全更新
+201127.750: [20:11:27]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+201127.750: [20:11:27]
+201127.750: [20:11:27]Last login: Tue Mar 24 20:06:13 2026 from 192.168.6.173
+201641.252: [20:16:41][202603103-172.16.101.45-20:16:41]
+201641.268: [20:16:41]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+201641.269: [20:16:41]
+201641.269: [20:16:41] * Documentation:  https://help.ubuntu.com
+201641.269: [20:16:41] * Management:     https://landscape.canonical.com
+201641.269: [20:16:41] * Support:        https://ubuntu.com/pro
+201641.269: [20:16:41]
+201641.269: [20:16:41]扩展安全维护（ESM）Applications 未启用。
+201641.269: [20:16:41]
+201641.269: [20:16:41]47 更新可以立即应用。
+201641.269: [20:16:41]这些更新中有 32 个是标准安全更新。
+201641.270: [20:16:41]要查看这些附加更新，请运行：apt list --upgradable
+201641.270: [20:16:41]
+201641.270: [20:16:41]启用 ESM Apps 来获取未来的额外安全更新
+201641.270: [20:16:41]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+201641.270: [20:16:41]
+201641.270: [20:16:41]Last login: Tue Mar 24 20:11:27 2026 from 192.168.6.173
+202153.275: [20:21:53][202603103-172.16.101.45-20:21:53]
+202153.297: [20:21:53]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+202153.297: [20:21:53]
+202153.297: [20:21:53] * Documentation:  https://help.ubuntu.com
+202153.297: [20:21:53] * Management:     https://landscape.canonical.com
+202153.298: [20:21:53] * Support:        https://ubuntu.com/pro
+202153.298: [20:21:53]
+202153.298: [20:21:53]扩展安全维护（ESM）Applications 未启用。
+202153.298: [20:21:53]
+202153.298: [20:21:53]47 更新可以立即应用。
+202153.298: [20:21:53]这些更新中有 32 个是标准安全更新。
+202153.298: [20:21:53]要查看这些附加更新，请运行：apt list --upgradable
+202153.298: [20:21:53]
+202153.299: [20:21:53]启用 ESM Apps 来获取未来的额外安全更新
+202153.299: [20:21:53]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+202153.299: [20:21:53]
+202153.299: [20:21:53]Last login: Tue Mar 24 20:16:41 2026 from 192.168.6.173
+202654.237: [20:26:54][202603103-172.16.101.45-20:26:54]
+202654.247: [20:26:54]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+202654.247: [20:26:54]
+202654.247: [20:26:54] * Documentation:  https://help.ubuntu.com
+202654.248: [20:26:54] * Management:     https://landscape.canonical.com
+202654.248: [20:26:54] * Support:        https://ubuntu.com/pro
+202654.248: [20:26:54]
+202654.248: [20:26:54]扩展安全维护（ESM）Applications 未启用。
+202654.248: [20:26:54]
+202654.248: [20:26:54]47 更新可以立即应用。
+202654.248: [20:26:54]这些更新中有 32 个是标准安全更新。
+202654.248: [20:26:54]要查看这些附加更新，请运行：apt list --upgradable
+202654.248: [20:26:54]
+202654.248: [20:26:54]启用 ESM Apps 来获取未来的额外安全更新
+202654.249: [20:26:54]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+202654.249: [20:26:54]
+202654.249: [20:26:54]Last login: Tue Mar 24 20:21:53 2026 from 192.168.6.173
+203206.235: [20:32:06][202603103-172.16.101.45-20:32:06]
+203206.251: [20:32:06]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+203206.251: [20:32:06]
+203206.251: [20:32:06] * Documentation:  https://help.ubuntu.com
+203206.251: [20:32:06] * Management:     https://landscape.canonical.com
+203206.251: [20:32:06] * Support:        https://ubuntu.com/pro
+203206.251: [20:32:06]
+203206.251: [20:32:06]扩展安全维护（ESM）Applications 未启用。
+203206.251: [20:32:06]
+203206.251: [20:32:06]47 更新可以立即应用。
+203206.251: [20:32:06]这些更新中有 32 个是标准安全更新。
+203206.251: [20:32:06]要查看这些附加更新，请运行：apt list --upgradable
+203206.251: [20:32:06]
+203206.252: [20:32:06]启用 ESM Apps 来获取未来的额外安全更新
+203206.252: [20:32:06]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+203206.252: [20:32:06]
+203206.252: [20:32:06]Last login: Tue Mar 24 20:26:54 2026 from 192.168.6.173
+203726.751: [20:37:26][202603103-172.16.101.45-20:37:26]
+203726.765: [20:37:26]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+203726.765: [20:37:26]
+203726.765: [20:37:26] * Documentation:  https://help.ubuntu.com
+203726.766: [20:37:26] * Management:     https://landscape.canonical.com
+203726.766: [20:37:26] * Support:        https://ubuntu.com/pro
+203726.766: [20:37:26]
+203726.766: [20:37:26]扩展安全维护（ESM）Applications 未启用。
+203726.766: [20:37:26]
+203726.766: [20:37:26]47 更新可以立即应用。
+203726.766: [20:37:26]这些更新中有 32 个是标准安全更新。
+203726.766: [20:37:26]要查看这些附加更新，请运行：apt list --upgradable
+203726.766: [20:37:26]
+203726.766: [20:37:26]启用 ESM Apps 来获取未来的额外安全更新
+203726.766: [20:37:26]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+203726.766: [20:37:26]
+203726.766: [20:37:26]Last login: Tue Mar 24 20:32:06 2026 from 192.168.6.173
+204224.763: [20:42:24][202603103-172.16.101.45-20:42:24]
+204224.785: [20:42:24]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+204224.785: [20:42:24]
+204224.785: [20:42:24] * Documentation:  https://help.ubuntu.com
+204224.786: [20:42:24] * Management:     https://landscape.canonical.com
+204224.786: [20:42:24] * Support:        https://ubuntu.com/pro
+204224.786: [20:42:24]
+204224.786: [20:42:24]扩展安全维护（ESM）Applications 未启用。
+204224.786: [20:42:24]
+204224.786: [20:42:24]47 更新可以立即应用。
+204224.787: [20:42:24]这些更新中有 32 个是标准安全更新。
+204224.787: [20:42:24]要查看这些附加更新，请运行：apt list --upgradable
+204224.787: [20:42:24]
+204224.787: [20:42:24]启用 ESM Apps 来获取未来的额外安全更新
+204224.787: [20:42:24]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+204224.787: [20:42:24]
+204224.788: [20:42:24]Last login: Tue Mar 24 20:37:26 2026 from 192.168.6.173
+204732.276: [20:47:32][202603103-172.16.101.45-20:47:32]
+204732.296: [20:47:32]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+204732.296: [20:47:32]
+204732.297: [20:47:32] * Documentation:  https://help.ubuntu.com
+204732.297: [20:47:32] * Management:     https://landscape.canonical.com
+204732.297: [20:47:32] * Support:        https://ubuntu.com/pro
+204732.297: [20:47:32]
+204732.297: [20:47:32]扩展安全维护（ESM）Applications 未启用。
+204732.297: [20:47:32]
+204732.297: [20:47:32]47 更新可以立即应用。
+204732.297: [20:47:32]这些更新中有 32 个是标准安全更新。
+204732.297: [20:47:32]要查看这些附加更新，请运行：apt list --upgradable
+204732.297: [20:47:32]
+204732.297: [20:47:32]启用 ESM Apps 来获取未来的额外安全更新
+204732.297: [20:47:32]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+204732.297: [20:47:32]
+204732.297: [20:47:32]Last login: Tue Mar 24 20:42:24 2026 from 192.168.6.173
+205258.350: [20:52:58][202603103-172.16.101.45-20:52:58]
+205258.363: [20:52:58]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+205258.363: [20:52:58]
+205258.363: [20:52:58] * Documentation:  https://help.ubuntu.com
+205258.363: [20:52:58] * Management:     https://landscape.canonical.com
+205258.363: [20:52:58] * Support:        https://ubuntu.com/pro
+205258.363: [20:52:58]
+205258.363: [20:52:58]扩展安全维护（ESM）Applications 未启用。
+205258.363: [20:52:58]
+205258.363: [20:52:58]47 更新可以立即应用。
+205258.363: [20:52:58]这些更新中有 32 个是标准安全更新。
+205258.363: [20:52:58]要查看这些附加更新，请运行：apt list --upgradable
+205258.363: [20:52:58]
+205258.364: [20:52:58]启用 ESM Apps 来获取未来的额外安全更新
+205258.364: [20:52:58]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+205258.364: [20:52:58]
+205258.364: [20:52:58]Last login: Tue Mar 24 20:47:32 2026 from 192.168.6.173
+205756.249: [20:57:56][202603103-172.16.101.45-20:57:56]
+205756.265: [20:57:56]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+205756.265: [20:57:56]
+205756.265: [20:57:56] * Documentation:  https://help.ubuntu.com
+205756.265: [20:57:56] * Management:     https://landscape.canonical.com
+205756.265: [20:57:56] * Support:        https://ubuntu.com/pro
+205756.265: [20:57:56]
+205756.265: [20:57:56]扩展安全维护（ESM）Applications 未启用。
+205756.265: [20:57:56]
+205756.265: [20:57:56]47 更新可以立即应用。
+205756.265: [20:57:56]这些更新中有 32 个是标准安全更新。
+205756.265: [20:57:56]要查看这些附加更新，请运行：apt list --upgradable
+205756.265: [20:57:56]
+205756.266: [20:57:56]启用 ESM Apps 来获取未来的额外安全更新
+205756.266: [20:57:56]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+205756.266: [20:57:56]
+205756.266: [20:57:56]Last login: Tue Mar 24 20:52:58 2026 from 192.168.6.173
+210307.749: [21:03:07][202603103-172.16.101.45-21:03:07]
+210307.766: [21:03:07]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+210307.766: [21:03:07]
+210307.766: [21:03:07] * Documentation:  https://help.ubuntu.com
+210307.766: [21:03:07] * Management:     https://landscape.canonical.com
+210307.767: [21:03:07] * Support:        https://ubuntu.com/pro
+210307.767: [21:03:07]
+210307.767: [21:03:07]扩展安全维护（ESM）Applications 未启用。
+210307.767: [21:03:07]
+210307.767: [21:03:07]47 更新可以立即应用。
+210307.767: [21:03:07]这些更新中有 32 个是标准安全更新。
+210307.767: [21:03:07]要查看这些附加更新，请运行：apt list --upgradable
+210307.767: [21:03:07]
+210307.767: [21:03:07]启用 ESM Apps 来获取未来的额外安全更新
+210307.767: [21:03:07]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+210307.767: [21:03:07]
+210307.767: [21:03:07]Last login: Tue Mar 24 20:57:56 2026 from 192.168.6.173
+210820.756: [21:08:20][202603103-172.16.101.45-21:08:20]
+210820.767: [21:08:20]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+210820.768: [21:08:20]
+210820.768: [21:08:20] * Documentation:  https://help.ubuntu.com
+210820.768: [21:08:20] * Management:     https://landscape.canonical.com
+210820.768: [21:08:20] * Support:        https://ubuntu.com/pro
+210820.768: [21:08:20]
+210820.768: [21:08:20]扩展安全维护（ESM）Applications 未启用。
+210820.768: [21:08:20]
+210820.768: [21:08:20]47 更新可以立即应用。
+210820.768: [21:08:20]这些更新中有 32 个是标准安全更新。
+210820.768: [21:08:20]要查看这些附加更新，请运行：apt list --upgradable
+210820.768: [21:08:20]
+210820.768: [21:08:20]启用 ESM Apps 来获取未来的额外安全更新
+210820.768: [21:08:20]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+210820.769: [21:08:20]
+210820.769: [21:08:20]Last login: Tue Mar 24 21:03:07 2026 from 192.168.6.173
+211336.236: [21:13:36][202603103-172.16.101.45-21:13:36]
+211336.250: [21:13:36]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+211336.250: [21:13:36]
+211336.250: [21:13:36] * Documentation:  https://help.ubuntu.com
+211336.250: [21:13:36] * Management:     https://landscape.canonical.com
+211336.250: [21:13:36] * Support:        https://ubuntu.com/pro
+211336.250: [21:13:36]
+211336.250: [21:13:36]扩展安全维护（ESM）Applications 未启用。
+211336.250: [21:13:36]
+211336.250: [21:13:36]47 更新可以立即应用。
+211336.251: [21:13:36]这些更新中有 32 个是标准安全更新。
+211336.251: [21:13:36]要查看这些附加更新，请运行：apt list --upgradable
+211336.251: [21:13:36]
+211336.251: [21:13:36]启用 ESM Apps 来获取未来的额外安全更新
+211336.251: [21:13:36]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+211336.251: [21:13:36]
+211336.251: [21:13:36]Last login: Tue Mar 24 21:08:20 2026 from 192.168.6.173
+211853.258: [21:18:53][202603103-172.16.101.45-21:18:53]
+211853.272: [21:18:53]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+211853.272: [21:18:53]
+211853.272: [21:18:53] * Documentation:  https://help.ubuntu.com
+211853.272: [21:18:53] * Management:     https://landscape.canonical.com
+211853.272: [21:18:53] * Support:        https://ubuntu.com/pro
+211853.272: [21:18:53]
+211853.272: [21:18:53]扩展安全维护（ESM）Applications 未启用。
+211853.272: [21:18:53]
+211853.272: [21:18:53]47 更新可以立即应用。
+211853.272: [21:18:53]这些更新中有 32 个是标准安全更新。
+211853.273: [21:18:53]要查看这些附加更新，请运行：apt list --upgradable
+211853.273: [21:18:53]
+211853.273: [21:18:53]启用 ESM Apps 来获取未来的额外安全更新
+211853.273: [21:18:53]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+211853.273: [21:18:53]
+211853.273: [21:18:53]Last login: Tue Mar 24 21:13:36 2026 from 192.168.6.173
+212349.750: [21:23:49][202603103-172.16.101.45-21:23:49]
+212349.768: [21:23:49]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+212349.768: [21:23:49]
+212349.768: [21:23:49] * Documentation:  https://help.ubuntu.com
+212349.768: [21:23:49] * Management:     https://landscape.canonical.com
+212349.768: [21:23:49] * Support:        https://ubuntu.com/pro
+212349.768: [21:23:49]
+212349.768: [21:23:49]扩展安全维护（ESM）Applications 未启用。
+212349.768: [21:23:49]
+212349.769: [21:23:49]47 更新可以立即应用。
+212349.769: [21:23:49]这些更新中有 32 个是标准安全更新。
+212349.769: [21:23:49]要查看这些附加更新，请运行：apt list --upgradable
+212349.769: [21:23:49]
+212349.769: [21:23:49]启用 ESM Apps 来获取未来的额外安全更新
+212349.769: [21:23:49]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+212349.769: [21:23:49]
+212349.770: [21:23:49]Last login: Tue Mar 24 21:18:53 2026 from 192.168.6.173
+212905.738: [21:29:05][202603103-172.16.101.45-21:29:05]
+212905.756: [21:29:05]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+212905.756: [21:29:05]
+212905.756: [21:29:05] * Documentation:  https://help.ubuntu.com
+212905.756: [21:29:05] * Management:     https://landscape.canonical.com
+212905.756: [21:29:05] * Support:        https://ubuntu.com/pro
+212905.756: [21:29:05]
+212905.756: [21:29:05]扩展安全维护（ESM）Applications 未启用。
+212905.756: [21:29:05]
+212905.757: [21:29:05]47 更新可以立即应用。
+212905.757: [21:29:05]这些更新中有 32 个是标准安全更新。
+212905.757: [21:29:05]要查看这些附加更新，请运行：apt list --upgradable
+212905.757: [21:29:05]
+212905.757: [21:29:05]启用 ESM Apps 来获取未来的额外安全更新
+212905.757: [21:29:05]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+212905.757: [21:29:05]
+212905.758: [21:29:05]Last login: Tue Mar 24 21:23:49 2026 from 192.168.6.173
+213417.746: [21:34:17][202603103-172.16.101.45-21:34:17]
+213417.760: [21:34:17]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+213417.760: [21:34:17]
+213417.760: [21:34:17] * Documentation:  https://help.ubuntu.com
+213417.760: [21:34:17] * Management:     https://landscape.canonical.com
+213417.760: [21:34:17] * Support:        https://ubuntu.com/pro
+213417.760: [21:34:17]
+213417.760: [21:34:17]扩展安全维护（ESM）Applications 未启用。
+213417.760: [21:34:17]
+213417.760: [21:34:17]47 更新可以立即应用。
+213417.760: [21:34:17]这些更新中有 32 个是标准安全更新。
+213417.761: [21:34:17]要查看这些附加更新，请运行：apt list --upgradable
+213417.761: [21:34:17]
+213417.761: [21:34:17]启用 ESM Apps 来获取未来的额外安全更新
+213417.761: [21:34:17]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+213417.761: [21:34:17]
+213417.761: [21:34:17]Last login: Tue Mar 24 21:29:05 2026 from 192.168.6.173
+213928.757: [21:39:28][202603103-172.16.101.45-21:39:28]
+213928.770: [21:39:28]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+213928.770: [21:39:28]
+213928.770: [21:39:28] * Documentation:  https://help.ubuntu.com
+213928.770: [21:39:28] * Management:     https://landscape.canonical.com
+213928.770: [21:39:28] * Support:        https://ubuntu.com/pro
+213928.770: [21:39:28]
+213928.770: [21:39:28]扩展安全维护（ESM）Applications 未启用。
+213928.770: [21:39:28]
+213928.770: [21:39:28]47 更新可以立即应用。
+213928.770: [21:39:28]这些更新中有 32 个是标准安全更新。
+213928.770: [21:39:28]要查看这些附加更新，请运行：apt list --upgradable
+213928.771: [21:39:28]
+213928.771: [21:39:28]启用 ESM Apps 来获取未来的额外安全更新
+213928.771: [21:39:28]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+213928.771: [21:39:28]
+213928.771: [21:39:28]Last login: Tue Mar 24 21:34:17 2026 from 192.168.6.173
+214438.741: [21:44:38][202603103-172.16.101.45-21:44:38]
+214438.760: [21:44:38]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+214438.761: [21:44:38]
+214438.761: [21:44:38] * Documentation:  https://help.ubuntu.com
+214438.761: [21:44:38] * Management:     https://landscape.canonical.com
+214438.761: [21:44:38] * Support:        https://ubuntu.com/pro
+214438.761: [21:44:38]
+214438.761: [21:44:38]扩展安全维护（ESM）Applications 未启用。
+214438.761: [21:44:38]
+214438.761: [21:44:38]47 更新可以立即应用。
+214438.762: [21:44:38]这些更新中有 32 个是标准安全更新。
+214438.762: [21:44:38]要查看这些附加更新，请运行：apt list --upgradable
+214438.762: [21:44:38]
+214438.762: [21:44:38]启用 ESM Apps 来获取未来的额外安全更新
+214438.762: [21:44:38]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+214438.762: [21:44:38]
+214438.762: [21:44:38]Last login: Tue Mar 24 21:39:28 2026 from 192.168.6.173
+214950.269: [21:49:50][202603103-172.16.101.45-21:49:50]
+214950.279: [21:49:50]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+214950.279: [21:49:50]
+214950.279: [21:49:50] * Documentation:  https://help.ubuntu.com
+214950.279: [21:49:50] * Management:     https://landscape.canonical.com
+214950.279: [21:49:50] * Support:        https://ubuntu.com/pro
+214950.279: [21:49:50]
+214950.279: [21:49:50]扩展安全维护（ESM）Applications 未启用。
+214950.279: [21:49:50]
+214950.280: [21:49:50]47 更新可以立即应用。
+214950.280: [21:49:50]这些更新中有 32 个是标准安全更新。
+214950.280: [21:49:50]要查看这些附加更新，请运行：apt list --upgradable
+214950.280: [21:49:50]
+214950.280: [21:49:50]启用 ESM Apps 来获取未来的额外安全更新
+214950.280: [21:49:50]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+214950.280: [21:49:50]
+214950.281: [21:49:50]Last login: Tue Mar 24 21:44:38 2026 from 192.168.6.173
+215458.773: [21:54:58][202603103-172.16.101.45-21:54:58]
+215458.782: [21:54:58]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+215458.782: [21:54:58]
+215458.782: [21:54:58] * Documentation:  https://help.ubuntu.com
+215458.782: [21:54:58] * Management:     https://landscape.canonical.com
+215458.782: [21:54:58] * Support:        https://ubuntu.com/pro
+215458.782: [21:54:58]
+215458.782: [21:54:58]扩展安全维护（ESM）Applications 未启用。
+215458.782: [21:54:58]
+215458.782: [21:54:58]47 更新可以立即应用。
+215458.783: [21:54:58]这些更新中有 32 个是标准安全更新。
+215458.783: [21:54:58]要查看这些附加更新，请运行：apt list --upgradable
+215458.783: [21:54:58]
+215458.783: [21:54:58]启用 ESM Apps 来获取未来的额外安全更新
+215458.783: [21:54:58]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+215458.783: [21:54:58]
+215458.783: [21:54:58]Last login: Tue Mar 24 21:49:50 2026 from 192.168.6.173
+220009.232: [22:00:09][202603103-172.16.101.45-22:00:09]
+220009.243: [22:00:09]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+220009.243: [22:00:09]
+220009.243: [22:00:09] * Documentation:  https://help.ubuntu.com
+220009.244: [22:00:09] * Management:     https://landscape.canonical.com
+220009.244: [22:00:09] * Support:        https://ubuntu.com/pro
+220009.244: [22:00:09]
+220009.244: [22:00:09]扩展安全维护（ESM）Applications 未启用。
+220009.244: [22:00:09]
+220009.244: [22:00:09]47 更新可以立即应用。
+220009.244: [22:00:09]这些更新中有 32 个是标准安全更新。
+220009.245: [22:00:09]要查看这些附加更新，请运行：apt list --upgradable
+220009.245: [22:00:09]
+220009.245: [22:00:09]启用 ESM Apps 来获取未来的额外安全更新
+220009.245: [22:00:09]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+220009.245: [22:00:09]
+220009.245: [22:00:09]Last login: Tue Mar 24 21:54:58 2026 from 192.168.6.173
+220527.746: [22:05:27][202603103-172.16.101.45-22:05:27]
+220527.759: [22:05:27]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+220527.759: [22:05:27]
+220527.760: [22:05:27] * Documentation:  https://help.ubuntu.com
+220527.760: [22:05:27] * Management:     https://landscape.canonical.com
+220527.760: [22:05:27] * Support:        https://ubuntu.com/pro
+220527.760: [22:05:27]
+220527.760: [22:05:27]扩展安全维护（ESM）Applications 未启用。
+220527.760: [22:05:27]
+220527.760: [22:05:27]47 更新可以立即应用。
+220527.760: [22:05:27]这些更新中有 32 个是标准安全更新。
+220527.760: [22:05:27]要查看这些附加更新，请运行：apt list --upgradable
+220527.760: [22:05:27]
+220527.761: [22:05:27]启用 ESM Apps 来获取未来的额外安全更新
+220527.761: [22:05:27]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+220527.761: [22:05:27]
+220527.761: [22:05:27]Last login: Tue Mar 24 22:00:09 2026 from 192.168.6.173
+221027.756: [22:10:27][202603103-172.16.101.45-22:10:27]
+221027.782: [22:10:27]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+221027.782: [22:10:27]
+221027.782: [22:10:27] * Documentation:  https://help.ubuntu.com
+221027.783: [22:10:27] * Management:     https://landscape.canonical.com
+221027.783: [22:10:27] * Support:        https://ubuntu.com/pro
+221027.783: [22:10:27]
+221027.783: [22:10:27]扩展安全维护（ESM）Applications 未启用。
+221027.783: [22:10:27]
+221027.783: [22:10:27]47 更新可以立即应用。
+221027.783: [22:10:27]这些更新中有 32 个是标准安全更新。
+221027.783: [22:10:27]要查看这些附加更新，请运行：apt list --upgradable
+221027.783: [22:10:27]
+221027.784: [22:10:27]启用 ESM Apps 来获取未来的额外安全更新
+221027.784: [22:10:27]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+221027.784: [22:10:27]
+221027.784: [22:10:27]Last login: Tue Mar 24 22:05:27 2026 from 192.168.6.173
+221539.727: [22:15:39][202603103-172.16.101.45-22:15:39]
+221539.736: [22:15:39]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+221539.736: [22:15:39]
+221539.736: [22:15:39] * Documentation:  https://help.ubuntu.com
+221539.737: [22:15:39] * Management:     https://landscape.canonical.com
+221539.737: [22:15:39] * Support:        https://ubuntu.com/pro
+221539.737: [22:15:39]
+221539.737: [22:15:39]扩展安全维护（ESM）Applications 未启用。
+221539.737: [22:15:39]
+221539.737: [22:15:39]47 更新可以立即应用。
+221539.737: [22:15:39]这些更新中有 32 个是标准安全更新。
+221539.737: [22:15:39]要查看这些附加更新，请运行：apt list --upgradable
+221539.738: [22:15:39]
+221539.738: [22:15:39]启用 ESM Apps 来获取未来的额外安全更新
+221539.738: [22:15:39]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+221539.738: [22:15:39]
+221539.738: [22:15:39]Last login: Tue Mar 24 22:10:27 2026 from 192.168.6.173
+222051.230: [22:20:51][202603103-172.16.101.45-22:20:51]
+222051.238: [22:20:51]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+222051.238: [22:20:51]
+222051.238: [22:20:51] * Documentation:  https://help.ubuntu.com
+222051.238: [22:20:51] * Management:     https://landscape.canonical.com
+222051.239: [22:20:51] * Support:        https://ubuntu.com/pro
+222051.239: [22:20:51]
+222051.239: [22:20:51]扩展安全维护（ESM）Applications 未启用。
+222051.239: [22:20:51]
+222051.239: [22:20:51]47 更新可以立即应用。
+222051.239: [22:20:51]这些更新中有 32 个是标准安全更新。
+222051.239: [22:20:51]要查看这些附加更新，请运行：apt list --upgradable
+222051.239: [22:20:51]
+222051.239: [22:20:51]启用 ESM Apps 来获取未来的额外安全更新
+222051.240: [22:20:51]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+222051.240: [22:20:51]
+222051.240: [22:20:51]Last login: Tue Mar 24 22:15:39 2026 from 192.168.6.173
+222604.218: [22:26:04][202603103-172.16.101.45-22:26:04]
+222604.233: [22:26:04]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+222604.233: [22:26:04]
+222604.233: [22:26:04] * Documentation:  https://help.ubuntu.com
+222604.234: [22:26:04] * Management:     https://landscape.canonical.com
+222604.234: [22:26:04] * Support:        https://ubuntu.com/pro
+222604.234: [22:26:04]
+222604.234: [22:26:04]扩展安全维护（ESM）Applications 未启用。
+222604.234: [22:26:04]
+222604.234: [22:26:04]47 更新可以立即应用。
+222604.234: [22:26:04]这些更新中有 32 个是标准安全更新。
+222604.234: [22:26:04]要查看这些附加更新，请运行：apt list --upgradable
+222604.234: [22:26:04]
+222604.234: [22:26:04]启用 ESM Apps 来获取未来的额外安全更新
+222604.234: [22:26:04]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+222604.234: [22:26:04]
+222604.234: [22:26:04]Last login: Tue Mar 24 22:20:51 2026 from 192.168.6.173
+223120.224: [22:31:20][202603103-172.16.101.45-22:31:20]
+223120.233: [22:31:20]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+223120.233: [22:31:20]
+223120.233: [22:31:20] * Documentation:  https://help.ubuntu.com
+223120.233: [22:31:20] * Management:     https://landscape.canonical.com
+223120.233: [22:31:20] * Support:        https://ubuntu.com/pro
+223120.234: [22:31:20]
+223120.234: [22:31:20]扩展安全维护（ESM）Applications 未启用。
+223120.234: [22:31:20]
+223120.234: [22:31:20]47 更新可以立即应用。
+223120.234: [22:31:20]这些更新中有 32 个是标准安全更新。
+223120.234: [22:31:20]要查看这些附加更新，请运行：apt list --upgradable
+223120.234: [22:31:20]
+223120.235: [22:31:20]启用 ESM Apps 来获取未来的额外安全更新
+223120.235: [22:31:20]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+223120.235: [22:31:20]
+223120.235: [22:31:20]Last login: Tue Mar 24 22:26:04 2026 from 192.168.6.173
+223630.215: [22:36:30][202603103-172.16.101.45-22:36:30]
+223630.234: [22:36:30]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+223630.234: [22:36:30]
+223630.234: [22:36:30] * Documentation:  https://help.ubuntu.com
+223630.234: [22:36:30] * Management:     https://landscape.canonical.com
+223630.234: [22:36:30] * Support:        https://ubuntu.com/pro
+223630.234: [22:36:30]
+223630.235: [22:36:30]扩展安全维护（ESM）Applications 未启用。
+223630.235: [22:36:30]
+223630.235: [22:36:30]47 更新可以立即应用。
+223630.235: [22:36:30]这些更新中有 32 个是标准安全更新。
+223630.235: [22:36:30]要查看这些附加更新，请运行：apt list --upgradable
+223630.235: [22:36:30]
+223630.236: [22:36:30]启用 ESM Apps 来获取未来的额外安全更新
+223630.236: [22:36:30]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+223630.236: [22:36:30]
+223630.236: [22:36:30]Last login: Tue Mar 24 22:31:20 2026 from 192.168.6.173
+224140.226: [22:41:40][202603103-172.16.101.45-22:41:40]
+224140.239: [22:41:40]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+224140.240: [22:41:40]
+224140.240: [22:41:40] * Documentation:  https://help.ubuntu.com
+224140.240: [22:41:40] * Management:     https://landscape.canonical.com
+224140.240: [22:41:40] * Support:        https://ubuntu.com/pro
+224140.240: [22:41:40]
+224140.240: [22:41:40]扩展安全维护（ESM）Applications 未启用。
+224140.240: [22:41:40]
+224140.240: [22:41:40]47 更新可以立即应用。
+224140.240: [22:41:40]这些更新中有 32 个是标准安全更新。
+224140.241: [22:41:40]要查看这些附加更新，请运行：apt list --upgradable
+224140.241: [22:41:40]
+224140.241: [22:41:40]启用 ESM Apps 来获取未来的额外安全更新
+224140.241: [22:41:40]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+224140.241: [22:41:40]
+224140.241: [22:41:40]Last login: Tue Mar 24 22:36:30 2026 from 192.168.6.173
+224648.735: [22:46:48][202603103-172.16.101.45-22:46:48]
+224648.745: [22:46:48]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+224648.745: [22:46:48]
+224648.745: [22:46:48] * Documentation:  https://help.ubuntu.com
+224648.745: [22:46:48] * Management:     https://landscape.canonical.com
+224648.745: [22:46:48] * Support:        https://ubuntu.com/pro
+224648.745: [22:46:48]
+224648.746: [22:46:48]扩展安全维护（ESM）Applications 未启用。
+224648.746: [22:46:48]
+224648.746: [22:46:48]47 更新可以立即应用。
+224648.746: [22:46:48]这些更新中有 32 个是标准安全更新。
+224648.746: [22:46:48]要查看这些附加更新，请运行：apt list --upgradable
+224648.746: [22:46:48]
+224648.747: [22:46:48]启用 ESM Apps 来获取未来的额外安全更新
+224648.747: [22:46:48]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+224648.747: [22:46:48]
+224648.747: [22:46:48]Last login: Tue Mar 24 22:41:40 2026 from 192.168.6.173
+225158.210: [22:51:58][202603103-172.16.101.45-22:51:58]
+225158.230: [22:51:58]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+225158.230: [22:51:58]
+225158.230: [22:51:58] * Documentation:  https://help.ubuntu.com
+225158.231: [22:51:58] * Management:     https://landscape.canonical.com
+225158.231: [22:51:58] * Support:        https://ubuntu.com/pro
+225158.231: [22:51:58]
+225158.231: [22:51:58]扩展安全维护（ESM）Applications 未启用。
+225158.231: [22:51:58]
+225158.231: [22:51:58]47 更新可以立即应用。
+225158.231: [22:51:58]这些更新中有 32 个是标准安全更新。
+225158.232: [22:51:58]要查看这些附加更新，请运行：apt list --upgradable
+225158.232: [22:51:58]
+225158.232: [22:51:58]启用 ESM Apps 来获取未来的额外安全更新
+225158.232: [22:51:58]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+225158.232: [22:51:58]
+225158.233: [22:51:58]Last login: Tue Mar 24 22:46:48 2026 from 192.168.6.173
+225712.746: [22:57:12][202603103-172.16.101.45-22:57:12]
+225712.755: [22:57:12]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+225712.755: [22:57:12]
+225712.755: [22:57:12] * Documentation:  https://help.ubuntu.com
+225712.755: [22:57:12] * Management:     https://landscape.canonical.com
+225712.755: [22:57:12] * Support:        https://ubuntu.com/pro
+225712.755: [22:57:12]
+225712.755: [22:57:12]扩展安全维护（ESM）Applications 未启用。
+225712.755: [22:57:12]
+225712.755: [22:57:12]47 更新可以立即应用。
+225712.756: [22:57:12]这些更新中有 32 个是标准安全更新。
+225712.756: [22:57:12]要查看这些附加更新，请运行：apt list --upgradable
+225712.756: [22:57:12]
+225712.756: [22:57:12]启用 ESM Apps 来获取未来的额外安全更新
+225712.756: [22:57:12]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+225712.756: [22:57:12]
+225712.756: [22:57:12]Last login: Tue Mar 24 22:51:58 2026 from 192.168.6.173
+230224.237: [23:02:24][202603103-172.16.101.45-23:02:24]
+230224.256: [23:02:24]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+230224.256: [23:02:24]
+230224.256: [23:02:24] * Documentation:  https://help.ubuntu.com
+230224.256: [23:02:24] * Management:     https://landscape.canonical.com
+230224.256: [23:02:24] * Support:        https://ubuntu.com/pro
+230224.256: [23:02:24]
+230224.256: [23:02:24]扩展安全维护（ESM）Applications 未启用。
+230224.256: [23:02:24]
+230224.256: [23:02:24]47 更新可以立即应用。
+230224.256: [23:02:24]这些更新中有 32 个是标准安全更新。
+230224.256: [23:02:24]要查看这些附加更新，请运行：apt list --upgradable
+230224.256: [23:02:24]
+230224.257: [23:02:24]启用 ESM Apps 来获取未来的额外安全更新
+230224.257: [23:02:24]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+230224.257: [23:02:24]
+230224.257: [23:02:24]Last login: Tue Mar 24 22:57:12 2026 from 192.168.6.173
+230721.722: [23:07:21][202603103-172.16.101.45-23:07:21]
+230721.731: [23:07:21]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+230721.731: [23:07:21]
+230721.732: [23:07:21] * Documentation:  https://help.ubuntu.com
+230721.732: [23:07:21] * Management:     https://landscape.canonical.com
+230721.732: [23:07:21] * Support:        https://ubuntu.com/pro
+230721.732: [23:07:21]
+230721.732: [23:07:21]扩展安全维护（ESM）Applications 未启用。
+230721.733: [23:07:21]
+230721.733: [23:07:21]47 更新可以立即应用。
+230721.733: [23:07:21]这些更新中有 32 个是标准安全更新。
+230721.733: [23:07:21]要查看这些附加更新，请运行：apt list --upgradable
+230721.733: [23:07:21]
+230721.733: [23:07:21]启用 ESM Apps 来获取未来的额外安全更新
+230721.734: [23:07:21]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+230721.734: [23:07:21]
+230721.734: [23:07:21]Last login: Tue Mar 24 23:02:24 2026 from 192.168.6.173
+231231.224: [23:12:31][202603103-172.16.101.45-23:12:31]
+231231.233: [23:12:31]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+231231.233: [23:12:31]
+231231.233: [23:12:31] * Documentation:  https://help.ubuntu.com
+231231.233: [23:12:31] * Management:     https://landscape.canonical.com
+231231.233: [23:12:31] * Support:        https://ubuntu.com/pro
+231231.233: [23:12:31]
+231231.234: [23:12:31]扩展安全维护（ESM）Applications 未启用。
+231231.234: [23:12:31]
+231231.234: [23:12:31]47 更新可以立即应用。
+231231.234: [23:12:31]这些更新中有 32 个是标准安全更新。
+231231.234: [23:12:31]要查看这些附加更新，请运行：apt list --upgradable
+231231.234: [23:12:31]
+231231.234: [23:12:31]启用 ESM Apps 来获取未来的额外安全更新
+231231.234: [23:12:31]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+231231.234: [23:12:31]
+231231.234: [23:12:31]Last login: Tue Mar 24 23:07:21 2026 from 192.168.6.173
+231747.744: [23:17:47][202603103-172.16.101.45-23:17:47]
+231747.753: [23:17:47]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+231747.753: [23:17:47]
+231747.753: [23:17:47] * Documentation:  https://help.ubuntu.com
+231747.754: [23:17:47] * Management:     https://landscape.canonical.com
+231747.754: [23:17:47] * Support:        https://ubuntu.com/pro
+231747.754: [23:17:47]
+231747.754: [23:17:47]扩展安全维护（ESM）Applications 未启用。
+231747.754: [23:17:47]
+231747.754: [23:17:47]47 更新可以立即应用。
+231747.754: [23:17:47]这些更新中有 32 个是标准安全更新。
+231747.755: [23:17:47]要查看这些附加更新，请运行：apt list --upgradable
+231747.755: [23:17:47]
+231747.755: [23:17:47]启用 ESM Apps 来获取未来的额外安全更新
+231747.755: [23:17:47]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+231747.755: [23:17:47]
+231747.755: [23:17:47]Last login: Tue Mar 24 23:12:31 2026 from 192.168.6.173
+232307.229: [23:23:07][202603103-172.16.101.45-23:23:07]
+232307.254: [23:23:07]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+232307.254: [23:23:07]
+232307.254: [23:23:07] * Documentation:  https://help.ubuntu.com
+232307.255: [23:23:07] * Management:     https://landscape.canonical.com
+232307.255: [23:23:07] * Support:        https://ubuntu.com/pro
+232307.255: [23:23:07]
+232307.255: [23:23:07]扩展安全维护（ESM）Applications 未启用。
+232307.255: [23:23:07]
+232307.255: [23:23:07]47 更新可以立即应用。
+232307.256: [23:23:07]这些更新中有 32 个是标准安全更新。
+232307.256: [23:23:07]要查看这些附加更新，请运行：apt list --upgradable
+232307.256: [23:23:07]
+232307.256: [23:23:07]启用 ESM Apps 来获取未来的额外安全更新
+232307.256: [23:23:07]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+232307.256: [23:23:07]
+232307.257: [23:23:07]Last login: Tue Mar 24 23:17:47 2026 from 192.168.6.173
+232804.234: [23:28:04][202603103-172.16.101.45-23:28:04]
+232804.246: [23:28:04]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+232804.246: [23:28:04]
+232804.246: [23:28:04] * Documentation:  https://help.ubuntu.com
+232804.246: [23:28:04] * Management:     https://landscape.canonical.com
+232804.246: [23:28:04] * Support:        https://ubuntu.com/pro
+232804.246: [23:28:04]
+232804.246: [23:28:04]扩展安全维护（ESM）Applications 未启用。
+232804.247: [23:28:04]
+232804.247: [23:28:04]47 更新可以立即应用。
+232804.247: [23:28:04]这些更新中有 32 个是标准安全更新。
+232804.247: [23:28:04]要查看这些附加更新，请运行：apt list --upgradable
+232804.247: [23:28:04]
+232804.247: [23:28:04]启用 ESM Apps 来获取未来的额外安全更新
+232804.248: [23:28:04]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+232804.248: [23:28:04]
+232804.248: [23:28:04]Last login: Tue Mar 24 23:23:07 2026 from 192.168.6.173
+233318.717: [23:33:18][202603103-172.16.101.45-23:33:18]
+233318.726: [23:33:18]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+233318.726: [23:33:18]
+233318.726: [23:33:18] * Documentation:  https://help.ubuntu.com
+233318.727: [23:33:18] * Management:     https://landscape.canonical.com
+233318.727: [23:33:18] * Support:        https://ubuntu.com/pro
+233318.727: [23:33:18]
+233318.727: [23:33:18]扩展安全维护（ESM）Applications 未启用。
+233318.727: [23:33:18]
+233318.727: [23:33:18]47 更新可以立即应用。
+233318.727: [23:33:18]这些更新中有 32 个是标准安全更新。
+233318.727: [23:33:18]要查看这些附加更新，请运行：apt list --upgradable
+233318.727: [23:33:18]
+233318.727: [23:33:18]启用 ESM Apps 来获取未来的额外安全更新
+233318.728: [23:33:18]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+233318.728: [23:33:18]
+233318.728: [23:33:18]Last login: Tue Mar 24 23:28:04 2026 from 192.168.6.173
+233825.721: [23:38:25][202603103-172.16.101.45-23:38:25]
+233825.730: [23:38:25]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+233825.730: [23:38:25]
+233825.730: [23:38:25] * Documentation:  https://help.ubuntu.com
+233825.730: [23:38:25] * Management:     https://landscape.canonical.com
+233825.731: [23:38:25] * Support:        https://ubuntu.com/pro
+233825.731: [23:38:25]
+233825.731: [23:38:25]扩展安全维护（ESM）Applications 未启用。
+233825.731: [23:38:25]
+233825.731: [23:38:25]47 更新可以立即应用。
+233825.731: [23:38:25]这些更新中有 32 个是标准安全更新。
+233825.732: [23:38:25]要查看这些附加更新，请运行：apt list --upgradable
+233825.732: [23:38:25]
+233825.732: [23:38:25]启用 ESM Apps 来获取未来的额外安全更新
+233825.732: [23:38:25]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+233825.732: [23:38:25]
+233825.733: [23:38:25]Last login: Tue Mar 24 23:33:18 2026 from 192.168.6.173
+234337.718: [23:43:37][202603103-172.16.101.45-23:43:37]
+234337.736: [23:43:37]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+234337.736: [23:43:37]
+234337.736: [23:43:37] * Documentation:  https://help.ubuntu.com
+234337.736: [23:43:37] * Management:     https://landscape.canonical.com
+234337.736: [23:43:37] * Support:        https://ubuntu.com/pro
+234337.736: [23:43:37]
+234337.737: [23:43:37]扩展安全维护（ESM）Applications 未启用。
+234337.737: [23:43:37]
+234337.737: [23:43:37]47 更新可以立即应用。
+234337.737: [23:43:37]这些更新中有 32 个是标准安全更新。
+234337.737: [23:43:37]要查看这些附加更新，请运行：apt list --upgradable
+234337.737: [23:43:37]
+234337.738: [23:43:37]启用 ESM Apps 来获取未来的额外安全更新
+234337.738: [23:43:37]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+234337.738: [23:43:37]
+234337.738: [23:43:37]Last login: Tue Mar 24 23:38:25 2026 from 192.168.6.173
+234852.242: [23:48:52][202603103-172.16.101.45-23:48:52]
+234852.252: [23:48:52]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+234852.252: [23:48:52]
+234852.252: [23:48:52] * Documentation:  https://help.ubuntu.com
+234852.252: [23:48:52] * Management:     https://landscape.canonical.com
+234852.253: [23:48:52] * Support:        https://ubuntu.com/pro
+234852.253: [23:48:52]
+234852.253: [23:48:52]扩展安全维护（ESM）Applications 未启用。
+234852.253: [23:48:52]
+234852.253: [23:48:52]47 更新可以立即应用。
+234852.253: [23:48:52]这些更新中有 32 个是标准安全更新。
+234852.253: [23:48:52]要查看这些附加更新，请运行：apt list --upgradable
+234852.253: [23:48:52]
+234852.254: [23:48:52]启用 ESM Apps 来获取未来的额外安全更新
+234852.254: [23:48:52]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+234852.254: [23:48:52]
+234852.254: [23:48:52]Last login: Tue Mar 24 23:43:37 2026 from 192.168.6.173
+235407.255: [23:54:07][202603103-172.16.101.45-23:54:07]
+235407.270: [23:54:07]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+235407.270: [23:54:07]
+235407.271: [23:54:07] * Documentation:  https://help.ubuntu.com
+235407.271: [23:54:07] * Management:     https://landscape.canonical.com
+235407.271: [23:54:07] * Support:        https://ubuntu.com/pro
+235407.271: [23:54:07]
+235407.271: [23:54:07]扩展安全维护（ESM）Applications 未启用。
+235407.271: [23:54:07]
+235407.271: [23:54:07]47 更新可以立即应用。
+235407.272: [23:54:07]这些更新中有 32 个是标准安全更新。
+235407.272: [23:54:07]要查看这些附加更新，请运行：apt list --upgradable
+235407.272: [23:54:07]
+235407.272: [23:54:07]启用 ESM Apps 来获取未来的额外安全更新
+235407.273: [23:54:07]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+235407.273: [23:54:07]
+235407.273: [23:54:07]Last login: Tue Mar 24 23:48:52 2026 from 192.168.6.173
+235906.785: [23:59:06][202603103-172.16.101.45-23:59:06]
+235906.795: [23:59:06]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.14.0-27-generic x86_64)
+235906.795: [23:59:06]
+235906.795: [23:59:06] * Documentation:  https://help.ubuntu.com
+235906.795: [23:59:06] * Management:     https://landscape.canonical.com
+235906.795: [23:59:06] * Support:        https://ubuntu.com/pro
+235906.795: [23:59:06]
+235906.795: [23:59:06]扩展安全维护（ESM）Applications 未启用。
+235906.796: [23:59:06]
+235906.796: [23:59:06]47 更新可以立即应用。
+235906.796: [23:59:06]这些更新中有 32 个是标准安全更新。
+235906.796: [23:59:06]要查看这些附加更新，请运行：apt list --upgradable
+235906.796: [23:59:06]
+235906.796: [23:59:06]启用 ESM Apps 来获取未来的额外安全更新
+235906.796: [23:59:06]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+235906.796: [23:59:06]
+235906.796: [23:59:06]Last login: Tue Mar 24 23:54:07 2026 from 192.168.6.173

@@ -1,0 +1,120 @@
+﻿093328.533: [09:33:28][202603Home-Dell-Public-09:33:28]
+093328.589: [09:33:28]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+093328.589: [09:33:28]
+093328.589: [09:33:28]The programs included with the Debian GNU/Linux system are free software;
+093328.589: [09:33:28]the exact distribution terms for each program are described in the
+093328.589: [09:33:28]individual files in /usr/share/doc/*/copyright.
+093328.589: [09:33:28]
+093328.589: [09:33:28]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+093328.590: [09:33:28]permitted by applicable law.
+093328.590: [09:33:28]Last login: Sun Mar 22 21:31:47 2026 from 192.168.31.160
+093331.616: [09:33:31]root@anncara-computer:~# ping pt.zhixing.bjtu.edu.cn
+093331.698: [09:33:31]PING pt.zhixing.bjtu.edu.cn (2001:da8:205::100) 56 data bytes
+093331.792: [09:33:31]64 bytes from 2001:da8:205::100: icmp_seq=1 ttl=49 time=23.4 ms
+093332.896: [09:33:32]64 bytes from 2001:da8:205::100: icmp_seq=2 ttl=49 time=25.8 ms
+093333.427: [09:33:33]^C
+093333.428: [09:33:33]--- pt.zhixing.bjtu.edu.cn ping statistics ---
+093333.428: [09:33:33]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+093333.428: [09:33:33]rtt min/avg/max/mdev = 23.409/24.584/25.760/1.175 ms
+093334.724: [09:33:34]root@anncara-computer:~# host pt.zhixing.bjtu.edu.cn
+093334.764: [09:33:34]pt.zhixing.bjtu.edu.cn has IPv6 address 2001:da8:205::100
+102724.997: [10:27:24][202603Home-Dell-Public-10:27:24]
+102725.072: [10:27:25]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+102725.073: [10:27:25]
+102725.073: [10:27:25]The programs included with the Debian GNU/Linux system are free software;
+102725.073: [10:27:25]the exact distribution terms for each program are described in the
+102725.073: [10:27:25]individual files in /usr/share/doc/*/copyright.
+102725.073: [10:27:25]
+102725.073: [10:27:25]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+102725.073: [10:27:25]permitted by applicable law.
+102725.073: [10:27:25]Last login: Mon Mar 23 09:33:28 2026 from 223.107.68.194
+133225.442: [13:32:25][202603Home-Dell-Public-13:32:25]
+133225.502: [13:32:25]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+133225.502: [13:32:25]
+133225.502: [13:32:25]The programs included with the Debian GNU/Linux system are free software;
+133225.502: [13:32:25]the exact distribution terms for each program are described in the
+133225.503: [13:32:25]individual files in /usr/share/doc/*/copyright.
+133225.503: [13:32:25]
+133225.503: [13:32:25]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+133225.503: [13:32:25]permitted by applicable law.
+133225.503: [13:32:25]Last login: Mon Mar 23 10:27:25 2026 from 223.107.68.194
+183401.392: [18:34:01][202603Home-Dell-Public-18:34:01]
+183401.455: [18:34:01]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+183401.455: [18:34:01]
+183401.455: [18:34:01]The programs included with the Debian GNU/Linux system are free software;
+183401.455: [18:34:01]the exact distribution terms for each program are described in the
+183401.455: [18:34:01]individual files in /usr/share/doc/*/copyright.
+183401.455: [18:34:01]
+183401.456: [18:34:01]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+183401.456: [18:34:01]permitted by applicable law.
+183401.456: [18:34:01]Last login: Mon Mar 23 13:32:25 2026 from 223.107.68.194
+192249.238: [19:22:49][202603Home-Dell-Public-19:22:49]
+192249.333: [19:22:49]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+192249.333: [19:22:49]
+192249.333: [19:22:49]The programs included with the Debian GNU/Linux system are free software;
+192249.334: [19:22:49]the exact distribution terms for each program are described in the
+192249.334: [19:22:49]individual files in /usr/share/doc/*/copyright.
+192249.334: [19:22:49]
+192249.334: [19:22:49]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+192249.334: [19:22:49]permitted by applicable law.
+192249.334: [19:22:49]Last login: Mon Mar 23 18:34:01 2026 from 223.107.68.194
+195251.244: [19:52:51][202603Home-Dell-Public-19:52:51]
+195251.352: [19:52:51]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+195251.352: [19:52:51]
+195251.353: [19:52:51]The programs included with the Debian GNU/Linux system are free software;
+195251.353: [19:52:51]the exact distribution terms for each program are described in the
+195251.353: [19:52:51]individual files in /usr/share/doc/*/copyright.
+195251.353: [19:52:51]
+195251.354: [19:52:51]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+195251.354: [19:52:51]permitted by applicable law.
+195251.354: [19:52:51]Last login: Mon Mar 23 19:22:49 2026 from 223.107.68.194
+205250.195: [20:52:50][202603Home-Dell-Public-20:52:50]
+205250.250: [20:52:50]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+205250.250: [20:52:50]
+205250.251: [20:52:50]The programs included with the Debian GNU/Linux system are free software;
+205250.251: [20:52:50]the exact distribution terms for each program are described in the
+205250.251: [20:52:50]individual files in /usr/share/doc/*/copyright.
+205250.251: [20:52:50]
+205250.252: [20:52:50]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+205250.252: [20:52:50]permitted by applicable law.
+205250.252: [20:52:50]Last login: Mon Mar 23 19:52:51 2026 from 223.107.68.194
+215251.142: [21:52:51][202603Home-Dell-Public-21:52:51]
+215251.204: [21:52:51]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+215251.204: [21:52:51]
+215251.204: [21:52:51]The programs included with the Debian GNU/Linux system are free software;
+215251.205: [21:52:51]the exact distribution terms for each program are described in the
+215251.205: [21:52:51]individual files in /usr/share/doc/*/copyright.
+215251.205: [21:52:51]
+215251.205: [21:52:51]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+215251.205: [21:52:51]permitted by applicable law.
+215251.206: [21:52:51]Last login: Mon Mar 23 20:52:50 2026 from 223.107.68.194
+225251.668: [22:52:51][202603Home-Dell-Public-22:52:51]
+225251.776: [22:52:51]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+225251.777: [22:52:51]
+225251.778: [22:52:51]The programs included with the Debian GNU/Linux system are free software;
+225251.778: [22:52:51]the exact distribution terms for each program are described in the
+225251.778: [22:52:51]individual files in /usr/share/doc/*/copyright.
+225251.778: [22:52:51]
+225251.778: [22:52:51]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+225251.779: [22:52:51]permitted by applicable law.
+225251.779: [22:52:51]Last login: Mon Mar 23 21:52:51 2026 from 223.107.68.194
+232247.963: [23:22:47][202603Home-Dell-Public-23:22:47]
+232248.022: [23:22:48]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+232248.022: [23:22:48]
+232248.023: [23:22:48]The programs included with the Debian GNU/Linux system are free software;
+232248.023: [23:22:48]the exact distribution terms for each program are described in the
+232248.023: [23:22:48]individual files in /usr/share/doc/*/copyright.
+232248.023: [23:22:48]
+232248.024: [23:22:48]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+232248.024: [23:22:48]permitted by applicable law.
+232248.024: [23:22:48]Last login: Mon Mar 23 23:01:46 2026 from 192.168.31.160
+235250.113: [23:52:50][202603Home-Dell-Public-23:52:50]
+235250.203: [23:52:50]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+235250.203: [23:52:50]
+235250.203: [23:52:50]The programs included with the Debian GNU/Linux system are free software;
+235250.204: [23:52:50]the exact distribution terms for each program are described in the
+235250.204: [23:52:50]individual files in /usr/share/doc/*/copyright.
+235250.204: [23:52:50]
+235250.204: [23:52:50]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+235250.204: [23:52:50]permitted by applicable law.
+235250.204: [23:52:50]Last login: Mon Mar 23 23:22:47 2026 from 223.107.68.194

@@ -1,0 +1,482 @@
+﻿154327.684: [15:43:27][202603105-172.16.101.43-15:43:27]
+154327.697: [15:43:27]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+154327.698: [15:43:27]
+154327.698: [15:43:27] * Documentation:  https://help.ubuntu.com
+154327.698: [15:43:27] * Management:     https://landscape.canonical.com
+154327.698: [15:43:27] * Support:        https://ubuntu.com/pro
+154327.698: [15:43:27]
+154327.698: [15:43:27]扩展安全维护（ESM）Applications 未启用。
+154327.698: [15:43:27]
+154327.698: [15:43:27]447 更新可以立即应用。
+154327.698: [15:43:27]这些更新中有 255 个是标准安全更新。
+154327.698: [15:43:27]要查看这些附加更新，请运行：apt list --upgradable
+154327.698: [15:43:27]
+154327.698: [15:43:27]启用 ESM Apps 来获取未来的额外安全更新
+154327.698: [15:43:27]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+154327.698: [15:43:27]
+154327.698: [15:43:27]
+154327.698: [15:43:27]The programs included with the Ubuntu system are free software;
+154327.698: [15:43:27]the exact distribution terms for each program are described in the
+154327.698: [15:43:27]individual files in /usr/share/doc/*/copyright.
+154327.698: [15:43:27]
+154327.698: [15:43:27]Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+154327.698: [15:43:27]applicable law.
+154327.698: [15:43:27]
+154329.931: [15:43:29]root@user:~# ip a
+154329.932: [15:43:29]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154329.932: [15:43:29]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154329.932: [15:43:29]    inet 127.0.0.1/8 scope host lo
+154329.933: [15:43:29]       valid_lft forever preferred_lft forever
+154329.933: [15:43:29]    inet6 ::1/128 scope host noprefixroute 
+154329.933: [15:43:29]       valid_lft forever preferred_lft forever
+154329.933: [15:43:29]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154329.933: [15:43:29]    link/ether b8:59:9f:3b:35:ae brd ff:ff:ff:ff:ff:ff
+154329.933: [15:43:29]    altname enp49s0f0np0
+154329.934: [15:43:29]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154329.934: [15:43:29]    link/ether b8:59:9f:3b:35:af brd ff:ff:ff:ff:ff:ff
+154329.934: [15:43:29]    altname enp49s0f1np1
+154329.934: [15:43:29]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154329.934: [15:43:29]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+154329.935: [15:43:29]    altname enp152s0f0np0
+154329.935: [15:43:29]    inet 172.16.101.43/24 brd 172.16.101.255 scope global ens4f0np0
+154329.935: [15:43:29]       valid_lft forever preferred_lft forever
+154329.935: [15:43:29]    inet6 fe80::e42:a1ff:fe45:5ff4/64 scope link 
+154329.935: [15:43:29]       valid_lft forever preferred_lft forever
+154329.935: [15:43:29]    inet6 fe80::6789:ae7e:32bd:3d79/64 scope link noprefixroute 
+154329.935: [15:43:29]       valid_lft forever preferred_lft forever
+154329.936: [15:43:29]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154329.936: [15:43:29]    link/ether 0c:42:a1:45:5f:f5 brd ff:ff:ff:ff:ff:ff
+154329.936: [15:43:29]    altname enp152s0f1np1
+154329.936: [15:43:29]    inet6 fe80::5bb7:a38e:3ccc:9b1e/64 scope link noprefixroute 
+154329.936: [15:43:29]       valid_lft forever preferred_lft forever
+154329.937: [15:43:29]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154329.937: [15:43:29]    link/ether 98:03:9b:7d:2f:96 brd ff:ff:ff:ff:ff:ff
+154329.937: [15:43:29]    altname enp177s0f0np0
+154329.937: [15:43:29]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154329.937: [15:43:29]    link/ether 98:03:9b:7d:2f:97 brd ff:ff:ff:ff:ff:ff
+154329.937: [15:43:29]    altname enp177s0f1np1
+154329.938: [15:43:29]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154329.938: [15:43:29]    link/ether b8:59:9f:3b:33:ce brd ff:ff:ff:ff:ff:ff
+154329.938: [15:43:29]    altname enp178s0f0np0
+154329.938: [15:43:29]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154329.938: [15:43:29]    link/ether b8:59:9f:3b:33:cf brd ff:ff:ff:ff:ff:ff
+154329.938: [15:43:29]    altname enp178s0f1np1
+154338.899: [15:43:38]root@user:~# 
+154339.040: [15:43:39]root@user:~# 
+154351.066: [15:43:51]root@user:~# ll
+154351.080: [15:43:51]总计 36
+154351.080: [15:43:51]drwx------  5 root root 4096  3月 24 15:42 ./
+154351.080: [15:43:51]drwxr-xr-x 23 root root 4096  3月 20 10:16 ../
+154351.080: [15:43:51]-rw-------  1 root root    7  3月 20 22:07 .bash_history
+154351.080: [15:43:51]-rw-r--r--  1 root root 3106  4月 22  2024 .bashrc
+154351.081: [15:43:51]drwx------  2 root root 4096  3月 24 15:43 .cache/
+154351.081: [15:43:51]-rw-r--r--  1 root root  161  4月 22  2024 .profile
+154351.081: [15:43:51]drwx------  6 root root 4096  3月 20 10:34 snap/
+154351.081: [15:43:51]drwx------  2 root root 4096  3月 20 10:34 .ssh/
+154351.081: [15:43:51]-rw-------  1 root root 1759  3月 24 15:42 .viminfo
+154736.747: [15:47:36][202603105-172.16.101.43-15:47:36]
+154736.762: [15:47:36]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+154736.762: [15:47:36]
+154736.763: [15:47:36] * Documentation:  https://help.ubuntu.com
+154736.763: [15:47:36] * Management:     https://landscape.canonical.com
+154736.763: [15:47:36] * Support:        https://ubuntu.com/pro
+154736.763: [15:47:36]
+154736.763: [15:47:36]扩展安全维护（ESM）Applications 未启用。
+154736.763: [15:47:36]
+154736.763: [15:47:36]447 更新可以立即应用。
+154736.763: [15:47:36]这些更新中有 255 个是标准安全更新。
+154736.763: [15:47:36]要查看这些附加更新，请运行：apt list --upgradable
+154736.763: [15:47:36]
+154736.764: [15:47:36]启用 ESM Apps 来获取未来的额外安全更新
+154736.764: [15:47:36]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+154736.764: [15:47:36]
+154736.764: [15:47:36]Last login: Tue Mar 24 15:43:27 2026 from 192.168.6.173
+154836.762: [15:48:36]root@user:~# cd /etc/network
+154837.435: [15:48:37]root@user:/etc/network# ll
+154837.435: [15:48:37]总计 32
+154837.435: [15:48:37]drwxr-xr-x   6 root root  4096  2月 15  2025 ./
+154837.436: [15:48:37]drwxr-xr-x 139 root root 12288  3月 20 12:02 ../
+154837.436: [15:48:37]drwxr-xr-x   2 root root  4096  2月 15  2025 if-down.d/
+154837.436: [15:48:37]drwxr-xr-x   2 root root  4096  2月 15  2025 if-post-down.d/
+154837.437: [15:48:37]drwxr-xr-x   2 root root  4096  2月 15  2025 if-pre-up.d/
+154837.437: [15:48:37]drwxr-xr-x   2 root root  4096  2月 15  2025 if-up.d/
+154841.022: [15:48:41]root@user:/etc/network# cd /etc/netplan
+154841.690: [15:48:41]root@user:/etc/netplan# ll
+154841.692: [15:48:41]总计 20
+154841.697: [15:48:41]drwxr-xr-x   2 root root  4096  3月 24 15:42 ./
+154841.697: [15:48:41]drwxr-xr-x 139 root root 12288  3月 20 12:02 ../
+154841.697: [15:48:41]-rw-------   1 root root   310  3月 24 15:42 01-network-manager-all.yaml
+154842.974: [15:48:42]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+154843.013: [15:48:43]# Let NetworkManager manage all devices on this system
+154843.014: [15:48:43]  renderer: networkd
+154843.014: [15:48:43]  ethernets:
+154843.014: [15:48:43]          - 223.5.5.5
+154855.252: [15:48:55]    ens4f1np1:
+154900.353: [15:49:00]      dhcp4: no
+154903.722: [15:49:03]      address:
+154911.866: [15:49:11]        - 10.0.0.43/24
+154920.665: [15:49:20]"01-network-manager-all.yaml" 19L, 379B 已写入                                                                                                                                 
+154925.979: [15:49:25]root@user:/etc/netplan# netplan apply
+154926.174: [15:49:26]/etc/netplan/01-network-manager-all.yaml:18:7: Error in network definition: unknown key 'address'
+154926.174: [15:49:26]      address:
+154926.174: [15:49:26]      ^
+154928.769: [15:49:28]root@user:/etc/netplan# vi 01-network-manager-all.yaml 
+154928.819: [15:49:28]# Let NetworkManager manage all devices on this system
+154928.819: [15:49:28]  renderer: networkd
+154928.819: [15:49:28]  ethernets:
+154928.820: [15:49:28]          - 223.5.5.5
+154928.820: [15:49:28]        - 10.0.0.43/24
+154940.900: [15:49:40]"01-network-manager-all.yaml" 19L, 381B 已写入                                                                                                                                 
+154943.038: [15:49:43]root@user:/etc/netplan# netplan apply
+154944.989: [15:49:44]root@user:/etc/netplan# ip a
+154944.991: [15:49:44]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154944.991: [15:49:44]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154944.991: [15:49:44]    inet 127.0.0.1/8 scope host lo
+154944.991: [15:49:44]       valid_lft forever preferred_lft forever
+154944.991: [15:49:44]    inet6 ::1/128 scope host noprefixroute 
+154944.992: [15:49:44]       valid_lft forever preferred_lft forever
+154944.998: [15:49:44]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154944.998: [15:49:44]    link/ether b8:59:9f:3b:35:ae brd ff:ff:ff:ff:ff:ff
+154944.998: [15:49:44]    altname enp49s0f0np0
+154944.998: [15:49:44]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154944.998: [15:49:44]    link/ether b8:59:9f:3b:35:af brd ff:ff:ff:ff:ff:ff
+154944.998: [15:49:44]    altname enp49s0f1np1
+154944.999: [15:49:44]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154944.999: [15:49:44]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+154944.999: [15:49:44]    altname enp152s0f0np0
+154944.999: [15:49:44]    inet 172.16.101.43/24 brd 172.16.101.255 scope global ens4f0np0
+154944.999: [15:49:44]       valid_lft forever preferred_lft forever
+154945.000: [15:49:45]    inet6 fe80::e42:a1ff:fe45:5ff4/64 scope link 
+154945.000: [15:49:45]       valid_lft forever preferred_lft forever
+154945.000: [15:49:45]    inet6 fe80::6789:ae7e:32bd:3d79/64 scope link noprefixroute 
+154945.000: [15:49:45]       valid_lft forever preferred_lft forever
+154945.000: [15:49:45]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154945.000: [15:49:45]    link/ether 0c:42:a1:45:5f:f5 brd ff:ff:ff:ff:ff:ff
+154945.000: [15:49:45]    altname enp152s0f1np1
+154945.001: [15:49:45]    inet 10.0.0.43/24 brd 10.0.0.255 scope global ens4f1np1
+154945.001: [15:49:45]       valid_lft forever preferred_lft forever
+154945.001: [15:49:45]    inet6 fe80::e42:a1ff:fe45:5ff5/64 scope link tentative 
+154945.001: [15:49:45]       valid_lft forever preferred_lft forever
+154945.001: [15:49:45]    inet6 fe80::5bb7:a38e:3ccc:9b1e/64 scope link noprefixroute 
+154945.001: [15:49:45]       valid_lft forever preferred_lft forever
+154945.002: [15:49:45]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154945.002: [15:49:45]    link/ether 98:03:9b:7d:2f:96 brd ff:ff:ff:ff:ff:ff
+154945.002: [15:49:45]    altname enp177s0f0np0
+154945.002: [15:49:45]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154945.002: [15:49:45]    link/ether 98:03:9b:7d:2f:97 brd ff:ff:ff:ff:ff:ff
+154945.002: [15:49:45]    altname enp177s0f1np1
+154945.003: [15:49:45]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154945.003: [15:49:45]    link/ether b8:59:9f:3b:33:ce brd ff:ff:ff:ff:ff:ff
+154945.003: [15:49:45]    altname enp178s0f0np0
+154945.003: [15:49:45]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+154945.003: [15:49:45]    link/ether b8:59:9f:3b:33:cf brd ff:ff:ff:ff:ff:ff
+154945.003: [15:49:45]    altname enp178s0f1np1
+155229.255: [15:52:29][202603105-172.16.101.43-15:52:29]
+155229.305: [15:52:29]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+155229.305: [15:52:29]
+155229.305: [15:52:29] * Documentation:  https://help.ubuntu.com
+155229.306: [15:52:29] * Management:     https://landscape.canonical.com
+155229.306: [15:52:29] * Support:        https://ubuntu.com/pro
+155229.306: [15:52:29]
+155229.306: [15:52:29]扩展安全维护（ESM）Applications 未启用。
+155229.306: [15:52:29]
+155229.306: [15:52:29]447 更新可以立即应用。
+155229.306: [15:52:29]这些更新中有 255 个是标准安全更新。
+155229.307: [15:52:29]要查看这些附加更新，请运行：apt list --upgradable
+155229.307: [15:52:29]
+155229.307: [15:52:29]启用 ESM Apps 来获取未来的额外安全更新
+155229.307: [15:52:29]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+155229.307: [15:52:29]
+155229.307: [15:52:29]Last login: Tue Mar 24 15:47:36 2026 from 192.168.6.173
+155234.059: [15:52:34]root@user:~# 
+155234.186: [15:52:34]root@user:~# 
+155234.437: [15:52:34]root@user:~# 
+155234.608: [15:52:34]root@user:~# 
+155240.628: [15:52:40]root@user:~# ping www.baidu.com
+155240.641: [15:52:40]PING www.a.shifen.com (180.101.51.73) 56(84) bytes of data.
+155240.663: [15:52:40]64 bytes from 180.101.51.73: icmp_seq=1 ttl=52 time=13.0 ms
+155241.648: [15:52:41]64 bytes from 180.101.51.73: icmp_seq=2 ttl=52 time=11.1 ms
+155242.206: [15:52:42]^C
+155242.206: [15:52:42]--- www.a.shifen.com ping statistics ---
+155242.206: [15:52:42]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+155242.206: [15:52:42]rtt min/avg/max/mdev = 11.066/12.056/13.046/0.990 ms
+155258.922: [15:52:58]root@user:~# 
+155259.102: [15:52:59]root@user:~# 
+155259.202: [15:52:59]root@user:~# 
+155259.372: [15:52:59]root@user:~# 
+155303.540: [15:53:03]root@user:~# ping www.baidu.com
+155303.543: [15:53:03]PING www.a.shifen.com (180.101.49.44) 56(84) bytes of data.
+155303.576: [15:53:03]64 bytes from 180.101.49.44: icmp_seq=1 ttl=52 time=9.53 ms
+155304.555: [15:53:04]64 bytes from 180.101.49.44: icmp_seq=2 ttl=52 time=9.73 ms
+155304.891: [15:53:04]^C
+155304.892: [15:53:04]--- www.a.shifen.com ping statistics ---
+155304.892: [15:53:04]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+155304.892: [15:53:04]rtt min/avg/max/mdev = 9.530/9.632/9.734/0.102 ms
+155316.026: [15:53:16]root@user:~# ping 192.168.8.1
+155316.027: [15:53:16]PING 192.168.8.1 (192.168.8.1) 56(84) bytes of data.
+155316.039: [15:53:16]64 bytes from 192.168.8.1: icmp_seq=1 ttl=127 time=10.3 ms
+155316.958: [15:53:16]^C
+155316.958: [15:53:16]--- 192.168.8.1 ping statistics ---
+155316.958: [15:53:16]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+155316.959: [15:53:16]rtt min/avg/max/mdev = 10.279/10.279/10.279/0.000 ms
+155452.819: [15:54:52]root@user:~# 
+155453.040: [15:54:53]root@user:~# 
+155453.164: [15:54:53]root@user:~# 
+155456.197: [15:54:56]root@user:~# ll
+155456.198: [15:54:56]总计 40
+155456.198: [15:54:56]drwx------  5 root root 4096  3月 24 15:49 ./
+155456.199: [15:54:56]drwxr-xr-x 23 root root 4096  3月 20 10:16 ../
+155456.199: [15:54:56]-rw-------  1 root root    7  3月 20 22:07 .bash_history
+155456.199: [15:54:56]-rw-r--r--  1 root root 3106  4月 22  2024 .bashrc
+155456.199: [15:54:56]drwx------  2 root root 4096  3月 24 15:43 .cache/
+155456.200: [15:54:56]-rw-r--r--  1 root root  161  4月 22  2024 .profile
+155456.200: [15:54:56]drwx------  6 root root 4096  3月 20 10:34 snap/
+155456.200: [15:54:56]drwx------  2 root root 4096  3月 20 10:34 .ssh/
+155456.200: [15:54:56]-rw-------  1 root root 4750  3月 24 15:49 .viminfo
+155735.735: [15:57:35][202603105-172.16.101.43-15:57:35]
+155735.749: [15:57:35]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+155735.749: [15:57:35]
+155735.750: [15:57:35] * Documentation:  https://help.ubuntu.com
+155735.750: [15:57:35] * Management:     https://landscape.canonical.com
+155735.750: [15:57:35] * Support:        https://ubuntu.com/pro
+155735.750: [15:57:35]
+155735.750: [15:57:35]扩展安全维护（ESM）Applications 未启用。
+155735.750: [15:57:35]
+155735.751: [15:57:35]447 更新可以立即应用。
+155735.751: [15:57:35]这些更新中有 255 个是标准安全更新。
+155735.751: [15:57:35]要查看这些附加更新，请运行：apt list --upgradable
+155735.751: [15:57:35]
+155735.751: [15:57:35]启用 ESM Apps 来获取未来的额外安全更新
+155735.751: [15:57:35]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+155735.751: [15:57:35]
+155735.752: [15:57:35]Last login: Tue Mar 24 15:52:29 2026 from 192.168.6.173
+155932.911: [15:59:32]root@user:~# 
+155933.060: [15:59:33]root@user:~# 
+155933.170: [15:59:33]root@user:~# 
+155944.479: [15:59:44]root@user:~# ping 10.0.0.44
+155944.487: [15:59:44]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+155944.487: [15:59:44]64 bytes from 10.0.0.44: icmp_seq=1 ttl=64 time=0.083 ms
+155945.528: [15:59:45]64 bytes from 10.0.0.44: icmp_seq=2 ttl=64 time=0.050 ms
+155946.554: [15:59:46]64 bytes from 10.0.0.44: icmp_seq=3 ttl=64 time=0.042 ms
+155947.572: [15:59:47]64 bytes from 10.0.0.44: icmp_seq=4 ttl=64 time=0.047 ms
+155948.602: [15:59:48]64 bytes from 10.0.0.44: icmp_seq=5 ttl=64 time=0.046 ms
+155949.620: [15:59:49]64 bytes from 10.0.0.44: icmp_seq=6 ttl=64 time=0.041 ms
+155950.201: [15:59:50]^C
+155950.201: [15:59:50]--- 10.0.0.44 ping statistics ---
+155950.202: [15:59:50]6 packets transmitted, 6 received, 0% packet loss, time 5138ms
+155950.202: [15:59:50]rtt min/avg/max/mdev = 0.041/0.051/0.083/0.014 ms
+164545.971: [16:45:45][202603105-172.16.101.43-16:45:45]
+164545.989: [16:45:45]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+164545.989: [16:45:45]
+164545.989: [16:45:45] * Documentation:  https://help.ubuntu.com
+164545.989: [16:45:45] * Management:     https://landscape.canonical.com
+164545.989: [16:45:45] * Support:        https://ubuntu.com/pro
+164545.989: [16:45:45]
+164545.990: [16:45:45]扩展安全维护（ESM）Applications 未启用。
+164545.990: [16:45:45]
+164545.990: [16:45:45]447 更新可以立即应用。
+164545.990: [16:45:45]这些更新中有 255 个是标准安全更新。
+164545.990: [16:45:45]要查看这些附加更新，请运行：apt list --upgradable
+164545.990: [16:45:45]
+164545.990: [16:45:45]启用 ESM Apps 来获取未来的额外安全更新
+164545.990: [16:45:45]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+164545.990: [16:45:45]
+164545.990: [16:45:45]Last login: Tue Mar 24 15:57:40 2026 from 172.16.208.2
+164632.660: [16:46:32]root@user:~# 
+164632.886: [16:46:32]root@user:~# 
+164633.109: [16:46:33]root@user:~# 
+164642.319: [16:46:42]root@user:~# 
+164642.490: [16:46:42]root@user:~# 
+164642.640: [16:46:42]root@user:~# 
+164646.272: [16:46:46]root@user:~# clear
+164652.462: [16:46:52]root@user:~# ip a
+164652.492: [16:46:52]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+164652.492: [16:46:52]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+164652.492: [16:46:52]    inet 127.0.0.1/8 scope host lo
+164652.492: [16:46:52]       valid_lft forever preferred_lft forever
+164652.492: [16:46:52]    inet6 ::1/128 scope host noprefixroute 
+164652.492: [16:46:52]       valid_lft forever preferred_lft forever
+164652.493: [16:46:52]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.493: [16:46:52]    link/ether b8:59:9f:3b:35:ae brd ff:ff:ff:ff:ff:ff
+164652.493: [16:46:52]    altname enp49s0f0np0
+164652.493: [16:46:52]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.493: [16:46:52]    link/ether b8:59:9f:3b:35:af brd ff:ff:ff:ff:ff:ff
+164652.493: [16:46:52]    altname enp49s0f1np1
+164652.493: [16:46:52]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+164652.493: [16:46:52]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+164652.493: [16:46:52]    altname enp152s0f0np0
+164652.494: [16:46:52]    inet 172.16.101.43/24 brd 172.16.101.255 scope global ens4f0np0
+164652.494: [16:46:52]       valid_lft forever preferred_lft forever
+164652.494: [16:46:52]    inet6 fe80::e42:a1ff:fe45:5ff4/64 scope link 
+164652.494: [16:46:52]       valid_lft forever preferred_lft forever
+164652.494: [16:46:52]    inet6 fe80::6789:ae7e:32bd:3d79/64 scope link noprefixroute 
+164652.494: [16:46:52]       valid_lft forever preferred_lft forever
+164652.494: [16:46:52]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+164652.494: [16:46:52]    link/ether 0c:42:a1:45:5f:f5 brd ff:ff:ff:ff:ff:ff
+164652.494: [16:46:52]    altname enp152s0f1np1
+164652.494: [16:46:52]    inet 10.0.0.43/24 brd 10.0.0.255 scope global ens4f1np1
+164652.494: [16:46:52]       valid_lft forever preferred_lft forever
+164652.495: [16:46:52]    inet6 fe80::e42:a1ff:fe45:5ff5/64 scope link 
+164652.495: [16:46:52]       valid_lft forever preferred_lft forever
+164652.495: [16:46:52]    inet6 fe80::5bb7:a38e:3ccc:9b1e/64 scope link noprefixroute 
+164652.495: [16:46:52]       valid_lft forever preferred_lft forever
+164652.495: [16:46:52]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.495: [16:46:52]    link/ether 98:03:9b:7d:2f:96 brd ff:ff:ff:ff:ff:ff
+164652.495: [16:46:52]    altname enp177s0f0np0
+164652.495: [16:46:52]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.495: [16:46:52]    link/ether 98:03:9b:7d:2f:97 brd ff:ff:ff:ff:ff:ff
+164652.496: [16:46:52]    altname enp177s0f1np1
+164652.496: [16:46:52]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.496: [16:46:52]    link/ether b8:59:9f:3b:33:ce brd ff:ff:ff:ff:ff:ff
+164652.496: [16:46:52]    altname enp178s0f0np0
+164652.496: [16:46:52]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+164652.496: [16:46:52]    link/ether b8:59:9f:3b:33:cf brd ff:ff:ff:ff:ff:ff
+164652.496: [16:46:52]    altname enp178s0f1np1
+164946.271: [16:49:46]root@user:~# ip r
+164946.281: [16:49:46]default via 172.16.101.1 dev ens4f0np0 proto static 
+164946.281: [16:49:46]10.0.0.0/24 dev ens4f1np1 proto kernel scope link src 10.0.0.43 
+164946.282: [16:49:46]172.16.101.0/24 dev ens4f0np0 proto kernel scope link src 172.16.101.43 
+165557.190: [16:55:57]root@user:~# 
+165557.528: [16:55:57]root@user:~# 
+165557.696: [16:55:57]root@user:~# 
+165559.308: [16:55:59]root@user:~# ip link show ens4f0np0
+165559.326: [16:55:59]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+165559.326: [16:55:59]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+165559.326: [16:55:59]    altname enp152s0f0np0
+165610.311: [16:56:10]root@user:~# ip link show ens4f0np0
+165610.312: [16:56:10]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+165610.312: [16:56:10]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+165610.312: [16:56:10]    altname enp152s0f0np0
+170001.406: [17:00:01]root@user:~# tcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0170001.406: root@user:~# tcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0170751.221: np0 arp or icapt-get install aptitude
+170751.258: [17:07:51]libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+170751.273: [17:07:51]tcpdump: syntax error in filter expression
+170753.102: [17:07:53]root@user:~# y
+170753.262: [17:07:53]y：未找到命令
+170809.869: [17:08:09]root@user:~# apt-get install aptitude
+170809.897: [17:08:09]正在读取软件包列表... 完成
+170810.125: [17:08:10]正在分析软件包的依赖关系树... 完成
+170810.125: [17:08:10]正在读取状态信息... 完成                 
+170810.394: [17:08:10]将会同时安装下列软件：
+170810.404: [17:08:10]  aptitude-common bzip2 dpkg libboost-iostreams1.83.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl libsigc++-2.0-0v5
+170810.404: [17:08:10]  libxapian30
+170810.409: [17:08:10]建议安装：
+170810.410: [17:08:10]  apt-xapian-index aptitude-doc-en | aptitude-doc debtags tasksel bzip2-doc debsig-verify libcwidget-dev debian-keyring git
+170810.410: [17:08:10]  bzr xapian-tools
+170810.429: [17:08:10]下列【新】软件包将被安装：
+170810.429: [17:08:10]  aptitude aptitude-common bzip2 libboost-iostreams1.83.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl libsigc++-2.0-0v5
+170810.429: [17:08:10]  libxapian30
+170810.435: [17:08:10]下列软件包将被升级：
+170810.435: [17:08:10]  dpkg
+170810.441: [17:08:10]升级了 1 个软件包，新安装了 9 个软件包，要卸载 0 个软件包，有 459 个软件包未被升级。
+170810.441: [17:08:10]需要下载 4,593 kB/5,875 kB 的归档。
+170810.441: [17:08:10]解压缩后会消耗 21.1 MB 的额外空间。
+170811.206: [17:08:11]您希望继续执行吗？ [Y/n] y
+170811.780: [17:08:11]获取:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude-common all 0.8.13-5ubuntu5 [1,800 kB]
+171008.966: [17:10:08]忽略:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude-common all 0.8.13-5ubuntu5                             
+171008.972: [17:10:08]忽略:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-iostreams1.83.0 amd64 1.83.0-2.1ubuntu3.2          
+171008.972: [17:10:08]错误:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libsigc++-2.0-0v5 amd64 2.12.1-2
+171008.972: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.972: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.972: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.973: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.973: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.973: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.973:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171008.973: [17:10:08]错误:4 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcwidget4 amd64 0.5.18-6build1
+171008.988: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.988: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.988: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.988: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.988: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.989: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.989:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171008.989: [17:10:08]错误:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 libxapian30 amd64 1.4.22-1build1
+171008.989: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.989: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.990: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.990: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.990: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.990: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.990:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171008.990: [17:10:08]错误:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude amd64 0.8.13-5ubuntu5
+171008.991: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.991: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.991: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.991: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.991: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.992: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.992:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171008.992: [17:10:08]错误:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1
+171008.992: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.992: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.992: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.993: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.993: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.993: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.993:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171008.993: [17:10:08]忽略:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5
+171008.993: [17:10:08]错误:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5
+171008.994: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.994: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.994: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.994: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.994: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.995: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.995:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171008.995: [17:10:08]错误:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude-common all 0.8.13-5ubuntu5
+171008.995: [17:10:08]  连接超时 [IP: 185.125.190.83 80]
+171008.995: [17:10:08]错误:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-iostreams1.83.0 amd64 1.83.0-2.1ubuntu3.2
+171008.995: [17:10:08]  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 171008.996: (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - conne171008.996: ct (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 arch171008.996: ive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000:171008.996: :16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可171008.996: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171008.996:  (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) 无法连接上 archive.ubuntu.com:80 (185.125.190.83)。 - connect (113:171008.997:  没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (185.125.190.82)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ub171008.997: untu.com:80 (185.125.190.81)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.92.23)。 - connect (171008.997: 113: 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.92.22)。 - connect (113: 没有到主机的路由) 无法连接上 archive.171008.997: ubuntu.com:80 (91.189.91.83)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.91.82)。 - connect (171008.997: 113: 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.92.24)。 - connect (113: 没有到主机的路由) 无法连接上 archive.171008.998: ubuntu.com:80 (91.189.91.81)。 - connect (113: 没有到主机的路由) [IP: 185.125.190.83 80]
+171008.999: [17:10:08]忽略:8 http://security.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5
+171009.001: [17:10:09]忽略:8 http://security.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5
+171009.002: [17:10:09]忽略:8 http://security.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5
+171009.003: [17:10:09]获取:8 http://security.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5 [269 kB]
+171009.003: [17:10:09]已下载 269 kB，耗时 1分 57秒 (2,289 B/s)
+171009.003: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/universe/a/aptitude/aptitude-common_0.8.13-5ubuntu5_all.deb  连接超时 [IP: 1171009.003: 85.125.190.83 80]
+171009.003: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/main/b/boost1.83/libboost-iostreams1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb  无171009.004: 法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (262171009.004: 0:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - connect (171009.004: 101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.171009.004: ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::16)171009.004:  的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可达) 171009.005: 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a171009.005: 06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) 无法连接上 archive.ubuntu.com:80 (185.125.190.83)。 - connect (113: 没171009.005: 有到主机的路由) 无法连接上 archive.ubuntu.com:80 (185.125.190.82)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubunt171009.005: u.com:80 (185.125.190.81)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.92.23)。 - connect (113171009.005: : 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.92.22)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubu171009.006: ntu.com:80 (91.189.91.83)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.91.82)。 - connect (113171009.006: : 没有到主机的路由) 无法连接上 archive.ubuntu.com:80 (91.189.92.24)。 - connect (113: 没有到主机的路由) 无法连接上 archive.ubu171009.006: ntu.com:80 (91.189.91.81)。 - connect (113: 没有到主机的路由) [IP: 185.125.190.83 80]
+171009.006: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/main/libs/libsigc%2b%2b-2.0/libsigc%2b%2b-2.0-0v5_2.12.1-2_amd64.deb  无法发171009.006: 起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d171009.007: :4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - connect (101:171009.007:  网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubun171009.007: tu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::16) 的171009.007: 连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可达) 无171009.008: 法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06171009.008: :bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171009.008: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/universe/c/cwidget/libcwidget4_0.5.18-6build1_amd64.deb  无法发起与 archive.171009.008: ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::101)171009.008:  的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - connect (101: 网络不可达) 171009.008: 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (26171009.009: 20:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::16) 的连接 - connect171009.009:  (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archiv171009.009: e.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::1171009.009: 7) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171009.009: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/universe/x/xapian-core/libxapian30_1.4.22-1build1_amd64.deb  无法发起与 arch171009.009: ive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::171009.010: 101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - connect (101: 网络不可171009.010: 达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80171009.010:  (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::16) 的连接 - con171009.010: nect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 ar171009.010: chive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:100171009.010: 0::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171009.011: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/universe/a/aptitude/aptitude_0.8.13-5ubuntu5_amd64.deb  无法发起与 archive.u171009.011: buntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::101) 171009.011: 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - connect (101: 网络不可达) 171009.011: 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (26171009.011: 20:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::16) 的连接 - connect171009.011:  (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archiv171009.012: e.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::1171009.012: 7) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171009.012: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1build0.1_amd64.deb  无法发起与 archive.ubuntu.co171009.012: m:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::101) 的连接 -171009.012:  connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - connect (101: 网络不可达) 无法发起171009.013: 与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:40171009.013: 02:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::16) 的连接 - connect (101: 171009.013: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubunt171009.013: u.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::17) 的连171009.013: 接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171009.013: [17:10:09]E: 无法下载 http://archive.ubuntu.com/ubuntu/pool/main/libf/libfile-fcntllock-perl/libfile-fcntllock-perl_0.22-4ubuntu5_amd64.171009.014: deb  无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:1000::18) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:171009.014: 80 (2620:2d:4000:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::103) 的连接 - co171009.014: nnect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::101) 的连接 - connect (101: 网络不可达) 无法发起与 a171009.014: rchive.ubuntu.com:80 (2620:2d:4002:1::103) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2a06:bc80:0:10171009.015: 00::16) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4000:1::102) 的连接 - connect (101: 网络171009.015: 不可达) 无法发起与 archive.ubuntu.com:80 (2620:2d:4002:1::102) 的连接 - connect (101: 网络不可达) 无法发起与 archive.ubuntu.co171009.015: m:80 (2a06:bc80:0:1000::17) 的连接 - connect (101: 网络不可达) [IP: 185.125.190.83 80]
+171009.015: [17:10:09]E: 有几个软件包无法下载，要不运行 apt-get update 或者加上 --fix-missing 的选项再试试？
+171109.621: [17:11:09]root@user:~# 
+171109.779: [17:11:09]root@user:~# 
+171111.525: [17:11:11]root@user:~# tcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0np0 arp or icmptcpdump -i ens4f0171112.069: root@user:~# ip link show ens4f0np0
+171126.106: [17:11:26]root@user:~# apt-get install aptitude
+171126.135: [17:11:26]正在读取软件包列表... 完成
+171126.365: [17:11:26]正在分析软件包的依赖关系树... 完成
+171126.365: [17:11:26]正在读取状态信息... 完成                 
+171126.538: [17:11:26]将会同时安装下列软件：
+171126.538: [17:11:26]  aptitude-common bzip2 dpkg libboost-iostreams1.83.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl
+171126.538: [17:11:26]  libsigc++-2.0-0v5 libxapian30
+171126.538: [17:11:26]建议安装：
+171126.538: [17:11:26]  apt-xapian-index aptitude-doc-en | aptitude-doc debtags tasksel bzip2-doc debsig-verify libcwidget-dev
+171126.539: [17:11:26]  debian-keyring git bzr xapian-tools
+171126.569: [17:11:26]下列【新】软件包将被安装：
+171126.569: [17:11:26]  aptitude aptitude-common bzip2 libboost-iostreams1.83.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl
+171126.569: [17:11:26]  libsigc++-2.0-0v5 libxapian30
+171126.569: [17:11:26]下列软件包将被升级：
+171126.569: [17:11:26]  dpkg
+171126.569: [17:11:26]升级了 1 个软件包，新安装了 9 个软件包，要卸载 0 个软件包，有 459 个软件包未被升级。
+171126.569: [17:11:26]需要下载 4,324 kB/5,875 kB 的归档。
+171126.570: [17:11:26]解压缩后会消耗 21.1 MB 的额外空间。
+171127.651: [17:11:27]您希望继续执行吗？ [Y/n] y
+171128.448: [17:11:28]获取:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude-common all 0.8.13-5ubuntu5 [1,800 kB]
+171131.999: [17:11:31]获取:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-iostreams1.83.0 amd64 1.83.0-2.1ubuntu3.2171131.999:  [260 kB]
+171132.721: [17:11:32]获取:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libsigc++-2.0-0v5 amd64 2.12.1-2 [12.8 kB]
+171132.722: [17:11:32]获取:4 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcwidget4 amd64 0.5.18-6build1 [241 kB]
+171132.813: [17:11:32]获取:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 libxapian30 amd64 1.4.22-1build1 [716 kB]
+171132.940: [17:11:32]获取:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 aptitude amd64 0.8.13-5ubuntu5 [1,229 kB]
+171134.249: [17:11:34]获取:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]          
+171134.262: [17:11:34]获取:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5 [30.7 kB]     
+171134.273: [17:11:34]已下载 3,564 kB，耗时 7秒 (538 kB/s)                                                                              
+171135.507: [17:11:35](正在读取数据库 ... 系统当前共安装有 155917 个文件和目录。)
+171135.524: [17:11:35]准备解压 .../dpkg_1.22.6ubuntu6.5_amd64.deb  ...
+171135.524: [17:11:35]正在解压 dpkg (1.22.6ubuntu6.5) 并覆盖 (1.22.6ubuntu6.1) ...
+171135.716: [17:11:35]正在设置 dpkg (1.22.6ubuntu6.5) ...
+171136.322: [17:11:36]正在选中未选择的软件包 aptitude-common。
+171136.380: [17:11:36](正在读取数据库 ... 系统当前共安装有 155917 个文件和目录。)
+171136.389: [17:11:36]准备解压 .../0-aptitude-common_0.8.13-5ubuntu5_all.deb  ...
+171136.389: [17:11:36]正在解压 aptitude-common (0.8.13-5ubuntu5) ...
+171136.494: [17:11:36]正在选中未选择的软件包 libboost-iostreams1.83.0:amd64。
+171136.509: [17:11:36]准备解压 .../1-libboost-iostreams1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb  ...
+171136.509: [17:11:36]正在解压 libboost-iostreams1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+171136.538: [17:11:36]正在选中未选择的软件包 libsigc++-2.0-0v5:amd64。
+171136.548: [17:11:36]准备解压 .../2-libsigc++-2.0-0v5_2.12.1-2_amd64.deb  ...
+171136.548: [17:11:36]正在解压 libsigc++-2.0-0v5:amd64 (2.12.1-2) ...
+171136.571: [17:11:36]正在选中未选择的软件包 libcwidget4:amd64。
+171136.581: [17:11:36]准备解压 .../3-libcwidget4_0.5.18-6build1_amd64.deb  ...
+171136.581: [17:11:36]正在解压 libcwidget4:amd64 (0.5.18-6build1) ...
+171136.616: [17:11:36]正在选中未选择的软件包 libxapian30:amd64。
+171136.624: [17:11:36]准备解压 .../4-libxapian30_1.4.22-1build1_amd64.deb  ...
+171136.624: [17:11:36]正在解压 libxapian30:amd64 (1.4.22-1build1) ...
+171136.659: [17:11:36]正在选中未选择的软件包 aptitude。
+171136.667: [17:11:36]准备解压 .../5-aptitude_0.8.13-5ubuntu5_amd64.deb  ...
+171136.673: [17:11:36]正在解压 aptitude (0.8.13-5ubuntu5) ...
+171136.707: [17:11:36]正在选中未选择的软件包 bzip2。
+171136.716: [17:11:36]准备解压 .../6-bzip2_1.0.8-5.1build0.1_amd64.deb  ...
+171136.716: [17:11:36]正在解压 bzip2 (1.0.8-5.1build0.1) ...
+171136.745: [17:11:36]正在选中未选择的软件包 libdpkg-perl。
+171136.752: [17:11:36]准备解压 .../7-libdpkg-perl_1.22.6ubuntu6.5_all.deb  ...
+171136.752: [17:11:36]正在解压 libdpkg-perl (1.22.6ubuntu6.5) ...
+171136.789: [17:11:36]正在选中未选择的软件包 libfile-fcntllock-perl。
+171136.803: [17:11:36]准备解压 .../8-libfile-fcntllock-perl_0.22-4ubuntu5_amd64.deb  ...
+171136.803: [17:11:36]正在解压 libfile-fcntllock-perl (0.22-4ubuntu5) ...
+171136.848: [17:11:36]正在设置 libxapian30:amd64 (1.4.22-1build1) ...
+171136.857: [17:11:36]正在设置 libfile-fcntllock-perl (0.22-4ubuntu5) ...
+171136.857: [17:11:36]正在设置 bzip2 (1.0.8-5.1build0.1) ...
+171136.857: [17:11:36]正在设置 libboost-iostreams1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+171136.857: [17:11:36]正在设置 libsigc++-2.0-0v5:amd64 (2.12.1-2) ...
+171136.857: [17:11:36]正在设置 aptitude-common (0.8.13-5ubuntu5) ...
+171136.857: [17:11:36]正在设置 libdpkg-perl (1.22.6ubuntu6.5) ...
+171136.858: [17:11:36]正在设置 libcwidget4:amd64 (0.5.18-6build1) ...
+171136.858: [17:11:36]正在设置 aptitude (0.8.13-5ubuntu5) ...
+171136.868: [17:11:36]update-alternatives: 使用 /usr/bin/aptitude-curses 来在自动模式中提供 /usr/bin/aptitude (aptitude)
+171136.875: [17:11:36]正在处理用于 man-db (2.12.0-4build2) 的触发器 ...
+171138.685: [17:11:38]正在处理用于 libc-bin (2.39-0ubuntu8.4) 的触发器 ...

@@ -1,0 +1,355 @@
+﻿113936.293: [11:39:36][202603172.16.208.21-黄埭监控主机-11:39:36]
+113936.308: [11:39:36]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+113936.308: [11:39:36]
+113936.308: [11:39:36] * Documentation:  https://help.ubuntu.com
+113936.308: [11:39:36] * Management:     https://landscape.canonical.com
+113936.308: [11:39:36] * Support:        https://ubuntu.com/pro
+113936.308: [11:39:36]
+113936.308: [11:39:36] System information as of Wed Mar 11 03:39:35 AM UTC 2026
+113936.308: [11:39:36]
+113936.308: [11:39:36]  System load:  0.0                Processes:             160
+113936.308: [11:39:36]  Usage of /:   2.6% of 294.23GB   Users logged in:       2
+113936.308: [11:39:36]  Memory usage: 2%                 IPv4 address for ens3: 172.16.208.21
+113936.308: [11:39:36]  Swap usage:   0%
+113936.308: [11:39:36]
+113936.308: [11:39:36] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+113936.308: [11:39:36]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+113936.308: [11:39:36]
+113936.308: [11:39:36]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+113936.308: [11:39:36]
+113936.308: [11:39:36]Expanded Security Maintenance for Applications is not enabled.
+113936.308: [11:39:36]
+113936.308: [11:39:36]66 updates can be applied immediately.
+113936.308: [11:39:36]To see these additional updates run: apt list --upgradable
+113936.308: [11:39:36]
+113936.308: [11:39:36]Enable ESM Apps to receive additional future security updates.
+113936.309: [11:39:36]See https://ubuntu.com/esm or run: sudo pro status
+113936.309: [11:39:36]
+113936.309: [11:39:36]New release '24.04.4 LTS' available.
+113936.309: [11:39:36]Run 'do-release-upgrade' to upgrade to it.
+113936.309: [11:39:36]
+113936.309: [11:39:36]
+113936.309: [11:39:36]Last login: Wed Mar 11 03:35:12 2026
+113939.432: [11:39:39]root@huangdai-monitor:~# ip a
+113939.433: [11:39:39]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+113939.433: [11:39:39]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+113939.433: [11:39:39]    inet 127.0.0.1/8 scope host lo
+113939.433: [11:39:39]       valid_lft forever preferred_lft forever
+113939.434: [11:39:39]    inet6 ::1/128 scope host 
+113939.434: [11:39:39]       valid_lft forever preferred_lft forever
+113939.434: [11:39:39]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+113939.434: [11:39:39]    link/ether fa:7e:69:a6:ba:00 brd ff:ff:ff:ff:ff:ff
+113939.434: [11:39:39]    altname enp0s3
+113939.435: [11:39:39]    inet 172.16.208.21/20 metric 100 brd 172.16.223.255 scope global ens3
+113939.435: [11:39:39]       valid_lft forever preferred_lft forever
+113939.435: [11:39:39]    inet6 fe80::f87e:69ff:fea6:ba00/64 scope link 
+113939.435: [11:39:39]       valid_lft forever preferred_lft forever
+114001.578: [11:40:01]root@huangdai-monitor:~# apt-get install aptitude
+114001.669: [11:40:01]Reading package lists... Done
+114002.026: [11:40:02]Building dependency tree... Done
+114002.026: [11:40:02]Reading state information... Done
+114002.412: [11:40:02]The following additional packages will be installed:
+114002.412: [11:40:02]  aptitude-common bzip2 libboost-iostreams1.74.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl libsigc++-2.0-0v5 libxapian30
+114002.501: [11:40:02]Suggested packages:
+114002.502: [11:40:02]  apt-xapian-index aptitude-doc-en | aptitude-doc debtags tasksel bzip2-doc libcwidget-dev debian-keyring gcc | c-compiler bzr xapian-tools
+114002.508: [11:40:02]The following NEW packages will be installed:
+114002.509: [11:40:02]  aptitude aptitude-common bzip2 libboost-iostreams1.74.0 libcwidget4 libdpkg-perl libfile-fcntllock-perl libsigc++-2.0-0v5 libxapian30
+114002.509: [11:40:02]0 upgraded, 9 newly installed, 0 to remove and 65 not upgraded.
+114002.509: [11:40:02]Need to get 4,389 kB of archives.
+114002.509: [11:40:02]After this operation, 22.2 MB of additional disk space will be used.
+114003.637: [11:40:03]Do you want to continue? [Y/n] y
+114004.175: [11:40:04]Get:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 aptitude-common all 0.8.13-3ubuntu1 [1,719 kB]
+114005.972: [11:40:05]Get:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 libboost-iostreams1.74.0 amd64 1.74.0-14ubuntu3 [245 kB]
+114005.997: [11:40:05]Get:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 libsigc++-2.0-0v5 amd64 2.10.4-2ubuntu3 [12.1 kB]
+114005.998: [11:40:05]Get:4 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libcwidget4 amd64 0.5.18-5build1 [306 kB]
+114006.015: [11:40:06]Get:5 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 libxapian30 amd64 1.4.18-4 [701 kB]
+114006.080: [11:40:06]Get:6 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 aptitude amd64 0.8.13-3ubuntu1 [1,100 kB]
+114006.251: [11:40:06]Get:7 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]
+114006.252: [11:40:06]Get:8 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 libdpkg-perl all 1.21.1ubuntu2.6 [237 kB]
+114006.261: [11:40:06]Get:9 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 libfile-fcntllock-perl amd64 0.22-3build7 [33.9 kB]
+114006.453: [11:40:06]Fetched 4,389 kB in 3s (1,559 kB/s)          
+114010.365: [11:40:10]Selecting previously unselected package aptitude-common.
+114010.407: [11:40:10](Reading database ... 75393 files and directories currently installed.)
+114010.414: [11:40:10]Preparing to unpack .../0-aptitude-common_0.8.13-3ubuntu1_all.deb ...
+114010.423: [11:40:10]Unpacking aptitude-common (0.8.13-3ubuntu1) ...
+114010.757: [11:40:10]Selecting previously unselected package libboost-iostreams1.74.0:amd64.
+114010.770: [11:40:10]Preparing to unpack .../1-libboost-iostreams1.74.0_1.74.0-14ubuntu3_amd64.deb ...
+114010.776: [11:40:10]Unpacking libboost-iostreams1.74.0:amd64 (1.74.0-14ubuntu3) ...
+114010.888: [11:40:10]Selecting previously unselected package libsigc++-2.0-0v5:amd64.
+114010.888: [11:40:10]Preparing to unpack .../2-libsigc++-2.0-0v5_2.10.4-2ubuntu3_amd64.deb ...
+114010.888: [11:40:10]Unpacking libsigc++-2.0-0v5:amd64 (2.10.4-2ubuntu3) ...
+114010.920: [11:40:10]Selecting previously unselected package libcwidget4:amd64.
+114010.928: [11:40:10]Preparing to unpack .../3-libcwidget4_0.5.18-5build1_amd64.deb ...
+114010.934: [11:40:10]Unpacking libcwidget4:amd64 (0.5.18-5build1) ...
+114011.045: [11:40:11]Selecting previously unselected package libxapian30:amd64.
+114011.060: [11:40:11]Preparing to unpack .../4-libxapian30_1.4.18-4_amd64.deb ...
+114011.060: [11:40:11]Unpacking libxapian30:amd64 (1.4.18-4) ...
+114011.153: [11:40:11]Selecting previously unselected package aptitude.
+114011.166: [11:40:11]Preparing to unpack .../5-aptitude_0.8.13-3ubuntu1_amd64.deb ...
+114011.171: [11:40:11]Unpacking aptitude (0.8.13-3ubuntu1) ...
+114011.418: [11:40:11]Selecting previously unselected package bzip2.
+114011.419: [11:40:11]Preparing to unpack .../6-bzip2_1.0.8-5build1_amd64.deb ...
+114011.419: [11:40:11]Unpacking bzip2 (1.0.8-5build1) ...
+114011.448: [11:40:11]Selecting previously unselected package libdpkg-perl.
+114011.456: [11:40:11]Preparing to unpack .../7-libdpkg-perl_1.21.1ubuntu2.6_all.deb ...
+114011.462: [11:40:11]Unpacking libdpkg-perl (1.21.1ubuntu2.6) ...
+114011.586: [11:40:11]Selecting previously unselected package libfile-fcntllock-perl.
+114011.586: [11:40:11]Preparing to unpack .../8-libfile-fcntllock-perl_0.22-3build7_amd64.deb ...
+114011.586: [11:40:11]Unpacking libfile-fcntllock-perl (0.22-3build7) ...
+114011.655: [11:40:11]Setting up libxapian30:amd64 (1.4.18-4) ...
+114011.672: [11:40:11]Setting up libfile-fcntllock-perl (0.22-3build7) ...
+114011.680: [11:40:11]Setting up libboost-iostreams1.74.0:amd64 (1.74.0-14ubuntu3) ...
+114011.696: [11:40:11]Setting up bzip2 (1.0.8-5build1) ...
+114011.717: [11:40:11]Setting up libsigc++-2.0-0v5:amd64 (2.10.4-2ubuntu3) ...
+114011.726: [11:40:11]Setting up aptitude-common (0.8.13-3ubuntu1) ...
+114011.739: [11:40:11]Setting up libdpkg-perl (1.21.1ubuntu2.6) ...
+114011.754: [11:40:11]Setting up libcwidget4:amd64 (0.5.18-5build1) ...
+114011.772: [11:40:11]Setting up aptitude (0.8.13-3ubuntu1) ...
+114011.806: [11:40:11]update-alternatives: using /usr/bin/aptitude-curses to provide /usr/bin/aptitude (aptitude) in auto mode
+114011.835: [11:40:11]Processing triggers for man-db (2.10.2-1) ...
+114012.075: [11:40:12]Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+114013.034: [11:40:13]Scanning processes...                                                                                                                                                                                                      
+114013.034: [11:40:13]Scanning candidates...                                                                                                                                                                                                     
+114013.035: [11:40:13]Scanning linux images...                                                                                                                                                                                                   
+114013.035: [11:40:13]
+114013.036: [11:40:13]Running kernel seems to be up-to-date.
+114013.036: [11:40:13]
+114013.036: [11:40:13]Restarting services...
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.056: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114013.057: [11:40:13]
+114016.409: [11:40:16]Service restarts being deferred:
+114016.410: [11:40:16] systemctl restart networkd-dispatcher.service
+114016.410: [11:40:16] systemctl restart unattended-upgrades.service
+114016.410: [11:40:16]
+114016.410: [11:40:16]No containers need to be restarted.
+114016.410: [11:40:16]
+114016.410: [11:40:16]No user sessions are running outdated binaries.
+114016.410: [11:40:16]
+114016.410: [11:40:16]No VM guests are running outdated hypervisor (qemu) binaries on this host.
+114030.934: [11:40:30]root@huangdai-monitor:~# aptitude install fail2ban 
+114032.717: [11:40:32]The following NEW packages will be installed:
+114032.717: [11:40:32]  fail2ban python3-pyinotify{a} whois{a} 
+114032.718: [11:40:32]0 packages upgraded, 3 newly installed, 0 to remove and 65 not upgraded.
+114032.794: [11:40:32]Need to get 473 kB of archives. After unpacking 2,486 kB will be used.
+114033.964: [11:40:33]Do you want to continue? [Y/n/?] y
+114035.107: [11:40:35]Get: 1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/universe amd64 fail2ban all 0.11.2-6 [394 kB]
+114036.061: [11:40:36]Get: 2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 python3-pyinotify all 0.9.6-1.3 [24.8 kB]
+114036.062: [11:40:36]Get: 3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 whois amd64 5.5.13 [53.4 kB]
+114036.211: [11:40:36]Fetched 473 kB in 2s (256 kB/s)
+114037.000: [11:40:37]Selecting previously unselected package fail2ban.
+114037.109: [11:40:37](Reading database ... 75819 files and directories currently installed.)
+114037.109: [11:40:37]Preparing to unpack .../fail2ban_0.11.2-6_all.deb ...
+114037.122: [11:40:37]Unpacking fail2ban (0.11.2-6) ...
+114037.267: [11:40:37]Selecting previously unselected package python3-pyinotify.
+114037.281: [11:40:37]Preparing to unpack .../python3-pyinotify_0.9.6-1.3_all.deb ...
+114037.281: [11:40:37]Unpacking python3-pyinotify (0.9.6-1.3) ...
+114037.324: [11:40:37]Selecting previously unselected package whois.
+114037.334: [11:40:37]Preparing to unpack .../whois_5.5.13_amd64.deb ...
+114037.340: [11:40:37]Unpacking whois (5.5.13) ...
+114037.422: [11:40:37]Setting up whois (5.5.13) ...
+114037.438: [11:40:37]Setting up fail2ban (0.11.2-6) ...
+114039.351: [11:40:39]Setting up python3-pyinotify (0.9.6-1.3) ...
+114039.570: [11:40:39]Processing triggers for man-db (2.10.2-1) ...
+114040.870: [11:40:40]Scanning processes...                                                                                                                                                                                                      
+114040.870: [11:40:40]Scanning candidates...                                                                                                                                                                                                     
+114040.870: [11:40:40]Scanning linux images...                                                                                                                                                                                                   
+114040.870: [11:40:40]
+114040.870: [11:40:40]Running kernel seems to be up-to-date.
+114040.870: [11:40:40]
+114040.870: [11:40:40]Restarting services...
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.870: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114040.871: [11:40:40]
+114042.588: [11:40:42]Service restarts being deferred:
+114042.588: [11:40:42] systemctl restart networkd-dispatcher.service
+114042.588: [11:40:42] systemctl restart unattended-upgrades.service
+114042.588: [11:40:42]
+114042.588: [11:40:42]No containers need to be restarted.
+114042.588: [11:40:42]
+114042.588: [11:40:42]No user sessions are running outdated binaries.
+114042.588: [11:40:42]
+114042.588: [11:40:42]No VM guests are running outdated hypervisor (qemu) binaries on this host.
+114047.357: [11:40:47]
+114049.403: [11:40:49]                                         
+114049.432: [11:40:49]root@huangdai-monitor:~# 
+114057.303: [11:40:57]root@huangdai-monitor:~# systemctl restatus fail2ban
+114057.310: [11:40:57]Unknown command verb restatus.
+114106.649: [11:41:06]root@huangdai-monitor:~# systemctl status fail2ban
+114106.679: [11:41:06]○ fail2ban.service - Fail2Ban Service
+114106.679: [11:41:06]     Loaded: loaded (/lib/systemd/system/fail2ban.service; disabled; vendor preset: enabled)
+114106.679: [11:41:06]     Active: inactive (dead)
+114106.679: [11:41:06]       Docs: man:fail2ban(1)
+114111.996: [11:41:11]root@huangdai-monitor:~# systemctl start fail2ban
+114113.567: [11:41:13]root@huangdai-monitor:~# systemctl status fail2ban
+114113.590: [11:41:13]● fail2ban.service - Fail2Ban Service
+114113.590: [11:41:13]     Loaded: loaded (/lib/systemd/system/fail2ban.service; disabled; vendor preset: enabled)
+114113.590: [11:41:13]     Active: active (running) since Wed 2026-03-11 03:41:12 UTC; 1s ago
+114113.590: [11:41:13]       Docs: man:fail2ban(1)
+114113.590: [11:41:13]   Main PID: 10300 (fail2ban-server)
+114113.590: [11:41:13]      Tasks: 5 (limit: 19048)
+114113.590: [11:41:13]     Memory: 11.8M
+114113.591: [11:41:13]        CPU: 170ms
+114113.591: [11:41:13]     CGroup: /system.slice/fail2ban.service
+114113.591: [11:41:13]             └─10300 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+114113.591: [11:41:13]
+114113.591: [11:41:13]Mar 11 03:41:12 huangdai-monitor systemd[1]: Started Fail2Ban Service.
+114113.591: [11:41:13]Mar 11 03:41:12 huangdai-monitor fail2ban-server[10300]: Server ready
+114117.688: [11:41:17]root@huangdai-monitor:~# systemctl status fail2ban
+114117.703: [11:41:17]● fail2ban.service - Fail2Ban Service
+114117.703: [11:41:17]     Loaded: loaded (/lib/systemd/system/fail2ban.service; disabled; vendor preset: enabled)
+114117.703: [11:41:17]     Active: active (running) since Wed 2026-03-11 03:41:12 UTC; 5s ago
+114117.704: [11:41:17]       Docs: man:fail2ban(1)
+114117.704: [11:41:17]   Main PID: 10300 (fail2ban-server)
+114117.704: [11:41:17]      Tasks: 5 (limit: 19048)
+114117.704: [11:41:17]     Memory: 11.6M
+114117.704: [11:41:17]        CPU: 171ms
+114117.704: [11:41:17]     CGroup: /system.slice/fail2ban.service
+114117.704: [11:41:17]             └─10300 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+114117.704: [11:41:17]
+114117.704: [11:41:17]Mar 11 03:41:12 huangdai-monitor systemd[1]: Started Fail2Ban Service.
+114117.705: [11:41:17]Mar 11 03:41:12 huangdai-monitor fail2ban-server[10300]: Server ready
+114136.750: [11:41:36]root@huangdai-monitor:~# iptables -t filter -L -nxv
+114136.877: [11:41:36]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+114136.877: [11:41:36]    pkts      bytes target     prot opt in     out     source               destination         
+114136.878: [11:41:36]
+114136.878: [11:41:36]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+114136.878: [11:41:36]    pkts      bytes target     prot opt in     out     source               destination         
+114136.878: [11:41:36]
+114136.878: [11:41:36]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+114136.879: [11:41:36]    pkts      bytes target     prot opt in     out     source               destination         
+114150.378: [11:41:50]root@huangdai-monitor:~# iptables -L -nxv --line 
+114150.390: [11:41:50]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+114150.390: [11:41:50]num      pkts      bytes target     prot opt in     out     source               destination         
+114150.390: [11:41:50]
+114150.390: [11:41:50]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+114150.390: [11:41:50]num      pkts      bytes target     prot opt in     out     source               destination         
+114150.390: [11:41:50]
+114150.390: [11:41:50]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+114150.390: [11:41:50]num      pkts      bytes target     prot opt in     out     source               destination         
+114156.446: [11:41:56]root@huangdai-monitor:~# 
+114156.540: [11:41:56]root@huangdai-monitor:~# 
+114201.028: [11:42:01]root@huangdai-monitor:~# nft list ruleset
+114203.131: [11:42:03]root@huangdai-monitor:~# 

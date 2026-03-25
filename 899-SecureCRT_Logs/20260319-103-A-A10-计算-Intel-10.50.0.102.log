@@ -1,0 +1,99 @@
+﻿081602.489: [08:16:02][202603103-A-A10-计算-Intel-10.50.0.102-08:16:02]
+081602.506: [08:16:02]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+081602.506: [08:16:02]
+081602.507: [08:16:02] * Documentation:  https://help.ubuntu.com
+081602.507: [08:16:02] * Management:     https://landscape.canonical.com
+081602.507: [08:16:02] * Support:        https://ubuntu.com/pro
+081602.507: [08:16:02]
+081602.507: [08:16:02] System information as of Thu Mar 19 08:16:02 AM CST 2026
+081602.507: [08:16:02]
+081602.507: [08:16:02]  System load:    0.0                Temperature:                  79.0 C
+081602.507: [08:16:02]  Usage of /home: 0.1% of 301.67GB   Processes:                    1385
+081602.507: [08:16:02]  Memory usage:   0%                 Users logged in:              1
+081602.508: [08:16:02]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+081602.508: [08:16:02]
+081602.508: [08:16:02] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+081602.508: [08:16:02]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+081602.508: [08:16:02]
+081602.508: [08:16:02]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+081602.508: [08:16:02]
+081602.508: [08:16:02]Expanded Security Maintenance for Applications is not enabled.
+081602.508: [08:16:02]
+081602.508: [08:16:02]101 updates can be applied immediately.
+081602.509: [08:16:02]To see these additional updates run: apt list --upgradable
+081602.509: [08:16:02]
+081602.509: [08:16:02]11 additional security updates can be applied with ESM Apps.
+081602.509: [08:16:02]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+081602.509: [08:16:02]
+081602.509: [08:16:02]
+081602.509: [08:16:02]The list of available updates is more than a week old.
+081602.509: [08:16:02]To check for new updates run: sudo apt update
+081602.509: [08:16:02]
+081602.509: [08:16:02]*** System restart required ***
+081602.509: [08:16:02]Last login: Wed Mar 18 16:29:31 2026 from 192.168.4.222
+133057.715: [13:30:57][202603103-A-A10-计算-Intel-10.50.0.102-13:30:57]
+133057.731: [13:30:57]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+133057.731: [13:30:57]
+133057.731: [13:30:57] * Documentation:  https://help.ubuntu.com
+133057.731: [13:30:57] * Management:     https://landscape.canonical.com
+133057.732: [13:30:57] * Support:        https://ubuntu.com/pro
+133057.732: [13:30:57]
+133057.732: [13:30:57] System information as of Thu Mar 19 01:30:57 PM CST 2026
+133057.732: [13:30:57]
+133057.732: [13:30:57]  System load:    0.01               Temperature:                  79.0 C
+133057.732: [13:30:57]  Usage of /home: 0.1% of 301.67GB   Processes:                    1384
+133057.732: [13:30:57]  Memory usage:   0%                 Users logged in:              1
+133057.732: [13:30:57]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+133057.732: [13:30:57]
+133057.733: [13:30:57] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+133057.733: [13:30:57]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+133057.733: [13:30:57]
+133057.733: [13:30:57]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+133057.733: [13:30:57]
+133057.733: [13:30:57]Expanded Security Maintenance for Applications is not enabled.
+133057.733: [13:30:57]
+133057.733: [13:30:57]101 updates can be applied immediately.
+133057.733: [13:30:57]To see these additional updates run: apt list --upgradable
+133057.733: [13:30:57]
+133057.733: [13:30:57]11 additional security updates can be applied with ESM Apps.
+133057.734: [13:30:57]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+133057.734: [13:30:57]
+133057.734: [13:30:57]
+133057.734: [13:30:57]The list of available updates is more than a week old.
+133057.734: [13:30:57]To check for new updates run: sudo apt update
+133057.734: [13:30:57]
+133057.734: [13:30:57]*** System restart required ***
+133057.734: [13:30:57]Last login: Thu Mar 19 08:16:02 2026 from 192.168.4.222
+165239.889: [16:52:39][202603103-A-A10-计算-Intel-10.50.0.102-16:52:39]
+165239.904: [16:52:39]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+165239.904: [16:52:39]
+165239.904: [16:52:39] * Documentation:  https://help.ubuntu.com
+165239.904: [16:52:39] * Management:     https://landscape.canonical.com
+165239.904: [16:52:39] * Support:        https://ubuntu.com/pro
+165239.904: [16:52:39]
+165239.905: [16:52:39] System information as of Thu Mar 19 04:52:39 PM CST 2026
+165239.905: [16:52:39]
+165239.905: [16:52:39]  System load:    0.0                Temperature:                  79.0 C
+165239.905: [16:52:39]  Usage of /home: 0.1% of 301.67GB   Processes:                    1382
+165239.905: [16:52:39]  Memory usage:   0%                 Users logged in:              1
+165239.906: [16:52:39]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+165239.906: [16:52:39]
+165239.906: [16:52:39] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+165239.906: [16:52:39]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+165239.906: [16:52:39]
+165239.906: [16:52:39]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+165239.906: [16:52:39]
+165239.906: [16:52:39]Expanded Security Maintenance for Applications is not enabled.
+165239.906: [16:52:39]
+165239.906: [16:52:39]101 updates can be applied immediately.
+165239.906: [16:52:39]To see these additional updates run: apt list --upgradable
+165239.906: [16:52:39]
+165239.906: [16:52:39]11 additional security updates can be applied with ESM Apps.
+165239.907: [16:52:39]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+165239.907: [16:52:39]
+165239.907: [16:52:39]
+165239.907: [16:52:39]The list of available updates is more than a week old.
+165239.907: [16:52:39]To check for new updates run: sudo apt update
+165239.907: [16:52:39]
+165239.907: [16:52:39]*** System restart required ***
+165239.907: [16:52:39]Last login: Thu Mar 19 13:30:57 2026 from 192.168.4.222

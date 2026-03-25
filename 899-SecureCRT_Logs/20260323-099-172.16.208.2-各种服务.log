@@ -1,0 +1,123 @@
+﻿093155.414: [09:31:55][202603099-172.16.208.2-各种服务-09:31:55]
+093155.480: [09:31:55]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+093155.480: [09:31:55]
+093155.480: [09:31:55]The programs included with the Debian GNU/Linux system are free software;
+093155.481: [09:31:55]the exact distribution terms for each program are described in the
+093155.481: [09:31:55]individual files in /usr/share/doc/*/copyright.
+093155.481: [09:31:55]
+093155.481: [09:31:55]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+093155.481: [09:31:55]permitted by applicable law.
+093155.481: [09:31:55]Last login: Sun Mar 22 21:31:51 2026 from 10.253.0.11
+093200.697: [09:32:00][root@172-16-208-2 ~]# ping www.baidu.com
+093200.716: [09:32:00]PING www.a.shifen.com (180.101.51.73) 56(84) bytes of data.
+093200.757: [09:32:00]64 bytes from 180.101.51.73 (180.101.51.73): icmp_seq=1 ttl=52 time=7.32 ms
+093201.742: [09:32:01]64 bytes from 180.101.51.73 (180.101.51.73): icmp_seq=2 ttl=52 time=9.96 ms
+093202.111: [09:32:02]^C
+093202.111: [09:32:02]--- www.a.shifen.com ping statistics ---
+093202.111: [09:32:02]2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+093202.112: [09:32:02]rtt min/avg/max/mdev = 7.323/8.642/9.962/1.319 ms
+093205.616: [09:32:05][root@172-16-208-2 ~]# ping www.sina.com
+093205.668: [09:32:05]PING ww1.sinaimg.cn.w.alikunlun.com (180.97.214.183) 56(84) bytes of data.
+093205.680: [09:32:05]64 bytes from 180.97.214.183 (180.97.214.183): icmp_seq=1 ttl=55 time=7.42 ms
+093206.452: [09:32:06]^C
+093206.452: [09:32:06]--- ww1.sinaimg.cn.w.alikunlun.com ping statistics ---
+093206.452: [09:32:06]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+093206.452: [09:32:06]rtt min/avg/max/mdev = 7.420/7.420/7.420/0.000 ms
+093347.658: [09:33:47][root@172-16-208-2 ~]# ping pt.zhixing.bjtu.edu.cn
+093347.805: [09:33:47]PING pt.zhixing.bjtu.edu.cn(2001:da8:205::100 (2001:da8:205::100)) 56 data bytes
+093347.850: [09:33:47]64 bytes from 2001:da8:205::100 (2001:da8:205::100): icmp_seq=1 ttl=48 time=30.3 ms
+093348.933: [09:33:48]64 bytes from 2001:da8:205::100 (2001:da8:205::100): icmp_seq=2 ttl=48 time=33.0 ms
+093349.995: [09:33:49]64 bytes from 2001:da8:205::100 (2001:da8:205::100): icmp_seq=3 ttl=48 time=33.7 ms
+093350.898: [09:33:50]64 bytes from 2001:da8:205::100 (2001:da8:205::100): icmp_seq=4 ttl=48 time=34.0 ms
+093351.868: [09:33:51]64 bytes from 2001:da8:205::100 (2001:da8:205::100): icmp_seq=5 ttl=48 time=37.2 ms
+093352.290: [09:33:52]^C
+093352.290: [09:33:52]--- pt.zhixing.bjtu.edu.cn ping statistics ---
+093352.291: [09:33:52]5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+093352.291: [09:33:52]rtt min/avg/max/mdev = 30.261/33.631/37.216/2.221 ms
+183805.154: [18:38:05][root@172-16-208-2 ~]# ping 192.168.8.37
+183805.155: [18:38:05]PING 192.168.8.37 (192.168.8.37) 56(84) bytes of data.
+183810.187: [18:38:10]From 172.16.208.1 icmp_seq=2 Destination Host Unreachable
+183810.188: [18:38:10]From 172.16.208.1 icmp_seq=3 Destination Host Unreachable
+183815.281: [18:38:15]From 172.16.208.1 icmp_seq=7 Destination Host Unreachable
+183815.282: [18:38:15]From 172.16.208.1 icmp_seq=8 Destination Host Unreachable
+183820.414: [18:38:20]From 172.16.208.1 icmp_seq=12 Destination Host Unreachable
+183820.415: [18:38:20]From 172.16.208.1 icmp_seq=13 Destination Host Unreachable
+183825.459: [18:38:25]From 172.16.208.1 icmp_seq=17 Destination Host Unreachable
+183825.459: [18:38:25]From 172.16.208.1 icmp_seq=18 Destination Host Unreachable
+183826.240: [18:38:26]^C
+183826.241: [18:38:26]--- 192.168.8.37 ping statistics ---
+183826.241: [18:38:26]21 packets transmitted, 0 received, +8 errors, 100% packet loss, time 20352ms
+183826.241: [18:38:26]pipe 4
+183853.442: [18:38:53][root@172-16-208-2 ~]# ping 192.168.8.36
+183853.449: [18:38:53]PING 192.168.8.36 (192.168.8.36) 56(84) bytes of data.
+183858.475: [18:38:58]From 172.16.208.1 icmp_seq=2 Destination Host Unreachable
+183858.475: [18:38:58]From 172.16.208.1 icmp_seq=3 Destination Host Unreachable
+183903.524: [18:39:03]From 172.16.208.1 icmp_seq=7 Destination Host Unreachable
+183903.525: [18:39:03]From 172.16.208.1 icmp_seq=8 Destination Host Unreachable
+183908.744: [18:39:08]From 172.16.208.1 icmp_seq=12 Destination Host Unreachable
+183908.744: [18:39:08]From 172.16.208.1 icmp_seq=13 Destination Host Unreachable
+183913.735: [18:39:13]From 172.16.208.1 icmp_seq=17 Destination Host Unreachable
+183913.736: [18:39:13]From 172.16.208.1 icmp_seq=18 Destination Host Unreachable
+183918.885: [18:39:18]From 172.16.208.1 icmp_seq=22 Destination Host Unreachable
+183918.885: [18:39:18]From 172.16.208.1 icmp_seq=23 Destination Host Unreachable
+183923.917: [18:39:23]From 172.16.208.1 icmp_seq=27 Destination Host Unreachable
+183923.918: [18:39:23]From 172.16.208.1 icmp_seq=28 Destination Host Unreachable
+183929.019: [18:39:29]From 172.16.208.1 icmp_seq=32 Destination Host Unreachable
+183929.019: [18:39:29]From 172.16.208.1 icmp_seq=33 Destination Host Unreachable
+183934.138: [18:39:34]From 172.16.208.1 icmp_seq=37 Destination Host Unreachable
+183934.139: [18:39:34]From 172.16.208.1 icmp_seq=38 Destination Host Unreachable
+183939.183: [18:39:39]From 172.16.208.1 icmp_seq=42 Destination Host Unreachable
+183939.183: [18:39:39]From 172.16.208.1 icmp_seq=43 Destination Host Unreachable
+183944.279: [18:39:44]From 172.16.208.1 icmp_seq=47 Destination Host Unreachable
+183944.280: [18:39:44]From 172.16.208.1 icmp_seq=48 Destination Host Unreachable
+183949.401: [18:39:49]From 172.16.208.1 icmp_seq=52 Destination Host Unreachable
+183949.401: [18:39:49]From 172.16.208.1 icmp_seq=53 Destination Host Unreachable
+183954.410: [18:39:54]From 172.16.208.1 icmp_seq=57 Destination Host Unreachable
+183954.411: [18:39:54]From 172.16.208.1 icmp_seq=58 Destination Host Unreachable
+183959.638: [18:39:59]From 172.16.208.1 icmp_seq=62 Destination Host Unreachable
+183959.638: [18:39:59]From 172.16.208.1 icmp_seq=63 Destination Host Unreachable
+184004.657: [18:40:04]From 172.16.208.1 icmp_seq=67 Destination Host Unreachable
+184004.658: [18:40:04]From 172.16.208.1 icmp_seq=68 Destination Host Unreachable
+184009.777: [18:40:09]From 172.16.208.1 icmp_seq=72 Destination Host Unreachable
+184009.778: [18:40:09]From 172.16.208.1 icmp_seq=73 Destination Host Unreachable
+184014.899: [18:40:14]From 172.16.208.1 icmp_seq=77 Destination Host Unreachable
+184014.900: [18:40:14]From 172.16.208.1 icmp_seq=78 Destination Host Unreachable
+184019.914: [18:40:19]From 172.16.208.1 icmp_seq=82 Destination Host Unreachable
+184019.915: [18:40:19]From 172.16.208.1 icmp_seq=83 Destination Host Unreachable
+184025.033: [18:40:25]From 172.16.208.1 icmp_seq=87 Destination Host Unreachable
+184025.033: [18:40:25]From 172.16.208.1 icmp_seq=88 Destination Host Unreachable
+184030.153: [18:40:30]From 172.16.208.1 icmp_seq=92 Destination Host Unreachable
+184030.154: [18:40:30]From 172.16.208.1 icmp_seq=93 Destination Host Unreachable
+184035.171: [18:40:35]From 172.16.208.1 icmp_seq=97 Destination Host Unreachable
+184035.173: [18:40:35]From 172.16.208.1 icmp_seq=98 Destination Host Unreachable
+184040.232: [18:40:40]From 172.16.208.1 icmp_seq=102 Destination Host Unreachable
+184040.233: [18:40:40]From 172.16.208.1 icmp_seq=103 Destination Host Unreachable
+184045.324: [18:40:45]From 172.16.208.1 icmp_seq=107 Destination Host Unreachable
+184045.325: [18:40:45]From 172.16.208.1 icmp_seq=108 Destination Host Unreachable
+184050.284: [18:40:50]^C
+184050.284: [18:40:50]--- 192.168.8.36 ping statistics ---
+184050.284: [18:40:50]115 packets transmitted, 0 received, +44 errors, 100% packet loss, time 116021ms
+184050.284: [18:40:50]pipe 4
+184258.007: [18:42:58][root@172-16-208-2 ~]# ping 192.168.8.37
+184258.022: [18:42:58]PING 192.168.8.37 (192.168.8.37) 56(84) bytes of data.
+184303.041: [18:43:03]From 172.16.208.1 icmp_seq=2 Destination Host Unreachable
+184303.041: [18:43:03]From 172.16.208.1 icmp_seq=3 Destination Host Unreachable
+184308.101: [18:43:08]From 172.16.208.1 icmp_seq=7 Destination Host Unreachable
+184308.101: [18:43:08]From 172.16.208.1 icmp_seq=8 Destination Host Unreachable
+184313.200: [18:43:13]From 172.16.208.1 icmp_seq=12 Destination Host Unreachable
+184313.200: [18:43:13]From 172.16.208.1 icmp_seq=13 Destination Host Unreachable
+184318.295: [18:43:18]From 172.16.208.1 icmp_seq=17 Destination Host Unreachable
+184318.296: [18:43:18]From 172.16.208.1 icmp_seq=18 Destination Host Unreachable
+184323.358: [18:43:23]From 172.16.208.1 icmp_seq=22 Destination Host Unreachable
+184323.358: [18:43:23]From 172.16.208.1 icmp_seq=23 Destination Host Unreachable
+184328.534: [18:43:28]From 172.16.208.1 icmp_seq=27 Destination Host Unreachable
+184328.534: [18:43:28]From 172.16.208.1 icmp_seq=28 Destination Host Unreachable
+184333.653: [18:43:33]From 172.16.208.1 icmp_seq=32 Destination Host Unreachable
+184333.654: [18:43:33]From 172.16.208.1 icmp_seq=33 Destination Host Unreachable
+184337.323: [18:43:37]^C
+184337.323: [18:43:37]--- 192.168.8.37 ping statistics ---
+184337.324: [18:43:37]39 packets transmitted, 0 received, +14 errors, 100% packet loss, time 38658ms
+184337.324: [18:43:37]pipe 4
+184815.969: [18:48:15][root@172-16-208-2 ~]# 
+184816.092: [18:48:16][root@172-16-208-2 ~]# 
+184816.238: [18:48:16][root@172-16-208-2 ~]# 

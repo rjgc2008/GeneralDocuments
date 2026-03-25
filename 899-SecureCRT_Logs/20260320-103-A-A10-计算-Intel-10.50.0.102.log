@@ -1,0 +1,35 @@
+﻿080626.342: [08:06:26][202603103-A-A10-计算-Intel-10.50.0.102-08:06:26]
+080626.455: [08:06:26]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+080626.455: [08:06:26]
+080626.456: [08:06:26] * Documentation:  https://help.ubuntu.com
+080626.456: [08:06:26] * Management:     https://landscape.canonical.com
+080626.456: [08:06:26] * Support:        https://ubuntu.com/pro
+080626.456: [08:06:26]
+080626.456: [08:06:26] System information as of Fri Mar 20 08:06:25 AM CST 2026
+080626.456: [08:06:26]
+080626.457: [08:06:26]  System load:    0.08               Temperature:                  75.0 C
+080626.457: [08:06:26]  Usage of /home: 0.1% of 301.67GB   Processes:                    1394
+080626.457: [08:06:26]  Memory usage:   0%                 Users logged in:              2
+080626.457: [08:06:26]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+080626.457: [08:06:26]
+080626.457: [08:06:26] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+080626.458: [08:06:26]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+080626.458: [08:06:26]
+080626.458: [08:06:26]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+080626.458: [08:06:26]
+080626.458: [08:06:26]Expanded Security Maintenance for Applications is not enabled.
+080626.458: [08:06:26]
+080626.458: [08:06:26]101 updates can be applied immediately.
+080626.458: [08:06:26]To see these additional updates run: apt list --upgradable
+080626.458: [08:06:26]
+080626.458: [08:06:26]11 additional security updates can be applied with ESM Apps.
+080626.458: [08:06:26]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+080626.458: [08:06:26]
+080626.458: [08:06:26]
+080626.459: [08:06:26]The list of available updates is more than a week old.
+080626.459: [08:06:26]To check for new updates run: sudo apt update
+080626.459: [08:06:26]
+080626.459: [08:06:26]*** System restart required ***
+080626.459: [08:06:26]Last login: Thu Mar 19 16:52:39 2026 from 192.168.4.222
+090026.739: [09:00:26]root@suzhouproda102:~# 
+090026.868: [09:00:26]root@suzhouproda102:~# 

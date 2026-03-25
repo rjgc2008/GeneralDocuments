@@ -1,0 +1,501 @@
+﻿145611.535: [14:56:11][202602Ctyun3-14:56:11]
+145611.618: [14:56:11]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+145611.618: [14:56:11]
+145611.618: [14:56:11]The programs included with the Debian GNU/Linux system are free software;
+145611.619: [14:56:11]the exact distribution terms for each program are described in the
+145611.619: [14:56:11]individual files in /usr/share/doc/*/copyright.
+145611.619: [14:56:11]
+145611.619: [14:56:11]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+145611.619: [14:56:11]permitted by applicable law.
+145611.620: [14:56:11]Last login: Thu Feb  5 21:38:54 2026 from 10.253.0.11
+145615.140: [14:56:15][root@10-253-0-3 ~]# df -lh
+145615.154: [14:56:15]Filesystem         Size  Used Avail Use% Mounted on
+145615.155: [14:56:15]udev               7.8G     0  7.8G   0% /dev
+145615.155: [14:56:15]tmpfs              1.6G  2.3M  1.6G   1% /run
+145615.155: [14:56:15]/dev/vda2           36G  9.1G   25G  28% /
+145615.155: [14:56:15]tmpfs              7.9G     0  7.9G   0% /dev/shm
+145615.155: [14:56:15]tmpfs              5.0M  4.0K  5.0M   1% /run/lock
+145615.155: [14:56:15]/dev/mapper/vg-lv  8.9T  952G  7.6T  11% /DATA/Media
+145615.155: [14:56:15]overlay             36G  9.1G   25G  28% /var/lib/docker/overlay2/e75acff19d04043c2227c2b3357b956aa5f610069fbea4d288eaff1ec0b1189c/merged
+145615.156: [14:56:15]tmpfs              1.6G     0  1.6G   0% /run/user/0
+145621.954: [14:56:21][root@10-253-0-3 ~]# cd /DATA/
+145622.615: [14:56:22][root@10-253-0-3 /DATA]# ll
+145622.628: [14:56:22]total 20K
+145622.628: [14:56:22]drwxrwxrwx 4 root root 4.0K Jan  7 17:34 AppData
+145622.628: [14:56:22]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Documents
+145622.628: [14:56:22]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Downloads
+145622.629: [14:56:22]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Gallery
+145622.629: [14:56:22]drwxrwxrwx 6 root root 4.0K Jan  7 18:49 Media
+145625.513: [14:56:25][root@10-253-0-3 /DATA]# cd Media/
+145626.262: [14:56:26][root@10-253-0-3 /DATA/Media]# ll
+145626.271: [14:56:26]total 28K
+145626.271: [14:56:26]drwxr-xr-x 4 moo  moo  4.0K May 22  2024 AppData
+145626.271: [14:56:26]drwxrwxrwx 3 moo  moo  4.0K Apr  1  2025 Documents
+145626.271: [14:56:26]drwx---rwx 2 root root  16K Jul 28  2023 lost+found
+145626.271: [14:56:26]drwxrwxrwx 5 moo  moo  4.0K Jan  7 18:49 XTV-BACKUP
+145629.129: [14:56:29][root@10-253-0-3 /DATA/Media]# cd XTV-BACKUP/
+145629.708: [14:56:29][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# ll
+145629.715: [14:56:29]total 4.0K
+145629.716: [14:56:29]drwxrwxr-x 5 moo moo 4.0K May 22  2024 xiaomi_camera_videos
+145634.510: [14:56:34][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# du -sh *
+145649.360: [14:56:49]948G    xiaomi_camera_videos
+150354.857: [15:03:54][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# cd ..
+150355.449: [15:03:55][root@10-253-0-3 /DATA/Media]# ll
+150355.450: [15:03:55]total 28K
+150355.450: [15:03:55]drwxr-xr-x 4 moo  moo  4.0K May 22  2024 AppData
+150355.450: [15:03:55]drwxrwxrwx 3 moo  moo  4.0K Apr  1  2025 Documents
+150355.451: [15:03:55]drwx---rwx 2 root root  16K Jul 28  2023 lost+found
+150355.451: [15:03:55]drwxrwxrwx 5 moo  moo  4.0K Jan  7 18:49 XTV-BACKUP
+150408.638: [15:04:08][root@10-253-0-3 /DATA/Media]# cd /opt
+150409.391: [15:04:09][root@10-253-0-3 /opt]# ll
+150409.392: [15:04:09]total 4.0K
+150409.392: [15:04:09]drwx--x--x 4 root root 4.0K May 22  2024 containerd
+150426.290: [15:04:26][root@10-253-0-3 /opt]# mkdir XTV-BACKUP
+150427.890: [15:04:27][root@10-253-0-3 /opt]# ll
+150427.912: [15:04:27]total 8.0K
+150427.912: [15:04:27]drwx--x--x 4 root root 4.0K May 22  2024 containerd
+150427.912: [15:04:27]drwxr-xr-x 2 root root 4.0K Feb 27 15:04 XTV-BACKUP
+150541.850: [15:05:41][root@10-253-0-3 /opt]# lsblk
+150541.873: [15:05:41]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150541.873: [15:05:41]vda       254:0    0   40G  0 disk 
+150541.873: [15:05:41]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150541.873: [15:05:41]└─vda2    254:2    0 36.3G  0 part /
+150541.873: [15:05:41]vdb       254:16   0    1T  0 disk 
+150541.873: [15:05:41]└─vdb1    254:17   0 1024G  0 part 
+150541.873: [15:05:41]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150541.873: [15:05:41]vdc       254:32   0    2T  0 disk 
+150541.873: [15:05:41]└─vdc1    254:33   0    2T  0 part 
+150541.873: [15:05:41]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150541.874: [15:05:41]vdd       254:48   0    2T  0 disk 
+150541.874: [15:05:41]└─vdd1    254:49   0    2T  0 part 
+150541.874: [15:05:41]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150541.874: [15:05:41]vde       254:64   0    2T  0 disk 
+150541.874: [15:05:41]└─vde1    254:65   0    2T  0 part 
+150541.874: [15:05:41]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150541.874: [15:05:41]vdf       254:80   0    2T  0 disk 
+150541.874: [15:05:41]└─vdf1    254:81   0    2T  0 part 
+150541.874: [15:05:41]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150543.294: [15:05:43][root@10-253-0-3 /opt]# ll
+150543.320: [15:05:43]total 8.0K
+150543.320: [15:05:43]drwx--x--x 4 root root 4.0K May 22  2024 containerd
+150543.320: [15:05:43]drwxr-xr-x 2 root root 4.0K Feb 27 15:04 XTV-BACKUP
+150544.848: [15:05:44][root@10-253-0-3 /opt]# df -lh
+150544.874: [15:05:44]Filesystem         Size  Used Avail Use% Mounted on
+150544.874: [15:05:44]udev               7.8G     0  7.8G   0% /dev
+150544.874: [15:05:44]tmpfs              1.6G  2.3M  1.6G   1% /run
+150544.874: [15:05:44]/dev/vda2           36G  9.0G   25G  27% /
+150544.874: [15:05:44]tmpfs              7.9G     0  7.9G   0% /dev/shm
+150544.874: [15:05:44]tmpfs              5.0M  4.0K  5.0M   1% /run/lock
+150544.874: [15:05:44]/dev/mapper/vg-lv  8.9T  952G  7.6T  11% /DATA/Media
+150544.875: [15:05:44]overlay             36G  9.0G   25G  27% /var/lib/docker/overlay2/e75acff19d04043c2227c2b3357b956aa5f610069fbea4d288eaff1ec0b1189c/merged
+150544.875: [15:05:44]tmpfs              1.6G     0  1.6G   0% /run/user/0
+150545.726: [15:05:45][root@10-253-0-3 /opt]# lsblk
+150545.749: [15:05:45]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150545.749: [15:05:45]vda       254:0    0   40G  0 disk 
+150545.749: [15:05:45]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150545.749: [15:05:45]└─vda2    254:2    0 36.3G  0 part /
+150545.749: [15:05:45]vdb       254:16   0    1T  0 disk 
+150545.749: [15:05:45]└─vdb1    254:17   0 1024G  0 part 
+150545.750: [15:05:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150545.750: [15:05:45]vdc       254:32   0    2T  0 disk 
+150545.750: [15:05:45]└─vdc1    254:33   0    2T  0 part 
+150545.750: [15:05:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150545.750: [15:05:45]vdd       254:48   0    2T  0 disk 
+150545.750: [15:05:45]└─vdd1    254:49   0    2T  0 part 
+150545.750: [15:05:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150545.750: [15:05:45]vde       254:64   0    2T  0 disk 
+150545.750: [15:05:45]└─vde1    254:65   0    2T  0 part 
+150545.750: [15:05:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150545.750: [15:05:45]vdf       254:80   0    2T  0 disk 
+150545.751: [15:05:45]└─vdf1    254:81   0    2T  0 part 
+150545.751: [15:05:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150551.918: [15:05:51][root@10-253-0-3 /opt]# lsblk
+150551.942: [15:05:51]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150551.942: [15:05:51]vda       254:0    0   40G  0 disk 
+150551.942: [15:05:51]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150551.942: [15:05:51]└─vda2    254:2    0 36.3G  0 part /
+150551.942: [15:05:51]vdb       254:16   0    1T  0 disk 
+150551.942: [15:05:51]└─vdb1    254:17   0 1024G  0 part 
+150551.942: [15:05:51]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150551.942: [15:05:51]vdc       254:32   0    2T  0 disk 
+150551.942: [15:05:51]└─vdc1    254:33   0    2T  0 part 
+150551.943: [15:05:51]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150551.943: [15:05:51]vdd       254:48   0    2T  0 disk 
+150551.943: [15:05:51]└─vdd1    254:49   0    2T  0 part 
+150551.943: [15:05:51]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150551.943: [15:05:51]vde       254:64   0    2T  0 disk 
+150551.943: [15:05:51]└─vde1    254:65   0    2T  0 part 
+150551.943: [15:05:51]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150551.943: [15:05:51]vdf       254:80   0    2T  0 disk 
+150551.943: [15:05:51]└─vdf1    254:81   0    2T  0 part 
+150551.943: [15:05:51]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150554.316: [15:05:54][root@10-253-0-3 /opt]# lsblk
+150554.338: [15:05:54]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150554.338: [15:05:54]vda       254:0    0   40G  0 disk 
+150554.338: [15:05:54]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150554.338: [15:05:54]└─vda2    254:2    0 36.3G  0 part /
+150554.338: [15:05:54]vdb       254:16   0    1T  0 disk 
+150554.338: [15:05:54]└─vdb1    254:17   0 1024G  0 part 
+150554.338: [15:05:54]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150554.338: [15:05:54]vdc       254:32   0    2T  0 disk 
+150554.338: [15:05:54]└─vdc1    254:33   0    2T  0 part 
+150554.339: [15:05:54]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150554.339: [15:05:54]vdd       254:48   0    2T  0 disk 
+150554.339: [15:05:54]└─vdd1    254:49   0    2T  0 part 
+150554.339: [15:05:54]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150554.339: [15:05:54]vde       254:64   0    2T  0 disk 
+150554.339: [15:05:54]└─vde1    254:65   0    2T  0 part 
+150554.339: [15:05:54]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150554.339: [15:05:54]vdf       254:80   0    2T  0 disk 
+150554.339: [15:05:54]└─vdf1    254:81   0    2T  0 part 
+150554.339: [15:05:54]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150555.862: [15:05:55][root@10-253-0-3 /opt]# lsblk
+150555.885: [15:05:55]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150555.885: [15:05:55]vda       254:0    0   40G  0 disk 
+150555.885: [15:05:55]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150555.885: [15:05:55]└─vda2    254:2    0 36.3G  0 part /
+150555.885: [15:05:55]vdb       254:16   0    1T  0 disk 
+150555.886: [15:05:55]└─vdb1    254:17   0 1024G  0 part 
+150555.886: [15:05:55]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150555.886: [15:05:55]vdc       254:32   0    2T  0 disk 
+150555.886: [15:05:55]└─vdc1    254:33   0    2T  0 part 
+150555.886: [15:05:55]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150555.886: [15:05:55]vdd       254:48   0    2T  0 disk 
+150555.886: [15:05:55]└─vdd1    254:49   0    2T  0 part 
+150555.886: [15:05:55]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150555.886: [15:05:55]vde       254:64   0    2T  0 disk 
+150555.886: [15:05:55]└─vde1    254:65   0    2T  0 part 
+150555.887: [15:05:55]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150555.887: [15:05:55]vdf       254:80   0    2T  0 disk 
+150555.887: [15:05:55]└─vdf1    254:81   0    2T  0 part 
+150555.887: [15:05:55]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150603.379: [15:06:03][root@10-253-0-3 /opt]# lsblk
+150603.403: [15:06:03]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150603.403: [15:06:03]vda       254:0    0   40G  0 disk 
+150603.403: [15:06:03]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150603.403: [15:06:03]└─vda2    254:2    0 36.3G  0 part /
+150603.403: [15:06:03]vdb       254:16   0    1T  0 disk 
+150603.403: [15:06:03]└─vdb1    254:17   0 1024G  0 part 
+150603.403: [15:06:03]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150603.403: [15:06:03]vdc       254:32   0    2T  0 disk 
+150603.403: [15:06:03]└─vdc1    254:33   0    2T  0 part 
+150603.404: [15:06:03]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150603.404: [15:06:03]vdd       254:48   0    2T  0 disk 
+150603.404: [15:06:03]└─vdd1    254:49   0    2T  0 part 
+150603.404: [15:06:03]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150603.404: [15:06:03]vde       254:64   0    2T  0 disk 
+150603.404: [15:06:03]└─vde1    254:65   0    2T  0 part 
+150603.404: [15:06:03]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150603.404: [15:06:03]vdf       254:80   0    2T  0 disk 
+150603.404: [15:06:03]└─vdf1    254:81   0    2T  0 part 
+150603.404: [15:06:03]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150606.722: [15:06:06][root@10-253-0-3 /opt]# lsblk
+150606.744: [15:06:06]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150606.744: [15:06:06]vda       254:0    0   40G  0 disk 
+150606.744: [15:06:06]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150606.744: [15:06:06]└─vda2    254:2    0 36.3G  0 part /
+150606.744: [15:06:06]vdb       254:16   0    1T  0 disk 
+150606.744: [15:06:06]└─vdb1    254:17   0 1024G  0 part 
+150606.745: [15:06:06]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150606.745: [15:06:06]vdc       254:32   0    2T  0 disk 
+150606.745: [15:06:06]└─vdc1    254:33   0    2T  0 part 
+150606.745: [15:06:06]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150606.745: [15:06:06]vdd       254:48   0    2T  0 disk 
+150606.745: [15:06:06]└─vdd1    254:49   0    2T  0 part 
+150606.745: [15:06:06]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150606.745: [15:06:06]vde       254:64   0    2T  0 disk 
+150606.745: [15:06:06]└─vde1    254:65   0    2T  0 part 
+150606.746: [15:06:06]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150606.746: [15:06:06]vdf       254:80   0    2T  0 disk 
+150606.746: [15:06:06]└─vdf1    254:81   0    2T  0 part 
+150606.746: [15:06:06]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150610.700: [15:06:10][root@10-253-0-3 /opt]# lsblk
+150610.701: [15:06:10]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150610.701: [15:06:10]vda       254:0    0   40G  0 disk 
+150610.701: [15:06:10]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150610.701: [15:06:10]└─vda2    254:2    0 36.3G  0 part /
+150610.701: [15:06:10]vdb       254:16   0    1T  0 disk 
+150610.702: [15:06:10]└─vdb1    254:17   0 1024G  0 part 
+150610.702: [15:06:10]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150610.702: [15:06:10]vdc       254:32   0    2T  0 disk 
+150610.702: [15:06:10]└─vdc1    254:33   0    2T  0 part 
+150610.702: [15:06:10]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150610.702: [15:06:10]vdd       254:48   0    2T  0 disk 
+150610.702: [15:06:10]└─vdd1    254:49   0    2T  0 part 
+150610.702: [15:06:10]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150610.702: [15:06:10]vde       254:64   0    2T  0 disk 
+150610.703: [15:06:10]└─vde1    254:65   0    2T  0 part 
+150610.703: [15:06:10]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150610.703: [15:06:10]vdf       254:80   0    2T  0 disk 
+150610.703: [15:06:10]└─vdf1    254:81   0    2T  0 part 
+150610.703: [15:06:10]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150611.869: [15:06:11][root@10-253-0-3 /opt]# lsblk
+150611.892: [15:06:11]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150611.892: [15:06:11]vda       254:0    0   40G  0 disk 
+150611.892: [15:06:11]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150611.892: [15:06:11]└─vda2    254:2    0 36.3G  0 part /
+150611.892: [15:06:11]vdb       254:16   0    1T  0 disk 
+150611.892: [15:06:11]└─vdb1    254:17   0 1024G  0 part 
+150611.892: [15:06:11]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150611.893: [15:06:11]vdc       254:32   0    2T  0 disk 
+150611.893: [15:06:11]└─vdc1    254:33   0    2T  0 part 
+150611.893: [15:06:11]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150611.893: [15:06:11]vdd       254:48   0    2T  0 disk 
+150611.893: [15:06:11]└─vdd1    254:49   0    2T  0 part 
+150611.893: [15:06:11]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150611.893: [15:06:11]vde       254:64   0    2T  0 disk 
+150611.893: [15:06:11]└─vde1    254:65   0    2T  0 part 
+150611.893: [15:06:11]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150611.893: [15:06:11]vdf       254:80   0    2T  0 disk 
+150611.893: [15:06:11]└─vdf1    254:81   0    2T  0 part 
+150611.894: [15:06:11]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150617.074: [15:06:17][root@10-253-0-3 /opt]# lsblk
+150617.092: [15:06:17]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150617.092: [15:06:17]vda       254:0    0   40G  0 disk 
+150617.092: [15:06:17]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150617.092: [15:06:17]└─vda2    254:2    0 36.3G  0 part /
+150617.092: [15:06:17]vdb       254:16   0    1T  0 disk 
+150617.092: [15:06:17]└─vdb1    254:17   0 1024G  0 part 
+150617.092: [15:06:17]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150617.092: [15:06:17]vdc       254:32   0    2T  0 disk 
+150617.093: [15:06:17]└─vdc1    254:33   0    2T  0 part 
+150617.093: [15:06:17]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150617.093: [15:06:17]vdd       254:48   0    2T  0 disk 
+150617.093: [15:06:17]└─vdd1    254:49   0    2T  0 part 
+150617.093: [15:06:17]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150617.093: [15:06:17]vde       254:64   0    2T  0 disk 
+150617.093: [15:06:17]└─vde1    254:65   0    2T  0 part 
+150617.093: [15:06:17]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150617.093: [15:06:17]vdf       254:80   0    2T  0 disk 
+150617.093: [15:06:17]└─vdf1    254:81   0    2T  0 part 
+150617.093: [15:06:17]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150631.054: [15:06:31][root@10-253-0-3 /opt]# lsblk
+150631.072: [15:06:31]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150631.072: [15:06:31]vda       254:0    0   40G  0 disk 
+150631.072: [15:06:31]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150631.072: [15:06:31]└─vda2    254:2    0 36.3G  0 part /
+150631.072: [15:06:31]vdb       254:16   0    1T  0 disk 
+150631.073: [15:06:31]└─vdb1    254:17   0 1024G  0 part 
+150631.073: [15:06:31]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150631.073: [15:06:31]vdc       254:32   0    2T  0 disk 
+150631.073: [15:06:31]└─vdc1    254:33   0    2T  0 part 
+150631.073: [15:06:31]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150631.073: [15:06:31]vdd       254:48   0    2T  0 disk 
+150631.073: [15:06:31]└─vdd1    254:49   0    2T  0 part 
+150631.073: [15:06:31]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150631.073: [15:06:31]vde       254:64   0    2T  0 disk 
+150631.073: [15:06:31]└─vde1    254:65   0    2T  0 part 
+150631.073: [15:06:31]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150631.073: [15:06:31]vdf       254:80   0    2T  0 disk 
+150631.073: [15:06:31]└─vdf1    254:81   0    2T  0 part 
+150631.073: [15:06:31]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150632.557: [15:06:32][root@10-253-0-3 /opt]# df -lh
+150632.575: [15:06:32]Filesystem         Size  Used Avail Use% Mounted on
+150632.575: [15:06:32]udev               7.8G     0  7.8G   0% /dev
+150632.575: [15:06:32]tmpfs              1.6G  2.3M  1.6G   1% /run
+150632.575: [15:06:32]/dev/vda2           36G  9.0G   25G  27% /
+150632.575: [15:06:32]tmpfs              7.9G     0  7.9G   0% /dev/shm
+150632.575: [15:06:32]tmpfs              5.0M  4.0K  5.0M   1% /run/lock
+150632.575: [15:06:32]/dev/mapper/vg-lv  8.9T  952G  7.6T  11% /DATA/Media
+150632.576: [15:06:32]overlay             36G  9.0G   25G  27% /var/lib/docker/overlay2/e75acff19d04043c2227c2b3357b956aa5f610069fbea4d288eaff1ec0b1189c/merged
+150632.576: [15:06:32]tmpfs              1.6G     0  1.6G   0% /run/user/0
+150633.282: [15:06:33][root@10-253-0-3 /opt]# 
+150633.606: [15:06:33][root@10-253-0-3 /opt]# 
+150633.606: [15:06:33][root@10-253-0-3 /opt]# 
+150633.691: [15:06:33][root@10-253-0-3 /opt]# 
+150634.842: [15:06:34][root@10-253-0-3 /opt]# lsblk
+150634.856: [15:06:34]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150634.856: [15:06:34]vda       254:0    0   40G  0 disk 
+150634.857: [15:06:34]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150634.857: [15:06:34]└─vda2    254:2    0 36.3G  0 part /
+150634.857: [15:06:34]vdb       254:16   0    1T  0 disk 
+150634.857: [15:06:34]└─vdb1    254:17   0 1024G  0 part 
+150634.857: [15:06:34]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150634.857: [15:06:34]vdc       254:32   0    2T  0 disk 
+150634.857: [15:06:34]└─vdc1    254:33   0    2T  0 part 
+150634.857: [15:06:34]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150634.857: [15:06:34]vdd       254:48   0    2T  0 disk 
+150634.857: [15:06:34]└─vdd1    254:49   0    2T  0 part 
+150634.857: [15:06:34]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150634.857: [15:06:34]vde       254:64   0    2T  0 disk 
+150634.857: [15:06:34]└─vde1    254:65   0    2T  0 part 
+150634.857: [15:06:34]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150634.857: [15:06:34]vdf       254:80   0    2T  0 disk 
+150634.857: [15:06:34]└─vdf1    254:81   0    2T  0 part 
+150634.857: [15:06:34]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150641.995: [15:06:41][root@10-253-0-3 /opt]# 
+150642.008: [15:06:42]logout
+150643.416: [15:06:43][202602Ctyun3-15:06:43]
+150643.572: [15:06:43]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+150643.572: [15:06:43]
+150643.573: [15:06:43]The programs included with the Debian GNU/Linux system are free software;
+150643.573: [15:06:43]the exact distribution terms for each program are described in the
+150643.573: [15:06:43]individual files in /usr/share/doc/*/copyright.
+150643.573: [15:06:43]
+150643.573: [15:06:43]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+150643.573: [15:06:43]permitted by applicable law.
+150643.574: [15:06:43]Last login: Fri Feb 27 14:56:11 2026 from 223.107.68.194
+150645.198: [15:06:45][root@10-253-0-3 ~]# lsblk
+150645.205: [15:06:45]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150645.205: [15:06:45]vda       254:0    0   40G  0 disk 
+150645.205: [15:06:45]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150645.205: [15:06:45]└─vda2    254:2    0 36.3G  0 part /
+150645.205: [15:06:45]vdb       254:16   0    1T  0 disk 
+150645.205: [15:06:45]└─vdb1    254:17   0 1024G  0 part 
+150645.205: [15:06:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150645.206: [15:06:45]vdc       254:32   0    2T  0 disk 
+150645.206: [15:06:45]└─vdc1    254:33   0    2T  0 part 
+150645.206: [15:06:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150645.206: [15:06:45]vdd       254:48   0    2T  0 disk 
+150645.206: [15:06:45]└─vdd1    254:49   0    2T  0 part 
+150645.206: [15:06:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150645.206: [15:06:45]vde       254:64   0    2T  0 disk 
+150645.206: [15:06:45]└─vde1    254:65   0    2T  0 part 
+150645.207: [15:06:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150645.207: [15:06:45]vdf       254:80   0    2T  0 disk 
+150645.207: [15:06:45]└─vdf1    254:81   0    2T  0 part 
+150645.207: [15:06:45]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150736.184: [15:07:36][root@10-253-0-3 ~]# 
+150736.258: [15:07:36][root@10-253-0-3 ~]# 
+150738.286: [15:07:38][root@10-253-0-3 ~]# lsblk
+150738.296: [15:07:38]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150738.297: [15:07:38]vda       254:0    0   40G  0 disk 
+150738.297: [15:07:38]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150738.297: [15:07:38]└─vda2    254:2    0 36.3G  0 part /
+150738.297: [15:07:38]vdb       254:16   0    1T  0 disk 
+150738.297: [15:07:38]└─vdb1    254:17   0 1024G  0 part 
+150738.298: [15:07:38]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150738.298: [15:07:38]vdc       254:32   0    2T  0 disk 
+150738.298: [15:07:38]└─vdc1    254:33   0    2T  0 part 
+150738.298: [15:07:38]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150738.298: [15:07:38]vdd       254:48   0    2T  0 disk 
+150738.298: [15:07:38]└─vdd1    254:49   0    2T  0 part 
+150738.298: [15:07:38]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150738.298: [15:07:38]vde       254:64   0    2T  0 disk 
+150738.298: [15:07:38]└─vde1    254:65   0    2T  0 part 
+150738.299: [15:07:38]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150738.299: [15:07:38]vdf       254:80   0    2T  0 disk 
+150738.299: [15:07:38]└─vdf1    254:81   0    2T  0 part 
+150738.299: [15:07:38]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150744.913: [15:07:44][root@10-253-0-3 ~]# fdisk -l
+150745.047: [15:07:45]Disk /dev/vda: 40 GiB, 42949672960 bytes, 83886080 sectors
+150745.048: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.048: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.048: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150745.048: [15:07:45]Disklabel type: dos
+150745.049: [15:07:45]Disk identifier: 0xd56c753a
+150745.049: [15:07:45]
+150745.050: [15:07:45]Device     Boot   Start      End  Sectors  Size Id Type
+150745.050: [15:07:45]/dev/vda1          2048  7813119  7811072  3.7G 82 Linux swap / Solaris
+150745.050: [15:07:45]/dev/vda2  *    7813120 83884031 76070912 36.3G 83 Linux
+150745.050: [15:07:45]
+150745.050: [15:07:45]
+150745.050: [15:07:45]Disk /dev/vdb: 1 TiB, 1099511627776 bytes, 2147483648 sectors
+150745.050: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.051: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.051: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150745.051: [15:07:45]Disklabel type: dos
+150745.051: [15:07:45]Disk identifier: 0x115fba4d
+150745.051: [15:07:45]
+150745.052: [15:07:45]Device     Boot Start        End    Sectors  Size Id Type
+150745.052: [15:07:45]/dev/vdb1        2048 2147483647 2147481600 1024G 8e Linux LVM
+150745.068: [15:07:45]
+150745.068: [15:07:45]
+150745.068: [15:07:45]Disk /dev/vdc: 2 TiB, 2199023255552 bytes, 4294967296 sectors
+150745.068: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.068: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.068: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150745.068: [15:07:45]Disklabel type: dos
+150745.083: [15:07:45]Disk identifier: 0x35430edb
+150745.083: [15:07:45]
+150745.084: [15:07:45]Device     Boot Start        End    Sectors Size Id Type
+150745.084: [15:07:45]/dev/vdc1        2048 4294967295 4294965248   2T 8e Linux LVM
+150745.084: [15:07:45]
+150745.084: [15:07:45]
+150745.084: [15:07:45]Disk /dev/vdd: 2 TiB, 2199023255552 bytes, 4294967296 sectors
+150745.084: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.084: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.084: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150745.084: [15:07:45]Disklabel type: dos
+150745.084: [15:07:45]Disk identifier: 0xadc089b2
+150745.084: [15:07:45]
+150745.085: [15:07:45]Device     Boot Start        End    Sectors Size Id Type
+150745.085: [15:07:45]/dev/vdd1        2048 4294967295 4294965248   2T 8e Linux LVM
+150745.085: [15:07:45]
+150745.085: [15:07:45]
+150745.085: [15:07:45]Disk /dev/vde: 2 TiB, 2199023255552 bytes, 4294967296 sectors
+150745.085: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.085: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.085: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150745.085: [15:07:45]Disklabel type: dos
+150745.085: [15:07:45]Disk identifier: 0x3ca22323
+150745.085: [15:07:45]
+150745.086: [15:07:45]Device     Boot Start        End    Sectors Size Id Type
+150745.086: [15:07:45]/dev/vde1        2048 4294967295 4294965248   2T 8e Linux LVM
+150745.086: [15:07:45]
+150745.086: [15:07:45]
+150745.086: [15:07:45]Disk /dev/vdf: 2 TiB, 2199023255552 bytes, 4294967296 sectors
+150745.086: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.086: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.086: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150745.086: [15:07:45]Disklabel type: dos
+150745.086: [15:07:45]Disk identifier: 0x34a4718a
+150745.094: [15:07:45]
+150745.094: [15:07:45]Device     Boot Start        End    Sectors Size Id Type
+150745.094: [15:07:45]/dev/vdf1        2048 4294967295 4294965248   2T 8e Linux LVM
+150745.094: [15:07:45]
+150745.094: [15:07:45]
+150745.095: [15:07:45]Disk /dev/mapper/vg-lv: 9 TiB, 9895583678464 bytes, 19327311872 sectors
+150745.095: [15:07:45]Units: sectors of 1 * 512 = 512 bytes
+150745.095: [15:07:45]Sector size (logical/physical): 512 bytes / 512 bytes
+150745.095: [15:07:45]I/O size (minimum/optimal): 512 bytes / 512 bytes
+150842.439: [15:08:42][root@10-253-0-3 ~]# df -lh
+150842.461: [15:08:42]Filesystem         Size  Used Avail Use% Mounted on
+150842.461: [15:08:42]udev               7.8G     0  7.8G   0% /dev
+150842.461: [15:08:42]tmpfs              1.6G  2.3M  1.6G   1% /run
+150842.461: [15:08:42]/dev/vda2           36G  9.0G   25G  27% /
+150842.461: [15:08:42]tmpfs              7.9G     0  7.9G   0% /dev/shm
+150842.461: [15:08:42]tmpfs              5.0M  4.0K  5.0M   1% /run/lock
+150842.461: [15:08:42]/dev/mapper/vg-lv  8.9T  952G  7.6T  11% /DATA/Media
+150842.462: [15:08:42]overlay             36G  9.0G   25G  27% /var/lib/docker/overlay2/e75acff19d04043c2227c2b3357b956aa5f610069fbea4d288eaff1ec0b1189c/merged
+150842.462: [15:08:42]tmpfs              1.6G     0  1.6G   0% /run/user/0
+150844.463: [15:08:44][root@10-253-0-3 ~]# lsblk
+150844.486: [15:08:44]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150844.486: [15:08:44]vda       254:0    0   40G  0 disk 
+150844.486: [15:08:44]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150844.486: [15:08:44]└─vda2    254:2    0 36.3G  0 part /
+150844.486: [15:08:44]vdb       254:16   0    1T  0 disk 
+150844.486: [15:08:44]└─vdb1    254:17   0 1024G  0 part 
+150844.486: [15:08:44]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150844.487: [15:08:44]vdc       254:32   0    2T  0 disk 
+150844.487: [15:08:44]└─vdc1    254:33   0    2T  0 part 
+150844.487: [15:08:44]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150844.487: [15:08:44]vdd       254:48   0    2T  0 disk 
+150844.487: [15:08:44]└─vdd1    254:49   0    2T  0 part 
+150844.487: [15:08:44]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150844.487: [15:08:44]vde       254:64   0    2T  0 disk 
+150844.487: [15:08:44]└─vde1    254:65   0    2T  0 part 
+150844.487: [15:08:44]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150844.487: [15:08:44]vdf       254:80   0    2T  0 disk 
+150844.487: [15:08:44]└─vdf1    254:81   0    2T  0 part 
+150844.488: [15:08:44]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150957.768: [15:09:57][root@10-253-0-3 ~]# lsblk
+150957.786: [15:09:57]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+150957.786: [15:09:57]vda       254:0    0   40G  0 disk 
+150957.786: [15:09:57]├─vda1    254:1    0  3.7G  0 part [SWAP]
+150957.786: [15:09:57]└─vda2    254:2    0 36.3G  0 part /
+150957.786: [15:09:57]vdb       254:16   0    1T  0 disk 
+150957.786: [15:09:57]└─vdb1    254:17   0 1024G  0 part 
+150957.786: [15:09:57]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150957.786: [15:09:57]vdc       254:32   0    2T  0 disk 
+150957.786: [15:09:57]└─vdc1    254:33   0    2T  0 part 
+150957.786: [15:09:57]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150957.786: [15:09:57]vdd       254:48   0    2T  0 disk 
+150957.786: [15:09:57]└─vdd1    254:49   0    2T  0 part 
+150957.786: [15:09:57]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150957.786: [15:09:57]vde       254:64   0    2T  0 disk 
+150957.787: [15:09:57]└─vde1    254:65   0    2T  0 part 
+150957.787: [15:09:57]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+150957.787: [15:09:57]vdf       254:80   0    2T  0 disk 
+150957.787: [15:09:57]└─vdf1    254:81   0    2T  0 part 
+150957.787: [15:09:57]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media

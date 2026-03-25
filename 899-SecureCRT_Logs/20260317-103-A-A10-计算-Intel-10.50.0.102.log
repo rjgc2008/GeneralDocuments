@@ -1,0 +1,70 @@
+﻿083054.764: [08:30:54][202603103-A-A10-计算-Intel-10.50.0.102-08:30:54]
+083054.779: [08:30:54]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+083054.779: [08:30:54]
+083054.779: [08:30:54] * Documentation:  https://help.ubuntu.com
+083054.780: [08:30:54] * Management:     https://landscape.canonical.com
+083054.780: [08:30:54] * Support:        https://ubuntu.com/pro
+083054.780: [08:30:54]
+083054.780: [08:30:54] System information as of Tue Mar 17 08:30:54 AM CST 2026
+083054.780: [08:30:54]
+083054.780: [08:30:54]  System load:    0.08               Temperature:                  76.0 C
+083054.780: [08:30:54]  Usage of /home: 0.1% of 301.67GB   Processes:                    1401
+083054.780: [08:30:54]  Memory usage:   0%                 Users logged in:              2
+083054.781: [08:30:54]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+083054.781: [08:30:54]
+083054.781: [08:30:54] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+083054.781: [08:30:54]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+083054.781: [08:30:54]
+083054.781: [08:30:54]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+083054.781: [08:30:54]
+083054.781: [08:30:54]Expanded Security Maintenance for Applications is not enabled.
+083054.781: [08:30:54]
+083054.781: [08:30:54]101 updates can be applied immediately.
+083054.781: [08:30:54]To see these additional updates run: apt list --upgradable
+083054.781: [08:30:54]
+083054.782: [08:30:54]11 additional security updates can be applied with ESM Apps.
+083054.782: [08:30:54]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+083054.782: [08:30:54]
+083054.782: [08:30:54]
+083054.782: [08:30:54]The list of available updates is more than a week old.
+083054.782: [08:30:54]To check for new updates run: sudo apt update
+083054.782: [08:30:54]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+083054.782: [08:30:54]
+083054.782: [08:30:54]
+083054.782: [08:30:54]*** System restart required ***
+083054.783: [08:30:54]Last login: Mon Mar 16 22:09:27 2026 from 192.168.4.222
+194651.628: [19:46:51][202603103-A-A10-计算-Intel-10.50.0.102-19:46:51]
+194651.652: [19:46:51]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+194651.652: [19:46:51]
+194651.652: [19:46:51] * Documentation:  https://help.ubuntu.com
+194651.652: [19:46:51] * Management:     https://landscape.canonical.com
+194651.652: [19:46:51] * Support:        https://ubuntu.com/pro
+194651.652: [19:46:51]
+194651.653: [19:46:51] System information as of Tue Mar 17 07:46:51 PM CST 2026
+194651.653: [19:46:51]
+194651.653: [19:46:51]  System load:    0.0                Temperature:                  76.0 C
+194651.653: [19:46:51]  Usage of /home: 0.1% of 301.67GB   Processes:                    1383
+194651.653: [19:46:51]  Memory usage:   0%                 Users logged in:              1
+194651.653: [19:46:51]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+194651.653: [19:46:51]
+194651.653: [19:46:51] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+194651.653: [19:46:51]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+194651.653: [19:46:51]
+194651.653: [19:46:51]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+194651.653: [19:46:51]
+194651.653: [19:46:51]Expanded Security Maintenance for Applications is not enabled.
+194651.653: [19:46:51]
+194651.653: [19:46:51]101 updates can be applied immediately.
+194651.653: [19:46:51]To see these additional updates run: apt list --upgradable
+194651.653: [19:46:51]
+194651.653: [19:46:51]11 additional security updates can be applied with ESM Apps.
+194651.653: [19:46:51]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+194651.653: [19:46:51]
+194651.653: [19:46:51]
+194651.653: [19:46:51]The list of available updates is more than a week old.
+194651.653: [19:46:51]To check for new updates run: sudo apt update
+194651.653: [19:46:51]Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+194651.653: [19:46:51]
+194651.653: [19:46:51]
+194651.653: [19:46:51]*** System restart required ***
+194651.654: [19:46:51]Last login: Tue Mar 17 08:30:54 2026 from 192.168.4.222

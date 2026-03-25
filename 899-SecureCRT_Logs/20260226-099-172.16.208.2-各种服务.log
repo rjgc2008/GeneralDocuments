@@ -1,0 +1,32 @@
+﻿142552.669: [14:25:52][root@172-16-208-2 ~]# 
+142552.794: [14:25:52][root@172-16-208-2 ~]# 
+142555.238: [14:25:55][root@172-16-208-2 ~]# df -lh
+142555.252: [14:25:55]Filesystem                 Size  Used Avail Use% Mounted on
+142555.252: [14:25:55]udev                       7.8G     0  7.8G   0% /dev
+142555.253: [14:25:55]tmpfs                      1.6G   11M  1.6G   1% /run
+142555.253: [14:25:55]/dev/vda1                   97G   69G   24G  75% /
+142555.253: [14:25:55]tmpfs                      7.9G     0  7.9G   0% /dev/shm
+142555.253: [14:25:55]tmpfs                      5.0M  4.0K  5.0M   1% /run/lock
+142555.254: [14:25:55]/dev/mapper/data-datalv     14T   14T     0 100% /DATA/Media
+142555.254: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/ad7464f3b04db576d0308e3e0102cf3480ddb32ac242dec4bff57a6f0bc5405e/merged
+142555.255: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/cab1dec8f98e168f6ebd0890c23c563d6b1ffcff414f28e3d8a1bf6c2761033d/merged
+142555.255: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/5f32f1dfa35af8ea78a9fcbabe0d06d9c5a8c112a2a4c5650ff68840a3fbc08f/merged
+142555.255: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/c37b91b3a1d81b2b4b4b9b97de8d45e7503ecce359821d09ef31983655cb4e52/merged
+142555.256: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/e9e83947222cf159696283b563d55f1c03a8784d5c2f09dd6f092c600a297f5b/merged
+142555.256: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/178aee37071729ca261883335d47ab495214a98830b72e42324b7c090e0c60ea/merged
+142555.257: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/3c8085ec6d162a2b244810b100e39faeac6766771c1129fe19110608e72ab0e8/merged
+142555.257: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/5c1772a6815275737ab4729520d6485e9eb228dca950c5ca9480821afd23c331/merged
+142555.257: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/5b179abe593fe6023b70f00a8b8fa8870af0f65a9d257a93c8674b46187d02b3/merged
+142555.258: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/dacbbc4d8f73512eb46f2f5bc074bd8f9bc9af6f98f9996453ce2ad991047648/merged
+142555.258: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/df8ccd0a058968ad982529d4e6520e74389d512c5cbb9c2ee650d920840b6962/merged
+142555.258: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/f27db95fc6a187109e4902ee10a92a822a4a0a6664acc4333c92c404c5a7d9eb/merged
+142555.258: [14:25:55]/dev/mapper/data2-data2lv  6.0T  4.5T  1.2T  80% /DATA/Media/Tmp
+142555.259: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/c256c651b3606a2b0bd97265904e73b9b5d427605bbfb113c26b91412671a8dc/merged
+142555.259: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/36405dd3188c588b4aa5d092f2e5dcb5e1f73735d9e2fe15471e2ae613c807e8/merged
+142555.259: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/fec9b9e1cb387fee7500d060d0703f2c0573ff37107c3dfcb6be047c62960bba/merged
+142555.260: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/71d44c3a74f497939dcb09d15573f69259b0c2eca3db98f2d88f5a884a267421/merged
+142555.260: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/f37c98d6612fb3445962d77333799e9ee020f70c98f21e43e0994121521ad3ec/merged
+142555.269: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/1a835e6ae66574f532450791d550153247cab4f273b9926649b1d64f1c49855e/merged
+142555.269: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/2f49a0b0a668bff5faf4dddb0155e717bd2b04ec9c9f20fe51e72f1ab1105a8f/merged
+142555.269: [14:25:55]overlay                     97G   69G   24G  75% /var/lib/docker/overlay2/4bf80f043542c0b5db8d4f0bc877655d7246a8c975cc750175031f24c8db0123/merged
+142555.269: [14:25:55]tmpfs                      1.6G   76K  1.6G   1% /run/user/0

@@ -1,0 +1,79 @@
+﻿093503.364: [09:35:03][202603099-172.16.208.2-各种服务-09:35:03]
+093503.481: [09:35:03]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+093503.481: [09:35:03]
+093503.481: [09:35:03]The programs included with the Debian GNU/Linux system are free software;
+093503.481: [09:35:03]the exact distribution terms for each program are described in the
+093503.481: [09:35:03]individual files in /usr/share/doc/*/copyright.
+093503.481: [09:35:03]
+093503.481: [09:35:03]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+093503.481: [09:35:03]permitted by applicable law.
+093503.481: [09:35:03]Last login: Wed Mar  4 09:04:35 2026 from 192.168.4.222
+093512.232: [09:35:12][root@172-16-208-2 ~]# systemctl restart supervisor.service 
+093517.727: [09:35:17]
+093517.958: [09:35:17]
+093519.905: [09:35:19][root@172-16-208-2 ~]# 
+093519.905: [09:35:19][root@172-16-208-2 ~]# 
+093526.401: [09:35:26][root@172-16-208-2 ~]# ps -ef | grep sup
+093526.417: [09:35:26]root         590       1  0 Mar03 ?        00:00:02 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+093526.434: [09:35:26]root        2418    1841  0 Mar03 ?        00:00:00 s6-supervise s6-linux-init-shutdownd
+093526.435: [09:35:26]root        2468    1840  0 Mar03 ?        00:00:00 s6-supervise s6-linux-init-shutdownd
+093526.435: [09:35:26]root        2760    1840  0 Mar03 ?        00:00:00 s6-supervise s6rc-fdholder
+093526.436: [09:35:26]root        2761    1840  0 Mar03 ?        00:00:00 s6-supervise s6rc-oneshot-runner
+093526.436: [09:35:26]root        2762    1840  0 Mar03 ?        00:00:00 s6-supervise service-qbittorrent
+093526.436: [09:35:26]root        2763    1840  0 Mar03 ?        00:00:00 s6-supervise service-privoxy
+093526.437: [09:35:26]root        2772    1841  0 Mar03 ?        00:00:00 s6-supervise s6rc-fdholder
+093526.437: [09:35:26]root        2773    1841  0 Mar03 ?        00:00:00 s6-supervise s6rc-oneshot-runner
+093526.437: [09:35:26]root        2777    1841  0 Mar03 ?        00:00:00 s6-supervise svc-plex
+093526.437: [09:35:26]root        2778    1841  0 Mar03 ?        00:00:00 s6-supervise svc-cron
+093526.437: [09:35:26]root        4034    3803  0 Mar03 ?        00:00:00 s6-supervise s6-linux-init-shutdownd
+093526.438: [09:35:26]root        4076    3803  0 Mar03 ?        00:00:00 s6-supervise svc-syncthing
+093526.438: [09:35:26]root        4077    3803  0 Mar03 ?        00:00:00 s6-supervise s6rc-fdholder
+093526.438: [09:35:26]root        4078    3803  0 Mar03 ?        00:00:00 s6-supervise s6rc-oneshot-runner
+093526.438: [09:35:26]root        4079    3803  0 Mar03 ?        00:00:00 s6-supervise svc-cron
+093526.439: [09:35:26]root     3310790       1  3 09:35 ?        00:00:00 /usr/bin/python3 /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+093526.439: [09:35:26]root     3310833 3310664  0 09:35 pts/0    00:00:00 grep --color=auto sup
+093537.157: [09:35:37][root@172-16-208-2 ~]# ps -ef | grep sin
+093537.183: [09:35:37]root     3310792 3310790  4 09:35 ?        00:00:00 /usr/local/bin/singbox/sing-box-1.12.12-linux-amd64/sing-box run -c /usr/local/bin/singbox/sing-box-1.12.12-linux-amd64/config-chatgpt-02.json
+093537.183: [09:35:37]root     3310925 3310664  0 09:35 pts/0    00:00:00 grep --color=auto sin
+102245.240: [10:22:45][root@172-16-208-2 ~]# 
+102245.344: [10:22:45][root@172-16-208-2 ~]# 
+102247.728: [10:22:47][root@172-16-208-2 ~]# ping ping www.tiangongqs.net
+102248.204: [10:22:48]ping: ping: Name or service not known
+102251.346: [10:22:51][root@172-16-208-2 ~]# ping ping www.tiangongqs.net
+102251.860: [10:22:51]ping: ping: Name or service not known
+102252.977: [10:22:52][root@172-16-208-2 ~]# ping www.tiangongqs.net
+102253.148: [10:22:53]PING www.tiangongqs.net (118.31.115.234) 56(84) bytes of data.
+102253.193: [10:22:53]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=1 ttl=54 time=12.2 ms
+102254.206: [10:22:54]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=2 ttl=54 time=12.2 ms
+102254.590: [10:22:54]^C
+102254.590: [10:22:54]--- www.tiangongqs.net ping statistics ---
+102254.590: [10:22:54]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+102254.590: [10:22:54]rtt min/avg/max/mdev = 12.164/12.182/12.200/0.018 ms
+102551.214: [10:25:51][root@172-16-208-2 ~]# 
+102551.318: [10:25:51][root@172-16-208-2 ~]# 
+102555.368: [10:25:55][root@172-16-208-2 ~]# ping www.tiangongqs.net
+102555.377: [10:25:55]PING www.tiangongqs.net (118.31.115.234) 56(84) bytes of data.
+102555.397: [10:25:55]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=1 ttl=54 time=12.1 ms
+102556.440: [10:25:56]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=2 ttl=54 time=12.5 ms
+102557.075: [10:25:57]^C
+102557.075: [10:25:57]--- www.tiangongqs.net ping statistics ---
+102557.075: [10:25:57]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+102557.075: [10:25:57]rtt min/avg/max/mdev = 12.129/12.309/12.490/0.180 ms
+102623.298: [10:26:23][root@172-16-208-2 ~]# 
+102623.456: [10:26:23][root@172-16-208-2 ~]# 
+102623.583: [10:26:23][root@172-16-208-2 ~]# 
+102627.769: [10:26:27][root@172-16-208-2 ~]# ping www.baidu.com
+102627.779: [10:26:27]PING www.a.shifen.com (180.101.49.44) 56(84) bytes of data.
+102627.875: [10:26:27]64 bytes from 180.101.49.44 (180.101.49.44): icmp_seq=1 ttl=52 time=9.34 ms
+102628.775: [10:26:28]^C
+102628.775: [10:26:28]--- www.a.shifen.com ping statistics ---
+102628.775: [10:26:28]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+102628.775: [10:26:28]rtt min/avg/max/mdev = 9.342/9.342/9.342/0.000 ms
+102631.022: [10:26:31][root@172-16-208-2 ~]# ping www.tiangongqs.net
+102631.075: [10:26:31]PING www.tiangongqs.net (118.31.115.234) 56(84) bytes of data.
+102631.121: [10:26:31]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=1 ttl=54 time=12.2 ms
+102632.094: [10:26:32]^C64 bytes from 118.31.115.234: icmp_seq=2 ttl=54 time=12.0 ms
+102632.094: [10:26:32]
+102632.094: [10:26:32]--- www.tiangongqs.net ping statistics ---
+102632.095: [10:26:32]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+102632.095: [10:26:32]rtt min/avg/max/mdev = 12.017/12.089/12.161/0.072 ms

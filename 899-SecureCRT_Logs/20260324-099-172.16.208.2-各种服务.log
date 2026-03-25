@@ -1,0 +1,2432 @@
+﻿140349.855: [14:03:49][root@172-16-208-2 ~]# 
+140350.000: [14:03:50][root@172-16-208-2 ~]# 
+140353.996: [14:03:53][root@172-16-208-2 ~]# ping 172.16.100.11
+140354.015: [14:03:54]PING 172.16.100.11 (172.16.100.11) 56(84) bytes of data.
+140354.016: [14:03:54]64 bytes from 172.16.100.11: icmp_seq=1 ttl=63 time=0.264 ms
+140355.049: [14:03:55]64 bytes from 172.16.100.11: icmp_seq=2 ttl=63 time=0.329 ms
+140356.054: [14:03:56]64 bytes from 172.16.100.11: icmp_seq=3 ttl=63 time=0.264 ms
+140357.099: [14:03:57]64 bytes from 172.16.100.11: icmp_seq=4 ttl=63 time=0.277 ms
+140357.431: [14:03:57]^C
+140357.431: [14:03:57]--- 172.16.100.11 ping statistics ---
+140357.431: [14:03:57]4 packets transmitted, 4 received, 0% packet loss, time 3079ms
+140357.431: [14:03:57]rtt min/avg/max/mdev = 0.264/0.283/0.329/0.026 ms
+140406.111: [14:04:06][root@172-16-208-2 ~]# ssh 172.16.100.11
+140406.265: [14:04:06]The authenticity of host '172.16.100.11 (172.16.100.11)' can't be established.
+140406.265: [14:04:06]ECDSA key fingerprint is SHA256:nW9Vb3vpC1cg7b9/7JdoUMbeCFqLh0xwTT5Rwn4/pP4.
+140408.077: [14:04:08]Are you sure you want to continue connecting (yes/no/[fingerprint])? ^C
+140431.609: [14:04:31][root@172-16-208-2 ~]# ssh admin@172.16.100.11
+140431.630: [14:04:31]The authenticity of host '172.16.100.11 (172.16.100.11)' can't be established.
+140431.630: [14:04:31]ECDSA key fingerprint is SHA256:nW9Vb3vpC1cg7b9/7JdoUMbeCFqLh0xwTT5Rwn4/pP4.
+140432.909: [14:04:32]Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+140432.924: [14:04:32]Warning: Permanently added '172.16.100.11' (ECDSA) to the list of known hosts.
+140446.105: [14:04:46]admin@172.16.100.11's password: 
+140446.106: [14:04:46]Permission denied, please try again.
+140450.138: [14:04:50]admin@172.16.100.11's password: 
+140450.549: [14:04:50]
+140451.441: [14:04:51]SCN9300H-01# 
+140451.592: [14:04:51]SCN9300H-01# 
+140453.312: [14:04:53]SCN9300H-01# show running-config 
+140453.350: [14:04:53]Building configuration...
+140453.358: [14:04:53]version 10.011.003.24
+140453.358: [14:04:53]!
+140453.358: [14:04:53]no service password-encryption
+140453.358: [14:04:53]!
+140453.358: [14:04:53]!
+140453.359: [14:04:53]!
+140453.359: [14:04:53]hostname SCN9300H-01
+140453.359: [14:04:53]!
+140453.359: [14:04:53]!
+140453.359: [14:04:53]username admin privilege 4 password inspur@123
+140453.359: [14:04:53]!
+140453.359: [14:04:53]!
+140453.359: [14:04:53]ipv6 enable
+140453.359: [14:04:53]management ip address 172.16.100.11/24
+140453.359: [14:04:53]ip ssh server enable
+140453.359: [14:04:53]!
+140453.359: [14:04:53]!
+140453.359: [14:04:53]vlan database
+140453.359: [14:04:53] vlan 101
+140453.359: [14:04:53]!
+140453.359: [14:04:53]
+140453.359: [14:04:53]interface eth-0-1
+140453.359: [14:04:53] speed 25G
+140453.359: [14:04:53] duplex full
+140453.359: [14:04:53] switchport access vlan 101
+140453.359: [14:04:53]!
+140453.359: [14:04:53]interface eth-0-2
+140453.359: [14:04:53] speed 25G
+140453.359: [14:04:53] duplex full
+140453.359: [14:04:53] switchport access vlan 101
+140453.359: [14:04:53]!
+140453.359: [14:04:53]interface eth-0-3
+140453.359: [14:04:53] speed 25G
+140453.359: [14:04:53] duplex full
+140453.359: [14:04:53] switchport access vlan 101
+140453.359: [14:04:53]!
+140453.359: [14:04:53]interface eth-0-4
+140453.359: [14:04:53] speed 25G
+140453.359: [14:04:53] duplex full
+140453.359: [14:04:53] switchport access vlan 101
+140453.359: [14:04:53]!
+140453.359: [14:04:53]interface eth-0-5
+140453.359: [14:04:53] speed 25G
+140453.360: [14:04:53] duplex full
+140453.360: [14:04:53] switchport access vlan 101
+140453.360: [14:04:53]!
+140453.360: [14:04:53]interface eth-0-6
+140453.360: [14:04:53] speed 25G
+140453.360: [14:04:53] duplex full
+140453.360: [14:04:53] switchport access vlan 101
+140453.360: [14:04:53]!
+140453.360: [14:04:53]interface eth-0-7
+140453.360: [14:04:53] speed 25G
+140453.360: [14:04:53] duplex full
+140453.360: [14:04:53] switchport access vlan 101
+140453.360: [14:04:53]!
+140453.360: [14:04:53]interface eth-0-8
+140453.360: [14:04:53] speed 25G
+140453.360: [14:04:53] duplex full
+140453.360: [14:04:53] switchport access vlan 101
+140453.360: [14:04:53]!
+140453.360: [14:04:53]interface eth-0-9
+140457.432: [14:04:57] speed 25G
+140457.432: [14:04:57] duplex full
+140457.432: [14:04:57] switchport access vlan 101
+140457.433: [14:04:57]!
+140457.433: [14:04:57]interface eth-0-10
+140457.433: [14:04:57] speed 25G
+140457.433: [14:04:57] duplex full
+140457.433: [14:04:57] switchport access vlan 101
+140457.433: [14:04:57]!
+140457.433: [14:04:57]interface eth-0-11
+140457.433: [14:04:57] speed 25G
+140457.433: [14:04:57] duplex full
+140457.433: [14:04:57] switchport access vlan 101
+140457.433: [14:04:57]!
+140457.433: [14:04:57]interface eth-0-12
+140457.433: [14:04:57] speed 25G
+140457.433: [14:04:57] duplex full
+140457.433: [14:04:57] switchport access vlan 101
+140457.433: [14:04:57]!
+140457.433: [14:04:57]interface eth-0-13
+140457.433: [14:04:57] speed 25G
+140457.433: [14:04:57] duplex full
+140457.433: [14:04:57] switchport access vlan 101
+140457.433: [14:04:57]!
+140457.433: [14:04:57]interface eth-0-14
+140457.433: [14:04:57] speed 25G
+140457.434: [14:04:57] duplex full
+140457.434: [14:04:57] switchport access vlan 101
+140457.434: [14:04:57]!
+140457.434: [14:04:57]interface eth-0-15
+140457.434: [14:04:57] speed 25G
+140457.434: [14:04:57] duplex full
+140457.434: [14:04:57] switchport access vlan 101
+140457.434: [14:04:57]!
+140457.434: [14:04:57]interface eth-0-16
+140457.434: [14:04:57] speed 25G
+140457.434: [14:04:57] duplex full
+140457.434: [14:04:57] fec rs-fec
+140457.434: [14:04:57] switchport mode trunk
+140457.434: [14:04:57] switchport trunk native vlan 101
+140457.434: [14:04:57] switchport trunk allowed vlan add 1,101,300
+140457.434: [14:04:57]!
+140457.434: [14:04:57]interface eth-0-17
+140457.434: [14:04:57] speed 25G
+140457.434: [14:04:57] duplex full
+140457.434: [14:04:57] switchport access vlan 101
+140457.434: [14:04:57]!
+140457.435: [14:04:57]interface eth-0-18
+140457.435: [14:04:57] speed 25G
+140457.435: [14:04:57] duplex full
+140457.435: [14:04:57] switchport access vlan 101
+140457.435: [14:04:57]!
+140457.435: [14:04:57]interface eth-0-19
+140457.435: [14:04:57] speed 25G
+140457.435: [14:04:57] duplex full
+140457.435: [14:04:57] switchport access vlan 101
+140457.435: [14:04:57]!
+140457.435: [14:04:57]interface eth-0-20
+140457.435: [14:04:57] speed 25G
+140457.435: [14:04:57] duplex full
+140457.435: [14:04:57] switchport access vlan 101
+140457.435: [14:04:57]!
+140457.435: [14:04:57]interface eth-0-21
+140458.157: [14:04:58] speed 25G
+140458.158: [14:04:58] duplex full
+140458.158: [14:04:58] switchport access vlan 101
+140458.158: [14:04:58]!
+140458.158: [14:04:58]interface eth-0-22
+140458.158: [14:04:58] speed 25G
+140458.158: [14:04:58] duplex full
+140458.158: [14:04:58] switchport access vlan 101
+140458.158: [14:04:58]!
+140458.158: [14:04:58]interface eth-0-23
+140458.158: [14:04:58] speed 25G
+140458.159: [14:04:58] duplex full
+140458.159: [14:04:58] switchport access vlan 101
+140458.159: [14:04:58]!
+140458.159: [14:04:58]interface eth-0-24
+140458.159: [14:04:58] speed 25G
+140458.159: [14:04:58] duplex full
+140458.159: [14:04:58] switchport access vlan 101
+140458.159: [14:04:58]!
+140458.159: [14:04:58]interface eth-0-25
+140458.159: [14:04:58] speed 1000
+140458.159: [14:04:58] duplex full
+140458.159: [14:04:58] switchport access vlan 101
+140458.159: [14:04:58]!
+140458.159: [14:04:58]interface eth-0-26
+140458.159: [14:04:58] speed 25G
+140458.159: [14:04:58] duplex full
+140458.160: [14:04:58] switchport access vlan 101
+140458.160: [14:04:58]!
+140458.160: [14:04:58]interface eth-0-27
+140458.160: [14:04:58] speed 25G
+140458.160: [14:04:58] duplex full
+140458.160: [14:04:58] switchport access vlan 101
+140458.160: [14:04:58]!
+140458.160: [14:04:58]interface eth-0-28
+140458.160: [14:04:58] speed 25G
+140458.160: [14:04:58] duplex full
+140458.160: [14:04:58] switchport access vlan 101
+140458.160: [14:04:58]!
+140458.160: [14:04:58]interface eth-0-29
+140458.160: [14:04:58] speed 10G
+140458.160: [14:04:58] duplex full
+140458.160: [14:04:58] switchport access vlan 101
+140458.161: [14:04:58] channel-group 1 mode active
+140458.161: [14:04:58]!
+140458.161: [14:04:58]interface eth-0-30
+140458.161: [14:04:58] speed 10G
+140458.161: [14:04:58] duplex full
+140458.161: [14:04:58] switchport access vlan 101
+140458.161: [14:04:58] channel-group 1 mode active
+140458.161: [14:04:58]!
+140458.161: [14:04:58]interface eth-0-31
+140458.161: [14:04:58] speed 10G
+140458.161: [14:04:58] duplex full
+140458.161: [14:04:58] switchport access vlan 101
+140458.161: [14:04:58] channel-group 2 mode active
+140458.161: [14:04:58]!
+140458.161: [14:04:58]interface eth-0-32
+140458.161: [14:04:58] speed 10G
+140458.161: [14:04:58] duplex full
+140458.162: [14:04:58] switchport access vlan 101
+140458.162: [14:04:58] channel-group 2 mode active
+140458.162: [14:04:58]!
+140507.238: [14:05:07]interface eth-0-33
+140507.239: [14:05:07] speed 10G
+140507.239: [14:05:07] duplex full
+140507.239: [14:05:07] switchport access vlan 101
+140507.239: [14:05:07] channel-group 3 mode active
+140507.239: [14:05:07]!
+140507.239: [14:05:07]interface eth-0-34
+140507.239: [14:05:07] speed 10G
+140507.239: [14:05:07] duplex full
+140507.239: [14:05:07] switchport access vlan 101
+140507.239: [14:05:07] channel-group 3 mode active
+140507.239: [14:05:07]!
+140507.239: [14:05:07]interface eth-0-35
+140507.239: [14:05:07] speed 10G
+140507.239: [14:05:07] duplex full
+140507.239: [14:05:07] switchport access vlan 101
+140507.239: [14:05:07] channel-group 4 mode active
+140507.239: [14:05:07]!
+140507.239: [14:05:07]interface eth-0-36
+140507.239: [14:05:07] speed 10G
+140507.240: [14:05:07] duplex full
+140507.240: [14:05:07] switchport access vlan 101
+140507.240: [14:05:07] channel-group 4 mode active
+140507.240: [14:05:07]!
+140507.240: [14:05:07]interface eth-0-37
+140507.240: [14:05:07] speed 10G
+140507.240: [14:05:07] duplex full
+140507.240: [14:05:07] switchport access vlan 101
+140507.240: [14:05:07] channel-group 5 mode active
+140507.240: [14:05:07]!
+140507.240: [14:05:07]interface eth-0-38
+140507.240: [14:05:07] speed 10G
+140507.240: [14:05:07] duplex full
+140507.240: [14:05:07] switchport access vlan 101
+140507.240: [14:05:07] channel-group 5 mode active
+140507.240: [14:05:07]!
+140507.241: [14:05:07]interface eth-0-39
+140507.241: [14:05:07] speed 10G
+140507.241: [14:05:07] duplex full
+140507.241: [14:05:07] switchport access vlan 101
+140507.241: [14:05:07] channel-group 6 mode active
+140507.241: [14:05:07]!
+140507.241: [14:05:07]interface eth-0-40
+140507.241: [14:05:07] speed 10G
+140507.241: [14:05:07] duplex full
+140507.241: [14:05:07] switchport access vlan 101
+140507.241: [14:05:07] channel-group 6 mode active
+140507.241: [14:05:07]!
+140507.241: [14:05:07]interface eth-0-41
+140507.241: [14:05:07] speed 25G
+140507.241: [14:05:07] duplex full
+140507.241: [14:05:07] switchport access vlan 101
+140507.241: [14:05:07]!
+140507.242: [14:05:07]interface eth-0-42
+140507.242: [14:05:07] speed 25G
+140507.242: [14:05:07] duplex full
+140507.242: [14:05:07] switchport access vlan 101
+140507.242: [14:05:07]!
+140507.242: [14:05:07]interface eth-0-43
+140507.242: [14:05:07] speed 25G
+140507.242: [14:05:07] duplex full
+140507.242: [14:05:07] switchport access vlan 101
+140507.242: [14:05:07]!
+140509.390: [14:05:09]interface eth-0-44
+140509.390: [14:05:09] speed 25G
+140509.390: [14:05:09] duplex full
+140509.390: [14:05:09] switchport access vlan 101
+140509.390: [14:05:09]!
+140509.390: [14:05:09]interface eth-0-45
+140509.391: [14:05:09] speed 25G
+140509.391: [14:05:09] duplex full
+140509.391: [14:05:09] switchport access vlan 101
+140509.391: [14:05:09]!
+140509.391: [14:05:09]interface eth-0-46
+140509.391: [14:05:09] speed 25G
+140509.391: [14:05:09] duplex full
+140509.391: [14:05:09] switchport access vlan 101
+140509.391: [14:05:09]!
+140509.392: [14:05:09]interface eth-0-47
+140509.392: [14:05:09] speed 25G
+140509.392: [14:05:09] duplex full
+140509.392: [14:05:09] switchport access vlan 101
+140509.392: [14:05:09]!
+140509.392: [14:05:09]interface eth-0-48
+140509.392: [14:05:09] speed 10G
+140509.392: [14:05:09] duplex full
+140509.392: [14:05:09] switchport access vlan 101
+140509.392: [14:05:09]!
+140509.392: [14:05:09]interface eth-0-49
+140509.392: [14:05:09]!
+140509.392: [14:05:09]interface eth-0-50
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface eth-0-51
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface eth-0-52
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface eth-0-53
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface eth-0-54
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface eth-0-55
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface eth-0-56
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface agg1
+140509.393: [14:05:09] switchport access vlan 101
+140509.393: [14:05:09]!
+140509.393: [14:05:09]interface agg2
+140509.394: [14:05:09] switchport access vlan 101
+140509.394: [14:05:09]!
+140509.394: [14:05:09]interface agg3
+140509.394: [14:05:09] switchport access vlan 101
+140509.394: [14:05:09]!
+140509.394: [14:05:09]interface agg4
+140509.394: [14:05:09] switchport access vlan 101
+140509.394: [14:05:09]!
+140509.394: [14:05:09]interface agg5
+140509.394: [14:05:09] switchport access vlan 101
+140509.394: [14:05:09]!
+140509.394: [14:05:09]interface agg6
+140509.394: [14:05:09] switchport access vlan 101
+140509.394: [14:05:09]!
+140509.394: [14:05:09]interface vlan1
+140509.394: [14:05:09] ip address dhcp
+140509.395: [14:05:09]!
+140509.395: [14:05:09]!
+140510.107: [14:05:10]!
+140510.107: [14:05:10]!
+140510.107: [14:05:10]line con 0
+140510.107: [14:05:10] no line-password
+140510.107: [14:05:10] no login
+140510.107: [14:05:10]line vty 0 4
+140510.108: [14:05:10] exec-timeout 35791 0
+140510.108: [14:05:10] privilege level 3
+140510.108: [14:05:10] transport input ssh 
+140510.108: [14:05:10] no line-password
+140510.108: [14:05:10] login local
+140510.108: [14:05:10]line vty 5 7
+140510.108: [14:05:10] exec-timeout 35791 0
+140510.108: [14:05:10] privilege level 4
+140510.108: [14:05:10] no line-password
+140510.108: [14:05:10] no login
+140510.108: [14:05:10]!
+140510.108: [14:05:10]!
+140510.108: [14:05:10]end
+140510.108: [14:05:10]
+140537.487: [14:05:37]SCN9300H-01# show int 
+140537.488: [14:05:37]agg          description  eth-         hybrid       loopback     null         status       summary      switchport   tunnel       vlan         vxlan        trunk        
+140543.202: [14:05:43]SCN9300H-01# ping www.baidu.com
+140543.248: [14:05:43]ping: unknown host www.baidu.com
+140550.542: [14:05:50]SCN9300H-01# ping 192.168.8.1
+140550.581: [14:05:50]connect: Network is unreachable
+140555.897: [14:05:55]SCN9300H-01# show interface br
+140556.343: [14:05:56]SCN9300H-01# show interface br
+140556.343: [14:05:56]                            ^
+140556.343: [14:05:56]% Invalid input detected at '^' marker.
+140556.343: [14:05:56]
+140558.300: [14:05:58]SCN9300H-01# show interface?
+140558.301: [14:05:58]  interface  Interface status and configuration
+140558.301: [14:05:58]
+140559.118: [14:05:59]SCN9300H-01# show interface ?
+140559.118: [14:05:59]  eth-         Physical interface
+140559.118: [14:05:59]  agg          Aggregation interface
+140559.119: [14:05:59]  loopback     Loopback interface
+140559.119: [14:05:59]  vlan         Vlan interface
+140559.119: [14:05:59]  tunnel       Tunnel interface
+140559.119: [14:05:59]  vxlan        Vxlan interface
+140559.119: [14:05:59]  description  Display description of the interfaces
+140559.119: [14:05:59]  hybrid       Display the hybrid information of the hybrid interfaces
+140559.119: [14:05:59]  null         Null interface
+140559.120: [14:05:59]  status       Display status of the interfaces
+140559.120: [14:05:59]  summary      The summary of interface
+140559.120: [14:05:59]  switchport   Display the modes of the layer2 interfaces
+140559.120: [14:05:59]  trunk        Display the trunk information of the trunk interfaces
+140559.120: [14:05:59]  |            Output modifiers
+140559.120: [14:05:59]  >            Output redirection
+140559.120: [14:05:59]  <cr>
+140559.120: [14:05:59]
+140602.084: [14:06:02]SCN9300H-01# show interface status 
+140602.129: [14:06:02]
+140602.129: [14:06:02]Port        Status     Duplex  Speed   Mode    Type                    Description  
+140602.129: [14:06:02]------------------------------------------------------------------------------------------
+140602.130: [14:06:02]eth-0-1     up         full    25000   ACCESS  25GBASE_SR                           
+140602.130: [14:06:02]eth-0-2     up         full    25000   ACCESS  25GBASE_SR                           
+140602.130: [14:06:02]eth-0-3     up         full    25000   ACCESS  25GBASE_SR                           
+140602.130: [14:06:02]eth-0-4     up         full    25000   ACCESS  25GBASE_SR                           
+140602.131: [14:06:02]eth-0-5     up         full    25000   ACCESS  25GBASE_SR                           
+140602.131: [14:06:02]eth-0-6     up         full    25000   ACCESS  25GBASE_SR                           
+140602.131: [14:06:02]eth-0-7     up         full    25000   ACCESS  25GBASE_SR                           
+140602.131: [14:06:02]eth-0-8     up         full    25000   ACCESS  25GBASE_SR                           
+140602.131: [14:06:02]eth-0-9     up         full    25000   ACCESS  25GBASE_SR                           
+140602.132: [14:06:02]eth-0-10    up         full    25000   ACCESS  25GBASE_SR                           
+140602.132: [14:06:02]eth-0-11    up         full    25000   ACCESS  25GBASE_SR                           
+140602.132: [14:06:02]eth-0-12    down       full    25000   ACCESS  25GBASE_SR                           
+140602.132: [14:06:02]eth-0-13    up         full    25000   ACCESS  25GBASE_SR                           
+140602.133: [14:06:02]eth-0-14    up         full    25000   ACCESS  25GBASE_SR                           
+140602.133: [14:06:02]eth-0-15    up         full    25000   ACCESS  25GBASE_SR                           
+140602.133: [14:06:02]eth-0-16    down       full    25000   TRUNK   25GBASE_SR                           
+140602.133: [14:06:02]eth-0-17    down       full    25000   ACCESS  Unknown                              
+140602.133: [14:06:02]eth-0-18    down       full    25000   ACCESS  Unknown                              
+140602.133: [14:06:02]eth-0-19    down       full    25000   ACCESS  Unknown                              
+140602.134: [14:06:02]eth-0-20    down       full    25000   ACCESS  Unknown                              
+140602.134: [14:06:02]eth-0-21    down       full    25000   ACCESS  Unknown                              
+140602.134: [14:06:02]eth-0-22    down       full    25000   ACCESS  Unknown                              
+140602.134: [14:06:02]eth-0-23    down       full    25000   ACCESS  Unknown                              
+140602.134: [14:06:02]eth-0-24    down       full    25000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-25    down       full    1000    ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-26    down       full    25000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-27    down       full    25000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-28    down       full    25000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-29    down       full    10000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-30    down       full    10000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-31    down       full    10000   ACCESS  Unknown                              
+140602.135: [14:06:02]eth-0-32    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-33    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-34    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-35    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-36    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-37    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-38    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-39    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-40    down       full    10000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-41    down       full    25000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-42    down       full    25000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-43    down       full    25000   ACCESS  Unknown                              
+140602.136: [14:06:02]eth-0-44    down       full    25000   ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-45    down       full    25000   ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-46    down       full    25000   ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-47    down       full    25000   ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-48    up         full    10000   ACCESS  10GBASE_SR                           
+140602.137: [14:06:02]eth-0-49    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-50    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-51    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-52    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-53    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-54    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-55    down       full    auto    ACCESS  Unknown                              
+140602.137: [14:06:02]eth-0-56    down       full    auto    ACCESS  Unknown                              
+140602.138: [14:06:02]agg1        down       full    0       ACCESS  Aggregation                          
+140602.138: [14:06:02]agg2        down       full    0       ACCESS  Aggregation                          
+140602.138: [14:06:02]agg3        down       full    0       ACCESS  Aggregation                          
+140602.138: [14:06:02]agg4        down       full    0       ACCESS  Aggregation                          
+140605.804: [14:06:05]agg5        down       full    0       ACCESS  Aggregation                          
+140605.804: [14:06:05]agg6        down       full    0       ACCESS  Aggregation                          
+140628.939: [14:06:28]SCN9300H-01# configure terminal 
+140628.979: [14:06:28]Enter configuration commands, one per line.  End with CNTL/Z.
+140645.445: [14:06:45]SCN9300H-01(config)# interface eth-0-48
+140646.940: [14:06:46]SCN9300H-01(config-if)# show this
+140646.940: [14:06:46]                             ^
+140646.940: [14:06:46]% Invalid input detected at '^' marker.
+140646.940: [14:06:46]
+140650.505: [14:06:50]SCN9300H-01(config-if)# show ?
+140650.505: [14:06:50]  running-config  Current Operating configuration
+140650.505: [14:06:50]
+140652.439: [14:06:52]SCN9300H-01(config-if)# show running-config 
+140652.480: [14:06:52]Building configuration...
+140652.490: [14:06:52]version 10.011.003.24
+140652.491: [14:06:52]!
+140652.491: [14:06:52]no service password-encryption
+140652.491: [14:06:52]!
+140652.491: [14:06:52]!
+140652.491: [14:06:52]!
+140652.491: [14:06:52]hostname SCN9300H-01
+140652.491: [14:06:52]!
+140652.491: [14:06:52]!
+140652.491: [14:06:52]username admin privilege 4 password inspur@123
+140652.491: [14:06:52]!
+140652.491: [14:06:52]!
+140652.491: [14:06:52]ipv6 enable
+140652.491: [14:06:52]management ip address 172.16.100.11/24
+140652.491: [14:06:52]ip ssh server enable
+140652.491: [14:06:52]!
+140652.491: [14:06:52]!
+140652.491: [14:06:52]vlan database
+140652.491: [14:06:52] vlan 101
+140652.491: [14:06:52]!
+140652.491: [14:06:52]
+140652.491: [14:06:52]interface eth-0-1
+140652.491: [14:06:52] speed 25G
+140652.491: [14:06:52] duplex full
+140652.491: [14:06:52] switchport access vlan 101
+140652.491: [14:06:52]!
+140652.491: [14:06:52]interface eth-0-2
+140652.491: [14:06:52] speed 25G
+140652.491: [14:06:52] duplex full
+140652.491: [14:06:52] switchport access vlan 101
+140652.491: [14:06:52]!
+140652.491: [14:06:52]interface eth-0-3
+140652.491: [14:06:52] speed 25G
+140652.491: [14:06:52] duplex full
+140652.491: [14:06:52] switchport access vlan 101
+140652.491: [14:06:52]!
+140652.492: [14:06:52]interface eth-0-4
+140652.492: [14:06:52] speed 25G
+140652.492: [14:06:52] duplex full
+140652.492: [14:06:52] switchport access vlan 101
+140652.492: [14:06:52]!
+140652.492: [14:06:52]interface eth-0-5
+140652.492: [14:06:52] speed 25G
+140652.492: [14:06:52] duplex full
+140652.492: [14:06:52] switchport access vlan 101
+140652.492: [14:06:52]!
+140652.492: [14:06:52]interface eth-0-6
+140652.492: [14:06:52] speed 25G
+140652.492: [14:06:52] duplex full
+140652.492: [14:06:52] switchport access vlan 101
+140652.492: [14:06:52]!
+140652.492: [14:06:52]interface eth-0-7
+140652.492: [14:06:52] speed 25G
+140652.492: [14:06:52] duplex full
+140652.492: [14:06:52] switchport access vlan 101
+140652.492: [14:06:52]!
+140652.492: [14:06:52]interface eth-0-8
+140652.492: [14:06:52] speed 25G
+140652.492: [14:06:52] duplex full
+140652.492: [14:06:52] switchport access vlan 101
+140652.492: [14:06:52]!
+140652.492: [14:06:52]interface eth-0-9
+140653.051: [14:06:53] speed 25G
+140653.051: [14:06:53] duplex full
+140653.051: [14:06:53] switchport access vlan 101
+140653.051: [14:06:53]!
+140653.051: [14:06:53]interface eth-0-10
+140653.051: [14:06:53] speed 25G
+140653.051: [14:06:53] duplex full
+140653.051: [14:06:53] switchport access vlan 101
+140653.051: [14:06:53]!
+140653.051: [14:06:53]interface eth-0-11
+140653.051: [14:06:53] speed 25G
+140653.051: [14:06:53] duplex full
+140653.051: [14:06:53] switchport access vlan 101
+140653.052: [14:06:53]!
+140653.052: [14:06:53]interface eth-0-12
+140653.052: [14:06:53] speed 25G
+140653.052: [14:06:53] duplex full
+140653.052: [14:06:53] switchport access vlan 101
+140653.052: [14:06:53]!
+140653.052: [14:06:53]interface eth-0-13
+140653.052: [14:06:53] speed 25G
+140653.052: [14:06:53] duplex full
+140653.052: [14:06:53] switchport access vlan 101
+140653.052: [14:06:53]!
+140653.052: [14:06:53]interface eth-0-14
+140653.052: [14:06:53] speed 25G
+140653.052: [14:06:53] duplex full
+140653.052: [14:06:53] switchport access vlan 101
+140653.052: [14:06:53]!
+140653.052: [14:06:53]interface eth-0-15
+140653.052: [14:06:53] speed 25G
+140653.052: [14:06:53] duplex full
+140653.052: [14:06:53] switchport access vlan 101
+140653.052: [14:06:53]!
+140653.052: [14:06:53]interface eth-0-16
+140653.052: [14:06:53] speed 25G
+140653.053: [14:06:53] duplex full
+140653.053: [14:06:53] fec rs-fec
+140653.053: [14:06:53] switchport mode trunk
+140653.053: [14:06:53] switchport trunk native vlan 101
+140653.053: [14:06:53] switchport trunk allowed vlan add 1,101,300
+140653.053: [14:06:53]!
+140653.053: [14:06:53]interface eth-0-17
+140653.053: [14:06:53] speed 25G
+140653.053: [14:06:53] duplex full
+140653.053: [14:06:53] switchport access vlan 101
+140653.053: [14:06:53]!
+140653.053: [14:06:53]interface eth-0-18
+140653.053: [14:06:53] speed 25G
+140653.053: [14:06:53] duplex full
+140653.053: [14:06:53] switchport access vlan 101
+140653.053: [14:06:53]!
+140653.053: [14:06:53]interface eth-0-19
+140653.053: [14:06:53] speed 25G
+140653.053: [14:06:53] duplex full
+140653.053: [14:06:53] switchport access vlan 101
+140653.053: [14:06:53]!
+140653.053: [14:06:53]interface eth-0-20
+140653.054: [14:06:53] speed 25G
+140653.054: [14:06:53] duplex full
+140653.054: [14:06:53] switchport access vlan 101
+140653.054: [14:06:53]!
+140653.054: [14:06:53]interface eth-0-21
+140653.581: [14:06:53] speed 25G
+140653.581: [14:06:53] duplex full
+140653.581: [14:06:53] switchport access vlan 101
+140653.582: [14:06:53]!
+140653.582: [14:06:53]interface eth-0-22
+140653.582: [14:06:53] speed 25G
+140653.582: [14:06:53] duplex full
+140653.582: [14:06:53] switchport access vlan 101
+140653.582: [14:06:53]!
+140653.582: [14:06:53]interface eth-0-23
+140653.582: [14:06:53] speed 25G
+140653.582: [14:06:53] duplex full
+140653.583: [14:06:53] switchport access vlan 101
+140653.583: [14:06:53]!
+140653.583: [14:06:53]interface eth-0-24
+140653.583: [14:06:53] speed 25G
+140653.583: [14:06:53] duplex full
+140653.583: [14:06:53] switchport access vlan 101
+140653.583: [14:06:53]!
+140653.583: [14:06:53]interface eth-0-25
+140653.583: [14:06:53] speed 1000
+140653.583: [14:06:53] duplex full
+140653.583: [14:06:53] switchport access vlan 101
+140653.584: [14:06:53]!
+140653.584: [14:06:53]interface eth-0-26
+140653.584: [14:06:53] speed 25G
+140653.584: [14:06:53] duplex full
+140653.584: [14:06:53] switchport access vlan 101
+140653.584: [14:06:53]!
+140653.584: [14:06:53]interface eth-0-27
+140653.584: [14:06:53] speed 25G
+140653.584: [14:06:53] duplex full
+140653.584: [14:06:53] switchport access vlan 101
+140653.584: [14:06:53]!
+140653.584: [14:06:53]interface eth-0-28
+140653.584: [14:06:53] speed 25G
+140653.584: [14:06:53] duplex full
+140653.584: [14:06:53] switchport access vlan 101
+140653.584: [14:06:53]!
+140653.584: [14:06:53]interface eth-0-29
+140653.584: [14:06:53] speed 10G
+140653.585: [14:06:53] duplex full
+140653.585: [14:06:53] switchport access vlan 101
+140653.585: [14:06:53] channel-group 1 mode active
+140653.585: [14:06:53]!
+140653.585: [14:06:53]interface eth-0-30
+140653.585: [14:06:53] speed 10G
+140653.585: [14:06:53] duplex full
+140653.585: [14:06:53] switchport access vlan 101
+140653.585: [14:06:53] channel-group 1 mode active
+140653.585: [14:06:53]!
+140653.585: [14:06:53]interface eth-0-31
+140653.585: [14:06:53] speed 10G
+140653.585: [14:06:53] duplex full
+140653.585: [14:06:53] switchport access vlan 101
+140653.585: [14:06:53] channel-group 2 mode active
+140653.585: [14:06:53]!
+140653.586: [14:06:53]interface eth-0-32
+140653.586: [14:06:53] speed 10G
+140653.586: [14:06:53] duplex full
+140653.586: [14:06:53] switchport access vlan 101
+140653.586: [14:06:53] channel-group 2 mode active
+140653.586: [14:06:53]!
+140653.782: [14:06:53]interface eth-0-33
+140653.782: [14:06:53] speed 10G
+140653.782: [14:06:53] duplex full
+140653.782: [14:06:53] switchport access vlan 101
+140653.782: [14:06:53] channel-group 3 mode active
+140653.782: [14:06:53]!
+140653.782: [14:06:53]interface eth-0-34
+140653.782: [14:06:53] speed 10G
+140653.782: [14:06:53] duplex full
+140653.782: [14:06:53] switchport access vlan 101
+140653.782: [14:06:53] channel-group 3 mode active
+140653.782: [14:06:53]!
+140653.782: [14:06:53]interface eth-0-35
+140653.782: [14:06:53] speed 10G
+140653.782: [14:06:53] duplex full
+140653.782: [14:06:53] switchport access vlan 101
+140653.782: [14:06:53] channel-group 4 mode active
+140653.782: [14:06:53]!
+140653.782: [14:06:53]interface eth-0-36
+140653.782: [14:06:53] speed 10G
+140653.782: [14:06:53] duplex full
+140653.782: [14:06:53] switchport access vlan 101
+140653.783: [14:06:53] channel-group 4 mode active
+140653.783: [14:06:53]!
+140653.783: [14:06:53]interface eth-0-37
+140653.783: [14:06:53] speed 10G
+140653.783: [14:06:53] duplex full
+140653.783: [14:06:53] switchport access vlan 101
+140653.783: [14:06:53] channel-group 5 mode active
+140653.783: [14:06:53]!
+140653.783: [14:06:53]interface eth-0-38
+140653.783: [14:06:53] speed 10G
+140653.783: [14:06:53] duplex full
+140653.783: [14:06:53] switchport access vlan 101
+140653.783: [14:06:53] channel-group 5 mode active
+140653.783: [14:06:53]!
+140653.783: [14:06:53]interface eth-0-39
+140653.783: [14:06:53] speed 10G
+140653.783: [14:06:53] duplex full
+140653.783: [14:06:53] switchport access vlan 101
+140653.783: [14:06:53] channel-group 6 mode active
+140653.783: [14:06:53]!
+140653.783: [14:06:53]interface eth-0-40
+140653.783: [14:06:53] speed 10G
+140653.783: [14:06:53] duplex full
+140653.783: [14:06:53] switchport access vlan 101
+140653.783: [14:06:53] channel-group 6 mode active
+140653.783: [14:06:53]!
+140653.783: [14:06:53]interface eth-0-41
+140653.783: [14:06:53] speed 25G
+140653.783: [14:06:53] duplex full
+140653.783: [14:06:53] switchport access vlan 101
+140653.783: [14:06:53]!
+140653.784: [14:06:53]interface eth-0-42
+140653.784: [14:06:53] speed 25G
+140653.784: [14:06:53] duplex full
+140653.784: [14:06:53] switchport access vlan 101
+140653.784: [14:06:53]!
+140653.784: [14:06:53]interface eth-0-43
+140653.784: [14:06:53] speed 25G
+140653.784: [14:06:53] duplex full
+140653.784: [14:06:53] switchport access vlan 101
+140653.784: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-44
+140653.993: [14:06:53] speed 25G
+140653.993: [14:06:53] duplex full
+140653.993: [14:06:53] switchport access vlan 101
+140653.993: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-45
+140653.993: [14:06:53] speed 25G
+140653.993: [14:06:53] duplex full
+140653.993: [14:06:53] switchport access vlan 101
+140653.993: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-46
+140653.993: [14:06:53] speed 25G
+140653.993: [14:06:53] duplex full
+140653.993: [14:06:53] switchport access vlan 101
+140653.993: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-47
+140653.993: [14:06:53] speed 25G
+140653.993: [14:06:53] duplex full
+140653.993: [14:06:53] switchport access vlan 101
+140653.993: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-48
+140653.993: [14:06:53] speed 10G
+140653.993: [14:06:53] duplex full
+140653.993: [14:06:53] switchport access vlan 101
+140653.993: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-49
+140653.993: [14:06:53]!
+140653.993: [14:06:53]interface eth-0-50
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface eth-0-51
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface eth-0-52
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface eth-0-53
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface eth-0-54
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface eth-0-55
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface eth-0-56
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface agg1
+140653.994: [14:06:53] switchport access vlan 101
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface agg2
+140653.994: [14:06:53] switchport access vlan 101
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface agg3
+140653.994: [14:06:53] switchport access vlan 101
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface agg4
+140653.994: [14:06:53] switchport access vlan 101
+140653.994: [14:06:53]!
+140653.994: [14:06:53]interface agg5
+140653.994: [14:06:53] switchport access vlan 101
+140653.994: [14:06:53]!
+140653.995: [14:06:53]interface agg6
+140653.995: [14:06:53] switchport access vlan 101
+140653.995: [14:06:53]!
+140653.995: [14:06:53]interface vlan1
+140653.995: [14:06:53] ip address dhcp
+140653.995: [14:06:53]!
+140653.995: [14:06:53]!
+140721.613: [14:07:21]SCN9300H-01(config-if)# show ip
+140722.750: [14:07:22]SCN9300H-01(config-if)# show in
+140726.185: [14:07:26]SCN9300H-01(config-if)# show running-config 
+140726.226: [14:07:26]Building configuration...
+140726.234: [14:07:26]version 10.011.003.24
+140726.234: [14:07:26]!
+140726.234: [14:07:26]no service password-encryption
+140726.234: [14:07:26]!
+140726.234: [14:07:26]!
+140726.234: [14:07:26]!
+140726.234: [14:07:26]hostname SCN9300H-01
+140726.234: [14:07:26]!
+140726.234: [14:07:26]!
+140726.234: [14:07:26]username admin privilege 4 password inspur@123
+140726.234: [14:07:26]!
+140726.234: [14:07:26]!
+140726.234: [14:07:26]ipv6 enable
+140726.234: [14:07:26]management ip address 172.16.100.11/24
+140726.234: [14:07:26]ip ssh server enable
+140726.234: [14:07:26]!
+140726.234: [14:07:26]!
+140726.234: [14:07:26]vlan database
+140726.235: [14:07:26] vlan 101
+140726.235: [14:07:26]!
+140726.235: [14:07:26]
+140726.235: [14:07:26]interface eth-0-1
+140726.235: [14:07:26] speed 25G
+140726.235: [14:07:26] duplex full
+140726.235: [14:07:26] switchport access vlan 101
+140726.235: [14:07:26]!
+140726.235: [14:07:26]interface eth-0-2
+140726.235: [14:07:26] speed 25G
+140726.235: [14:07:26] duplex full
+140726.235: [14:07:26] switchport access vlan 101
+140726.235: [14:07:26]!
+140726.235: [14:07:26]interface eth-0-3
+140726.235: [14:07:26] speed 25G
+140726.235: [14:07:26] duplex full
+140726.235: [14:07:26] switchport access vlan 101
+140726.235: [14:07:26]!
+140726.235: [14:07:26]interface eth-0-4
+140726.235: [14:07:26] speed 25G
+140726.235: [14:07:26] duplex full
+140726.235: [14:07:26] switchport access vlan 101
+140726.235: [14:07:26]!
+140726.235: [14:07:26]interface eth-0-5
+140726.235: [14:07:26] speed 25G
+140726.235: [14:07:26] duplex full
+140726.235: [14:07:26] switchport access vlan 101
+140726.235: [14:07:26]!
+140726.235: [14:07:26]interface eth-0-6
+140726.235: [14:07:26] speed 25G
+140726.235: [14:07:26] duplex full
+140726.235: [14:07:26] switchport access vlan 101
+140726.236: [14:07:26]!
+140726.236: [14:07:26]interface eth-0-7
+140726.236: [14:07:26] speed 25G
+140726.236: [14:07:26] duplex full
+140726.236: [14:07:26] switchport access vlan 101
+140726.236: [14:07:26]!
+140726.236: [14:07:26]interface eth-0-8
+140726.236: [14:07:26] speed 25G
+140726.236: [14:07:26] duplex full
+140726.236: [14:07:26] switchport access vlan 101
+140726.236: [14:07:26]!
+140726.236: [14:07:26]interface eth-0-9
+140726.545: [14:07:26] speed 25G
+140726.545: [14:07:26] duplex full
+140726.545: [14:07:26] switchport access vlan 101
+140726.545: [14:07:26]!
+140726.545: [14:07:26]interface eth-0-10
+140726.545: [14:07:26] speed 25G
+140726.546: [14:07:26] duplex full
+140726.546: [14:07:26] switchport access vlan 101
+140726.546: [14:07:26]!
+140726.546: [14:07:26]interface eth-0-11
+140726.546: [14:07:26] speed 25G
+140726.546: [14:07:26] duplex full
+140726.546: [14:07:26] switchport access vlan 101
+140726.546: [14:07:26]!
+140726.546: [14:07:26]interface eth-0-12
+140726.546: [14:07:26] speed 25G
+140726.546: [14:07:26] duplex full
+140726.546: [14:07:26] switchport access vlan 101
+140726.546: [14:07:26]!
+140726.546: [14:07:26]interface eth-0-13
+140726.546: [14:07:26] speed 25G
+140726.546: [14:07:26] duplex full
+140726.546: [14:07:26] switchport access vlan 101
+140726.546: [14:07:26]!
+140726.547: [14:07:26]interface eth-0-14
+140726.547: [14:07:26] speed 25G
+140726.547: [14:07:26] duplex full
+140726.547: [14:07:26] switchport access vlan 101
+140726.547: [14:07:26]!
+140726.547: [14:07:26]interface eth-0-15
+140726.547: [14:07:26] speed 25G
+140726.547: [14:07:26] duplex full
+140726.547: [14:07:26] switchport access vlan 101
+140726.548: [14:07:26]!
+140726.548: [14:07:26]interface eth-0-16
+140726.548: [14:07:26] speed 25G
+140726.548: [14:07:26] duplex full
+140726.548: [14:07:26] fec rs-fec
+140726.548: [14:07:26] switchport mode trunk
+140726.548: [14:07:26] switchport trunk native vlan 101
+140726.548: [14:07:26] switchport trunk allowed vlan add 1,101,300
+140726.548: [14:07:26]!
+140726.548: [14:07:26]interface eth-0-17
+140726.548: [14:07:26] speed 25G
+140726.549: [14:07:26] duplex full
+140726.549: [14:07:26] switchport access vlan 101
+140726.549: [14:07:26]!
+140726.549: [14:07:26]interface eth-0-18
+140726.549: [14:07:26] speed 25G
+140726.549: [14:07:26] duplex full
+140726.549: [14:07:26] switchport access vlan 101
+140726.549: [14:07:26]!
+140726.549: [14:07:26]interface eth-0-19
+140726.549: [14:07:26] speed 25G
+140726.549: [14:07:26] duplex full
+140726.549: [14:07:26] switchport access vlan 101
+140726.549: [14:07:26]!
+140726.549: [14:07:26]interface eth-0-20
+140726.549: [14:07:26] speed 25G
+140726.549: [14:07:26] duplex full
+140726.550: [14:07:26] switchport access vlan 101
+140726.550: [14:07:26]!
+140726.550: [14:07:26]interface eth-0-21
+140727.042: [14:07:27] speed 25G
+140727.042: [14:07:27] duplex full
+140727.042: [14:07:27] switchport access vlan 101
+140727.042: [14:07:27]!
+140727.042: [14:07:27]interface eth-0-22
+140727.042: [14:07:27] speed 25G
+140727.042: [14:07:27] duplex full
+140727.042: [14:07:27] switchport access vlan 101
+140727.042: [14:07:27]!
+140727.042: [14:07:27]interface eth-0-23
+140727.042: [14:07:27] speed 25G
+140727.042: [14:07:27] duplex full
+140727.042: [14:07:27] switchport access vlan 101
+140727.042: [14:07:27]!
+140727.042: [14:07:27]interface eth-0-24
+140727.042: [14:07:27] speed 25G
+140727.042: [14:07:27] duplex full
+140727.042: [14:07:27] switchport access vlan 101
+140727.042: [14:07:27]!
+140727.043: [14:07:27]interface eth-0-25
+140727.043: [14:07:27] speed 1000
+140727.043: [14:07:27] duplex full
+140727.043: [14:07:27] switchport access vlan 101
+140727.043: [14:07:27]!
+140727.043: [14:07:27]interface eth-0-26
+140727.043: [14:07:27] speed 25G
+140727.043: [14:07:27] duplex full
+140727.043: [14:07:27] switchport access vlan 101
+140727.043: [14:07:27]!
+140727.043: [14:07:27]interface eth-0-27
+140727.043: [14:07:27] speed 25G
+140727.043: [14:07:27] duplex full
+140727.044: [14:07:27] switchport access vlan 101
+140727.044: [14:07:27]!
+140727.044: [14:07:27]interface eth-0-28
+140727.044: [14:07:27] speed 25G
+140727.044: [14:07:27] duplex full
+140727.044: [14:07:27] switchport access vlan 101
+140727.044: [14:07:27]!
+140727.044: [14:07:27]interface eth-0-29
+140727.044: [14:07:27] speed 10G
+140727.044: [14:07:27] duplex full
+140727.044: [14:07:27] switchport access vlan 101
+140727.044: [14:07:27] channel-group 1 mode active
+140727.044: [14:07:27]!
+140727.045: [14:07:27]interface eth-0-30
+140727.045: [14:07:27] speed 10G
+140727.045: [14:07:27] duplex full
+140727.045: [14:07:27] switchport access vlan 101
+140727.045: [14:07:27] channel-group 1 mode active
+140727.045: [14:07:27]!
+140727.045: [14:07:27]interface eth-0-31
+140727.045: [14:07:27] speed 10G
+140727.045: [14:07:27] duplex full
+140727.045: [14:07:27] switchport access vlan 101
+140727.045: [14:07:27] channel-group 2 mode active
+140727.045: [14:07:27]!
+140727.045: [14:07:27]interface eth-0-32
+140727.045: [14:07:27] speed 10G
+140727.045: [14:07:27] duplex full
+140727.045: [14:07:27] switchport access vlan 101
+140727.045: [14:07:27] channel-group 2 mode active
+140727.046: [14:07:27]!
+140728.178: [14:07:28]interface eth-0-33
+140728.178: [14:07:28] speed 10G
+140728.178: [14:07:28] duplex full
+140728.179: [14:07:28] switchport access vlan 101
+140728.179: [14:07:28] channel-group 3 mode active
+140728.179: [14:07:28]!
+140728.179: [14:07:28]interface eth-0-34
+140728.179: [14:07:28] speed 10G
+140728.179: [14:07:28] duplex full
+140728.179: [14:07:28] switchport access vlan 101
+140728.179: [14:07:28] channel-group 3 mode active
+140728.179: [14:07:28]!
+140728.179: [14:07:28]interface eth-0-35
+140728.179: [14:07:28] speed 10G
+140728.179: [14:07:28] duplex full
+140728.179: [14:07:28] switchport access vlan 101
+140728.179: [14:07:28] channel-group 4 mode active
+140728.179: [14:07:28]!
+140728.179: [14:07:28]interface eth-0-36
+140728.179: [14:07:28] speed 10G
+140728.179: [14:07:28] duplex full
+140728.179: [14:07:28] switchport access vlan 101
+140728.179: [14:07:28] channel-group 4 mode active
+140728.179: [14:07:28]!
+140728.180: [14:07:28]interface eth-0-37
+140728.180: [14:07:28] speed 10G
+140728.180: [14:07:28] duplex full
+140728.180: [14:07:28] switchport access vlan 101
+140728.180: [14:07:28] channel-group 5 mode active
+140728.180: [14:07:28]!
+140728.180: [14:07:28]interface eth-0-38
+140728.180: [14:07:28] speed 10G
+140728.180: [14:07:28] duplex full
+140728.180: [14:07:28] switchport access vlan 101
+140728.180: [14:07:28] channel-group 5 mode active
+140728.180: [14:07:28]!
+140728.180: [14:07:28]interface eth-0-39
+140728.180: [14:07:28] speed 10G
+140728.180: [14:07:28] duplex full
+140728.180: [14:07:28] switchport access vlan 101
+140728.180: [14:07:28] channel-group 6 mode active
+140728.180: [14:07:28]!
+140728.180: [14:07:28]interface eth-0-40
+140728.180: [14:07:28] speed 10G
+140728.181: [14:07:28] duplex full
+140728.181: [14:07:28] switchport access vlan 101
+140728.181: [14:07:28] channel-group 6 mode active
+140728.181: [14:07:28]!
+140728.181: [14:07:28]interface eth-0-41
+140728.181: [14:07:28] speed 25G
+140728.181: [14:07:28] duplex full
+140728.181: [14:07:28] switchport access vlan 101
+140728.181: [14:07:28]!
+140728.181: [14:07:28]interface eth-0-42
+140728.181: [14:07:28] speed 25G
+140728.181: [14:07:28] duplex full
+140728.181: [14:07:28] switchport access vlan 101
+140728.181: [14:07:28]!
+140728.181: [14:07:28]interface eth-0-43
+140728.181: [14:07:28] speed 25G
+140728.181: [14:07:28] duplex full
+140728.181: [14:07:28] switchport access vlan 101
+140728.181: [14:07:28]!
+140728.440: [14:07:28]interface eth-0-44
+140728.441: [14:07:28] speed 25G
+140728.441: [14:07:28] duplex full
+140728.441: [14:07:28] switchport access vlan 101
+140728.441: [14:07:28]!
+140728.441: [14:07:28]interface eth-0-45
+140728.441: [14:07:28] speed 25G
+140728.441: [14:07:28] duplex full
+140728.441: [14:07:28] switchport access vlan 101
+140728.441: [14:07:28]!
+140728.442: [14:07:28]interface eth-0-46
+140728.442: [14:07:28] speed 25G
+140728.442: [14:07:28] duplex full
+140728.442: [14:07:28] switchport access vlan 101
+140728.442: [14:07:28]!
+140728.442: [14:07:28]interface eth-0-47
+140728.442: [14:07:28] speed 25G
+140728.442: [14:07:28] duplex full
+140728.443: [14:07:28] switchport access vlan 101
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-48
+140728.443: [14:07:28] speed 10G
+140728.443: [14:07:28] duplex full
+140728.443: [14:07:28] switchport access vlan 101
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-49
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-50
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-51
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-52
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-53
+140728.443: [14:07:28]!
+140728.443: [14:07:28]interface eth-0-54
+140728.444: [14:07:28]!
+140728.444: [14:07:28]interface eth-0-55
+140728.444: [14:07:28]!
+140728.444: [14:07:28]interface eth-0-56
+140728.444: [14:07:28]!
+140728.444: [14:07:28]interface agg1
+140728.444: [14:07:28] switchport access vlan 101
+140728.444: [14:07:28]!
+140728.444: [14:07:28]interface agg2
+140728.444: [14:07:28] switchport access vlan 101
+140728.444: [14:07:28]!
+140728.444: [14:07:28]interface agg3
+140728.444: [14:07:28] switchport access vlan 101
+140728.444: [14:07:28]!
+140728.444: [14:07:28]interface agg4
+140728.445: [14:07:28] switchport access vlan 101
+140728.445: [14:07:28]!
+140728.445: [14:07:28]interface agg5
+140728.445: [14:07:28] switchport access vlan 101
+140728.445: [14:07:28]!
+140728.445: [14:07:28]interface agg6
+140728.445: [14:07:28] switchport access vlan 101
+140728.445: [14:07:28]!
+140728.445: [14:07:28]interface vlan1
+140728.445: [14:07:28] ip address dhcp
+140728.445: [14:07:28]!
+140728.445: [14:07:28]!
+140728.615: [14:07:28]!
+140728.615: [14:07:28]!
+140728.615: [14:07:28]line con 0
+140728.615: [14:07:28] no line-password
+140728.615: [14:07:28] no login
+140728.615: [14:07:28]line vty 0 4
+140728.615: [14:07:28] exec-timeout 35791 0
+140728.615: [14:07:28] privilege level 3
+140728.615: [14:07:28] transport input ssh 
+140728.616: [14:07:28] no line-password
+140728.616: [14:07:28] login local
+140728.616: [14:07:28]line vty 5 7
+140728.616: [14:07:28] exec-timeout 35791 0
+140728.616: [14:07:28] privilege level 4
+140728.616: [14:07:28] no line-password
+140728.616: [14:07:28] no login
+140728.616: [14:07:28]!
+140728.616: [14:07:28]!
+140728.616: [14:07:28]end
+140728.616: [14:07:28]
+140731.600: [14:07:31]SCN9300H-01(config-if)#  show ip 
+140732.354: [14:07:32]SCN9300H-01(config-if)#  show ip ?
+140732.354: [14:07:32]% Unrecognized command
+140733.557: [14:07:33]SCN9300H-01(config-if)#  show ?
+140733.557: [14:07:33]  running-config  Current Operating configuration
+140733.557: [14:07:33]
+140736.734: [14:07:36]SCN9300H-01(config-if)# con
+140751.571: [14:07:51]SCN9300H-01(config-if)# con
+140752.767: [14:07:52]SCN9300H-01(config-if)# confi
+140829.377: [14:08:29]SCN9300H-01(config-if)# exit
+140833.284: [14:08:33]SCN9300H-01(config)# show  ?
+140833.284: [14:08:33]  running-config  Current operating configuration
+140833.284: [14:08:33]
+140839.091: [14:08:39]SCN9300H-01(config)# exit
+140841.113: [14:08:41]SCN9300H-01# show ?
+140841.114: [14:08:41]  aaa                     Authentication, authorization, and accounting
+140841.114: [14:08:41]  access-list             Access-list
+140841.114: [14:08:41]  arp                     ARP table
+140841.114: [14:08:41]  bfd                     Bidirectional Forwarding Detection (BFD)
+140841.114: [14:08:41]  bgp                     Border Gateway Protocol (BGP)
+140841.114: [14:08:41]  bmr-info                Display bmr-info
+140841.114: [14:08:41]  boot                    Show boot parameters
+140841.114: [14:08:41]  channel-group           LACP etherchannel
+140841.114: [14:08:41]  class-map               Class map entry
+140841.115: [14:08:41]  clns                    Connectionless-Mode Network Service (CLNS)
+140841.115: [14:08:41]  clock                   Display the system clock
+140841.115: [14:08:41]  cpu                     CPU
+140841.115: [14:08:41]  cspf                    CSPF Information
+140841.115: [14:08:41]  cut-through-forwarding  Cut through forwarding mode
+140841.115: [14:08:41]  debugging               Debugging functions (see also 'undebug')
+140841.115: [14:08:41]  device                  Device
+140841.115: [14:08:41]  dhcp                    Dynamic Host Configuration Protocol status
+140841.116: [14:08:41]  dhcp-server             Show DHCP server group configuration
+140841.116: [14:08:41]  dhcpv6                  Dynamic Host Configuration Protocol status
+140841.116: [14:08:41]  dhcpv6-server           Show DHCPv6 server group configuration
+140841.116: [14:08:41]  diagnostic-information  Show information
+140841.116: [14:08:41]  dns                     DNS configuration
+140841.116: [14:08:41]  dot1q                   802.1Q configuration
+140841.116: [14:08:41]  dot1x                   IEEE 802.1X Port-Based Access Control
+140841.117: [14:08:41]  ecc                     ecc
+140841.117: [14:08:41]  ecmp                    Equal cost multi-path routing
+140841.117: [14:08:41]  eee                     Energy efficient ethernet
+140841.117: [14:08:41]  environment             Display environment
+140841.117: [14:08:41]  errdisable              Error disable
+140841.117: [14:08:41]  ethernet                Configure layer-2
+140841.117: [14:08:41]  file                    Show filesystem information
+140841.117: [14:08:41]  flowcontrol             Show flow control information
+140841.118: [14:08:41]  ftp                     FTP parameters
+140841.118: [14:08:41]  global                  global
+140841.118: [14:08:41]  hal                     Hal
+140841.118: [14:08:41]  hardware                Hardware
+140841.118: [14:08:41]  heart-beat-monitor      Heart beat monitor function
+140841.118: [14:08:41]  history                 Display the session command history
+140841.118: [14:08:41]  hsrv                    Hal server
+140841.118: [14:08:41]  interface               Interface status and configuration
+140841.118: [14:08:41]  ip                      Internet Protocol (IP)
+140841.119: [14:08:41]  ip-intercept            DDoS Prevent
+140841.119: [14:08:41]  ipfix                   IP Information Export(IPFIX)
+140841.119: [14:08:41]  ipv6                    Internet Protocol version 6 (IPv6)
+140841.119: [14:08:41]  isis                    Intermediate System - Intermediate System (IS-IS)
+140841.119: [14:08:41]  key                     Show key information
+140841.119: [14:08:41]  l2ping                  L2 ping
+140841.119: [14:08:41]  l2protocol              Show Layer2 Protocol configure
+140841.119: [14:08:41]  lacp                    LACP
+140841.120: [14:08:41]  license                 License
+140841.120: [14:08:41]  lldp                    Link Layer Discovery Protocol
+140841.120: [14:08:41]  logging                 Logging parameter
+140841.120: [14:08:41]  loopback-detect         Loopback Detect Function
+140841.120: [14:08:41]  mac                     Display forwarding information
+140841.120: [14:08:41]  mac-filter              Mac filter information
+140841.120: [14:08:41]  management              Management configuration
+140841.120: [14:08:41]  memory                  Memory information
+140841.121: [14:08:41]  mlag                    Multi-Chassis Link Aggregation
+140841.121: [14:08:41]  monitor                 Monitoring system traffic
+140841.121: [14:08:41]  monitor-link            Monitor link function
+140841.121: [14:08:41]  mpls                    Multi-Protocol Label Switching (MPLS)
+140841.121: [14:08:41]  multi-link              Multi-Link
+140844.562: [14:08:44]SCN9300H-01# show interface br
+140845.704: [14:08:45]SCN9300H-01# show interface ?
+140845.704: [14:08:45]  eth-         Physical interface
+140845.704: [14:08:45]  agg          Aggregation interface
+140845.704: [14:08:45]  loopback     Loopback interface
+140845.704: [14:08:45]  vlan         Vlan interface
+140845.704: [14:08:45]  tunnel       Tunnel interface
+140845.704: [14:08:45]  vxlan        Vxlan interface
+140845.704: [14:08:45]  description  Display description of the interfaces
+140845.704: [14:08:45]  hybrid       Display the hybrid information of the hybrid interfaces
+140845.704: [14:08:45]  null         Null interface
+140845.705: [14:08:45]  status       Display status of the interfaces
+140845.705: [14:08:45]  summary      The summary of interface
+140845.705: [14:08:45]  switchport   Display the modes of the layer2 interfaces
+140845.705: [14:08:45]  trunk        Display the trunk information of the trunk interfaces
+140845.706: [14:08:45]  |            Output modifiers
+140845.706: [14:08:45]  >            Output redirection
+140845.706: [14:08:45]  <cr>
+140845.706: [14:08:45]
+140848.583: [14:08:48]SCN9300H-01# show interface status 
+140848.626: [14:08:48]
+140848.627: [14:08:48]Port        Status     Duplex  Speed   Mode    Type                    Description  
+140848.627: [14:08:48]------------------------------------------------------------------------------------------
+140848.627: [14:08:48]eth-0-1     up         full    25000   ACCESS  25GBASE_SR                           
+140848.627: [14:08:48]eth-0-2     up         full    25000   ACCESS  25GBASE_SR                           
+140848.628: [14:08:48]eth-0-3     up         full    25000   ACCESS  25GBASE_SR                           
+140848.628: [14:08:48]eth-0-4     up         full    25000   ACCESS  25GBASE_SR                           
+140848.628: [14:08:48]eth-0-5     up         full    25000   ACCESS  25GBASE_SR                           
+140848.628: [14:08:48]eth-0-6     up         full    25000   ACCESS  25GBASE_SR                           
+140848.628: [14:08:48]eth-0-7     up         full    25000   ACCESS  25GBASE_SR                           
+140848.629: [14:08:48]eth-0-8     up         full    25000   ACCESS  25GBASE_SR                           
+140848.629: [14:08:48]eth-0-9     up         full    25000   ACCESS  25GBASE_SR                           
+140848.629: [14:08:48]eth-0-10    up         full    25000   ACCESS  25GBASE_SR                           
+140848.629: [14:08:48]eth-0-11    up         full    25000   ACCESS  25GBASE_SR                           
+140848.629: [14:08:48]eth-0-12    down       full    25000   ACCESS  25GBASE_SR                           
+140848.630: [14:08:48]eth-0-13    up         full    25000   ACCESS  25GBASE_SR                           
+140848.630: [14:08:48]eth-0-14    up         full    25000   ACCESS  25GBASE_SR                           
+140848.630: [14:08:48]eth-0-15    up         full    25000   ACCESS  25GBASE_SR                           
+140848.630: [14:08:48]eth-0-16    down       full    25000   TRUNK   25GBASE_SR                           
+140848.631: [14:08:48]eth-0-17    down       full    25000   ACCESS  Unknown                              
+140848.631: [14:08:48]eth-0-18    down       full    25000   ACCESS  Unknown                              
+140848.631: [14:08:48]eth-0-19    down       full    25000   ACCESS  Unknown                              
+140848.631: [14:08:48]eth-0-20    down       full    25000   ACCESS  Unknown                              
+140848.631: [14:08:48]eth-0-21    down       full    25000   ACCESS  Unknown                              
+140848.632: [14:08:48]eth-0-22    down       full    25000   ACCESS  Unknown                              
+140848.632: [14:08:48]eth-0-23    down       full    25000   ACCESS  Unknown                              
+140848.632: [14:08:48]eth-0-24    down       full    25000   ACCESS  Unknown                              
+140848.632: [14:08:48]eth-0-25    down       full    1000    ACCESS  Unknown                              
+140848.633: [14:08:48]eth-0-26    down       full    25000   ACCESS  Unknown                              
+140848.633: [14:08:48]eth-0-27    down       full    25000   ACCESS  Unknown                              
+140848.633: [14:08:48]eth-0-28    down       full    25000   ACCESS  Unknown                              
+140848.633: [14:08:48]eth-0-29    down       full    10000   ACCESS  Unknown                              
+140848.633: [14:08:48]eth-0-30    down       full    10000   ACCESS  Unknown                              
+140848.633: [14:08:48]eth-0-31    down       full    10000   ACCESS  Unknown                              
+140848.634: [14:08:48]eth-0-32    down       full    10000   ACCESS  Unknown                              
+140848.634: [14:08:48]eth-0-33    down       full    10000   ACCESS  Unknown                              
+140848.634: [14:08:48]eth-0-34    down       full    10000   ACCESS  Unknown                              
+140848.634: [14:08:48]eth-0-35    down       full    10000   ACCESS  Unknown                              
+140848.634: [14:08:48]eth-0-36    down       full    10000   ACCESS  Unknown                              
+140848.634: [14:08:48]eth-0-37    down       full    10000   ACCESS  Unknown                              
+140848.635: [14:08:48]eth-0-38    down       full    10000   ACCESS  Unknown                              
+140848.635: [14:08:48]eth-0-39    down       full    10000   ACCESS  Unknown                              
+140848.635: [14:08:48]eth-0-40    down       full    10000   ACCESS  Unknown                              
+140848.635: [14:08:48]eth-0-41    down       full    25000   ACCESS  Unknown                              
+140848.635: [14:08:48]eth-0-42    down       full    25000   ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-43    down       full    25000   ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-44    down       full    25000   ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-45    down       full    25000   ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-46    down       full    25000   ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-47    down       full    25000   ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-48    up         full    10000   ACCESS  10GBASE_SR                           
+140848.642: [14:08:48]eth-0-49    down       full    auto    ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-50    down       full    auto    ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-51    down       full    auto    ACCESS  Unknown                              
+140848.642: [14:08:48]eth-0-52    down       full    auto    ACCESS  Unknown                              
+140848.643: [14:08:48]eth-0-53    down       full    auto    ACCESS  Unknown                              
+140848.643: [14:08:48]eth-0-54    down       full    auto    ACCESS  Unknown                              
+140848.643: [14:08:48]eth-0-55    down       full    auto    ACCESS  Unknown                              
+140848.643: [14:08:48]eth-0-56    down       full    auto    ACCESS  Unknown                              
+140848.643: [14:08:48]agg1        down       full    0       ACCESS  Aggregation                          
+140848.643: [14:08:48]agg2        down       full    0       ACCESS  Aggregation                          
+140848.643: [14:08:48]agg3        down       full    0       ACCESS  Aggregation                          
+140848.643: [14:08:48]agg4        down       full    0       ACCESS  Aggregation                          
+140902.348: [14:09:02]SCN9300H-01# configure terminal ?
+140902.349: [14:09:02]  <cr>
+140902.349: [14:09:02]
+140903.120: [14:09:03]SCN9300H-01# configure terminal 
+140903.180: [14:09:03]Enter configuration commands, one per line.  End with CNTL/Z.
+140912.360: [14:09:12]SCN9300H-01(config)# interface eth-0-47
+140951.873: [14:09:51]SCN9300H-01(config-if)# fec rs-fec ?
+140951.874: [14:09:51]  <cr>
+140951.874: [14:09:51]
+140952.829: [14:09:52]SCN9300H-01(config-if)# fec rs-fec 
+140954.545: [14:09:54]SCN9300H-01(config-if)# exit
+140955.303: [14:09:55]SCN9300H-01(config)# exit
+140957.434: [14:09:57]SCN9300H-01# show running-config 
+140957.479: [14:09:57]Building configuration...
+140957.492: [14:09:57]version 10.011.003.24
+140957.492: [14:09:57]!
+140957.493: [14:09:57]no service password-encryption
+140957.493: [14:09:57]!
+140957.493: [14:09:57]!
+140957.493: [14:09:57]!
+140957.493: [14:09:57]hostname SCN9300H-01
+140957.493: [14:09:57]!
+140957.493: [14:09:57]!
+140957.493: [14:09:57]username admin privilege 4 password inspur@123
+140957.493: [14:09:57]!
+140957.493: [14:09:57]!
+140957.493: [14:09:57]ipv6 enable
+140957.493: [14:09:57]management ip address 172.16.100.11/24
+140957.493: [14:09:57]ip ssh server enable
+140957.493: [14:09:57]!
+140957.493: [14:09:57]!
+140957.493: [14:09:57]vlan database
+140957.493: [14:09:57] vlan 101
+140957.493: [14:09:57]!
+140957.493: [14:09:57]
+140957.493: [14:09:57]interface eth-0-1
+140957.493: [14:09:57] speed 25G
+140957.493: [14:09:57] duplex full
+140957.493: [14:09:57] switchport access vlan 101
+140957.493: [14:09:57]!
+140957.493: [14:09:57]interface eth-0-2
+140957.493: [14:09:57] speed 25G
+140957.493: [14:09:57] duplex full
+140957.493: [14:09:57] switchport access vlan 101
+140957.494: [14:09:57]!
+140957.494: [14:09:57]interface eth-0-3
+140957.494: [14:09:57] speed 25G
+140957.494: [14:09:57] duplex full
+140957.494: [14:09:57] switchport access vlan 101
+140957.494: [14:09:57]!
+140957.494: [14:09:57]interface eth-0-4
+140957.494: [14:09:57] speed 25G
+140957.494: [14:09:57] duplex full
+140957.494: [14:09:57] switchport access vlan 101
+140957.494: [14:09:57]!
+140957.494: [14:09:57]interface eth-0-5
+140957.494: [14:09:57] speed 25G
+140957.494: [14:09:57] duplex full
+140957.494: [14:09:57] switchport access vlan 101
+140957.494: [14:09:57]!
+140957.494: [14:09:57]interface eth-0-6
+140957.494: [14:09:57] speed 25G
+140957.494: [14:09:57] duplex full
+140957.494: [14:09:57] switchport access vlan 101
+140957.494: [14:09:57]!
+140957.494: [14:09:57]interface eth-0-7
+140957.494: [14:09:57] speed 25G
+140957.494: [14:09:57] duplex full
+140957.494: [14:09:57] switchport access vlan 101
+140957.494: [14:09:57]!
+140957.494: [14:09:57]interface eth-0-8
+140957.494: [14:09:57] speed 25G
+140957.495: [14:09:57] duplex full
+140957.495: [14:09:57] switchport access vlan 101
+140957.495: [14:09:57]!
+140957.495: [14:09:57]interface eth-0-9
+140957.826: [14:09:57] speed 25G
+140957.826: [14:09:57] duplex full
+140957.826: [14:09:57] switchport access vlan 101
+140957.826: [14:09:57]!
+140957.826: [14:09:57]interface eth-0-10
+140957.826: [14:09:57] speed 25G
+140957.826: [14:09:57] duplex full
+140957.826: [14:09:57] switchport access vlan 101
+140957.826: [14:09:57]!
+140957.826: [14:09:57]interface eth-0-11
+140957.826: [14:09:57] speed 25G
+140957.826: [14:09:57] duplex full
+140957.826: [14:09:57] switchport access vlan 101
+140957.826: [14:09:57]!
+140957.826: [14:09:57]interface eth-0-12
+140957.826: [14:09:57] speed 25G
+140957.826: [14:09:57] duplex full
+140957.826: [14:09:57] switchport access vlan 101
+140957.826: [14:09:57]!
+140957.826: [14:09:57]interface eth-0-13
+140957.826: [14:09:57] speed 25G
+140957.826: [14:09:57] duplex full
+140957.826: [14:09:57] switchport access vlan 101
+140957.826: [14:09:57]!
+140957.826: [14:09:57]interface eth-0-14
+140957.826: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] switchport access vlan 101
+140957.827: [14:09:57]!
+140957.827: [14:09:57]interface eth-0-15
+140957.827: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] switchport access vlan 101
+140957.827: [14:09:57]!
+140957.827: [14:09:57]interface eth-0-16
+140957.827: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] fec rs-fec
+140957.827: [14:09:57] switchport mode trunk
+140957.827: [14:09:57] switchport trunk native vlan 101
+140957.827: [14:09:57] switchport trunk allowed vlan add 1,101,300
+140957.827: [14:09:57]!
+140957.827: [14:09:57]interface eth-0-17
+140957.827: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] switchport access vlan 101
+140957.827: [14:09:57]!
+140957.827: [14:09:57]interface eth-0-18
+140957.827: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] switchport access vlan 101
+140957.827: [14:09:57]!
+140957.827: [14:09:57]interface eth-0-19
+140957.827: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] switchport access vlan 101
+140957.827: [14:09:57]!
+140957.827: [14:09:57]interface eth-0-20
+140957.827: [14:09:57] speed 25G
+140957.827: [14:09:57] duplex full
+140957.827: [14:09:57] switchport access vlan 101
+140957.827: [14:09:57]!
+140957.828: [14:09:57]interface eth-0-21
+140958.047: [14:09:58] speed 25G
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-22
+140958.047: [14:09:58] speed 25G
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-23
+140958.047: [14:09:58] speed 25G
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-24
+140958.047: [14:09:58] speed 25G
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-25
+140958.047: [14:09:58] speed 1000
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-26
+140958.047: [14:09:58] speed 25G
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-27
+140958.047: [14:09:58] speed 25G
+140958.047: [14:09:58] duplex full
+140958.047: [14:09:58] switchport access vlan 101
+140958.047: [14:09:58]!
+140958.047: [14:09:58]interface eth-0-28
+140958.048: [14:09:58] speed 25G
+140958.048: [14:09:58] duplex full
+140958.048: [14:09:58] switchport access vlan 101
+140958.048: [14:09:58]!
+140958.048: [14:09:58]interface eth-0-29
+140958.048: [14:09:58] speed 10G
+140958.048: [14:09:58] duplex full
+140958.048: [14:09:58] switchport access vlan 101
+140958.048: [14:09:58] channel-group 1 mode active
+140958.048: [14:09:58]!
+140958.048: [14:09:58]interface eth-0-30
+140958.048: [14:09:58] speed 10G
+140958.048: [14:09:58] duplex full
+140958.048: [14:09:58] switchport access vlan 101
+140958.048: [14:09:58] channel-group 1 mode active
+140958.048: [14:09:58]!
+140958.048: [14:09:58]interface eth-0-31
+140958.048: [14:09:58] speed 10G
+140958.048: [14:09:58] duplex full
+140958.048: [14:09:58] switchport access vlan 101
+140958.048: [14:09:58] channel-group 2 mode active
+140958.048: [14:09:58]!
+140958.048: [14:09:58]interface eth-0-32
+140958.048: [14:09:58] speed 10G
+140958.048: [14:09:58] duplex full
+140958.048: [14:09:58] switchport access vlan 101
+140958.048: [14:09:58] channel-group 2 mode active
+140958.048: [14:09:58]!
+140958.237: [14:09:58]interface eth-0-33
+140958.237: [14:09:58] speed 10G
+140958.237: [14:09:58] duplex full
+140958.238: [14:09:58] switchport access vlan 101
+140958.238: [14:09:58] channel-group 3 mode active
+140958.238: [14:09:58]!
+140958.238: [14:09:58]interface eth-0-34
+140958.238: [14:09:58] speed 10G
+140958.238: [14:09:58] duplex full
+140958.238: [14:09:58] switchport access vlan 101
+140958.238: [14:09:58] channel-group 3 mode active
+140958.238: [14:09:58]!
+140958.238: [14:09:58]interface eth-0-35
+140958.238: [14:09:58] speed 10G
+140958.238: [14:09:58] duplex full
+140958.239: [14:09:58] switchport access vlan 101
+140958.239: [14:09:58] channel-group 4 mode active
+140958.239: [14:09:58]!
+140958.239: [14:09:58]interface eth-0-36
+140958.239: [14:09:58] speed 10G
+140958.239: [14:09:58] duplex full
+140958.239: [14:09:58] switchport access vlan 101
+140958.239: [14:09:58] channel-group 4 mode active
+140958.239: [14:09:58]!
+140958.239: [14:09:58]interface eth-0-37
+140958.239: [14:09:58] speed 10G
+140958.239: [14:09:58] duplex full
+140958.239: [14:09:58] switchport access vlan 101
+140958.240: [14:09:58] channel-group 5 mode active
+140958.240: [14:09:58]!
+140958.240: [14:09:58]interface eth-0-38
+140958.240: [14:09:58] speed 10G
+140958.240: [14:09:58] duplex full
+140958.240: [14:09:58] switchport access vlan 101
+140958.240: [14:09:58] channel-group 5 mode active
+140958.240: [14:09:58]!
+140958.240: [14:09:58]interface eth-0-39
+140958.240: [14:09:58] speed 10G
+140958.240: [14:09:58] duplex full
+140958.240: [14:09:58] switchport access vlan 101
+140958.240: [14:09:58] channel-group 6 mode active
+140958.240: [14:09:58]!
+140958.240: [14:09:58]interface eth-0-40
+140958.240: [14:09:58] speed 10G
+140958.240: [14:09:58] duplex full
+140958.241: [14:09:58] switchport access vlan 101
+140958.241: [14:09:58] channel-group 6 mode active
+140958.241: [14:09:58]!
+140958.241: [14:09:58]interface eth-0-41
+140958.241: [14:09:58] speed 25G
+140958.241: [14:09:58] duplex full
+140958.241: [14:09:58] switchport access vlan 101
+140958.241: [14:09:58]!
+140958.241: [14:09:58]interface eth-0-42
+140958.241: [14:09:58] speed 25G
+140958.241: [14:09:58] duplex full
+140958.241: [14:09:58] switchport access vlan 101
+140958.241: [14:09:58]!
+140958.241: [14:09:58]interface eth-0-43
+140958.241: [14:09:58] speed 25G
+140958.241: [14:09:58] duplex full
+140958.241: [14:09:58] switchport access vlan 101
+140958.241: [14:09:58]!
+140959.888: [14:09:59]interface eth-0-44
+140959.888: [14:09:59] speed 25G
+140959.888: [14:09:59] duplex full
+140959.888: [14:09:59] switchport access vlan 101
+140959.888: [14:09:59]!
+140959.888: [14:09:59]interface eth-0-45
+140959.888: [14:09:59] speed 25G
+140959.888: [14:09:59] duplex full
+140959.888: [14:09:59] switchport access vlan 101
+140959.888: [14:09:59]!
+140959.888: [14:09:59]interface eth-0-46
+140959.888: [14:09:59] speed 25G
+140959.888: [14:09:59] duplex full
+140959.888: [14:09:59] switchport access vlan 101
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-47
+140959.889: [14:09:59] speed 25G
+140959.889: [14:09:59] duplex full
+140959.889: [14:09:59] fec rs-fec
+140959.889: [14:09:59] switchport access vlan 101
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-48
+140959.889: [14:09:59] speed 10G
+140959.889: [14:09:59] duplex full
+140959.889: [14:09:59] switchport access vlan 101
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-49
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-50
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-51
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-52
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-53
+140959.889: [14:09:59]!
+140959.889: [14:09:59]interface eth-0-54
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface eth-0-55
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface eth-0-56
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface agg1
+140959.890: [14:09:59] switchport access vlan 101
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface agg2
+140959.890: [14:09:59] switchport access vlan 101
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface agg3
+140959.890: [14:09:59] switchport access vlan 101
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface agg4
+140959.890: [14:09:59] switchport access vlan 101
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface agg5
+140959.890: [14:09:59] switchport access vlan 101
+140959.890: [14:09:59]!
+140959.890: [14:09:59]interface agg6
+140959.891: [14:09:59] switchport access vlan 101
+140959.891: [14:09:59]!
+140959.891: [14:09:59]interface vlan1
+140959.891: [14:09:59] ip address dhcp
+140959.891: [14:09:59]!
+141010.973: [14:10:10]SCN9300H-01# show  running-config | grep fec
+141011.023: [14:10:11] fec rs-fec
+141011.023: [14:10:11] fec rs-fec
+155651.345: [15:56:51][202603099-172.16.208.2-各种服务-15:56:51]
+155651.387: [15:56:51]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+155651.387: [15:56:51]
+155651.388: [15:56:51]The programs included with the Debian GNU/Linux system are free software;
+155651.388: [15:56:51]the exact distribution terms for each program are described in the
+155651.388: [15:56:51]individual files in /usr/share/doc/*/copyright.
+155651.388: [15:56:51]
+155651.388: [15:56:51]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+155651.388: [15:56:51]permitted by applicable law.
+155651.388: [15:56:51]Last login: Mon Mar 23 23:02:01 2026 from 10.253.0.11
+155651.756: [15:56:51]
+155651.878: [15:56:51]
+155651.971: [15:56:51][root@172-16-208-2 ~]# 
+155651.971: [15:56:51][root@172-16-208-2 ~]# 
+155659.257: [15:56:59][root@172-16-208-2 ~]# ping 172.16.101.44
+155659.258: [15:56:59]PING 172.16.101.44 (172.16.101.44) 56(84) bytes of data.
+155735.985: [15:57:35]64 bytes from 172.16.101.44: icmp_seq=37 ttl=63 time=30.3 ms
+155736.949: [15:57:36]64 bytes from 172.16.101.44: icmp_seq=38 ttl=63 time=0.220 ms
+155737.966: [15:57:37]64 bytes from 172.16.101.44: icmp_seq=39 ttl=63 time=0.201 ms
+155738.991: [15:57:38]64 bytes from 172.16.101.44: icmp_seq=40 ttl=63 time=0.334 ms
+155740.021: [15:57:40]64 bytes from 172.16.101.44: icmp_seq=41 ttl=63 time=0.212 ms
+155741.036: [15:57:41]64 bytes from 172.16.101.44: icmp_seq=42 ttl=63 time=0.193 ms
+155742.047: [15:57:42]64 bytes from 172.16.101.44: icmp_seq=43 ttl=63 time=0.249 ms
+155743.034: [15:57:43]64 bytes from 172.16.101.44: icmp_seq=44 ttl=63 time=0.169 ms
+155744.049: [15:57:44]64 bytes from 172.16.101.44: icmp_seq=45 ttl=63 time=0.185 ms
+155745.073: [15:57:45]64 bytes from 172.16.101.44: icmp_seq=46 ttl=63 time=0.256 ms
+155746.097: [15:57:46]64 bytes from 172.16.101.44: icmp_seq=47 ttl=63 time=0.219 ms
+155747.120: [15:57:47]64 bytes from 172.16.101.44: icmp_seq=48 ttl=63 time=0.247 ms
+155748.143: [15:57:48]64 bytes from 172.16.101.44: icmp_seq=49 ttl=63 time=0.171 ms
+155749.166: [15:57:49]64 bytes from 172.16.101.44: icmp_seq=50 ttl=63 time=0.175 ms
+155750.190: [15:57:50]64 bytes from 172.16.101.44: icmp_seq=51 ttl=63 time=0.246 ms
+155751.214: [15:57:51]64 bytes from 172.16.101.44: icmp_seq=52 ttl=63 time=0.197 ms
+155752.240: [15:57:52]64 bytes from 172.16.101.44: icmp_seq=53 ttl=63 time=0.197 ms
+155753.263: [15:57:53]64 bytes from 172.16.101.44: icmp_seq=54 ttl=63 time=0.170 ms
+155754.293: [15:57:54]64 bytes from 172.16.101.44: icmp_seq=55 ttl=63 time=0.233 ms
+155755.313: [15:57:55]64 bytes from 172.16.101.44: icmp_seq=56 ttl=63 time=0.178 ms
+155756.336: [15:57:56]64 bytes from 172.16.101.44: icmp_seq=57 ttl=63 time=0.255 ms
+155757.359: [15:57:57]64 bytes from 172.16.101.44: icmp_seq=58 ttl=63 time=0.269 ms
+155758.355: [15:57:58]64 bytes from 172.16.101.44: icmp_seq=59 ttl=63 time=0.247 ms
+155759.373: [15:57:59]64 bytes from 172.16.101.44: icmp_seq=60 ttl=63 time=0.207 ms
+155800.399: [15:58:00]64 bytes from 172.16.101.44: icmp_seq=61 ttl=63 time=0.174 ms
+155801.423: [15:58:01]64 bytes from 172.16.101.44: icmp_seq=62 ttl=63 time=0.211 ms
+155802.443: [15:58:02]64 bytes from 172.16.101.44: icmp_seq=63 ttl=63 time=0.260 ms
+155803.466: [15:58:03]64 bytes from 172.16.101.44: icmp_seq=64 ttl=63 time=0.227 ms
+155804.490: [15:58:04]64 bytes from 172.16.101.44: icmp_seq=65 ttl=63 time=0.268 ms
+155805.522: [15:58:05]64 bytes from 172.16.101.44: icmp_seq=66 ttl=63 time=0.170 ms
+155806.545: [15:58:06]64 bytes from 172.16.101.44: icmp_seq=67 ttl=63 time=0.181 ms
+155807.570: [15:58:07]64 bytes from 172.16.101.44: icmp_seq=68 ttl=63 time=0.198 ms
+155808.590: [15:58:08]64 bytes from 172.16.101.44: icmp_seq=69 ttl=63 time=0.202 ms
+155809.611: [15:58:09]64 bytes from 172.16.101.44: icmp_seq=70 ttl=63 time=0.185 ms
+155810.637: [15:58:10]64 bytes from 172.16.101.44: icmp_seq=71 ttl=63 time=0.208 ms
+155811.660: [15:58:11]64 bytes from 172.16.101.44: icmp_seq=72 ttl=63 time=0.203 ms
+155812.694: [15:58:12]64 bytes from 172.16.101.44: icmp_seq=73 ttl=63 time=0.187 ms
+155813.707: [15:58:13]64 bytes from 172.16.101.44: icmp_seq=74 ttl=63 time=0.190 ms
+155814.713: [15:58:14]64 bytes from 172.16.101.44: icmp_seq=75 ttl=63 time=0.285 ms
+155815.725: [15:58:15]64 bytes from 172.16.101.44: icmp_seq=76 ttl=63 time=0.168 ms
+155816.747: [15:58:16]64 bytes from 172.16.101.44: icmp_seq=77 ttl=63 time=0.196 ms
+155817.772: [15:58:17]64 bytes from 172.16.101.44: icmp_seq=78 ttl=63 time=0.174 ms
+155818.796: [15:58:18]64 bytes from 172.16.101.44: icmp_seq=79 ttl=63 time=0.189 ms
+155819.823: [15:58:19]64 bytes from 172.16.101.44: icmp_seq=80 ttl=63 time=0.269 ms
+155820.843: [15:58:20]64 bytes from 172.16.101.44: icmp_seq=81 ttl=63 time=0.309 ms
+155821.870: [15:58:21]64 bytes from 172.16.101.44: icmp_seq=82 ttl=63 time=0.352 ms
+155822.892: [15:58:22]64 bytes from 172.16.101.44: icmp_seq=83 ttl=63 time=0.217 ms
+155823.919: [15:58:23]64 bytes from 172.16.101.44: icmp_seq=84 ttl=63 time=0.174 ms
+155824.944: [15:58:24]64 bytes from 172.16.101.44: icmp_seq=85 ttl=63 time=0.159 ms
+155825.964: [15:58:25]64 bytes from 172.16.101.44: icmp_seq=86 ttl=63 time=0.278 ms
+155826.987: [15:58:26]64 bytes from 172.16.101.44: icmp_seq=87 ttl=63 time=0.176 ms
+155828.017: [15:58:28]64 bytes from 172.16.101.44: icmp_seq=88 ttl=63 time=0.168 ms
+155829.040: [15:58:29]64 bytes from 172.16.101.44: icmp_seq=89 ttl=63 time=0.201 ms
+155830.060: [15:58:30]64 bytes from 172.16.101.44: icmp_seq=90 ttl=63 time=0.179 ms
+155831.084: [15:58:31]64 bytes from 172.16.101.44: icmp_seq=91 ttl=63 time=0.173 ms
+155832.112: [15:58:32]64 bytes from 172.16.101.44: icmp_seq=92 ttl=63 time=0.265 ms
+155833.133: [15:58:33]64 bytes from 172.16.101.44: icmp_seq=93 ttl=63 time=0.246 ms
+155834.156: [15:58:34]64 bytes from 172.16.101.44: icmp_seq=94 ttl=63 time=0.236 ms
+155835.179: [15:58:35]64 bytes from 172.16.101.44: icmp_seq=95 ttl=63 time=0.192 ms
+155836.204: [15:58:36]64 bytes from 172.16.101.44: icmp_seq=96 ttl=63 time=0.175 ms
+155837.228: [15:58:37]64 bytes from 172.16.101.44: icmp_seq=97 ttl=63 time=0.228 ms
+155838.256: [15:58:38]64 bytes from 172.16.101.44: icmp_seq=98 ttl=63 time=0.246 ms
+155839.279: [15:58:39]64 bytes from 172.16.101.44: icmp_seq=99 ttl=63 time=0.237 ms
+155840.299: [15:58:40]64 bytes from 172.16.101.44: icmp_seq=100 ttl=63 time=0.178 ms
+155841.329: [15:58:41]64 bytes from 172.16.101.44: icmp_seq=101 ttl=63 time=0.230 ms
+155842.353: [15:58:42]64 bytes from 172.16.101.44: icmp_seq=102 ttl=63 time=0.269 ms
+155843.375: [15:58:43]64 bytes from 172.16.101.44: icmp_seq=103 ttl=63 time=0.249 ms
+155844.397: [15:58:44]64 bytes from 172.16.101.44: icmp_seq=104 ttl=63 time=0.181 ms
+155845.425: [15:58:45]64 bytes from 172.16.101.44: icmp_seq=105 ttl=63 time=0.173 ms
+155846.444: [15:58:46]64 bytes from 172.16.101.44: icmp_seq=106 ttl=63 time=0.199 ms
+155847.473: [15:58:47]64 bytes from 172.16.101.44: icmp_seq=107 ttl=63 time=0.177 ms
+155848.495: [15:58:48]64 bytes from 172.16.101.44: icmp_seq=108 ttl=63 time=0.203 ms
+155849.516: [15:58:49]64 bytes from 172.16.101.44: icmp_seq=109 ttl=63 time=0.171 ms
+155850.542: [15:58:50]64 bytes from 172.16.101.44: icmp_seq=110 ttl=63 time=0.165 ms
+155851.565: [15:58:51]64 bytes from 172.16.101.44: icmp_seq=111 ttl=63 time=0.196 ms
+155852.587: [15:58:52]64 bytes from 172.16.101.44: icmp_seq=112 ttl=63 time=0.235 ms
+155853.614: [15:58:53]64 bytes from 172.16.101.44: icmp_seq=113 ttl=63 time=0.179 ms
+155854.636: [15:58:54]64 bytes from 172.16.101.44: icmp_seq=114 ttl=63 time=0.307 ms
+155855.662: [15:58:55]64 bytes from 172.16.101.44: icmp_seq=115 ttl=63 time=0.193 ms
+155856.689: [15:58:56]64 bytes from 172.16.101.44: icmp_seq=116 ttl=63 time=0.191 ms
+155857.712: [15:58:57]64 bytes from 172.16.101.44: icmp_seq=117 ttl=63 time=0.179 ms
+155858.735: [15:58:58]64 bytes from 172.16.101.44: icmp_seq=118 ttl=63 time=0.271 ms
+155859.758: [15:58:59]64 bytes from 172.16.101.44: icmp_seq=119 ttl=63 time=0.190 ms
+155900.779: [15:59:00]64 bytes from 172.16.101.44: icmp_seq=120 ttl=63 time=0.207 ms
+155901.817: [15:59:01]64 bytes from 172.16.101.44: icmp_seq=121 ttl=63 time=0.216 ms
+155902.810: [15:59:02]64 bytes from 172.16.101.44: icmp_seq=122 ttl=63 time=0.243 ms
+155903.824: [15:59:03]64 bytes from 172.16.101.44: icmp_seq=123 ttl=63 time=0.251 ms
+155904.849: [15:59:04]64 bytes from 172.16.101.44: icmp_seq=124 ttl=63 time=0.251 ms
+155905.871: [15:59:05]64 bytes from 172.16.101.44: icmp_seq=125 ttl=63 time=0.386 ms
+155906.896: [15:59:06]64 bytes from 172.16.101.44: icmp_seq=126 ttl=63 time=0.232 ms
+155907.915: [15:59:07]64 bytes from 172.16.101.44: icmp_seq=127 ttl=63 time=0.232 ms
+155908.944: [15:59:08]64 bytes from 172.16.101.44: icmp_seq=128 ttl=63 time=0.199 ms
+155909.965: [15:59:09]64 bytes from 172.16.101.44: icmp_seq=129 ttl=63 time=0.233 ms
+155910.995: [15:59:10]64 bytes from 172.16.101.44: icmp_seq=130 ttl=63 time=0.207 ms
+155911.994: [15:59:11]64 bytes from 172.16.101.44: icmp_seq=131 ttl=63 time=0.236 ms
+155913.007: [15:59:13]64 bytes from 172.16.101.44: icmp_seq=132 ttl=63 time=0.228 ms
+155914.027: [15:59:14]64 bytes from 172.16.101.44: icmp_seq=133 ttl=63 time=0.281 ms
+155915.051: [15:59:15]64 bytes from 172.16.101.44: icmp_seq=134 ttl=63 time=0.182 ms
+155916.076: [15:59:16]64 bytes from 172.16.101.44: icmp_seq=135 ttl=63 time=0.285 ms
+155917.104: [15:59:17]64 bytes from 172.16.101.44: icmp_seq=136 ttl=63 time=0.208 ms
+155918.124: [15:59:18]64 bytes from 172.16.101.44: icmp_seq=137 ttl=63 time=0.213 ms
+155919.149: [15:59:19]64 bytes from 172.16.101.44: icmp_seq=138 ttl=63 time=0.223 ms
+155920.172: [15:59:20]64 bytes from 172.16.101.44: icmp_seq=139 ttl=63 time=0.187 ms
+155921.203: [15:59:21]64 bytes from 172.16.101.44: icmp_seq=140 ttl=63 time=0.207 ms
+155922.220: [15:59:22]64 bytes from 172.16.101.44: icmp_seq=141 ttl=63 time=0.171 ms
+155923.223: [15:59:23]64 bytes from 172.16.101.44: icmp_seq=142 ttl=63 time=0.180 ms
+155924.240: [15:59:24]64 bytes from 172.16.101.44: icmp_seq=143 ttl=63 time=0.193 ms
+155925.259: [15:59:25]64 bytes from 172.16.101.44: icmp_seq=144 ttl=63 time=0.219 ms
+155926.291: [15:59:26]64 bytes from 172.16.101.44: icmp_seq=145 ttl=63 time=0.191 ms
+155927.311: [15:59:27]64 bytes from 172.16.101.44: icmp_seq=146 ttl=63 time=0.190 ms
+155928.335: [15:59:28]64 bytes from 172.16.101.44: icmp_seq=147 ttl=63 time=0.223 ms
+155929.359: [15:59:29]64 bytes from 172.16.101.44: icmp_seq=148 ttl=63 time=0.164 ms
+155930.380: [15:59:30]64 bytes from 172.16.101.44: icmp_seq=149 ttl=63 time=0.310 ms
+155931.407: [15:59:31]64 bytes from 172.16.101.44: icmp_seq=150 ttl=63 time=0.183 ms
+155932.428: [15:59:32]64 bytes from 172.16.101.44: icmp_seq=151 ttl=63 time=0.213 ms
+155933.455: [15:59:33]64 bytes from 172.16.101.44: icmp_seq=152 ttl=63 time=0.257 ms
+155934.477: [15:59:34]64 bytes from 172.16.101.44: icmp_seq=153 ttl=63 time=0.265 ms
+155935.500: [15:59:35]64 bytes from 172.16.101.44: icmp_seq=154 ttl=63 time=0.183 ms
+155936.526: [15:59:36]64 bytes from 172.16.101.44: icmp_seq=155 ttl=63 time=0.190 ms
+155937.550: [15:59:37]64 bytes from 172.16.101.44: icmp_seq=156 ttl=63 time=0.208 ms
+155938.571: [15:59:38]64 bytes from 172.16.101.44: icmp_seq=157 ttl=63 time=0.226 ms
+155939.597: [15:59:39]64 bytes from 172.16.101.44: icmp_seq=158 ttl=63 time=0.156 ms
+155940.625: [15:59:40]64 bytes from 172.16.101.44: icmp_seq=159 ttl=63 time=0.186 ms
+155941.645: [15:59:41]64 bytes from 172.16.101.44: icmp_seq=160 ttl=63 time=0.261 ms
+155942.667: [15:59:42]64 bytes from 172.16.101.44: icmp_seq=161 ttl=63 time=0.297 ms
+155943.679: [15:59:43]64 bytes from 172.16.101.44: icmp_seq=162 ttl=63 time=0.305 ms
+155944.674: [15:59:44]64 bytes from 172.16.101.44: icmp_seq=163 ttl=63 time=0.226 ms
+155945.678: [15:59:45]64 bytes from 172.16.101.44: icmp_seq=164 ttl=63 time=0.364 ms
+155946.707: [15:59:46]64 bytes from 172.16.101.44: icmp_seq=165 ttl=63 time=0.303 ms
+155947.705: [15:59:47]64 bytes from 172.16.101.44: icmp_seq=166 ttl=63 time=0.319 ms
+155948.716: [15:59:48]64 bytes from 172.16.101.44: icmp_seq=167 ttl=63 time=0.303 ms
+155949.739: [15:59:49]64 bytes from 172.16.101.44: icmp_seq=168 ttl=63 time=0.199 ms
+155950.763: [15:59:50]64 bytes from 172.16.101.44: icmp_seq=169 ttl=63 time=0.248 ms
+155951.788: [15:59:51]64 bytes from 172.16.101.44: icmp_seq=170 ttl=63 time=0.269 ms
+155952.824: [15:59:52]64 bytes from 172.16.101.44: icmp_seq=171 ttl=63 time=0.243 ms
+155953.838: [15:59:53]64 bytes from 172.16.101.44: icmp_seq=172 ttl=63 time=0.209 ms
+155954.871: [15:59:54]64 bytes from 172.16.101.44: icmp_seq=173 ttl=63 time=0.196 ms
+155955.888: [15:59:55]64 bytes from 172.16.101.44: icmp_seq=174 ttl=63 time=0.195 ms
+155956.911: [15:59:56]64 bytes from 172.16.101.44: icmp_seq=175 ttl=63 time=0.213 ms
+155957.937: [15:59:57]64 bytes from 172.16.101.44: icmp_seq=176 ttl=63 time=0.295 ms
+155958.959: [15:59:58]64 bytes from 172.16.101.44: icmp_seq=177 ttl=63 time=0.189 ms
+160000.009: [16:00:00]64 bytes from 172.16.101.44: icmp_seq=178 ttl=63 time=0.160 ms
+160001.001: [16:00:01]64 bytes from 172.16.101.44: icmp_seq=179 ttl=63 time=0.216 ms
+160002.037: [16:00:02]64 bytes from 172.16.101.44: icmp_seq=180 ttl=63 time=0.188 ms
+160003.055: [16:00:03]64 bytes from 172.16.101.44: icmp_seq=181 ttl=63 time=0.192 ms
+160004.092: [16:00:04]64 bytes from 172.16.101.44: icmp_seq=182 ttl=63 time=0.191 ms
+160005.099: [16:00:05]64 bytes from 172.16.101.44: icmp_seq=183 ttl=63 time=0.192 ms
+160006.128: [16:00:06]64 bytes from 172.16.101.44: icmp_seq=184 ttl=63 time=0.186 ms
+160007.147: [16:00:07]64 bytes from 172.16.101.44: icmp_seq=185 ttl=63 time=0.194 ms
+160008.171: [16:00:08]64 bytes from 172.16.101.44: icmp_seq=186 ttl=63 time=0.240 ms
+160009.195: [16:00:09]64 bytes from 172.16.101.44: icmp_seq=187 ttl=63 time=0.223 ms
+160010.220: [16:00:10]64 bytes from 172.16.101.44: icmp_seq=188 ttl=63 time=0.245 ms
+160011.248: [16:00:11]64 bytes from 172.16.101.44: icmp_seq=189 ttl=63 time=0.242 ms
+160012.249: [16:00:12]64 bytes from 172.16.101.44: icmp_seq=190 ttl=63 time=0.340 ms
+160013.262: [16:00:13]64 bytes from 172.16.101.44: icmp_seq=191 ttl=63 time=0.293 ms
+160014.286: [16:00:14]64 bytes from 172.16.101.44: icmp_seq=192 ttl=63 time=0.175 ms
+160015.308: [16:00:15]64 bytes from 172.16.101.44: icmp_seq=193 ttl=63 time=0.165 ms
+160016.336: [16:00:16]64 bytes from 172.16.101.44: icmp_seq=194 ttl=63 time=0.170 ms
+160017.356: [16:00:17]64 bytes from 172.16.101.44: icmp_seq=195 ttl=63 time=0.225 ms
+160018.381: [16:00:18]64 bytes from 172.16.101.44: icmp_seq=196 ttl=63 time=0.272 ms
+160019.411: [16:00:19]64 bytes from 172.16.101.44: icmp_seq=197 ttl=63 time=0.206 ms
+160020.427: [16:00:20]64 bytes from 172.16.101.44: icmp_seq=198 ttl=63 time=0.207 ms
+160021.452: [16:00:21]64 bytes from 172.16.101.44: icmp_seq=199 ttl=63 time=0.217 ms
+160022.475: [16:00:22]64 bytes from 172.16.101.44: icmp_seq=200 ttl=63 time=0.156 ms
+160023.500: [16:00:23]64 bytes from 172.16.101.44: icmp_seq=201 ttl=63 time=0.271 ms
+160024.524: [16:00:24]64 bytes from 172.16.101.44: icmp_seq=202 ttl=63 time=0.225 ms
+160025.550: [16:00:25]64 bytes from 172.16.101.44: icmp_seq=203 ttl=63 time=0.215 ms
+160026.572: [16:00:26]64 bytes from 172.16.101.44: icmp_seq=204 ttl=63 time=0.230 ms
+160027.599: [16:00:27]64 bytes from 172.16.101.44: icmp_seq=205 ttl=63 time=0.209 ms
+160028.624: [16:00:28]64 bytes from 172.16.101.44: icmp_seq=206 ttl=63 time=0.211 ms
+160029.650: [16:00:29]64 bytes from 172.16.101.44: icmp_seq=207 ttl=63 time=0.251 ms
+160030.650: [16:00:30]64 bytes from 172.16.101.44: icmp_seq=208 ttl=63 time=0.246 ms
+160031.660: [16:00:31]64 bytes from 172.16.101.44: icmp_seq=209 ttl=63 time=0.185 ms
+160032.685: [16:00:32]64 bytes from 172.16.101.44: icmp_seq=210 ttl=63 time=0.264 ms
+160033.713: [16:00:33]64 bytes from 172.16.101.44: icmp_seq=211 ttl=63 time=0.178 ms
+160034.736: [16:00:34]64 bytes from 172.16.101.44: icmp_seq=212 ttl=63 time=0.237 ms
+160035.761: [16:00:35]64 bytes from 172.16.101.44: icmp_seq=213 ttl=63 time=0.259 ms
+160036.783: [16:00:36]64 bytes from 172.16.101.44: icmp_seq=214 ttl=63 time=0.268 ms
+160037.805: [16:00:37]64 bytes from 172.16.101.44: icmp_seq=215 ttl=63 time=0.159 ms
+160038.828: [16:00:38]64 bytes from 172.16.101.44: icmp_seq=216 ttl=63 time=0.285 ms
+160039.865: [16:00:39]64 bytes from 172.16.101.44: icmp_seq=217 ttl=63 time=0.217 ms
+160040.880: [16:00:40]64 bytes from 172.16.101.44: icmp_seq=218 ttl=63 time=0.207 ms
+160041.900: [16:00:41]64 bytes from 172.16.101.44: icmp_seq=219 ttl=63 time=0.247 ms
+160043.123: [16:00:43]64 bytes from 172.16.101.44: icmp_seq=220 ttl=63 time=0.256 ms
+160043.996: [16:00:43]64 bytes from 172.16.101.44: icmp_seq=221 ttl=63 time=0.181 ms
+160045.026: [16:00:45]64 bytes from 172.16.101.44: icmp_seq=222 ttl=63 time=0.177 ms
+160045.980: [16:00:45]64 bytes from 172.16.101.44: icmp_seq=223 ttl=63 time=0.259 ms
+160046.987: [16:00:46]64 bytes from 172.16.101.44: icmp_seq=224 ttl=63 time=0.238 ms
+160048.013: [16:00:48]64 bytes from 172.16.101.44: icmp_seq=225 ttl=63 time=0.297 ms
+160049.038: [16:00:49]64 bytes from 172.16.101.44: icmp_seq=226 ttl=63 time=0.243 ms
+160050.061: [16:00:50]64 bytes from 172.16.101.44: icmp_seq=227 ttl=63 time=0.190 ms
+160051.087: [16:00:51]64 bytes from 172.16.101.44: icmp_seq=228 ttl=63 time=0.202 ms
+160052.109: [16:00:52]64 bytes from 172.16.101.44: icmp_seq=229 ttl=63 time=0.288 ms
+160053.133: [16:00:53]64 bytes from 172.16.101.44: icmp_seq=230 ttl=63 time=0.240 ms
+160054.155: [16:00:54]64 bytes from 172.16.101.44: icmp_seq=231 ttl=63 time=0.192 ms
+160055.181: [16:00:55]64 bytes from 172.16.101.44: icmp_seq=232 ttl=63 time=0.219 ms
+160056.204: [16:00:56]64 bytes from 172.16.101.44: icmp_seq=233 ttl=63 time=0.175 ms
+160057.229: [16:00:57]64 bytes from 172.16.101.44: icmp_seq=234 ttl=63 time=0.284 ms
+160058.257: [16:00:58]64 bytes from 172.16.101.44: icmp_seq=235 ttl=63 time=0.173 ms
+160059.282: [16:00:59]64 bytes from 172.16.101.44: icmp_seq=236 ttl=63 time=0.225 ms
+160100.300: [16:01:00]64 bytes from 172.16.101.44: icmp_seq=237 ttl=63 time=0.219 ms
+160101.323: [16:01:01]64 bytes from 172.16.101.44: icmp_seq=238 ttl=63 time=0.189 ms
+160102.348: [16:01:02]64 bytes from 172.16.101.44: icmp_seq=239 ttl=63 time=0.279 ms
+160103.381: [16:01:03]64 bytes from 172.16.101.44: icmp_seq=240 ttl=63 time=0.206 ms
+160247.689: [16:02:47]64 bytes from 172.16.101.44: icmp_seq=342 ttl=63 time=24.7 ms
+160248.664: [16:02:48]64 bytes from 172.16.101.44: icmp_seq=343 ttl=63 time=0.269 ms
+160249.677: [16:02:49]64 bytes from 172.16.101.44: icmp_seq=344 ttl=63 time=0.255 ms
+160250.705: [16:02:50]64 bytes from 172.16.101.44: icmp_seq=345 ttl=63 time=0.177 ms
+160251.736: [16:02:51]64 bytes from 172.16.101.44: icmp_seq=346 ttl=63 time=0.223 ms
+160252.751: [16:02:52]64 bytes from 172.16.101.44: icmp_seq=347 ttl=63 time=0.256 ms
+160253.779: [16:02:53]64 bytes from 172.16.101.44: icmp_seq=348 ttl=63 time=0.253 ms
+160254.796: [16:02:54]64 bytes from 172.16.101.44: icmp_seq=349 ttl=63 time=0.185 ms
+160255.824: [16:02:55]64 bytes from 172.16.101.44: icmp_seq=350 ttl=63 time=0.195 ms
+160256.843: [16:02:56]64 bytes from 172.16.101.44: icmp_seq=351 ttl=63 time=0.177 ms
+160257.867: [16:02:57]64 bytes from 172.16.101.44: icmp_seq=352 ttl=63 time=0.180 ms
+160258.891: [16:02:58]64 bytes from 172.16.101.44: icmp_seq=353 ttl=63 time=0.205 ms
+160259.915: [16:02:59]64 bytes from 172.16.101.44: icmp_seq=354 ttl=63 time=0.204 ms
+160300.939: [16:03:00]64 bytes from 172.16.101.44: icmp_seq=355 ttl=63 time=0.207 ms
+160301.968: [16:03:01]64 bytes from 172.16.101.44: icmp_seq=356 ttl=63 time=0.212 ms
+160302.993: [16:03:02]64 bytes from 172.16.101.44: icmp_seq=357 ttl=63 time=0.189 ms
+160304.013: [16:03:04]64 bytes from 172.16.101.44: icmp_seq=358 ttl=63 time=0.183 ms
+160305.035: [16:03:05]64 bytes from 172.16.101.44: icmp_seq=359 ttl=63 time=0.148 ms
+160306.064: [16:03:06]64 bytes from 172.16.101.44: icmp_seq=360 ttl=63 time=0.191 ms
+160307.084: [16:03:07]64 bytes from 172.16.101.44: icmp_seq=361 ttl=63 time=0.253 ms
+160308.113: [16:03:08]64 bytes from 172.16.101.44: icmp_seq=362 ttl=63 time=0.190 ms
+160309.136: [16:03:09]64 bytes from 172.16.101.44: icmp_seq=363 ttl=63 time=0.212 ms
+160310.171: [16:03:10]64 bytes from 172.16.101.44: icmp_seq=364 ttl=63 time=0.278 ms
+160311.185: [16:03:11]64 bytes from 172.16.101.44: icmp_seq=365 ttl=63 time=0.271 ms
+160312.210: [16:03:12]64 bytes from 172.16.101.44: icmp_seq=366 ttl=63 time=0.341 ms
+160313.230: [16:03:13]64 bytes from 172.16.101.44: icmp_seq=367 ttl=63 time=0.306 ms
+160314.255: [16:03:14]64 bytes from 172.16.101.44: icmp_seq=368 ttl=63 time=0.209 ms
+160315.276: [16:03:15]64 bytes from 172.16.101.44: icmp_seq=369 ttl=63 time=0.217 ms
+160316.300: [16:03:16]64 bytes from 172.16.101.44: icmp_seq=370 ttl=63 time=0.229 ms
+160317.324: [16:03:17]64 bytes from 172.16.101.44: icmp_seq=371 ttl=63 time=0.268 ms
+160318.348: [16:03:18]64 bytes from 172.16.101.44: icmp_seq=372 ttl=63 time=0.204 ms
+160319.375: [16:03:19]64 bytes from 172.16.101.44: icmp_seq=373 ttl=63 time=0.223 ms
+160320.406: [16:03:20]64 bytes from 172.16.101.44: icmp_seq=374 ttl=63 time=0.192 ms
+160321.424: [16:03:21]64 bytes from 172.16.101.44: icmp_seq=375 ttl=63 time=0.170 ms
+160322.450: [16:03:22]64 bytes from 172.16.101.44: icmp_seq=376 ttl=63 time=0.202 ms
+160323.473: [16:03:23]64 bytes from 172.16.101.44: icmp_seq=377 ttl=63 time=0.271 ms
+160324.497: [16:03:24]64 bytes from 172.16.101.44: icmp_seq=378 ttl=63 time=0.266 ms
+160325.494: [16:03:25]64 bytes from 172.16.101.44: icmp_seq=379 ttl=63 time=0.209 ms
+160326.509: [16:03:26]64 bytes from 172.16.101.44: icmp_seq=380 ttl=63 time=0.232 ms
+160327.534: [16:03:27]64 bytes from 172.16.101.44: icmp_seq=381 ttl=63 time=0.203 ms
+160328.562: [16:03:28]64 bytes from 172.16.101.44: icmp_seq=382 ttl=63 time=0.296 ms
+160329.580: [16:03:29]64 bytes from 172.16.101.44: icmp_seq=383 ttl=63 time=0.203 ms
+160330.587: [16:03:30]64 bytes from 172.16.101.44: icmp_seq=384 ttl=63 time=0.242 ms
+160331.601: [16:03:31]64 bytes from 172.16.101.44: icmp_seq=385 ttl=63 time=0.206 ms
+160332.624: [16:03:32]64 bytes from 172.16.101.44: icmp_seq=386 ttl=63 time=0.202 ms
+160333.646: [16:03:33]64 bytes from 172.16.101.44: icmp_seq=387 ttl=63 time=0.313 ms
+160334.673: [16:03:34]64 bytes from 172.16.101.44: icmp_seq=388 ttl=63 time=0.277 ms
+160335.700: [16:03:35]64 bytes from 172.16.101.44: icmp_seq=389 ttl=63 time=0.263 ms
+160336.717: [16:03:36]64 bytes from 172.16.101.44: icmp_seq=390 ttl=63 time=0.238 ms
+160337.748: [16:03:37]64 bytes from 172.16.101.44: icmp_seq=391 ttl=63 time=0.325 ms
+160338.747: [16:03:38]64 bytes from 172.16.101.44: icmp_seq=392 ttl=63 time=0.312 ms
+160339.742: [16:03:39]64 bytes from 172.16.101.44: icmp_seq=393 ttl=63 time=0.356 ms
+160340.754: [16:03:40]64 bytes from 172.16.101.44: icmp_seq=394 ttl=63 time=0.263 ms
+160341.773: [16:03:41]64 bytes from 172.16.101.44: icmp_seq=395 ttl=63 time=0.204 ms
+160342.800: [16:03:42]64 bytes from 172.16.101.44: icmp_seq=396 ttl=63 time=0.277 ms
+160343.827: [16:03:43]64 bytes from 172.16.101.44: icmp_seq=397 ttl=63 time=0.205 ms
+160344.848: [16:03:44]64 bytes from 172.16.101.44: icmp_seq=398 ttl=63 time=0.175 ms
+160345.868: [16:03:45]64 bytes from 172.16.101.44: icmp_seq=399 ttl=63 time=0.300 ms
+160346.897: [16:03:46]64 bytes from 172.16.101.44: icmp_seq=400 ttl=63 time=0.260 ms
+160347.916: [16:03:47]64 bytes from 172.16.101.44: icmp_seq=401 ttl=63 time=0.225 ms
+160348.940: [16:03:48]64 bytes from 172.16.101.44: icmp_seq=402 ttl=63 time=0.373 ms
+160349.969: [16:03:49]64 bytes from 172.16.101.44: icmp_seq=403 ttl=63 time=0.257 ms
+160350.993: [16:03:50]64 bytes from 172.16.101.44: icmp_seq=404 ttl=63 time=0.283 ms
+160352.015: [16:03:52]64 bytes from 172.16.101.44: icmp_seq=405 ttl=63 time=0.207 ms
+160353.041: [16:03:53]64 bytes from 172.16.101.44: icmp_seq=406 ttl=63 time=0.215 ms
+160354.065: [16:03:54]64 bytes from 172.16.101.44: icmp_seq=407 ttl=63 time=0.175 ms
+160355.089: [16:03:55]64 bytes from 172.16.101.44: icmp_seq=408 ttl=63 time=0.246 ms
+160356.112: [16:03:56]64 bytes from 172.16.101.44: icmp_seq=409 ttl=63 time=0.229 ms
+160357.135: [16:03:57]64 bytes from 172.16.101.44: icmp_seq=410 ttl=63 time=0.219 ms
+160358.160: [16:03:58]64 bytes from 172.16.101.44: icmp_seq=411 ttl=63 time=0.264 ms
+160359.181: [16:03:59]64 bytes from 172.16.101.44: icmp_seq=412 ttl=63 time=0.235 ms
+160400.209: [16:04:00]64 bytes from 172.16.101.44: icmp_seq=413 ttl=63 time=0.206 ms
+160401.231: [16:04:01]64 bytes from 172.16.101.44: icmp_seq=414 ttl=63 time=0.183 ms
+160402.251: [16:04:02]64 bytes from 172.16.101.44: icmp_seq=415 ttl=63 time=0.185 ms
+160403.280: [16:04:03]64 bytes from 172.16.101.44: icmp_seq=416 ttl=63 time=0.277 ms
+160404.366: [16:04:04]64 bytes from 172.16.101.44: icmp_seq=417 ttl=63 time=0.176 ms
+160405.324: [16:04:05]64 bytes from 172.16.101.44: icmp_seq=418 ttl=63 time=0.204 ms
+160406.348: [16:04:06]64 bytes from 172.16.101.44: icmp_seq=419 ttl=63 time=0.175 ms
+160407.376: [16:04:07]64 bytes from 172.16.101.44: icmp_seq=420 ttl=63 time=0.283 ms
+160408.396: [16:04:08]64 bytes from 172.16.101.44: icmp_seq=421 ttl=63 time=0.184 ms
+160409.419: [16:04:09]64 bytes from 172.16.101.44: icmp_seq=422 ttl=63 time=0.202 ms
+160410.447: [16:04:10]64 bytes from 172.16.101.44: icmp_seq=423 ttl=63 time=0.152 ms
+160411.468: [16:04:11]64 bytes from 172.16.101.44: icmp_seq=424 ttl=63 time=0.274 ms
+160412.498: [16:04:12]64 bytes from 172.16.101.44: icmp_seq=425 ttl=63 time=0.303 ms
+160413.598: [16:04:13]64 bytes from 172.16.101.44: icmp_seq=426 ttl=63 time=0.251 ms
+160414.541: [16:04:14]64 bytes from 172.16.101.44: icmp_seq=427 ttl=63 time=0.368 ms
+160415.569: [16:04:15]64 bytes from 172.16.101.44: icmp_seq=428 ttl=63 time=0.272 ms
+160416.588: [16:04:16]64 bytes from 172.16.101.44: icmp_seq=429 ttl=63 time=0.189 ms
+160417.618: [16:04:17]64 bytes from 172.16.101.44: icmp_seq=430 ttl=63 time=0.189 ms
+160418.640: [16:04:18]64 bytes from 172.16.101.44: icmp_seq=431 ttl=63 time=0.186 ms
+160419.661: [16:04:19]64 bytes from 172.16.101.44: icmp_seq=432 ttl=63 time=0.247 ms
+160420.689: [16:04:20]64 bytes from 172.16.101.44: icmp_seq=433 ttl=63 time=0.200 ms
+160421.715: [16:04:21]64 bytes from 172.16.101.44: icmp_seq=434 ttl=63 time=0.251 ms
+160422.737: [16:04:22]64 bytes from 172.16.101.44: icmp_seq=435 ttl=63 time=0.194 ms
+160423.758: [16:04:23]64 bytes from 172.16.101.44: icmp_seq=436 ttl=63 time=0.173 ms
+160424.786: [16:04:24]64 bytes from 172.16.101.44: icmp_seq=437 ttl=63 time=0.220 ms
+160425.807: [16:04:25]64 bytes from 172.16.101.44: icmp_seq=438 ttl=63 time=0.270 ms
+160426.834: [16:04:26]64 bytes from 172.16.101.44: icmp_seq=439 ttl=63 time=0.163 ms
+160427.852: [16:04:27]64 bytes from 172.16.101.44: icmp_seq=440 ttl=63 time=0.260 ms
+160428.880: [16:04:28]64 bytes from 172.16.101.44: icmp_seq=441 ttl=63 time=0.173 ms
+160429.900: [16:04:29]64 bytes from 172.16.101.44: icmp_seq=442 ttl=63 time=0.185 ms
+160430.925: [16:04:30]64 bytes from 172.16.101.44: icmp_seq=443 ttl=63 time=0.165 ms
+160431.953: [16:04:31]64 bytes from 172.16.101.44: icmp_seq=444 ttl=63 time=0.166 ms
+160432.972: [16:04:32]64 bytes from 172.16.101.44: icmp_seq=445 ttl=63 time=0.170 ms
+160434.005: [16:04:34]64 bytes from 172.16.101.44: icmp_seq=446 ttl=63 time=0.168 ms
+160435.025: [16:04:35]64 bytes from 172.16.101.44: icmp_seq=447 ttl=63 time=0.192 ms
+160436.054: [16:04:36]64 bytes from 172.16.101.44: icmp_seq=448 ttl=63 time=0.143 ms
+160437.074: [16:04:37]64 bytes from 172.16.101.44: icmp_seq=449 ttl=63 time=0.173 ms
+160438.098: [16:04:38]64 bytes from 172.16.101.44: icmp_seq=450 ttl=63 time=0.209 ms
+160439.117: [16:04:39]64 bytes from 172.16.101.44: icmp_seq=451 ttl=63 time=0.200 ms
+160440.141: [16:04:40]64 bytes from 172.16.101.44: icmp_seq=452 ttl=63 time=0.253 ms
+160441.170: [16:04:41]64 bytes from 172.16.101.44: icmp_seq=453 ttl=63 time=0.496 ms
+160442.195: [16:04:42]64 bytes from 172.16.101.44: icmp_seq=454 ttl=63 time=0.221 ms
+160443.217: [16:04:43]64 bytes from 172.16.101.44: icmp_seq=455 ttl=63 time=0.181 ms
+160444.243: [16:04:44]64 bytes from 172.16.101.44: icmp_seq=456 ttl=63 time=0.163 ms
+160445.262: [16:04:45]64 bytes from 172.16.101.44: icmp_seq=457 ttl=63 time=0.208 ms
+160446.285: [16:04:46]64 bytes from 172.16.101.44: icmp_seq=458 ttl=63 time=0.194 ms
+160447.309: [16:04:47]64 bytes from 172.16.101.44: icmp_seq=459 ttl=63 time=0.163 ms
+160448.332: [16:04:48]64 bytes from 172.16.101.44: icmp_seq=460 ttl=63 time=0.275 ms
+160449.332: [16:04:49]64 bytes from 172.16.101.44: icmp_seq=461 ttl=63 time=0.236 ms
+160450.354: [16:04:50]64 bytes from 172.16.101.44: icmp_seq=462 ttl=63 time=0.180 ms
+160451.378: [16:04:51]64 bytes from 172.16.101.44: icmp_seq=463 ttl=63 time=0.176 ms
+160452.399: [16:04:52]64 bytes from 172.16.101.44: icmp_seq=464 ttl=63 time=0.213 ms
+160453.424: [16:04:53]64 bytes from 172.16.101.44: icmp_seq=465 ttl=63 time=0.209 ms
+160454.445: [16:04:54]64 bytes from 172.16.101.44: icmp_seq=466 ttl=63 time=0.183 ms
+160455.472: [16:04:55]64 bytes from 172.16.101.44: icmp_seq=467 ttl=63 time=0.197 ms
+160456.493: [16:04:56]64 bytes from 172.16.101.44: icmp_seq=468 ttl=63 time=0.192 ms
+160457.520: [16:04:57]64 bytes from 172.16.101.44: icmp_seq=469 ttl=63 time=0.183 ms
+160458.540: [16:04:58]64 bytes from 172.16.101.44: icmp_seq=470 ttl=63 time=0.197 ms
+160459.570: [16:04:59]64 bytes from 172.16.101.44: icmp_seq=471 ttl=63 time=0.202 ms
+160500.588: [16:05:00]64 bytes from 172.16.101.44: icmp_seq=472 ttl=63 time=0.221 ms
+160501.613: [16:05:01]64 bytes from 172.16.101.44: icmp_seq=473 ttl=63 time=0.297 ms
+160502.651: [16:05:02]64 bytes from 172.16.101.44: icmp_seq=474 ttl=63 time=0.190 ms
+160503.666: [16:05:03]64 bytes from 172.16.101.44: icmp_seq=475 ttl=63 time=0.254 ms
+160504.684: [16:05:04]64 bytes from 172.16.101.44: icmp_seq=476 ttl=63 time=0.201 ms
+160505.708: [16:05:05]64 bytes from 172.16.101.44: icmp_seq=477 ttl=63 time=0.154 ms
+160506.735: [16:05:06]64 bytes from 172.16.101.44: icmp_seq=478 ttl=63 time=0.183 ms
+160507.756: [16:05:07]64 bytes from 172.16.101.44: icmp_seq=479 ttl=63 time=0.209 ms
+160508.785: [16:05:08]64 bytes from 172.16.101.44: icmp_seq=480 ttl=63 time=0.171 ms
+160509.805: [16:05:09]64 bytes from 172.16.101.44: icmp_seq=481 ttl=63 time=0.256 ms
+160510.830: [16:05:10]64 bytes from 172.16.101.44: icmp_seq=482 ttl=63 time=0.181 ms
+160511.866: [16:05:11]64 bytes from 172.16.101.44: icmp_seq=483 ttl=63 time=0.297 ms
+160512.885: [16:05:12]64 bytes from 172.16.101.44: icmp_seq=484 ttl=63 time=0.175 ms
+160513.907: [16:05:13]64 bytes from 172.16.101.44: icmp_seq=485 ttl=63 time=0.262 ms
+160514.944: [16:05:14]64 bytes from 172.16.101.44: icmp_seq=486 ttl=63 time=0.206 ms
+160515.949: [16:05:15]64 bytes from 172.16.101.44: icmp_seq=487 ttl=63 time=0.170 ms
+160516.982: [16:05:16]64 bytes from 172.16.101.44: icmp_seq=488 ttl=63 time=0.156 ms
+160518.007: [16:05:18]64 bytes from 172.16.101.44: icmp_seq=489 ttl=63 time=0.248 ms
+160519.026: [16:05:19]64 bytes from 172.16.101.44: icmp_seq=490 ttl=63 time=0.194 ms
+160520.045: [16:05:20]64 bytes from 172.16.101.44: icmp_seq=491 ttl=63 time=0.178 ms
+160521.073: [16:05:21]64 bytes from 172.16.101.44: icmp_seq=492 ttl=63 time=0.197 ms
+160522.094: [16:05:22]64 bytes from 172.16.101.44: icmp_seq=493 ttl=63 time=0.144 ms
+160523.099: [16:05:23]64 bytes from 172.16.101.44: icmp_seq=494 ttl=63 time=0.130 ms
+160524.118: [16:05:24]64 bytes from 172.16.101.44: icmp_seq=495 ttl=63 time=0.210 ms
+160525.134: [16:05:25]64 bytes from 172.16.101.44: icmp_seq=496 ttl=63 time=0.492 ms
+160526.158: [16:05:26]64 bytes from 172.16.101.44: icmp_seq=497 ttl=63 time=0.243 ms
+160527.187: [16:05:27]64 bytes from 172.16.101.44: icmp_seq=498 ttl=63 time=0.165 ms
+160528.211: [16:05:28]64 bytes from 172.16.101.44: icmp_seq=499 ttl=63 time=0.221 ms
+160529.233: [16:05:29]64 bytes from 172.16.101.44: icmp_seq=500 ttl=63 time=0.219 ms
+160530.257: [16:05:30]64 bytes from 172.16.101.44: icmp_seq=501 ttl=63 time=0.185 ms
+160531.280: [16:05:31]64 bytes from 172.16.101.44: icmp_seq=502 ttl=63 time=0.219 ms
+160532.301: [16:05:32]64 bytes from 172.16.101.44: icmp_seq=503 ttl=63 time=0.180 ms
+160533.371: [16:05:33]64 bytes from 172.16.101.44: icmp_seq=504 ttl=63 time=0.325 ms
+160534.352: [16:05:34]64 bytes from 172.16.101.44: icmp_seq=505 ttl=63 time=0.197 ms
+160535.372: [16:05:35]64 bytes from 172.16.101.44: icmp_seq=506 ttl=63 time=0.288 ms
+160536.401: [16:05:36]64 bytes from 172.16.101.44: icmp_seq=507 ttl=63 time=0.224 ms
+160537.427: [16:05:37]64 bytes from 172.16.101.44: icmp_seq=508 ttl=63 time=0.270 ms
+160538.452: [16:05:38]64 bytes from 172.16.101.44: icmp_seq=509 ttl=63 time=0.315 ms
+160539.468: [16:05:39]64 bytes from 172.16.101.44: icmp_seq=510 ttl=63 time=0.353 ms
+160540.495: [16:05:40]64 bytes from 172.16.101.44: icmp_seq=511 ttl=63 time=0.474 ms
+160541.496: [16:05:41]64 bytes from 172.16.101.44: icmp_seq=512 ttl=63 time=0.343 ms
+160542.541: [16:05:42]64 bytes from 172.16.101.44: icmp_seq=513 ttl=63 time=0.273 ms
+160543.541: [16:05:43]64 bytes from 172.16.101.44: icmp_seq=514 ttl=63 time=0.308 ms
+160544.515: [16:05:44]64 bytes from 172.16.101.44: icmp_seq=515 ttl=63 time=0.228 ms
+160545.520: [16:05:45]64 bytes from 172.16.101.44: icmp_seq=516 ttl=63 time=0.263 ms
+160546.550: [16:05:46]64 bytes from 172.16.101.44: icmp_seq=517 ttl=63 time=0.184 ms
+160547.586: [16:05:47]64 bytes from 172.16.101.44: icmp_seq=518 ttl=63 time=0.203 ms
+160548.621: [16:05:48]64 bytes from 172.16.101.44: icmp_seq=519 ttl=63 time=0.209 ms
+160549.617: [16:05:49]64 bytes from 172.16.101.44: icmp_seq=520 ttl=63 time=0.230 ms
+160550.642: [16:05:50]64 bytes from 172.16.101.44: icmp_seq=521 ttl=63 time=0.159 ms
+160551.668: [16:05:51]64 bytes from 172.16.101.44: icmp_seq=522 ttl=63 time=0.228 ms
+160552.684: [16:05:52]64 bytes from 172.16.101.44: icmp_seq=523 ttl=63 time=0.246 ms
+160553.710: [16:05:53]64 bytes from 172.16.101.44: icmp_seq=524 ttl=63 time=0.387 ms
+160554.736: [16:05:54]64 bytes from 172.16.101.44: icmp_seq=525 ttl=63 time=0.274 ms
+160555.756: [16:05:55]64 bytes from 172.16.101.44: icmp_seq=526 ttl=63 time=0.218 ms
+160556.783: [16:05:56]64 bytes from 172.16.101.44: icmp_seq=527 ttl=63 time=0.165 ms
+160557.805: [16:05:57]64 bytes from 172.16.101.44: icmp_seq=528 ttl=63 time=0.225 ms
+160558.828: [16:05:58]64 bytes from 172.16.101.44: icmp_seq=529 ttl=63 time=0.263 ms
+160559.856: [16:05:59]64 bytes from 172.16.101.44: icmp_seq=530 ttl=63 time=0.182 ms
+160600.897: [16:06:00]64 bytes from 172.16.101.44: icmp_seq=531 ttl=63 time=0.240 ms
+160601.917: [16:06:01]64 bytes from 172.16.101.44: icmp_seq=532 ttl=63 time=0.200 ms
+160602.930: [16:06:02]64 bytes from 172.16.101.44: icmp_seq=533 ttl=63 time=0.232 ms
+160603.953: [16:06:03]64 bytes from 172.16.101.44: icmp_seq=534 ttl=63 time=0.228 ms
+160604.973: [16:06:04]64 bytes from 172.16.101.44: icmp_seq=535 ttl=63 time=0.242 ms
+160606.000: [16:06:06]64 bytes from 172.16.101.44: icmp_seq=536 ttl=63 time=0.211 ms
+160607.020: [16:06:07]64 bytes from 172.16.101.44: icmp_seq=537 ttl=63 time=0.253 ms
+160608.048: [16:06:08]64 bytes from 172.16.101.44: icmp_seq=538 ttl=63 time=0.225 ms
+160609.070: [16:06:09]64 bytes from 172.16.101.44: icmp_seq=539 ttl=63 time=0.285 ms
+160610.099: [16:06:10]64 bytes from 172.16.101.44: icmp_seq=540 ttl=63 time=0.249 ms
+160611.122: [16:06:11]64 bytes from 172.16.101.44: icmp_seq=541 ttl=63 time=0.213 ms
+160612.149: [16:06:12]64 bytes from 172.16.101.44: icmp_seq=542 ttl=63 time=0.160 ms
+160613.173: [16:06:13]64 bytes from 172.16.101.44: icmp_seq=543 ttl=63 time=0.194 ms
+160614.188: [16:06:14]64 bytes from 172.16.101.44: icmp_seq=544 ttl=63 time=0.199 ms
+160615.220: [16:06:15]64 bytes from 172.16.101.44: icmp_seq=545 ttl=63 time=0.284 ms
+160741.096: [16:07:41]^C
+160741.096: [16:07:41]--- 172.16.101.44 ping statistics ---
+160741.097: [16:07:41]628 packets transmitted, 408 received, 35.0318% packet loss, time 640882ms
+160741.097: [16:07:41]rtt min/avg/max/mdev = 0.130/0.358/30.347/1.918 ms
+160742.371: [16:07:42][root@172-16-208-2 ~]# ping 172.16.101.44
+160742.371: [16:07:42]PING 172.16.101.44 (172.16.101.44) 56(84) bytes of data.
+160743.546: [16:07:43]^C
+160743.546: [16:07:43]--- 172.16.101.44 ping statistics ---
+160743.547: [16:07:43]2 packets transmitted, 0 received, 100% packet loss, time 1006ms
+160743.547: [16:07:43]
+160743.994: [16:07:43][root@172-16-208-2 ~]# 
+160744.133: [16:07:44][root@172-16-208-2 ~]# 
+160749.407: [16:07:49][root@172-16-208-2 ~]# echo $TERM
+160749.408: [16:07:49]xterm-256color
+161920.095: [16:19:20][202603099-172.16.208.2-各种服务-16:19:20]
+161920.123: [16:19:20]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+161920.123: [16:19:20]
+161920.123: [16:19:20]The programs included with the Debian GNU/Linux system are free software;
+161920.123: [16:19:20]the exact distribution terms for each program are described in the
+161920.123: [16:19:20]individual files in /usr/share/doc/*/copyright.
+161920.123: [16:19:20]
+161920.123: [16:19:20]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+161920.123: [16:19:20]permitted by applicable law.
+161920.123: [16:19:20]Last login: Tue Mar 24 15:56:51 2026 from 192.168.6.173
+161954.880: [16:19:54][root@172-16-208-2 ~]# ssh admin@172.16.101.11
+162001.902: [16:20:01]^C
+162004.998: [16:20:04][root@172-16-208-2 ~]# ping 172.16.101.11
+162005.002: [16:20:05]PING 172.16.101.11 (172.16.101.11) 56(84) bytes of data.
+162005.002: [16:20:05]64 bytes from 172.16.101.11: icmp_seq=1 ttl=63 time=0.278 ms
+162006.033: [16:20:06]64 bytes from 172.16.101.11: icmp_seq=2 ttl=63 time=0.253 ms
+162006.403: [16:20:06]^C
+162006.403: [16:20:06]--- 172.16.101.11 ping statistics ---
+162006.403: [16:20:06]2 packets transmitted, 2 received, 0% packet loss, time 1029ms
+162006.403: [16:20:06]rtt min/avg/max/mdev = 0.253/0.265/0.278/0.012 ms
+162008.415: [16:20:08][root@172-16-208-2 ~]# ssh admin@172.16.101.11
+162008.570: [16:20:08]admin@172.16.101.11: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+162017.898: [16:20:17][root@172-16-208-2 ~]# ssh admin@172.16.100.11
+162023.152: [16:20:23]admin@172.16.100.11's password: 
+162023.472: [16:20:23]
+162024.908: [16:20:24]SCN9300H-01# 
+162025.060: [16:20:25]SCN9300H-01# 
+162026.919: [16:20:26]SCN9300H-01# show interface ?
+162026.919: [16:20:26]  eth-         Physical interface
+162026.919: [16:20:26]  agg          Aggregation interface
+162026.919: [16:20:26]  loopback     Loopback interface
+162026.919: [16:20:26]  vlan         Vlan interface
+162026.920: [16:20:26]  tunnel       Tunnel interface
+162026.920: [16:20:26]  vxlan        Vxlan interface
+162026.920: [16:20:26]  description  Display description of the interfaces
+162026.920: [16:20:26]  hybrid       Display the hybrid information of the hybrid interfaces
+162026.920: [16:20:26]  null         Null interface
+162026.921: [16:20:26]  status       Display status of the interfaces
+162026.921: [16:20:26]  summary      The summary of interface
+162026.921: [16:20:26]  switchport   Display the modes of the layer2 interfaces
+162026.921: [16:20:26]  trunk        Display the trunk information of the trunk interfaces
+162026.921: [16:20:26]  |            Output modifiers
+162026.921: [16:20:26]  >            Output redirection
+162026.921: [16:20:26]  <cr>
+162026.921: [16:20:26]
+162030.193: [16:20:30]SCN9300H-01# show interface status ?
+162030.193: [16:20:30]  |  Output modifiers
+162030.193: [16:20:30]  >  Output redirection
+162030.193: [16:20:30]  <cr>
+162030.193: [16:20:30]
+162031.668: [16:20:31]SCN9300H-01# show interface status 
+162031.710: [16:20:31]
+162031.710: [16:20:31]Port        Status     Duplex  Speed   Mode    Type                    Description  
+162031.710: [16:20:31]------------------------------------------------------------------------------------------
+162031.710: [16:20:31]eth-0-1     up         full    25000   ACCESS  25GBASE_SR                           
+162031.710: [16:20:31]eth-0-2     up         full    25000   ACCESS  25GBASE_SR                           
+162031.711: [16:20:31]eth-0-3     up         full    25000   ACCESS  25GBASE_SR                           
+162031.711: [16:20:31]eth-0-4     up         full    25000   ACCESS  25GBASE_SR                           
+162031.711: [16:20:31]eth-0-5     up         full    25000   ACCESS  25GBASE_SR                           
+162031.711: [16:20:31]eth-0-6     up         full    25000   ACCESS  25GBASE_SR                           
+162031.711: [16:20:31]eth-0-7     up         full    25000   ACCESS  25GBASE_SR                           
+162031.711: [16:20:31]eth-0-8     up         full    25000   ACCESS  25GBASE_SR                           
+162031.712: [16:20:31]eth-0-9     up         full    25000   ACCESS  25GBASE_SR                           
+162031.712: [16:20:31]eth-0-10    up         full    25000   ACCESS  25GBASE_SR                           
+162031.712: [16:20:31]eth-0-11    up         full    25000   ACCESS  25GBASE_SR                           
+162031.712: [16:20:31]eth-0-12    down       full    25000   ACCESS  25GBASE_SR                           
+162031.712: [16:20:31]eth-0-13    up         full    25000   ACCESS  25GBASE_SR                           
+162031.713: [16:20:31]eth-0-14    up         full    25000   ACCESS  25GBASE_SR                           
+162031.713: [16:20:31]eth-0-15    up         full    25000   ACCESS  25GBASE_SR                           
+162031.713: [16:20:31]eth-0-16    down       full    25000   TRUNK   25GBASE_SR                           
+162031.713: [16:20:31]eth-0-17    down       full    25000   ACCESS  Unknown                              
+162031.713: [16:20:31]eth-0-18    down       full    25000   ACCESS  Unknown                              
+162031.713: [16:20:31]eth-0-19    down       full    25000   ACCESS  Unknown                              
+162031.714: [16:20:31]eth-0-20    down       full    25000   ACCESS  Unknown                              
+162031.714: [16:20:31]eth-0-21    down       full    25000   ACCESS  Unknown                              
+162031.714: [16:20:31]eth-0-22    down       full    25000   ACCESS  Unknown                              
+162031.714: [16:20:31]eth-0-23    down       full    25000   ACCESS  Unknown                              
+162031.714: [16:20:31]eth-0-24    down       full    25000   ACCESS  Unknown                              
+162031.714: [16:20:31]eth-0-25    down       full    1000    ACCESS  Unknown                              
+162031.715: [16:20:31]eth-0-26    down       full    25000   ACCESS  Unknown                              
+162031.715: [16:20:31]eth-0-27    down       full    25000   ACCESS  Unknown                              
+162031.715: [16:20:31]eth-0-28    down       full    25000   ACCESS  Unknown                              
+162031.715: [16:20:31]eth-0-29    down       full    10000   ACCESS  Unknown                              
+162031.715: [16:20:31]eth-0-30    down       full    10000   ACCESS  Unknown                              
+162031.715: [16:20:31]eth-0-31    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-32    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-33    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-34    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-35    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-36    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-37    down       full    10000   ACCESS  Unknown                              
+162031.716: [16:20:31]eth-0-38    down       full    10000   ACCESS  Unknown                              
+162031.717: [16:20:31]eth-0-39    down       full    10000   ACCESS  Unknown                              
+162031.717: [16:20:31]eth-0-40    down       full    10000   ACCESS  Unknown                              
+162031.717: [16:20:31]eth-0-41    down       full    25000   ACCESS  Unknown                              
+162031.717: [16:20:31]eth-0-42    down       full    25000   ACCESS  Unknown                              
+162031.717: [16:20:31]eth-0-43    down       full    25000   ACCESS  Unknown                              
+162031.717: [16:20:31]eth-0-44    down       full    25000   ACCESS  Unknown                              
+162031.718: [16:20:31]eth-0-45    down       full    25000   ACCESS  Unknown                              
+162031.718: [16:20:31]eth-0-46    down       full    25000   ACCESS  Unknown                              
+162031.718: [16:20:31]eth-0-47    up         full    25000   ACCESS  25GBASE_SR                           
+162031.718: [16:20:31]eth-0-48    up         full    10000   ACCESS  10GBASE_SR                           
+162031.718: [16:20:31]eth-0-49    down       full    auto    ACCESS  Unknown                              
+162031.718: [16:20:31]eth-0-50    down       full    auto    ACCESS  Unknown                              
+162031.718: [16:20:31]eth-0-51    down       full    auto    ACCESS  Unknown                              
+162031.719: [16:20:31]eth-0-52    down       full    auto    ACCESS  Unknown                              
+162031.719: [16:20:31]eth-0-53    down       full    auto    ACCESS  Unknown                              
+162031.719: [16:20:31]eth-0-54    down       full    auto    ACCESS  Unknown                              
+162031.719: [16:20:31]eth-0-55    down       full    auto    ACCESS  Unknown                              
+162031.719: [16:20:31]eth-0-56    down       full    auto    ACCESS  Unknown                              
+162031.719: [16:20:31]agg1        down       full    0       ACCESS  Aggregation                          
+162031.720: [16:20:31]agg2        down       full    0       ACCESS  Aggregation                          
+162031.720: [16:20:31]agg3        down       full    0       ACCESS  Aggregation                          
+162031.720: [16:20:31]agg4        down       full    0       ACCESS  Aggregation                          
+162031.720: [16:20:31]agg5        down       full    0       ACCESS  Aggregation                          
+162032.729: [16:20:32]agg6        down       full    0       ACCESS  Aggregation                          
+162041.774: [16:20:41]SCN9300H-01#  show ip interface ?
+162041.774: [16:20:41]  eth-      Physical interface
+162041.774: [16:20:41]  agg       Aggregation interface
+162041.775: [16:20:41]  loopback  Loopback interface
+162041.775: [16:20:41]  vlan      Vlan interface
+162041.775: [16:20:41]  tunnel    Tunnel interface
+162041.775: [16:20:41]  vxlan     Vxlan interface
+162041.775: [16:20:41]  brief     Brief summary of IP status and configuration
+162041.775: [16:20:41]  |         Output modifiers
+162041.775: [16:20:41]  >         Output redirection
+162041.775: [16:20:41]  <cr>
+162041.775: [16:20:41]
+162043.219: [16:20:43]SCN9300H-01#  show ip interface brief ?
+162043.219: [16:20:43]  |  Output modifiers
+162043.219: [16:20:43]  >  Output redirection
+162043.219: [16:20:43]  <cr>
+162043.219: [16:20:43]
+162043.814: [16:20:43]SCN9300H-01#  show ip interface brief 
+162043.858: [16:20:43]Interface             IP-Address      Status                  Protocol
+162043.858: [16:20:43]vlan1                 192.168.1.1     down                    down
+162059.301: [16:20:59]SCN9300H-01# show r
+162059.301: [16:20:59]radius          radius-server   reboot-info     resource        rmon            route-map       router-id       rsa             running-config  
+162102.231: [16:21:02]SCN9300H-01# show running-config 
+162102.271: [16:21:02]Building configuration...
+162102.279: [16:21:02]version 10.011.003.24
+162102.279: [16:21:02]!
+162102.279: [16:21:02]no service password-encryption
+162102.279: [16:21:02]!
+162102.279: [16:21:02]!
+162102.279: [16:21:02]!
+162102.279: [16:21:02]hostname SCN9300H-01
+162102.279: [16:21:02]!
+162102.279: [16:21:02]!
+162102.280: [16:21:02]username admin privilege 4 password inspur@123
+162102.280: [16:21:02]!
+162102.280: [16:21:02]!
+162102.280: [16:21:02]ipv6 enable
+162102.280: [16:21:02]management ip address 172.16.100.11/24
+162102.280: [16:21:02]ip ssh server enable
+162102.280: [16:21:02]!
+162102.280: [16:21:02]!
+162102.280: [16:21:02]vlan database
+162102.280: [16:21:02] vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]
+162102.280: [16:21:02]interface eth-0-1
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-2
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-3
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-4
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-5
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-6
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-7
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.280: [16:21:02] switchport access vlan 101
+162102.280: [16:21:02]!
+162102.280: [16:21:02]interface eth-0-8
+162102.280: [16:21:02] speed 25G
+162102.280: [16:21:02] duplex full
+162102.281: [16:21:02] switchport access vlan 101
+162102.281: [16:21:02]!
+162102.281: [16:21:02]interface eth-0-9
+162102.281: [16:21:02] speed 25G
+162113.684: [16:21:13]SCN9300H-01# show interface ?
+162113.684: [16:21:13]  eth-         Physical interface
+162113.684: [16:21:13]  agg          Aggregation interface
+162113.684: [16:21:13]  loopback     Loopback interface
+162113.684: [16:21:13]  vlan         Vlan interface
+162113.684: [16:21:13]  tunnel       Tunnel interface
+162113.684: [16:21:13]  vxlan        Vxlan interface
+162113.684: [16:21:13]  description  Display description of the interfaces
+162113.684: [16:21:13]  hybrid       Display the hybrid information of the hybrid interfaces
+162113.684: [16:21:13]  null         Null interface
+162113.684: [16:21:13]  status       Display status of the interfaces
+162113.684: [16:21:13]  summary      The summary of interface
+162113.684: [16:21:13]  switchport   Display the modes of the layer2 interfaces
+162113.685: [16:21:13]  trunk        Display the trunk information of the trunk interfaces
+162113.685: [16:21:13]  |            Output modifiers
+162113.685: [16:21:13]  >            Output redirection
+162113.685: [16:21:13]  <cr>
+162113.685: [16:21:13]
+162118.833: [16:21:18]SCN9300H-01# show interface summary ?
+162118.833: [16:21:18]  |  Output modifiers
+162118.833: [16:21:18]  >  Output redirection
+162118.834: [16:21:18]  <cr>
+162118.834: [16:21:18]
+162120.559: [16:21:20]SCN9300H-01# show interface summary 
+162120.753: [16:21:20]RXBS: rx rate (bits/sec)    RXPS: rx rate (pkts/sec)    RXUTI: rx utility
+162120.753: [16:21:20]TXBS: tx rate (bits/sec)    TXPS: tx rate (pkts/sec)    TXUTI: tx utility
+162120.753: [16:21:20]
+162120.753: [16:21:20]Interface    Link     RXBS          RXPS          TXBS          TXPS             RXUTI   TXUTI
+162120.754: [16:21:20]-------------------------------------------------------------------------------------------------
+162120.755: [16:21:20]eth-0-1      UP       13182         11            302324        53              <0.01%  <0.01%
+162120.755: [16:21:20]eth-0-2      UP       413849        149           5029149       506             <0.01%   0.02%
+162120.755: [16:21:20]eth-0-3      UP       35285         7             25329         32              <0.01%  <0.01%
+162120.755: [16:21:20]eth-0-4      UP       5595          5             54765         33              <0.01%  <0.01%
+162120.756: [16:21:20]eth-0-5      UP       881887        193           907430        242             <0.01%  <0.01%
+162120.756: [16:21:20]eth-0-6      UP       2467665       277           184907        149             <0.01%  <0.01%
+162120.756: [16:21:20]eth-0-7      UP       1430697       172           281317        114             <0.01%  <0.01%
+162120.757: [16:21:20]eth-0-8      UP       310188        100           189101        121             <0.01%  <0.01%
+162120.757: [16:21:20]eth-0-9      UP       158924        25            51506         42              <0.01%  <0.01%
+162120.757: [16:21:20]eth-0-10     UP       2376236       276           234982        170             <0.01%  <0.01%
+162120.757: [16:21:20]eth-0-11     UP       737761        105           342436        111             <0.01%  <0.01%
+162120.757: [16:21:20]eth-0-12     DOWN     0             0             0             0                   0%      0%
+162120.758: [16:21:20]eth-0-13     UP       15803         1             20417         26              <0.01%  <0.01%
+162120.758: [16:21:20]eth-0-14     UP       14099         1             19961         26              <0.01%  <0.01%
+162120.758: [16:21:20]eth-0-15     UP       72752         21            277700        61              <0.01%  <0.01%
+162120.758: [16:21:20]eth-0-16     DOWN     0             0             0             0                   0%      0%
+162120.759: [16:21:20]eth-0-17     DOWN     0             0             0             0                   0%      0%
+162120.759: [16:21:20]eth-0-18     DOWN     0             0             0             0                   0%      0%
+162120.759: [16:21:20]eth-0-19     DOWN     0             0             0             0                   0%      0%
+162120.759: [16:21:20]eth-0-20     DOWN     0             0             0             0                   0%      0%
+162120.759: [16:21:20]eth-0-21     DOWN     0             0             0             0                   0%      0%
+162120.759: [16:21:20]eth-0-22     DOWN     0             0             0             0                   0%      0%
+162120.760: [16:21:20]eth-0-23     DOWN     0             0             0             0                   0%      0%
+162120.760: [16:21:20]eth-0-24     DOWN     0             0             0             0                   0%      0%
+162120.760: [16:21:20]eth-0-25     DOWN     0             0             0             0                   0%      0%
+162120.760: [16:21:20]eth-0-26     DOWN     0             0             0             0                   0%      0%
+162120.760: [16:21:20]eth-0-27     DOWN     0             0             0             0                   0%      0%
+162120.761: [16:21:20]eth-0-28     DOWN     0             0             0             0                   0%      0%
+162120.761: [16:21:20]eth-0-29     DOWN     0             0             0             0                   0%      0%
+162120.761: [16:21:20]eth-0-30     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-31     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-32     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-33     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-34     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-35     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-36     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-37     DOWN     0             0             0             0                   0%      0%
+162120.762: [16:21:20]eth-0-38     DOWN     0             0             0             0                   0%      0%
+162120.763: [16:21:20]eth-0-39     DOWN     0             0             0             0                   0%      0%
+162120.763: [16:21:20]eth-0-40     DOWN     0             0             0             0                   0%      0%
+162120.763: [16:21:20]eth-0-41     DOWN     0             0             0             0                   0%      0%
+162120.763: [16:21:20]eth-0-42     DOWN     0             0             0             0                   0%      0%
+162120.763: [16:21:20]eth-0-43     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-44     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-45     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-46     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-47     UP       6402          5             25234         31              <0.01%  <0.01%
+162120.764: [16:21:20]eth-0-48     UP       5684105       1068          6949296       1063             0.06%   0.07%
+162120.764: [16:21:20]eth-0-49     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-50     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-51     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-52     DOWN     0             0             0             0                   0%      0%
+162120.764: [16:21:20]eth-0-53     DOWN     0             0             0             0                   0%      0%
+162120.765: [16:21:20]eth-0-54     DOWN     0             0             0             0                   0%      0%
+162120.765: [16:21:20]eth-0-55     DOWN     0             0             0             0                   0%      0%
+162120.765: [16:21:20]eth-0-56     DOWN     0             0             0             0                   0%      0%
+162120.765: [16:21:20]agg1         DOWN     0             0             0             0                   0%      0%
+162120.765: [16:21:20]agg2         DOWN     0             0             0             0                   0%      0%
+162120.765: [16:21:20]agg3         DOWN     0             0             0             0                   0%      0%
+162123.403: [16:21:23]agg4         DOWN     0             0             0             0                   0%      0%
+162123.403: [16:21:23]agg5         DOWN     0             0             0             0                   0%      0%
+162123.404: [16:21:23]agg6         DOWN     0             0             0             0                   0%      0%
+162136.868: [16:21:36]SCN9300H-01# show vlan?
+162136.869: [16:21:36]  vlan           Display VLAN information
+162136.869: [16:21:36]  vlan-security  Vlan security
+162136.869: [16:21:36]
+162138.485: [16:21:38]SCN9300H-01# show vlan ?
+162138.485: [16:21:38]  <1-4094>    VLAN ID
+162138.485: [16:21:38]  all         All VLANs
+162138.485: [16:21:38]  brief       VLAN information for all bridges (static and dynamic)
+162138.485: [16:21:38]  classifier  VLAN classification commands
+162138.485: [16:21:38]  mapping     The vlan mapping table parameters
+162138.485: [16:21:38]
+162141.298: [16:21:41]SCN9300H-01# show vlan brief ?
+162141.298: [16:21:41]  |  Output modifiers
+162141.298: [16:21:41]  >  Output redirection
+162141.298: [16:21:41]  <cr>
+162141.298: [16:21:41]
+162142.044: [16:21:42]SCN9300H-01# show vlan brief 
+162142.086: [16:21:42]VLAN ID  Name                           State   STP ID  Overlay   Member ports                   
+162142.087: [16:21:42]                                                                  (u)-Untagged, (t)-Tagged
+162142.087: [16:21:42]======= =============================== ======= ======= ========= ========================
+162142.087: [16:21:42]1       default                         ACTIVE  0       disable   eth-0-16(t) eth-0-49(u) 
+162142.087: [16:21:42]                                                                  eth-0-50(u) eth-0-51(u) 
+162142.087: [16:21:42]                                                                  eth-0-52(u) eth-0-53(u) 
+162142.088: [16:21:42]                                                                  eth-0-54(u) eth-0-55(u) 
+162142.088: [16:21:42]                                                                  eth-0-56(u) 
+162142.088: [16:21:42]101     VLAN0101                        ACTIVE  0       disable   eth-0-1(u) eth-0-2(u) 
+162142.088: [16:21:42]                                                                  eth-0-3(u) eth-0-4(u) 
+162142.088: [16:21:42]                                                                  eth-0-5(u) eth-0-6(u) 
+162142.088: [16:21:42]                                                                  eth-0-7(u) eth-0-8(u) 
+162142.089: [16:21:42]                                                                  eth-0-9(u) eth-0-10(u) 
+162142.089: [16:21:42]                                                                  eth-0-11(u) eth-0-12(u) 
+162142.089: [16:21:42]                                                                  eth-0-13(u) eth-0-14(u) 
+162142.089: [16:21:42]                                                                  eth-0-15(u) eth-0-16(u) 
+162142.089: [16:21:42]                                                                  eth-0-17(u) eth-0-18(u) 
+162142.089: [16:21:42]                                                                  eth-0-19(u) eth-0-20(u) 
+162142.090: [16:21:42]                                                                  eth-0-21(u) eth-0-22(u) 
+162142.090: [16:21:42]                                                                  eth-0-23(u) eth-0-24(u) 
+162142.090: [16:21:42]                                                                  eth-0-25(u) eth-0-26(u) 
+162142.090: [16:21:42]                                                                  eth-0-27(u) eth-0-28(u) 
+162142.090: [16:21:42]                                                                  eth-0-41(u) eth-0-42(u) 
+162142.090: [16:21:42]                                                                  eth-0-43(u) eth-0-44(u) 
+162142.091: [16:21:42]                                                                  eth-0-45(u) eth-0-46(u) 
+162142.091: [16:21:42]                                                                  eth-0-47(u) eth-0-48(u) 
+162142.091: [16:21:42]                                                                  agg1(u) agg2(u) agg3(u) 
+162142.091: [16:21:42]                                                                  agg4(u) agg5(u) agg6(u) 
+162142.091: [16:21:42]
+162304.861: [16:23:04]SCN9300H-01# 
+162305.109: [16:23:05]SCN9300H-01# 
+162305.248: [16:23:05]SCN9300H-01# 
+162305.452: [16:23:05]SCN9300H-01# 
+162305.607: [16:23:05]SCN9300H-01# 
+162312.515: [16:23:12]SCN9300H-01# ping 172.16.101.47
+162312.557: [16:23:12]connect: Network is unreachable
+162317.622: [16:23:17]SCN9300H-01# ping 172.16.101.1
+162317.660: [16:23:17]connect: Network is unreachable
+162613.849: [16:26:13]SCN9300H-01# show net
+162613.849: [16:26:13]netconf  network  
+162614.153: [16:26:14]SCN9300H-01# show net
+162614.153: [16:26:14]netconf  network  
+162618.610: [16:26:18]SCN9300H-01# show lldp 
+162618.610: [16:26:18]local       neighbor    statistics  
+162618.781: [16:26:18]SCN9300H-01# show lldp 
+162618.781: [16:26:18]local       neighbor    statistics  
+162621.037: [16:26:21]SCN9300H-01# show lldp neighbor ?
+162621.037: [16:26:21]  brief      Brief information
+162621.037: [16:26:21]  interface  Interface
+162621.037: [16:26:21]  |          Output modifiers
+162621.037: [16:26:21]  >          Output redirection
+162621.037: [16:26:21]  <cr>
+162621.037: [16:26:21]
+162625.126: [16:26:25]SCN9300H-01# show lldp neighbor brief ?
+162625.126: [16:26:25]  |  Output modifiers
+162625.126: [16:26:25]  >  Output redirection
+162625.126: [16:26:25]  <cr>
+162625.126: [16:26:25]
+162628.144: [16:26:28]SCN9300H-01# show lldp neighbor brief ?
+162628.144: [16:26:28]  |  Output modifiers
+162628.144: [16:26:28]  >  Output redirection
+162628.144: [16:26:28]  <cr>
+162628.144: [16:26:28]
+162633.344: [16:26:33]SCN9300H-01# show lldp neighbor brief 
+162633.384: [16:26:33]
+162633.385: [16:26:33]Local Port      Remote Port     Hold Time      Expire Time     System Name     
+162633.385: [16:26:33]------------------------------------------------------------------------------

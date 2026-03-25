@@ -1,0 +1,1064 @@
+﻿094551.307: [09:45:51][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos]# 
+094551.488: [09:45:51][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos]# 
+094551.663: [09:45:51][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos]# 
+094553.785: [09:45:53][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos]# ll
+094553.800: [09:45:53]-bash: /usr/bin/ls: No such file or directory
+094555.499: [09:45:55][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos]# cd /opt
+094556.269: [09:45:56][root@172-16-208-2 /opt]# ll
+094556.284: [09:45:56]-bash: /usr/bin/ls: No such file or directory
+141427.542: [14:14:27][202603099-172.16.208.2-各种服务-14:14:27]
+141427.648: [14:14:27]Last login: Tue Mar  3 11:42:41 2026 from 192.168.4.222
+141430.544: [14:14:30][root@172-16-208-2 ~]# ll
+141430.546: [14:14:30]total 744K
+141430.557: [14:14:30]-rw-r--r-- 1 root root 116K Jan  8 15:43 china_ip_list.txt
+141430.557: [14:14:30]drwxr-xr-x 2 root root 4.0K Dec 25 10:47 DNS
+141430.557: [14:14:30]-rwxr-xr-x 1 root root  391 Aug 13  2025 dns.sh
+141430.557: [14:14:30]-rwxr-xr-x 1 root root  313 Jun 13  2023 frps.service
+141430.558: [14:14:30]-rw------- 1 root root 1.9K Aug  2  2023 id_rsa
+141430.558: [14:14:30]-rw------- 1 root root 1.9K Jun 15  2023 id_rsa.pub
+141430.558: [14:14:30]-rw-r--r-- 1 root root 594K Mar  3 14:00 ipinfo_check.log
+141430.558: [14:14:30]-rw-r--r-- 1 root root  371 Mar  3 08:00 ip_list.txt
+141430.558: [14:14:30]-rwxr-xr-x 1 root root  797 Nov 10 10:58 tmp.sh
+141448.277: [14:14:48][root@172-16-208-2 ~]# df -lh
+141448.324: [14:14:48]Filesystem                 Size  Used Avail Use% Mounted on
+141448.325: [14:14:48]udev                       7.8G     0  7.8G   0% /dev
+141448.325: [14:14:48]tmpfs                      1.6G  4.4M  1.6G   1% /run
+141448.325: [14:14:48]/dev/vda1                   97G   65G   28G  71% /
+141448.326: [14:14:48]tmpfs                      7.9G     0  7.9G   0% /dev/shm
+141448.326: [14:14:48]tmpfs                      5.0M  4.0K  5.0M   1% /run/lock
+141448.326: [14:14:48]/dev/mapper/video-videolv  4.0T  1.6T  2.2T  43% /opt/XTV-BACKUP
+141448.326: [14:14:48]/dev/mapper/data-datalv     14T   12T  1.4T  90% /DATA/Media
+141448.326: [14:14:48]/dev/mapper/data2-data2lv  6.0T  4.5T  1.2T  79% /DATA/Media/Tmp
+141448.327: [14:14:48]/dev/sr0                   382M  382M     0 100% /media/cdrom0
+141448.327: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/dacbbc4d8f73512eb46f2f5bc074bd8f9bc9af6f98f9996453ce2ad991047648/merged
+141448.327: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/2f49a0b0a668bff5faf4dddb0155e717bd2b04ec9c9f20fe51e72f1ab1105a8f/merged
+141448.328: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/71d44c3a74f497939dcb09d15573f69259b0c2eca3db98f2d88f5a884a267421/merged
+141448.328: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/f37c98d6612fb3445962d77333799e9ee020f70c98f21e43e0994121521ad3ec/merged
+141448.329: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/ad7464f3b04db576d0308e3e0102cf3480ddb32ac242dec4bff57a6f0bc5405e/merged
+141448.329: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/5f32f1dfa35af8ea78a9fcbabe0d06d9c5a8c112a2a4c5650ff68840a3fbc08f/merged
+141448.329: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/1a835e6ae66574f532450791d550153247cab4f273b9926649b1d64f1c49855e/merged
+141448.330: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/3c8085ec6d162a2b244810b100e39faeac6766771c1129fe19110608e72ab0e8/merged
+141448.330: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/c256c651b3606a2b0bd97265904e73b9b5d427605bbfb113c26b91412671a8dc/merged
+141448.331: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/4bf80f043542c0b5db8d4f0bc877655d7246a8c975cc750175031f24c8db0123/merged
+141448.331: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/5c1772a6815275737ab4729520d6485e9eb228dca950c5ca9480821afd23c331/merged
+141448.331: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/df8ccd0a058968ad982529d4e6520e74389d512c5cbb9c2ee650d920840b6962/merged
+141448.332: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/5b179abe593fe6023b70f00a8b8fa8870af0f65a9d257a93c8674b46187d02b3/merged
+141448.332: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/e9e83947222cf159696283b563d55f1c03a8784d5c2f09dd6f092c600a297f5b/merged
+141448.332: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/cab1dec8f98e168f6ebd0890c23c563d6b1ffcff414f28e3d8a1bf6c2761033d/merged
+141448.333: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/f27db95fc6a187109e4902ee10a92a822a4a0a6664acc4333c92c404c5a7d9eb/merged
+141448.333: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/178aee37071729ca261883335d47ab495214a98830b72e42324b7c090e0c60ea/merged
+141448.333: [14:14:48]tmpfs                      1.6G   76K  1.6G   1% /run/user/0
+141448.333: [14:14:48]overlay                     97G   65G   28G  71% /var/lib/docker/overlay2/fec9b9e1cb387fee7500d060d0703f2c0573ff37107c3dfcb6be047c62960bba/merged
+141605.511: [14:16:05][root@172-16-208-2 ~]# cd /opt/XTV-BACKUP/
+141606.201: [14:16:06][root@172-16-208-2 /opt/XTV-BACKUP]# ll
+141606.206: [14:16:06]total 20K
+141606.207: [14:16:06]drwx------  2 root      root       16K Feb 27 15:29 lost+found
+141606.207: [14:16:06]drwxrwxr-x 24 sambauser sambauser 4.0K Feb 28 05:00 xiaomi_camera_videos
+141609.159: [14:16:09][root@172-16-208-2 /opt/XTV-BACKUP]# cd xiaomi_camera_videos/
+141609.758: [14:16:09][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141609.774: [14:16:09]total 24M
+141609.775: [14:16:09]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141609.775: [14:16:09]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141609.776: [14:16:09]lrwxrwxrwx     1 root      root         7 Apr  6  2023 bin -> usr/bin
+141609.776: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 boot
+141609.776: [14:16:09]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141609.777: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 dev
+141609.777: [14:16:09]-rw-r--r--     1 root      root         0 Jun 19  2023 errors
+141609.791: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 etc
+141609.791: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 home
+141609.791: [14:16:09]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img -> boot/initrd.img-5.10.0-21-amd64
+141609.791: [14:16:09]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141609.791: [14:16:09]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141609.792: [14:16:09]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141609.792: [14:16:09]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141609.792: [14:16:09]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141609.792: [14:16:09]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141609.792: [14:16:09]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141609.792: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141609.793: [14:16:09]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141609.793: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141609.793: [14:16:09]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141609.793: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141609.793: [14:16:09]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141609.793: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141609.793: [14:16:09]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141609.793: [14:16:09]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141609.793: [14:16:09]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141609.793: [14:16:09]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141615.643: [14:16:15][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm bin 
+141617.223: [14:16:17][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm boot
+141617.223: [14:16:17]rm: cannot remove 'boot': Is a directory
+141618.260: [14:16:18][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141618.277: [14:16:18]total 24M
+141618.278: [14:16:18]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141618.278: [14:16:18]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141618.278: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 boot
+141618.278: [14:16:18]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141618.278: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 dev
+141618.278: [14:16:18]-rw-r--r--     1 root      root         0 Jun 19  2023 errors
+141618.278: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 etc
+141618.278: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 home
+141618.278: [14:16:18]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img -> boot/initrd.img-5.10.0-21-amd64
+141618.278: [14:16:18]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141618.278: [14:16:18]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141618.279: [14:16:18]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141618.279: [14:16:18]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141618.279: [14:16:18]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141618.279: [14:16:18]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141618.279: [14:16:18]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141618.279: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141618.280: [14:16:18]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141618.280: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141618.280: [14:16:18]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141618.280: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141618.280: [14:16:18]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141618.280: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141618.280: [14:16:18]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141618.280: [14:16:18]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141618.280: [14:16:18]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141618.280: [14:16:18]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141622.822: [14:16:22][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir boot
+141626.441: [14:16:26][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir dev
+141627.703: [14:16:27][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141627.719: [14:16:27]total 24M
+141627.719: [14:16:27]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141627.720: [14:16:27]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141627.720: [14:16:27]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141627.720: [14:16:27]-rw-r--r--     1 root      root         0 Jun 19  2023 errors
+141627.720: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 etc
+141627.720: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 home
+141627.720: [14:16:27]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img -> boot/initrd.img-5.10.0-21-amd64
+141627.720: [14:16:27]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141627.720: [14:16:27]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141627.720: [14:16:27]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141627.720: [14:16:27]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141627.720: [14:16:27]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141627.721: [14:16:27]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141627.721: [14:16:27]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141627.721: [14:16:27]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141627.721: [14:16:27]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141627.721: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141627.721: [14:16:27]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141627.722: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141627.722: [14:16:27]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141627.722: [14:16:27]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141627.722: [14:16:27]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141627.722: [14:16:27]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141629.442: [14:16:29][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm errors 
+141630.380: [14:16:30][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141630.389: [14:16:30]total 24M
+141630.389: [14:16:30]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141630.389: [14:16:30]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141630.389: [14:16:30]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141630.389: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 etc
+141630.389: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 home
+141630.390: [14:16:30]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img -> boot/initrd.img-5.10.0-21-amd64
+141630.390: [14:16:30]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141630.390: [14:16:30]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141630.390: [14:16:30]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141630.390: [14:16:30]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141630.390: [14:16:30]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141630.390: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141630.390: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141630.391: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141630.391: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141630.391: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141630.391: [14:16:30]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141630.391: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141630.392: [14:16:30]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141630.392: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141630.392: [14:16:30]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141630.392: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141630.392: [14:16:30]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141630.393: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141630.393: [14:16:30]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141630.393: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141630.393: [14:16:30]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141630.393: [14:16:30]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141630.394: [14:16:30]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141630.394: [14:16:30]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141633.991: [14:16:33][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir etc/
+141634.701: [14:16:34][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141634.717: [14:16:34]total 24M
+141634.717: [14:16:34]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141634.718: [14:16:34]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141634.718: [14:16:34]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141634.718: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 home
+141634.718: [14:16:34]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img -> boot/initrd.img-5.10.0-21-amd64
+141634.718: [14:16:34]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141634.718: [14:16:34]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141634.718: [14:16:34]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141634.718: [14:16:34]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141634.718: [14:16:34]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141634.718: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141634.719: [14:16:34]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141634.719: [14:16:34]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141634.719: [14:16:34]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141634.719: [14:16:34]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141634.719: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141634.719: [14:16:34]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141634.720: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141634.720: [14:16:34]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141634.728: [14:16:34]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141634.728: [14:16:34]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141634.729: [14:16:34]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141637.508: [14:16:37][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir home/
+141638.382: [14:16:38][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141638.399: [14:16:38]total 24M
+141638.400: [14:16:38]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141638.400: [14:16:38]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141638.400: [14:16:38]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141638.400: [14:16:38]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img -> boot/initrd.img-5.10.0-21-amd64
+141638.400: [14:16:38]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141638.400: [14:16:38]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141638.400: [14:16:38]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141638.400: [14:16:38]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141638.400: [14:16:38]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141638.400: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141638.401: [14:16:38]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141638.401: [14:16:38]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141638.401: [14:16:38]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141638.401: [14:16:38]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141638.401: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141638.401: [14:16:38]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141638.402: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141638.402: [14:16:38]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141638.402: [14:16:38]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141638.402: [14:16:38]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141638.402: [14:16:38]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141640.508: [14:16:40][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm initrd.img
+141641.519: [14:16:41][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141641.580: [14:16:41]total 24M
+141641.580: [14:16:41]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141641.580: [14:16:41]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141641.580: [14:16:41]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141641.581: [14:16:41]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141641.581: [14:16:41]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141641.581: [14:16:41]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141641.582: [14:16:41]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141641.594: [14:16:41]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141641.594: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141641.594: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141641.594: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141641.594: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141641.595: [14:16:41]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141641.595: [14:16:41]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141641.595: [14:16:41]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141641.595: [14:16:41]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141641.595: [14:16:41]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141641.595: [14:16:41]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141641.595: [14:16:41]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141641.596: [14:16:41]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141641.596: [14:16:41]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141700.366: [14:17:00][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll boot/initrd.img-5.10.0-21-amd64
+141700.375: [14:17:00]ls: cannot access 'boot/initrd.img-5.10.0-21-amd64': No such file or directory
+141707.088: [14:17:07][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll /boot/initrd.img-5.10.0-21-amd64
+141707.105: [14:17:07]-rw-r--r-- 1 root root 45M Apr  6  2023 /boot/initrd.img-5.10.0-21-amd64
+141708.592: [14:17:08][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141708.611: [14:17:08]total 24M
+141708.611: [14:17:08]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141708.611: [14:17:08]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141708.611: [14:17:08]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141708.611: [14:17:08]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141708.611: [14:17:08]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141708.612: [14:17:08]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141708.612: [14:17:08]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141708.612: [14:17:08]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141708.612: [14:17:08]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141708.612: [14:17:08]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141708.612: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141708.613: [14:17:08]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141708.613: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141708.613: [14:17:08]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141708.613: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141708.613: [14:17:08]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141708.613: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141708.613: [14:17:08]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141708.613: [14:17:08]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141708.613: [14:17:08]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141708.613: [14:17:08]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141747.163: [14:17:47][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141747.164: [14:17:47]total 24M
+141747.164: [14:17:47]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141747.164: [14:17:47]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141747.164: [14:17:47]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141747.165: [14:17:47]lrwxrwxrwx     1 root      root        31 Apr  6  2023 initrd.img.old -> boot/initrd.img-5.10.0-20-amd64
+141747.165: [14:17:47]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141747.165: [14:17:47]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141747.166: [14:17:47]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141747.166: [14:17:47]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141747.166: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141747.166: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141747.167: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141747.167: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141747.167: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141747.181: [14:17:47]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141747.181: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141747.181: [14:17:47]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141747.181: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141747.181: [14:17:47]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141747.181: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141747.181: [14:17:47]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141747.182: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141747.182: [14:17:47]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141747.182: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141747.182: [14:17:47]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141747.182: [14:17:47]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141747.182: [14:17:47]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141747.182: [14:17:47]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141751.468: [14:17:51][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm initrd.img.old 
+141754.358: [14:17:54][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmidr DATA/
+141754.376: [14:17:54]-bash: rmidr: command not found
+141803.380: [14:18:03][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir DATA/
+141803.381: [14:18:03]rmdir: failed to remove 'DATA/': Directory not empty
+141805.301: [14:18:05][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141805.433: [14:18:05]total 24M
+141805.433: [14:18:05]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141805.433: [14:18:05]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141805.434: [14:18:05]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141805.434: [14:18:05]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141805.435: [14:18:05]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141805.435: [14:18:05]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141805.435: [14:18:05]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141805.436: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141805.436: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141805.436: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141805.436: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141805.436: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141805.436: [14:18:05]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141805.437: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141805.437: [14:18:05]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141805.437: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141805.437: [14:18:05]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141805.438: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141805.438: [14:18:05]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141805.438: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141805.438: [14:18:05]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141805.438: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141805.439: [14:18:05]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141805.439: [14:18:05]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141805.439: [14:18:05]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141805.440: [14:18:05]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141807.429: [14:18:07][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# cd DATA/
+141808.381: [14:18:08][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# ll
+141808.381: [14:18:08]total 20K
+141808.381: [14:18:08]drwxrwxrwx 29 root root 4.0K Mar  3 09:44 AppData
+141808.382: [14:18:08]drwx------  2 root root 4.0K Mar  3 09:44 Documents
+141808.382: [14:18:08]drwx------  2 root root 4.0K Mar  3 09:44 Downloads
+141808.382: [14:18:08]drwx------  2 root root 4.0K Mar  3 09:44 Gallery
+141808.383: [14:18:08]drwx------  2 root root 4.0K Mar  3 09:44 Media
+141813.369: [14:18:13][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# rmdir AppData/
+141813.369: [14:18:13]rmdir: failed to remove 'AppData/': Directory not empty
+141816.231: [14:18:16][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# cd AppData/
+141816.878: [14:18:16][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# ll
+141816.897: [14:18:16]total 108K
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 adguard-home
+141816.897: [14:18:16]drwxr-xr-x 9 root root 4.0K Mar  3 09:44 CAdvisor
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 calibre-web
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 casaos-cloudflared
+141816.897: [14:18:16]drwxr-xr-x 3 root root 4.0K Mar  3 09:44 Emby
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 FileBrowser
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 firefly
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 gitea
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 grafana
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 immich
+141816.897: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 InfluxDB
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 Jellyfin
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 mtphotos
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 myspeed
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 navidrome
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 nextcloud
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 nginx
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 nginxproxymanager
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 PhotoPrism
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 plex
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 Plex
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 Prometheus
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 qBittorrent
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 Rustdesk
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 Syncthing
+141816.898: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 Transmission
+141816.899: [14:18:16]drwx------ 2 root root 4.0K Mar  3 09:44 wg-easy
+141819.961: [14:18:19][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# cd adguard-home/
+141820.657: [14:18:20][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/adguard-home]# ll
+141820.657: [14:18:20]total 0
+141823.781: [14:18:23][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/adguard-home]# cd ..
+141826.210: [14:18:26][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# rmdir adguard-home/
+141830.000: [14:18:30][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# rmdir CAdvisor/
+141830.001: [14:18:30]rmdir: failed to remove 'CAdvisor/': Directory not empty
+141841.641: [14:18:41][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# ll /DATA/Media/AppData/
+141841.660: [14:18:41]total 4.0K
+141841.660: [14:18:41]drwxrwxrwx 3 root root 4.0K Sep 29 10:28 prometheus
+141909.541: [14:19:09][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# cd /DATA/Media/
+141910.326: [14:19:10][root@172-16-208-2 /DATA/Media]# ll
+141910.326: [14:19:10]total 2.5G
+141910.326: [14:19:10]-rw-r--r--  1 sambauser sambauser  589 Feb 12 09:44  1.txt
+141910.327: [14:19:10]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14  2025  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+141910.328: [14:19:10]-rwxrw-rw-  1 sambauser sambauser    0 Feb 25 13:43 '20260213 信息网络根服务验证系统进展项目汇报.pptx'
+141910.328: [14:19:10]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+141910.329: [14:19:10]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+141910.329: [14:19:10]drwxrwxrwx  9 root      root      4.0K Mar  3 11:09  Documents
+141910.329: [14:19:10]drwxrwxr-x  3 wyj       wyj       4.0K Jan 30 22:55  Doucuments
+141910.329: [14:19:10]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+141910.329: [14:19:10]drwxrwxrwx 51 wyj       wyj        24K Feb 28 09:30  Movies
+141910.329: [14:19:10]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+141910.330: [14:19:10]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+141910.330: [14:19:10]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+141910.330: [14:19:10]drwxrwxr-x  2 wyj       wyj       4.0K Mar  3 11:09  The.Water.Babies-iFree
+141910.330: [14:19:10]drwxrwxrwx 23 root      root      4.0K Feb 27 08:12  Tmp
+141910.330: [14:19:10]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+141910.330: [14:19:10]drwxrwxrwx 51 wyj       wyj        12K Feb 28 09:41 'TV Shows'
+141910.331: [14:19:10]drwxr-xr-x  6 sambauser sambauser 4.0K Mar  2 16:27  WYJ
+141910.331: [14:19:10]drwxrwxrwx  3 root      root      4.0K Feb 27 15:33  XTV-BACKUP
+141910.331: [14:19:10]drwxrwxr-x  2 wyj       wyj        12K Mar  3 11:09  怪医黑杰克.BLACK.JACK.2004.S01.2160p.WEB-DL.H.265.HDR.AAC-rainweb
+141910.331: [14:19:10]-rwxrw-rw-  1 sambauser sambauser 152K Feb 13 16:48  方案拓扑.png
+141910.331: [14:19:10]-rwx------  1 sambauser sambauser 368K Feb 13 15:17  方案拓扑.vsdx
+141910.332: [14:19:10]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19  2025  软考高级《网络规划设计师》资料包
+141910.332: [14:19:10]-rwxrw-rw-  1 sambauser sambauser  19M Feb  5 18:39  量子中心组网图-样板间.png
+141912.863: [14:19:12][root@172-16-208-2 /DATA/Media]# cd AppData/
+141913.474: [14:19:13][root@172-16-208-2 /DATA/Media/AppData]# ll
+141913.474: [14:19:13]total 4.0K
+141913.475: [14:19:13]drwxrwxrwx 3 root root 4.0K Sep 29 10:28 prometheus
+141916.944: [14:19:16][root@172-16-208-2 /DATA/Media/AppData]# cd -
+141916.944: [14:19:16]/DATA/Media
+141925.501: [14:19:25][root@172-16-208-2 /DATA/Media]# cd /opt/XTV-BACKUP/
+141926.166: [14:19:26][root@172-16-208-2 /opt/XTV-BACKUP]# ll
+141926.186: [14:19:26]total 20K
+141926.186: [14:19:26]drwx------  2 root      root       16K Feb 27 15:29 lost+found
+141926.186: [14:19:26]drwxrwxr-x 20 sambauser sambauser 4.0K Mar  3 14:17 xiaomi_camera_videos
+141927.763: [14:19:27][root@172-16-208-2 /opt/XTV-BACKUP]# cd xiaomi_camera_videos/
+141928.384: [14:19:28][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+141928.404: [14:19:28]total 24M
+141928.404: [14:19:28]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+141928.404: [14:19:28]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+141928.404: [14:19:28]drwxrwxrwx     7 root      root      4.0K Mar  3 09:44 DATA
+141928.404: [14:19:28]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+141928.404: [14:19:28]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+141928.404: [14:19:28]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+141928.404: [14:19:28]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 media
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 path
+141928.405: [14:19:28]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 root
+141928.405: [14:19:28]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 run
+141928.405: [14:19:28]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+141928.405: [14:19:28]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+141928.405: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+141928.406: [14:19:28]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+141928.406: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+141928.406: [14:19:28]drwx------     2 root      root      4.0K Mar  3 09:44 var
+141928.406: [14:19:28]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+141928.406: [14:19:28]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+141928.406: [14:19:28]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+141933.553: [14:19:33][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# cd DATA/
+141934.187: [14:19:34][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# ll
+141934.187: [14:19:34]total 20K
+141934.188: [14:19:34]drwxrwxrwx 28 root root 4.0K Mar  3 14:18 AppData
+141934.188: [14:19:34]drwx------  2 root root 4.0K Mar  3 09:44 Documents
+141934.188: [14:19:34]drwx------  2 root root 4.0K Mar  3 09:44 Downloads
+141934.189: [14:19:34]drwx------  2 root root 4.0K Mar  3 09:44 Gallery
+141934.189: [14:19:34]drwx------  2 root root 4.0K Mar  3 09:44 Media
+141937.000: [14:19:37][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# du -sh *
+141937.000: [14:19:37]424K    AppData
+141937.001: [14:19:37]4.0K    Documents
+141937.001: [14:19:37]4.0K    Downloads
+141937.001: [14:19:37]4.0K    Gallery
+141937.001: [14:19:37]4.0K    Media
+141945.132: [14:19:45][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# rmdir Documents/
+141949.615: [14:19:49][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# rmdir Downloads/
+141953.533: [14:19:53][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# rmdir Gallery/
+141957.418: [14:19:57][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# rmdir  Media/
+141958.270: [14:19:58][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# ll
+141958.288: [14:19:58]total 4.0K
+141958.289: [14:19:58]drwxrwxrwx 28 root root 4.0K Mar  3 14:18 AppData
+142000.897: [14:20:00][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# cd AppData/
+142001.608: [14:20:01][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# ll
+142001.609: [14:20:01]total 104K
+142001.609: [14:20:01]drwxr-xr-x 9 root root 4.0K Mar  3 09:44 CAdvisor
+142001.610: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 calibre-web
+142001.610: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 casaos-cloudflared
+142001.610: [14:20:01]drwxr-xr-x 3 root root 4.0K Mar  3 09:44 Emby
+142001.610: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 FileBrowser
+142001.610: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 firefly
+142001.610: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 gitea
+142001.610: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 grafana
+142001.611: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 immich
+142001.611: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 InfluxDB
+142001.611: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 Jellyfin
+142001.611: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 mtphotos
+142001.611: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 myspeed
+142001.611: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 navidrome
+142001.612: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 nextcloud
+142001.612: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 nginx
+142001.612: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 nginxproxymanager
+142001.612: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 PhotoPrism
+142001.612: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 plex
+142001.612: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 Plex
+142001.613: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 Prometheus
+142001.613: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 qBittorrent
+142001.613: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 Rustdesk
+142001.613: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 Syncthing
+142001.613: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 Transmission
+142001.614: [14:20:01]drwx------ 2 root root 4.0K Mar  3 09:44 wg-easy
+142032.433: [14:20:32][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# rmdir wg-easy/
+142037.819: [14:20:37][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# du -sh *
+142037.820: [14:20:37]32K     CAdvisor
+142037.820: [14:20:37]4.0K    calibre-web
+142037.820: [14:20:37]4.0K    casaos-cloudflared
+142037.839: [14:20:37]292K    Emby
+142037.839: [14:20:37]4.0K    FileBrowser
+142037.839: [14:20:37]4.0K    firefly
+142037.839: [14:20:37]4.0K    gitea
+142037.839: [14:20:37]4.0K    grafana
+142037.839: [14:20:37]4.0K    immich
+142037.839: [14:20:37]4.0K    InfluxDB
+142037.839: [14:20:37]4.0K    Jellyfin
+142037.839: [14:20:37]4.0K    mtphotos
+142037.839: [14:20:37]4.0K    myspeed
+142037.839: [14:20:37]4.0K    navidrome
+142037.839: [14:20:37]4.0K    nextcloud
+142037.839: [14:20:37]4.0K    nginx
+142037.839: [14:20:37]4.0K    nginxproxymanager
+142037.839: [14:20:37]4.0K    PhotoPrism
+142037.839: [14:20:37]4.0K    plex
+142037.839: [14:20:37]4.0K    Plex
+142037.839: [14:20:37]4.0K    Prometheus
+142037.839: [14:20:37]4.0K    qBittorrent
+142037.839: [14:20:37]4.0K    Rustdesk
+142037.839: [14:20:37]4.0K    Syncthing
+142037.839: [14:20:37]4.0K    Transmission
+142044.220: [14:20:44][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# cd Emby/
+142044.893: [14:20:44][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby]# ll
+142044.900: [14:20:44]total 4.0K
+142044.900: [14:20:44]drwxrwxrwx 12 wyj wyj 4.0K Mar  3 09:44 config
+142046.531: [14:20:46][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby]# cd config/
+142047.226: [14:20:47][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby/config]# ll
+142047.226: [14:20:47]total 40K
+142047.242: [14:20:47]drwxr-xr-x 7 wyj  wyj  4.0K Mar  3 09:44 cache
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 config
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 custom-cont-init.d
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 custom-services.d
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 data
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 logs
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 metadata
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 plugins
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 root
+142047.242: [14:20:47]drwx------ 2 root root 4.0K Mar  3 09:44 transcoding-temp
+142049.709: [14:20:49][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby/config]# du -sh *
+142049.717: [14:20:49]248K    cache
+142049.717: [14:20:49]4.0K    config
+142049.717: [14:20:49]4.0K    custom-cont-init.d
+142049.717: [14:20:49]4.0K    custom-services.d
+142049.717: [14:20:49]4.0K    data
+142049.717: [14:20:49]4.0K    logs
+142049.718: [14:20:49]4.0K    metadata
+142049.718: [14:20:49]4.0K    plugins
+142049.718: [14:20:49]4.0K    root
+142049.718: [14:20:49]4.0K    transcoding-temp
+142151.288: [14:21:51][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby/config]# cd ..
+142152.080: [14:21:52][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby]# ll
+142152.088: [14:21:52]total 4.0K
+142152.088: [14:21:52]drwxrwxrwx 12 wyj wyj 4.0K Mar  3 09:44 config
+142153.520: [14:21:53][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData/Emby]# cd ..
+142154.340: [14:21:54][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# ll
+142154.357: [14:21:54]total 100K
+142154.357: [14:21:54]drwxr-xr-x 9 root root 4.0K Mar  3 09:44 CAdvisor
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 calibre-web
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 casaos-cloudflared
+142154.357: [14:21:54]drwxr-xr-x 3 root root 4.0K Mar  3 09:44 Emby
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 FileBrowser
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 firefly
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 gitea
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 grafana
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 immich
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 InfluxDB
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 Jellyfin
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 mtphotos
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 myspeed
+142154.357: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 navidrome
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 nextcloud
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 nginx
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 nginxproxymanager
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 PhotoPrism
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 plex
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 Plex
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 Prometheus
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 qBittorrent
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 Rustdesk
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 Syncthing
+142154.358: [14:21:54]drwx------ 2 root root 4.0K Mar  3 09:44 Transmission
+142340.668: [14:23:40][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# mv ./* /DATA/Media/AppData/
+142341.688: [14:23:41][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# ll
+142341.699: [14:23:41]total 0
+142342.855: [14:23:42][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA/AppData]# cd ..
+142353.105: [14:23:53][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/DATA]# cd ..
+142353.867: [14:23:53][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142353.885: [14:23:53]total 24M
+142353.885: [14:23:53]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142353.885: [14:23:53]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142353.886: [14:23:53]drwxrwxrwx     3 root      root      4.0K Mar  3 14:19 DATA
+142353.886: [14:23:53]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+142353.886: [14:23:53]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+142353.886: [14:23:53]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+142353.886: [14:23:53]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+142353.886: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142353.886: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 media
+142353.886: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+142353.886: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+142353.886: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142353.886: [14:23:53]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142353.886: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142353.886: [14:23:53]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142353.887: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142353.887: [14:23:53]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142353.887: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142353.887: [14:23:53]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142353.887: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142353.887: [14:23:53]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142353.887: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142353.887: [14:23:53]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142353.887: [14:23:53]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142353.887: [14:23:53]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142353.887: [14:23:53]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142356.240: [14:23:56][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir DATA/
+142356.240: [14:23:56]rmdir: failed to remove 'DATA/': Directory not empty
+142402.258: [14:24:02][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll DATA/
+142402.277: [14:24:02]total 4.0K
+142402.277: [14:24:02]drwxrwxrwx 2 root root 4.0K Mar  3 14:23 AppData
+142411.022: [14:24:11][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir /DATA/AppData/
+142411.042: [14:24:11]rmdir: failed to remove '/DATA/AppData/': Directory not empty
+142418.657: [14:24:18][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll /DATA/AppData/
+142418.675: [14:24:18]total 108K
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K May 15  2025 adguard-home
+142418.676: [14:24:18]drwxr-xr-x 9 root root 4.0K Sep 29 14:04 CAdvisor
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr  3  2024 calibre-web
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Dec 22  2023 casaos-cloudflared
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr  6  2023 Emby
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K May  8  2023 FileBrowser
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Jul  2  2024 firefly
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K May 20  2025 gitea
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Jan  2  2025 grafana
+142418.676: [14:24:18]drwxr-xr-x 5 root root 4.0K May 15  2025 immich
+142418.676: [14:24:18]drwxr-xr-x 4 root root 4.0K Apr 11  2023 InfluxDB
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr  6  2023 Jellyfin
+142418.676: [14:24:18]drwxr-xr-x 4 root root 4.0K Apr  3  2024 mtphotos
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Sep 26  2024 myspeed
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K May 16  2025 navidrome
+142418.676: [14:24:18]drwxr-xr-x 3 root root 4.0K Sep 26  2024 nextcloud
+142418.677: [14:24:18]drwxr-xr-x 5 root root 4.0K Sep 26 15:06 nginx
+142418.677: [14:24:18]drwxr-xr-x 4 root root 4.0K Sep 26 14:04 nginxproxymanager
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr  6  2023 PhotoPrism
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K May 16  2025 plex
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr 23  2023 Plex
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Sep 29 14:27 Prometheus
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr  6  2023 qBittorrent
+142418.677: [14:24:18]drwxrwxrwx 2 root root 4.0K Feb 10 17:36 Rustdesk
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Jul 27  2023 Syncthing
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Apr  6  2023 Transmission
+142418.677: [14:24:18]drwxr-xr-x 3 root root 4.0K Jan 23  2024 wg-easy
+142433.068: [14:24:33][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142433.076: [14:24:33]total 24M
+142433.076: [14:24:33]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142433.076: [14:24:33]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142433.076: [14:24:33]drwxrwxrwx     3 root      root      4.0K Mar  3 14:19 DATA
+142433.077: [14:24:33]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+142433.077: [14:24:33]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+142433.077: [14:24:33]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+142433.077: [14:24:33]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 media
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142433.077: [14:24:33]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142433.077: [14:24:33]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142433.077: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142433.078: [14:24:33]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142433.078: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142433.078: [14:24:33]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142433.078: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142433.078: [14:24:33]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142433.078: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142433.078: [14:24:33]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142433.078: [14:24:33]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142433.079: [14:24:33]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142433.079: [14:24:33]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142438.705: [14:24:38][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll DATA/
+142438.721: [14:24:38]total 4.0K
+142438.721: [14:24:38]drwxrwxrwx 2 root root 4.0K Mar  3 14:23 AppData
+142441.961: [14:24:41][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll DATA/AppData/
+142441.961: [14:24:41]total 0
+142446.897: [14:24:46][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir DATA/AppData/
+142449.597: [14:24:49][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir DATA/
+142450.272: [14:24:50][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142450.281: [14:24:50]total 24M
+142450.281: [14:24:50]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142450.281: [14:24:50]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142450.281: [14:24:50]lrwxrwxrwx     1 root      root         7 Apr  6  2023 lib -> usr/lib
+142450.281: [14:24:50]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+142450.282: [14:24:50]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+142450.282: [14:24:50]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 media
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142450.284: [14:24:50]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142450.284: [14:24:50]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142450.284: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142450.285: [14:24:50]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142450.285: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142450.285: [14:24:50]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142450.285: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142450.285: [14:24:50]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142450.285: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142450.287: [14:24:50]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142450.287: [14:24:50]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142450.287: [14:24:50]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142450.287: [14:24:50]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142454.168: [14:24:54][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm lib
+142456.023: [14:24:56][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm lib3
+142456.023: [14:24:56]rm: cannot remove 'lib3': No such file or directory
+142458.208: [14:24:58][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmlib32
+142458.208: [14:24:58]-bash: rmlib32: command not found
+142500.133: [14:25:00][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm lib3
+142500.134: [14:25:00]rm: cannot remove 'lib3': No such file or directory
+142502.435: [14:25:02][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142502.445: [14:25:02]total 24M
+142502.445: [14:25:02]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142502.445: [14:25:02]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142502.445: [14:25:02]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib32 -> usr/lib32
+142502.446: [14:25:02]lrwxrwxrwx     1 root      root         9 Apr  6  2023 lib64 -> usr/lib64
+142502.446: [14:25:02]lrwxrwxrwx     1 root      root        10 Apr  6  2023 libx32 -> usr/libx32
+142502.446: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142502.446: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 media
+142502.446: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+142502.447: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+142502.447: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142502.447: [14:25:02]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142502.447: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142502.447: [14:25:02]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142502.447: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142502.448: [14:25:02]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142502.448: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142502.448: [14:25:02]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142502.448: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142502.448: [14:25:02]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142502.448: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142502.449: [14:25:02]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142502.449: [14:25:02]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142502.449: [14:25:02]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142502.449: [14:25:02]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142506.392: [14:25:06][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm lib32
+142509.485: [14:25:09][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm lib64
+142512.551: [14:25:12][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm libx32
+142513.356: [14:25:13][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142513.364: [14:25:13]total 24M
+142513.364: [14:25:13]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142513.364: [14:25:13]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142513.364: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142513.364: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 media
+142513.364: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 mnt
+142513.365: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+142513.365: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142513.365: [14:25:13]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142513.365: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142513.365: [14:25:13]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142513.365: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142513.365: [14:25:13]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142513.365: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142513.365: [14:25:13]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142513.365: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142513.366: [14:25:13]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142513.366: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142513.366: [14:25:13]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142513.366: [14:25:13]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142513.367: [14:25:13]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142513.367: [14:25:13]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142519.706: [14:25:19][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir media/
+142523.324: [14:25:23][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir mnt
+142524.308: [14:25:24][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142524.324: [14:25:24]total 24M
+142524.324: [14:25:24]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142524.325: [14:25:24]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 opt
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142524.325: [14:25:24]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142524.325: [14:25:24]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142524.325: [14:25:24]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142524.325: [14:25:24]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142524.325: [14:25:24]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142524.325: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142524.326: [14:25:24]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142524.326: [14:25:24]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142524.326: [14:25:24]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142524.326: [14:25:24]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142540.077: [14:25:40][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir opt
+142541.108: [14:25:41][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142541.116: [14:25:41]total 24M
+142541.116: [14:25:41]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142541.116: [14:25:41]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142541.116: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142541.116: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 path
+142541.116: [14:25:41]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142541.116: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142541.116: [14:25:41]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142541.116: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142541.116: [14:25:41]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142541.116: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142541.116: [14:25:41]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142541.116: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142541.117: [14:25:41]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142541.117: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142541.117: [14:25:41]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142541.117: [14:25:41]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142541.117: [14:25:41]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142541.117: [14:25:41]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142545.820: [14:25:45][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir path/
+142546.941: [14:25:46][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142546.951: [14:25:46]total 24M
+142546.951: [14:25:46]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142546.952: [14:25:46]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142546.952: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142546.952: [14:25:46]dr-x------     2 root      root      4.0K Mar  3 09:44 proc
+142546.952: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 root
+142546.952: [14:25:46]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142546.953: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142546.953: [14:25:46]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142546.953: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142546.953: [14:25:46]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142546.953: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142546.953: [14:25:46]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142546.954: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142546.954: [14:25:46]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142546.954: [14:25:46]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142546.954: [14:25:46]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142546.954: [14:25:46]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142553.941: [14:25:53][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir proc/
+142559.055: [14:25:59][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir root
+142559.753: [14:25:59][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142559.753: [14:25:59]total 24M
+142559.753: [14:25:59]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142559.753: [14:25:59]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142559.753: [14:25:59]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142559.769: [14:25:59]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142559.769: [14:25:59]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142559.769: [14:25:59]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142559.770: [14:25:59]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142559.770: [14:25:59]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142559.770: [14:25:59]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142559.770: [14:25:59]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142559.770: [14:25:59]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142559.770: [14:25:59]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142559.770: [14:25:59]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142559.770: [14:25:59]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142559.770: [14:25:59]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142740.898: [14:27:40][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142740.917: [14:27:40]total 24M
+142740.917: [14:27:40]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142740.917: [14:27:40]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142740.917: [14:27:40]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142740.917: [14:27:40]-rwxrwxrwx     1 root      root       733 Oct  9 17:16 rsync.sh
+142740.918: [14:27:40]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142740.918: [14:27:40]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142740.918: [14:27:40]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142740.918: [14:27:40]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142740.918: [14:27:40]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142740.918: [14:27:40]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142740.918: [14:27:40]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142740.918: [14:27:40]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142740.918: [14:27:40]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142740.918: [14:27:40]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142740.918: [14:27:40]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142744.046: [14:27:44][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm rsync.sh 
+142744.758: [14:27:44][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142744.768: [14:27:44]total 24M
+142744.768: [14:27:44]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142744.768: [14:27:44]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142744.768: [14:27:44]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142744.769: [14:27:44]drwx------     2 root      root      4.0K Mar  3 09:44 run
+142744.769: [14:27:44]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142744.769: [14:27:44]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142744.769: [14:27:44]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142744.769: [14:27:44]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142744.770: [14:27:44]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142744.770: [14:27:44]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142744.770: [14:27:44]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142744.770: [14:27:44]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142744.770: [14:27:44]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142744.771: [14:27:44]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142748.914: [14:27:48][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm run
+142748.923: [14:27:48]rm: cannot remove 'run': Is a directory
+142752.958: [14:27:52][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir run/
+142756.712: [14:27:56][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142756.721: [14:27:56]total 24M
+142756.721: [14:27:56]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142756.721: [14:27:56]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142756.721: [14:27:56]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142756.721: [14:27:56]lrwxrwxrwx     1 root      root         8 Apr  6  2023 sbin -> usr/sbin
+142756.721: [14:27:56]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142756.721: [14:27:56]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142756.721: [14:27:56]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142756.721: [14:27:56]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142756.721: [14:27:56]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142756.721: [14:27:56]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142756.722: [14:27:56]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142756.722: [14:27:56]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142756.722: [14:27:56]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142800.912: [14:28:00][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm sbin
+142801.617: [14:28:01][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142801.625: [14:28:01]total 24M
+142801.625: [14:28:01]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142801.625: [14:28:01]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142801.625: [14:28:01]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142801.625: [14:28:01]drwx------     2 root      root      4.0K Mar  3 09:44 srv
+142801.625: [14:28:01]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142801.625: [14:28:01]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142801.625: [14:28:01]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142801.625: [14:28:01]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142801.625: [14:28:01]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142801.625: [14:28:01]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142801.626: [14:28:01]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142801.626: [14:28:01]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142806.063: [14:28:06][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir srv
+142806.778: [14:28:06][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142806.789: [14:28:06]total 24M
+142806.789: [14:28:06]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142806.790: [14:28:06]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142806.790: [14:28:06]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142806.790: [14:28:06]dr-x------     2 root      root      4.0K Mar  3 09:44 sys
+142806.790: [14:28:06]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142806.790: [14:28:06]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142806.790: [14:28:06]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142806.791: [14:28:06]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142806.791: [14:28:06]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142806.791: [14:28:06]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142806.791: [14:28:06]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142808.772: [14:28:08][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir  sys
+142809.736: [14:28:09][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142809.754: [14:28:09]total 24M
+142809.755: [14:28:09]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142809.755: [14:28:09]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142809.755: [14:28:09]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142809.755: [14:28:09]drwx------     2 root      root      4.0K Mar  3 09:44 tmp
+142809.755: [14:28:09]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142809.755: [14:28:09]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142809.755: [14:28:09]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142809.755: [14:28:09]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142809.755: [14:28:09]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142809.755: [14:28:09]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142811.850: [14:28:11][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir tmp
+142812.580: [14:28:12][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142812.581: [14:28:12]total 24M
+142812.581: [14:28:12]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142812.582: [14:28:12]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142812.582: [14:28:12]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142812.582: [14:28:12]-rw-r--r--     1 root      root       23M Mar  3 11:10 tree.txt
+142812.582: [14:28:12]drwx------     2 root      root      4.0K Mar  3 09:44 usr
+142812.582: [14:28:12]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142812.583: [14:28:12]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142812.583: [14:28:12]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142812.583: [14:28:12]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142815.913: [14:28:15][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm tree.txt 
+142818.866: [14:28:18][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir usr
+142819.573: [14:28:19][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142819.582: [14:28:19]total 512K
+142819.582: [14:28:19]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142819.582: [14:28:19]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142819.582: [14:28:19]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142819.582: [14:28:19]drwx------     2 root      root      4.0K Mar  3 09:44 var
+142819.582: [14:28:19]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142819.582: [14:28:19]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142819.582: [14:28:19]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142822.317: [14:28:22][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rmdir  var
+142822.962: [14:28:22][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142822.974: [14:28:22]total 508K
+142822.974: [14:28:22]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142822.975: [14:28:22]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142822.975: [14:28:22]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142822.975: [14:28:22]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz -> boot/vmlinuz-5.10.0-21-amd64
+142822.975: [14:28:22]lrwxrwxrwx     1 root      root        28 Apr  6  2023 vmlinuz.old -> boot/vmlinuz-5.10.0-20-amd64
+142822.976: [14:28:22]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142826.756: [14:28:26][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm vmlinuz
+142829.428: [14:28:29][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# rm vmlinuz.old 
+142830.192: [14:28:30][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+142830.212: [14:28:30]total 508K
+142830.212: [14:28:30]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+142830.212: [14:28:30]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+142830.212: [14:28:30]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+142830.212: [14:28:30]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+142831.858: [14:28:31][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# clear
+143122.357: [14:31:22][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# ll
+143122.360: [14:31:22]total 512K
+143122.360: [14:31:22]drwxrwxr-x  4579 sambauser sambauser 132K Mar  3 04:11 788b2ac9b9e6
+143122.360: [14:31:22]drwxrwxr-x 12845 sambauser sambauser 364K Mar  3 04:04 94f8277f09f8
+143122.361: [14:31:22]drwx------     2 root      root      4.0K Mar  3 09:44 lost+found
+143122.361: [14:31:22]-rwxr-xr-x     1 root      root       733 Oct  9 17:16 rsync.sh
+143122.361: [14:31:22]drwxrwxrwx     3 root      root      4.0K Jan 18 22:08 yancheng
+143123.844: [14:31:23][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos]# cd 788b2ac9b9e6/
+143125.128: [14:31:25][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ll 2026022106
+143125.134: [14:31:25]total 48M
+143125.134: [14:31:25]-rwxrwxrwx 1 sambauser sambauser  11M Feb 21 06:51 46M25S_1771627585.mp4
+143125.135: [14:31:25]-rwxrwxrwx 1 sambauser sambauser  11M Feb 21 06:51 47M23S_1771627643.mp4
+143125.135: [14:31:25]-rwxrwxrwx 1 sambauser sambauser  11M Feb 21 06:52 48M23S_1771627703.mp4
+143125.135: [14:31:25]-rwxrwxrwx 1 sambauser sambauser  12M Feb 21 06:52 49M23S_1771627763.mp4
+143125.136: [14:31:25]-rwxrwxrwx 1 sambauser sambauser 3.4M Feb 21 06:52 50M23S_1771627823.mp4
+143346.868: [14:33:46][root@172-16-208-2 /opt/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# cd /root

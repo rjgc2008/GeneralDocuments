@@ -1,0 +1,51 @@
+﻿090033.155: [09:00:33][202603099-172.16.208.2-各种服务-09:00:33]
+090033.198: [09:00:33]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+090033.198: [09:00:33]
+090033.198: [09:00:33]The programs included with the Debian GNU/Linux system are free software;
+090033.198: [09:00:33]the exact distribution terms for each program are described in the
+090033.198: [09:00:33]individual files in /usr/share/doc/*/copyright.
+090033.198: [09:00:33]
+090033.204: [09:00:33]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+090033.204: [09:00:33]permitted by applicable law.
+090033.204: [09:00:33]Last login: Fri Mar 13 08:09:36 2026 from 192.168.4.222
+090038.171: [09:00:38][root@172-16-208-2 ~]# ping www.baidu.com
+090038.180: [09:00:38]PING www.a.shifen.com (180.101.51.73) 56(84) bytes of data.
+090038.198: [09:00:38]64 bytes from 180.101.51.73 (180.101.51.73): icmp_seq=1 ttl=52 time=7.07 ms
+090039.202: [09:00:39]64 bytes from 180.101.51.73 (180.101.51.73): icmp_seq=2 ttl=52 time=7.42 ms
+090039.316: [09:00:39]^C
+090039.316: [09:00:39]--- www.a.shifen.com ping statistics ---
+090039.316: [09:00:39]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+090039.316: [09:00:39]rtt min/avg/max/mdev = 7.067/7.245/7.424/0.178 ms
+090045.988: [09:00:45][root@172-16-208-2 ~]# ping www.google.com.hk
+090045.997: [09:00:45]PING www.google.com.hk (31.13.94.37) 56(84) bytes of data.
+090047.089: [09:00:47]^C
+090047.089: [09:00:47]--- www.google.com.hk ping statistics ---
+090047.089: [09:00:47]2 packets transmitted, 0 received, 100% packet loss, time 1018ms
+090047.089: [09:00:47]
+090222.844: [09:02:22][root@172-16-208-2 ~]# ping www.ifeng.com
+090222.856: [09:02:22]PING best.sched.sma.tdnsstic1.cn (61.147.88.103) 56(84) bytes of data.
+090222.872: [09:02:22]64 bytes from 61.147.88.103 (61.147.88.103): icmp_seq=1 ttl=49 time=7.32 ms
+090223.800: [09:02:23]^C
+090223.800: [09:02:23]--- best.sched.sma.tdnsstic1.cn ping statistics ---
+090223.800: [09:02:23]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+090223.800: [09:02:23]rtt min/avg/max/mdev = 7.319/7.319/7.319/0.000 ms
+090227.080: [09:02:27][root@172-16-208-2 ~]# ping www.baidu.com
+090227.097: [09:02:27]PING www.a.shifen.com (180.101.49.44) 56(84) bytes of data.
+090227.120: [09:02:27]64 bytes from 180.101.49.44 (180.101.49.44): icmp_seq=1 ttl=52 time=9.53 ms
+090228.120: [09:02:28]64 bytes from 180.101.49.44 (180.101.49.44): icmp_seq=2 ttl=52 time=9.41 ms
+090228.775: [09:02:28]^C
+090228.775: [09:02:28]--- www.a.shifen.com ping statistics ---
+090228.776: [09:02:28]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+090228.776: [09:02:28]rtt min/avg/max/mdev = 9.413/9.471/9.530/0.058 ms
+090500.473: [09:05:00][root@172-16-208-2 ~]# 
+090500.538: [09:05:00][root@172-16-208-2 ~]# 
+102344.294: [10:23:44][202603099-172.16.208.2-各种服务-10:23:44]
+102344.317: [10:23:44]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+102344.317: [10:23:44]
+102344.317: [10:23:44]The programs included with the Debian GNU/Linux system are free software;
+102344.317: [10:23:44]the exact distribution terms for each program are described in the
+102344.318: [10:23:44]individual files in /usr/share/doc/*/copyright.
+102344.318: [10:23:44]
+102344.318: [10:23:44]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+102344.318: [10:23:44]permitted by applicable law.
+102344.318: [10:23:44]Last login: Fri Mar 20 09:00:33 2026 from 192.168.4.222

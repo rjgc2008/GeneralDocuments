@@ -1,0 +1,760 @@
+﻿093212.903: [09:32:12][202603192.168.231.1-黄埭-核心交换机-09:32:12]
+093212.975: [09:32:12]
+093212.980: [09:32:12]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+093213.007: [09:32:13]      The current login time is 2025-12-19 16:43:53.
+093220.355: [09:32:20]<Core-SW>ping 192.168.100.100
+093220.616: [09:32:20]  PING 192.168.100.100: 56  data bytes, press CTRL_C to break
+093221.138: [09:32:21]    Reply from 192.168.100.100: bytes=56 Sequence=1 ttl=63 time=1 ms
+093221.707: [09:32:21]    Reply from 192.168.100.100: bytes=56 Sequence=2 ttl=63 time=1 ms
+093222.321: [09:32:22]    Reply from 192.168.100.100: bytes=56 Sequence=3 ttl=63 time=1 ms
+093222.779: [09:32:22]    Reply from 192.168.100.100: bytes=56 Sequence=4 ttl=63 time=1 ms
+093222.780: [09:32:22]    Reply from 192.168.100.100: bytes=56 Sequence=5 ttl=63 time=1 ms
+093222.780: [09:32:22]
+093222.780: [09:32:22]  --- 192.168.100.100 ping statistics ---
+093222.780: [09:32:22]    5 packet(s) transmitted
+093222.780: [09:32:22]    5 packet(s) received
+093222.780: [09:32:22]    0.00% packet loss
+093222.781: [09:32:22]    round-trip min/avg/max = 1/1/1 ms
+093222.786: [09:32:22] 
+093226.387: [09:32:26]<Core-SW>ping 192.168.100.101
+093226.632: [09:32:26]  PING 192.168.100.101: 56  data bytes, press CTRL_C to break
+093227.152: [09:32:27]    Reply from 192.168.100.101: bytes=56 Sequence=1 ttl=63 time=1 ms
+093227.750: [09:32:27]    Reply from 192.168.100.101: bytes=56 Sequence=2 ttl=63 time=1 ms
+093228.307: [09:32:28]    Reply from 192.168.100.101: bytes=56 Sequence=3 ttl=63 time=1 ms
+093228.835: [09:32:28]    Reply from 192.168.100.101: bytes=56 Sequence=4 ttl=63 time=1 ms
+093228.836: [09:32:28]    Reply from 192.168.100.101: bytes=56 Sequence=5 ttl=63 time=1 ms
+093228.836: [09:32:28]
+093228.836: [09:32:28]  --- 192.168.100.101 ping statistics ---
+093228.836: [09:32:28]    5 packet(s) transmitted
+093228.836: [09:32:28]    5 packet(s) received
+093228.836: [09:32:28]    0.00% packet loss
+093228.836: [09:32:28]    round-trip min/avg/max = 1/1/1 ms
+093228.836: [09:32:28] 
+094018.787: [09:40:18]<Core-SW>ping 172.16.208.2   
+094019.052: [09:40:19]  PING 172.16.208.2: 56  data bytes, press CTRL_C to break
+094019.817: [09:40:19]    Reply from 172.16.208.2: bytes=56 Sequence=1 ttl=61 time=2 ms
+094020.233: [09:40:20]    Reply from 172.16.208.2: bytes=56 Sequence=2 ttl=61 time=2 ms
+094020.233: [09:40:20]    Reply from 172.16.208.2: bytes=56 Sequence=3 ttl=61 time=2 ms
+094020.233: [09:40:20]
+094020.234: [09:40:20]  --- 172.16.208.2 ping statistics ---
+094020.234: [09:40:20]    3 packet(s) transmitted
+094020.234: [09:40:20]    3 packet(s) received
+094020.234: [09:40:20]    0.00% packet loss
+094020.234: [09:40:20]    round-trip min/avg/max = 2/2/2 ms
+094020.234: [09:40:20] 
+094022.180: [09:40:22]<Core-SW>ping 172.16.208.21
+094022.422: [09:40:22]  PING 172.16.208.21: 56  data bytes, press CTRL_C to break
+094022.991: [09:40:22]    Reply from 172.16.208.21: bytes=56 Sequence=1 ttl=61 time=3 ms
+094023.707: [09:40:23]    Reply from 172.16.208.21: bytes=56 Sequence=2 ttl=61 time=2 ms
+094024.219: [09:40:24]    Reply from 172.16.208.21: bytes=56 Sequence=3 ttl=61 time=2 ms
+094024.730: [09:40:24]    Reply from 172.16.208.21: bytes=56 Sequence=4 ttl=61 time=2 ms
+094024.731: [09:40:24]    Reply from 172.16.208.21: bytes=56 Sequence=5 ttl=61 time=3 ms
+094024.731: [09:40:24]
+094024.731: [09:40:24]  --- 172.16.208.21 ping statistics ---
+094024.731: [09:40:24]    5 packet(s) transmitted
+094024.731: [09:40:24]    5 packet(s) received
+094024.732: [09:40:24]    0.00% packet loss
+094024.732: [09:40:24]    round-trip min/avg/max = 2/2/3 ms
+094024.732: [09:40:24] 
+094031.783: [09:40:31]<Core-SW>disp ip rout
+094032.253: [09:40:32]<Core-SW>disp ip routing-table 
+094032.323: [09:40:32]Proto: Protocol        Pre: Preference
+094032.324: [09:40:32]Route Flags: R - relay, D - download to fib, T - to vpn-instance, B - black hole route
+094032.324: [09:40:32]------------------------------------------------------------------------------
+094032.324: [09:40:32]Routing Table : _public_
+094032.332: [09:40:32]         Destinations : 43       Routes : 43        
+094032.332: [09:40:32]
+094032.332: [09:40:32]Destination/Mask    Proto   Pre  Cost        Flags NextHop                                  Interface
+094032.332: [09:40:32]
+094032.352: [09:40:32]        0.0.0.0/0   Static  59   0             D   192.168.231.2                            Vlanif231
+094032.352: [09:40:32]       10.0.1.0/30  Direct  0    0             D   10.0.1.2                                 Vlanif229
+094032.352: [09:40:32]       10.0.1.2/32  Direct  0    0             D   127.0.0.1                                Vlanif229
+094032.352: [09:40:32]       10.0.1.3/32  Direct  0    0             D   127.0.0.1                                Vlanif229
+094032.352: [09:40:32]      10.50.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.352: [09:40:32]      10.52.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      10.60.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      10.62.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      10.70.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      10.72.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      10.80.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      10.82.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+094032.353: [09:40:32]      127.0.0.0/8   Direct  0    0             D   127.0.0.1                                InLoopBack0
+094032.353: [09:40:32]      127.0.0.1/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+094032.353: [09:40:32]127.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+094034.689: [09:40:34]   172.16.101.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+094034.689: [09:40:34]   172.16.208.0/20  Static  60   0             D   192.168.231.2                            Vlanif231
+094034.689: [09:40:34]    192.168.1.0/24  Static  60   0             D   10.0.1.1                                 Vlanif10
+094034.689: [09:40:34]    192.168.2.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+094034.690: [09:40:34]    192.168.3.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+094034.690: [09:40:34]    192.168.4.0/22  Static  59   0             D   192.168.231.2                            Vlanif231
+094034.690: [09:40:34]   192.168.10.0/24  Direct  0    0             D   192.168.10.1                             Vlanif10
+094034.690: [09:40:34]   192.168.10.1/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+094034.690: [09:40:34] 192.168.10.255/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+094034.690: [09:40:34]   192.168.12.0/22  Static  60   0             D   192.168.231.2                            Vlanif231
+094034.691: [09:40:34]  192.168.100.0/22  Static  60   0             D   192.168.230.2                            Vlanif230
+094034.691: [09:40:34]  192.168.200.0/24  Static  60   0             D   10.0.1.1                                 Vlanif10
+094034.691: [09:40:34]  192.168.222.0/24  Direct  0    0             D   192.168.222.1                            Vlanif222
+094034.691: [09:40:34]  192.168.222.1/32  Direct  0    0             D   127.0.0.1                                Vlanif222
+094034.691: [09:40:34]192.168.222.255/32  Direct  0    0             D   127.0.0.1                                Vlanif222
+094034.692: [09:40:34]  192.168.230.0/30  Direct  0    0             D   192.168.230.1                            Vlanif230
+094034.692: [09:40:34]  192.168.230.1/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+094034.692: [09:40:34]  192.168.230.3/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+094034.692: [09:40:34]  192.168.231.0/30  Direct  0    0             D   192.168.231.1                            Vlanif231
+094034.692: [09:40:34]  192.168.231.1/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+094034.692: [09:40:34]  192.168.231.3/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+094034.693: [09:40:34]  192.168.232.0/24  Direct  0    0             D   192.168.232.1                            Vlanif232
+094034.693: [09:40:34]  192.168.232.1/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+094036.206: [09:40:36]192.168.232.255/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+094036.206: [09:40:36]  192.168.242.0/24  Direct  0    0             D   192.168.242.1                            Vlanif242
+094036.207: [09:40:36]  192.168.242.1/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+094036.207: [09:40:36]192.168.242.255/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+094036.207: [09:40:36]255.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+095036.228: [09:50:36]<Core-SW>
+095042.188: [09:50:42][202603192.168.231.1-黄埭-核心交换机-09:50:42]
+095042.232: [09:50:42]
+095042.233: [09:50:42]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+095042.269: [09:50:42]      The current login time is 2025-12-19 17:02:22.
+100042.380: [10:00:42]<Core-SW>
+100048.597: [10:00:48][202603192.168.231.1-黄埭-核心交换机-10:00:48]
+100048.641: [10:00:48]
+100048.642: [10:00:48]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+100048.684: [10:00:48]      The current login time is 2025-12-19 17:12:29.
+100454.616: [10:04:54]<Core-SW>
+100454.807: [10:04:54]<Core-SW>
+100500.787: [10:05:00]<Core-SW>ping 172.16.208.21
+100501.031: [10:05:01]  PING 172.16.208.21: 56  data bytes, press CTRL_C to break
+100501.559: [10:05:01]    Reply from 172.16.208.21: bytes=56 Sequence=1 ttl=61 time=2 ms
+100502.061: [10:05:02]    Reply from 172.16.208.21: bytes=56 Sequence=2 ttl=61 time=3 ms
+100502.671: [10:05:02]    Reply from 172.16.208.21: bytes=56 Sequence=3 ttl=61 time=6 ms
+100503.203: [10:05:03]    Reply from 172.16.208.21: bytes=56 Sequence=4 ttl=61 time=2 ms
+100503.219: [10:05:03]    Reply from 172.16.208.21: bytes=56 Sequence=5 ttl=61 time=2 ms
+100503.219: [10:05:03]
+100503.219: [10:05:03]  --- 172.16.208.21 ping statistics ---
+100503.219: [10:05:03]    5 packet(s) transmitted
+100503.219: [10:05:03]    5 packet(s) received
+100503.219: [10:05:03]    0.00% packet loss
+100503.220: [10:05:03]    round-trip min/avg/max = 2/3/6 ms
+100503.224: [10:05:03] 
+100506.039: [10:05:06]<Core-SW>ping 172.16.208.1 
+100506.307: [10:05:06]  PING 172.16.208.1: 56  data bytes, press CTRL_C to break
+100506.872: [10:05:06]    Reply from 172.16.208.1: bytes=56 Sequence=1 ttl=62 time=4 ms
+100507.402: [10:05:07]    Reply from 172.16.208.1: bytes=56 Sequence=2 ttl=62 time=3 ms
+100507.901: [10:05:07]    Reply from 172.16.208.1: bytes=56 Sequence=3 ttl=62 time=3 ms
+100508.451: [10:05:08]    Reply from 172.16.208.1: bytes=56 Sequence=4 ttl=62 time=3 ms
+100508.451: [10:05:08]    Reply from 172.16.208.1: bytes=56 Sequence=5 ttl=62 time=3 ms
+100508.451: [10:05:08]
+100508.451: [10:05:08]  --- 172.16.208.1 ping statistics ---
+100508.451: [10:05:08]    5 packet(s) transmitted
+100508.452: [10:05:08]    5 packet(s) received
+100508.452: [10:05:08]    0.00% packet loss
+100508.452: [10:05:08]    round-trip min/avg/max = 3/3/4 ms
+100508.452: [10:05:08] 
+100514.589: [10:05:14]<Core-SW>disp
+100517.270: [10:05:17]<Core-SW>display ip in bri
+100517.339: [10:05:17]*down: administratively down
+100517.340: [10:05:17]!down: FIB overload down
+100517.340: [10:05:17]^down: standby
+100517.340: [10:05:17](l): loopback
+100517.340: [10:05:17](s): spoofing
+100517.340: [10:05:17](d): Dampening Suppressed
+100517.340: [10:05:17](ed): error down
+100517.340: [10:05:17]The number of interface that is UP in Physical is 8
+100517.340: [10:05:17]The number of interface that is DOWN in Physical is 1
+100517.340: [10:05:17]The number of interface that is UP in Protocol is 8
+100517.340: [10:05:17]The number of interface that is DOWN in Protocol is 1
+100517.368: [10:05:17]Interface                   IP Address/Mask    Physical Protocol VPN           
+100517.368: [10:05:17]MEth0/0/0                   unassigned         down     down     --            
+100517.368: [10:05:17]NULL0                       unassigned         up       up(s)    --            
+100517.368: [10:05:17]Vlanif10                    192.168.10.1/24    up       up       --            
+100517.369: [10:05:17]Vlanif222                   192.168.222.1/24   up       up       --            
+100517.369: [10:05:17]Vlanif229                   10.0.1.2/30        up       up       --            
+100517.383: [10:05:17]Vlanif230                   192.168.230.1/30   up       up       --            
+100517.383: [10:05:17]Vlanif231                   192.168.231.1/30   up       up       --            
+100517.384: [10:05:17]Vlanif232                   192.168.232.1/24   up       up       --            
+100517.384: [10:05:17]Vlanif242                   192.168.242.1/24   up       up       --            
+100615.785: [10:06:15]<Core-SW>
+100615.963: [10:06:15]<Core-SW>
+100619.460: [10:06:19]<Core-SW>ping 192.168.100.100
+100619.695: [10:06:19]  PING 192.168.100.100: 56  data bytes, press CTRL_C to break
+100620.235: [10:06:20]    Reply from 192.168.100.100: bytes=56 Sequence=1 ttl=63 time=1 ms
+100620.755: [10:06:20]    Reply from 192.168.100.100: bytes=56 Sequence=2 ttl=63 time=1 ms
+100621.300: [10:06:21]    Reply from 192.168.100.100: bytes=56 Sequence=3 ttl=63 time=1 ms
+100621.885: [10:06:21]    Reply from 192.168.100.100: bytes=56 Sequence=4 ttl=63 time=1 ms
+100621.898: [10:06:21]    Reply from 192.168.100.100: bytes=56 Sequence=5 ttl=63 time=1 ms
+100621.898: [10:06:21]
+100621.898: [10:06:21]  --- 192.168.100.100 ping statistics ---
+100621.898: [10:06:21]    5 packet(s) transmitted
+100621.898: [10:06:21]    5 packet(s) received
+100621.899: [10:06:21]    0.00% packet loss
+100621.899: [10:06:21]    round-trip min/avg/max = 1/1/1 ms
+100621.914: [10:06:21] 
+100628.201: [10:06:28]<Core-SW>disp ip rout
+100628.806: [10:06:28]<Core-SW>disp ip routing-table 
+100628.856: [10:06:28]Proto: Protocol        Pre: Preference
+100628.856: [10:06:28]Route Flags: R - relay, D - download to fib, T - to vpn-instance, B - black hole route
+100628.856: [10:06:28]------------------------------------------------------------------------------
+100628.856: [10:06:28]Routing Table : _public_
+100628.856: [10:06:28]         Destinations : 43       Routes : 43        
+100628.856: [10:06:28]
+100628.857: [10:06:28]Destination/Mask    Proto   Pre  Cost        Flags NextHop                                  Interface
+100628.857: [10:06:28]
+100628.868: [10:06:28]        0.0.0.0/0   Static  59   0             D   192.168.231.2                            Vlanif231
+100628.868: [10:06:28]       10.0.1.0/30  Direct  0    0             D   10.0.1.2                                 Vlanif229
+100628.868: [10:06:28]       10.0.1.2/32  Direct  0    0             D   127.0.0.1                                Vlanif229
+100628.868: [10:06:28]       10.0.1.3/32  Direct  0    0             D   127.0.0.1                                Vlanif229
+100628.868: [10:06:28]      10.50.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.52.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.60.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.62.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.70.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.72.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.80.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      10.82.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+100628.869: [10:06:28]      127.0.0.0/8   Direct  0    0             D   127.0.0.1                                InLoopBack0
+100628.869: [10:06:28]      127.0.0.1/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+100628.869: [10:06:28]127.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+100638.930: [10:06:38]   172.16.101.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+100638.931: [10:06:38]   172.16.208.0/20  Static  60   0             D   192.168.231.2                            Vlanif231
+100638.931: [10:06:38]    192.168.1.0/24  Static  60   0             D   10.0.1.1                                 Vlanif10
+100638.931: [10:06:38]    192.168.2.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+100638.932: [10:06:38]    192.168.3.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+100638.932: [10:06:38]    192.168.4.0/22  Static  59   0             D   192.168.231.2                            Vlanif231
+100638.932: [10:06:38]   192.168.10.0/24  Direct  0    0             D   192.168.10.1                             Vlanif10
+100638.932: [10:06:38]   192.168.10.1/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+100638.933: [10:06:38] 192.168.10.255/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+100638.933: [10:06:38]   192.168.12.0/22  Static  60   0             D   192.168.231.2                            Vlanif231
+100638.933: [10:06:38]  192.168.100.0/22  Static  60   0             D   192.168.230.2                            Vlanif230
+100638.933: [10:06:38]  192.168.200.0/24  Static  60   0             D   10.0.1.1                                 Vlanif10
+100638.934: [10:06:38]  192.168.222.0/24  Direct  0    0             D   192.168.222.1                            Vlanif222
+100638.934: [10:06:38]  192.168.222.1/32  Direct  0    0             D   127.0.0.1                                Vlanif222
+100638.934: [10:06:38]192.168.222.255/32  Direct  0    0             D   127.0.0.1                                Vlanif222
+100638.935: [10:06:38]  192.168.230.0/30  Direct  0    0             D   192.168.230.1                            Vlanif230
+100638.935: [10:06:38]  192.168.230.1/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+100638.935: [10:06:38]  192.168.230.3/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+100638.935: [10:06:38]  192.168.231.0/30  Direct  0    0             D   192.168.231.1                            Vlanif231
+100638.947: [10:06:38]  192.168.231.1/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+100638.947: [10:06:38]  192.168.231.3/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+100638.948: [10:06:38]  192.168.232.0/24  Direct  0    0             D   192.168.232.1                            Vlanif232
+100638.948: [10:06:38]  192.168.232.1/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+100639.996: [10:06:39]192.168.232.255/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+100639.996: [10:06:39]  192.168.242.0/24  Direct  0    0             D   192.168.242.1                            Vlanif242
+100639.996: [10:06:39]  192.168.242.1/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+100639.996: [10:06:39]192.168.242.255/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+100639.996: [10:06:39]255.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+100923.185: [10:09:23]<Core-SW>
+100923.351: [10:09:23]<Core-SW>
+100923.534: [10:09:23]<Core-SW>
+100923.716: [10:09:23]<Core-SW>
+101108.307: [10:11:08]<Core-SW>
+101108.517: [10:11:08]<Core-SW>
+101108.679: [10:11:08]<Core-SW>
+101258.833: [10:12:58]<Core-SW>ping 192.168.100.100
+101259.254: [10:12:59]  PING 192.168.100.100: 56  data bytes, press CTRL_C to break
+101259.719: [10:12:59]    Reply from 192.168.100.100: bytes=56 Sequence=1 ttl=63 time=1 ms
+101300.279: [10:13:00]    Reply from 192.168.100.100: bytes=56 Sequence=2 ttl=63 time=1 ms
+101300.899: [10:13:00]    Reply from 192.168.100.100: bytes=56 Sequence=3 ttl=63 time=1 ms
+101301.404: [10:13:01]    Reply from 192.168.100.100: bytes=56 Sequence=4 ttl=63 time=1 ms
+101301.404: [10:13:01]    Reply from 192.168.100.100: bytes=56 Sequence=5 ttl=63 time=1 ms
+101301.404: [10:13:01]
+101301.404: [10:13:01]  --- 192.168.100.100 ping statistics ---
+101301.404: [10:13:01]    5 packet(s) transmitted
+101301.404: [10:13:01]    5 packet(s) received
+101301.404: [10:13:01]    0.00% packet loss
+101301.404: [10:13:01]    round-trip min/avg/max = 1/1/1 ms
+101301.404: [10:13:01] 
+101412.426: [10:14:12]<Core-SW>disp ip inter bri
+101412.463: [10:14:12]*down: administratively down
+101412.463: [10:14:12]!down: FIB overload down
+101412.463: [10:14:12]^down: standby
+101412.463: [10:14:12](l): loopback
+101412.463: [10:14:12](s): spoofing
+101412.463: [10:14:12](d): Dampening Suppressed
+101412.463: [10:14:12](ed): error down
+101412.463: [10:14:12]The number of interface that is UP in Physical is 8
+101412.464: [10:14:12]The number of interface that is DOWN in Physical is 1
+101412.464: [10:14:12]The number of interface that is UP in Protocol is 8
+101412.464: [10:14:12]The number of interface that is DOWN in Protocol is 1
+101412.497: [10:14:12]Interface                   IP Address/Mask    Physical Protocol VPN           
+101412.497: [10:14:12]MEth0/0/0                   unassigned         down     down     --            
+101412.497: [10:14:12]NULL0                       unassigned         up       up(s)    --            
+101412.497: [10:14:12]Vlanif10                    192.168.10.1/24    up       up       --            
+101412.498: [10:14:12]Vlanif222                   192.168.222.1/24   up       up       --            
+101412.498: [10:14:12]Vlanif229                   10.0.1.2/30        up       up       --            
+101412.515: [10:14:12]Vlanif230                   192.168.230.1/30   up       up       --            
+101412.515: [10:14:12]Vlanif231                   192.168.231.1/30   up       up       --            
+101412.515: [10:14:12]Vlanif232                   192.168.232.1/24   up       up       --            
+101412.515: [10:14:12]Vlanif242                   192.168.242.1/24   up       up       --            
+101456.567: [10:14:56]<Core-SW>ping 192.168.100.1
+101456.814: [10:14:56]  PING 192.168.100.1: 56  data bytes, press CTRL_C to break
+101457.338: [10:14:57]    Reply from 192.168.100.1: bytes=56 Sequence=1 ttl=64 time=1 ms
+101457.849: [10:14:57]    Reply from 192.168.100.1: bytes=56 Sequence=2 ttl=64 time=1 ms
+101458.447: [10:14:58]    Reply from 192.168.100.1: bytes=56 Sequence=3 ttl=64 time=1 ms
+101458.871: [10:14:58]    Reply from 192.168.100.1: bytes=56 Sequence=4 ttl=64 time=1 ms
+101458.872: [10:14:58]    Reply from 192.168.100.1: bytes=56 Sequence=5 ttl=64 time=1 ms
+101458.872: [10:14:58]
+101458.872: [10:14:58]  --- 192.168.100.1 ping statistics ---
+101458.872: [10:14:58]    5 packet(s) transmitted
+101458.872: [10:14:58]    5 packet(s) received
+101458.872: [10:14:58]    0.00% packet loss
+101458.872: [10:14:58]    round-trip min/avg/max = 1/1/1 ms
+101458.892: [10:14:58] 
+101805.818: [10:18:05]<Core-SW>
+101805.991: [10:18:05]<Core-SW>
+101808.273: [10:18:08]<Core-SW>disp ip rout
+101809.321: [10:18:09]<Core-SW>disp ip routing-table 
+101809.370: [10:18:09]Proto: Protocol        Pre: Preference
+101809.370: [10:18:09]Route Flags: R - relay, D - download to fib, T - to vpn-instance, B - black hole route
+101809.370: [10:18:09]------------------------------------------------------------------------------
+101809.370: [10:18:09]Routing Table : _public_
+101809.377: [10:18:09]         Destinations : 43       Routes : 43        
+101809.377: [10:18:09]
+101809.377: [10:18:09]Destination/Mask    Proto   Pre  Cost        Flags NextHop                                  Interface
+101809.377: [10:18:09]
+101809.388: [10:18:09]        0.0.0.0/0   Static  59   0             D   192.168.231.2                            Vlanif231
+101809.388: [10:18:09]       10.0.1.0/30  Direct  0    0             D   10.0.1.2                                 Vlanif229
+101809.388: [10:18:09]       10.0.1.2/32  Direct  0    0             D   127.0.0.1                                Vlanif229
+101809.389: [10:18:09]       10.0.1.3/32  Direct  0    0             D   127.0.0.1                                Vlanif229
+101809.389: [10:18:09]      10.50.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.389: [10:18:09]      10.52.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.389: [10:18:09]      10.60.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.389: [10:18:09]      10.62.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.389: [10:18:09]      10.70.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.389: [10:18:09]      10.72.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.390: [10:18:09]      10.80.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.390: [10:18:09]      10.82.0.0/24  Static  60   0             D   192.168.230.2                            Vlanif230
+101809.390: [10:18:09]      127.0.0.0/8   Direct  0    0             D   127.0.0.1                                InLoopBack0
+101809.390: [10:18:09]      127.0.0.1/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+101809.390: [10:18:09]127.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+101810.725: [10:18:10]   172.16.101.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+101810.725: [10:18:10]   172.16.208.0/20  Static  60   0             D   192.168.231.2                            Vlanif231
+101810.725: [10:18:10]    192.168.1.0/24  Static  60   0             D   10.0.1.1                                 Vlanif10
+101810.725: [10:18:10]    192.168.2.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+101810.725: [10:18:10]    192.168.3.0/24  Static  60   0             D   192.168.231.2                            Vlanif231
+101810.725: [10:18:10]    192.168.4.0/22  Static  59   0             D   192.168.231.2                            Vlanif231
+101810.725: [10:18:10]   192.168.10.0/24  Direct  0    0             D   192.168.10.1                             Vlanif10
+101810.725: [10:18:10]   192.168.10.1/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+101810.725: [10:18:10] 192.168.10.255/32  Direct  0    0             D   127.0.0.1                                Vlanif10
+101810.725: [10:18:10]   192.168.12.0/22  Static  60   0             D   192.168.231.2                            Vlanif231
+101810.725: [10:18:10]  192.168.100.0/22  Static  60   0             D   192.168.230.2                            Vlanif230
+101810.726: [10:18:10]  192.168.200.0/24  Static  60   0             D   10.0.1.1                                 Vlanif10
+101810.726: [10:18:10]  192.168.222.0/24  Direct  0    0             D   192.168.222.1                            Vlanif222
+101810.726: [10:18:10]  192.168.222.1/32  Direct  0    0             D   127.0.0.1                                Vlanif222
+101810.726: [10:18:10]192.168.222.255/32  Direct  0    0             D   127.0.0.1                                Vlanif222
+101810.726: [10:18:10]  192.168.230.0/30  Direct  0    0             D   192.168.230.1                            Vlanif230
+101810.726: [10:18:10]  192.168.230.1/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+101810.726: [10:18:10]  192.168.230.3/32  Direct  0    0             D   127.0.0.1                                Vlanif230
+101810.726: [10:18:10]  192.168.231.0/30  Direct  0    0             D   192.168.231.1                            Vlanif231
+101810.726: [10:18:10]  192.168.231.1/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+101810.726: [10:18:10]  192.168.231.3/32  Direct  0    0             D   127.0.0.1                                Vlanif231
+101810.727: [10:18:10]  192.168.232.0/24  Direct  0    0             D   192.168.232.1                            Vlanif232
+101810.727: [10:18:10]  192.168.232.1/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+101814.532: [10:18:14]192.168.232.255/32  Direct  0    0             D   127.0.0.1                                Vlanif232
+101814.532: [10:18:14]  192.168.242.0/24  Direct  0    0             D   192.168.242.1                            Vlanif242
+101814.532: [10:18:14]  192.168.242.1/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+101814.532: [10:18:14]192.168.242.255/32  Direct  0    0             D   127.0.0.1                                Vlanif242
+101814.532: [10:18:14]255.255.255.255/32  Direct  0    0             D   127.0.0.1                                InLoopBack0
+102814.618: [10:28:14]<Core-SW>
+102820.675: [10:28:20][202603192.168.231.1-黄埭-核心交换机-10:28:20]
+102820.724: [10:28:20]
+102820.725: [10:28:20]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+102820.774: [10:28:20]      The current login time is 2025-12-19 17:40:01.
+103820.822: [10:38:20]<Core-SW>
+103826.686: [10:38:26][202603192.168.231.1-黄埭-核心交换机-10:38:26]
+103826.733: [10:38:26]
+103826.734: [10:38:26]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+103826.769: [10:38:26]      The current login time is 2025-12-19 17:50:07.
+104826.814: [10:48:26]<Core-SW>
+104832.695: [10:48:32][202603192.168.231.1-黄埭-核心交换机-10:48:32]
+104832.738: [10:48:32]
+104832.739: [10:48:32]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+104832.813: [10:48:32]      The current login time is 2025-12-19 18:00:13.
+105832.954: [10:58:32]<Core-SW>
+105839.309: [10:58:39][202603192.168.231.1-黄埭-核心交换机-10:58:39]
+105839.367: [10:58:39]
+105839.376: [10:58:39]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+105839.412: [10:58:39]      The current login time is 2025-12-19 18:10:19.
+110839.585: [11:08:39]<Core-SW>
+110845.596: [11:08:45][202603192.168.231.1-黄埭-核心交换机-11:08:45]
+110845.639: [11:08:45]
+110845.640: [11:08:45]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+110845.680: [11:08:45]      The current login time is 2025-12-19 18:20:26.
+111845.746: [11:18:45]<Core-SW>
+111851.608: [11:18:51][202603192.168.231.1-黄埭-核心交换机-11:18:51]
+111851.658: [11:18:51]
+111851.661: [11:18:51]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+111851.684: [11:18:51]      The current login time is 2025-12-19 18:30:32.
+112851.743: [11:28:51]<Core-SW>
+112857.646: [11:28:57][202603192.168.231.1-黄埭-核心交换机-11:28:57]
+112857.694: [11:28:57]
+112857.695: [11:28:57]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+112857.732: [11:28:57]      The current login time is 2025-12-19 18:40:38.
+113857.913: [11:38:57]<Core-SW>
+113904.678: [11:39:04][202603192.168.231.1-黄埭-核心交换机-11:39:04]
+113904.737: [11:39:04]
+113904.738: [11:39:04]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+113904.767: [11:39:04]      The current login time is 2025-12-19 18:50:45.
+114904.837: [11:49:04]<Core-SW>
+114911.297: [11:49:11][202603192.168.231.1-黄埭-核心交换机-11:49:11]
+114911.351: [11:49:11]
+114911.368: [11:49:11]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+114911.394: [11:49:11]      The current login time is 2025-12-19 19:00:51.
+115911.547: [11:59:11]<Core-SW>
+115917.666: [11:59:17][202603192.168.231.1-黄埭-核心交换机-11:59:17]
+115917.712: [11:59:17]
+115917.713: [11:59:17]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+115917.769: [11:59:17]      The current login time is 2025-12-19 19:10:58.
+120917.855: [12:09:17]<Core-SW>
+120924.559: [12:09:24][202603192.168.231.1-黄埭-核心交换机-12:09:24]
+120924.609: [12:09:24]
+120924.610: [12:09:24]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+120924.645: [12:09:24]      The current login time is 2025-12-19 19:21:05.
+121924.790: [12:19:24]<Core-SW>
+121930.645: [12:19:30][202603192.168.231.1-黄埭-核心交换机-12:19:30]
+121930.681: [12:19:30]
+121930.682: [12:19:30]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+121930.718: [12:19:30]      The current login time is 2025-12-19 19:31:11.
+122930.796: [12:29:30]<Core-SW>
+122936.740: [12:29:36][202603192.168.231.1-黄埭-核心交换机-12:29:36]
+122936.815: [12:29:36]
+122936.816: [12:29:36]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+122936.859: [12:29:36]      The current login time is 2025-12-19 19:41:17.
+123936.931: [12:39:36]<Core-SW>
+123943.277: [12:39:43][202603192.168.231.1-黄埭-核心交换机-12:39:43]
+123943.337: [12:39:43]
+123943.338: [12:39:43]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+123943.375: [12:39:43]      The current login time is 2025-12-19 19:51:23.
+124943.526: [12:49:43]<Core-SW>
+124949.589: [12:49:49][202603192.168.231.1-黄埭-核心交换机-12:49:49]
+124949.640: [12:49:49]
+124949.641: [12:49:49]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+124949.691: [12:49:49]      The current login time is 2025-12-19 20:01:30.
+125949.746: [12:59:49]<Core-SW>
+125955.608: [12:59:55][202603192.168.231.1-黄埭-核心交换机-12:59:55]
+125955.653: [12:59:55]
+125955.654: [12:59:55]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+125955.693: [12:59:55]      The current login time is 2025-12-19 20:11:36.
+130955.847: [13:09:55]<Core-SW>
+131001.913: [13:10:01][202603192.168.231.1-黄埭-核心交换机-13:10:01]
+131001.959: [13:10:01]
+131001.961: [13:10:01]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+131002.013: [13:10:02]      The current login time is 2025-12-19 20:21:42.
+132002.133: [13:20:02]<Core-SW>
+132008.099: [13:20:08][202603192.168.231.1-黄埭-核心交换机-13:20:08]
+132008.142: [13:20:08]
+132008.143: [13:20:08]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+132008.184: [13:20:08]      The current login time is 2025-12-19 20:31:48.
+133008.242: [13:30:08]<Core-SW>
+133014.342: [13:30:14][202603192.168.231.1-黄埭-核心交换机-13:30:14]
+133014.388: [13:30:14]
+133014.389: [13:30:14]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+133014.420: [13:30:14]      The current login time is 2025-12-19 20:41:54.
+134014.504: [13:40:14]<Core-SW>
+134020.782: [13:40:20][202603192.168.231.1-黄埭-核心交换机-13:40:20]
+134020.833: [13:40:20]
+134020.843: [13:40:20]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+134020.865: [13:40:20]      The current login time is 2025-12-19 20:52:01.
+135020.920: [13:50:20]<Core-SW>
+135027.470: [13:50:27][202603192.168.231.1-黄埭-核心交换机-13:50:27]
+135027.547: [13:50:27]
+135027.548: [13:50:27]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+135027.600: [13:50:27]      The current login time is 2025-12-19 21:02:08.
+140027.675: [14:00:27]<Core-SW>
+140033.990: [14:00:33][202603192.168.231.1-黄埭-核心交换机-14:00:33]
+140034.052: [14:00:34]
+140034.061: [14:00:34]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+140034.094: [14:00:34]      The current login time is 2025-12-19 21:12:14.
+141034.169: [14:10:34]<Core-SW>
+141040.615: [14:10:40][202603192.168.231.1-黄埭-核心交换机-14:10:40]
+141040.671: [14:10:40]
+141040.679: [14:10:40]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+141040.712: [14:10:40]      The current login time is 2025-12-19 21:22:21.
+142040.782: [14:20:40]<Core-SW>
+142047.308: [14:20:47][202603192.168.231.1-黄埭-核心交换机-14:20:47]
+142047.360: [14:20:47]
+142047.368: [14:20:47]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+142047.408: [14:20:47]      The current login time is 2025-12-19 21:32:27.
+143047.477: [14:30:47]<Core-SW>
+143053.672: [14:30:53][202603192.168.231.1-黄埭-核心交换机-14:30:53]
+143053.723: [14:30:53]
+143053.724: [14:30:53]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+143053.761: [14:30:53]      The current login time is 2025-12-19 21:42:34.
+144053.905: [14:40:53]<Core-SW>
+144100.170: [14:41:00][202603192.168.231.1-黄埭-核心交换机-14:41:00]
+144100.221: [14:41:00]
+144100.229: [14:41:00]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+144100.254: [14:41:00]      The current login time is 2025-12-19 21:52:40.
+145100.327: [14:51:00]<Core-SW>
+145106.134: [14:51:06][202603192.168.231.1-黄埭-核心交换机-14:51:06]
+145106.182: [14:51:06]
+145106.189: [14:51:06]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+145106.220: [14:51:06]      The current login time is 2025-12-19 22:02:46.
+150106.330: [15:01:06]<Core-SW>
+150112.292: [15:01:12][202603192.168.231.1-黄埭-核心交换机-15:01:12]
+150112.361: [15:01:12]
+150112.362: [15:01:12]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+150112.412: [15:01:12]      The current login time is 2025-12-19 22:12:52.
+151112.472: [15:11:12]<Core-SW>
+151118.697: [15:11:18][202603192.168.231.1-黄埭-核心交换机-15:11:18]
+151118.745: [15:11:18]
+151118.754: [15:11:18]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+151118.777: [15:11:18]      The current login time is 2025-12-19 22:22:59.
+152118.838: [15:21:18]<Core-SW>
+152124.753: [15:21:24][202603192.168.231.1-黄埭-核心交换机-15:21:24]
+152124.828: [15:21:24]
+152124.829: [15:21:24]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+152124.842: [15:21:24]      The current login time is 2025-12-19 22:33:05.
+153124.923: [15:31:24]<Core-SW>
+153131.472: [15:31:31][202603192.168.231.1-黄埭-核心交换机-15:31:31]
+153131.528: [15:31:31]
+153131.528: [15:31:31]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+153131.558: [15:31:31]      The current login time is 2025-12-19 22:43:12.
+154131.648: [15:41:31]<Core-SW>
+154137.836: [15:41:37][202603192.168.231.1-黄埭-核心交换机-15:41:37]
+154137.896: [15:41:37]
+154137.896: [15:41:37]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+154137.925: [15:41:37]      The current login time is 2025-12-19 22:53:18.
+155138.001: [15:51:38]<Core-SW>
+155144.339: [15:51:44][202603192.168.231.1-黄埭-核心交换机-15:51:44]
+155144.390: [15:51:44]
+155144.402: [15:51:44]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+155144.423: [15:51:44]      The current login time is 2025-12-19 23:03:25.
+160144.566: [16:01:44]<Core-SW>
+160151.111: [16:01:51][202603192.168.231.1-黄埭-核心交换机-16:01:51]
+160151.154: [16:01:51]
+160151.155: [16:01:51]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+160151.200: [16:01:51]      The current login time is 2025-12-19 23:13:31.
+161151.262: [16:11:51]<Core-SW>
+161157.299: [16:11:57][202603192.168.231.1-黄埭-核心交换机-16:11:57]
+161157.348: [16:11:57]
+161157.349: [16:11:57]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+161157.394: [16:11:57]      The current login time is 2025-12-19 23:23:37.
+162157.464: [16:21:57]<Core-SW>
+162203.860: [16:22:03][202603192.168.231.1-黄埭-核心交换机-16:22:03]
+162203.927: [16:22:03]
+162203.927: [16:22:03]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+162203.959: [16:22:03]      The current login time is 2025-12-19 23:33:44.
+163204.080: [16:32:04]<Core-SW>
+163210.148: [16:32:10][202603192.168.231.1-黄埭-核心交换机-16:32:10]
+163210.202: [16:32:10]
+163210.203: [16:32:10]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+163210.237: [16:32:10]      The current login time is 2025-12-19 23:43:50.
+164210.284: [16:42:10]<Core-SW>
+164216.250: [16:42:16][202603192.168.231.1-黄埭-核心交换机-16:42:16]
+164216.297: [16:42:16]
+164216.297: [16:42:16]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+164216.332: [16:42:16]      The current login time is 2025-12-19 23:53:56.
+165216.404: [16:52:16]<Core-SW>
+165222.766: [16:52:22][202603192.168.231.1-黄埭-核心交换机-16:52:22]
+165222.819: [16:52:22]
+165222.830: [16:52:22]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+165222.860: [16:52:22]      The current login time is 2025-12-20 00:04:03.
+170222.992: [17:02:22]<Core-SW>
+170229.284: [17:02:29][202603192.168.231.1-黄埭-核心交换机-17:02:29]
+170229.358: [17:02:29]
+170229.359: [17:02:29]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+170229.398: [17:02:29]      The current login time is 2025-12-20 00:14:10.
+171229.506: [17:12:29]<Core-SW>
+171235.693: [17:12:35][202603192.168.231.1-黄埭-核心交换机-17:12:35]
+171235.737: [17:12:35]
+171235.748: [17:12:35]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+171235.785: [17:12:35]      The current login time is 2025-12-20 00:24:16.
+172235.848: [17:22:35]<Core-SW>
+172241.815: [17:22:41][202603192.168.231.1-黄埭-核心交换机-17:22:41]
+172241.887: [17:22:41]
+172241.896: [17:22:41]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+172241.924: [17:22:41]      The current login time is 2025-12-20 00:34:22.
+173241.972: [17:32:41]<Core-SW>
+173248.125: [17:32:48][202603192.168.231.1-黄埭-核心交换机-17:32:48]
+173248.172: [17:32:48]
+173248.181: [17:32:48]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+173248.234: [17:32:48]      The current login time is 2025-12-20 00:44:28.
+174248.305: [17:42:48]<Core-SW>
+174254.482: [17:42:54][202603192.168.231.1-黄埭-核心交换机-17:42:54]
+174254.530: [17:42:54]
+174254.531: [17:42:54]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+174254.578: [17:42:54]      The current login time is 2025-12-20 00:54:35.
+175254.658: [17:52:54]<Core-SW>
+175300.784: [17:53:00][202603192.168.231.1-黄埭-核心交换机-17:53:00]
+175300.839: [17:53:00]
+175300.847: [17:53:00]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+175300.874: [17:53:00]      The current login time is 2025-12-20 01:04:41.
+180300.934: [18:03:00]<Core-SW>
+180307.167: [18:03:07][202603192.168.231.1-黄埭-核心交换机-18:03:07]
+180307.222: [18:03:07]
+180307.231: [18:03:07]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+180307.266: [18:03:07]      The current login time is 2025-12-20 01:14:47.
+181307.423: [18:13:07]<Core-SW>
+181313.961: [18:13:13][202603192.168.231.1-黄埭-核心交换机-18:13:13]
+181314.016: [18:13:14]
+181314.017: [18:13:14]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+181314.058: [18:13:14]      The current login time is 2025-12-20 01:24:54.
+182314.143: [18:23:14]<Core-SW>
+182320.410: [18:23:20][202603192.168.231.1-黄埭-核心交换机-18:23:20]
+182320.473: [18:23:20]
+182320.474: [18:23:20]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+182320.514: [18:23:20]      The current login time is 2025-12-20 01:35:01.
+183320.678: [18:33:20]<Core-SW>
+183326.744: [18:33:26][202603192.168.231.1-黄埭-核心交换机-18:33:26]
+183326.790: [18:33:26]
+183326.825: [18:33:26]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+183326.860: [18:33:26]      The current login time is 2025-12-20 01:45:07.
+184326.990: [18:43:26]<Core-SW>
+184333.356: [18:43:33][202603192.168.231.1-黄埭-核心交换机-18:43:33]
+184333.399: [18:43:33]
+184333.400: [18:43:33]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+184333.429: [18:43:33]      The current login time is 2025-12-20 01:55:14.
+185333.500: [18:53:33]<Core-SW>
+185340.002: [18:53:40][202603192.168.231.1-黄埭-核心交换机-18:53:40]
+185340.062: [18:53:40]
+185340.063: [18:53:40]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+185340.084: [18:53:40]      The current login time is 2025-12-20 02:05:20.
+190340.165: [19:03:40]<Core-SW>
+190346.452: [19:03:46][202603192.168.231.1-黄埭-核心交换机-19:03:46]
+190346.494: [19:03:46]
+190346.502: [19:03:46]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+190346.545: [19:03:46]      The current login time is 2025-12-20 02:15:27.
+191346.593: [19:13:46]<Core-SW>
+191352.909: [19:13:52][202603192.168.231.1-黄埭-核心交换机-19:13:52]
+191352.959: [19:13:52]
+191352.967: [19:13:52]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+191353.005: [19:13:53]      The current login time is 2025-12-20 02:25:33.
+192353.074: [19:23:53]<Core-SW>
+192359.226: [19:23:59][202603192.168.231.1-黄埭-核心交换机-19:23:59]
+192359.275: [19:23:59]
+192359.284: [19:23:59]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+192359.320: [19:23:59]      The current login time is 2025-12-20 02:35:40.
+193359.470: [19:33:59]<Core-SW>
+193405.641: [19:34:05][202603192.168.231.1-黄埭-核心交换机-19:34:05]
+193405.699: [19:34:05]
+193405.709: [19:34:05]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+193405.741: [19:34:05]      The current login time is 2025-12-20 02:45:46.
+194405.884: [19:44:05]<Core-SW>
+194412.364: [19:44:12][202603192.168.231.1-黄埭-核心交换机-19:44:12]
+194412.415: [19:44:12]
+194412.425: [19:44:12]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+194412.470: [19:44:12]      The current login time is 2025-12-20 02:55:53.
+195412.608: [19:54:12]<Core-SW>
+195418.668: [19:54:18][202603192.168.231.1-黄埭-核心交换机-19:54:18]
+195418.728: [19:54:18]
+195418.737: [19:54:18]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+195418.779: [19:54:18]      The current login time is 2025-12-20 03:05:59.
+200420.114: [20:04:20]<Core-SW>
+200426.851: [20:04:26][202603192.168.231.1-黄埭-核心交换机-20:04:26]
+200426.908: [20:04:26]
+200426.917: [20:04:26]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+200426.944: [20:04:26]      The current login time is 2025-12-20 03:16:07.
+201427.006: [20:14:27]<Core-SW>
+201433.074: [20:14:33][202603192.168.231.1-黄埭-核心交换机-20:14:33]
+201433.115: [20:14:33]
+201433.116: [20:14:33]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+201433.186: [20:14:33]      The current login time is 2025-12-20 03:26:13.
+202433.292: [20:24:33]<Core-SW>
+202439.164: [20:24:39][202603192.168.231.1-黄埭-核心交换机-20:24:39]
+202439.190: [20:24:39]
+202439.199: [20:24:39]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+202439.245: [20:24:39]      The current login time is 2025-12-20 03:36:19.
+203439.299: [20:34:39]<Core-SW>
+203445.165: [20:34:45][202603192.168.231.1-黄埭-核心交换机-20:34:45]
+203445.244: [20:34:45]
+203445.245: [20:34:45]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+203445.288: [20:34:45]      The current login time is 2025-12-20 03:46:26.
+204445.342: [20:44:45]<Core-SW>
+204451.166: [20:44:51][202603192.168.231.1-黄埭-核心交换机-20:44:51]
+204451.216: [20:44:51]
+204451.224: [20:44:51]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+204451.255: [20:44:51]      The current login time is 2025-12-20 03:56:32.
+205451.416: [20:54:51]<Core-SW>
+205457.682: [20:54:57][202603192.168.231.1-黄埭-核心交换机-20:54:57]
+205457.738: [20:54:57]
+205457.748: [20:54:57]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+205457.783: [20:54:57]      The current login time is 2025-12-20 04:06:38.
+210457.936: [21:04:57]<Core-SW>
+210504.060: [21:05:04][202603192.168.231.1-黄埭-核心交换机-21:05:04]
+210504.107: [21:05:04]
+210504.116: [21:05:04]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+210504.151: [21:05:04]      The current login time is 2025-12-20 04:16:44.
+211504.208: [21:15:04]<Core-SW>
+211510.146: [21:15:10][202603192.168.231.1-黄埭-核心交换机-21:15:10]
+211510.199: [21:15:10]
+211510.200: [21:15:10]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+211510.243: [21:15:10]      The current login time is 2025-12-20 04:26:51.
+212510.300: [21:25:10]<Core-SW>
+212516.217: [21:25:16][202603192.168.231.1-黄埭-核心交换机-21:25:16]
+212516.291: [21:25:16]
+212516.292: [21:25:16]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+212516.322: [21:25:16]      The current login time is 2025-12-20 04:36:57.
+213516.406: [21:35:16]<Core-SW>
+213522.633: [21:35:22][202603192.168.231.1-黄埭-核心交换机-21:35:22]
+213522.675: [21:35:22]
+213522.683: [21:35:22]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+213522.720: [21:35:22]      The current login time is 2025-12-20 04:47:03.
+214522.781: [21:45:22]<Core-SW>
+214528.583: [21:45:28][202603192.168.231.1-黄埭-核心交换机-21:45:28]
+214528.623: [21:45:28]
+214528.632: [21:45:28]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+214528.663: [21:45:28]      The current login time is 2025-12-20 04:57:09.
+215528.795: [21:55:28]<Core-SW>
+215534.643: [21:55:34][202603192.168.231.1-黄埭-核心交换机-21:55:34]
+215534.703: [21:55:34]
+215534.704: [21:55:34]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+215534.739: [21:55:34]      The current login time is 2025-12-20 05:07:15.
+220534.796: [22:05:34]<Core-SW>
+220540.594: [22:05:40][202603192.168.231.1-黄埭-核心交换机-22:05:40]
+220540.658: [22:05:40]
+220540.666: [22:05:40]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+220540.699: [22:05:40]      The current login time is 2025-12-20 05:17:21.
+221540.801: [22:15:40]<Core-SW>
+221546.694: [22:15:46][202603192.168.231.1-黄埭-核心交换机-22:15:46]
+221546.743: [22:15:46]
+221546.753: [22:15:46]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+221546.816: [22:15:46]      The current login time is 2025-12-20 05:27:27.
+222546.910: [22:25:46]<Core-SW>
+222553.180: [22:25:53][202603192.168.231.1-黄埭-核心交换机-22:25:53]
+222553.242: [22:25:53]
+222553.248: [22:25:53]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+222553.273: [22:25:53]      The current login time is 2025-12-20 05:37:34.
+223553.338: [22:35:53]<Core-SW>
+223559.092: [22:35:59][202603192.168.231.1-黄埭-核心交换机-22:35:59]
+223559.154: [22:35:59]
+223559.179: [22:35:59]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+223559.212: [22:35:59]      The current login time is 2025-12-20 05:47:40.
+224559.341: [22:45:59]<Core-SW>
+224605.272: [22:46:05][202603192.168.231.1-黄埭-核心交换机-22:46:05]
+224605.350: [22:46:05]
+224605.351: [22:46:05]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+224605.389: [22:46:05]      The current login time is 2025-12-20 05:57:46.
+225605.555: [22:56:05]<Core-SW>
+225611.682: [22:56:11][202603192.168.231.1-黄埭-核心交换机-22:56:11]
+225611.756: [22:56:11]
+225611.757: [22:56:11]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+225611.806: [22:56:11]      The current login time is 2025-12-20 06:07:52.
+230611.974: [23:06:11]<Core-SW>
+230618.138: [23:06:18][202603192.168.231.1-黄埭-核心交换机-23:06:18]
+230618.178: [23:06:18]
+230618.187: [23:06:18]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+230618.211: [23:06:18]      The current login time is 2025-12-20 06:17:59.
+231618.287: [23:16:18]<Core-SW>
+231624.146: [23:16:24][202603192.168.231.1-黄埭-核心交换机-23:16:24]
+231624.193: [23:16:24]
+231624.194: [23:16:24]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+231624.226: [23:16:24]      The current login time is 2025-12-20 06:28:05.
+232624.296: [23:26:24]<Core-SW>
+232630.154: [23:26:30][202603192.168.231.1-黄埭-核心交换机-23:26:30]
+232630.194: [23:26:30]
+232630.204: [23:26:30]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+232630.235: [23:26:30]      The current login time is 2025-12-20 06:38:11.
+233630.303: [23:36:30]<Core-SW>
+233636.160: [23:36:36][202603192.168.231.1-黄埭-核心交换机-23:36:36]
+233636.208: [23:36:36]
+233636.224: [23:36:36]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+233636.268: [23:36:36]      The current login time is 2025-12-20 06:48:17.
+234636.345: [23:46:36]<Core-SW>
+234642.279: [23:46:42][202603192.168.231.1-黄埭-核心交换机-23:46:42]
+234642.330: [23:46:42]
+234642.339: [23:46:42]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+234642.371: [23:46:42]      The current login time is 2025-12-20 06:58:23.
+235642.523: [23:56:42]<Core-SW>
+235648.589: [23:56:48][202603192.168.231.1-黄埭-核心交换机-23:56:48]
+235648.639: [23:56:48]
+235648.647: [23:56:48]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+235648.701: [23:56:48]      The current login time is 2025-12-20 07:08:29.

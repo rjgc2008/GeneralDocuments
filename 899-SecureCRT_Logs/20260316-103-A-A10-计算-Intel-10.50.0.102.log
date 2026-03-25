@@ -1,0 +1,120 @@
+﻿102039.657: [10:20:39][202603103-A-A10-计算-Intel-10.50.0.102-10:20:39]
+102039.671: [10:20:39]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+102039.671: [10:20:39]
+102039.671: [10:20:39] * Documentation:  https://help.ubuntu.com
+102039.671: [10:20:39] * Management:     https://landscape.canonical.com
+102039.671: [10:20:39] * Support:        https://ubuntu.com/pro
+102039.671: [10:20:39]
+102039.671: [10:20:39] System information as of Mon Mar 16 10:20:39 AM CST 2026
+102039.671: [10:20:39]
+102039.671: [10:20:39]  System load:    0.0                Temperature:                  77.0 C
+102039.671: [10:20:39]  Usage of /home: 0.1% of 301.67GB   Processes:                    1401
+102039.671: [10:20:39]  Memory usage:   0%                 Users logged in:              2
+102039.671: [10:20:39]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+102039.671: [10:20:39]
+102039.672: [10:20:39] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+102039.672: [10:20:39]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+102039.672: [10:20:39]
+102039.672: [10:20:39]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+102039.672: [10:20:39]
+102039.672: [10:20:39]Expanded Security Maintenance for Applications is not enabled.
+102039.672: [10:20:39]
+102039.672: [10:20:39]101 updates can be applied immediately.
+102039.672: [10:20:39]To see these additional updates run: apt list --upgradable
+102039.672: [10:20:39]
+102039.672: [10:20:39]11 additional security updates can be applied with ESM Apps.
+102039.672: [10:20:39]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+102039.673: [10:20:39]
+102039.673: [10:20:39]
+102039.673: [10:20:39]The list of available updates is more than a week old.
+102039.673: [10:20:39]To check for new updates run: sudo apt update
+102039.673: [10:20:39]
+102039.673: [10:20:39]*** System restart required ***
+102039.673: [10:20:39]Last login: Tue Mar 10 11:44:20 2026 from 10.50.0.100
+102043.979: [10:20:43]root@suzhouproda102:~# ping 192.168.230.2
+102043.983: [10:20:43]PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.
+102043.983: [10:20:43]64 bytes from 192.168.230.2: icmp_seq=1 ttl=63 time=0.143 ms
+102044.549: [10:20:44]^C
+102044.549: [10:20:44]--- 192.168.230.2 ping statistics ---
+102044.549: [10:20:44]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+102044.549: [10:20:44]rtt min/avg/max/mdev = 0.143/0.143/0.143/0.000 ms
+102050.643: [10:20:50]root@suzhouproda102:~# ssh admin@192.168.100.1
+102052.062: [10:20:52]^C
+102055.619: [10:20:55]root@suzhouproda102:~# ping 192.168.100.1
+102055.623: [10:20:55]PING 192.168.100.1 (192.168.100.1) 56(84) bytes of data.
+102055.623: [10:20:55]64 bytes from 192.168.100.1: icmp_seq=1 ttl=63 time=0.142 ms
+102056.680: [10:20:56]64 bytes from 192.168.100.1: icmp_seq=2 ttl=63 time=0.144 ms
+102057.177: [10:20:57]^C
+102057.177: [10:20:57]--- 192.168.100.1 ping statistics ---
+102057.177: [10:20:57]2 packets transmitted, 2 received, 0% packet loss, time 1058ms
+102057.177: [10:20:57]rtt min/avg/max/mdev = 0.142/0.143/0.144/0.001 ms
+102103.598: [10:21:03]root@suzhouproda102:~# ssh admin@192.168.100.1
+102238.847: [10:22:38]^C
+102242.263: [10:22:42]root@suzhouproda102:~# ping 192.168.100.1
+102242.266: [10:22:42]PING 192.168.100.1 (192.168.100.1) 56(84) bytes of data.
+102242.267: [10:22:42]64 bytes from 192.168.100.1: icmp_seq=1 ttl=63 time=0.125 ms
+102243.346: [10:22:43]64 bytes from 192.168.100.1: icmp_seq=2 ttl=63 time=0.083 ms
+102243.827: [10:22:43]^C
+102243.827: [10:22:43]--- 192.168.100.1 ping statistics ---
+102243.827: [10:22:43]2 packets transmitted, 2 received, 0% packet loss, time 1037ms
+102243.827: [10:22:43]rtt min/avg/max/mdev = 0.083/0.104/0.125/0.021 ms
+102246.464: [10:22:46]root@suzhouproda102:~# ssh admin@192.168.100.1
+102307.682: [10:23:07]^C
+102313.295: [10:23:13]root@suzhouproda102:~# ping 192.168.230。2
+102313.299: [10:23:13]PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.
+102313.343: [10:23:13]64 bytes from 192.168.230.2: icmp_seq=1 ttl=63 time=0.122 ms
+102314.300: [10:23:14]64 bytes from 192.168.230.2: icmp_seq=2 ttl=63 time=0.129 ms
+102315.399: [10:23:15]64 bytes from 192.168.230.2: icmp_seq=3 ttl=63 time=0.101 ms
+102315.897: [10:23:15]^C
+102315.897: [10:23:15]--- 192.168.230.2 ping statistics ---
+102315.898: [10:23:15]3 packets transmitted, 3 received, 0% packet loss, time 2006ms
+102315.898: [10:23:15]rtt min/avg/max/mdev = 0.101/0.117/0.129/0.011 ms
+102328.222: [10:23:28]root@suzhouproda102:~# ssh admin@192.168.230.2
+102541.641: [10:25:41]ssh: connect to host 192.168.230.2 port 22: Connection timed out
+104325.046: [10:43:25]root@suzhouproda102:~# ping 192.168.100.2
+104325.064: [10:43:25]PING 192.168.100.2 (192.168.100.2) 56(84) bytes of data.
+104325.064: [10:43:25]64 bytes from 192.168.100.2: icmp_seq=1 ttl=63 time=0.142 ms
+104325.682: [10:43:25]^C
+104325.682: [10:43:25]--- 192.168.100.2 ping statistics ---
+104325.682: [10:43:25]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+104325.682: [10:43:25]rtt min/avg/max/mdev = 0.142/0.142/0.142/0.000 ms
+104327.690: [10:43:27]root@suzhouproda102:~# ping 192.168.100.3
+104327.691: [10:43:27]PING 192.168.100.3 (192.168.100.3) 56(84) bytes of data.
+104327.691: [10:43:27]64 bytes from 192.168.100.3: icmp_seq=1 ttl=63 time=0.192 ms
+104328.650: [10:43:28]^C
+104328.650: [10:43:28]--- 192.168.100.3 ping statistics ---
+104328.650: [10:43:28]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+104328.650: [10:43:28]rtt min/avg/max/mdev = 0.192/0.192/0.192/0.000 ms
+220927.230: [22:09:27][202603103-A-A10-计算-Intel-10.50.0.102-22:09:27]
+220927.250: [22:09:27]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+220927.250: [22:09:27]
+220927.250: [22:09:27] * Documentation:  https://help.ubuntu.com
+220927.250: [22:09:27] * Management:     https://landscape.canonical.com
+220927.251: [22:09:27] * Support:        https://ubuntu.com/pro
+220927.251: [22:09:27]
+220927.251: [22:09:27] System information as of Mon Mar 16 10:09:26 PM CST 2026
+220927.251: [22:09:27]
+220927.251: [22:09:27]  System load:    0.08               Temperature:                  79.0 C
+220927.251: [22:09:27]  Usage of /home: 0.1% of 301.67GB   Processes:                    1404
+220927.251: [22:09:27]  Memory usage:   0%                 Users logged in:              2
+220927.252: [22:09:27]  Swap usage:     0%                 IPv4 address for ens101f0np0: 10.50.0.102
+220927.252: [22:09:27]
+220927.252: [22:09:27] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+220927.252: [22:09:27]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+220927.252: [22:09:27]
+220927.252: [22:09:27]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+220927.252: [22:09:27]
+220927.252: [22:09:27]Expanded Security Maintenance for Applications is not enabled.
+220927.252: [22:09:27]
+220927.252: [22:09:27]101 updates can be applied immediately.
+220927.252: [22:09:27]To see these additional updates run: apt list --upgradable
+220927.252: [22:09:27]
+220927.253: [22:09:27]11 additional security updates can be applied with ESM Apps.
+220927.253: [22:09:27]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+220927.253: [22:09:27]
+220927.253: [22:09:27]
+220927.253: [22:09:27]The list of available updates is more than a week old.
+220927.253: [22:09:27]To check for new updates run: sudo apt update
+220927.253: [22:09:27]
+220927.253: [22:09:27]*** System restart required ***
+220927.253: [22:09:27]Last login: Mon Mar 16 10:20:39 2026 from 192.168.4.222

@@ -1,0 +1,113 @@
+﻿093124.027: [09:31:24][202603172.16.208.21-黄埭监控主机-09:31:24]
+093124.040: [09:31:24]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+093124.040: [09:31:24]
+093124.040: [09:31:24] * Documentation:  https://help.ubuntu.com
+093124.040: [09:31:24] * Management:     https://landscape.canonical.com
+093124.041: [09:31:24] * Support:        https://ubuntu.com/pro
+093124.041: [09:31:24]
+093124.041: [09:31:24] System information as of Mon Mar 16 09:31:23 AM CST 2026
+093124.041: [09:31:24]
+093124.041: [09:31:24]  System load:  0.29               Processes:             224
+093124.041: [09:31:24]  Usage of /:   5.4% of 294.23GB   Users logged in:       2
+093124.041: [09:31:24]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+093124.041: [09:31:24]  Swap usage:   0%
+093124.041: [09:31:24]
+093124.041: [09:31:24] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+093124.042: [09:31:24]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+093124.042: [09:31:24]
+093124.042: [09:31:24]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+093124.042: [09:31:24]
+093124.042: [09:31:24]Expanded Security Maintenance for Applications is not enabled.
+093124.042: [09:31:24]
+093124.042: [09:31:24]76 updates can be applied immediately.
+093124.042: [09:31:24]8 of these updates are standard security updates.
+093124.042: [09:31:24]To see these additional updates run: apt list --upgradable
+093124.042: [09:31:24]
+093124.042: [09:31:24]Enable ESM Apps to receive additional future security updates.
+093124.042: [09:31:24]See https://ubuntu.com/esm or run: sudo pro status
+093124.042: [09:31:24]
+093124.042: [09:31:24]
+093124.043: [09:31:24]Last login: Mon Mar 16 08:57:28 2026 from 121.239.147.244
+093129.604: [09:31:29]root@huangdai-monitor:~# ping 192.168.100.20
+093129.607: [09:31:29]PING 192.168.100.20 (192.168.100.20) 56(84) bytes of data.
+093138.201: [09:31:38]^C
+093138.202: [09:31:38]--- 192.168.100.20 ping statistics ---
+093138.202: [09:31:38]9 packets transmitted, 0 received, 100% packet loss, time 8187ms
+093138.202: [09:31:38]
+093139.916: [09:31:39]root@huangdai-monitor:~# ping 192.168.100.100
+093139.918: [09:31:39]PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+093156.443: [09:31:56]^C
+093156.443: [09:31:56]--- 192.168.100.100 ping statistics ---
+093156.444: [09:31:56]17 packets transmitted, 0 received, 100% packet loss, time 16371ms
+093156.444: [09:31:56]
+093356.095: [09:33:56]root@huangdai-monitor:~# ping 192.168.100.100
+093356.096: [09:33:56]PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+093633.340: [09:36:33]^C
+093633.341: [09:36:33]--- 192.168.100.100 ping statistics ---
+093633.341: [09:36:33]154 packets transmitted, 0 received, 100% packet loss, time 156679ms
+093633.341: [09:36:33]
+093637.718: [09:36:37]root@huangdai-monitor:~# ping 192.168.8.1
+093637.721: [09:36:37]PING 192.168.8.1 (192.168.8.1) 56(84) bytes of data.
+093637.724: [09:36:37]64 bytes from 192.168.8.1: icmp_seq=1 ttl=127 time=1.24 ms
+093638.265: [09:36:38]^C
+093638.265: [09:36:38]--- 192.168.8.1 ping statistics ---
+093638.265: [09:36:38]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+093638.266: [09:36:38]rtt min/avg/max/mdev = 1.241/1.241/1.241/0.000 ms
+093640.224: [09:36:40]root@huangdai-monitor:~# ping 192.168.3.254
+093640.228: [09:36:40]PING 192.168.3.254 (192.168.3.254) 56(84) bytes of data.
+093640.230: [09:36:40]64 bytes from 192.168.3.254: icmp_seq=1 ttl=253 time=2.64 ms
+093641.128: [09:36:41]^C
+093641.128: [09:36:41]--- 192.168.3.254 ping statistics ---
+093641.128: [09:36:41]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+093641.128: [09:36:41]rtt min/avg/max/mdev = 2.636/2.636/2.636/0.000 ms
+093704.814: [09:37:04]root@huangdai-monitor:~# ping 192.168.3.253
+093704.818: [09:37:04]PING 192.168.3.253 (192.168.3.253) 56(84) bytes of data.
+093704.818: [09:37:04]64 bytes from 192.168.3.253: icmp_seq=1 ttl=127 time=1.42 ms
+093705.820: [09:37:05]64 bytes from 192.168.3.253: icmp_seq=2 ttl=127 time=1.33 ms
+093706.010: [09:37:06]^C
+093706.010: [09:37:06]--- 192.168.3.253 ping statistics ---
+093706.010: [09:37:06]2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+093706.010: [09:37:06]rtt min/avg/max/mdev = 1.333/1.375/1.418/0.042 ms
+093738.230: [09:37:38]root@huangdai-monitor:~# ip a
+093738.269: [09:37:38]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+093738.269: [09:37:38]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+093738.270: [09:37:38]    inet 127.0.0.1/8 scope host lo
+093738.270: [09:37:38]       valid_lft forever preferred_lft forever
+093738.270: [09:37:38]    inet6 ::1/128 scope host 
+093738.270: [09:37:38]       valid_lft forever preferred_lft forever
+093738.271: [09:37:38]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+093738.271: [09:37:38]    link/ether fa:7e:69:a6:ba:00 brd ff:ff:ff:ff:ff:ff
+093738.271: [09:37:38]    altname enp0s3
+093738.271: [09:37:38]    inet 172.16.208.21/20 metric 100 brd 172.16.223.255 scope global ens3
+093738.272: [09:37:38]       valid_lft forever preferred_lft forever
+093738.272: [09:37:38]    inet6 fe80::f87e:69ff:fea6:ba00/64 scope link 
+093738.272: [09:37:38]       valid_lft forever preferred_lft forever
+093916.311: [09:39:16]root@huangdai-monitor:~# ping 192.168.231.2
+093916.319: [09:39:16]PING 192.168.231.2 (192.168.231.2) 56(84) bytes of data.
+093916.319: [09:39:16]64 bytes from 192.168.231.2: icmp_seq=1 ttl=253 time=3.03 ms
+093917.319: [09:39:17]64 bytes from 192.168.231.2: icmp_seq=2 ttl=253 time=2.84 ms
+093917.888: [09:39:17]^C
+093917.888: [09:39:17]--- 192.168.231.2 ping statistics ---
+093917.889: [09:39:17]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+093917.889: [09:39:17]rtt min/avg/max/mdev = 2.836/2.933/3.031/0.097 ms
+093921.681: [09:39:21]root@huangdai-monitor:~# ping 192.168.100.100
+093921.695: [09:39:21]PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+093922.775: [09:39:22]^C
+093922.775: [09:39:22]--- 192.168.100.100 ping statistics ---
+093922.775: [09:39:22]2 packets transmitted, 0 received, 100% packet loss, time 1003ms
+093922.775: [09:39:22]
+093936.594: [09:39:36]root@huangdai-monitor:~# ping 192.168.231.1
+093936.611: [09:39:36]PING 192.168.231.1 (192.168.231.1) 56(84) bytes of data.
+093936.611: [09:39:36]64 bytes from 192.168.231.1: icmp_seq=1 ttl=252 time=5.71 ms
+093937.610: [09:39:37]64 bytes from 192.168.231.1: icmp_seq=2 ttl=252 time=13.5 ms
+093938.650: [09:39:38]64 bytes from 192.168.231.1: icmp_seq=3 ttl=252 time=2.62 ms
+093938.897: [09:39:38]^C
+093938.897: [09:39:38]--- 192.168.231.1 ping statistics ---
+093938.897: [09:39:38]3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+093938.897: [09:39:38]rtt min/avg/max/mdev = 2.621/7.292/13.546/4.598 ms
+093950.129: [09:39:50]root@huangdai-monitor:~# ping 192.168.230.1
+093950.137: [09:39:50]PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.
+094053.203: [09:40:53]^C
+094053.203: [09:40:53]--- 192.168.230.1 ping statistics ---
+094053.203: [09:40:53]62 packets transmitted, 0 received, 100% packet loss, time 62442ms
+094053.203: [09:40:53]

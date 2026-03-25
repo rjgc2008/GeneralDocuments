@@ -1,0 +1,740 @@
+﻿165351.688: [16:53:51][202603浪潮交换机-16:53:51]
+165351.995: [16:53:51]
+165356.352: [16:53:56]SCN9300H-01# SCN9300Herface ow int
+165356.434: [16:53:56]Interface eth-0-1
+165356.434: [16:53:56]  Interface current state: UP
+165356.434: [16:53:56]  Hardware is Ethernet, address is c0a6.6d70.67e2 (bia c0a6.6d70.67e2)
+165356.434: [16:53:56]  Bandwidth 25000000 kbits
+165356.435: [16:53:56]  Index 1 , Metric 1 , Encapsulation ARPA
+165356.435: [16:53:56]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165356.435: [16:53:56]  Link type is force link
+165356.435: [16:53:56]  Admin input flow-control is off, output flow-control is off
+165356.436: [16:53:56]  Oper input flow-control is off, output flow-control is off
+165356.436: [16:53:56]  The Maximum Frame Size is 1632 bytes 
+165356.436: [16:53:56]  VRF binding: not bound
+165356.436: [16:53:56]  Label switching is disabled
+165356.436: [16:53:56]  ARP timeout 01:00:00,  ARP retry interval 10s
+165356.437: [16:53:56]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165356.437: [16:53:56]    5 minute input rate 13152 bits/sec, 11 packets/sec
+165356.437: [16:53:56]    5 minute output rate 301075 bits/sec, 53 packets/sec
+165356.437: [16:53:56]    1627672996 packets input, 1685894096705 bytes
+165356.437: [16:53:56]    Received 1627627633 unicast, 10191 broadcast, 35172 multicast
+165356.437: [16:53:56]    0 runts, 0 giants, 0 input errors, 0 CRC
+165356.437: [16:53:56]    0 frame, 0 overrun, 0 pause input
+165356.438: [16:53:56]    1902762514 packets output, 1272396126879 bytes
+165356.438: [16:53:56]    Transmitted 1161065781 unicast, 44658708 broadcast, 697038025 multicast
+165356.438: [16:53:56]    0 underruns, 0 output errors, 0 pause output
+165356.438: [16:53:56]Interface eth-0-2
+165356.438: [16:53:56]  Interface current state: UP
+165356.438: [16:53:56]  Hardware is Ethernet, address is c0a6.6d70.67e3 (bia c0a6.6d70.67e3)
+165356.438: [16:53:56]  Bandwidth 25000000 kbits
+165356.438: [16:53:56]  Index 2 , Metric 1 , Encapsulation ARPA
+165356.439: [16:53:56]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165356.439: [16:53:56]  Link type is force link
+165356.439: [16:53:56]  Admin input flow-control is off, output flow-control is off
+165356.439: [16:53:56]  Oper input flow-control is off, output flow-control is off
+165356.439: [16:53:56]  The Maximum Frame Size is 1632 bytes 
+165356.439: [16:53:56]  VRF binding: not bound
+165356.439: [16:53:56]  Label switching is disabled
+165356.439: [16:53:56]  ARP timeout 01:00:00,  ARP retry interval 10s
+165356.439: [16:53:56]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165356.440: [16:53:56]    5 minute input rate 445942 bits/sec, 153 packets/sec
+165356.440: [16:53:56]    5 minute output rate 5189689 bits/sec, 520 packets/sec
+165356.440: [16:53:56]    4391101650 packets input, 1670013835131 bytes
+165356.440: [16:53:56]    Received 4391087181 unicast, 2034 broadcast, 12435 multicast
+165356.440: [16:53:56]    0 runts, 0 giants, 0 input errors, 0 CRC
+165356.440: [16:53:56]    0 frame, 0 overrun, 0 pause input
+165356.440: [16:53:56]    11412968894 packets output, 12727912154308 bytes
+165356.441: [16:53:56]    Transmitted 10671248603 unicast, 44666879 broadcast, 697053412 multicast
+165356.441: [16:53:56]    0 underruns, 0 output errors, 0 pause output
+165356.441: [16:53:56]Interface eth-0-3
+165356.441: [16:53:56]  Interface current state: UP
+165356.441: [16:53:56]  Hardware is Ethernet, address is c0a6.6d70.67e4 (bia c0a6.6d70.67e4)
+165356.441: [16:53:56]  Bandwidth 25000000 kbits
+165356.441: [16:53:56]  Index 3 , Metric 1 , Encapsulation ARPA
+165356.441: [16:53:56]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165356.442: [16:53:56]  Link type is force link
+165356.442: [16:53:56]  Admin input flow-control is off, output flow-control is off
+165356.442: [16:53:56]  Oper input flow-control is off, output flow-control is off
+165356.442: [16:53:56]  The Maximum Frame Size is 1632 bytes 
+165356.442: [16:53:56]  VRF binding: not bound
+165356.442: [16:53:56]  Label switching is disabled
+165356.442: [16:53:56]  ARP timeout 01:00:00,  ARP retry interval 10s
+165356.442: [16:53:56]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165356.442: [16:53:56]    5 minute input rate 35227 bits/sec, 7 packets/sec
+165356.458: [16:53:56]    5 minute output rate 25350 bits/sec, 32 packets/sec
+165356.458: [16:53:56]    6762891874 packets input, 9708664893782 bytes
+165357.610: [16:53:57]    Received 6762888457 unicast, 3280 broadcast, 137 multicast
+165357.610: [16:53:57]    0 runts, 0 giants, 0 input errors, 0 CRC
+165357.610: [16:53:57]    0 frame, 0 overrun, 0 pause input
+165357.611: [16:53:57]    1747350262 packets output, 310627957506 bytes
+165357.611: [16:53:57]    Transmitted 1005652321 unicast, 44653743 broadcast, 697044198 multicast
+165357.611: [16:53:57]    0 underruns, 0 output errors, 0 pause output
+165357.611: [16:53:57]Interface eth-0-4
+165357.611: [16:53:57]  Interface current state: UP
+165357.611: [16:53:57]  Hardware is Ethernet, address is c0a6.6d70.67e5 (bia c0a6.6d70.67e5)
+165357.611: [16:53:57]  Bandwidth 25000000 kbits
+165357.611: [16:53:57]  Index 4 , Metric 1 , Encapsulation ARPA
+165357.612: [16:53:57]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165357.612: [16:53:57]  Link type is force link
+165357.612: [16:53:57]  Admin input flow-control is off, output flow-control is off
+165357.612: [16:53:57]  Oper input flow-control is off, output flow-control is off
+165357.612: [16:53:57]  The Maximum Frame Size is 1632 bytes 
+165357.612: [16:53:57]  VRF binding: not bound
+165357.612: [16:53:57]  Label switching is disabled
+165357.612: [16:53:57]  ARP timeout 01:00:00,  ARP retry interval 10s
+165357.612: [16:53:57]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165357.613: [16:53:57]    5 minute input rate 5631 bits/sec, 5 packets/sec
+165357.613: [16:53:57]    5 minute output rate 54683 bits/sec, 33 packets/sec
+165357.613: [16:53:57]    462040566 packets input, 344373601474 bytes
+165357.613: [16:53:57]    Received 462039834 unicast, 560 broadcast, 172 multicast
+165357.613: [16:53:57]    0 runts, 0 giants, 0 input errors, 0 CRC
+165357.613: [16:53:57]    0 frame, 0 overrun, 0 pause input
+165357.613: [16:53:57]    1135973575 packets output, 229937081877 bytes
+165357.614: [16:53:57]    Transmitted 394273393 unicast, 44653253 broadcast, 697046929 multicast
+165357.614: [16:53:57]    0 underruns, 0 output errors, 0 pause output
+165357.614: [16:53:57]Interface eth-0-5
+165357.614: [16:53:57]  Interface current state: UP
+165357.614: [16:53:57]  Hardware is Ethernet, address is c0a6.6d70.67e6 (bia c0a6.6d70.67e6)
+165357.614: [16:53:57]  Bandwidth 25000000 kbits
+165357.614: [16:53:57]  Index 5 , Metric 1 , Encapsulation ARPA
+165357.614: [16:53:57]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165357.614: [16:53:57]  Link type is force link
+165357.615: [16:53:57]  Admin input flow-control is off, output flow-control is off
+165357.615: [16:53:57]  Oper input flow-control is off, output flow-control is off
+165357.615: [16:53:57]  The Maximum Frame Size is 1632 bytes 
+165357.615: [16:53:57]  VRF binding: not bound
+165357.615: [16:53:57]  Label switching is disabled
+165357.615: [16:53:57]  ARP timeout 01:00:00,  ARP retry interval 10s
+165357.615: [16:53:57]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165357.615: [16:53:57]    5 minute input rate 892324 bits/sec, 194 packets/sec
+165357.615: [16:53:57]    5 minute output rate 913725 bits/sec, 242 packets/sec
+165357.616: [16:53:57]    44264801725 packets input, 66277120535801 bytes
+165357.616: [16:53:57]    Received 44251134214 unicast, 13323570 broadcast, 343941 multicast
+165357.616: [16:53:57]    0 runts, 0 giants, 0 input errors, 0 CRC
+165357.616: [16:53:57]    0 frame, 0 overrun, 0 pause input
+165357.616: [16:53:57]    8988489405 packets output, 5136397976622 bytes
+165357.616: [16:53:57]    Transmitted 8260419602 unicast, 31345375 broadcast, 696724428 multicast
+165357.616: [16:53:57]    0 underruns, 0 output errors, 0 pause output
+165357.617: [16:53:57]Interface eth-0-6
+165357.617: [16:53:57]  Interface current state: UP
+165357.617: [16:53:57]  Hardware is Ethernet, address is c0a6.6d70.67e7 (bia c0a6.6d70.67e7)
+165357.617: [16:53:57]  Bandwidth 25000000 kbits
+165357.617: [16:53:57]  Index 6 , Metric 1 , Encapsulation ARPA
+165357.617: [16:53:57]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165357.617: [16:53:57]  Link type is force link
+165357.617: [16:53:57]  Admin input flow-control is off, output flow-control is off
+165357.618: [16:53:57]  Oper input flow-control is off, output flow-control is off
+165357.618: [16:53:57]  The Maximum Frame Size is 1632 bytes 
+165357.618: [16:53:57]  VRF binding: not bound
+165358.036: [16:53:58]  Label switching is disabled
+165358.036: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.036: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.036: [16:53:58]    5 minute input rate 2466604 bits/sec, 278 packets/sec
+165358.036: [16:53:58]    5 minute output rate 188122 bits/sec, 152 packets/sec
+165358.036: [16:53:58]    54218278359 packets input, 79138870023423 bytes
+165358.036: [16:53:58]    Received 54206799057 unicast, 11470218 broadcast, 9084 multicast
+165358.036: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.037: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.037: [16:53:58]    13503165639 packets output, 7612343436749 bytes
+165358.037: [16:53:58]    Transmitted 12772910210 unicast, 33198681 broadcast, 697056748 multicast
+165358.037: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.037: [16:53:58]Interface eth-0-7
+165358.037: [16:53:58]  Interface current state: UP
+165358.037: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67e8 (bia c0a6.6d70.67e8)
+165358.037: [16:53:58]  Bandwidth 25000000 kbits
+165358.037: [16:53:58]  Index 7 , Metric 1 , Encapsulation ARPA
+165358.037: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.037: [16:53:58]  Link type is force link
+165358.037: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.038: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.038: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.038: [16:53:58]  VRF binding: not bound
+165358.038: [16:53:58]  Label switching is disabled
+165358.038: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.038: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.038: [16:53:58]    5 minute input rate 1187569 bits/sec, 147 packets/sec
+165358.038: [16:53:58]    5 minute output rate 250027 bits/sec, 101 packets/sec
+165358.038: [16:53:58]    6405884414 packets input, 7145612267169 bytes
+165358.050: [16:53:58]    Received 6405783270 unicast, 92427 broadcast, 8717 multicast
+165358.050: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.050: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.050: [16:53:58]    5308140535 packets output, 3107756971025 bytes
+165358.050: [16:53:58]    Transmitted 4566507009 unicast, 44576428 broadcast, 697057098 multicast
+165358.051: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.051: [16:53:58]Interface eth-0-8
+165358.051: [16:53:58]  Interface current state: UP
+165358.051: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67e9 (bia c0a6.6d70.67e9)
+165358.051: [16:53:58]  Bandwidth 25000000 kbits
+165358.051: [16:53:58]  Index 8 , Metric 1 , Encapsulation ARPA
+165358.051: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.051: [16:53:58]  Link type is force link
+165358.051: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.051: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.051: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.052: [16:53:58]  VRF binding: not bound
+165358.052: [16:53:58]  Label switching is disabled
+165358.052: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.052: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.052: [16:53:58]    5 minute input rate 312782 bits/sec, 102 packets/sec
+165358.052: [16:53:58]    5 minute output rate 195055 bits/sec, 123 packets/sec
+165358.052: [16:53:58]    3924491967 packets input, 1786172596055 bytes
+165358.052: [16:53:58]    Received 3924489619 unicast, 2263 broadcast, 85 multicast
+165358.052: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.052: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.052: [16:53:58]    4380619230 packets output, 850750609246 bytes
+165358.053: [16:53:58]    Transmitted 3638887148 unicast, 44666544 broadcast, 697065538 multicast
+165358.053: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.053: [16:53:58]Interface eth-0-9
+165358.053: [16:53:58]  Interface current state: UP
+165358.053: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67ea (bia c0a6.6d70.67ea)
+165358.053: [16:53:58]  Bandwidth 25000000 kbits
+165358.053: [16:53:58]  Index 9 , Metric 1 , Encapsulation ARPA
+165358.227: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.227: [16:53:58]  Link type is force link
+165358.227: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.228: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.228: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.228: [16:53:58]  VRF binding: not bound
+165358.228: [16:53:58]  Label switching is disabled
+165358.228: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.228: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.229: [16:53:58]    5 minute input rate 159374 bits/sec, 25 packets/sec
+165358.229: [16:53:58]    5 minute output rate 51386 bits/sec, 42 packets/sec
+165358.229: [16:53:58]    62106084103 packets input, 92488045107778 bytes
+165358.229: [16:53:58]    Received 62106078114 unicast, 5901 broadcast, 88 multicast
+165358.229: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.230: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.230: [16:53:58]    8090950557 packets output, 1405385928129 bytes
+165358.230: [16:53:58]    Transmitted 7349222272 unicast, 44662848 broadcast, 697065437 multicast
+165358.230: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.230: [16:53:58]Interface eth-0-10
+165358.230: [16:53:58]  Interface current state: UP
+165358.231: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67eb (bia c0a6.6d70.67eb)
+165358.231: [16:53:58]  Bandwidth 25000000 kbits
+165358.231: [16:53:58]  Index 10 , Metric 1 , Encapsulation ARPA
+165358.231: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.231: [16:53:58]  Link type is force link
+165358.231: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.231: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.232: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.232: [16:53:58]  VRF binding: not bound
+165358.232: [16:53:58]  Label switching is disabled
+165358.232: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.232: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.232: [16:53:58]    5 minute input rate 2168899 bits/sec, 259 packets/sec
+165358.232: [16:53:58]    5 minute output rate 210412 bits/sec, 161 packets/sec
+165358.232: [16:53:58]    10142328861 packets input, 11015303171211 bytes
+165358.233: [16:53:58]    Received 10142317127 unicast, 1679 broadcast, 10055 multicast
+165358.233: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.244: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.244: [16:53:58]    7018065649 packets output, 3231263658351 bytes
+165358.245: [16:53:58]    Transmitted 6276344830 unicast, 44666797 broadcast, 697054022 multicast
+165358.245: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.245: [16:53:58]Interface eth-0-11
+165358.245: [16:53:58]  Interface current state: UP
+165358.245: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67ec (bia c0a6.6d70.67ec)
+165358.245: [16:53:58]  Bandwidth 25000000 kbits
+165358.245: [16:53:58]  Index 11 , Metric 1 , Encapsulation ARPA
+165358.245: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.245: [16:53:58]  Link type is force link
+165358.245: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.246: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.246: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.246: [16:53:58]  VRF binding: not bound
+165358.246: [16:53:58]  Label switching is disabled
+165358.246: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.246: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.246: [16:53:58]    5 minute input rate 729305 bits/sec, 104 packets/sec
+165358.246: [16:53:58]    5 minute output rate 343774 bits/sec, 112 packets/sec
+165358.246: [16:53:58]    3902912426 packets input, 2834931175811 bytes
+165358.247: [16:53:58]    Received 3902903502 unicast, 879 broadcast, 8045 multicast
+165358.247: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.247: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.247: [16:53:58]    4454711928 packets output, 2116414639485 bytes
+165358.247: [16:53:58]    Transmitted 3712986757 unicast, 44667785 broadcast, 697057386 multicast
+165358.418: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.418: [16:53:58]Interface eth-0-12
+165358.418: [16:53:58]  Interface current state: DOWN
+165358.418: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67ed (bia c0a6.6d70.67ed)
+165358.418: [16:53:58]  Bandwidth 25000000 kbits
+165358.418: [16:53:58]  Index 12 , Metric 1 , Encapsulation ARPA
+165358.419: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.419: [16:53:58]  Link type is force link
+165358.419: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.419: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.419: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.419: [16:53:58]  VRF binding: not bound
+165358.419: [16:53:58]  Label switching is disabled
+165358.419: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.419: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.419: [16:53:58]    5 minute input rate 0 bits/sec, 0 packets/sec
+165358.419: [16:53:58]    5 minute output rate 0 bits/sec, 0 packets/sec
+165358.419: [16:53:58]    17017415 packets input, 2759975702 bytes
+165358.419: [16:53:58]    Received 17017192 unicast, 130 broadcast, 93 multicast
+165358.419: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.419: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.419: [16:53:58]    39528314 packets output, 12631216757 bytes
+165358.419: [16:53:58]    Transmitted 19348355 unicast, 2882267 broadcast, 17297692 multicast
+165358.419: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.419: [16:53:58]Interface eth-0-13
+165358.419: [16:53:58]  Interface current state: UP
+165358.419: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67ee (bia c0a6.6d70.67ee)
+165358.419: [16:53:58]  Bandwidth 25000000 kbits
+165358.419: [16:53:58]  Index 13 , Metric 1 , Encapsulation ARPA
+165358.420: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.420: [16:53:58]  Link type is force link
+165358.420: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.420: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.420: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.420: [16:53:58]  VRF binding: not bound
+165358.420: [16:53:58]  Label switching is disabled
+165358.420: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.420: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.420: [16:53:58]    5 minute input rate 15641 bits/sec, 1 packets/sec
+165358.420: [16:53:58]    5 minute output rate 20403 bits/sec, 26 packets/sec
+165358.420: [16:53:58]    311891599 packets input, 80645650809 bytes
+165358.420: [16:53:58]    Received 311884977 unicast, 416 broadcast, 6206 multicast
+165358.420: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.431: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.432: [16:53:58]    1079680378 packets output, 257852428226 bytes
+165358.432: [16:53:58]    Transmitted 342410327 unicast, 44346512 broadcast, 692923539 multicast
+165358.432: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.432: [16:53:58]Interface eth-0-14
+165358.432: [16:53:58]  Interface current state: UP
+165358.432: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67ef (bia c0a6.6d70.67ef)
+165358.432: [16:53:58]  Bandwidth 25000000 kbits
+165358.432: [16:53:58]  Index 14 , Metric 1 , Encapsulation ARPA
+165358.432: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.432: [16:53:58]  Link type is force link
+165358.433: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.433: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.433: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.433: [16:53:58]  VRF binding: not bound
+165358.433: [16:53:58]  Label switching is disabled
+165358.433: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.433: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.433: [16:53:58]    5 minute input rate 14604 bits/sec, 1 packets/sec
+165358.433: [16:53:58]    5 minute output rate 19962 bits/sec, 26 packets/sec
+165358.604: [16:53:58]    284665327 packets input, 201115682587 bytes
+165358.604: [16:53:58]    Received 284654999 unicast, 4117 broadcast, 6211 multicast
+165358.605: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.605: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.605: [16:53:58]    1019035754 packets output, 178697701819 bytes
+165358.605: [16:53:58]    Transmitted 279530208 unicast, 44627513 broadcast, 694878033 multicast
+165358.606: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.606: [16:53:58]Interface eth-0-15
+165358.606: [16:53:58]  Interface current state: UP
+165358.606: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67f0 (bia c0a6.6d70.67f0)
+165358.606: [16:53:58]  Bandwidth 25000000 kbits
+165358.607: [16:53:58]  Index 15 , Metric 1 , Encapsulation ARPA
+165358.607: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.607: [16:53:58]  Link type is force link
+165358.607: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.607: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.607: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.607: [16:53:58]  VRF binding: not bound
+165358.607: [16:53:58]  Label switching is disabled
+165358.608: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.608: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.608: [16:53:58]    5 minute input rate 145871 bits/sec, 48 packets/sec
+165358.622: [16:53:58]    5 minute output rate 88677 bits/sec, 73 packets/sec
+165358.622: [16:53:58]    1536359023 packets input, 1038002437134 bytes
+165358.622: [16:53:58]    Received 1536348630 unicast, 1221 broadcast, 9172 multicast
+165358.622: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.622: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.622: [16:53:58]    3400930877 packets output, 3371125684457 bytes
+165358.622: [16:53:58]    Transmitted 2659259972 unicast, 44648623 broadcast, 697022282 multicast
+165358.622: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.622: [16:53:58]Interface eth-0-16
+165358.622: [16:53:58]  Interface current state: DOWN
+165358.622: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67f1 (bia c0a6.6d70.67f1)
+165358.622: [16:53:58]  Bandwidth 25000000 kbits
+165358.622: [16:53:58]  Index 16 , Metric 1 , Encapsulation ARPA
+165358.622: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165358.622: [16:53:58]  Link type is force link
+165358.622: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.622: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.622: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.622: [16:53:58]  VRF binding: not bound
+165358.623: [16:53:58]  Label switching is disabled
+165358.623: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.623: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.623: [16:53:58]    5 minute input rate 0 bits/sec, 0 packets/sec
+165358.623: [16:53:58]    5 minute output rate 0 bits/sec, 0 packets/sec
+165358.623: [16:53:58]    4276946403 packets input, 4546053032725 bytes
+165358.623: [16:53:58]    Received 4275326708 unicast, 706884 broadcast, 912811 multicast
+165358.623: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.623: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.623: [16:53:58]    44347604172 packets output, 67203770452591 bytes
+165358.623: [16:53:58]    Transmitted 44345386215 unicast, 387967 broadcast, 1829990 multicast
+165358.623: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.623: [16:53:58]Interface eth-0-17
+165358.623: [16:53:58]  Interface current state: DOWN
+165358.623: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67f2 (bia c0a6.6d70.67f2)
+165358.623: [16:53:58]  Bandwidth 25000000 kbits
+165358.623: [16:53:58]  Index 17 , Metric 1 , Encapsulation ARPA
+165358.623: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165358.623: [16:53:58]  Link type is force link
+165358.623: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.623: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.623: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.820: [16:53:58]  VRF binding: not bound
+165358.820: [16:53:58]  Label switching is disabled
+165358.821: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.821: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.821: [16:53:58]    5 minute input rate 0 bits/sec, 0 packets/sec
+165358.821: [16:53:58]    5 minute output rate 0 bits/sec, 0 packets/sec
+165358.821: [16:53:58]    0 packets input, 0 bytes
+165358.821: [16:53:58]    Received 0 unicast, 0 broadcast, 0 multicast
+165358.821: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.821: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.821: [16:53:58]    0 packets output, 0 bytes
+165358.821: [16:53:58]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165358.822: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.822: [16:53:58]Interface eth-0-18
+165358.822: [16:53:58]  Interface current state: DOWN
+165358.822: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67f3 (bia c0a6.6d70.67f3)
+165358.822: [16:53:58]  Bandwidth 25000000 kbits
+165358.822: [16:53:58]  Index 18 , Metric 1 , Encapsulation ARPA
+165358.822: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165358.822: [16:53:58]  Link type is force link
+165358.823: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.823: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.823: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.823: [16:53:58]  VRF binding: not bound
+165358.823: [16:53:58]  Label switching is disabled
+165358.823: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.823: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.823: [16:53:58]    5 minute input rate 0 bits/sec, 0 packets/sec
+165358.824: [16:53:58]    5 minute output rate 0 bits/sec, 0 packets/sec
+165358.824: [16:53:58]    0 packets input, 0 bytes
+165358.824: [16:53:58]    Received 0 unicast, 0 broadcast, 0 multicast
+165358.824: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.824: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.824: [16:53:58]    0 packets output, 0 bytes
+165358.824: [16:53:58]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165358.824: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.824: [16:53:58]Interface eth-0-19
+165358.825: [16:53:58]  Interface current state: DOWN
+165358.825: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67f4 (bia c0a6.6d70.67f4)
+165358.825: [16:53:58]  Bandwidth 25000000 kbits
+165358.825: [16:53:58]  Index 19 , Metric 1 , Encapsulation ARPA
+165358.825: [16:53:58]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165358.825: [16:53:58]  Link type is force link
+165358.825: [16:53:58]  Admin input flow-control is off, output flow-control is off
+165358.825: [16:53:58]  Oper input flow-control is off, output flow-control is off
+165358.826: [16:53:58]  The Maximum Frame Size is 1632 bytes 
+165358.826: [16:53:58]  VRF binding: not bound
+165358.826: [16:53:58]  Label switching is disabled
+165358.826: [16:53:58]  ARP timeout 01:00:00,  ARP retry interval 10s
+165358.826: [16:53:58]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165358.826: [16:53:58]    5 minute input rate 0 bits/sec, 0 packets/sec
+165358.826: [16:53:58]    5 minute output rate 0 bits/sec, 0 packets/sec
+165358.826: [16:53:58]    0 packets input, 0 bytes
+165358.826: [16:53:58]    Received 0 unicast, 0 broadcast, 0 multicast
+165358.827: [16:53:58]    0 runts, 0 giants, 0 input errors, 0 CRC
+165358.827: [16:53:58]    0 frame, 0 overrun, 0 pause input
+165358.827: [16:53:58]    0 packets output, 0 bytes
+165358.827: [16:53:58]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165358.827: [16:53:58]    0 underruns, 0 output errors, 0 pause output
+165358.827: [16:53:58]Interface eth-0-20
+165358.827: [16:53:58]  Interface current state: DOWN
+165358.827: [16:53:58]  Hardware is Ethernet, address is c0a6.6d70.67f5 (bia c0a6.6d70.67f5)
+165358.828: [16:53:58]  Bandwidth 25000000 kbits
+165359.035: [16:53:59]  Index 20 , Metric 1 , Encapsulation ARPA
+165359.035: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.035: [16:53:59]  Link type is force link
+165359.035: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.036: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.036: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.036: [16:53:59]  VRF binding: not bound
+165359.036: [16:53:59]  Label switching is disabled
+165359.036: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.036: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.036: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.036: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.036: [16:53:59]    0 packets input, 0 bytes
+165359.036: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.036: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.036: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.036: [16:53:59]    0 packets output, 0 bytes
+165359.036: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.036: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.036: [16:53:59]Interface eth-0-21
+165359.036: [16:53:59]  Interface current state: DOWN
+165359.037: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67f6 (bia c0a6.6d70.67f6)
+165359.037: [16:53:59]  Bandwidth 25000000 kbits
+165359.037: [16:53:59]  Index 21 , Metric 1 , Encapsulation ARPA
+165359.037: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.037: [16:53:59]  Link type is force link
+165359.037: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.037: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.037: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.037: [16:53:59]  VRF binding: not bound
+165359.037: [16:53:59]  Label switching is disabled
+165359.037: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.037: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.037: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.037: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.037: [16:53:59]    0 packets input, 0 bytes
+165359.037: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.038: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.038: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.038: [16:53:59]    0 packets output, 0 bytes
+165359.038: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.038: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.038: [16:53:59]Interface eth-0-22
+165359.038: [16:53:59]  Interface current state: DOWN
+165359.038: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67f7 (bia c0a6.6d70.67f7)
+165359.038: [16:53:59]  Bandwidth 25000000 kbits
+165359.038: [16:53:59]  Index 22 , Metric 1 , Encapsulation ARPA
+165359.049: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.049: [16:53:59]  Link type is force link
+165359.049: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.049: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.049: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.049: [16:53:59]  VRF binding: not bound
+165359.049: [16:53:59]  Label switching is disabled
+165359.050: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.050: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.050: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.050: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.050: [16:53:59]    0 packets input, 0 bytes
+165359.050: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.050: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.050: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.050: [16:53:59]    0 packets output, 0 bytes
+165359.263: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.264: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.264: [16:53:59]Interface eth-0-23
+165359.264: [16:53:59]  Interface current state: DOWN
+165359.264: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67f8 (bia c0a6.6d70.67f8)
+165359.264: [16:53:59]  Bandwidth 25000000 kbits
+165359.264: [16:53:59]  Index 23 , Metric 1 , Encapsulation ARPA
+165359.264: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.264: [16:53:59]  Link type is force link
+165359.264: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.265: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.265: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.265: [16:53:59]  VRF binding: not bound
+165359.265: [16:53:59]  Label switching is disabled
+165359.265: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.265: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.265: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.266: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.266: [16:53:59]    0 packets input, 0 bytes
+165359.266: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.266: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.266: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.266: [16:53:59]    0 packets output, 0 bytes
+165359.266: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.266: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.266: [16:53:59]Interface eth-0-24
+165359.266: [16:53:59]  Interface current state: DOWN
+165359.267: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67f9 (bia c0a6.6d70.67f9)
+165359.280: [16:53:59]  Bandwidth 25000000 kbits
+165359.280: [16:53:59]  Index 24 , Metric 1 , Encapsulation ARPA
+165359.280: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.280: [16:53:59]  Link type is force link
+165359.280: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.280: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.281: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.281: [16:53:59]  VRF binding: not bound
+165359.281: [16:53:59]  Label switching is disabled
+165359.281: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.281: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.281: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.281: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.281: [16:53:59]    0 packets input, 0 bytes
+165359.281: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.281: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.281: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.281: [16:53:59]    0 packets output, 0 bytes
+165359.281: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.282: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.282: [16:53:59]Interface eth-0-25
+165359.282: [16:53:59]  Interface current state: DOWN
+165359.282: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67fa (bia c0a6.6d70.67fa)
+165359.282: [16:53:59]  Bandwidth 1000000 kbits
+165359.282: [16:53:59]  Index 25 , Metric 1 , Encapsulation ARPA
+165359.282: [16:53:59]        Speed - 1000Mb/s , Duplex - Full, Media type is Unknown
+165359.282: [16:53:59]  Link type is force link
+165359.282: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.282: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.282: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.282: [16:53:59]  VRF binding: not bound
+165359.282: [16:53:59]  Label switching is disabled
+165359.282: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.282: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.282: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.469: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.469: [16:53:59]    0 packets input, 0 bytes
+165359.469: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.469: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.469: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.469: [16:53:59]    0 packets output, 0 bytes
+165359.469: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.470: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.470: [16:53:59]Interface eth-0-26
+165359.470: [16:53:59]  Interface current state: DOWN
+165359.470: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67fb (bia c0a6.6d70.67fb)
+165359.470: [16:53:59]  Bandwidth 25000000 kbits
+165359.470: [16:53:59]  Index 26 , Metric 1 , Encapsulation ARPA
+165359.470: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.470: [16:53:59]  Link type is force link
+165359.470: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.470: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.470: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.470: [16:53:59]  VRF binding: not bound
+165359.471: [16:53:59]  Label switching is disabled
+165359.471: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.471: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.471: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.471: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.471: [16:53:59]    0 packets input, 0 bytes
+165359.471: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.471: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.471: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.471: [16:53:59]    0 packets output, 0 bytes
+165359.471: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.471: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.471: [16:53:59]Interface eth-0-27
+165359.472: [16:53:59]  Interface current state: DOWN
+165359.472: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67fc (bia c0a6.6d70.67fc)
+165359.472: [16:53:59]  Bandwidth 25000000 kbits
+165359.472: [16:53:59]  Index 27 , Metric 1 , Encapsulation ARPA
+165359.472: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.472: [16:53:59]  Link type is force link
+165359.472: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.472: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.472: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.472: [16:53:59]  VRF binding: not bound
+165359.473: [16:53:59]  Label switching is disabled
+165359.473: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.473: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.473: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.473: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.473: [16:53:59]    0 packets input, 0 bytes
+165359.473: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.473: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.474: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.474: [16:53:59]    0 packets output, 0 bytes
+165359.474: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.474: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.474: [16:53:59]Interface eth-0-28
+165359.474: [16:53:59]  Interface current state: DOWN
+165359.474: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67fd (bia c0a6.6d70.67fd)
+165359.474: [16:53:59]  Bandwidth 25000000 kbits
+165359.474: [16:53:59]  Index 28 , Metric 1 , Encapsulation ARPA
+165359.475: [16:53:59]        Speed - 25Gb/s , Duplex - Full, Media type is Unknown
+165359.475: [16:53:59]  Link type is force link
+165359.475: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.475: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.676: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.676: [16:53:59]  VRF binding: not bound
+165359.676: [16:53:59]  Label switching is disabled
+165359.676: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.677: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.677: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.677: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.677: [16:53:59]    0 packets input, 0 bytes
+165359.677: [16:53:59]    Received 0 unicast, 0 broadcast, 0 multicast
+165359.678: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.678: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.678: [16:53:59]    0 packets output, 0 bytes
+165359.678: [16:53:59]    Transmitted 0 unicast, 0 broadcast, 0 multicast
+165359.678: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.678: [16:53:59]Interface eth-0-29
+165359.678: [16:53:59]  Interface current state: DOWN
+165359.679: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67fe (bia c0a6.6d70.67fe)
+165359.679: [16:53:59]  Bandwidth 10000000 kbits
+165359.679: [16:53:59]  Index 29 , Metric 1 , Encapsulation ARPA
+165359.679: [16:53:59]        Speed - 10Gb/s , Duplex - Full, Media type is Unknown
+165359.679: [16:53:59]  Link type is force link
+165359.679: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.679: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.679: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.679: [16:53:59]  VRF binding: not bound
+165359.680: [16:53:59]  Label switching is disabled
+165359.680: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.680: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.680: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.680: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.680: [16:53:59]    7026602062 packets input, 3793174491010 bytes
+165359.681: [16:53:59]    Received 7026538064 unicast, 6 broadcast, 63992 multicast
+165359.681: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.681: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.681: [16:53:59]    1155077362 packets output, 632047896182 bytes
+165359.681: [16:53:59]    Transmitted 1145481864 unicast, 4644942 broadcast, 4950556 multicast
+165359.681: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.681: [16:53:59]Interface eth-0-30
+165359.681: [16:53:59]  Interface current state: DOWN
+165359.682: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.67ff (bia c0a6.6d70.67ff)
+165359.682: [16:53:59]  Bandwidth 10000000 kbits
+165359.682: [16:53:59]  Index 30 , Metric 1 , Encapsulation ARPA
+165359.693: [16:53:59]        Speed - 10Gb/s , Duplex - Full, Media type is Unknown
+165359.693: [16:53:59]  Link type is force link
+165359.693: [16:53:59]  Admin input flow-control is off, output flow-control is off
+165359.693: [16:53:59]  Oper input flow-control is off, output flow-control is off
+165359.693: [16:53:59]  The Maximum Frame Size is 1632 bytes 
+165359.693: [16:53:59]  VRF binding: not bound
+165359.693: [16:53:59]  Label switching is disabled
+165359.693: [16:53:59]  ARP timeout 01:00:00,  ARP retry interval 10s
+165359.693: [16:53:59]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165359.694: [16:53:59]    5 minute input rate 0 bits/sec, 0 packets/sec
+165359.694: [16:53:59]    5 minute output rate 0 bits/sec, 0 packets/sec
+165359.694: [16:53:59]    6571230436 packets input, 3314497323450 bytes
+165359.694: [16:53:59]    Received 6569193584 unicast, 733 broadcast, 2036119 multicast
+165359.694: [16:53:59]    0 runts, 0 giants, 0 input errors, 0 CRC
+165359.694: [16:53:59]    0 frame, 0 overrun, 0 pause input
+165359.694: [16:53:59]    42993496254 packets output, 64312075723134 bytes
+165359.694: [16:53:59]    Transmitted 42991504216 unicast, 5811 broadcast, 1986227 multicast
+165359.694: [16:53:59]    0 underruns, 0 output errors, 0 pause output
+165359.694: [16:53:59]Interface eth-0-31
+165359.694: [16:53:59]  Interface current state: DOWN
+165359.694: [16:53:59]  Hardware is Ethernet, address is c0a6.6d70.6800 (bia c0a6.6d70.6800)
+165400.971: [16:54:00]SCN9300H-01# int
+165403.608: [16:54:03]SCN9300H-01# show interface ?
+165403.608: [16:54:03]  eth-         Physical interface
+165403.608: [16:54:03]  agg          Aggregation interface
+165403.609: [16:54:03]  loopback     Loopback interface
+165403.609: [16:54:03]  vlan         Vlan interface
+165403.609: [16:54:03]  tunnel       Tunnel interface
+165403.609: [16:54:03]  vxlan        Vxlan interface
+165403.609: [16:54:03]  description  Display description of the interfaces
+165403.609: [16:54:03]  hybrid       Display the hybrid information of the hybrid interfaces
+165403.609: [16:54:03]  null         Null interface
+165403.609: [16:54:03]  status       Display status of the interfaces
+165403.609: [16:54:03]  summary      The summary of interface
+165403.609: [16:54:03]  switchport   Display the modes of the layer2 interfaces
+165403.609: [16:54:03]  trunk        Display the trunk information of the trunk interfaces
+165403.609: [16:54:03]  |            Output modifiers
+165403.609: [16:54:03]  >            Output redirection
+165403.609: [16:54:03]  <cr>
+165403.609: [16:54:03]
+165409.422: [16:54:09]SCN9300H-01# show interface eth-47
+165412.387: [16:54:12]SCN9300H-01# show interface eth-0-47
+165412.479: [16:54:12]Interface eth-0-47
+165412.480: [16:54:12]  Interface current state: UP
+165412.480: [16:54:12]  Hardware is Ethernet, address is c0a6.6d70.6810 (bia c0a6.6d70.6810)
+165412.480: [16:54:12]  Bandwidth 25000000 kbits
+165412.481: [16:54:12]  Index 47 , Metric 1 , Encapsulation ARPA
+165412.481: [16:54:12]        Speed - 25Gb/s , Duplex - Full, Media type is 25GBASE_SR
+165412.481: [16:54:12]  Link type is force link
+165412.481: [16:54:12]  Admin input flow-control is off, output flow-control is off
+165412.481: [16:54:12]  Oper input flow-control is off, output flow-control is off
+165412.481: [16:54:12]  The Maximum Frame Size is 1632 bytes 
+165412.481: [16:54:12]  VRF binding: not bound
+165412.481: [16:54:12]  Label switching is disabled
+165412.481: [16:54:12]  ARP timeout 01:00:00,  ARP retry interval 10s
+165412.481: [16:54:12]  ARP Proxy is disabled, Local ARP Proxy is disabled
+165412.482: [16:54:12]    5 minute input rate 9362 bits/sec, 9 packets/sec
+165412.482: [16:54:12]    5 minute output rate 29787 bits/sec, 36 packets/sec
+165412.482: [16:54:12]    113655 packets input, 14441665 bytes
+165412.482: [16:54:12]    Received 108906 unicast, 521 broadcast, 4228 multicast
+165412.482: [16:54:12]    0 runts, 0 giants, 0 input errors, 0 CRC
+165412.482: [16:54:12]    0 frame, 0 overrun, 0 pause input
+165412.482: [16:54:12]    479072 packets output, 310287709 bytes
+165412.482: [16:54:12]    Transmitted 233226 unicast, 2195 broadcast, 243651 multicast
+165412.482: [16:54:12]    0 underruns, 0 output errors, 0 pause output

@@ -1,0 +1,997 @@
+﻿173327.901: [17:33:27][202603100-192.168.8.88-负一楼-接入交换机-17:33:27]
+173328.239: [17:33:28]
+173328.239: [17:33:28]User Access Verification
+173328.250: [17:33:28]
+173328.270: [17:33:28]Password:
+173328.270: [17:33:28]Password:
+173328.288: [17:33:28]
+173328.355: [17:33:28]Last login: Feb  5 2026 04:41:48 from 192.168.4.48 through telnet.
+173332.191: [17:33:32]Ruijie>sho
+173332.514: [17:33:32]Ruijie>show 
+173333.508: [17:33:33]Ruijie>show in
+173333.773: [17:33:33]Ruijie>show in
+173335.289: [17:33:35]Ruijie>show   
+173336.288: [17:33:36]Ruijie>show 
+173338.940: [17:33:38]Ruijie>enable
+173338.983: [17:33:38]
+173344.186: [17:33:44]Password:
+173349.195: [17:33:49]Password:
+173559.884: [17:35:59]Password:
+173559.973: [17:35:59]Ruijie#
+173603.467: [17:36:03]Ruijie#show int
+173603.848: [17:36:03]Ruijie#show interfaces b
+173604.804: [17:36:04]Ruijie#show interfaces  
+173605.798: [17:36:05]Ruijie#show interfaces 
+173605.826: [17:36:05]========================== GigabitEthernet 1/0/1 ========================
+173605.847: [17:36:05]Index(dec):1 (hex):1
+173605.847: [17:36:05]GigabitEthernet 1/0/1 is UP  , line protocol is UP    
+173605.847: [17:36:05]  Hardware is GigabitEthernet, address is c470.abfc.a59a (bia c470.abfc.a59a)
+173605.847: [17:36:05]  Interface address is: no ip address
+173605.847: [17:36:05]  Interface IPv6 address is:
+173605.847: [17:36:05]    No IPv6 address
+173605.847: [17:36:05]  MTU 1500 bytes, BW 1000000 Kbit
+173605.847: [17:36:05]  Encapsulation protocol is Ethernet-II, loopback not set
+173605.847: [17:36:05]  Keepalive interval is 10 sec , set
+173605.848: [17:36:05]  Carrier delay is 2 sec
+173605.848: [17:36:05]  Ethernet attributes:
+173605.848: [17:36:05]    Last link state change time: 2025-06-09 10:03:16
+173605.848: [17:36:05]    Time duration since last link state change: 287 days,  8 hours,  5 minutes, 23 seconds
+173605.848: [17:36:05]    Priority is 0
+173605.848: [17:36:05]    Medium-type is Copper
+173605.848: [17:36:05]    Admin duplex mode is AUTO, oper duplex is Full
+173605.849: [17:36:05]    Admin speed is AUTO, oper speed is 1000M
+173605.849: [17:36:05]    Flow control admin status is OFF, flow control oper status is OFF
+173605.849: [17:36:05]    Admin negotiation mode is OFF, oper negotiation state is ON
+173605.849: [17:36:05]    Storm Control: Broadcast is OFF, Multicast is OFF, Unicast is OFF
+173605.849: [17:36:05]  Bridge attributes:
+173605.849: [17:36:05]    Port-type: access
+173605.849: [17:36:05]    Vlan id: 101
+173609.472: [17:36:09]  Rxload is 1/255, Txload is 1/255
+173609.482: [17:36:09]  Input peak rate: 11354 bits/sec, at 2023-02-08 22:30:11
+173609.492: [17:36:09]  Output peak rate: 864476 bits/sec, at 2025-01-02 15:28:22
+173609.492: [17:36:09]   10 seconds input rate 0 bits/sec, 0 packets/sec
+173609.492: [17:36:09]   10 seconds output rate 14969 bits/sec, 26 packets/sec
+173609.492: [17:36:09]    0 packets input, 0 bytes, 0 no buffer, 0 dropped
+173609.492: [17:36:09]    Received 0 broadcasts, 0 runts, 0 giants
+173609.492: [17:36:09]    0 input errors, 0 CRC, 0 frame, 0 overrun, 0 abort
+173609.493: [17:36:09]    695490393 packets output, 49734791757 bytes, 0 underruns, 0 no buffer, 1130 dropped
+173609.493: [17:36:09]    0 output errors, 0 collisions, 0 interface resets
+173609.493: [17:36:09]========================== GigabitEthernet 1/0/2 ========================
+173609.493: [17:36:09]Index(dec):2 (hex):2
+173609.493: [17:36:09]GigabitEthernet 1/0/2 is UP  , line protocol is UP    
+173609.493: [17:36:09]  Hardware is GigabitEthernet, address is c470.abfc.a59a (bia c470.abfc.a59a)
+173609.493: [17:36:09]  Interface address is: no ip address
+173609.493: [17:36:09]  Interface IPv6 address is:
+173609.493: [17:36:09]    No IPv6 address
+173609.493: [17:36:09]  MTU 1500 bytes, BW 1000000 Kbit
+173609.493: [17:36:09]  Encapsulation protocol is Ethernet-II, loopback not set
+173609.493: [17:36:09]  Keepalive interval is 10 sec , set
+173609.493: [17:36:09]  Carrier delay is 2 sec
+173609.493: [17:36:09]  Ethernet attributes:
+173609.493: [17:36:09]    Last link state change time: 2024-12-05 23:10:52
+173609.493: [17:36:09]    Time duration since last link state change: 472 days, 18 hours, 57 minutes, 51 seconds
+173611.479: [17:36:11]Ruijie#sho
+173613.592: [17:36:13]Ruijie#show int
+173614.180: [17:36:14]Ruijie#show interfaces 
+173614.332: [17:36:14]Ruijie#show interfaces 
+173615.125: [17:36:15]Ruijie#show interfaces ?
+173615.141: [17:36:15]  AggregatePort       Aggregate port interface
+173615.147: [17:36:15]  GigabitEthernet     Gigabit Ethernet interface
+173615.147: [17:36:15]  Loopback            Loopback interface
+173615.147: [17:36:15]  Mgmt                Mgmt interface
+173615.147: [17:36:15]  Null                Null interface
+173615.147: [17:36:15]  TenGigabitEthernet  10G Ethernet interface
+173615.147: [17:36:15]  Tunnel              Tunnel interface
+173615.148: [17:36:15]  VLAN                Vlan interface
+173615.148: [17:36:15]  arp-check           Port-security arp-check
+173615.148: [17:36:15]  counters            Counters on one or all interface
+173615.148: [17:36:15]  dampening           Show interface dampening info
+173615.148: [17:36:15]  description         Show interface description
+173615.148: [17:36:15]  dot1q-tunnel        Show interface dot1q-tunnel
+173615.148: [17:36:15]  link-state-change   Show interface link state change information
+173615.148: [17:36:15]  remark              Show interface remark
+173615.148: [17:36:15]  status              Show interface line status
+173615.148: [17:36:15]  switchport          Show interface switchport information
+173615.148: [17:36:15]  transceiver         Show basic information
+173615.148: [17:36:15]  trunk               Show interface trunk information
+173615.148: [17:36:15]  usage               Show interface bandwidth usage
+173615.148: [17:36:15]  |                   Output modifiers
+173615.148: [17:36:15]  <cr>                
+173615.148: [17:36:15]
+173620.824: [17:36:20]Ruijie#show interfaces st
+173621.757: [17:36:21]Ruijie#show interfaces status 
+173621.792: [17:36:21]Interface                                Status    Vlan   Duplex   Speed     Type  
+173621.808: [17:36:21]---------------------------------------- --------  ----   -------  --------- ------
+173621.808: [17:36:21]GigabitEthernet 1/0/1                    up        101    Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/2                    up        101    Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/3                    up        101    Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/4                    up        101    Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/5                    up        101    Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/6                    up        101    Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/7                    up        1      Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/8                    up        1      Full     1000M     copper
+173621.808: [17:36:21]GigabitEthernet 1/0/9                    up        1      Full     100M      copper
+173621.808: [17:36:21]GigabitEthernet 1/0/10                   up        1      Full     1000M     copper
+173621.809: [17:36:21]GigabitEthernet 1/0/11                   up        1      Full     1000M     copper
+173621.809: [17:36:21]GigabitEthernet 1/0/12                   down      1      Unknown  Unknown   copper
+173621.809: [17:36:21]GigabitEthernet 1/0/13                   up        1      Full     1000M     copper
+173621.809: [17:36:21]GigabitEthernet 1/0/14                   up        1      Full     1000M     copper
+173621.809: [17:36:21]GigabitEthernet 1/0/15                   up        1      Full     1000M     copper
+173621.809: [17:36:21]GigabitEthernet 1/0/16                   up        1      Full     1000M     copper
+173621.809: [17:36:21]GigabitEthernet 1/0/17                   up        300    Full     10M       copper
+173621.816: [17:36:21]GigabitEthernet 1/0/18                   up        300    Full     1000M     copper
+173621.817: [17:36:21]GigabitEthernet 1/0/19                   up        300    Full     1000M     copper
+173621.817: [17:36:21]GigabitEthernet 1/0/20                   up        300    Full     1000M     copper
+173621.817: [17:36:21]GigabitEthernet 1/0/21                   up        300    Full     1000M     copper
+173621.817: [17:36:21]GigabitEthernet 1/0/22                   up        300    Full     1000M     copper
+173622.642: [17:36:22]GigabitEthernet 1/0/23                   up        300    Full     1000M     copper
+173622.653: [17:36:22]GigabitEthernet 1/0/24                   up        300    Full     1000M     copper
+173622.653: [17:36:22]GigabitEthernet 1/0/25                   up        100    Full     1000M     copper
+173622.653: [17:36:22]GigabitEthernet 1/0/26                   up        300    Full     1000M     copper
+173622.653: [17:36:22]GigabitEthernet 1/0/27                   up        300    Full     1000M     copper
+173622.653: [17:36:22]GigabitEthernet 1/0/28                   up        300    Full     1000M     copper
+173622.654: [17:36:22]GigabitEthernet 1/0/29                   up        101    Full     1000M     copper
+173622.654: [17:36:22]GigabitEthernet 1/0/30                   up        101    Full     1000M     copper
+173622.654: [17:36:22]GigabitEthernet 1/0/31                   up        101    Full     1000M     copper
+173622.654: [17:36:22]GigabitEthernet 1/0/32                   up        101    Full     1000M     copper
+173622.654: [17:36:22]GigabitEthernet 1/0/33                   up        101    Full     1000M     copper
+173622.654: [17:36:22]GigabitEthernet 1/0/34                   up        101    Full     1000M     copper
+173622.655: [17:36:22]GigabitEthernet 1/0/35                   down      101    Unknown  Unknown   copper
+173622.655: [17:36:22]GigabitEthernet 1/0/36                   down      101    Unknown  Unknown   copper
+173622.655: [17:36:22]GigabitEthernet 1/0/37                   down      1      Unknown  Unknown   copper
+173622.655: [17:36:22]GigabitEthernet 1/0/38                   down      1      Unknown  Unknown   copper
+173622.655: [17:36:22]GigabitEthernet 1/0/39                   down      1      Unknown  Unknown   copper
+173622.656: [17:36:22]GigabitEthernet 1/0/40                   down      1      Unknown  Unknown   copper
+173622.656: [17:36:22]GigabitEthernet 1/0/41                   down      1      Unknown  Unknown   copper
+173622.656: [17:36:22]GigabitEthernet 1/0/42                   down      1      Unknown  Unknown   copper
+173622.656: [17:36:22]GigabitEthernet 1/0/43                   down      1      Unknown  Unknown   copper
+173622.656: [17:36:22]GigabitEthernet 1/0/44                   down      100    Unknown  Unknown   copper
+173622.663: [17:36:22]GigabitEthernet 1/0/45                   up        300    Full     1000M     copper
+173622.663: [17:36:22]GigabitEthernet 1/0/46                   up        100    Full     100M      copper
+173623.087: [17:36:23]GigabitEthernet 1/0/47                   up        100    Full     1000M     copper
+173623.103: [17:36:23]GigabitEthernet 1/0/48                   up        100    Full     1000M     copper
+173623.103: [17:36:23]GigabitEthernet 2/0/1                    up        101    Full     1000M     copper
+173623.103: [17:36:23]GigabitEthernet 2/0/2                    up        101    Full     1000M     copper
+173623.103: [17:36:23]GigabitEthernet 2/0/3                    up        101    Full     1000M     copper
+173623.103: [17:36:23]GigabitEthernet 2/0/4                    up        101    Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/5                    up        101    Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/6                    up        101    Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/7                    up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/8                    up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/9                    up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/10                   up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/11                   up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/12                   down      1      Unknown  Unknown   copper
+173623.104: [17:36:23]GigabitEthernet 2/0/13                   up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/14                   up        1      Full     1000M     copper
+173623.104: [17:36:23]GigabitEthernet 2/0/15                   up        1      Full     1000M     copper
+173623.105: [17:36:23]GigabitEthernet 2/0/16                   up        1      Full     1000M     copper
+173623.105: [17:36:23]GigabitEthernet 2/0/17                   up        300    Full     1000M     copper
+173623.105: [17:36:23]GigabitEthernet 2/0/18                   up        300    Full     1000M     copper
+173623.105: [17:36:23]GigabitEthernet 2/0/19                   up        300    Full     1000M     copper
+173623.105: [17:36:23]GigabitEthernet 2/0/20                   down      300    Unknown  Unknown   copper
+173623.105: [17:36:23]GigabitEthernet 2/0/21                   up        300    Full     1000M     copper
+173623.105: [17:36:23]GigabitEthernet 2/0/22                   up        300    Full     1000M     copper
+173624.021: [17:36:24]GigabitEthernet 2/0/23                   up        300    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/24                   up        300    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/25                   up        100    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/26                   up        300    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/27                   up        300    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/28                   up        300    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/29                   up        101    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/30                   up        101    Full     1000M     copper
+173624.035: [17:36:24]GigabitEthernet 2/0/31                   up        101    Full     1000M     copper
+173624.036: [17:36:24]GigabitEthernet 2/0/32                   up        101    Full     1000M     copper
+173624.036: [17:36:24]GigabitEthernet 2/0/33                   up        101    Full     1000M     copper
+173624.036: [17:36:24]GigabitEthernet 2/0/34                   up        101    Full     1000M     copper
+173624.036: [17:36:24]GigabitEthernet 2/0/35                   down      1      Unknown  Unknown   copper
+173624.036: [17:36:24]GigabitEthernet 2/0/36                   down      1      Unknown  Unknown   copper
+173624.036: [17:36:24]GigabitEthernet 2/0/37                   down      1      Unknown  Unknown   copper
+173624.036: [17:36:24]GigabitEthernet 2/0/38                   down      1      Unknown  Unknown   copper
+173624.037: [17:36:24]GigabitEthernet 2/0/39                   down      1      Unknown  Unknown   copper
+173624.037: [17:36:24]GigabitEthernet 2/0/40                   down      1      Unknown  Unknown   copper
+173624.047: [17:36:24]GigabitEthernet 2/0/41                   down      1      Unknown  Unknown   copper
+173624.055: [17:36:24]GigabitEthernet 2/0/42                   down      1      Unknown  Unknown   copper
+173624.055: [17:36:24]GigabitEthernet 2/0/43                   down      1      Unknown  Unknown   copper
+173624.055: [17:36:24]GigabitEthernet 2/0/44                   down      1      Unknown  Unknown   copper
+173624.055: [17:36:24]GigabitEthernet 2/0/45                   down      1      Unknown  Unknown   copper
+173624.055: [17:36:24]GigabitEthernet 2/0/46                   down      1      Unknown  Unknown   copper
+173624.599: [17:36:24]GigabitEthernet 2/0/47                   down      101    Unknown  Unknown   copper
+173624.614: [17:36:24]GigabitEthernet 2/0/48                   up        routed Full     100M      copper
+173624.614: [17:36:24]TenGigabitEthernet 1/0/49                up               Full     10G       fiber
+173624.614: [17:36:24]TenGigabitEthernet 1/0/50                up               Full     10G       fiber
+173624.614: [17:36:24]TenGigabitEthernet 1/0/51                up        101    Full     10G       fiber
+173624.614: [17:36:24]TenGigabitEthernet 1/0/52                up        101    Full     10G       fiber
+173624.614: [17:36:24]TenGigabitEthernet 2/0/49                up               Full     10G       fiber
+173624.614: [17:36:24]TenGigabitEthernet 2/0/50                up               Full     10G       fiber
+173624.614: [17:36:24]TenGigabitEthernet 2/0/51                up        101    Full     1000M     fiber
+173624.614: [17:36:24]TenGigabitEthernet 2/0/52                down      1      Unknown  Unknown   fiber
+173624.614: [17:36:24]AggregatePort 1                          up        1      Full     2000M     copper
+173624.615: [17:36:24]AggregatePort 2                          up        1      Full     2000M     copper
+173624.615: [17:36:24]AggregatePort 3                          up        1      Full     1000M     copper
+173624.615: [17:36:24]AggregatePort 4                          up        1      Full     2000M     copper
+173624.615: [17:36:24]AggregatePort 5                          up        1      Full     2000M     copper
+173624.615: [17:36:24]AggregatePort 6                          down      1      Unknown  Unknown   copper
+173624.615: [17:36:24]AggregatePort 7                          up        1      Full     2000M     copper
+173624.615: [17:36:24]AggregatePort 8                          up        1      Full     2000M     copper
+173624.616: [17:36:24]AggregatePort 9                          up        1      Full     2000M     copper
+173624.616: [17:36:24]AggregatePort 10                         up        1      Full     2000M     copper
+173624.616: [17:36:24]AggregatePort 20                         up        101    Full     2000M     copper
+173624.616: [17:36:24]AggregatePort 21                         up        101    Full     2000M     copper
+173624.616: [17:36:24]AggregatePort 22                         up        101    Full     2000M     copper
+173624.616: [17:36:24]AggregatePort 23                         up        101    Full     2000M     copper
+174629.607: [17:46:29][202603100-192.168.8.88-负一楼-接入交换机-17:46:29]
+174629.987: [17:46:29]
+174629.987: [17:46:29]User Access Verification
+174629.987: [17:46:29]
+174630.018: [17:46:30]Password:
+174630.045: [17:46:30]Password:
+174630.140: [17:46:30]
+174630.207: [17:46:30]Last login: Mar 23 2026 18:06:02 from 192.168.6.173 through telnet.
+174852.354: [17:48:52]Ruijie>
+174852.488: [17:48:52]Ruijie>
+174852.610: [17:48:52]Ruijie>
+174857.095: [17:48:57]Ruijie>enab
+175903.156: [17:59:03][202603100-192.168.8.88-负一楼-接入交换机-17:59:03]
+175903.450: [17:59:03]
+175903.451: [17:59:03]User Access Verification
+175903.464: [17:59:03]
+175903.483: [17:59:03]Password:
+175903.483: [17:59:03]Password:
+175903.496: [17:59:03]
+175903.544: [17:59:03]Last login: Mar 23 2026 18:19:04 from 192.168.6.173 through telnet.
+180209.674: [18:02:09]Ruijie>
+180209.823: [18:02:09]Ruijie>
+180209.967: [18:02:09]Ruijie>
+180216.558: [18:02:16]Ruijie>enable
+180216.591: [18:02:16]
+180218.873: [18:02:18]Password:
+180220.014: [18:02:20]Ruijie#
+180220.209: [18:02:20]Ruijie#
+180223.481: [18:02:23]Ruijie#show int
+180225.062: [18:02:25]Ruijie#show interfaces br
+180230.186: [18:02:30]Ruijie#show interfa      
+180233.449: [18:02:33]Ruijie#show interfaces bri
+180233.633: [18:02:33]Ruijie#show interfaces bri
+180233.811: [18:02:33]Ruijie#show interfaces bri
+180233.998: [18:02:33]Ruijie#show interfaces bri
+180234.147: [18:02:34]Ruijie#show interfaces bri
+180238.531: [18:02:38]Ruijie#show interfaces   ?
+180238.539: [18:02:38]  AggregatePort       Aggregate port interface
+180238.552: [18:02:38]  GigabitEthernet     Gigabit Ethernet interface
+180238.552: [18:02:38]  Loopback            Loopback interface
+180238.552: [18:02:38]  Mgmt                Mgmt interface
+180238.552: [18:02:38]  Null                Null interface
+180238.553: [18:02:38]  TenGigabitEthernet  10G Ethernet interface
+180238.553: [18:02:38]  Tunnel              Tunnel interface
+180238.553: [18:02:38]  VLAN                Vlan interface
+180238.560: [18:02:38]  arp-check           Port-security arp-check
+180238.560: [18:02:38]  counters            Counters on one or all interface
+180238.560: [18:02:38]  dampening           Show interface dampening info
+180238.560: [18:02:38]  description         Show interface description
+180238.560: [18:02:38]  dot1q-tunnel        Show interface dot1q-tunnel
+180238.560: [18:02:38]  link-state-change   Show interface link state change information
+180238.561: [18:02:38]  remark              Show interface remark
+180238.561: [18:02:38]  status              Show interface line status
+180238.561: [18:02:38]  switchport          Show interface switchport information
+180238.561: [18:02:38]  transceiver         Show basic information
+180238.561: [18:02:38]  trunk               Show interface trunk information
+180238.561: [18:02:38]  usage               Show interface bandwidth usage
+180238.561: [18:02:38]  |                   Output modifiers
+180238.561: [18:02:38]  <cr>                
+180238.561: [18:02:38]
+180245.641: [18:02:45]Ruijie#show interfaces   st
+180247.510: [18:02:47]Ruijie#show interfaces   status ?
+180247.516: [18:02:47]  detail        Show interface line staus detail
+180247.527: [18:02:47]  err-disabled  Err-disabled
+180247.527: [18:02:47]  |             Output modifiers
+180247.527: [18:02:47]  <cr>          
+180247.527: [18:02:47]
+180248.511: [18:02:48]Ruijie#show interfaces   status 
+180248.537: [18:02:48]Interface                                Status    Vlan   Duplex   Speed     Type  
+180248.549: [18:02:48]---------------------------------------- --------  ----   -------  --------- ------
+180248.549: [18:02:48]GigabitEthernet 1/0/1                    up        101    Full     1000M     copper
+180248.549: [18:02:48]GigabitEthernet 1/0/2                    up        101    Full     1000M     copper
+180248.550: [18:02:48]GigabitEthernet 1/0/3                    up        101    Full     1000M     copper
+180248.550: [18:02:48]GigabitEthernet 1/0/4                    up        101    Full     1000M     copper
+180248.550: [18:02:48]GigabitEthernet 1/0/5                    up        101    Full     1000M     copper
+180248.550: [18:02:48]GigabitEthernet 1/0/6                    up        101    Full     1000M     copper
+180248.550: [18:02:48]GigabitEthernet 1/0/7                    up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/8                    up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/9                    up        1      Full     100M      copper
+180248.551: [18:02:48]GigabitEthernet 1/0/10                   up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/11                   up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/12                   down      1      Unknown  Unknown   copper
+180248.551: [18:02:48]GigabitEthernet 1/0/13                   up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/14                   up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/15                   up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/16                   up        1      Full     1000M     copper
+180248.551: [18:02:48]GigabitEthernet 1/0/17                   up        300    Full     10M       copper
+180248.552: [18:02:48]GigabitEthernet 1/0/18                   up        300    Full     1000M     copper
+180248.552: [18:02:48]GigabitEthernet 1/0/19                   up        300    Full     1000M     copper
+180248.552: [18:02:48]GigabitEthernet 1/0/20                   up        300    Full     1000M     copper
+180248.552: [18:02:48]GigabitEthernet 1/0/21                   up        300    Full     1000M     copper
+180248.552: [18:02:48]GigabitEthernet 1/0/22                   up        300    Full     1000M     copper
+180249.614: [18:02:49]GigabitEthernet 1/0/23                   up        300    Full     1000M     copper
+180249.628: [18:02:49]GigabitEthernet 1/0/24                   up        300    Full     1000M     copper
+180249.628: [18:02:49]GigabitEthernet 1/0/25                   up        100    Full     1000M     copper
+180249.628: [18:02:49]GigabitEthernet 1/0/26                   up        300    Full     1000M     copper
+180249.628: [18:02:49]GigabitEthernet 1/0/27                   up        300    Full     1000M     copper
+180249.629: [18:02:49]GigabitEthernet 1/0/28                   up        300    Full     1000M     copper
+180249.629: [18:02:49]GigabitEthernet 1/0/29                   up        101    Full     1000M     copper
+180249.629: [18:02:49]GigabitEthernet 1/0/30                   up        101    Full     1000M     copper
+180249.629: [18:02:49]GigabitEthernet 1/0/31                   up        101    Full     1000M     copper
+180249.629: [18:02:49]GigabitEthernet 1/0/32                   up        101    Full     1000M     copper
+180249.630: [18:02:49]GigabitEthernet 1/0/33                   up        101    Full     1000M     copper
+180249.630: [18:02:49]GigabitEthernet 1/0/34                   up        101    Full     1000M     copper
+180249.630: [18:02:49]GigabitEthernet 1/0/35                   down      101    Unknown  Unknown   copper
+180249.630: [18:02:49]GigabitEthernet 1/0/36                   down      101    Unknown  Unknown   copper
+180249.630: [18:02:49]GigabitEthernet 1/0/37                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/38                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/39                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/40                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/41                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/42                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/43                   down      1      Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/44                   down      100    Unknown  Unknown   copper
+180249.631: [18:02:49]GigabitEthernet 1/0/45                   up        300    Full     1000M     copper
+180249.631: [18:02:49]GigabitEthernet 1/0/46                   up        100    Full     100M      copper
+180249.871: [18:02:49]GigabitEthernet 1/0/47                   up        100    Full     1000M     copper
+180249.880: [18:02:49]GigabitEthernet 1/0/48                   up        100    Full     1000M     copper
+180249.880: [18:02:49]GigabitEthernet 2/0/1                    up        101    Full     1000M     copper
+180249.880: [18:02:49]GigabitEthernet 2/0/2                    up        101    Full     1000M     copper
+180249.880: [18:02:49]GigabitEthernet 2/0/3                    up        101    Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/4                    up        101    Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/5                    up        101    Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/6                    up        101    Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/7                    up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/8                    up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/9                    up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/10                   up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/11                   up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/12                   down      1      Unknown  Unknown   copper
+180249.881: [18:02:49]GigabitEthernet 2/0/13                   up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/14                   up        1      Full     1000M     copper
+180249.881: [18:02:49]GigabitEthernet 2/0/15                   up        1      Full     1000M     copper
+180249.882: [18:02:49]GigabitEthernet 2/0/16                   up        1      Full     1000M     copper
+180249.882: [18:02:49]GigabitEthernet 2/0/17                   up        300    Full     1000M     copper
+180249.882: [18:02:49]GigabitEthernet 2/0/18                   up        300    Full     1000M     copper
+180249.882: [18:02:49]GigabitEthernet 2/0/19                   up        300    Full     1000M     copper
+180249.882: [18:02:49]GigabitEthernet 2/0/20                   down      300    Unknown  Unknown   copper
+180249.882: [18:02:49]GigabitEthernet 2/0/21                   up        300    Full     1000M     copper
+180249.891: [18:02:49]GigabitEthernet 2/0/22                   up        300    Full     1000M     copper
+180250.116: [18:02:50]GigabitEthernet 2/0/23                   up        300    Full     1000M     copper
+180250.117: [18:02:50]GigabitEthernet 2/0/24                   up        300    Full     1000M     copper
+180250.117: [18:02:50]GigabitEthernet 2/0/25                   up        100    Full     1000M     copper
+180250.118: [18:02:50]GigabitEthernet 2/0/26                   up        300    Full     1000M     copper
+180250.118: [18:02:50]GigabitEthernet 2/0/27                   up        300    Full     1000M     copper
+180250.118: [18:02:50]GigabitEthernet 2/0/28                   up        300    Full     1000M     copper
+180250.119: [18:02:50]GigabitEthernet 2/0/29                   up        101    Full     1000M     copper
+180250.119: [18:02:50]GigabitEthernet 2/0/30                   up        101    Full     1000M     copper
+180250.119: [18:02:50]GigabitEthernet 2/0/31                   up        101    Full     1000M     copper
+180250.119: [18:02:50]GigabitEthernet 2/0/32                   up        101    Full     1000M     copper
+180250.119: [18:02:50]GigabitEthernet 2/0/33                   up        101    Full     1000M     copper
+180250.120: [18:02:50]GigabitEthernet 2/0/34                   up        101    Full     1000M     copper
+180250.120: [18:02:50]GigabitEthernet 2/0/35                   down      1      Unknown  Unknown   copper
+180250.120: [18:02:50]GigabitEthernet 2/0/36                   down      1      Unknown  Unknown   copper
+180250.120: [18:02:50]GigabitEthernet 2/0/37                   down      1      Unknown  Unknown   copper
+180250.121: [18:02:50]GigabitEthernet 2/0/38                   down      1      Unknown  Unknown   copper
+180250.121: [18:02:50]GigabitEthernet 2/0/39                   down      1      Unknown  Unknown   copper
+180250.121: [18:02:50]GigabitEthernet 2/0/40                   down      1      Unknown  Unknown   copper
+180250.138: [18:02:50]GigabitEthernet 2/0/41                   down      1      Unknown  Unknown   copper
+180250.138: [18:02:50]GigabitEthernet 2/0/42                   down      1      Unknown  Unknown   copper
+180250.138: [18:02:50]GigabitEthernet 2/0/43                   down      1      Unknown  Unknown   copper
+180250.138: [18:02:50]GigabitEthernet 2/0/44                   down      1      Unknown  Unknown   copper
+180250.139: [18:02:50]GigabitEthernet 2/0/45                   down      1      Unknown  Unknown   copper
+180250.139: [18:02:50]GigabitEthernet 2/0/46                   down      1      Unknown  Unknown   copper
+180252.655: [18:02:52]GigabitEthernet 2/0/47                   down      101    Unknown  Unknown   copper
+180252.668: [18:02:52]GigabitEthernet 2/0/48                   up        routed Full     100M      copper
+180252.668: [18:02:52]TenGigabitEthernet 1/0/49                up               Full     10G       fiber
+180252.668: [18:02:52]TenGigabitEthernet 1/0/50                up               Full     10G       fiber
+180252.668: [18:02:52]TenGigabitEthernet 1/0/51                up        101    Full     10G       fiber
+180252.668: [18:02:52]TenGigabitEthernet 1/0/52                up        101    Full     10G       fiber
+180252.669: [18:02:52]TenGigabitEthernet 2/0/49                up               Full     10G       fiber
+180252.669: [18:02:52]TenGigabitEthernet 2/0/50                up               Full     10G       fiber
+180252.669: [18:02:52]TenGigabitEthernet 2/0/51                up        101    Full     1000M     fiber
+180252.669: [18:02:52]TenGigabitEthernet 2/0/52                down      1      Unknown  Unknown   fiber
+180252.669: [18:02:52]AggregatePort 1                          up        1      Full     2000M     copper
+180252.669: [18:02:52]AggregatePort 2                          up        1      Full     2000M     copper
+180252.669: [18:02:52]AggregatePort 3                          up        1      Full     1000M     copper
+180252.669: [18:02:52]AggregatePort 4                          up        1      Full     2000M     copper
+180252.669: [18:02:52]AggregatePort 5                          up        1      Full     2000M     copper
+180252.669: [18:02:52]AggregatePort 6                          down      1      Unknown  Unknown   copper
+180252.669: [18:02:52]AggregatePort 7                          up        1      Full     2000M     copper
+180252.670: [18:02:52]AggregatePort 8                          up        1      Full     2000M     copper
+180252.670: [18:02:52]AggregatePort 9                          up        1      Full     2000M     copper
+180252.676: [18:02:52]AggregatePort 10                         up        1      Full     2000M     copper
+180252.676: [18:02:52]AggregatePort 20                         up        101    Full     2000M     copper
+180252.676: [18:02:52]AggregatePort 21                         up        101    Full     2000M     copper
+180252.677: [18:02:52]AggregatePort 22                         up        101    Full     2000M     copper
+180252.677: [18:02:52]AggregatePort 23                         up        101    Full     2000M     copper
+180258.236: [18:02:58]AggregatePort 24                         up        101    Full     2000M     copper
+180258.248: [18:02:58]AggregatePort 25                         up        101    Full     2000M     copper
+181304.630: [18:13:04][202603100-192.168.8.88-负一楼-接入交换机-18:13:04]
+181304.932: [18:13:04]
+181304.932: [18:13:04]User Access Verification
+181304.932: [18:13:04]
+181304.955: [18:13:04]Password:
+181304.984: [18:13:04]Password:
+181304.999: [18:13:04]
+181305.032: [18:13:05]Last login: Mar 23 2026 18:31:37 from 192.168.6.173 through telnet.
+182311.049: [18:23:11][202603100-192.168.8.88-负一楼-接入交换机-18:23:11]
+182311.359: [18:23:11]
+182311.373: [18:23:11]User Access Verification
+182311.373: [18:23:11]
+182311.386: [18:23:11]Password:
+182311.404: [18:23:11]Password:
+182311.415: [18:23:11]
+182311.451: [18:23:11]Last login: Mar 23 2026 18:45:39 from 192.168.6.173 through telnet.
+183316.635: [18:33:16][202603100-192.168.8.88-负一楼-接入交换机-18:33:16]
+183317.924: [18:33:17]
+183317.924: [18:33:17]User Access Verification
+183317.924: [18:33:17]
+183317.949: [18:33:17]Password:
+183317.972: [18:33:17]Password:
+183318.075: [18:33:18]
+183318.109: [18:33:18]Last login: Mar 23 2026 18:55:45 from 192.168.6.173 through telnet.
+184324.085: [18:43:24][202603100-192.168.8.88-负一楼-接入交换机-18:43:24]
+184324.408: [18:43:24]
+184324.417: [18:43:24]User Access Verification
+184324.417: [18:43:24]
+184324.437: [18:43:24]Password:
+184324.446: [18:43:24]Password:
+184324.465: [18:43:24]
+184324.510: [18:43:24]Last login: Mar 23 2026 19:05:52 from 192.168.6.173 through telnet.
+184819.122: [18:48:19]Ruijie>
+184819.297: [18:48:19]Ruijie>
+184823.182: [18:48:23]Ruijie>ping 192.168.8.37
+184823.208: [18:48:23]Sending 5, 100-byte ICMP Echoes to 192.168.8.37, timeout is 2 seconds:
+184823.227: [18:48:23]  < press Ctrl+C to break >
+184833.740: [18:48:33].....
+184833.761: [18:48:33]Success rate is 0 percent (0/5).
+184843.356: [18:48:43]Ruijie>enab
+184843.999: [18:48:43]Ruijie>enable 
+184844.047: [18:48:44]
+184847.147: [18:48:47]Password:
+184850.101: [18:48:50]Ruijie#show ip int 
+184851.520: [18:48:51]Ruijie#show ip int s
+184855.005: [18:48:55]Ruijie#show int     
+184857.927: [18:48:57]Ruijie#show ?          
+184858.354: [18:48:58]  AggregatePort         AggregatePort IEEE 802.3ad
+184858.372: [18:48:58]  aaa                   AAA Information
+184858.372: [18:48:58]  access-control        Show access-control
+184858.373: [18:48:58]  access-group          Show ACL applied on interface
+184858.373: [18:48:58]  access-lists          Show access list
+184858.373: [18:48:58]  acl                   Acl parameter
+184858.373: [18:48:58]  address-bind          Address binding table
+184858.373: [18:48:58]  address-manage        Ip address manage status
+184858.373: [18:48:58]  alarm                 Alarm led state
+184858.373: [18:48:58]  aliases               Display alias commands
+184858.373: [18:48:58]  anti-arp-spoofing     Anti arp spoofing
+184858.373: [18:48:58]  arp                   ARP table
+184858.373: [18:48:58]  authmanage            Show authmanage
+184858.373: [18:48:58]  bfd                   BFD protocol info
+184858.374: [18:48:58]  bgp                   BGP information
+184858.374: [18:48:58]  boot                  Show boot system config
+184858.374: [18:48:58]  calendar              Manage the calendar clock
+184858.374: [18:48:58]  checkpoint            Show configuration rollback checkpoints
+184858.374: [18:48:58]  class-map             Show QoS Class Map
+184858.374: [18:48:58]  clns                  Connectionless-Mode Network Service (CLNS)
+184858.374: [18:48:58]  clock                 Manage the system clock
+184858.375: [18:48:58]  cpu                   Show system cpu info
+184858.375: [18:48:58]  cpu-protect           Cpu-protect
+184858.375: [18:48:58]  cpurule               Kernel tied information
+184859.188: [18:48:59]  crypto                Show crypto command
+184859.199: [18:48:59]  cwmp                  Cwmp keyword
+184859.199: [18:48:59]  dampening             Display dampening information
+184859.199: [18:48:59]  debugging             State of each debugging option
+184859.199: [18:48:59]  device-level          Show device-level
+184859.199: [18:48:59]  dhcp                  Dynamic Host Configuration Protocol status
+184859.199: [18:48:59]  direct-vlan           Show direct vlan list
+184859.199: [18:48:59]  disk                  Show disk information
+184859.199: [18:48:59]  dldp                  Show dldp information
+184859.199: [18:48:59]  dns                   Show dns
+184859.199: [18:48:59]  dot1q-tunnel          Dot1q-tunnel configuration
+184859.199: [18:48:59]  dot1x                 Show dot1x
+184859.200: [18:48:59]  efm                   Show efm information
+184859.200: [18:48:59]  enable                Enable user block feature
+184859.200: [18:48:59]  erps                  Show erps
+184859.200: [18:48:59]  expert                Expert extended ACL
+184859.200: [18:48:59]  fan                   Show fan
+184859.200: [18:48:59]  file                  Show file system information
+184859.200: [18:48:59]  frame-tag             Tag information
+184859.200: [18:48:59]  ftp-client            Ftp-client information
+184859.200: [18:48:59]  ftp-server            Ftp-server information
+184859.201: [18:48:59]  global-vrf            Global VPN instance information
+184859.214: [18:48:59]  grpc                  Google Remote Procedure Call Protocol (GRPC)
+184859.214: [18:48:59]  gvrp                  GVRP configure command
+184900.221: [18:49:00]  history               Display the session command history
+184900.242: [18:49:00]  hostname              System hostname
+184900.242: [18:49:00]  hosts                 IP dns nameservers, and host table
+184900.242: [18:49:00]  http-fpm              Http fastcgi progress manager
+184900.242: [18:49:00]  inner-priority-trust  Tag-priority-copy configuration
+184900.242: [18:49:00]  install               Show smu install info
+184900.242: [18:49:00]  interfaces            Interface status and configuration
+184900.242: [18:49:00]  ip                    IP information
+184900.243: [18:49:00]  ipsec                 Show ipsec command
+184900.243: [18:49:00]  ipv6                  IPv6 information
+184900.243: [18:49:00]  isis                  Intermediate System - Intermediate System (IS-IS)
+184900.243: [18:49:00]  key                   Key information
+184900.243: [18:49:00]  l2protocol-tunnel     L2protocol tunnel
+184900.243: [18:49:00]  lacp                  Lacp aggregation information
+184900.243: [18:49:00]  language              Show system language
+184900.243: [18:49:00]  license               Licensed service information
+184900.243: [18:49:00]  line                  TTY line information
+184900.243: [18:49:00]  link                  Show link information
+184900.243: [18:49:00]  lldp                  Link Layer Discovery Protocol
+184900.244: [18:49:00]  load-balance-profile  Load balance profile
+184900.244: [18:49:00]  logging               Show the contents of logging buffers
+184900.244: [18:49:00]  mac                   Mac extended ACL
+184900.244: [18:49:00]  mac-address-learning  MAC Address learning
+184900.244: [18:49:00]  mac-address-table     MAC forwarding table
+184901.251: [18:49:01]  mac-loopback          Show mac-loopback information
+184901.270: [18:49:01]  mac-vlan              Show mac vlan
+184901.270: [18:49:01]  macc                  MACC
+184901.270: [18:49:01]  manuinfo              Show manu information
+184901.270: [18:49:01]  memory                Show the use of the system memory
+184901.270: [18:49:01]  mgmt                  Show MGMT virtual information
+184901.270: [18:49:01]  mls                   Show MultiLayer Switching information
+184901.270: [18:49:01]  mmu                   Show mmu information
+184901.270: [18:49:01]  monitor               Show a SPAN session
+184901.270: [18:49:01]  mount                 Show mount information
+184901.270: [18:49:01]  msf                   Msf information
+184901.270: [18:49:01]  msf6                  Msf6 information
+184901.270: [18:49:01]  nac-author-user       Nac author user max number
+184901.270: [18:49:01]  netconf               Netconf show
+184901.270: [18:49:01]  nfpp                  Show NFPP information
+184901.271: [18:49:01]  ntp                   Network time protocol
+184901.271: [18:49:01]  of                    OpenFlow
+184901.271: [18:49:01]  password              Show password information
+184901.271: [18:49:01]  patch                 Show patch info
+184901.271: [18:49:01]  pci-bus               Show pci-bus
+184901.271: [18:49:01]  policy-map            Show QoS Policy Map
+184901.271: [18:49:01]  port-security         Show secure port information
+184901.271: [18:49:01]  power                 Show power
+184901.271: [18:49:01]  privilege             Show current privilege level
+184902.933: [18:49:02]          
+184904.346: [18:49:04]Ruijie#show ip ?
+184904.464: [18:49:04]  access-group         Show ACL applied on interface
+184904.477: [18:49:04]  arp                  Show IP ARP
+184904.485: [18:49:04]  as-path-access-list  List AS path access lists
+184904.485: [18:49:04]  bgp                  BGP information
+184904.485: [18:49:04]  community-list       List community-list
+184904.485: [18:49:04]  defense              Show DoS protection configuration
+184904.485: [18:49:04]  deny                 Show DoS protection configuration
+184904.485: [18:49:04]  dhcp                 Show items in the DHCP database
+184904.485: [18:49:04]  extcommunity-list    List extended-community list
+184904.485: [18:49:04]  igmp                 IGMP options
+184904.485: [18:49:04]  interface            IP interface status and configuration
+184904.485: [18:49:04]  logging              Ref packet logging info
+184904.485: [18:49:04]  manual               Ipsec manual sa
+184904.485: [18:49:04]  mrf                  Mrf information
+184904.486: [18:49:04]  mroute               IP multicast routing table
+184904.486: [18:49:04]  msdp                 Multicast Source Discovery Protocol(MSDP)
+184904.486: [18:49:04]  mvif                 IP multicast interface
+184904.486: [18:49:04]  ospf                 OSPF information
+184904.486: [18:49:04]  packet               IP packet
+184904.486: [18:49:04]  pbr                  Policy-based route information
+184904.486: [18:49:04]  pim                  PIM information
+184904.486: [18:49:04]  policy               IP policy routing
+184904.486: [18:49:04]  prefix-list          List IP prefix lists
+184904.486: [18:49:04]  proposal             Ipsec proposal
+184906.064: [18:49:06]  protocols            IP routing protocol process parameters and statistics
+184906.085: [18:49:06]  raw-socket           Show raw socket
+184906.085: [18:49:06]  ref                  Show Express Forward information
+184906.085: [18:49:06]  rip                  IP RIP show commands
+184906.085: [18:49:06]  rns                  Reliable Network Service
+184906.085: [18:49:06]  rns-server           Reliable Network Service Server
+184906.085: [18:49:06]  route                IP routing table
+184906.086: [18:49:06]  rpf                  Display RPF information for multicast source
+184906.086: [18:49:06]  sockets              Show IPv4 sockets
+184906.086: [18:49:06]  source               Show IP Source Guard binding entry in the database
+184906.086: [18:49:06]  ssh                  Information on SSH
+184906.086: [18:49:06]  udp                  Show UDP sockets
+184906.086: [18:49:06]  urpf                 Unicast reverse path forwarding
+184906.086: [18:49:06]  verify               Show IP Source Guard filter rules
+184906.086: [18:49:06]  vrf                  VPN Routing/Forwarding instance information
+184906.086: [18:49:06]
+184911.060: [18:49:11]Ruijie#show ip int
+184911.629: [18:49:11]Ruijie#show ip interface  ?
+184911.647: [18:49:11]  AggregatePort       Aggregate port interface
+184911.653: [18:49:11]  GigabitEthernet     Gigabit Ethernet interface
+184911.653: [18:49:11]  Loopback            Loopback interface
+184911.653: [18:49:11]  Mgmt                Mgmt interface
+184911.653: [18:49:11]  Null                Null interface
+184911.653: [18:49:11]  TenGigabitEthernet  10G Ethernet interface
+184911.653: [18:49:11]  Tunnel              Tunnel interface
+184911.653: [18:49:11]  VLAN                Vlan interface
+184911.653: [18:49:11]  brief               Brief summary of IP status and configuration
+184911.653: [18:49:11]  |                   Output modifiers
+184911.653: [18:49:11]  <cr>                
+184911.653: [18:49:11]
+184914.840: [18:49:14]Ruijie#show ip interface  b
+184915.675: [18:49:15]Ruijie#show ip interface  brief ?
+184915.693: [18:49:15]  |     Output modifiers
+184915.699: [18:49:15]  <cr>  
+184915.699: [18:49:15]
+184916.458: [18:49:16]Ruijie#show ip interface  brief 
+184916.487: [18:49:16]Interface                                IP-Address(Pri)      IP-Address(Sec)      Status                 Protocol 
+184916.501: [18:49:16]GigabitEthernet 2/0/48                   192.168.8.88/22      no address           up                     up       
+184916.511: [18:49:16]VLAN 1                                   no address           no address           up                     down     
+184916.511: [18:49:16]VLAN 100                                 172.16.100.1/24      no address           up                     up       
+184916.511: [18:49:16]VLAN 101                                 172.16.101.1/24      no address           up                     up       
+184916.511: [18:49:16]VLAN 208                                 172.16.208.1/20      no address           up                     up       
+184916.512: [18:49:16]VLAN 300                                 172.16.1.1/24        no address           up                     up       
+184916.512: [18:49:16]Mgmt 1/0                                 192.168.1.200/24     no address           down                   down     
+184916.512: [18:49:16]Mgmt 2/0                                 no address           no address           down                   down     
+185311.848: [18:53:11]Ruijie#172.16.101.37      brief 
+185311.867: [18:53:11]% Unknown command.
+185311.874: [18:53:11]
+185316.891: [18:53:16]Ruijie#ping 172.16.101.37
+185316.968: [18:53:16]Sending 5, 100-byte ICMP Echoes to 172.16.101.37, timeout is 2 seconds:
+185316.982: [18:53:16]  < press Ctrl+C to break >
+185327.487: [18:53:27].....
+185327.508: [18:53:27]Success rate is 0 percent (0/5).
+185332.025: [18:53:32]Ruijie#ping 172.16.101.36
+185332.053: [18:53:32]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+185332.063: [18:53:32]  < press Ctrl+C to break >
+185342.587: [18:53:42].....
+185342.606: [18:53:42]Success rate is 0 percent (0/5).
+190107.281: [19:01:07]Ruijie#
+190107.440: [19:01:07]Ruijie#
+190117.369: [19:01:17]Ruijie# ping 172.16.101.37
+190117.388: [19:01:17]% Unknown command.
+190117.388: [19:01:17]
+190123.445: [19:01:23]Ruijie#ena
+190124.908: [19:01:24]Ruijie#enable 
+190132.601: [19:01:32]Ruijie#ping 172.16.101.37
+190132.623: [19:01:32]Sending 5, 100-byte ICMP Echoes to 172.16.101.37, timeout is 2 seconds:
+190132.644: [19:01:32]  < press Ctrl+C to break >
+190143.160: [19:01:43].....
+190143.174: [19:01:43]Success rate is 0 percent (0/5).
+190312.404: [19:03:12]Ruijie#ping 172.16.101.37
+190312.443: [19:03:12]Sending 5, 100-byte ICMP Echoes to 172.16.101.37, timeout is 2 seconds:
+190312.456: [19:03:12]  < press Ctrl+C to break >
+190323.054: [19:03:23].....
+190323.055: [19:03:23]Success rate is 0 percent (0/5).
+190450.388: [19:04:50]Ruijie#
+190450.560: [19:04:50]Ruijie#
+190451.371: [19:04:51]Ruijie#ping 172.16.101.37
+190451.393: [19:04:51]Sending 5, 100-byte ICMP Echoes to 172.16.101.37, timeout is 2 seconds:
+190451.402: [19:04:51]  < press Ctrl+C to break >
+190451.929: [19:04:51]!!!!!
+190451.943: [19:04:51]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms.
+190453.955: [19:04:53]Ruijie#ping 172.16.101.36
+190453.981: [19:04:53]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+190453.995: [19:04:53]  < press Ctrl+C to break >
+190504.526: [19:05:04].....
+190504.527: [19:05:04]Success rate is 0 percent (0/5).
+190623.069: [19:06:23]Ruijie#ping 172.16.101.36
+190623.191: [19:06:23]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+190623.209: [19:06:23]  < press Ctrl+C to break >
+190629.586: [19:06:29]...
+190629.605: [19:06:29]Success rate is 0 percent (0/3).
+190635.460: [19:06:35]Ruijie#ping 172.16.101.35
+190635.491: [19:06:35]Sending 5, 100-byte ICMP Echoes to 172.16.101.35, timeout is 2 seconds:
+190635.501: [19:06:35]  < press Ctrl+C to break >
+190646.065: [19:06:46].....
+190646.065: [19:06:46]Success rate is 0 percent (0/5).
+190702.149: [19:07:02]Ruijie#ping 172.16.101.35
+190702.170: [19:07:02]Sending 5, 100-byte ICMP Echoes to 172.16.101.35, timeout is 2 seconds:
+190702.179: [19:07:02]  < press Ctrl+C to break >
+190702.744: [19:07:02]!!!!!
+190702.760: [19:07:02]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/11/53 ms.
+190712.335: [19:07:12]Ruijie#ping 172.16.101.34
+190712.356: [19:07:12]Sending 5, 100-byte ICMP Echoes to 172.16.101.34, timeout is 2 seconds:
+190712.367: [19:07:12]  < press Ctrl+C to break >
+190722.887: [19:07:22].....
+190722.902: [19:07:22]Success rate is 0 percent (0/5).
+190732.030: [19:07:32]Ruijie#ping 172.16.101.34
+190732.650: [19:07:32]Ruijie#
+190732.882: [19:07:32]Ruijie#
+190733.902: [19:07:33]Ruijie#
+190734.045: [19:07:34]Ruijie#
+190734.202: [19:07:34]Ruijie#
+190734.349: [19:07:34]Ruijie#
+190734.496: [19:07:34]Ruijie#
+190734.666: [19:07:34]Ruijie#
+190734.778: [19:07:34]Ruijie#
+190734.934: [19:07:34]Ruijie#
+190735.078: [19:07:35]Ruijie#
+190735.223: [19:07:35]Ruijie#
+191326.404: [19:13:26]Ruijie#ping 172.16.101.37
+191326.426: [19:13:26]Sending 5, 100-byte ICMP Echoes to 172.16.101.37, timeout is 2 seconds:
+191326.435: [19:13:26]  < press Ctrl+C to break >
+191326.957: [19:13:26]!!!!!
+191326.976: [19:13:26]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms.
+191329.002: [19:13:29]Ruijie#ping 172.16.101.36
+191329.027: [19:13:29]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191329.051: [19:13:29]  < press Ctrl+C to break >
+191339.554: [19:13:39].....
+191339.574: [19:13:39]Success rate is 0 percent (0/5).
+191341.766: [19:13:41]Ruijie#ping 172.16.101.35
+191341.785: [19:13:41]Sending 5, 100-byte ICMP Echoes to 172.16.101.35, timeout is 2 seconds:
+191341.796: [19:13:41]  < press Ctrl+C to break >
+191342.314: [19:13:42]!!!!!
+191342.329: [19:13:42]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms.
+191344.498: [19:13:44]Ruijie#ping 172.16.101.34
+191344.521: [19:13:44]Sending 5, 100-byte ICMP Echoes to 172.16.101.34, timeout is 2 seconds:
+191344.532: [19:13:44]  < press Ctrl+C to break >
+191345.096: [19:13:45]!!!!!
+191345.116: [19:13:45]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/10/48 ms.
+191347.114: [19:13:47]Ruijie#ping 172.16.101.33
+191347.142: [19:13:47]Sending 5, 100-byte ICMP Echoes to 172.16.101.33, timeout is 2 seconds:
+191347.153: [19:13:47]  < press Ctrl+C to break >
+191347.721: [19:13:47]!!!!!
+191347.737: [19:13:47]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/11/52 ms.
+191349.347: [19:13:49]Ruijie#ping 172.16.101.32
+191349.365: [19:13:49]Sending 5, 100-byte ICMP Echoes to 172.16.101.32, timeout is 2 seconds:
+191349.377: [19:13:49]  < press Ctrl+C to break >
+191353.679: [19:13:53]..
+191353.820: [19:13:53]Success rate is 0 percent (0/2).
+191353.996: [19:13:53]Ruijie#
+191356.015: [19:13:56]Ruijie#ping 172.16.101.35
+191356.045: [19:13:56]Sending 5, 100-byte ICMP Echoes to 172.16.101.35, timeout is 2 seconds:
+191356.055: [19:13:56]  < press Ctrl+C to break >
+191356.578: [19:13:56]!!!!!
+191356.594: [19:13:56]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms.
+191519.499: [19:15:19]Ruijie#ping 172.16.101.36
+191519.592: [19:15:19]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191519.606: [19:15:19]  < press Ctrl+C to break >
+191530.204: [19:15:30].....
+191530.205: [19:15:30]Success rate is 0 percent (0/5).
+191551.797: [19:15:51]Ruijie#
+191551.952: [19:15:51]Ruijie#
+191552.093: [19:15:52]Ruijie#
+191553.497: [19:15:53]Ruijie#ping 172.16.101.36
+191553.522: [19:15:53]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191553.533: [19:15:53]  < press Ctrl+C to break >
+191604.065: [19:16:04].....
+191604.084: [19:16:04]Success rate is 0 percent (0/5).
+191638.806: [19:16:38]Ruijie#ping 172.16.101.36
+191638.831: [19:16:38]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191638.841: [19:16:38]  < press Ctrl+C to break >
+191649.363: [19:16:49].....
+191649.380: [19:16:49]Success rate is 0 percent (0/5).
+191650.470: [19:16:50]Ruijie#
+191650.588: [19:16:50]Ruijie#
+191650.710: [19:16:50]Ruijie#
+191651.632: [19:16:51]Ruijie#ping 172.16.101.36
+191651.652: [19:16:51]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191651.663: [19:16:51]  < press Ctrl+C to break >
+191700.241: [19:17:00]....!
+191700.258: [19:17:00]Success rate is 20 percent (1/5), round-trip min/avg/max = 59/59/59 ms.
+191701.551: [19:17:01]Ruijie#ping 172.16.101.36
+191701.571: [19:17:01]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191701.581: [19:17:01]  < press Ctrl+C to break >
+191702.143: [19:17:02]!!!!!
+191702.143: [19:17:02]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/4 ms.
+191712.228: [19:17:12]Ruijie#ping 172.16.101.36
+191712.262: [19:17:12]Sending 5, 100-byte ICMP Echoes to 172.16.101.36, timeout is 2 seconds:
+191712.280: [19:17:12]  < press Ctrl+C to break >
+191712.785: [19:17:12]!!!!!
+191712.805: [19:17:12]Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms.
+192717.625: [19:27:17][202603100-192.168.8.88-负一楼-接入交换机-19:27:17]
+192717.931: [19:27:17]
+192717.931: [19:27:17]User Access Verification
+192717.944: [19:27:17]
+192717.958: [19:27:17]Password:
+192717.981: [19:27:17]Password:
+192717.990: [19:27:17]
+192718.034: [19:27:18]Last login: Mar 23 2026 19:15:58 from 192.168.6.173 through telnet.
+193724.129: [19:37:24][202603100-192.168.8.88-负一楼-接入交换机-19:37:24]
+193725.424: [19:37:25]
+193725.424: [19:37:25]User Access Verification
+193725.424: [19:37:25]
+193725.452: [19:37:25]Password:
+193725.455: [19:37:25]Password:
+193725.468: [19:37:25]
+193725.513: [19:37:25]Last login: Mar 23 2026 19:59:52 from 192.168.6.173 through telnet.
+194730.654: [19:47:30][202603100-192.168.8.88-负一楼-接入交换机-19:47:30]
+194731.949: [19:47:31]
+194731.950: [19:47:31]User Access Verification
+194731.950: [19:47:31]
+194731.987: [19:47:31]Password:
+194731.988: [19:47:31]Password:
+194732.002: [19:47:32]
+194732.046: [19:47:32]Last login: Mar 23 2026 20:09:59 from 192.168.6.173 through telnet.
+195738.058: [19:57:38][202603100-192.168.8.88-负一楼-接入交换机-19:57:38]
+195738.558: [19:57:38]
+195738.559: [19:57:38]User Access Verification
+195738.559: [19:57:38]
+195738.588: [19:57:38]Password:
+195738.602: [19:57:38]Password:
+195738.700: [19:57:38]
+195738.737: [19:57:38]Last login: Mar 23 2026 20:20:06 from 192.168.6.173 through telnet.
+200743.553: [20:07:43][202603100-192.168.8.88-负一楼-接入交换机-20:07:43]
+200743.869: [20:07:43]
+200743.870: [20:07:43]User Access Verification
+200743.870: [20:07:43]
+200743.924: [20:07:43]Password:
+200743.924: [20:07:43]Password:
+200743.934: [20:07:43]
+200743.961: [20:07:43]Last login: Mar 23 2026 20:30:12 from 192.168.6.173 through telnet.
+201750.047: [20:17:50][202603100-192.168.8.88-负一楼-接入交换机-20:17:50]
+201750.433: [20:17:50]
+201750.433: [20:17:50]User Access Verification
+201750.433: [20:17:50]
+201750.457: [20:17:50]Password:
+201750.478: [20:17:50]Password:
+201750.542: [20:17:50]
+201750.596: [20:17:50]Last login: Mar 23 2026 20:40:18 from 192.168.6.173 through telnet.
+202755.538: [20:27:55][202603100-192.168.8.88-负一楼-接入交换机-20:27:55]
+202755.976: [20:27:55]
+202755.976: [20:27:55]User Access Verification
+202755.976: [20:27:55]
+202756.000: [20:27:56]Password:
+202756.021: [20:27:56]Password:
+202756.041: [20:27:56]
+202756.098: [20:27:56]Last login: Mar 23 2026 20:50:24 from 192.168.6.173 through telnet.
+203802.051: [20:38:02][202603100-192.168.8.88-负一楼-接入交换机-20:38:02]
+203802.459: [20:38:02]
+203802.459: [20:38:02]User Access Verification
+203802.459: [20:38:02]
+203802.488: [20:38:02]Password:
+203802.508: [20:38:02]Password:
+203802.521: [20:38:02]
+203802.580: [20:38:02]Last login: Mar 23 2026 21:00:30 from 192.168.6.173 through telnet.
+204807.562: [20:48:07][202603100-192.168.8.88-负一楼-接入交换机-20:48:07]
+204807.865: [20:48:07]
+204807.866: [20:48:07]User Access Verification
+204807.866: [20:48:07]
+204807.888: [20:48:07]Password:
+204807.914: [20:48:07]Password:
+204807.928: [20:48:07]
+204807.966: [20:48:07]Last login: Mar 23 2026 21:10:36 from 192.168.6.173 through telnet.
+205814.053: [20:58:14][202603100-192.168.8.88-负一楼-接入交换机-20:58:14]
+205814.348: [20:58:14]
+205814.348: [20:58:14]User Access Verification
+205814.360: [20:58:14]
+205814.365: [20:58:14]Password:
+205814.384: [20:58:14]Password:
+205814.397: [20:58:14]
+205814.447: [20:58:14]Last login: Mar 23 2026 21:20:42 from 192.168.6.173 through telnet.
+210819.549: [21:08:19][202603100-192.168.8.88-负一楼-接入交换机-21:08:19]
+210819.885: [21:08:19]
+210819.885: [21:08:19]User Access Verification
+210819.885: [21:08:19]
+210819.903: [21:08:19]Password:
+210819.924: [21:08:19]Password:
+210819.934: [21:08:19]
+210819.978: [21:08:19]Last login: Mar 23 2026 21:30:48 from 192.168.6.173 through telnet.
+211826.036: [21:18:26][202603100-192.168.8.88-负一楼-接入交换机-21:18:26]
+211826.348: [21:18:26]
+211826.349: [21:18:26]User Access Verification
+211826.349: [21:18:26]
+211826.371: [21:18:26]Password:
+211826.393: [21:18:26]Password:
+211826.431: [21:18:26]
+211826.501: [21:18:26]Last login: Mar 23 2026 21:40:54 from 192.168.6.173 through telnet.
+212831.540: [21:28:31][202603100-192.168.8.88-负一楼-接入交换机-21:28:31]
+212831.855: [21:28:31]
+212831.855: [21:28:31]User Access Verification
+212831.856: [21:28:31]
+212831.872: [21:28:31]Password:
+212831.896: [21:28:31]Password:
+212831.904: [21:28:31]
+212831.963: [21:28:31]Last login: Mar 23 2026 21:51:00 from 192.168.6.173 through telnet.
+213838.051: [21:38:38][202603100-192.168.8.88-负一楼-接入交换机-21:38:38]
+213838.360: [21:38:38]
+213838.361: [21:38:38]User Access Verification
+213838.376: [21:38:38]
+213838.385: [21:38:38]Password:
+213838.406: [21:38:38]Password:
+213838.421: [21:38:38]
+213838.461: [21:38:38]Last login: Mar 23 2026 22:01:06 from 192.168.6.173 through telnet.
+214843.558: [21:48:43][202603100-192.168.8.88-负一楼-接入交换机-21:48:43]
+214844.128: [21:48:44]
+214844.128: [21:48:44]User Access Verification
+214844.128: [21:48:44]
+214844.168: [21:48:44]Password:
+214844.187: [21:48:44]Password:
+214844.194: [21:48:44]
+214844.233: [21:48:44]Last login: Mar 23 2026 22:11:12 from 192.168.6.173 through telnet.
+215849.036: [21:58:49][202603100-192.168.8.88-负一楼-接入交换机-21:58:49]
+215849.358: [21:58:49]
+215849.359: [21:58:49]User Access Verification
+215849.359: [21:58:49]
+215849.380: [21:58:49]Password:
+215849.405: [21:58:49]Password:
+215849.415: [21:58:49]
+215849.457: [21:58:49]Last login: Mar 23 2026 22:21:18 from 192.168.6.173 through telnet.
+220854.540: [22:08:54][202603100-192.168.8.88-负一楼-接入交换机-22:08:54]
+220854.853: [22:08:54]
+220854.854: [22:08:54]User Access Verification
+220854.854: [22:08:54]
+220854.871: [22:08:54]Password:
+220854.892: [22:08:54]Password:
+220854.909: [22:08:54]
+220854.943: [22:08:54]Last login: Mar 23 2026 22:31:23 from 192.168.6.173 through telnet.
+221901.040: [22:19:01][202603100-192.168.8.88-负一楼-接入交换机-22:19:01]
+221901.347: [22:19:01]
+221901.348: [22:19:01]User Access Verification
+221901.348: [22:19:01]
+221901.378: [22:19:01]Password:
+221901.379: [22:19:01]Password:
+221901.391: [22:19:01]
+221901.428: [22:19:01]Last login: Mar 23 2026 22:41:29 from 192.168.6.173 through telnet.
+222906.555: [22:29:06][202603100-192.168.8.88-负一楼-接入交换机-22:29:06]
+222906.867: [22:29:06]
+222906.868: [22:29:06]User Access Verification
+222906.868: [22:29:06]
+222906.884: [22:29:06]Password:
+222906.906: [22:29:06]Password:
+222906.915: [22:29:06]
+222906.954: [22:29:06]Last login: Mar 23 2026 22:51:35 from 192.168.6.173 through telnet.
+223912.037: [22:39:12][202603100-192.168.8.88-负一楼-接入交换机-22:39:12]
+223912.505: [22:39:12]
+223912.505: [22:39:12]User Access Verification
+223912.505: [22:39:12]
+223912.537: [22:39:12]Password:
+223912.558: [22:39:12]Password:
+223912.594: [22:39:12]
+223912.646: [22:39:12]Last login: Mar 23 2026 23:01:41 from 192.168.6.173 through telnet.
+224917.532: [22:49:17][202603100-192.168.8.88-负一楼-接入交换机-22:49:17]
+224917.853: [22:49:17]
+224917.853: [22:49:17]User Access Verification
+224917.853: [22:49:17]
+224917.870: [22:49:17]Password:
+224917.894: [22:49:17]Password:
+224917.907: [22:49:17]
+224917.952: [22:49:17]Last login: Mar 23 2026 23:11:46 from 192.168.6.173 through telnet.
+225923.050: [22:59:23][202603100-192.168.8.88-负一楼-接入交换机-22:59:23]
+225923.361: [22:59:23]
+225923.362: [22:59:23]User Access Verification
+225923.373: [22:59:23]
+225923.390: [22:59:23]Password:
+225923.417: [22:59:23]Password:
+225923.435: [22:59:23]
+225923.469: [22:59:23]Last login: Mar 23 2026 23:21:52 from 192.168.6.173 through telnet.
+230928.539: [23:09:28][202603100-192.168.8.88-负一楼-接入交换机-23:09:28]
+230928.910: [23:09:28]
+230928.919: [23:09:28]User Access Verification
+230928.919: [23:09:28]
+230928.928: [23:09:28]Password:
+230928.947: [23:09:28]Password:
+230929.001: [23:09:29]
+230929.050: [23:09:29]Last login: Mar 23 2026 23:31:57 from 192.168.6.173 through telnet.
+231934.050: [23:19:34][202603100-192.168.8.88-负一楼-接入交换机-23:19:34]
+231934.377: [23:19:34]
+231934.378: [23:19:34]User Access Verification
+231934.378: [23:19:34]
+231934.403: [23:19:34]Password:
+231934.423: [23:19:34]Password:
+231934.431: [23:19:34]
+231934.487: [23:19:34]Last login: Mar 23 2026 23:42:03 from 192.168.6.173 through telnet.
+232939.546: [23:29:39][202603100-192.168.8.88-负一楼-接入交换机-23:29:39]
+232939.862: [23:29:39]
+232939.862: [23:29:39]User Access Verification
+232939.862: [23:29:39]
+232939.880: [23:29:39]Password:
+232939.907: [23:29:39]Password:
+232939.923: [23:29:39]
+232939.956: [23:29:39]Last login: Mar 23 2026 23:52:08 from 192.168.6.173 through telnet.
+233945.030: [23:39:45][202603100-192.168.8.88-负一楼-接入交换机-23:39:45]
+233945.494: [23:39:45]
+233945.509: [23:39:45]User Access Verification
+233945.509: [23:39:45]
+233945.522: [23:39:45]Password:
+233945.540: [23:39:45]Password:
+233945.571: [23:39:45]
+233945.636: [23:39:45]Last login: Mar 24 2026 00:02:14 from 192.168.6.173 through telnet.
+234951.533: [23:49:51][202603100-192.168.8.88-负一楼-接入交换机-23:49:51]
+234951.839: [23:49:51]
+234951.840: [23:49:51]User Access Verification
+234951.840: [23:49:51]
+234951.864: [23:49:51]Password:
+234951.885: [23:49:51]Password:
+234951.897: [23:49:51]
+234951.933: [23:49:51]Last login: Mar 24 2026 00:12:20 from 192.168.6.173 through telnet.
+235957.039: [23:59:57][202603100-192.168.8.88-负一楼-接入交换机-23:59:57]
+235957.363: [23:59:57]
+235957.364: [23:59:57]User Access Verification
+235957.364: [23:59:57]
+235957.400: [23:59:57]Password:
+235957.400: [23:59:57]Password:
+235957.437: [23:59:57]
+235957.502: [23:59:57]Last login: Mar 24 2026 00:22:26 from 192.168.6.173 through telnet.

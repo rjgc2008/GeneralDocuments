@@ -1,0 +1,64 @@
+﻿162831.437: [16:28:31][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk/300.Europe]# 
+162831.587: [16:28:31][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk/300.Europe]# 
+162835.638: [16:28:35][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk/300.Europe]# df -lh
+162835.676: [16:28:35]Filesystem                 Size  Used Avail Use% Mounted on
+162835.676: [16:28:35]udev                       7.8G     0  7.8G   0% /dev
+162835.676: [16:28:35]tmpfs                      1.6G   11M  1.6G   1% /run
+162835.676: [16:28:35]/dev/vda1                   97G   65G   28G  70% /
+162835.676: [16:28:35]tmpfs                      7.9G     0  7.9G   0% /dev/shm
+162835.676: [16:28:35]tmpfs                      5.0M  4.0K  5.0M   1% /run/lock
+162835.677: [16:28:35]/dev/mapper/data-datalv     14T   12T  1.6T  89% /DATA/Media
+162835.677: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/ad7464f3b04db576d0308e3e0102cf3480ddb32ac242dec4bff57a6f0bc5405e/merged
+162835.677: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/cab1dec8f98e168f6ebd0890c23c563d6b1ffcff414f28e3d8a1bf6c2761033d/merged
+162835.677: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/5f32f1dfa35af8ea78a9fcbabe0d06d9c5a8c112a2a4c5650ff68840a3fbc08f/merged
+162835.678: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/c37b91b3a1d81b2b4b4b9b97de8d45e7503ecce359821d09ef31983655cb4e52/merged
+162835.678: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/e9e83947222cf159696283b563d55f1c03a8784d5c2f09dd6f092c600a297f5b/merged
+162835.678: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/178aee37071729ca261883335d47ab495214a98830b72e42324b7c090e0c60ea/merged
+162835.679: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/3c8085ec6d162a2b244810b100e39faeac6766771c1129fe19110608e72ab0e8/merged
+162835.679: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/5c1772a6815275737ab4729520d6485e9eb228dca950c5ca9480821afd23c331/merged
+162835.679: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/5b179abe593fe6023b70f00a8b8fa8870af0f65a9d257a93c8674b46187d02b3/merged
+162835.679: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/dacbbc4d8f73512eb46f2f5bc074bd8f9bc9af6f98f9996453ce2ad991047648/merged
+162835.679: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/df8ccd0a058968ad982529d4e6520e74389d512c5cbb9c2ee650d920840b6962/merged
+162835.679: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/f27db95fc6a187109e4902ee10a92a822a4a0a6664acc4333c92c404c5a7d9eb/merged
+162835.679: [16:28:35]/dev/mapper/data2-data2lv  6.0T  4.5T  1.2T  80% /DATA/Media/Tmp
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/c256c651b3606a2b0bd97265904e73b9b5d427605bbfb113c26b91412671a8dc/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/36405dd3188c588b4aa5d092f2e5dcb5e1f73735d9e2fe15471e2ae613c807e8/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/fec9b9e1cb387fee7500d060d0703f2c0573ff37107c3dfcb6be047c62960bba/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/71d44c3a74f497939dcb09d15573f69259b0c2eca3db98f2d88f5a884a267421/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/f37c98d6612fb3445962d77333799e9ee020f70c98f21e43e0994121521ad3ec/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/1a835e6ae66574f532450791d550153247cab4f273b9926649b1d64f1c49855e/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/2f49a0b0a668bff5faf4dddb0155e717bd2b04ec9c9f20fe51e72f1ab1105a8f/merged
+162835.680: [16:28:35]overlay                     97G   65G   28G  70% /var/lib/docker/overlay2/4bf80f043542c0b5db8d4f0bc877655d7246a8c975cc750175031f24c8db0123/merged
+162835.681: [16:28:35]tmpfs                      1.6G   76K  1.6G   1% /run/user/0
+162835.681: [16:28:35]/dev/mapper/video-videolv  4.0T  1.6T  2.2T  42% /opt/XTV-BACKUP
+162843.534: [16:28:43][root@172-16-208-2 /DATA/Media/BackupOfMobileDisk/300.Europe]# cd /DATA/Media/
+162844.217: [16:28:44][root@172-16-208-2 /DATA/Media]# ll
+162844.233: [16:28:44]total 2.5G
+162844.233: [16:28:44]-rw-r--r--  1 sambauser sambauser  589 Feb 12 09:44  1.txt
+162844.233: [16:28:44]-rw-rw-r--  1 wyj       wyj       2.5G Aug 14  2025  20000.Leagues.Under.the.Sea.1954.1080p.BluRay.H264.AAC-RARBG.mp4
+162844.234: [16:28:44]-rwxrw-rw-  1 sambauser sambauser    0 Feb 25 13:43 '20260213 信息网络根服务验证系统进展项目汇报.pptx'
+162844.234: [16:28:44]drwxrwxrwx  3 root      root      4.0K Sep 29 10:28  AppData
+162844.234: [16:28:44]drwxrwxrwx 12 wyj       wyj       4.0K Jan 23 14:32  BackupOfMobileDisk
+162844.234: [16:28:44]drwxrwxrwx 10 root      root      4.0K Jan 16 23:08  Documents
+162844.234: [16:28:44]drwxrwxr-x  3 wyj       wyj       4.0K Jan 30 22:55  Doucuments
+162844.235: [16:28:44]drwxrwxrwx  2 root      root       16K Apr  6  2023  lost+found
+162844.235: [16:28:44]drwxrwxrwx 51 wyj       wyj        24K Feb 28 09:30  Movies
+162844.235: [16:28:44]drwxrwxrwx 13 root      root      4.0K Jun  1  2025  Music
+162844.235: [16:28:44]drwxrwxrwx 53 root      root      4.0K Sep 30 14:45  Picture
+162844.235: [16:28:44]drwxrwxr-x  4 wyj       wyj       4.0K Oct 30 17:57  Pictures
+162844.235: [16:28:44]drwxrwxrwx 23 root      root      4.0K Feb 27 08:12  Tmp
+162844.235: [16:28:44]drwxrwxrwx 49 wyj       wyj        12K Jan 18 22:13  Tmp2
+162844.235: [16:28:44]drwxrwxrwx 51 wyj       wyj        12K Feb 28 09:41 'TV Shows'
+162844.235: [16:28:44]drwxr-xr-x  6 sambauser sambauser 4.0K Mar  2 16:27  WYJ
+162844.235: [16:28:44]drwxrwxrwx  3 root      root      4.0K Feb 27 15:33  XTV-BACKUP
+162844.235: [16:28:44]-rwxrw-rw-  1 sambauser sambauser 152K Feb 13 16:48  方案拓扑.png
+162844.236: [16:28:44]-rwx------  1 sambauser sambauser 368K Feb 13 15:17  方案拓扑.vsdx
+162844.236: [16:28:44]drwxr-xr-x  9 sambauser sambauser 4.0K Aug 19  2025  软考高级《网络规划设计师》资料包
+162844.236: [16:28:44]-rwxrw-rw-  1 sambauser sambauser  19M Feb  5 18:39  量子中心组网图-样板间.png
+162848.406: [16:28:48][root@172-16-208-2 /DATA/Media]# cd XTV-BACKUP/
+162849.131: [16:28:49][root@172-16-208-2 /DATA/Media/XTV-BACKUP]# ll
+162849.151: [16:28:49]total 4.0K
+162849.151: [16:28:49]drwxrwxr-x 5 sambauser sambauser 4.0K Feb 28 05:00 xiaomi_camera_videos
+162850.785: [16:28:50][root@172-16-208-2 /DATA/Media/XTV-BACKUP]# du -sh *
+162906.193: [16:29:06]90G     xiaomi_camera_videos
+162946.899: [16:29:46][root@172-16-208-2 /DATA/Media/XTV-BACKUP]# clear

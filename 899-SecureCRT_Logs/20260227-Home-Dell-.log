@@ -1,0 +1,101 @@
+﻿154827.074: [15:48:27][202602Home-Dell--15:48:27]
+154827.115: [15:48:27]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+154827.115: [15:48:27]
+154827.115: [15:48:27]The programs included with the Debian GNU/Linux system are free software;
+154827.115: [15:48:27]the exact distribution terms for each program are described in the
+154827.115: [15:48:27]individual files in /usr/share/doc/*/copyright.
+154827.115: [15:48:27]
+154827.115: [15:48:27]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+154827.115: [15:48:27]permitted by applicable law.
+154827.116: [15:48:27]Last login: Fri Feb 27 10:51:40 2026 from 223.107.68.194
+154831.126: [15:48:31]root@anncara-computer:~# df -lh
+154831.132: [15:48:31]Filesystem      Size  Used Avail Use% Mounted on
+154831.132: [15:48:31]udev            1.9G     0  1.9G   0% /dev
+154831.132: [15:48:31]tmpfs           381M   15M  367M   4% /run
+154831.132: [15:48:31]/dev/sdb2       113G  2.7G  104G   3% /
+154831.133: [15:48:31]tmpfs           1.9G     0  1.9G   0% /dev/shm
+154831.133: [15:48:31]efivarfs        256K  185K   67K  74% /sys/firmware/efi/efivars
+154831.133: [15:48:31]tmpfs           5.0M     0  5.0M   0% /run/lock
+154831.133: [15:48:31]tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+154831.133: [15:48:31]tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+154831.133: [15:48:31]tmpfs           1.9G     0  1.9G   0% /tmp
+154831.133: [15:48:31]/dev/sdb1       975M  8.8M  966M   1% /boot/efi
+154831.133: [15:48:31]/dev/sda1       1.5T  915G  478G  66% /DATA
+154831.133: [15:48:31]tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+154831.133: [15:48:31]tmpfs           381M  4.0K  381M   1% /run/user/0
+154837.576: [15:48:37]root@anncara-computer:~# cd /DATA/
+154838.235: [15:48:38]root@anncara-computer:/DATA# ll
+154838.245: [15:48:38]total 36K
+154838.245: [15:48:38]drwx------  2 root      root       16K Aug 29 21:47 lost+found
+154838.245: [15:48:38]drwxr-xr-x  2 root      root      4.0K Oct 24 21:51 Movies
+154838.245: [15:48:38]drwxrwxrwx 46 root      root      4.0K Jan 14 08:45 Pictures
+154838.245: [15:48:38]drwxr-xr-x  3 root      root      4.0K Dec 21 20:01 Rita
+154838.246: [15:48:38]drwxr-xr-x  3 root      root      4.0K Dec 21 20:00 TV
+154838.246: [15:48:38]drwxrwxr-x  4 sambauser sambauser 4.0K Oct  9 17:16 xiaomi_camera_videos
+154843.953: [15:48:43]root@anncara-computer:/DATA# cd xiaomi_camera_videos/
+154844.897: [15:48:44]root@anncara-computer:/DATA/xiaomi_camera_videos# ll
+154844.897: [15:48:44]total 120K
+154844.897: [15:48:44]drwxrwxr-x 1415 sambauser sambauser 52K Feb 27 15:01 788b2ac9b9e6
+154844.897: [15:48:44]drwxrwxr-x  123 sambauser sambauser 56K Feb 27 12:04 94f8277f09f8
+154844.897: [15:48:44]-rwxr-xr-x    1 root      root      733 Oct  9 17:16 rsync.sh
+154848.660: [15:48:48]root@anncara-computer:/DATA/xiaomi_camera_videos# du -sh *
+154848.723: [15:48:48]75G     788b2ac9b9e6
+154848.735: [15:48:48]8.9G    94f8277f09f8
+154848.735: [15:48:48]4.0K    rsync.sh
+160430.794: [16:04:30]root@anncara-computer:/DATA/xiaomi_camera_videos# crontab -l
+160430.795: [16:04:30]# Edit this file to introduce tasks to be run by cron.
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# Each task to run has to be defined through a single line
+160430.795: [16:04:30]# indicating with different fields when the task will be run
+160430.795: [16:04:30]# and what command to run for the task
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# To define the time you can provide concrete values for
+160430.795: [16:04:30]# minute (m), hour (h), day of month (dom), month (mon),
+160430.795: [16:04:30]# and day of week (dow) or use '*' in these fields (for 'any').
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# Notice that tasks will be started based on the cron's system
+160430.795: [16:04:30]# daemon's notion of time and timezones.
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# Output of the crontab jobs (including errors) is sent through
+160430.795: [16:04:30]# email to the user the crontab file belongs to (unless redirected).
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# For example, you can run a backup of all your user accounts
+160430.795: [16:04:30]# at 5 a.m every week with:
+160430.795: [16:04:30]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# For more information see the manual pages of crontab(5) and cron(8)
+160430.795: [16:04:30]# 
+160430.795: [16:04:30]# m h  dom mon dow   command
+160430.795: [16:04:30]SHELL=/usr/bin/bash
+160430.795: [16:04:30]PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+160430.795: [16:04:30]@reboot sleep 20 && /usr/bin/iw phy0 wowlan enable magic-packet
+160430.795: [16:04:30]13 4 * * * bash /usr/local/bin/frp/frp_0.44.0_linux_amd64/frps.sh
+160430.796: [16:04:30]@reboot sleep 30 && /usr/local/bin/nftables/svc_guard.sh start
+160430.796: [16:04:30]0 5 * * * bash /DATA/xiaomi_camera_videos/rsync.sh
+160430.796: [16:04:30]0 6 * * * /usr/bin/bash /root/.config/clash/add_routes_from_file.sh
+160430.796: [16:04:30]0 4 * * * /usr/bin/bash /root/.config/clash/dns2.sh
+160430.796: [16:04:30]0 * * * * /usr/bin/bash /usr/local/bin/wg0/check_wg0.sh >/dev/null 2>&1
+160430.796: [16:04:30]5 4 * * * /usr/bin/bash /usr/local/bin/checkip/check_local_ip.sh
+160442.570: [16:04:42]root@anncara-computer:/DATA/xiaomi_camera_videos# vi /DATA/xiaomi_camera_videos/rsync.sh
+160442.657: [16:04:42]#!/bin/bash
+160442.658: [16:04:42]# 功能：将 A 主机 /data/project/ 单向同步到 B 主机
+160442.658: [16:04:42]# ============================================
+160442.658: [16:04:42]
+160442.658: [16:04:42]SRC_DIR="/DATA/xiaomi_camera_videos/"
+160442.658: [16:04:42]DEST_USER="root"
+160442.658: [16:04:42]DEST_HOST="10.253.0.2"
+160442.658: [16:04:42]DEST_DIR="/DATA/Media/XTV-BACKUP/xiaomi_camera_videos/"
+160442.658: [16:04:42]LOG_FILE="/var/log/rsync_project.log"
+160442.659: [16:04:42]DATE=$(date '+%Y-%m-%d %H:%M:%S')
+160442.659: [16:04:42]
+160442.659: [16:04:42]echo "[$DATE] Start rsync..." >> $LOG_FILE
+160442.659: [16:04:42]
+160442.659: [16:04:42]rsync -avz \
+160442.659: [16:04:42]  --exclude '.git/' \
+160442.659: [16:04:42]  --exclude 'tmp/**' \
+160442.659: [16:04:42]  --partial --progress \
+160442.659: [16:04:42]  -e 'ssh -p 22' \
+160442.660: [16:04:42]  "${SRC_DIR}" "${DEST_USER}@${DEST_HOST}:${DEST_DIR}" >> $LOG_FILE 2>&1
+160442.660: [16:04:42]
+160442.660: [16:04:42]echo "[$DATE] Rsync finished." >> $LOG_FILE
+160442.660: [16:04:42]echo "----------------------------------------" >> $LOG_FILE

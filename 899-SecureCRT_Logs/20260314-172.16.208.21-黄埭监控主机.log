@@ -1,0 +1,159 @@
+﻿024416.578: [02:44:16][202603172.16.208.21-黄埭监控主机-02:44:16]
+024416.598: [02:44:16]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+024416.598: [02:44:16]
+024416.598: [02:44:16] * Documentation:  https://help.ubuntu.com
+024416.598: [02:44:16] * Management:     https://landscape.canonical.com
+024416.598: [02:44:16] * Support:        https://ubuntu.com/pro
+024416.599: [02:44:16]
+024416.599: [02:44:16] System information as of Sat Mar 14 02:44:16 AM CST 2026
+024416.599: [02:44:16]
+024416.599: [02:44:16]  System load:  0.14               Processes:             219
+024416.599: [02:44:16]  Usage of /:   5.2% of 294.23GB   Users logged in:       2
+024416.599: [02:44:16]  Memory usage: 47%                IPv4 address for ens3: 172.16.208.21
+024416.599: [02:44:16]  Swap usage:   0%
+024416.599: [02:44:16]
+024416.599: [02:44:16] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+024416.599: [02:44:16]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+024416.599: [02:44:16]
+024416.600: [02:44:16]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+024416.600: [02:44:16]
+024416.600: [02:44:16]Expanded Security Maintenance for Applications is not enabled.
+024416.600: [02:44:16]
+024416.600: [02:44:16]85 updates can be applied immediately.
+024416.600: [02:44:16]17 of these updates are standard security updates.
+024416.600: [02:44:16]To see these additional updates run: apt list --upgradable
+024416.600: [02:44:16]
+024416.600: [02:44:16]Enable ESM Apps to receive additional future security updates.
+024416.601: [02:44:16]See https://ubuntu.com/esm or run: sudo pro status
+024416.601: [02:44:16]
+024416.601: [02:44:16]New release '24.04.4 LTS' available.
+024416.601: [02:44:16]Run 'do-release-upgrade' to upgrade to it.
+024416.601: [02:44:16]
+024416.601: [02:44:16]
+024416.601: [02:44:16]Last login: Fri Mar 13 18:45:56 2026 from 192.168.4.222
+061416.123: [06:14:16][202603172.16.208.21-黄埭监控主机-06:14:16]
+061416.143: [06:14:16]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+061416.143: [06:14:16]
+061416.143: [06:14:16] * Documentation:  https://help.ubuntu.com
+061416.144: [06:14:16] * Management:     https://landscape.canonical.com
+061416.144: [06:14:16] * Support:        https://ubuntu.com/pro
+061416.144: [06:14:16]
+061416.144: [06:14:16] System information as of Sat Mar 14 06:14:15 AM CST 2026
+061416.144: [06:14:16]
+061416.144: [06:14:16]  System load:  0.07               Processes:             223
+061416.144: [06:14:16]  Usage of /:   5.3% of 294.23GB   Users logged in:       2
+061416.144: [06:14:16]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+061416.144: [06:14:16]  Swap usage:   0%
+061416.144: [06:14:16]
+061416.145: [06:14:16] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+061416.145: [06:14:16]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+061416.145: [06:14:16]
+061416.145: [06:14:16]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+061416.145: [06:14:16]
+061416.145: [06:14:16]Expanded Security Maintenance for Applications is not enabled.
+061416.145: [06:14:16]
+061416.145: [06:14:16]85 updates can be applied immediately.
+061416.145: [06:14:16]17 of these updates are standard security updates.
+061416.146: [06:14:16]To see these additional updates run: apt list --upgradable
+061416.146: [06:14:16]
+061416.146: [06:14:16]Enable ESM Apps to receive additional future security updates.
+061416.146: [06:14:16]See https://ubuntu.com/esm or run: sudo pro status
+061416.146: [06:14:16]
+061416.146: [06:14:16]New release '24.04.4 LTS' available.
+061416.146: [06:14:16]Run 'do-release-upgrade' to upgrade to it.
+061416.146: [06:14:16]
+061416.146: [06:14:16]
+061416.146: [06:14:16]Last login: Sat Mar 14 02:44:16 2026 from 192.168.4.222
+154130.402: [15:41:30][202603172.16.208.21-黄埭监控主机-15:41:30]
+154130.417: [15:41:30]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+154130.417: [15:41:30]
+154130.418: [15:41:30] * Documentation:  https://help.ubuntu.com
+154130.418: [15:41:30] * Management:     https://landscape.canonical.com
+154130.418: [15:41:30] * Support:        https://ubuntu.com/pro
+154130.418: [15:41:30]
+154130.418: [15:41:30] System information as of Sat Mar 14 03:41:29 PM CST 2026
+154130.418: [15:41:30]
+154130.418: [15:41:30]  System load:  0.0                Processes:             220
+154130.418: [15:41:30]  Usage of /:   5.3% of 294.23GB   Users logged in:       2
+154130.418: [15:41:30]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+154130.418: [15:41:30]  Swap usage:   0%
+154130.418: [15:41:30]
+154130.419: [15:41:30] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+154130.419: [15:41:30]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+154130.419: [15:41:30]
+154130.419: [15:41:30]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+154130.419: [15:41:30]
+154130.419: [15:41:30]Expanded Security Maintenance for Applications is not enabled.
+154130.419: [15:41:30]
+154130.419: [15:41:30]68 updates can be applied immediately.
+154130.419: [15:41:30]To see these additional updates run: apt list --upgradable
+154130.419: [15:41:30]
+154130.419: [15:41:30]Enable ESM Apps to receive additional future security updates.
+154130.420: [15:41:30]See https://ubuntu.com/esm or run: sudo pro status
+154130.420: [15:41:30]
+154130.420: [15:41:30]
+154130.420: [15:41:30]Last login: Sat Mar 14 06:14:16 2026 from 192.168.4.222
+184704.609: [18:47:04][202603172.16.208.21-黄埭监控主机-18:47:04]
+184704.629: [18:47:04]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+184704.629: [18:47:04]
+184704.629: [18:47:04] * Documentation:  https://help.ubuntu.com
+184704.629: [18:47:04] * Management:     https://landscape.canonical.com
+184704.629: [18:47:04] * Support:        https://ubuntu.com/pro
+184704.629: [18:47:04]
+184704.629: [18:47:04] System information as of Sat Mar 14 06:47:04 PM CST 2026
+184704.629: [18:47:04]
+184704.629: [18:47:04]  System load:  0.12               Processes:             222
+184704.630: [18:47:04]  Usage of /:   5.3% of 294.23GB   Users logged in:       2
+184704.630: [18:47:04]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+184704.630: [18:47:04]  Swap usage:   0%
+184704.630: [18:47:04]
+184704.630: [18:47:04] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+184704.631: [18:47:04]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+184704.631: [18:47:04]
+184704.631: [18:47:04]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+184704.631: [18:47:04]
+184704.631: [18:47:04]Expanded Security Maintenance for Applications is not enabled.
+184704.631: [18:47:04]
+184704.631: [18:47:04]68 updates can be applied immediately.
+184704.632: [18:47:04]To see these additional updates run: apt list --upgradable
+184704.632: [18:47:04]
+184704.632: [18:47:04]Enable ESM Apps to receive additional future security updates.
+184704.632: [18:47:04]See https://ubuntu.com/esm or run: sudo pro status
+184704.632: [18:47:04]
+184704.632: [18:47:04]New release '24.04.4 LTS' available.
+184704.632: [18:47:04]Run 'do-release-upgrade' to upgrade to it.
+184704.632: [18:47:04]
+184704.632: [18:47:04]
+184704.633: [18:47:04]Last login: Sat Mar 14 15:41:30 2026 from 192.168.4.222
+222650.463: [22:26:50][202603172.16.208.21-黄埭监控主机-22:26:50]
+222650.479: [22:26:50]Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+222650.480: [22:26:50]
+222650.480: [22:26:50] * Documentation:  https://help.ubuntu.com
+222650.480: [22:26:50] * Management:     https://landscape.canonical.com
+222650.480: [22:26:50] * Support:        https://ubuntu.com/pro
+222650.480: [22:26:50]
+222650.480: [22:26:50] System information as of Sat Mar 14 10:26:50 PM CST 2026
+222650.480: [22:26:50]
+222650.481: [22:26:50]  System load:  0.06               Processes:             220
+222650.481: [22:26:50]  Usage of /:   5.3% of 294.23GB   Users logged in:       2
+222650.481: [22:26:50]  Memory usage: 48%                IPv4 address for ens3: 172.16.208.21
+222650.481: [22:26:50]  Swap usage:   0%
+222650.481: [22:26:50]
+222650.481: [22:26:50] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+222650.482: [22:26:50]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+222650.482: [22:26:50]
+222650.482: [22:26:50]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+222650.482: [22:26:50]
+222650.482: [22:26:50]Expanded Security Maintenance for Applications is not enabled.
+222650.482: [22:26:50]
+222650.482: [22:26:50]68 updates can be applied immediately.
+222650.483: [22:26:50]To see these additional updates run: apt list --upgradable
+222650.483: [22:26:50]
+222650.483: [22:26:50]Enable ESM Apps to receive additional future security updates.
+222650.483: [22:26:50]See https://ubuntu.com/esm or run: sudo pro status
+222650.483: [22:26:50]
+222650.483: [22:26:50]New release '24.04.4 LTS' available.
+222650.483: [22:26:50]Run 'do-release-upgrade' to upgrade to it.
+222650.483: [22:26:50]
+222650.483: [22:26:50]
+222650.484: [22:26:50]Last login: Sat Mar 14 18:47:04 2026 from 192.168.4.222

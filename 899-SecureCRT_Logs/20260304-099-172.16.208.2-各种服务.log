@@ -1,0 +1,375 @@
+﻿091038.486: [09:10:38][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# 
+091038.579: [09:10:38][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# 
+091040.298: [09:10:40][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip a
+091040.298: [09:10:40]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+091040.298: [09:10:40]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+091040.299: [09:10:40]    inet 127.0.0.1/8 scope host lo
+091040.299: [09:10:40]       valid_lft forever preferred_lft forever
+091040.299: [09:10:40]    inet6 ::1/128 scope host 
+091040.299: [09:10:40]       valid_lft forever preferred_lft forever
+091040.299: [09:10:40]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+091040.299: [09:10:40]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+091040.299: [09:10:40]    altname enp0s3
+091040.300: [09:10:40]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+091040.300: [09:10:40]       valid_lft forever preferred_lft forever
+091040.300: [09:10:40]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+091040.300: [09:10:40]       valid_lft forever preferred_lft forever
+091040.300: [09:10:40]4: tailscale0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc pfifo_fast state UNKNOWN group default qlen 500
+091040.300: [09:10:40]    link/none 
+091040.300: [09:10:40]    inet 100.92.100.90/32 scope global tailscale0
+091040.300: [09:10:40]       valid_lft forever preferred_lft forever
+091040.301: [09:10:40]    inet6 fd7a:115c:a1e0::1a01:64a7/128 scope global 
+091040.301: [09:10:40]       valid_lft forever preferred_lft forever
+091040.301: [09:10:40]    inet6 fe80::fe4a:ccdf:4c44:cdc8/64 scope link stable-privacy 
+091040.301: [09:10:40]       valid_lft forever preferred_lft forever
+091040.302: [09:10:40]5: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+091040.302: [09:10:40]    link/ether 02:42:5b:3f:a9:6b brd ff:ff:ff:ff:ff:ff
+091040.302: [09:10:40]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+091040.302: [09:10:40]       valid_lft forever preferred_lft forever
+091040.303: [09:10:40]    inet6 fe80::42:5bff:fe3f:a96b/64 scope link 
+091040.303: [09:10:40]       valid_lft forever preferred_lft forever
+091040.303: [09:10:40]6: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+091040.303: [09:10:40]    link/ether 02:42:33:92:ed:66 brd ff:ff:ff:ff:ff:ff
+091040.303: [09:10:40]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+091040.304: [09:10:40]       valid_lft forever preferred_lft forever
+091040.304: [09:10:40]    inet6 fe80::42:33ff:fe92:ed66/64 scope link 
+091040.304: [09:10:40]       valid_lft forever preferred_lft forever
+091040.305: [09:10:40]8: veth0d8b609@if7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+091040.305: [09:10:40]    link/ether 12:2e:08:cc:93:83 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+091040.305: [09:10:40]    inet6 fe80::102e:8ff:fecc:9383/64 scope link 
+091040.306: [09:10:40]       valid_lft forever preferred_lft forever
+091040.306: [09:10:40]10: veth7349c5b@if9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.306: [09:10:40]    link/ether 5a:c5:4d:5b:18:72 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+091040.307: [09:10:40]    inet6 fe80::58c5:4dff:fe5b:1872/64 scope link 
+091040.307: [09:10:40]       valid_lft forever preferred_lft forever
+091040.307: [09:10:40]12: veth5031693@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+091040.319: [09:10:40]    link/ether ba:d9:f2:bd:96:56 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+091040.319: [09:10:40]    inet6 fe80::b8d9:f2ff:febd:9656/64 scope link 
+091040.319: [09:10:40]       valid_lft forever preferred_lft forever
+091040.319: [09:10:40]14: veth6b03248@if13: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.319: [09:10:40]    link/ether be:45:df:8f:51:46 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+091040.319: [09:10:40]    inet6 fe80::bc45:dfff:fe8f:5146/64 scope link 
+091040.319: [09:10:40]       valid_lft forever preferred_lft forever
+091040.319: [09:10:40]16: veth271af5a@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+091040.320: [09:10:40]    link/ether 9e:3c:b8:e1:d4:55 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+091040.320: [09:10:40]    inet6 fe80::9c3c:b8ff:fee1:d455/64 scope link 
+091040.320: [09:10:40]       valid_lft forever preferred_lft forever
+091040.320: [09:10:40]18: veth60c1e34@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.320: [09:10:40]    link/ether be:5b:27:ce:71:53 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+091040.320: [09:10:40]    inet6 fe80::bc5b:27ff:fece:7153/64 scope link 
+091040.320: [09:10:40]       valid_lft forever preferred_lft forever
+091040.320: [09:10:40]20: vethc3b152c@if19: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+091040.320: [09:10:40]    link/ether ae:ce:a4:49:f9:0a brd ff:ff:ff:ff:ff:ff link-netnsid 9
+091040.321: [09:10:40]    inet6 fe80::acce:a4ff:fe49:f90a/64 scope link 
+091040.321: [09:10:40]       valid_lft forever preferred_lft forever
+091040.321: [09:10:40]22: vetha44ef53@if21: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.321: [09:10:40]    link/ether 66:91:b2:cd:a4:14 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+091040.321: [09:10:40]    inet6 fe80::6491:b2ff:fecd:a414/64 scope link 
+091040.321: [09:10:40]       valid_lft forever preferred_lft forever
+091040.321: [09:10:40]24: vethc92584d@if23: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.321: [09:10:40]    link/ether d2:80:28:fe:99:59 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+091040.321: [09:10:40]    inet6 fe80::d080:28ff:fefe:9959/64 scope link 
+091040.321: [09:10:40]       valid_lft forever preferred_lft forever
+091040.322: [09:10:40]26: veth8feb8ac@if25: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.322: [09:10:40]    link/ether 76:27:ef:73:fa:fb brd ff:ff:ff:ff:ff:ff link-netnsid 8
+091040.322: [09:10:40]    inet6 fe80::7427:efff:fe73:fafb/64 scope link 
+091040.322: [09:10:40]       valid_lft forever preferred_lft forever
+091040.322: [09:10:40]30: veth8d73358@if29: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.322: [09:10:40]    link/ether ee:11:30:0c:2c:6a brd ff:ff:ff:ff:ff:ff link-netnsid 10
+091040.322: [09:10:40]    inet6 fe80::ec11:30ff:fe0c:2c6a/64 scope link 
+091040.322: [09:10:40]       valid_lft forever preferred_lft forever
+091040.322: [09:10:40]32: veth9c71130@if31: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.323: [09:10:40]    link/ether 5e:be:d2:72:c1:99 brd ff:ff:ff:ff:ff:ff link-netnsid 12
+091040.323: [09:10:40]    inet6 fe80::5cbe:d2ff:fe72:c199/64 scope link 
+091040.323: [09:10:40]       valid_lft forever preferred_lft forever
+091040.323: [09:10:40]34: veth57e9582@if33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.323: [09:10:40]    link/ether ce:ad:74:9f:3f:7b brd ff:ff:ff:ff:ff:ff link-netnsid 14
+091040.323: [09:10:40]    inet6 fe80::ccad:74ff:fe9f:3f7b/64 scope link 
+091040.323: [09:10:40]       valid_lft forever preferred_lft forever
+091040.323: [09:10:40]36: vethf5423ba@if35: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.323: [09:10:40]    link/ether b6:f4:88:36:00:26 brd ff:ff:ff:ff:ff:ff link-netnsid 11
+091040.324: [09:10:40]    inet6 fe80::b4f4:88ff:fe36:26/64 scope link 
+091040.324: [09:10:40]       valid_lft forever preferred_lft forever
+091040.324: [09:10:40]40: vetha7af7d0@if39: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+091040.324: [09:10:40]    link/ether 62:f3:b1:28:7d:32 brd ff:ff:ff:ff:ff:ff link-netnsid 13
+091040.324: [09:10:40]    inet6 fe80::60f3:b1ff:fe28:7d32/64 scope link 
+091040.324: [09:10:40]       valid_lft forever preferred_lft forever
+091040.324: [09:10:40]42: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+091040.324: [09:10:40]    link/none 
+091040.324: [09:10:40]    inet 10.253.0.2/32 scope global wg0
+091040.324: [09:10:40]       valid_lft forever preferred_lft forever
+091040.324: [09:10:40]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+091040.324: [09:10:40]       valid_lft forever preferred_lft forever
+091042.403: [09:10:42][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip r
+091042.404: [09:10:42]default via 172.16.208.1 dev ens3 proto dhcp metric 100 
+091042.404: [09:10:42]3.38.40.81 via 172.16.208.4 dev ens3 
+091042.404: [09:10:42]3.38.218.76 via 172.16.208.4 dev ens3 
+091042.404: [09:10:42]3.113.29.82 via 172.16.208.4 dev ens3 
+091042.404: [09:10:42]8.8.8.8 via 172.16.208.4 dev ens3 
+091042.404: [09:10:42]10.253.0.3 dev wg0 scope link 
+091042.405: [09:10:42]10.253.0.11 dev wg0 scope link 
+091042.405: [09:10:42]13.213.48.122 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]13.229.224.81 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]13.230.10.49 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]13.250.46.240 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]13.250.97.96 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]18.136.204.31 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]18.142.254.144 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]18.162.124.168 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]18.162.243.48 via 172.16.208.4 dev ens3 
+091042.405: [09:10:42]18.162.246.126 via 172.16.208.4 dev ens3 
+091042.406: [09:10:42]18.183.170.195 via 172.16.208.4 dev ens3 
+091042.406: [09:10:42]18.183.172.244 via 172.16.208.4 dev ens3 
+091042.406: [09:10:42]35.72.8.247 via 172.16.208.4 dev ens3 
+091042.406: [09:10:42]35.166.68.224 via 172.16.208.4 dev ens3 
+091042.406: [09:10:42]43.198.82.222 via 172.16.208.4 dev ens3 
+091042.406: [09:10:42]43.198.86.175 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.198.97.168 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.199.34.225 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.199.46.193 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.199.62.137 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.199.67.131 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.199.74.81 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.199.147.87 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.212.116.205 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]43.212.191.9 via 172.16.208.4 dev ens3 
+091042.418: [09:10:42]47.129.58.159 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]47.129.222.20 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]52.68.183.176 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]52.194.212.197 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]52.195.209.158 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]52.195.218.57 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]54.150.216.155 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]54.151.229.238 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]54.169.184.46 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]54.169.223.69 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]54.178.28.142 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]54.255.243.29 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]57.180.243.199 via 172.16.208.4 dev ens3 
+091042.419: [09:10:42]103.45.234.158 via 172.16.208.4 dev ens3 
+091042.420: [09:10:42]104.18.43.89 via 172.16.208.4 dev ens3 
+091042.420: [09:10:42]112.4.0.55 via 172.16.208.4 dev ens3 
+091042.420: [09:10:42]120.232.153.120 via 172.16.208.4 dev ens3 
+091042.420: [09:10:42]169.254.169.254 via 172.16.221.131 dev ens3 proto dhcp metric 100 
+091042.420: [09:10:42]172.16.208.0/20 dev ens3 proto kernel scope link src 172.16.208.2 metric 100 
+091042.420: [09:10:42]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+091042.420: [09:10:42]172.18.0.0/16 dev br-c2f8d78d6e11 proto kernel scope link src 172.18.0.1 
+091042.420: [09:10:42]192.168.31.0/24 dev wg0 scope link 
+091042.420: [09:10:42]198.144.180.4 via 172.16.208.4 dev ens3 
+091042.420: [09:10:42]198.144.180.5 via 172.16.208.4 dev ens3 
+091048.761: [09:10:48][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip rule
+091048.761: [09:10:48]0:      from all lookup local
+091048.761: [09:10:48]5209:   from 10.253.0.2 lookup wg0table
+091048.761: [09:10:48]5210:   from all fwmark 0x80000/0xff0000 lookup main
+091048.761: [09:10:48]5230:   from all fwmark 0x80000/0xff0000 lookup default
+091048.762: [09:10:48]5250:   from all fwmark 0x80000/0xff0000 unreachable
+091048.762: [09:10:48]5270:   from all lookup 52
+091048.762: [09:10:48]32766:  from all lookup main
+091048.762: [09:10:48]32767:  from all lookup default
+091220.305: [09:12:20][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# cat /etc/iproute2/rt_tables
+091220.324: [09:12:20]#
+091220.324: [09:12:20]# reserved values
+091220.324: [09:12:20]#
+091220.324: [09:12:20]255     local
+091220.324: [09:12:20]254     main
+091220.324: [09:12:20]253     default
+091220.324: [09:12:20]200     wg0table
+091220.324: [09:12:20]0       unspec
+091220.324: [09:12:20]#
+091220.325: [09:12:20]# local
+091220.325: [09:12:20]#
+091220.325: [09:12:20]#1      inr.ruhep
+091220.325: [09:12:20]100 wg0table
+091220.325: [09:12:20]101 ens3table
+091220.325: [09:12:20]200 r_gw2
+091402.552: [09:14:02][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip route show table r_gw
+091402.561: [09:14:02]Error: argument "r_gw" is wrong: table id value is invalid
+091402.561: [09:14:02]
+091405.736: [09:14:05][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip route show table r_gw2
+091405.736: [09:14:05]Error: ipv4: FIB table does not exist.
+091405.736: [09:14:05]Dump terminated
+091504.580: [09:15:04][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip route show table r_gw2
+091504.594: [09:15:04]Error: ipv4: FIB table does not exist.
+091504.595: [09:15:04]Dump terminated
+091514.468: [09:15:14][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip route show table 100
+091514.485: [09:15:14]default dev wg0 scope link 
+091516.909: [09:15:16][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip route show table 200
+091516.921: [09:15:16]Error: ipv4: FIB table does not exist.
+091516.921: [09:15:16]Dump terminated
+091547.821: [09:15:47][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# ip rule
+091547.839: [09:15:47]0:      from all lookup local
+091547.839: [09:15:47]5209:   from 10.253.0.2 lookup wg0table
+091547.839: [09:15:47]5210:   from all fwmark 0x80000/0xff0000 lookup main
+091547.840: [09:15:47]5230:   from all fwmark 0x80000/0xff0000 lookup default
+091547.840: [09:15:47]5250:   from all fwmark 0x80000/0xff0000 unreachable
+091547.840: [09:15:47]5270:   from all lookup 52
+091547.840: [09:15:47]32766:  from all lookup main
+091547.840: [09:15:47]32767:  from all lookup default
+091555.192: [09:15:55][root@172-16-208-2 /DATA/Media/XTV-BACKUP/xiaomi_camera_videos/788b2ac9b9e6]# cd /etc/wireguard/
+091555.832: [09:15:55][root@172-16-208-2 /etc/wireguard]# ll
+091555.850: [09:15:55]total 116K
+091555.850: [09:15:55]-rw-r--r-- 1 tcpdump tcpdump  52K Dec  5 21:43  1.cap
+091555.850: [09:15:55]drwxr-xr-x 2 root    root    4.0K Feb 15 17:05  20260215
+091555.850: [09:15:55]-rw-r--r-- 1 root    root      45 Apr  7  2023  private.key
+091555.850: [09:15:55]-rw-r--r-- 1 root    root      45 Apr  7  2023  public.key
+091555.850: [09:15:55]-rwxrwxrwx 1 root    root    1.6K Apr 10  2023  reresolve-dns.sh
+091555.850: [09:15:55]-rwxr-xr-x 1 root    root     526 Nov 21 18:22  StartWG1.sh
+091555.851: [09:15:55]-rwxr-xr-x 1 root    root     361 Nov 21 18:21  StopWG1.sh
+091555.851: [09:15:55]-rw-r--r-- 1 root    root    4.2K Apr 30  2025  wg0.conf
+091555.851: [09:15:55]-rw-r--r-- 1 root    root    2.1K Apr 29  2025  wg0.conf-bak-20250429
+091555.851: [09:15:55]-rw-r--r-- 1 root    root    4.4K Sep 12 18:18 'wg0 copy.conf'
+091555.851: [09:15:55]-rw-rw-rw- 1 root    root    1.7K Sep 12 18:27  wg1-20250912.conf
+091555.851: [09:15:55]-rw-rw-rw- 1 root    root    2.0K Feb 22 16:15  wg1.conf
+091555.851: [09:15:55]-rw-r--r-- 1 root    root    1.6K Sep  1  2025  wg1.conf-20250901
+091555.851: [09:15:55]-rw-rw-rw- 1 root    root    1.9K Dec  5 23:59  wg1.conf-20260127
+091559.554: [09:15:59][root@172-16-208-2 /etc/wireguard]# vi wg1.conf
+091559.698: [09:15:59]  1 [Interface]
+091559.699: [09:15:59]  4 FwMark = 51820
+091559.699: [09:15:59]  5 
+091559.699: [09:15:59]  6 # 以下是与Home建立连接的配置
+091559.699: [09:15:59]  7 [Peer]
+091559.699: [09:15:59]  8 PublicKey = OwghI6iey9RSt83iHfw0BIjUz0u3Uqmg5foaoy8QjXM= ## PublicKey = [服务端公钥]
+091559.699: [09:15:59]  9 # AllowedIPs = 0.0.0.0/0,::0/0 ## 允许通过的IP段，如果设为0.0.0.0/0则拦截本机所有流量
+091559.699: [09:15:59] 10 AllowedIPs = 10.253.0.1/32,192.168.31.100/32
+091559.699: [09:15:59] 11 Endpoint = 1l722s6157.wicp.vip:3014
+091559.699: [09:15:59] 12 PersistentKeepalive = 25
+091559.699: [09:15:59] 13 
+091559.699: [09:15:59] 14 
+091559.699: [09:15:59] 15 # 以下是与天翼云建立连接的配置
+091559.699: [09:15:59] 16 [Peer]
+091559.699: [09:15:59] 17 PublicKey = jcQ2ofbjd9lEcV+LVvSfPY5lKVNFU9qoE3ibGCTa1iw=  ## 说明PublicKey = [填入客户端公钥]
+091559.700: [09:15:59] 18 AllowedIPs = 10.253.0.3/32,192.168.2.2/32  ## 允许客户端使用的IP段，对于peer的隧道IP, 建议使用/32的固定IP, 以避免和其他peer重复导致无法连接
+091559.700: [09:15:59] 19 Endpoint = 113.125.155.62:50004
+091559.700: [09:15:59] 20 PersistentKeepalive = 25
+091559.700: [09:15:59] 21 
+091559.700: [09:15:59] 22 # 20250829 以下配置是与iphone的客户端进行连接
+091559.700: [09:15:59] 23 [Peer]
+091559.700: [09:15:59] 24 PublicKey = nzNxevZZk1yti9ox4ZMsimyclXWM3NryRyz+vDjLjCg=
+091559.700: [09:15:59] 25 AllowedIPs = 10.253.0.4/32
+091559.700: [09:15:59] 26 PersistentKeepalive = 25
+091559.700: [09:15:59] 27 
+091559.700: [09:15:59] 28 [Peer]
+091559.700: [09:15:59] 29 PublicKey = rmS0oMBtwYhZZbo9DC5PVhJnY0FBJWTvTO9+QQeU0EA=
+091559.700: [09:15:59] 30 AllowedIPs = 10.253.0.5/32
+091559.700: [09:15:59] 31 PersistentKeepalive = 25
+091559.700: [09:15:59] 32 
+091559.700: [09:15:59] 33 [Peer]
+091559.700: [09:15:59] 34 PublicKey = km/1P238rfbQIU/wLml2AyHDiik85YtJaBlbrPisB10=
+091559.700: [09:15:59] 35 AllowedIPs = 10.253.0.6/32
+091559.700: [09:15:59] 36 PersistentKeepalive = 25
+091559.700: [09:15:59] 37 
+091559.700: [09:15:59] 38 # 20250829 以下配置是与公司的Windows电脑进行连接
+091559.700: [09:15:59] 39 [Peer]
+091559.700: [09:15:59] 40 PublicKey = WPs86vCGRD0oUnCpBp9/yxXQbZNEd+tk/j22MOqdSzY=
+091559.700: [09:15:59] 41 AllowedIPs = 10.253.0.7/32
+091559.700: [09:15:59] 42 PersistentKeepalive = 25
+091559.700: [09:15:59] 43 
+091559.700: [09:15:59] 44 # 20250829 以下配置是与公司的Windows电脑进行连接
+091559.700: [09:15:59] 45 [Peer]
+091559.700: [09:15:59] 46 PublicKey = HMpqWOFfSACK8vhBmUF9o/OzGws2WPYZ+rZ4XetfPQI=
+091559.701: [09:15:59] 47 AllowedIPs = 10.253.0.8/32
+091559.701: [09:15:59] 48 PersistentKeepalive = 25
+091611.039: [09:16:11][root@172-16-208-2 /etc/wireguard]# vi StartWG1.sh 
+091611.165: [09:16:11]  1 #!/usr/bin/bash
+091611.166: [09:16:11]  4 ip -6 addr add 2a05:d014:926:ffaa:87dd:ffff::2/128 dev wg0
+091611.166: [09:16:11]  5 ip link set mtu 1420 up dev wg0
+091611.166: [09:16:11]  6 
+091611.166: [09:16:11]  7 wg setconf wg0 /etc/wireguard/wg1.conf
+091611.166: [09:16:11]  8 
+091611.166: [09:16:11]  9 ip route add default dev wg0 table wg0table
+091611.166: [09:16:11] 10 ip -6 route add ::/0 dev wg0 table wg0table
+091611.167: [09:16:11] 11 ip route add 192.168.31.0/24 dev wg0
+091611.167: [09:16:11] 12 ip route add 10.253.0.11/32 dev wg0
+091611.167: [09:16:11] 13 ip route add 10.253.0.3/32 dev wg0
+091611.167: [09:16:11] 14 
+091611.167: [09:16:11] 15 
+091611.167: [09:16:11] 16 
+091611.167: [09:16:11] 17 ip rule add from 10.253.0.2 table wg0table
+091611.167: [09:16:11] 18 ip -6 rule add from 2a05:d014:926:ffaa:87dd:ffff::2 table wg0table
+091737.707: [09:17:37][root@172-16-208-2 /etc/wireguard]# ll
+091737.718: [09:17:37]total 116K
+091737.718: [09:17:37]-rw-r--r-- 1 tcpdump tcpdump  52K Dec  5 21:43  1.cap
+091737.718: [09:17:37]drwxr-xr-x 2 root    root    4.0K Feb 15 17:05  20260215
+091737.718: [09:17:37]-rw-r--r-- 1 root    root      45 Apr  7  2023  private.key
+091737.718: [09:17:37]-rw-r--r-- 1 root    root      45 Apr  7  2023  public.key
+091737.718: [09:17:37]-rwxrwxrwx 1 root    root    1.6K Apr 10  2023  reresolve-dns.sh
+091737.718: [09:17:37]-rwxr-xr-x 1 root    root     526 Nov 21 18:22  StartWG1.sh
+091737.718: [09:17:37]-rwxr-xr-x 1 root    root     361 Nov 21 18:21  StopWG1.sh
+091737.718: [09:17:37]-rw-r--r-- 1 root    root    4.2K Apr 30  2025  wg0.conf
+091737.719: [09:17:37]-rw-r--r-- 1 root    root    2.1K Apr 29  2025  wg0.conf-bak-20250429
+091737.719: [09:17:37]-rw-r--r-- 1 root    root    4.4K Sep 12 18:18 'wg0 copy.conf'
+091737.719: [09:17:37]-rw-rw-rw- 1 root    root    1.7K Sep 12 18:27  wg1-20250912.conf
+091737.719: [09:17:37]-rw-rw-rw- 1 root    root    2.0K Feb 22 16:15  wg1.conf
+091737.719: [09:17:37]-rw-r--r-- 1 root    root    1.6K Sep  1  2025  wg1.conf-20250901
+091737.719: [09:17:37]-rw-rw-rw- 1 root    root    1.9K Dec  5 23:59  wg1.conf-20260127
+091756.688: [09:17:56][root@172-16-208-2 /etc/wireguard]# cat /etc/iproute2/
+091756.689: [09:17:56]bpf_pinning  ematch_map   group        nl_protos    rt_dsfield   rt_protos    rt_protos.d/ rt_realms    rt_scopes    rt_tables    rt_tables.d/
+091803.615: [09:18:03][root@172-16-208-2 /etc/wireguard]# cat /etc/iproute2/rt_tables
+091803.615: [09:18:03]#
+091803.615: [09:18:03]# reserved values
+091803.615: [09:18:03]#
+091803.615: [09:18:03]255     local
+091803.616: [09:18:03]254     main
+091803.616: [09:18:03]253     default
+091803.616: [09:18:03]200     wg0table
+091803.616: [09:18:03]0       unspec
+091803.616: [09:18:03]#
+091803.616: [09:18:03]# local
+091803.616: [09:18:03]#
+091803.616: [09:18:03]#1      inr.ruhep
+091803.616: [09:18:03]100 wg0table
+091803.616: [09:18:03]101 ens3table
+091803.616: [09:18:03]200 r_gw2
+091821.962: [09:18:21][root@172-16-208-2 /etc/wireguard]# vi /etc/iproute2/rt_tables
+091822.012: [09:18:22]  1 #
+091822.012: [09:18:22]  4 255     local
+091822.012: [09:18:22]  5 254     main
+091822.012: [09:18:22]  6 253     default
+091822.012: [09:18:22]  7 200     wg0table
+091822.012: [09:18:22]  8 0       unspec
+091822.012: [09:18:22]  9 #
+091822.012: [09:18:22] 10 # local
+091822.012: [09:18:22] 11 #
+091822.012: [09:18:22] 12 #1      inr.ruhep
+091822.012: [09:18:22] 13 100 wg0table
+091822.012: [09:18:22] 14 101 ens3table
+091822.012: [09:18:22] 15 200 r_gw2
+091831.126: [09:18:31]"/etc/iproute2/rt_tables" 15L, 141B written                                                                                               
+091842.935: [09:18:42][root@172-16-208-2 /etc/wireguard]# ip route show table 200
+091842.936: [09:18:42]Error: ipv4: FIB table does not exist.
+091842.936: [09:18:42]Dump terminated
+091922.777: [09:19:22][root@172-16-208-2 /etc/wireguard]# ip route add 172.16.208.0/24 dev ens3 table r_gw2
+091931.932: [09:19:31][root@172-16-208-2 /etc/wireguard]# ip route add default via 172.16.208.4 dev ens3 table r_gw2
+091933.455: [09:19:33][root@172-16-208-2 /etc/wireguard]# ip route show table 200
+091933.455: [09:19:33]Error: ipv4: FIB table does not exist.
+091933.455: [09:19:33]Dump terminated
+091940.888: [09:19:40][root@172-16-208-2 /etc/wireguard]# cat /etc/iproute2/rt_tables
+091940.896: [09:19:40]#
+091940.896: [09:19:40]# reserved values
+091940.896: [09:19:40]#
+091940.896: [09:19:40]255     local
+091940.896: [09:19:40]254     main
+091940.896: [09:19:40]253     default
+091940.896: [09:19:40]200     wg0table
+091940.896: [09:19:40]0       unspec
+091940.896: [09:19:40]#
+091940.897: [09:19:40]# local
+091940.897: [09:19:40]#
+091940.897: [09:19:40]#1      inr.ruhep
+091940.897: [09:19:40]100 wg0table
+091940.897: [09:19:40]101 ens3table
+091940.897: [09:19:40]300 r_gw2
+091948.103: [09:19:48][root@172-16-208-2 /etc/wireguard]# ip route show table 300
+091948.112: [09:19:48]default via 172.16.208.4 dev ens3 
+091948.112: [09:19:48]172.16.208.0/24 dev ens3 scope link 
+092059.891: [09:20:59][root@172-16-208-2 /etc/wireguard]# ip rule add fwmark 200 table r_gw2 priority 101
+092101.732: [09:21:01][root@172-16-208-2 /etc/wireguard]# ip rule
+092101.732: [09:21:01]0:      from all lookup local
+092101.732: [09:21:01]101:    from all fwmark 0xc8 lookup r_gw2
+092101.733: [09:21:01]5209:   from 10.253.0.2 lookup wg0table
+092101.733: [09:21:01]5210:   from all fwmark 0x80000/0xff0000 lookup main
+092101.733: [09:21:01]5230:   from all fwmark 0x80000/0xff0000 lookup default
+092101.733: [09:21:01]5250:   from all fwmark 0x80000/0xff0000 unreachable
+092101.733: [09:21:01]5270:   from all lookup 52
+092101.733: [09:21:01]32766:  from all lookup main
+092101.733: [09:21:01]32767:  from all lookup default

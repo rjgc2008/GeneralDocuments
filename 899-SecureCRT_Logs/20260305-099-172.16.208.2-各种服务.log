@@ -1,0 +1,461 @@
+﻿141234.983: [14:12:34][root@172-16-208-2 /etc/wireguard]# iptables -L INPUT -t filter -nv
+141235.049: [14:12:35]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+141235.050: [14:12:35]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+141235.050: [14:12:35] pkts bytes target     prot opt in     out     source               destination         
+141235.050: [14:12:35] 221M  209G ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141255.578: [14:12:55][root@172-16-208-2 /etc/wireguard]# iptables  -t filter -nv
+141255.598: [14:12:55]iptables v1.8.7 (nf_tables): no command specified
+141255.598: [14:12:55]Try `iptables -h' or 'iptables --help' for more information.
+141301.677: [14:13:01][root@172-16-208-2 /etc/wireguard]# iptables  -L -t filter -nv
+141301.701: [14:13:01]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+141301.702: [14:13:01]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+141301.702: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.702: [14:13:01] 221M  209G ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.702: [14:13:01]
+141301.702: [14:13:01]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+141301.702: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.702: [14:13:01]5154K 1854M DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.702: [14:13:01]5154K 1854M DOCKER-ISOLATION-STAGE-1  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.714: [14:13:01] 605K  917M ACCEPT     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+141301.714: [14:13:01] 123K   79M DOCKER     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+141301.714: [14:13:01] 549K  105M ACCEPT     all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+141301.714: [14:13:01] 123K   79M ACCEPT     all  --  docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+141301.714: [14:13:01]3831K  749M ACCEPT     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+141301.714: [14:13:01]  228 13680 DOCKER     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141301.714: [14:13:01]  347 36608 ACCEPT     all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141301.714: [14:13:01]  228 13680 ACCEPT     all  --  br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141301.715: [14:13:01]45401 3302K ts-forward  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.715: [14:13:01]
+141301.715: [14:13:01]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+141301.715: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.715: [14:13:01]
+141301.715: [14:13:01]Chain DOCKER (2 references)
+141301.715: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.715: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.2           tcp dpt:8080
+141301.715: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.3           tcp dpt:80
+141301.715: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.4           tcp dpt:9090
+141301.715: [14:13:01]    0     0 ACCEPT     tcp  --  !br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            172.18.0.5           tcp dpt:2283
+141301.715: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.5           tcp dpt:2342
+141301.716: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.6           tcp dpt:8086
+141301.716: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.7           tcp dpt:3000
+141301.716: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.9           tcp dpt:1200
+141301.716: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          tcp dpt:51821
+141301.716: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:22000
+141301.726: [14:13:01]    0     0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          udp dpt:51820
+141301.726: [14:13:01]    0     0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:22000
+141301.726: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.12          tcp dpt:4533
+141301.726: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.14          tcp dpt:8063
+141301.726: [14:13:01]    0     0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:21027
+141301.726: [14:13:01]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:8384
+141301.726: [14:13:01]
+141301.726: [14:13:01]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+141301.726: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.727: [14:13:01] 549K  105M DOCKER-ISOLATION-STAGE-2  all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+141301.727: [14:13:01]  347 36608 DOCKER-ISOLATION-STAGE-2  all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141301.727: [14:13:01]5154K 1854M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.727: [14:13:01]
+141301.727: [14:13:01]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+141301.727: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.727: [14:13:01]    0     0 DROP       all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+141301.727: [14:13:01]    0     0 DROP       all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141301.727: [14:13:01] 549K  106M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.727: [14:13:01]
+141301.727: [14:13:01]Chain DOCKER-USER (1 references)
+141301.727: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.728: [14:13:01]5154K 1854M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141301.728: [14:13:01]
+141301.728: [14:13:01]Chain ts-forward (1 references)
+141301.728: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.728: [14:13:01]    0     0 MARK       all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0            MARK xset 0x40000/0xff0000
+141301.728: [14:13:01]    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            mark match 0x40000/0xff0000
+141301.728: [14:13:01]    0     0 DROP       all  --  *      tailscale0  100.64.0.0/10        0.0.0.0/0           
+141301.728: [14:13:01]    0     0 ACCEPT     all  --  *      tailscale0  0.0.0.0/0            0.0.0.0/0           
+141301.728: [14:13:01]
+141301.728: [14:13:01]Chain ts-input (1 references)
+141301.728: [14:13:01] pkts bytes target     prot opt in     out     source               destination         
+141301.728: [14:13:01]    0     0 ACCEPT     all  --  lo     *       100.92.100.90        0.0.0.0/0           
+141301.728: [14:13:01]    0     0 RETURN     all  --  !tailscale0 *       100.115.92.0/23      0.0.0.0/0           
+141301.729: [14:13:01]    4  1233 DROP       all  --  !tailscale0 *       100.64.0.0/10        0.0.0.0/0           
+141301.729: [14:13:01] 4021  510K ACCEPT     all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0           
+141301.729: [14:13:01] 1082 64952 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:41641
+141307.261: [14:13:07][root@172-16-208-2 /etc/wireguard]# iptables  -L  -nv
+141307.280: [14:13:07]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+141307.280: [14:13:07]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+141307.280: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.280: [14:13:07] 221M  209G ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.280: [14:13:07]
+141307.280: [14:13:07]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+141307.280: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.281: [14:13:07]5154K 1854M DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.281: [14:13:07]5154K 1854M DOCKER-ISOLATION-STAGE-1  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.281: [14:13:07] 605K  917M ACCEPT     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+141307.281: [14:13:07] 123K   79M DOCKER     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+141307.281: [14:13:07] 549K  105M ACCEPT     all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+141307.281: [14:13:07] 123K   79M ACCEPT     all  --  docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+141307.281: [14:13:07]3831K  749M ACCEPT     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+141307.281: [14:13:07]  228 13680 DOCKER     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141307.281: [14:13:07]  347 36608 ACCEPT     all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141307.282: [14:13:07]  228 13680 ACCEPT     all  --  br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141307.282: [14:13:07]45401 3302K ts-forward  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.282: [14:13:07]
+141307.282: [14:13:07]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+141307.282: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.282: [14:13:07]
+141307.282: [14:13:07]Chain DOCKER (2 references)
+141307.282: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.282: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.2           tcp dpt:8080
+141307.282: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.3           tcp dpt:80
+141307.282: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.4           tcp dpt:9090
+141307.282: [14:13:07]    0     0 ACCEPT     tcp  --  !br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            172.18.0.5           tcp dpt:2283
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.5           tcp dpt:2342
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.6           tcp dpt:8086
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.7           tcp dpt:3000
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.9           tcp dpt:1200
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          tcp dpt:51821
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:22000
+141307.283: [14:13:07]    0     0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          udp dpt:51820
+141307.283: [14:13:07]    0     0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:22000
+141307.283: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.12          tcp dpt:4533
+141307.284: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.14          tcp dpt:8063
+141307.284: [14:13:07]    0     0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:21027
+141307.284: [14:13:07]    0     0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:8384
+141307.284: [14:13:07]
+141307.284: [14:13:07]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+141307.284: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.284: [14:13:07] 549K  105M DOCKER-ISOLATION-STAGE-2  all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+141307.284: [14:13:07]  347 36608 DOCKER-ISOLATION-STAGE-2  all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141307.284: [14:13:07]5154K 1854M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.284: [14:13:07]
+141307.284: [14:13:07]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+141307.284: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.285: [14:13:07]    0     0 DROP       all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+141307.285: [14:13:07]    0     0 DROP       all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141307.285: [14:13:07] 549K  106M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.285: [14:13:07]
+141307.285: [14:13:07]Chain DOCKER-USER (1 references)
+141307.285: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.285: [14:13:07]5154K 1854M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141307.285: [14:13:07]
+141307.285: [14:13:07]Chain ts-forward (1 references)
+141307.285: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.285: [14:13:07]    0     0 MARK       all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0            MARK xset 0x40000/0xff0000
+141307.286: [14:13:07]    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            mark match 0x40000/0xff0000
+141307.286: [14:13:07]    0     0 DROP       all  --  *      tailscale0  100.64.0.0/10        0.0.0.0/0           
+141307.286: [14:13:07]    0     0 ACCEPT     all  --  *      tailscale0  0.0.0.0/0            0.0.0.0/0           
+141307.286: [14:13:07]
+141307.286: [14:13:07]Chain ts-input (1 references)
+141307.286: [14:13:07] pkts bytes target     prot opt in     out     source               destination         
+141307.286: [14:13:07]    0     0 ACCEPT     all  --  lo     *       100.92.100.90        0.0.0.0/0           
+141307.286: [14:13:07]    0     0 RETURN     all  --  !tailscale0 *       100.115.92.0/23      0.0.0.0/0           
+141307.286: [14:13:07]    4  1233 DROP       all  --  !tailscale0 *       100.64.0.0/10        0.0.0.0/0           
+141307.286: [14:13:07] 4021  510K ACCEPT     all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0           
+141307.286: [14:13:07] 1082 64952 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:41641
+141309.863: [14:13:09][root@172-16-208-2 /etc/wireguard]# 
+141310.101: [14:13:10][root@172-16-208-2 /etc/wireguard]# 
+141310.251: [14:13:10][root@172-16-208-2 /etc/wireguard]# 
+141701.609: [14:17:01][root@172-16-208-2 /etc/wireguard]# iptables -nxv
+141701.631: [14:17:01]iptables v1.8.7 (nf_tables): no command specified
+141701.632: [14:17:01]Try `iptables -h' or 'iptables --help' for more information.
+141713.496: [14:17:13][root@172-16-208-2 /etc/wireguard]# iptables -L -t -nxvv
+141713.515: [14:17:13]iptables v1.8.7 (nf_tables): table '-nxvv' does not exist
+141713.515: [14:17:13]Perhaps iptables or your kernel needs to be upgraded.
+141722.868: [14:17:22][root@172-16-208-2 /etc/wireguard]# iptables -L -t filter -nxvv
+141722.868: [14:17:22]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+141722.868: [14:17:22]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+141722.869: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.869: [14:17:22]220829303 209180540273 ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.869: [14:17:22]
+141722.869: [14:17:22]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+141722.869: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.870: [14:17:22] 5160142 1855353901 DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.870: [14:17:22] 5160142 1855353901 DOCKER-ISOLATION-STAGE-1  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.870: [14:17:22]  605561 916979932 ACCEPT     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+141722.870: [14:17:22]  123243 79187440 DOCKER     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+141722.870: [14:17:22]  548931 105580117 ACCEPT     all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+141722.871: [14:17:22]  123243 79187440 ACCEPT     all  --  docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+141722.871: [14:17:22] 3836363 750248715 ACCEPT     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+141722.885: [14:17:22]     228    13680 DOCKER     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141722.885: [14:17:22]     347    36608 ACCEPT     all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141722.885: [14:17:22]     228    13680 ACCEPT     all  --  br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141722.886: [14:17:22]   45469  3307409 ts-forward  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.886: [14:17:22]
+141722.886: [14:17:22]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+141722.886: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.886: [14:17:22]
+141722.886: [14:17:22]Chain DOCKER (2 references)
+141722.886: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.886: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.2           tcp dpt:8080
+141722.886: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.3           tcp dpt:80
+141722.886: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.4           tcp dpt:9090
+141722.886: [14:17:22]       0        0 ACCEPT     tcp  --  !br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            172.18.0.5           tcp dpt:2283
+141722.886: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.5           tcp dpt:2342
+141722.887: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.6           tcp dpt:8086
+141722.887: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.7           tcp dpt:3000
+141722.887: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.9           tcp dpt:1200
+141722.887: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          tcp dpt:51821
+141722.887: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:22000
+141722.887: [14:17:22]       0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          udp dpt:51820
+141722.887: [14:17:22]       0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:22000
+141722.887: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.12          tcp dpt:4533
+141722.888: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.14          tcp dpt:8063
+141722.888: [14:17:22]       0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:21027
+141722.888: [14:17:22]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:8384
+141722.888: [14:17:22]
+141722.888: [14:17:22]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+141722.888: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.888: [14:17:22]  548931 105580117 DOCKER-ISOLATION-STAGE-2  all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+141722.888: [14:17:22]     347    36608 DOCKER-ISOLATION-STAGE-2  all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141722.888: [14:17:22] 5160142 1855353901 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.888: [14:17:22]
+141722.888: [14:17:22]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+141722.888: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.888: [14:17:22]       0        0 DROP       all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+141722.888: [14:17:22]       0        0 DROP       all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+141722.888: [14:17:22]  549278 105616725 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.888: [14:17:22]
+141722.889: [14:17:22]Chain DOCKER-USER (1 references)
+141722.889: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.889: [14:17:22] 5160142 1855353901 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+141722.889: [14:17:22]
+141722.889: [14:17:22]Chain ts-forward (1 references)
+141722.889: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.889: [14:17:22]       0        0 MARK       all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0            MARK xset 0x40000/0xff0000
+141722.889: [14:17:22]       0        0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            mark match 0x40000/0xff0000
+141722.889: [14:17:22]       0        0 DROP       all  --  *      tailscale0  100.64.0.0/10        0.0.0.0/0           
+141722.889: [14:17:22]       0        0 ACCEPT     all  --  *      tailscale0  0.0.0.0/0            0.0.0.0/0           
+141722.889: [14:17:22]
+141722.889: [14:17:22]Chain ts-input (1 references)
+141722.889: [14:17:22]    pkts      bytes target     prot opt in     out     source               destination         
+141722.889: [14:17:22]       0        0 ACCEPT     all  --  lo     *       100.92.100.90        0.0.0.0/0           
+141722.890: [14:17:22]       0        0 RETURN     all  --  !tailscale0 *       100.115.92.0/23      0.0.0.0/0           
+141722.890: [14:17:22]       4     1233 DROP       all  --  !tailscale0 *       100.64.0.0/10        0.0.0.0/0           
+141722.890: [14:17:22]    4037   512284 ACCEPT     all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0           
+141722.890: [14:17:22]    1082    64952 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:41641
+141926.504: [14:19:26][root@172-16-208-2 /etc/wireguard]# iptables -L INPUT -t filter -nxv
+141926.506: [14:19:26]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+141926.530: [14:19:26]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+141926.530: [14:19:26]    pkts      bytes target     prot opt in     out     source               destination         
+141926.530: [14:19:26]220867249 209185971604 ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142351.274: [14:23:51][root@172-16-208-2 /etc/wireguard]# iptable -L -nxv
+142351.299: [14:23:51]-bash: iptable: command not found
+142354.943: [14:23:54][root@172-16-208-2 /etc/wireguard]# iptables -L -nxv
+142354.943: [14:23:54]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+142354.944: [14:23:54]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+142354.944: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.944: [14:23:54]220940562 209198514708 ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.944: [14:23:54]
+142354.944: [14:23:54]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+142354.945: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.945: [14:23:54] 5169448 1857508305 DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.945: [14:23:54] 5169448 1857508305 DOCKER-ISOLATION-STAGE-1  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.946: [14:23:54]  605929 917403048 ACCEPT     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+142354.946: [14:23:54]  123491 79358680 DOCKER     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+142354.946: [14:23:54]  549353 105736975 ACCEPT     all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+142354.947: [14:23:54]  123491 79358680 ACCEPT     all  --  docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+142354.947: [14:23:54] 3844559 751646337 ACCEPT     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+142354.947: [14:23:54]     228    13680 DOCKER     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+142354.948: [14:23:54]     347    36608 ACCEPT     all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+142354.969: [14:23:54]     228    13680 ACCEPT     all  --  br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+142354.969: [14:23:54]   45541  3312977 ts-forward  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.969: [14:23:54]
+142354.969: [14:23:54]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+142354.969: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.969: [14:23:54]
+142354.969: [14:23:54]Chain DOCKER (2 references)
+142354.969: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.969: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.2           tcp dpt:8080
+142354.970: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.3           tcp dpt:80
+142354.970: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.4           tcp dpt:9090
+142354.970: [14:23:54]       0        0 ACCEPT     tcp  --  !br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            172.18.0.5           tcp dpt:2283
+142354.970: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.5           tcp dpt:2342
+142354.970: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.6           tcp dpt:8086
+142354.970: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.7           tcp dpt:3000
+142354.971: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.9           tcp dpt:1200
+142354.971: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          tcp dpt:51821
+142354.971: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:22000
+142354.971: [14:23:54]       0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          udp dpt:51820
+142354.971: [14:23:54]       0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:22000
+142354.971: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.12          tcp dpt:4533
+142354.971: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.14          tcp dpt:8063
+142354.971: [14:23:54]       0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:21027
+142354.971: [14:23:54]       0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:8384
+142354.972: [14:23:54]
+142354.972: [14:23:54]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+142354.972: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.972: [14:23:54]  549353 105736975 DOCKER-ISOLATION-STAGE-2  all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+142354.972: [14:23:54]     347    36608 DOCKER-ISOLATION-STAGE-2  all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+142354.972: [14:23:54] 5169448 1857508305 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.972: [14:23:54]
+142354.972: [14:23:54]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+142354.972: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.972: [14:23:54]       0        0 DROP       all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+142354.972: [14:23:54]       0        0 DROP       all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+142354.972: [14:23:54]  549700 105773583 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.972: [14:23:54]
+142354.972: [14:23:54]Chain DOCKER-USER (1 references)
+142354.972: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.973: [14:23:54] 5169448 1857508305 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+142354.973: [14:23:54]
+142354.973: [14:23:54]Chain ts-forward (1 references)
+142354.973: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.973: [14:23:54]       0        0 MARK       all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0            MARK xset 0x40000/0xff0000
+142354.973: [14:23:54]       0        0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            mark match 0x40000/0xff0000
+142354.973: [14:23:54]       0        0 DROP       all  --  *      tailscale0  100.64.0.0/10        0.0.0.0/0           
+142354.973: [14:23:54]       0        0 ACCEPT     all  --  *      tailscale0  0.0.0.0/0            0.0.0.0/0           
+142354.973: [14:23:54]
+142354.973: [14:23:54]Chain ts-input (1 references)
+142354.973: [14:23:54]    pkts      bytes target     prot opt in     out     source               destination         
+142354.973: [14:23:54]       0        0 ACCEPT     all  --  lo     *       100.92.100.90        0.0.0.0/0           
+142354.973: [14:23:54]       0        0 RETURN     all  --  !tailscale0 *       100.115.92.0/23      0.0.0.0/0           
+142354.973: [14:23:54]       4     1233 DROP       all  --  !tailscale0 *       100.64.0.0/10        0.0.0.0/0           
+142354.973: [14:23:54]    4041   512756 ACCEPT     all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0           
+142354.974: [14:23:54]    1082    64952 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:41641
+142938.228: [14:29:38][root@172-16-208-2 /etc/wireguard]# iptables -L OUTPUT -t raw -nxv
+142938.229: [14:29:38]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+142938.229: [14:29:38]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+142938.229: [14:29:38]    pkts      bytes target     prot opt in     out     source               destination         
+143708.720: [14:37:08][root@172-16-208-2 /etc/wireguard]# 
+143708.782: [14:37:08][root@172-16-208-2 /etc/wireguard]# 
+143723.970: [14:37:23][root@172-16-208-2 /etc/wireguard]# iptables -L -t filter -nxv --line
+143723.971: [14:37:23]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+143723.971: [14:37:23]Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+143723.971: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.972: [14:37:23]1    221183385 209235348312 ts-input   all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.972: [14:37:23]
+143723.972: [14:37:23]Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+143723.973: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.973: [14:37:23]1     5188685 1861944903 DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.973: [14:37:23]2     5188685 1861944903 DOCKER-ISOLATION-STAGE-1  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.974: [14:37:23]3      606690 918280127 ACCEPT     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+143723.974: [14:37:23]4      124063 79694740 DOCKER     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]5      550286 106071429 ACCEPT     all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]6      124063 79694740 ACCEPT     all  --  docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]7     3861342 754520990 ACCEPT     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+143723.994: [14:37:23]8         228    13680 DOCKER     all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]9         347    36608 ACCEPT     all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]10        228    13680 ACCEPT     all  --  br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]11      45729  3327329 ts-forward  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.994: [14:37:23]
+143723.994: [14:37:23]Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+143723.995: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.995: [14:37:23]
+143723.995: [14:37:23]Chain DOCKER (2 references)
+143723.995: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.995: [14:37:23]1           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.2           tcp dpt:8080
+143723.995: [14:37:23]2           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.3           tcp dpt:80
+143723.995: [14:37:23]3           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.4           tcp dpt:9090
+143723.996: [14:37:23]4           0        0 ACCEPT     tcp  --  !br-c2f8d78d6e11 br-c2f8d78d6e11  0.0.0.0/0            172.18.0.5           tcp dpt:2283
+143723.996: [14:37:23]5           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.5           tcp dpt:2342
+143723.996: [14:37:23]6           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.6           tcp dpt:8086
+143723.996: [14:37:23]7           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.7           tcp dpt:3000
+143723.996: [14:37:23]8           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.9           tcp dpt:1200
+143723.996: [14:37:23]9           0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          tcp dpt:51821
+143723.996: [14:37:23]10          0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:22000
+143723.996: [14:37:23]11          0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.10          udp dpt:51820
+143723.997: [14:37:23]12          0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:22000
+143723.997: [14:37:23]13          0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.12          tcp dpt:4533
+143723.997: [14:37:23]14          0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.14          tcp dpt:8063
+143723.997: [14:37:23]15          0        0 ACCEPT     udp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          udp dpt:21027
+143723.997: [14:37:23]16          0        0 ACCEPT     tcp  --  !docker0 docker0  0.0.0.0/0            172.17.0.11          tcp dpt:8384
+143723.997: [14:37:23]
+143723.997: [14:37:23]Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+143723.997: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.997: [14:37:23]1      550286 106071429 DOCKER-ISOLATION-STAGE-2  all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+143723.997: [14:37:23]2         347    36608 DOCKER-ISOLATION-STAGE-2  all  --  br-c2f8d78d6e11 !br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+143723.998: [14:37:23]3     5188685 1861944903 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.998: [14:37:23]
+143723.998: [14:37:23]Chain DOCKER-ISOLATION-STAGE-2 (2 references)
+143723.998: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.998: [14:37:23]1           0        0 DROP       all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+143723.998: [14:37:23]2           0        0 DROP       all  --  *      br-c2f8d78d6e11  0.0.0.0/0            0.0.0.0/0           
+143723.998: [14:37:23]3      550633 106108037 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.998: [14:37:23]
+143723.998: [14:37:23]Chain DOCKER-USER (1 references)
+143723.998: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.998: [14:37:23]1     5188685 1861944903 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+143723.998: [14:37:23]
+143723.998: [14:37:23]Chain ts-forward (1 references)
+143723.998: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.999: [14:37:23]1           0        0 MARK       all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0            MARK xset 0x40000/0xff0000
+143723.999: [14:37:23]2           0        0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            mark match 0x40000/0xff0000
+143723.999: [14:37:23]3           0        0 DROP       all  --  *      tailscale0  100.64.0.0/10        0.0.0.0/0           
+143723.999: [14:37:23]4           0        0 ACCEPT     all  --  *      tailscale0  0.0.0.0/0            0.0.0.0/0           
+143723.999: [14:37:23]
+143723.999: [14:37:23]Chain ts-input (1 references)
+143723.999: [14:37:23]num      pkts      bytes target     prot opt in     out     source               destination         
+143723.999: [14:37:23]1           0        0 ACCEPT     all  --  lo     *       100.92.100.90        0.0.0.0/0           
+143723.999: [14:37:23]2           0        0 RETURN     all  --  !tailscale0 *       100.115.92.0/23      0.0.0.0/0           
+143723.999: [14:37:23]3           4     1233 DROP       all  --  !tailscale0 *       100.64.0.0/10        0.0.0.0/0           
+143723.999: [14:37:23]4        4049   513644 ACCEPT     all  --  tailscale0 *       0.0.0.0/0            0.0.0.0/0           
+143724.000: [14:37:24]5        1082    64952 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:41641
+151123.417: [15:11:23][root@172-16-208-2 /etc/wireguard]# iptables -L INPUT
+151123.418: [15:11:23]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+151123.438: [15:11:23]Chain INPUT (policy ACCEPT)
+151123.438: [15:11:23]target     prot opt source               destination         
+151123.438: [15:11:23]ts-input   all  --  anywhere             anywhere            
+155531.450: [15:55:31][root@172-16-208-2 /etc/wireguard]# iptables -t nat -L
+155531.470: [15:55:31]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+155531.470: [15:55:31]Chain PREROUTING (policy ACCEPT)
+155531.470: [15:55:31]target     prot opt source               destination         
+155531.482: [15:55:31]DOCKER     all  --  anywhere             anywhere             ADDRTYPE match dst-type LOCAL
+155531.482: [15:55:31]
+155531.482: [15:55:31]Chain INPUT (policy ACCEPT)
+155531.482: [15:55:31]target     prot opt source               destination         
+155531.482: [15:55:31]
+155531.482: [15:55:31]Chain OUTPUT (policy ACCEPT)
+155531.482: [15:55:31]target     prot opt source               destination         
+155531.482: [15:55:31]DOCKER     all  --  anywhere            !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+155531.482: [15:55:31]
+155531.483: [15:55:31]Chain POSTROUTING (policy ACCEPT)
+155531.483: [15:55:31]target     prot opt source               destination         
+155531.502: [15:55:31]MASQUERADE  all  --  172.17.0.0/16        anywhere            
+155531.598: [15:55:31]MASQUERADE  all  --  172.18.0.0/16        anywhere            
+155531.598: [15:55:31]ts-postrouting  all  --  anywhere             anywhere            
+155531.598: [15:55:31]MASQUERADE  tcp  --  172.17.0.2           172.17.0.2           tcp dpt:http-alt
+155531.598: [15:55:31]MASQUERADE  tcp  --  172.17.0.3           172.17.0.3           tcp dpt:http
+155531.598: [15:55:31]MASQUERADE  tcp  --  172.17.0.4           172.17.0.4           tcp dpt:9090
+155531.599: [15:55:31]MASQUERADE  tcp  --  172.18.0.5           172.18.0.5           tcp dpt:2283
+155531.599: [15:55:31]MASQUERADE  tcp  --  172.17.0.5           172.17.0.5           tcp dpt:2342
+155531.611: [15:55:31]MASQUERADE  tcp  --  172.17.0.6           172.17.0.6           tcp dpt:8086
+155531.626: [15:55:31]MASQUERADE  tcp  --  172.17.0.7           172.17.0.7           tcp dpt:3000
+155531.643: [15:55:31]MASQUERADE  tcp  --  172.17.0.9           172.17.0.9           tcp dpt:1200
+155531.660: [15:55:31]MASQUERADE  tcp  --  172.17.0.10          172.17.0.10          tcp dpt:51821
+155531.674: [15:55:31]MASQUERADE  tcp  --  172.17.0.11          172.17.0.11          tcp dpt:22000
+155531.689: [15:55:31]MASQUERADE  udp  --  172.17.0.10          172.17.0.10          udp dpt:51820
+155531.708: [15:55:31]MASQUERADE  udp  --  172.17.0.11          172.17.0.11          udp dpt:22000
+155531.725: [15:55:31]MASQUERADE  tcp  --  172.17.0.12          172.17.0.12          tcp dpt:4533
+155531.741: [15:55:31]MASQUERADE  tcp  --  172.17.0.14          172.17.0.14          tcp dpt:8063
+155531.757: [15:55:31]MASQUERADE  udp  --  172.17.0.11          172.17.0.11          udp dpt:21027
+155531.772: [15:55:31]MASQUERADE  tcp  --  172.17.0.11          172.17.0.11          tcp dpt:8384
+155531.772: [15:55:31]
+155531.772: [15:55:31]Chain DOCKER (2 references)
+155531.772: [15:55:31]target     prot opt source               destination         
+155531.772: [15:55:31]RETURN     all  --  anywhere             anywhere            
+155531.772: [15:55:31]RETURN     all  --  anywhere             anywhere            
+155531.778: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:7070 to:172.17.0.2:8080
+155531.778: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:6080 to:172.17.0.3:80
+155531.778: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:9091 to:172.17.0.4:9090
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:2283 to:172.18.0.5:2283
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:2342 to:172.17.0.5:2342
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:8086 to:172.17.0.6:8086
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:3003 to:172.17.0.7:3000
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:1200 to:172.17.0.9:1200
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:51821 to:172.17.0.10:51821
+155531.785: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:22000 to:172.17.0.11:22000
+155531.785: [15:55:31]DNAT       udp  --  anywhere             anywhere             udp dpt:51820 to:172.17.0.10:51820
+155531.785: [15:55:31]DNAT       udp  --  anywhere             anywhere             udp dpt:22000 to:172.17.0.11:22000
+155531.786: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:4533 to:172.17.0.12:4533
+155531.786: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:8063 to:172.17.0.14:8063
+155531.786: [15:55:31]DNAT       udp  --  anywhere             anywhere             udp dpt:21027 to:172.17.0.11:21027
+155531.786: [15:55:31]DNAT       tcp  --  anywhere             anywhere             tcp dpt:8384 to:172.17.0.11:8384
+155531.786: [15:55:31]
+155531.786: [15:55:31]Chain ts-postrouting (1 references)
+155531.786: [15:55:31]target     prot opt source               destination         
+155531.786: [15:55:31]MASQUERADE  all  --  anywhere             anywhere             mark match 0x40000/0xff0000
+155707.315: [15:57:07][root@172-16-208-2 /etc/wireguard]# iptables -t raw -L
+155707.317: [15:57:07]# Warning: iptables-legacy tables present, use iptables-legacy to see them
+155707.317: [15:57:07]Chain PREROUTING (policy ACCEPT)
+155707.317: [15:57:07]target     prot opt source               destination         
+155707.317: [15:57:07]
+155707.317: [15:57:07]Chain OUTPUT (policy ACCEPT)
+155707.317: [15:57:07]target     prot opt source               destination         

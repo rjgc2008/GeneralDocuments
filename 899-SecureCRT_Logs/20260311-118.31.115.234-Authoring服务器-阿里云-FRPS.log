@@ -1,0 +1,984 @@
+﻿102751.652: [10:27:51][202603118.31.115.234-Authoring服务器-阿里云-FRPS-10:27:51]
+102751.806: [10:27:51]Last failed login: Wed Mar 11 07:21:47 CST 2026 from 111.19.212.140 on ssh:notty
+102751.806: [10:27:51]There were 403 failed login attempts since the last successful login.
+102751.806: [10:27:51]Last login: Tue Mar  3 11:16:55 2026 from 223.107.68.194
+102751.807: [10:27:51]
+102751.807: [10:27:51]Welcome to Alibaba Cloud Elastic Compute Service !
+102751.807: [10:27:51]
+102959.010: [10:29:59][202603118.31.115.234-Authoring服务器-阿里云-FRPS-10:29:59]
+102959.219: [10:29:59]Last login: Wed Mar 11 10:27:51 2026 from 223.107.68.194
+102959.219: [10:29:59]
+102959.220: [10:29:59]Welcome to Alibaba Cloud Elastic Compute Service !
+102959.220: [10:29:59]
+104326.649: [10:43:26][root@iZbp1fvr0ojbaf96ys1erlZ ~]# 
+104326.730: [10:43:26][root@iZbp1fvr0ojbaf96ys1erlZ ~]# 
+104335.125: [10:43:35][root@iZbp1fvr0ojbaf96ys1erlZ ~]# curl cip.cc
+104335.218: [10:43:35]IP      : 118.31.115.234
+104335.218: [10:43:35]地址    : 中国 浙江 杭州
+104335.219: [10:43:35]运营商  : 阿里云
+104335.219: [10:43:35]
+104335.219: [10:43:35]数据二  : 中国浙江杭州 | 阿里云
+104335.219: [10:43:35]
+104335.219: [10:43:35]数据三  : 中国浙江省杭州市 | 阿里云
+104335.219: [10:43:35]
+104335.220: [10:43:35]URL     : http://www.cip.cc/118.31.115.234
+104404.113: [10:44:04][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ping www.tiangongqs.net
+104404.127: [10:44:04]PING www.tiangongqs.net (118.31.115.234) 56(84) bytes of data.
+104404.133: [10:44:04]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=1 ttl=64 time=0.257 ms
+104405.129: [10:44:05]64 bytes from 118.31.115.234 (118.31.115.234): icmp_seq=2 ttl=64 time=0.271 ms
+104405.689: [10:44:05]^C
+104405.689: [10:44:05]--- www.tiangongqs.net ping statistics ---
+104405.689: [10:44:05]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+104405.690: [10:44:05]rtt min/avg/max/mdev = 0.257/0.264/0.271/0.007 ms
+104413.204: [10:44:13][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ps -ef | grep ssh
+104413.215: [10:44:13]root     13943 23125  0 10:27 ?        00:00:00 sshd: root@pts/0
+104413.215: [10:44:13]root     13966 23125  0 10:29 ?        00:00:00 sshd: root@pts/1
+104413.216: [10:44:13]root     14005 13968  0 10:44 pts/1    00:00:00 grep --color=auto ssh
+104413.216: [10:44:13]root     23125     1  0  2025 ?        00:00:27 /usr/sbin/sshd -D
+104418.227: [10:44:18][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ss -tlnp
+104418.237: [10:44:18]State       Recv-Q Send-Q                                                                Local Address:Port                                                                               Peer Address:Port              
+104418.238: [10:44:18]LISTEN      0      128                                                                               *:111                                                                                           *:*                   104418.238: users:(("rpcbind",pid=579,fd=8))
+104418.239: [10:44:18]LISTEN      0      128                                                                               *:80                                                                                            *:*                   104418.239: users:(("nginx",pid=21227,fd=5),("nginx",pid=3893,fd=5))
+104418.240: [10:44:18]LISTEN      0      128                                                                               *:22                                                                                            *:*                   104418.240: users:(("sshd",pid=23125,fd=3))
+104418.240: [10:44:18]LISTEN      0      100                                                                       127.0.0.1:25                                                                                            *:*                   104418.240: users:(("master",pid=1106,fd=13))
+104418.241: [10:44:18]LISTEN      0      128                                                                               *:443                                                                                           *:*                   104418.241: users:(("nginx",pid=21227,fd=6),("nginx",pid=3893,fd=6))
+104418.242: [10:44:18]LISTEN      0      128                                                                            [::]:10622                                                                                      [::]:*                   104418.242: users:(("frps",pid=3100,fd=12))
+104418.243: [10:44:18]LISTEN      0      128                                                                            [::]:8800                                                                                       [::]:*                   104418.243: users:(("frps",pid=3100,fd=13))
+104418.243: [10:44:18]LISTEN      0      128                                                                            [::]:9090                                                                                       [::]:*                   104418.243: users:(("frps",pid=3100,fd=19))
+104418.244: [10:44:18]LISTEN      0      128                                                                            [::]:9443                                                                                       [::]:*                   104418.244: users:(("frps",pid=3100,fd=9))
+104418.245: [10:44:18]LISTEN      0      128                                                                            [::]:9000                                                                                       [::]:*                   104418.245: users:(("frps",pid=3100,fd=14))
+104418.245: [10:44:18]LISTEN      0      128                                                                            [::]:3306                                                                                       [::]:*                   104418.245: users:(("frps",pid=3100,fd=20))
+104418.246: [10:44:18]LISTEN      0      128                                                                            [::]:10122                                                                                      [::]:*                   104418.246: users:(("frps",pid=3100,fd=18))
+104418.246: [10:44:18]LISTEN      0      128                                                                            [::]:10443                                                                                      [::]:*                   104418.246: users:(("frps",pid=3100,fd=7))
+104418.247: [10:44:18]LISTEN      0      128                                                                            [::]:9999                                                                                       [::]:*                   104418.247: users:(("frps",pid=3100,fd=17))
+104418.248: [10:44:18]LISTEN      0      128                                                                            [::]:111                                                                                        [::]:*                   104418.248: users:(("rpcbind",pid=579,fd=11))
+104418.248: [10:44:18]LISTEN      0      128                                                                            [::]:6000                                                                                       [::]:*                   104418.248: users:(("frps",pid=3100,fd=6))
+104418.249: [10:44:18]LISTEN      0      128                                                                            [::]:1202                                                                                       [::]:*                   104418.249: users:(("frps",pid=3100,fd=10))
+104418.249: [10:44:18]LISTEN      0      128                                                                            [::]:19443                                                                                      [::]:*                   104418.249: users:(("frps",pid=3100,fd=15))
+104418.250: [10:44:18]LISTEN      0      128                                                                            [::]:1107                                                                                       [::]:*                   104418.250: users:(("frps",pid=3100,fd=11))
+104418.250: [10:44:18]LISTEN      0      128                                                                            [::]:22                                                                                         [::]:*                   104418.250: users:(("sshd",pid=23125,fd=4))
+104418.250: [10:44:18]LISTEN      0      128                                                                            [::]:3000                                                                                       [::]:*                   104418.250: users:(("frps",pid=3100,fd=16))
+104418.251: [10:44:18]LISTEN      0      100                                                                           [::1]:25                                                                                         [::]:*                   104418.251: users:(("master",pid=1106,fd=14))
+104429.243: [10:44:29][root@iZbp1fvr0ojbaf96ys1erlZ ~]# cd /etc/
+104429.244: [10:44:29]alternatives/      cron.d/            dhcp/              gss/               logrotate.d/       pam.d/             ppp/               rc4.d/             rwtab.d/           sudoers.d/         wpa_supplicant/
+104429.246: [10:44:29]audisp/            cron.daily/        dracut.conf.d/     gssproxy/          lsb-release.d/     pkcs11/            prelink.conf.d/    rc5.d/             sasl2/             sysconfig/         X11/
+104429.246: [10:44:29]audit/             cron.hourly/       exports.d/         init.d/            modprobe.d/        pki/               profile.d/         rc6.d/             security/          sysctl.d/          xdg/
+104429.247: [10:44:29]bash_completion.d/ cron.monthly/      firewalld/         iproute2/          modules-load.d/    plymouth/          python/            rc.d/              selinux/           systemd/           xinetd.d/
+104429.247: [10:44:29]binfmt.d/          cron.weekly/       gcrypt/            kernel/            my.cnf.d/          pm/                rc0.d/             redhat-lsb/        skel/              terminfo/          yum/
+104429.248: [10:44:29]chkconfig.d/       dbus-1/            gnupg/             krb5.conf.d/       NetworkManager/    polkit-1/          rc1.d/             request-key.d/     ssh/               tmpfiles.d/        yum.repos.d/
+104429.248: [10:44:29]cloud/             default/           groff/             ld.so.conf.d/      openldap/          popt.d/            rc2.d/             rpm/               ssl/               tuned/             
+104429.249: [10:44:29]conntrackd/        depmod.d/          grub.d/            libnl/             opt/               postfix/           rc3.d/             rsyslog.d/         statetab.d/        udev/              
+104434.480: [10:44:34][root@iZbp1fvr0ojbaf96ys1erlZ ~]# 
+104434.564: [10:44:34][root@iZbp1fvr0ojbaf96ys1erlZ ~]# 
+104435.517: [10:44:35][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ll
+104435.518: [10:44:35]total 0
+104437.097: [10:44:37][root@iZbp1fvr0ojbaf96ys1erlZ ~]# cd /etc/
+104438.186: [10:44:38][root@iZbp1fvr0ojbaf96ys1erlZ etc]# ll
+104438.203: [10:44:38]total 1396
+104438.203: [10:44:38]-rw-r--r--.  1 root root       16 Jun 28  2024 adjtime
+104438.203: [10:44:38]-rw-r--r--.  1 root root     1529 Apr  1  2020 aliases
+104438.203: [10:44:38]-rw-r--r--   1 root root    12288 Jun 28  2024 aliases.db
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 alternatives
+104438.203: [10:44:38]-rw-------   1 root root      541 May 16  2023 anacrontab
+104438.203: [10:44:38]-rw-r--r--.  1 root root       55 Aug  8  2019 asound.conf
+104438.203: [10:44:38]-rw-r--r--   1 root root        1 May 18  2022 at.deny
+104438.203: [10:44:38]drwxr-x---.  3 root root     4096 Jun 28  2024 audisp
+104438.203: [10:44:38]drwxr-x---.  3 root root     4096 Jun 28  2024 audit
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 bash_completion.d
+104438.203: [10:44:38]-rw-r--r--.  1 root root     2853 Apr  1  2020 bashrc
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Dec  7  2023 binfmt.d
+104438.203: [10:44:38]-rw-r--r--   1 root root       37 May 21  2024 centos-release
+104438.203: [10:44:38]-rw-r--r--   1 root root       51 May 21  2024 centos-release-upstream
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Oct 13  2020 chkconfig.d
+104438.203: [10:44:38]-rw-r--r--.  1 root root     1507 Jun 28  2024 chrony.conf
+104438.203: [10:44:38]-rw-r-----.  1 root chrony    481 Aug  8  2019 chrony.keys
+104438.203: [10:44:38]drwxr-xr-x   4 root root     4096 Jun 28  2024 cloud
+104438.203: [10:44:38]drwxr-xr-x   2 root root     4096 Jun 28  2024 conntrackd
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 cron.d
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 cron.daily
+104438.203: [10:44:38]-rw-------   1 root root        0 May 16  2023 cron.deny
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 cron.hourly
+104438.203: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.monthly
+104438.204: [10:44:38]-rw-r--r--.  1 root root      451 Jun 10  2014 crontab
+104438.204: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 10  2014 cron.weekly
+104438.204: [10:44:38]-rw-------.  1 root root        0 Jun 28  2024 crypttab
+104438.204: [10:44:38]-rw-r--r--.  1 root root     1620 Apr  1  2020 csh.cshrc
+104438.204: [10:44:38]-rw-r--r--.  1 root root     1103 Apr  1  2020 csh.login
+104438.204: [10:44:38]drwxr-xr-x.  4 root root     4096 Jun 28  2024 dbus-1
+104438.204: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 default
+104438.204: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 depmod.d
+104438.204: [10:44:38]drwxr-x---.  4 root root     4096 Jun 11  2024 dhcp
+104438.204: [10:44:38]-rw-r--r--   1 root root     5090 Nov 16  2020 DIR_COLORS
+104438.204: [10:44:38]-rw-r--r--   1 root root     5725 Nov 16  2020 DIR_COLORS.256color
+104438.204: [10:44:38]-rw-r--r--   1 root root     4669 Nov 16  2020 DIR_COLORS.lightbgcolor
+104438.204: [10:44:38]-rw-r--r--.  1 root root     1285 Sep 30  2020 dracut.conf
+104438.204: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 dracut.conf.d
+104438.204: [10:44:38]-rw-r--r--.  1 root root      112 Sep 30  2020 e2fsck.conf
+104438.204: [10:44:38]-rw-r--r--.  1 root root        0 Apr  1  2020 environment
+104438.204: [10:44:38]-rw-r--r--.  1 root root     1317 Apr 11  2018 ethertypes
+104438.204: [10:44:38]-rw-r--r--.  1 root root        0 Jun  7  2013 exports
+104438.204: [10:44:38]drwxr-xr-x   2 root root     4096 Oct 14  2021 exports.d
+104438.204: [10:44:38]lrwxrwxrwx.  1 root root       56 Jun 28  2024 favicon.png -> /usr/share/icons/hicolor/16x16/apps/fedora-logo-icon.png
+104438.204: [10:44:38]-rw-r--r--.  1 root root       70 Apr  1  2020 filesystems
+104438.204: [10:44:38]drwxr-x---.  7 root root     4096 Jun 28  2024 firewalld
+104438.204: [10:44:38]-rw-r--r--.  1 root root      313 Jun 28  2024 fstab
+104438.204: [10:44:38]-rw-r--r--   1 root root       38 Oct 30  2018 fuse.conf
+104438.204: [10:44:38]drwxr-xr-x.  2 root root     4096 Aug  2  2017 gcrypt
+104438.204: [10:44:38]drwxr-xr-x.  2 root root     4096 Jul 13  2018 gnupg
+104438.204: [10:44:38]-rw-r--r--.  1 root root       94 Mar 25  2017 GREP_COLORS
+104438.204: [10:44:38]drwxr-xr-x.  4 root root     4096 Jun 28  2024 groff
+104438.204: [10:44:38]-rw-r--r--   1 root root      545 Jul 15  2025 group
+104438.204: [10:44:38]-rw-r--r--.  1 root root      517 Jun 28  2024 group-
+104438.204: [10:44:38]lrwxrwxrwx   1 root root       22 Jun 28  2024 grub2.cfg -> ../boot/grub2/grub.cfg
+104438.204: [10:44:38]drwx------.  2 root root     4096 Jun 28  2024 grub.d
+104438.204: [10:44:38]----------   1 root root      436 Jul 15  2025 gshadow
+104438.204: [10:44:38]----------.  1 root root      411 Jun 28  2024 gshadow-
+104438.205: [10:44:38]drwxr-xr-x.  3 root root     4096 Dec  1  2022 gss
+104438.205: [10:44:38]drwxr-xr-x   2 root root     4096 Jun 28  2024 gssproxy
+104438.205: [10:44:38]-rw-r--r--.  1 root root        9 Jun  7  2013 host.conf
+104438.205: [10:44:38]-rw-r--r--   1 root root       24 Mar 12  2025 hostname
+104438.205: [10:44:38]-rw-r--r--   1 root root      211 Mar 12  2025 hosts
+104438.205: [10:44:38]-rw-r--r--.  1 root root      370 Jun  7  2013 hosts.allow
+104438.205: [10:44:38]-rw-r--r--.  1 root root      460 Jun  7  2013 hosts.deny
+104438.205: [10:44:38]-rw-r--r--   1 root root     4849 Apr 11  2018 idmapd.conf
+104438.205: [10:44:38]lrwxrwxrwx.  1 root root       11 Jun 28  2024 init.d -> rc.d/init.d
+104438.205: [10:44:38]-rw-r--r--   1 root root      511 Nov 17  2020 inittab
+104438.205: [10:44:38]-rw-r--r--.  1 root root      942 Jun  7  2013 inputrc
+104438.205: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 iproute2
+104438.205: [10:44:38]-rw-r--r--   1 root root       23 May 21  2024 issue
+104438.205: [10:44:38]-rw-r--r--   1 root root       22 May 21  2024 issue.net
+104438.206: [10:44:38]-rw-r--r--   1 root root     7274 Jun 28  2024 kdump.conf
+104438.206: [10:44:38]drwxr-xr-x.  3 root root     4096 Jun 28  2024 kernel
+104438.206: [10:44:38]-rw-r--r--   1 root root      646 Jan 14  2022 krb5.conf
+104438.206: [10:44:38]drwxr-xr-x.  2 root root     4096 Dec  1  2022 krb5.conf.d
+104438.206: [10:44:38]-rw-r--r--   1 root root    22539 Mar 13  2025 ld.so.cache
+104438.206: [10:44:38]-rw-r--r--   1 root root       28 Feb 28  2013 ld.so.conf
+104438.206: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 ld.so.conf.d
+104438.206: [10:44:38]-rw-r-----.  1 root root      191 Mar  2  2019 libaudit.conf
+104438.206: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 libnl
+104438.206: [10:44:38]-rw-r--r--.  1 root root     2391 Oct 13  2013 libuser.conf
+104438.206: [10:44:38]-rw-r--r--.  1 root root       17 Mar 12  2025 locale.conf
+104438.206: [10:44:38]lrwxrwxrwx.  1 root root       35 Jun 28  2024 localtime -> ../usr/share/zoneinfo/Asia/Shanghai
+104438.206: [10:44:38]-rw-r--r--.  1 root root     2027 Aug  6  2019 login.defs
+104438.206: [10:44:38]-rw-r--r--.  1 root root      662 Jul 31  2013 logrotate.conf
+104438.207: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 logrotate.d
+104438.207: [10:44:38]drwxr-xr-x   2 root root     4096 Jun 28  2024 lsb-release.d
+104438.207: [10:44:38]-r--r--r--.  1 root root       33 Jun 28  2024 machine-id
+104438.207: [10:44:38]-rw-r--r--.  1 root root      111 Oct  1  2020 magic
+104438.207: [10:44:38]-rw-r--r--   1 root root     1968 Apr 11  2018 mail.rc
+104438.207: [10:44:38]-rw-r--r--   1 root root     5122 Jun 10  2021 makedumpfile.conf.sample
+104438.207: [10:44:38]-rw-r--r--.  1 root root     5171 Oct 31  2018 man_db.conf
+104438.207: [10:44:38]-rw-r--r--.  1 root root     1106 Sep 30  2020 mke2fs.conf
+104438.207: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 modprobe.d
+104438.207: [10:44:38]drwxr-xr-x.  2 root root     4096 Dec  7  2023 modules-load.d
+104438.207: [10:44:38]-rw-r--r--.  1 root root       53 Jun 28  2024 motd
+104438.207: [10:44:38]lrwxrwxrwx.  1 root root       17 Jun 28  2024 mtab -> /proc/self/mounts
+104438.207: [10:44:38]-rw-r--r--.  1 root root      570 Sep 30  2020 my.cnf
+104438.208: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 my.cnf.d
+104438.208: [10:44:38]-rw-r--r--   1 root root      767 Aug  9  2019 netconfig
+104438.208: [10:44:38]drwxr-xr-x.  7 root root     4096 Jun 11  2024 NetworkManager
+104438.208: [10:44:38]-rw-r--r--   1 root root       58 Nov 17  2020 networks
+104438.208: [10:44:38]-rw-r--r--   1 root root     1023 Oct 14  2021 nfs.conf
+104438.208: [10:44:38]-rw-r--r--   1 root root     3391 Oct 14  2021 nfsmount.conf
+104438.208: [10:44:38]-rw-r--r--   1 root root     2746 Jun  4  2024 nscd.conf
+104438.208: [10:44:38]-rw-r--r--.  1 root root     1949 Jun 28  2024 nsswitch.conf
+104438.208: [10:44:38]-rw-r--r--.  1 root root     1938 Sep 30  2020 nsswitch.conf.bak
+104438.208: [10:44:38]-rw-r--r--   1 root root     2192 Jun 28  2024 ntp.conf
+104438.208: [10:44:38]drwxr-xr-x.  3 root root     4096 Jun 28  2024 openldap
+104438.208: [10:44:38]drwxr-xr-x.  2 root root     4096 Apr 11  2018 opt
+104438.208: [10:44:38]lrwxrwxrwx   1 root root       21 Jun 28  2024 os-release -> ../usr/lib/os-release
+104438.208: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 pam.d
+104438.208: [10:44:38]-rw-r--r--   1 root root     1181 Jul 15  2025 passwd
+104438.209: [10:44:38]-rw-r--r--.  1 root root     1181 Jul 15  2025 passwd-
+104438.209: [10:44:38]drwxr-xr-x.  3 root root     4096 Jun 28  2024 pkcs11
+104438.209: [10:44:38]drwxr-xr-x. 10 root root     4096 Jun 28  2024 pki
+104438.209: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 plymouth
+104438.209: [10:44:38]drwxr-xr-x.  5 root root     4096 Jun 28  2024 pm
+104438.209: [10:44:38]drwxr-xr-x.  5 root root     4096 Jan 26  2022 polkit-1
+104438.209: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 10  2014 popt.d
+104438.209: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 postfix
+104438.209: [10:44:38]drwxr-xr-x.  3 root root     4096 Jun 28  2024 ppp
+104438.218: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 prelink.conf.d
+104438.218: [10:44:38]-rw-r--r--.  1 root root      233 Jun  7  2013 printcap
+104438.218: [10:44:38]-rw-r--r--.  1 root root     1819 Apr  1  2020 profile
+104438.219: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 profile.d
+104438.219: [10:44:38]-rw-r--r--.  1 root root     6545 Apr  1  2020 protocols
+104438.219: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 python
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc0.d -> rc.d/rc0.d
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc1.d -> rc.d/rc1.d
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc2.d -> rc.d/rc2.d
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc3.d -> rc.d/rc3.d
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc4.d -> rc.d/rc4.d
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc5.d -> rc.d/rc5.d
+104438.219: [10:44:38]lrwxrwxrwx   1 root root       10 Jun 28  2024 rc6.d -> rc.d/rc6.d
+104438.220: [10:44:38]drwxr-xr-x. 10 root root     4096 Nov 17  2020 rc.d
+104438.220: [10:44:38]lrwxrwxrwx   1 root root       13 Jun 28  2024 rc.local -> rc.d/rc.local
+104438.220: [10:44:38]drwxr-xr-x   2 root root     4096 Jun 28  2024 redhat-lsb
+104438.220: [10:44:38]lrwxrwxrwx   1 root root       14 Jun 28  2024 redhat-release -> centos-release
+104438.220: [10:44:38]-rw-r--r--   1 root root     1787 Jun 10  2014 request-key.conf
+104438.220: [10:44:38]drwxr-xr-x   2 root root     4096 Jun 28  2024 request-key.d
+104438.220: [10:44:38]-rw-r--r--   1 root root      149 Mar 12  2025 resolv.conf
+104438.220: [10:44:38]-rw-r--r--   1 root root     1634 Dec 25  2012 rpc
+104438.220: [10:44:38]drwxr-xr-x.  2 root root     4096 Nov 25  2021 rpm
+104438.220: [10:44:38]-rw-r--r--   1 root root      458 Dec 16  2022 rsyncd.conf
+104438.220: [10:44:38]-rw-r--r--   1 root root     3232 Jan 14  2022 rsyslog.conf
+104438.220: [10:44:38]drwxr-xr-x.  2 root root     4096 May 31  2022 rsyslog.d
+104438.220: [10:44:38]-rw-r--r--   1 root root     1008 Nov 17  2020 rwtab
+104438.220: [10:44:38]drwxr-xr-x.  2 root root     4096 Nov 17  2020 rwtab.d
+104438.221: [10:44:38]drwxr-xr-x.  2 root root     4096 Feb 24  2022 sasl2
+104438.221: [10:44:38]-rw-------.  1 root root      221 Apr  1  2020 securetty
+104438.221: [10:44:38]drwxr-xr-x.  6 root root     4096 Jun 28  2024 security
+104438.221: [10:44:38]drwxr-xr-x.  5 root root     4096 Nov 17  2020 selinux
+104438.221: [10:44:38]-rw-r--r--.  1 root root   670293 Jun  7  2013 services
+104438.221: [10:44:38]-rw-r--r--.  1 root root      216 Apr  1  2020 sestatus.conf
+104438.221: [10:44:38]----------   1 root root      740 Jul 15  2025 shadow
+104438.221: [10:44:38]----------.  1 root root      740 Jul 15  2025 shadow-
+104438.221: [10:44:38]-rw-r--r--.  1 root root       44 Apr  1  2020 shells
+104438.221: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 skel
+104438.221: [10:44:38]drwxr-xr-x.  2 root root     4096 Mar 12  2025 ssh
+104438.221: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 ssl
+104438.221: [10:44:38]-rw-r--r--   1 root root      212 Nov 17  2020 statetab
+104438.221: [10:44:38]drwxr-xr-x.  2 root root     4096 Nov 17  2020 statetab.d
+104438.222: [10:44:38]-rw-r--r--.  1 root root        0 Apr  1  2020 subgid
+104438.222: [10:44:38]-rw-r--r--.  1 root root        0 Apr  1  2020 subuid
+104438.222: [10:44:38]-rw-r-----   1 root root     1786 Jan  8  2022 sudo.conf
+104438.222: [10:44:38]-r--r-----   1 root root     4328 Jan  8  2022 sudoers
+104438.222: [10:44:38]drwxr-x---.  2 root root     4096 Jan 26  2023 sudoers.d
+104438.222: [10:44:38]-rw-r-----   1 root root     3181 Jan  8  2022 sudo-ldap.conf
+104438.222: [10:44:38]drwxr-xr-x.  6 root root     4096 Jun 28  2024 sysconfig
+104438.222: [10:44:38]-rw-r--r--   1 root root      566 Jun 28  2024 sysctl.conf
+104438.222: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 sysctl.d
+104438.222: [10:44:38]drwxr-xr-x.  4 root root     4096 Jun 28  2024 systemd
+104438.222: [10:44:38]lrwxrwxrwx   1 root root       14 Jun 28  2024 system-release -> centos-release
+104438.222: [10:44:38]-rw-r--r--   1 root root       23 May 21  2024 system-release-cpe
+104438.222: [10:44:38]drwxr-xr-x.  2 root root     4096 Sep  7  2017 terminfo
+104438.223: [10:44:38]drwxr-xr-x.  2 root root     4096 Dec  7  2023 tmpfiles.d
+104438.223: [10:44:38]drwxr-xr-x.  3 root root     4096 Jun 28  2024 tuned
+104438.223: [10:44:38]drwxr-xr-x.  3 root root     4096 Jun 28  2024 udev
+104438.223: [10:44:38]-rw-r--r--.  1 root root       37 Jun 28  2024 vconsole.conf
+104438.223: [10:44:38]-rw-r--r--   1 root root     1982 Dec 16  2020 vimrc
+104438.223: [10:44:38]-rw-r--r--   1 root root     1982 Dec 16  2020 virc
+104438.223: [10:44:38]-rw-r--r--   1 root root     4479 May 16  2019 wgetrc
+104438.223: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 wpa_supplicant
+104438.223: [10:44:38]drwxr-xr-x.  5 root root     4096 Jun 28  2024 X11
+104438.223: [10:44:38]drwxr-xr-x.  4 root root     4096 Jun 28  2024 xdg
+104438.223: [10:44:38]drwxr-xr-x.  2 root root     4096 Apr 11  2018 xinetd.d
+104438.223: [10:44:38]drwxr-xr-x.  6 root root     4096 Jun 28  2024 yum
+104438.223: [10:44:38]-rw-r--r--.  1 root root      970 Oct  2  2020 yum.conf
+104438.223: [10:44:38]drwxr-xr-x.  2 root root     4096 Jun 28  2024 yum.repos.d
+104701.902: [10:47:01][root@iZbp1fvr0ojbaf96ys1erlZ etc]# ll | grep ngi
+104708.821: [10:47:08][root@iZbp1fvr0ojbaf96ys1erlZ etc]# ps -ef | grep nginx
+104708.840: [10:47:08]root      3893     1  0  2025 ?        00:00:00 nginx: master process /usr/local/nginx/sbin/nginx
+104708.840: [10:47:08]root     14031 13968  0 10:47 pts/1    00:00:00 grep --color=auto nginx
+104708.840: [10:47:08]nobody   21227  3893  0 Feb11 ?        00:13:34 nginx: worker process
+104720.817: [10:47:20][root@iZbp1fvr0ojbaf96ys1erlZ etc]# systemctl status nginx.service 
+104720.835: [10:47:20]● nginx.service - nginx
+104720.835: [10:47:20]   Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled)
+104720.835: [10:47:20]   Active: active (running) since Wed 2025-12-10 16:59:59 CST; 2 months 29 days ago
+104720.835: [10:47:20] Main PID: 3893 (nginx)
+104720.835: [10:47:20]   CGroup: /system.slice/nginx.service
+104720.835: [10:47:20]           ├─ 3893 nginx: master process /usr/local/nginx/sbin/nginx
+104720.835: [10:47:20]           └─21227 nginx: worker process
+104720.835: [10:47:20]
+104720.835: [10:47:20]Dec 10 16:59:59 iZbp1fvr0ojbaf96ys1erlZ systemd[1]: Starting nginx...
+104720.835: [10:47:20]Dec 10 16:59:59 iZbp1fvr0ojbaf96ys1erlZ nginx[3889]: nginx: [warn] conflicting server name "*.tiangongqs.net" on 0.0.0.0:443, ignored
+104720.835: [10:47:20]Dec 10 16:59:59 iZbp1fvr0ojbaf96ys1erlZ nginx[3889]: nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok
+104720.836: [10:47:20]Dec 10 16:59:59 iZbp1fvr0ojbaf96ys1erlZ nginx[3889]: nginx: configuration file /usr/local/nginx/conf/nginx.conf test is successful
+104720.836: [10:47:20]Dec 10 16:59:59 iZbp1fvr0ojbaf96ys1erlZ nginx[3891]: nginx: [warn] conflicting server name "*.tiangongqs.net" on 0.0.0.0:443, ignored
+104720.836: [10:47:20]Dec 10 16:59:59 iZbp1fvr0ojbaf96ys1erlZ systemd[1]: Started nginx.
+104747.221: [10:47:47][root@iZbp1fvr0ojbaf96ys1erlZ etc]# cd /usr/local/nginx/
+104748.057: [10:47:48][root@iZbp1fvr0ojbaf96ys1erlZ nginx]# ll
+104748.057: [10:47:48]total 36
+104748.057: [10:47:48]drwx------  2 nobody root 4096 Mar 11 10:27 client_body_temp
+104748.058: [10:47:48]drwxr-xr-x  3 root   root 4096 Nov 28 14:41 conf
+104748.058: [10:47:48]drwx------  2 nobody root 4096 Mar 13  2025 fastcgi_temp
+104748.058: [10:47:48]drwxr-xr-x  2 root   root 4096 Mar 13  2025 html
+104748.058: [10:47:48]drwxr-xr-x  2 root   root 4096 Dec 10 16:59 logs
+104748.059: [10:47:48]drwx------ 12 nobody root 4096 Mar 13  2025 proxy_temp
+104748.059: [10:47:48]drwxr-xr-x  2 root   root 4096 Mar 13  2025 sbin
+104748.059: [10:47:48]drwx------  2 nobody root 4096 Mar 13  2025 scgi_temp
+104748.059: [10:47:48]drwx------  2 nobody root 4096 Mar 13  2025 uwsgi_temp
+104751.142: [10:47:51][root@iZbp1fvr0ojbaf96ys1erlZ nginx]# cd conf/
+104751.733: [10:47:51][root@iZbp1fvr0ojbaf96ys1erlZ conf]# ll
+104751.751: [10:47:51]total 84
+104751.751: [10:47:51]drwxr-xr-x 2 root root  4096 Feb 11 13:56 cert
+104751.751: [10:47:51]-rw-r--r-- 1 root root  1077 Mar 13  2025 fastcgi.conf
+104751.751: [10:47:51]-rw-r--r-- 1 root root  1077 Mar 13  2025 fastcgi.conf.default
+104751.751: [10:47:51]-rw-r--r-- 1 root root  1007 Mar 13  2025 fastcgi_params
+104751.751: [10:47:51]-rw-r--r-- 1 root root  1007 Mar 13  2025 fastcgi_params.default
+104751.751: [10:47:51]-rw-r--r-- 1 root root  2837 Mar 13  2025 koi-utf
+104751.752: [10:47:51]-rw-r--r-- 1 root root  2223 Mar 13  2025 koi-win
+104751.752: [10:47:51]-rw-r--r-- 1 root root  5170 Mar 13  2025 mime.types
+104751.752: [10:47:51]-rw-r--r-- 1 root root  5170 Mar 13  2025 mime.types.default
+104751.752: [10:47:51]-rw-r--r-- 1 root root 15772 Dec 10 16:59 nginx.conf
+104751.752: [10:47:51]-rw-r--r-- 1 root root  2656 Mar 13  2025 nginx.conf.default
+104751.752: [10:47:51]-rw-r--r-- 1 root root   636 Mar 13  2025 scgi_params
+104751.752: [10:47:51]-rw-r--r-- 1 root root   636 Mar 13  2025 scgi_params.default
+104751.752: [10:47:51]-rw-r--r-- 1 root root   664 Mar 13  2025 uwsgi_params
+104751.752: [10:47:51]-rw-r--r-- 1 root root   664 Mar 13  2025 uwsgi_params.default
+104751.752: [10:47:51]-rw-r--r-- 1 root root  3610 Mar 13  2025 win-utf
+104800.416: [10:48:00][root@iZbp1fvr0ojbaf96ys1erlZ conf]# vi nginx.conf
+104800.435: [10:48:00]#user  nobody;
+104800.435: [10:48:00]worker_processes  1;
+104800.435: [10:48:00]
+104800.435: [10:48:00]#error_log  logs/error.log;
+104800.435: [10:48:00]#error_log  logs/error.log  notice;
+104800.435: [10:48:00]#error_log  logs/error.log  info;
+104800.435: [10:48:00]
+104800.435: [10:48:00]#pid        logs/nginx.pid;
+104800.435: [10:48:00]
+104800.435: [10:48:00]
+104800.435: [10:48:00]events {
+104800.435: [10:48:00]    worker_connections  1024;
+104800.435: [10:48:00]    multi_accept on;
+104800.435: [10:48:00]    accept_mutex on;
+104800.435: [10:48:00]    accept_mutex_delay 500ms;
+104800.435: [10:48:00]}
+104800.435: [10:48:00]
+104800.435: [10:48:00]
+104800.435: [10:48:00]http {
+104800.436: [10:48:00]        gzip_disable "MSIE [1-6]\.";
+104800.436: [10:48:00]#######
+104800.436: [10:48:00]    include       mime.types;
+104800.436: [10:48:00]    default_type  application/octet-stream;
+104800.436: [10:48:00]    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+104803.193: [10:48:03]
+104803.678: [10:48:03]#user  nobody;
+104803.747: [10:48:03]worker_processes  1;
+104803.831: [10:48:03]
+104803.910: [10:48:03]#error_log  logs/error.log;
+104804.002: [10:48:04]#error_log  logs/error.log  notice;
+104804.079: [10:48:04]#error_log  logs/error.log  info;
+104804.208: [10:48:04]
+104804.252: [10:48:04]#pid        logs/nginx.pid;
+104804.330: [10:48:04]
+104804.413: [10:48:04]
+104804.503: [10:48:04]events {
+104804.581: [10:48:04]    worker_connections  1024;
+104804.732: [10:48:04]    multi_accept on;
+104804.754: [10:48:04]    accept_mutex on;
+104804.835: [10:48:04]    accept_mutex_delay 500ms;
+104804.918: [10:48:04]}
+104805.004: [10:48:05]
+104805.090: [10:48:05]
+104805.256: [10:48:05]http {
+104805.277: [10:48:05]    ######
+104805.335: [10:48:05]     server_tokens off;
+104805.418: [10:48:05]      sendfile on;
+104805.508: [10:48:05]      tcp_nopush on;
+104805.579: [10:48:05]      tcp_nodelay on;
+104805.666: [10:48:05]       access_log off;
+104805.781: [10:48:05]       keepalive_timeout  300;
+104805.831: [10:48:05]        client_max_body_size 10240M;
+104805.918: [10:48:05]        gzip on;
+104805.997: [10:48:05]        # 1KB以下不进行gzip
+104806.083: [10:48:06]        gzip_min_length 1k;
+104806.164: [10:48:06]        # 设置gzip的buffer
+104806.305: [10:48:06]        gzip_buffers 4 16k;
+104806.974: [10:48:06]        # 设置gzip的等级，等级越高压缩比例越大，越消耗cpu
+104807.486: [10:48:07]        gzip_comp_level 3;
+104807.555: [10:48:07]        # 设置gzip的压缩类型
+104807.637: [10:48:07]        gzip_types text/xml text/plain text/css text/javascript application/x-javascript application/javascript application/xml application/json;
+104807.725: [10:48:07]        gzip_disable "MSIE [1-6]\.";
+104807.872: [10:48:07]#######
+104807.894: [10:48:07]    include       mime.types;
+104807.980: [10:48:07]    default_type  application/octet-stream;
+104808.056: [10:48:08]    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+104808.139: [10:48:08]    ssl_prefer_server_ciphers on;
+104928.335: [10:49:28]        ##
+104928.618: [10:49:28]        #error_log /var/log/nginx/error.log;
+104928.916: [10:49:28]        ##
+104929.003: [10:49:29]
+104929.144: [10:49:29]
+104929.688: [10:49:29]        # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+104929.749: [10:49:29]
+104929.832: [10:49:29]        ##
+104929.918: [10:49:29]        # Virtual Host Configs
+104930.000: [10:49:30]        ##
+104930.362: [10:49:30]         upstream seeyon_v5_cluster{
+104930.860: [10:49:30]                            server 58.211.207.202:8071 max_fails=300 fail_timeout=30s;
+104930.945: [10:49:30]        }
+104931.028: [10:49:31]        server {
+104931.119: [10:49:31]               listen 80;
+104931.240: [10:49:31]               server_name www.tiangongqs.net;
+104931.285: [10:49:31]               client_max_body_size 1024M;
+104931.362: [10:49:31]               client_body_buffer_size 128k;
+104931.447: [10:49:31]               #return 301 https://www.tiangongqs.net;
+104931.530: [10:49:31]               location / {
+104931.620: [10:49:31]                          root html;
+104931.759: [10:49:31]                          index index.html;
+104931.780: [10:49:31]                          proxy_pass http://58.211.207.202:8071;
+104931.863: [10:49:31]                          proxy_set_header Host $http_host;
+104941.612: [10:49:41]                          proxy_set_header X-Real-IP $remote_addr;
+104942.112: [10:49:42]                          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+104942.251: [10:49:42]                          proxy_set_header REMOTE-HOST $remote_addr;
+104942.291: [10:49:42]               }
+104942.362: [10:49:42]        }
+104942.447: [10:49:42]
+104942.531: [10:49:42]                server {
+104942.614: [10:49:42]                # 设置监听端口及协议，443为https的默认端口，建议使用443
+104943.082: [10:49:43]                listen 443 ssl;
+104943.321: [10:49:43]                client_max_body_size 1024M;
+104943.502: [10:49:43]                client_body_buffer_size 128k;
+104943.667: [10:49:43]                # 以下ssl文件夹与nginx.conf平级
+104943.862: [10:49:43]                # 设置证书crt文件路径，正式部署时将server.crt替换为客户的正式证书
+104944.052: [10:49:44]                ssl_certificate     cert/tiangongqs.net.pem;
+104944.347: [10:49:44]                # 设置证书key文件路径，正式部署时将server.key替换为客户的正式证书
+104944.431: [10:49:44]                ssl_certificate_key cert/tiangongqs.net.key;
+104944.613: [10:49:44]                # 控制ssl协议
+104944.856: [10:49:44]                ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+104944.958: [10:49:44]                # 设置server名称
+104950.347: [10:49:50]                server_name www.tiangongqs.net;
+104950.639: [10:49:50]                # 设置字符集
+104950.748: [10:49:50]                charset utf-8;
+104950.916: [10:49:50]                ##aio threads;
+104951.163: [10:49:51]                ##aio_write on;
+104951.230: [10:49:51]                  # 设置location
+104959.587: [10:49:59]                   location / {
+105003.753: [10:50:03][root@iZbp1fvr0ojbaf96ys1erlZ conf]# ll
+105003.770: [10:50:03]total 84
+105003.771: [10:50:03]drwxr-xr-x 2 root root  4096 Feb 11 13:56 cert
+105003.771: [10:50:03]-rw-r--r-- 1 root root  1077 Mar 13  2025 fastcgi.conf
+105003.771: [10:50:03]-rw-r--r-- 1 root root  1077 Mar 13  2025 fastcgi.conf.default
+105003.771: [10:50:03]-rw-r--r-- 1 root root  1007 Mar 13  2025 fastcgi_params
+105003.771: [10:50:03]-rw-r--r-- 1 root root  1007 Mar 13  2025 fastcgi_params.default
+105003.771: [10:50:03]-rw-r--r-- 1 root root  2837 Mar 13  2025 koi-utf
+105003.771: [10:50:03]-rw-r--r-- 1 root root  2223 Mar 13  2025 koi-win
+105003.771: [10:50:03]-rw-r--r-- 1 root root  5170 Mar 13  2025 mime.types
+105003.771: [10:50:03]-rw-r--r-- 1 root root  5170 Mar 13  2025 mime.types.default
+105003.771: [10:50:03]-rw-r--r-- 1 root root 15772 Dec 10 16:59 nginx.conf
+105003.771: [10:50:03]-rw-r--r-- 1 root root  2656 Mar 13  2025 nginx.conf.default
+105003.771: [10:50:03]-rw-r--r-- 1 root root   636 Mar 13  2025 scgi_params
+105003.771: [10:50:03]-rw-r--r-- 1 root root   636 Mar 13  2025 scgi_params.default
+105003.771: [10:50:03]-rw-r--r-- 1 root root   664 Mar 13  2025 uwsgi_params
+105003.771: [10:50:03]-rw-r--r-- 1 root root   664 Mar 13  2025 uwsgi_params.default
+105003.771: [10:50:03]-rw-r--r-- 1 root root  3610 Mar 13  2025 win-utf
+105130.955: [10:51:30][root@iZbp1fvr0ojbaf96ys1erlZ conf]# cat nginx.conf
+105130.973: [10:51:30]
+105130.973: [10:51:30]#user  nobody;
+105130.973: [10:51:30]worker_processes  1;
+105130.973: [10:51:30]
+105130.973: [10:51:30]#error_log  logs/error.log;
+105130.974: [10:51:30]#error_log  logs/error.log  notice;
+105130.974: [10:51:30]#error_log  logs/error.log  info;
+105130.974: [10:51:30]
+105130.974: [10:51:30]#pid        logs/nginx.pid;
+105130.974: [10:51:30]
+105130.974: [10:51:30]
+105130.974: [10:51:30]events {
+105130.974: [10:51:30]    worker_connections  1024;
+105130.974: [10:51:30]    multi_accept on;
+105130.974: [10:51:30]    accept_mutex on;
+105130.974: [10:51:30]    accept_mutex_delay 500ms;
+105130.974: [10:51:30]}
+105130.974: [10:51:30]
+105130.974: [10:51:30]
+105130.974: [10:51:30]http {
+105130.974: [10:51:30]    ######
+105130.974: [10:51:30]     server_tokens off;
+105130.974: [10:51:30]      sendfile on;
+105130.974: [10:51:30]      tcp_nopush on; 
+105130.974: [10:51:30]      tcp_nodelay on;
+105130.974: [10:51:30]       access_log off;
+105130.974: [10:51:30]       keepalive_timeout  300;
+105130.974: [10:51:30]        client_max_body_size 10240M;
+105130.974: [10:51:30]        gzip on;
+105130.974: [10:51:30]        # 1KB以下不进行gzip
+105130.974: [10:51:30]        gzip_min_length 1k;
+105130.974: [10:51:30]        # 设置gzip的buffer
+105130.975: [10:51:30]        gzip_buffers 4 16k;
+105130.975: [10:51:30]        # 设置gzip的等级，等级越高压缩比例越大，越消耗cpu
+105130.975: [10:51:30]        gzip_comp_level 3;
+105130.975: [10:51:30]        # 设置gzip的压缩类型
+105130.975: [10:51:30]        gzip_types text/xml text/plain text/css text/javascript application/x-javascript application/javascript application/xml application/json;
+105130.975: [10:51:30]        gzip_disable "MSIE [1-6]\.";
+105130.975: [10:51:30]#######
+105130.975: [10:51:30]    include       mime.types;
+105130.975: [10:51:30]    default_type  application/octet-stream;
+105130.975: [10:51:30]    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+105130.975: [10:51:30]    ssl_prefer_server_ciphers on;
+105130.975: [10:51:30]
+105130.975: [10:51:30]        ##
+105130.975: [10:51:30]        # Logging Settings
+105130.975: [10:51:30]        ##
+105130.975: [10:51:30]
+105130.975: [10:51:30]        #access_log /var/log/nginx/access.log;
+105130.975: [10:51:30]        #error_log /var/log/nginx/error.log;
+105130.975: [10:51:30]
+105130.975: [10:51:30]        ##
+105130.975: [10:51:30]        # Gzip Settings
+105130.975: [10:51:30]        ##
+105130.975: [10:51:30]
+105130.975: [10:51:30]
+105130.975: [10:51:30]
+105130.975: [10:51:30]        # gzip_vary on;
+105130.975: [10:51:30]        # gzip_proxied any;
+105130.975: [10:51:30]        # gzip_comp_level 6;
+105130.975: [10:51:30]        # gzip_buffers 16 8k;
+105130.975: [10:51:30]        # gzip_http_version 1.1;
+105130.976: [10:51:30]        # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+105130.976: [10:51:30]
+105130.976: [10:51:30]        ##
+105130.976: [10:51:30]        # Virtual Host Configs
+105130.976: [10:51:30]        ##
+105130.976: [10:51:30]         upstream seeyon_v5_cluster{
+105130.976: [10:51:30]                            server 58.211.207.202:8071 max_fails=300 fail_timeout=30s;
+105130.976: [10:51:30]        }
+105130.976: [10:51:30]        server {
+105130.976: [10:51:30]               listen 80;
+105130.976: [10:51:30]               server_name www.tiangongqs.net;
+105130.976: [10:51:30]               client_max_body_size 1024M;
+105130.977: [10:51:30]               client_body_buffer_size 128k;
+105130.977: [10:51:30]               #return 301 https://www.tiangongqs.net;
+105130.977: [10:51:30]               location / {
+105130.977: [10:51:30]                          root html;
+105130.977: [10:51:30]                          index index.html;
+105130.977: [10:51:30]                          proxy_pass http://58.211.207.202:8071;
+105130.977: [10:51:30]                          proxy_set_header Host $http_host;
+105130.977: [10:51:30]                          proxy_set_header X-Real-IP $remote_addr;
+105130.977: [10:51:30]                          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.977: [10:51:30]                          proxy_set_header REMOTE-HOST $remote_addr;
+105130.977: [10:51:30]               }
+105130.977: [10:51:30]        }
+105130.977: [10:51:30]
+105130.977: [10:51:30]                server {
+105130.977: [10:51:30]                # 设置监听端口及协议，443为https的默认端口，建议使用443
+105130.977: [10:51:30]                listen 443 ssl;
+105130.977: [10:51:30]                client_max_body_size 1024M;
+105130.977: [10:51:30]                client_body_buffer_size 128k;
+105130.977: [10:51:30]                # 以下ssl文件夹与nginx.conf平级
+105130.977: [10:51:30]                # 设置证书crt文件路径，正式部署时将server.crt替换为客户的正式证书
+105130.977: [10:51:30]                ssl_certificate     cert/tiangongqs.net.pem;
+105130.977: [10:51:30]                # 设置证书key文件路径，正式部署时将server.key替换为客户的正式证书
+105130.977: [10:51:30]                ssl_certificate_key cert/tiangongqs.net.key;                    
+105130.977: [10:51:30]                # 控制ssl协议
+105130.977: [10:51:30]                ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+105130.977: [10:51:30]                # 设置server名称
+105130.977: [10:51:30]                server_name www.tiangongqs.net;
+105130.978: [10:51:30]                # 设置字符集
+105130.978: [10:51:30]                charset utf-8;
+105130.978: [10:51:30]                ##aio threads;
+105130.978: [10:51:30]                ##aio_write on;
+105130.978: [10:51:30]                  # 设置location
+105130.978: [10:51:30]                   location / {
+105130.978: [10:51:30]                             # 转发请求至seeyon_v5_cluster，该名称与upstream的名称一致
+105130.978: [10:51:30]                             proxy_pass http://58.211.207.202:8071;
+105130.978: [10:51:30]                             # 设置header的host包含host及port
+105130.978: [10:51:30]                             proxy_set_header Host $http_host;
+105130.978: [10:51:30]                             # 设置header的客户端ip为实际ip
+105130.978: [10:51:30]                             proxy_set_header X-Real-IP $remote_addr;
+105130.978: [10:51:30]                             # 设置header的协议为实际使用的协议
+105130.978: [10:51:30]                             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.978: [10:51:30]                             # 设置hearder的协议为实际用户发出的协议（http还是https）
+105130.978: [10:51:30]                             proxy_set_header X-Forwarded-Proto $scheme;
+105130.978: [10:51:30]                             proxy_redirect http://www.tiangongqs.net/ https://www.tiangongqs.net/;
+105130.979: [10:51:30]                             # 设置超时时间
+105130.979: [10:51:30]                             proxy_connect_timeout 300;
+105130.979: [10:51:30]                             proxy_read_timeout 300;
+105130.979: [10:51:30]                             proxy_send_timeout 300;
+105130.979: [10:51:30]                             add_header Content-Security-Policy "upgrade-insecure-requests";                                                     
+105130.979: [10:51:30]                           }
+105130.979: [10:51:30]                             error_page   500 502 503 504  /50x.html;
+105130.979: [10:51:30]                             location = /50x.html {
+105130.979: [10:51:30]                             root   html;
+105130.979: [10:51:30]                             }
+105130.979: [10:51:30]                           }
+105130.979: [10:51:30]     server {
+105130.979: [10:51:30]                # 设置监听端口及协议，443为https的默认端口，建议使用443
+105130.979: [10:51:30]                listen 443 ssl;
+105130.979: [10:51:30]                client_max_body_size 1024M;
+105130.979: [10:51:30]                client_body_buffer_size 128k;
+105130.979: [10:51:30]                # 以下ssl文件夹与nginx.conf平级
+105130.979: [10:51:30]                # 设置证书crt文件路径，正式部署时将server.crt替换为客户的正式证书
+105130.979: [10:51:30]                ssl_certificate     cert/tiangongqs.net.pem;
+105130.979: [10:51:30]                # 设置证书key文件路径，正式部署时将server.key替换为客户的正式证书
+105130.980: [10:51:30]                ssl_certificate_key cert/tiangongqs.net.key;                    
+105130.980: [10:51:30]                # 控制ssl协议
+105130.980: [10:51:30]                ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+105130.980: [10:51:30]                # 设置server名称
+105130.980: [10:51:30]                server_name play.tiangongqs.net;
+105130.980: [10:51:30]                # 设置字符集
+105130.980: [10:51:30]                charset utf-8;
+105130.980: [10:51:30]                ##aio threads;
+105130.980: [10:51:30]                ##aio_write on;
+105130.980: [10:51:30]                  # 设置location
+105130.980: [10:51:30]                   location / {
+105130.980: [10:51:30]                             # 转发请求至seeyon_v5_cluster，该名称与upstream的名称一致
+105130.980: [10:51:30]                             proxy_pass http://58.211.207.202:86;
+105130.980: [10:51:30]                             # 设置header的host包含host及port
+105130.980: [10:51:30]                             proxy_set_header Host $http_host;
+105130.980: [10:51:30]                             # 设置header的客户端ip为实际ip
+105130.980: [10:51:30]                             proxy_set_header X-Real-IP $remote_addr;
+105130.980: [10:51:30]                             # 设置header的协议为实际使用的协议
+105130.980: [10:51:30]                             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.981: [10:51:30]                             # 设置hearder的协议为实际用户发出的协议（http还是https）
+105130.981: [10:51:30]                             proxy_set_header X-Forwarded-Proto $scheme;
+105130.981: [10:51:30]                             # 关闭redirect
+105130.981: [10:51:30]                             proxy_redirect     off;
+105130.981: [10:51:30]                             # 设置超时时间
+105130.981: [10:51:30]                             proxy_connect_timeout 300;
+105130.981: [10:51:30]                             proxy_read_timeout 300;
+105130.981: [10:51:30]                             proxy_send_timeout 300;                                                     
+105130.981: [10:51:30]                           }
+105130.981: [10:51:30]                             error_page   500 502 503 504  /50x.html;
+105130.981: [10:51:30]                             location = /50x.html {
+105130.981: [10:51:30]                             root   html;
+105130.981: [10:51:30]                             }
+105130.981: [10:51:30]                           }
+105130.981: [10:51:30]     
+105130.981: [10:51:30]       server {
+105130.981: [10:51:30]               listen 80;
+105130.981: [10:51:30]               server_name kingee.tiangongqs.net;
+105130.981: [10:51:30]               client_max_body_size 1024M;
+105130.981: [10:51:30]               client_body_buffer_size 128k;
+105130.982: [10:51:30]               #return 301 https://www.tiangongqs.net;
+105130.982: [10:51:30]               location / {
+105130.982: [10:51:30]                          root html;
+105130.982: [10:51:30]                          index index.html;
+105130.982: [10:51:30]                          proxy_pass http://58.211.207.202:9091;
+105130.982: [10:51:30]                          proxy_set_header Host $host;
+105130.982: [10:51:30]                          proxy_set_header X-Real-IP $remote_addr;
+105130.982: [10:51:30]                          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.982: [10:51:30]                          proxy_set_header REMOTE-HOST $remote_addr;
+105130.982: [10:51:30]               }
+105130.982: [10:51:30]        }
+105130.982: [10:51:30]
+105130.982: [10:51:30]    server {
+105130.982: [10:51:30]                # 设置监听端口及协议，443为https的默认端口，建议使用443
+105130.982: [10:51:30]                listen 443 ssl;
+105130.982: [10:51:30]                client_max_body_size 1024M;
+105130.982: [10:51:30]                client_body_buffer_size 128k;
+105130.982: [10:51:30]                # 以下ssl文件夹与nginx.conf平级
+105130.982: [10:51:30]                # 设置证书crt文件路径，正式部署时将server.crt替换为客户的正式证书
+105130.982: [10:51:30]                ssl_certificate     cert/tiangongqs.net.pem;
+105130.983: [10:51:30]                # 设置证书key文件路径，正式部署时将server.key替换为客户的正式证书
+105130.983: [10:51:30]                ssl_certificate_key cert/tiangongqs.net.key;                    
+105130.983: [10:51:30]                # 控制ssl协议
+105130.983: [10:51:30]                ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+105130.983: [10:51:30]                # 设置server名称
+105130.983: [10:51:30]                server_name kingee.tiangongqs.net;
+105130.983: [10:51:30]                # 设置字符集
+105130.983: [10:51:30]                charset utf-8;
+105130.983: [10:51:30]                ##aio threads;
+105130.983: [10:51:30]                ##aio_write on;
+105130.983: [10:51:30]                  # 设置location
+105130.983: [10:51:30]                   location / {
+105130.983: [10:51:30]                             # 转发请求至seeyon_v5_cluster，该名称与upstream的名称一致
+105130.983: [10:51:30]                             proxy_pass http://58.211.207.202:9091;
+105130.983: [10:51:30]                             # 设置header的host包含host及port
+105130.983: [10:51:30]                             proxy_set_header Host $http_host;
+105130.983: [10:51:30]                             # 设置header的客户端ip为实际ip
+105130.983: [10:51:30]                             proxy_set_header X-Real-IP $remote_addr;
+105130.983: [10:51:30]                             # 设置header的协议为实际使用的协议
+105130.984: [10:51:30]                             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.984: [10:51:30]                             # 设置hearder的协议为实际用户发出的协议（http还是https）
+105130.984: [10:51:30]                             proxy_set_header X-Forwarded-Proto $scheme;
+105130.984: [10:51:30]                             # 关闭redirect
+105130.984: [10:51:30]                             proxy_redirect     off;
+105130.984: [10:51:30]                             # 设置超时时间
+105130.984: [10:51:30]                             proxy_connect_timeout 300;
+105130.984: [10:51:30]                             proxy_read_timeout 300;
+105130.984: [10:51:30]                             proxy_send_timeout 300;                                                     
+105130.984: [10:51:30]                           }
+105130.984: [10:51:30]                             error_page   500 502 503 504  /50x.html;
+105130.984: [10:51:30]                             location = /50x.html {
+105130.984: [10:51:30]                             root   html;
+105130.984: [10:51:30]                             }
+105130.984: [10:51:30]                         }
+105130.984: [10:51:30]            server {
+105130.984: [10:51:30]                # 设置监听端口及协议，443为https的默认端口，建议使用443
+105130.984: [10:51:30]                listen 443 ssl;
+105130.984: [10:51:30]                client_max_body_size 1024M;
+105130.984: [10:51:30]                client_body_buffer_size 128k;
+105130.985: [10:51:30]                # 以下ssl文件夹与nginx.conf平级
+105130.985: [10:51:30]                # 设置证书crt文件路径，正式部署时将server.crt替换为客户的正式证书
+105130.985: [10:51:30]                ssl_certificate      cert/tiangongqs.net.pem;
+105130.985: [10:51:30]                # 设置证书key文件路径，正式部署时将server.key替换为客户的正式证书
+105130.985: [10:51:30]                ssl_certificate_key cert/tiangongqs.net.key;                   
+105130.985: [10:51:30]                # 控制ssl协议
+105130.985: [10:51:30]                ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+105130.985: [10:51:30]                # 设置server名称
+105130.985: [10:51:30]                server_name *.tiangongqs.net;
+105130.985: [10:51:30]                # 设置字符集
+105130.985: [10:51:30]                charset utf-8;
+105130.985: [10:51:30]                ##aio threads;
+105130.985: [10:51:30]                ##aio_write on;
+105130.985: [10:51:30]                  # 设置location
+105130.985: [10:51:30]                   location / {
+105130.985: [10:51:30]                             # 转发请求至seeyon_v5_cluster，该名称与upstream的名称一致
+105130.985: [10:51:30]                             proxy_pass http://58.211.207.202:50001;
+105130.985: [10:51:30]                             # 设置header的host包含host及port
+105130.986: [10:51:30]                             proxy_set_header Host $http_host;
+105130.986: [10:51:30]                             # 设置header的客户端ip为实际ip
+105130.986: [10:51:30]                             proxy_set_header X-Real-IP $remote_addr;
+105130.986: [10:51:30]                             # 设置header的协议为实际使用的协议
+105130.986: [10:51:30]                             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.986: [10:51:30]                             # 设置hearder的协议为实际用户发出的协议（http还是https）
+105130.986: [10:51:30]                             proxy_set_header X-Forwarded-Proto $scheme;
+105130.986: [10:51:30]                             # 关闭redirect
+105130.986: [10:51:30]                             proxy_redirect     off;
+105130.986: [10:51:30]                             # 设置超时时间
+105130.986: [10:51:30]                             proxy_connect_timeout 300;
+105130.986: [10:51:30]                             proxy_read_timeout 300;
+105130.986: [10:51:30]                             proxy_send_timeout 300;                                                     
+105130.986: [10:51:30]                           }
+105130.986: [10:51:30]                             error_page   500 502 503 504  /50x.html;
+105130.986: [10:51:30]                             location = /50x.html {
+105130.986: [10:51:30]                             root   html;
+105130.987: [10:51:30]                             }
+105130.987: [10:51:30]                           }
+105130.987: [10:51:30]              
+105130.987: [10:51:30]      
+105130.987: [10:51:30]             
+105130.987: [10:51:30]         server {
+105130.987: [10:51:30]                # 设置监听端口及协议，443为https的默认端口，建议使用443
+105130.987: [10:51:30]                listen 443 ssl;
+105130.987: [10:51:30]                client_max_body_size 1024M;
+105130.987: [10:51:30]                client_body_buffer_size 128k;
+105130.987: [10:51:30]                # 以下ssl文件夹与nginx.conf平级
+105130.987: [10:51:30]                # 设置证书crt文件路径，正式部署时将server.crt替换为客户的正式证书
+105130.987: [10:51:30]                ssl_certificate      cert/tiangongqs.net.pem;
+105130.987: [10:51:30]                # 设置证书key文件路径，正式部署时将server.key替换为客户的正式证书
+105130.987: [10:51:30]                ssl_certificate_key cert/tiangongqs.net.key;                   
+105130.987: [10:51:30]                # 控制ssl协议
+105130.987: [10:51:30]                ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+105130.987: [10:51:30]                # 设置server名称
+105130.987: [10:51:30]                server_name *.tiangongqs.net;
+105130.988: [10:51:30]                # 设置字符集
+105130.988: [10:51:30]                charset utf-8;
+105130.988: [10:51:30]                ##aio threads;
+105130.988: [10:51:30]                ##aio_write on;
+105130.988: [10:51:30]                  # 设置location
+105130.988: [10:51:30]                   location / {
+105130.988: [10:51:30]                             # 转发请求至seeyon_v5_cluster，该名称与upstream的名称一致
+105130.988: [10:51:30]                             proxy_pass http://58.211.207.202:50002;
+105130.988: [10:51:30]                             # 设置header的host包含host及port
+105130.988: [10:51:30]                             proxy_set_header Host $http_host;
+105130.988: [10:51:30]                             # 设置header的客户端ip为实际ip
+105130.988: [10:51:30]                             proxy_set_header X-Real-IP $remote_addr;
+105130.988: [10:51:30]                             # 设置header的协议为实际使用的协议
+105130.988: [10:51:30]                             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+105130.988: [10:51:30]                             # 设置hearder的协议为实际用户发出的协议（http还是https）
+105130.988: [10:51:30]                             proxy_set_header X-Forwarded-Proto $scheme;
+105130.989: [10:51:30]                             # 关闭redirect
+105130.989: [10:51:30]                             proxy_redirect     off;
+105130.989: [10:51:30]                             # 设置超时时间
+105130.989: [10:51:30]                             proxy_connect_timeout 300;
+105130.989: [10:51:30]                             proxy_read_timeout 300;
+105130.989: [10:51:30]                             proxy_send_timeout 300;                                                     
+105130.989: [10:51:30]                           }
+105130.989: [10:51:30]                             error_page   500 502 503 504  /50x.html;
+105130.989: [10:51:30]                             location = /50x.html {
+105130.989: [10:51:30]                             root   html;
+105130.989: [10:51:30]                             }
+105130.989: [10:51:30]                           }
+105130.989: [10:51:30]              
+105130.989: [10:51:30]
+105130.989: [10:51:30]    # HTTPS server
+105130.989: [10:51:30]    #
+105130.989: [10:51:30]    #server {
+105130.989: [10:51:30]    #    listen       443 ssl;
+105130.989: [10:51:30]    #    server_name  localhost;
+105130.989: [10:51:30]
+105130.989: [10:51:30]    #    ssl_certificate      cert.pem;
+105130.989: [10:51:30]    #    ssl_certificate_key  cert.key;
+105130.989: [10:51:30]
+105130.989: [10:51:30]    #    ssl_session_cache    shared:SSL:1m;
+105130.989: [10:51:30]    #    ssl_session_timeout  5m;
+105130.989: [10:51:30]
+105130.989: [10:51:30]    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+105130.989: [10:51:30]    #    ssl_prefer_server_ciphers  on;
+105130.989: [10:51:30]
+105130.989: [10:51:30]    #    location / {
+105130.989: [10:51:30]    #        root   html;
+105130.990: [10:51:30]    #        index  index.html index.htm;
+105130.990: [10:51:30]    #    }
+105130.990: [10:51:30]    #}
+105130.990: [10:51:30]
+105130.990: [10:51:30]}
+105722.468: [10:57:22][root@iZbp1fvr0ojbaf96ys1erlZ conf]# 
+105722.603: [10:57:22][root@iZbp1fvr0ojbaf96ys1erlZ conf]# 
+105722.708: [10:57:22][root@iZbp1fvr0ojbaf96ys1erlZ conf]# 
+105727.317: [10:57:27][root@iZbp1fvr0ojbaf96ys1erlZ conf]# ps -ef | grep frp
+105727.336: [10:57:27]root      3100     1  0 Jan08 ?        01:10:30 /opt/frp_0.63.0_linux_amd64/frps -c /opt/frp_0.63.0_linux_amd64/frps.toml
+105727.336: [10:57:27]root     14088 13968  0 10:57 pts/1    00:00:00 grep --color=auto frp
+105730.611: [10:57:30][root@iZbp1fvr0ojbaf96ys1erlZ conf]# ss -tlnp
+105730.630: [10:57:30]State       Recv-Q Send-Q                                                                Local Address:Port                                                                               Peer Address:Port              
+105730.630: [10:57:30]LISTEN      0      128                                                                               *:111                                                                                           *:*                   105730.630: users:(("rpcbind",pid=579,fd=8))
+105730.630: [10:57:30]LISTEN      0      128                                                                               *:80                                                                                            *:*                   105730.630: users:(("nginx",pid=21227,fd=5),("nginx",pid=3893,fd=5))
+105730.630: [10:57:30]LISTEN      0      128                                                                               *:22                                                                                            *:*                   105730.630: users:(("sshd",pid=23125,fd=3))
+105730.631: [10:57:30]LISTEN      0      100                                                                       127.0.0.1:25                                                                                            *:*                   105730.631: users:(("master",pid=1106,fd=13))
+105730.631: [10:57:30]LISTEN      0      128                                                                               *:443                                                                                           *:*                   105730.631: users:(("nginx",pid=21227,fd=6),("nginx",pid=3893,fd=6))
+105730.631: [10:57:30]LISTEN      0      128                                                                            [::]:10622                                                                                      [::]:*                   105730.631: users:(("frps",pid=3100,fd=12))
+105730.631: [10:57:30]LISTEN      0      128                                                                            [::]:8800                                                                                       [::]:*                   105730.631: users:(("frps",pid=3100,fd=13))
+105730.632: [10:57:30]LISTEN      0      128                                                                            [::]:9090                                                                                       [::]:*                   105730.632: users:(("frps",pid=3100,fd=19))
+105730.632: [10:57:30]LISTEN      0      128                                                                            [::]:9443                                                                                       [::]:*                   105730.632: users:(("frps",pid=3100,fd=9))
+105730.632: [10:57:30]LISTEN      0      128                                                                            [::]:9000                                                                                       [::]:*                   105730.632: users:(("frps",pid=3100,fd=14))
+105730.632: [10:57:30]LISTEN      0      128                                                                            [::]:3306                                                                                       [::]:*                   105730.633: users:(("frps",pid=3100,fd=20))
+105730.633: [10:57:30]LISTEN      0      128                                                                            [::]:10122                                                                                      [::]:*                   105730.633: users:(("frps",pid=3100,fd=18))
+105730.633: [10:57:30]LISTEN      0      128                                                                            [::]:10443                                                                                      [::]:*                   105730.633: users:(("frps",pid=3100,fd=7))
+105730.633: [10:57:30]LISTEN      0      128                                                                            [::]:9999                                                                                       [::]:*                   105730.633: users:(("frps",pid=3100,fd=17))
+105730.633: [10:57:30]LISTEN      0      128                                                                            [::]:111                                                                                        [::]:*                   105730.633: users:(("rpcbind",pid=579,fd=11))
+105730.634: [10:57:30]LISTEN      0      128                                                                            [::]:6000                                                                                       [::]:*                   105730.634: users:(("frps",pid=3100,fd=6))
+105730.634: [10:57:30]LISTEN      0      128                                                                            [::]:1202                                                                                       [::]:*                   105730.634: users:(("frps",pid=3100,fd=10))
+105730.634: [10:57:30]LISTEN      0      128                                                                            [::]:19443                                                                                      [::]:*                   105730.634: users:(("frps",pid=3100,fd=15))
+105730.634: [10:57:30]LISTEN      0      128                                                                            [::]:1107                                                                                       [::]:*                   105730.634: users:(("frps",pid=3100,fd=11))
+105730.635: [10:57:30]LISTEN      0      128                                                                            [::]:22                                                                                         [::]:*                   105730.635: users:(("sshd",pid=23125,fd=4))
+105730.635: [10:57:30]LISTEN      0      128                                                                            [::]:3000                                                                                       [::]:*                   105730.635: users:(("frps",pid=3100,fd=16))
+105730.635: [10:57:30]LISTEN      0      100                                                                           [::1]:25                                                                                         [::]:*                   105730.635: users:(("master",pid=1106,fd=14))
+105741.588: [10:57:41][root@iZbp1fvr0ojbaf96ys1erlZ conf]# ss -tlnp | sort -k 6  
+105741.605: [10:57:41]State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              
+105741.606: [10:57:41]LISTEN     0      128       [::]:1202                  [::]:*                   users:(("frps",pid=3100,fd=10))
+105741.606: [10:57:41]LISTEN     0      128       [::]:1107                  [::]:*                   users:(("frps",pid=3100,fd=11))
+105741.606: [10:57:41]LISTEN     0      128       [::]:10622                 [::]:*                   users:(("frps",pid=3100,fd=12))
+105741.606: [10:57:41]LISTEN     0      128       [::]:8800                  [::]:*                   users:(("frps",pid=3100,fd=13))
+105741.606: [10:57:41]LISTEN     0      128       [::]:9000                  [::]:*                   users:(("frps",pid=3100,fd=14))
+105741.606: [10:57:41]LISTEN     0      128       [::]:19443                 [::]:*                   users:(("frps",pid=3100,fd=15))
+105741.606: [10:57:41]LISTEN     0      128       [::]:3000                  [::]:*                   users:(("frps",pid=3100,fd=16))
+105741.606: [10:57:41]LISTEN     0      128       [::]:9999                  [::]:*                   users:(("frps",pid=3100,fd=17))
+105741.606: [10:57:41]LISTEN     0      128       [::]:10122                 [::]:*                   users:(("frps",pid=3100,fd=18))
+105741.607: [10:57:41]LISTEN     0      128       [::]:9090                  [::]:*                   users:(("frps",pid=3100,fd=19))
+105741.607: [10:57:41]LISTEN     0      128       [::]:3306                  [::]:*                   users:(("frps",pid=3100,fd=20))
+105741.607: [10:57:41]LISTEN     0      128       [::]:6000                  [::]:*                   users:(("frps",pid=3100,fd=6))
+105741.607: [10:57:41]LISTEN     0      128       [::]:10443                 [::]:*                   users:(("frps",pid=3100,fd=7))
+105741.607: [10:57:41]LISTEN     0      128       [::]:9443                  [::]:*                   users:(("frps",pid=3100,fd=9))
+105741.607: [10:57:41]LISTEN     0      100    127.0.0.1:25                       *:*                   users:(("master",pid=1106,fd=13))
+105741.607: [10:57:41]LISTEN     0      100      [::1]:25                    [::]:*                   users:(("master",pid=1106,fd=14))
+105741.607: [10:57:41]LISTEN     0      128          *:80                       *:*                   users:(("nginx",pid=21227,fd=5),("nginx",pid=3893,fd=5))
+105741.607: [10:57:41]LISTEN     0      128          *:443                      *:*                   users:(("nginx",pid=21227,fd=6),("nginx",pid=3893,fd=6))
+105741.608: [10:57:41]LISTEN     0      128       [::]:111                   [::]:*                   users:(("rpcbind",pid=579,fd=11))
+105741.608: [10:57:41]LISTEN     0      128          *:111                      *:*                   users:(("rpcbind",pid=579,fd=8))
+105741.608: [10:57:41]LISTEN     0      128          *:22                       *:*                   users:(("sshd",pid=23125,fd=3))
+105741.608: [10:57:41]LISTEN     0      128       [::]:22                    [::]:*                   users:(("sshd",pid=23125,fd=4))
+105800.528: [10:58:00][root@iZbp1fvr0ojbaf96ys1erlZ conf]# ps -ef | grep frp
+105800.537: [10:58:00]root      3100     1  0 Jan08 ?        01:10:30 /opt/frp_0.63.0_linux_amd64/frps -c /opt/frp_0.63.0_linux_amd64/frps.toml
+105800.537: [10:58:00]root     14093 13968  0 10:58 pts/1    00:00:00 grep --color=auto frp
+105804.258: [10:58:04][root@iZbp1fvr0ojbaf96ys1erlZ conf]# cd /opt/frp_0.63.0_linux_amd64/
+105804.938: [10:58:04][root@iZbp1fvr0ojbaf96ys1erlZ frp_0.63.0_linux_amd64]# ll
+105804.956: [10:58:04]total 34344
+105804.956: [10:58:04]-rwxr-xr-x 1 1001 118 15425688 Jun 25  2025 frpc
+105804.956: [10:58:04]-rw-r--r-- 1 1001 118      142 Jun 25  2025 frpc.toml
+105804.956: [10:58:04]-rwxr-xr-x 1 1001 118 19714200 Jun 25  2025 frps
+105804.956: [10:58:04]-rw-r--r-- 1 1001 118      131 Jan  8 15:08 frps.toml
+105804.957: [10:58:04]-rw-r--r-- 1 1001 118    11358 Jun 25  2025 LICENSE
+112021.656: [11:20:21][202603118.31.115.234-Authoring服务器-阿里云-FRPS-11:20:21]
+112021.755: [11:20:21]Last failed login: Wed Mar 11 10:51:04 CST 2026 from 157.245.100.25 on ssh:notty
+112021.756: [11:20:21]There was 1 failed login attempt since the last successful login.
+112021.756: [11:20:21]Last login: Wed Mar 11 10:29:59 2026 from 223.107.68.194
+112021.756: [11:20:21]
+112021.756: [11:20:21]Welcome to Alibaba Cloud Elastic Compute Service !
+112021.756: [11:20:21]
+122022.114: [12:20:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-12:20:22]
+122022.213: [12:20:22]Last login: Wed Mar 11 11:20:21 2026 from 223.107.68.194
+122022.213: [12:20:22]
+122022.213: [12:20:22]Welcome to Alibaba Cloud Elastic Compute Service !
+122022.213: [12:20:22]
+125023.079: [12:50:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-12:50:23]
+125023.180: [12:50:23]Last login: Wed Mar 11 12:20:22 2026 from 223.107.68.194
+125023.180: [12:50:23]
+125023.180: [12:50:23]Welcome to Alibaba Cloud Elastic Compute Service !
+125023.180: [12:50:23]
+132022.236: [13:20:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-13:20:22]
+132022.283: [13:20:22]Last login: Wed Mar 11 12:50:23 2026 from 223.107.68.194
+132022.283: [13:20:22]
+132022.283: [13:20:22]Welcome to Alibaba Cloud Elastic Compute Service !
+132022.283: [13:20:22]
+135022.141: [13:50:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-13:50:22]
+135022.238: [13:50:22]Last login: Wed Mar 11 13:20:22 2026 from 223.107.68.194
+135022.238: [13:50:22]
+135022.238: [13:50:22]Welcome to Alibaba Cloud Elastic Compute Service !
+135022.238: [13:50:22]
+142022.593: [14:20:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-14:20:22]
+142022.693: [14:20:22]Last login: Wed Mar 11 13:50:22 2026 from 223.107.68.194
+142022.693: [14:20:22]
+142022.693: [14:20:22]Welcome to Alibaba Cloud Elastic Compute Service !
+142022.693: [14:20:22]
+145022.085: [14:50:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-14:50:22]
+145022.186: [14:50:22]Last failed login: Wed Mar 11 14:24:27 CST 2026 from 159.203.32.203 on ssh:notty
+145022.187: [14:50:22]There was 1 failed login attempt since the last successful login.
+145022.187: [14:50:22]Last login: Wed Mar 11 14:20:22 2026 from 223.107.68.194
+145022.187: [14:50:22]
+145022.187: [14:50:22]Welcome to Alibaba Cloud Elastic Compute Service !
+145022.187: [14:50:22]
+152022.030: [15:20:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-15:20:22]
+152022.187: [15:20:22]Last login: Wed Mar 11 14:50:22 2026 from 223.107.68.194
+152022.187: [15:20:22]
+152022.187: [15:20:22]Welcome to Alibaba Cloud Elastic Compute Service !
+152022.187: [15:20:22]
+162022.516: [16:20:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-16:20:22]
+162022.706: [16:20:22]Last login: Wed Mar 11 15:20:22 2026 from 223.107.68.194
+162022.706: [16:20:22]
+162022.706: [16:20:22]Welcome to Alibaba Cloud Elastic Compute Service !
+162022.706: [16:20:22]
+165022.632: [16:50:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-16:50:22]
+165022.744: [16:50:22]Last failed login: Wed Mar 11 16:28:18 CST 2026 from 47.111.87.127 on ssh:notty
+165022.744: [16:50:22]There were 6 failed login attempts since the last successful login.
+165022.744: [16:50:22]Last login: Wed Mar 11 16:20:22 2026 from 223.107.68.194
+165022.744: [16:50:22]
+165022.744: [16:50:22]Welcome to Alibaba Cloud Elastic Compute Service !
+165022.744: [16:50:22]
+172023.195: [17:20:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-17:20:23]
+172023.301: [17:20:23]Last login: Wed Mar 11 16:50:22 2026 from 223.107.68.194
+172023.301: [17:20:23]
+172023.302: [17:20:23]Welcome to Alibaba Cloud Elastic Compute Service !
+172023.302: [17:20:23]
+175022.679: [17:50:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-17:50:22]
+175022.783: [17:50:22]Last failed login: Wed Mar 11 17:40:02 CST 2026 from 178.128.55.242 on ssh:notty
+175022.784: [17:50:22]There was 1 failed login attempt since the last successful login.
+175022.784: [17:50:22]Last login: Wed Mar 11 17:20:23 2026 from 223.107.68.194
+175022.784: [17:50:22]
+175022.784: [17:50:22]Welcome to Alibaba Cloud Elastic Compute Service !
+175022.784: [17:50:22]
+182022.639: [18:20:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-18:20:22]
+182022.740: [18:20:22]Last failed login: Wed Mar 11 18:19:04 CST 2026 from 138.68.178.98 on ssh:notty
+182022.740: [18:20:22]There were 2 failed login attempts since the last successful login.
+182022.740: [18:20:22]Last login: Wed Mar 11 17:50:22 2026 from 223.107.68.194
+182022.740: [18:20:22]
+182022.741: [18:20:22]Welcome to Alibaba Cloud Elastic Compute Service !
+182022.741: [18:20:22]
+185023.675: [18:50:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-18:50:23]
+185023.777: [18:50:23]Last failed login: Wed Mar 11 18:39:07 CST 2026 from 159.89.164.35 on ssh:notty
+185023.777: [18:50:23]There was 1 failed login attempt since the last successful login.
+185023.778: [18:50:23]Last login: Wed Mar 11 18:20:22 2026 from 223.107.68.194
+185023.778: [18:50:23]
+185023.778: [18:50:23]Welcome to Alibaba Cloud Elastic Compute Service !
+185023.778: [18:50:23]
+202023.630: [20:20:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-20:20:23]
+202023.738: [20:20:23]Last failed login: Wed Mar 11 19:28:27 CST 2026 from 178.62.249.91 on ssh:notty
+202023.738: [20:20:23]There was 1 failed login attempt since the last successful login.
+202023.739: [20:20:23]Last login: Wed Mar 11 18:50:23 2026 from 223.107.68.194
+202023.739: [20:20:23]
+202023.739: [20:20:23]Welcome to Alibaba Cloud Elastic Compute Service !
+202023.739: [20:20:23]
+212023.190: [21:20:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-21:20:23]
+212023.359: [21:20:23]Last failed login: Wed Mar 11 21:05:52 CST 2026 from 159.65.54.189 on ssh:notty
+212023.359: [21:20:23]There was 1 failed login attempt since the last successful login.
+212023.359: [21:20:23]Last login: Wed Mar 11 20:20:23 2026 from 223.107.68.194
+212023.359: [21:20:23]
+212023.359: [21:20:23]Welcome to Alibaba Cloud Elastic Compute Service !
+212023.359: [21:20:23]
+215023.202: [21:50:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-21:50:23]
+215023.306: [21:50:23]Last login: Wed Mar 11 21:20:23 2026 from 223.107.68.194
+215023.306: [21:50:23]
+215023.306: [21:50:23]Welcome to Alibaba Cloud Elastic Compute Service !
+215023.306: [21:50:23]
+222023.180: [22:20:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-22:20:23]
+222023.282: [22:20:23]Last login: Wed Mar 11 21:50:23 2026 from 223.107.68.194
+222023.282: [22:20:23]
+222023.282: [22:20:23]Welcome to Alibaba Cloud Elastic Compute Service !
+222023.282: [22:20:23]
+225023.178: [22:50:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-22:50:23]
+225023.281: [22:50:23]Last login: Wed Mar 11 22:20:23 2026 from 223.107.68.194
+225023.281: [22:50:23]
+225023.281: [22:50:23]Welcome to Alibaba Cloud Elastic Compute Service !
+225023.281: [22:50:23]
+232023.155: [23:20:23][202603118.31.115.234-Authoring服务器-阿里云-FRPS-23:20:23]
+232023.267: [23:20:23]Last login: Wed Mar 11 22:50:23 2026 from 223.107.68.194
+232023.267: [23:20:23]
+232023.267: [23:20:23]Welcome to Alibaba Cloud Elastic Compute Service !
+232023.267: [23:20:23]
+235022.553: [23:50:22][202603118.31.115.234-Authoring服务器-阿里云-FRPS-23:50:22]
+235022.733: [23:50:22]Last login: Wed Mar 11 23:20:23 2026 from 223.107.68.194
+235022.733: [23:50:22]
+235022.733: [23:50:22]Welcome to Alibaba Cloud Elastic Compute Service !
+235022.733: [23:50:22]

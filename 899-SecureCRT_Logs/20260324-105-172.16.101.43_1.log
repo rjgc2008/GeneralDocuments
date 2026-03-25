@@ -1,0 +1,128 @@
+﻿155740.721: [15:57:40][202603105-172.16.101.43-15:57:40]
+155740.732: [15:57:40]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+155740.732: [15:57:40]
+155740.732: [15:57:40] * Documentation:  https://help.ubuntu.com
+155740.733: [15:57:40] * Management:     https://landscape.canonical.com
+155740.733: [15:57:40] * Support:        https://ubuntu.com/pro
+155740.733: [15:57:40]
+155740.733: [15:57:40]扩展安全维护（ESM）Applications 未启用。
+155740.733: [15:57:40]
+155740.733: [15:57:40]447 更新可以立即应用。
+155740.733: [15:57:40]这些更新中有 255 个是标准安全更新。
+155740.733: [15:57:40]要查看这些附加更新，请运行：apt list --upgradable
+155740.733: [15:57:40]
+155740.733: [15:57:40]启用 ESM Apps 来获取未来的额外安全更新
+155740.734: [15:57:40]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+155740.734: [15:57:40]
+155740.734: [15:57:40]Last login: Tue Mar 24 15:57:35 2026 from 172.16.208.2
+160824.814: [16:08:24]root@user:~# 
+160824.819: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.820: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.821: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+160824.822: [16:08:24]root@user:~# 
+161124.552: [16:11:24]root@user:~# ip a
+161124.553: [16:11:24]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+161124.553: [16:11:24]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+161124.553: [16:11:24]    inet 127.0.0.1/8 scope host lo
+161124.553: [16:11:24]       valid_lft forever preferred_lft forever
+161124.553: [16:11:24]    inet6 ::1/128 scope host noprefixroute 
+161124.553: [16:11:24]       valid_lft forever preferred_lft forever
+161124.553: [16:11:24]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+161124.553: [16:11:24]    link/ether b8:59:9f:3b:35:ae brd ff:ff:ff:ff:ff:ff
+161124.554: [16:11:24]    altname enp49s0f0np0
+161124.554: [16:11:24]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+161124.554: [16:11:24]    link/ether b8:59:9f:3b:35:af brd ff:ff:ff:ff:ff:ff
+161124.554: [16:11:24]    altname enp49s0f1np1
+161124.554: [16:11:24]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+161124.554: [16:11:24]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+161124.554: [16:11:24]    altname enp152s0f0np0
+161124.555: [16:11:24]    inet 172.16.101.43/24 brd 172.16.101.255 scope global ens4f0np0
+161124.555: [16:11:24]       valid_lft forever preferred_lft forever
+161124.555: [16:11:24]    inet6 fe80::e42:a1ff:fe45:5ff4/64 scope link 
+161124.555: [16:11:24]       valid_lft forever preferred_lft forever
+161124.555: [16:11:24]    inet6 fe80::6789:ae7e:32bd:3d79/64 scope link noprefixroute 
+161124.555: [16:11:24]       valid_lft forever preferred_lft forever
+161124.555: [16:11:24]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+161124.555: [16:11:24]    link/ether 0c:42:a1:45:5f:f5 brd ff:ff:ff:ff:ff:ff
+161124.555: [16:11:24]    altname enp152s0f1np1
+161124.556: [16:11:24]    inet 10.0.0.43/24 brd 10.0.0.255 scope global ens4f1np1
+161124.556: [16:11:24]       valid_lft forever preferred_lft forever
+161124.556: [16:11:24]    inet6 fe80::e42:a1ff:fe45:5ff5/64 scope link 
+161124.556: [16:11:24]       valid_lft forever preferred_lft forever
+161124.556: [16:11:24]    inet6 fe80::5bb7:a38e:3ccc:9b1e/64 scope link noprefixroute 
+161124.556: [16:11:24]       valid_lft forever preferred_lft forever
+161124.556: [16:11:24]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+161124.556: [16:11:24]    link/ether 98:03:9b:7d:2f:96 brd ff:ff:ff:ff:ff:ff
+161124.557: [16:11:24]    altname enp177s0f0np0
+161124.557: [16:11:24]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+161124.557: [16:11:24]    link/ether 98:03:9b:7d:2f:97 brd ff:ff:ff:ff:ff:ff
+161124.557: [16:11:24]    altname enp177s0f1np1
+161124.557: [16:11:24]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+161124.557: [16:11:24]    link/ether b8:59:9f:3b:33:ce brd ff:ff:ff:ff:ff:ff
+161124.557: [16:11:24]    altname enp178s0f0np0
+161124.558: [16:11:24]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+161124.558: [16:11:24]    link/ether b8:59:9f:3b:33:cf brd ff:ff:ff:ff:ff:ff
+161124.558: [16:11:24]    altname enp178s0f1np1
+161313.586: [16:13:13]root@user:~# ping 10.0...........
+161313.587: [16:13:13]ping: 10.0...........: 名称或服务未知
+161313.587: [16:13:13]root@user:~# 
+161313.587: [16:13:13]root@user:~# 
+161417.583: [16:14:17]root@user:~# 
+161417.774: [16:14:17]root@user:~# 
+161417.948: [16:14:17]root@user:~# 
+161418.073: [16:14:18]root@user:~# 
+161418.239: [16:14:18]root@user:~# 
+161423.737: [16:14:23]root@user:~# ping 10.0.0.44
+161423.737: [16:14:23]PING 10.0.0.44 (10.0.0.44) 56(84) bytes of data.
+161423.737: [16:14:23]64 bytes from 10.0.0.44: icmp_seq=1 ttl=64 time=0.102 ms
+161424.591: [16:14:24]^C
+161424.591: [16:14:24]--- 10.0.0.44 ping statistics ---
+161424.591: [16:14:24]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161424.591: [16:14:24]rtt min/avg/max/mdev = 0.102/0.102/0.102/0.000 ms
+161425.908: [16:14:25]root@user:~# ping 10.0.0.45
+161425.908: [16:14:25]PING 10.0.0.45 (10.0.0.45) 56(84) bytes of data.
+161427.413: [16:14:27]^C
+161427.413: [16:14:27]--- 10.0.0.45 ping statistics ---
+161427.413: [16:14:27]2 packets transmitted, 0 received, 100% packet loss, time 1034ms
+161427.413: [16:14:27]
+161428.958: [16:14:28]root@user:~# ping 10.0.0.46
+161428.958: [16:14:28]PING 10.0.0.46 (10.0.0.46) 56(84) bytes of data.
+161428.958: [16:14:28]64 bytes from 10.0.0.46: icmp_seq=1 ttl=64 time=0.156 ms
+161429.916: [16:14:29]^C
+161429.916: [16:14:29]--- 10.0.0.46 ping statistics ---
+161429.916: [16:14:29]1 packets transmitted, 1 received, 0% packet loss, time 0ms
+161429.916: [16:14:29]rtt min/avg/max/mdev = 0.156/0.156/0.156/0.000 ms

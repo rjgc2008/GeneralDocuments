@@ -1,0 +1,191 @@
+﻿092458.264: [09:24:58][root@10-253-0-3 ~]# 
+092458.500: [09:24:58][root@10-253-0-3 ~]# 
+092458.649: [09:24:58][root@10-253-0-3 ~]# 
+092458.767: [09:24:58][root@10-253-0-3 ~]# 
+092501.981: [09:25:01][root@10-253-0-3 ~]# ll
+092501.999: [09:25:01]total 4.0K
+092501.999: [09:25:01]drwxr-xr-x 2 root root 4.0K Nov 21 18:35 Bash
+092505.073: [09:25:05][root@10-253-0-3 ~]# cd /
+092505.734: [09:25:05][root@10-253-0-3 /]# ll
+092505.784: [09:25:05]total 88K
+092505.784: [09:25:05]lrwxrwxrwx   1 root root    7 Sep  2  2021  bin -> usr/bin
+092505.784: [09:25:05]drwxr-xr-x   3 root root 4.0K Jul 28  2023  boot
+092505.794: [09:25:05]drwxr-xr-x   7 root root 4.0K Sep 14  2021  CloudResetPwdUpdateAgent
+092505.794: [09:25:05]drwxr-xr-x   7 root root 4.0K Sep 14  2021  CloudrResetPwdAgent
+092505.794: [09:25:05]drwxrwxrwx   7 root root 4.0K Jul 28  2023  DATA
+092505.794: [09:25:05]drwxr-xr-x  18 root root 3.3K May 22  2024  dev
+092505.794: [09:25:05]-rw-r--r--   1 root root    0 Dec 19  2023  errors
+092505.795: [09:25:05]-rw-r--r--   1 root root  822 Sep  2  2021 'ervice cloud-final status'
+092505.795: [09:25:05]-rw-r--r--   1 root root  829 Sep  2  2021 'ervice cloud-init status'
+092505.795: [09:25:05]drwxr-xr-x 108 root root  12K Nov 21 18:42  etc
+092505.795: [09:25:05]drwxr-xr-x   4 root root 4.0K Sep  2  2021  home
+092505.795: [09:25:05]lrwxrwxrwx   1 root root   31 Jul 28  2023  initrd.img -> boot/initrd.img-5.10.0-23-amd64
+092505.795: [09:25:05]lrwxrwxrwx   1 root root   31 Sep  2  2021  initrd.img.old -> boot/initrd.img-4.19.0-17-amd64
+092505.795: [09:25:05]lrwxrwxrwx   1 root root    7 Sep  2  2021  lib -> usr/lib
+092505.795: [09:25:05]lrwxrwxrwx   1 root root    9 Sep  2  2021  lib32 -> usr/lib32
+092505.795: [09:25:05]lrwxrwxrwx   1 root root    9 Sep  2  2021  lib64 -> usr/lib64
+092505.795: [09:25:05]lrwxrwxrwx   1 root root   10 Sep  2  2021  libx32 -> usr/libx32
+092505.795: [09:25:05]drwx------   2 root root  16K Sep  2  2021  lost+found
+092505.796: [09:25:05]drwxr-xr-x   4 root root 4.0K Jan  7 17:31  media
+092505.796: [09:25:05]drwxr-xr-x   2 root root 4.0K Sep  2  2021  mnt
+092505.796: [09:25:05]drwxr-xr-x   4 root root 4.0K Feb 27 15:04  opt
+092505.796: [09:25:05]dr-xr-xr-x 186 root root    0 May 22  2024  proc
+092505.796: [09:25:05]drwx------   7 root root 4.0K Feb 27 15:06  root
+092505.796: [09:25:05]drwxr-xr-x  27 root root  800 Feb 27 15:06  run
+092505.796: [09:25:05]lrwxrwxrwx   1 root root    8 Sep  2  2021  sbin -> usr/sbin
+092505.796: [09:25:05]drwxr-xr-x   2 root root 4.0K Sep  2  2021  srv
+092505.796: [09:25:05]dr-xr-xr-x  13 root root    0 May 22  2024  sys
+092505.796: [09:25:05]drwxrwxrwt  11 root root 4.0K Mar  3 00:00  tmp
+092505.796: [09:25:05]drwxr-xr-x  14 root root 4.0K Jul 28  2023  usr
+092505.796: [09:25:05]drwxr-xr-x  11 root root 4.0K Sep  2  2021  var
+092505.796: [09:25:05]lrwxrwxrwx   1 root root   28 Jul 28  2023  vmlinuz -> boot/vmlinuz-5.10.0-23-amd64
+092505.796: [09:25:05]lrwxrwxrwx   1 root root   28 Sep  2  2021  vmlinuz.old -> boot/vmlinuz-4.19.0-17-amd64
+092509.527: [09:25:09][root@10-253-0-3 /]# cd /DATA/
+092510.258: [09:25:10][root@10-253-0-3 /DATA]# ll
+092510.277: [09:25:10]total 20K
+092510.277: [09:25:10]drwxrwxrwx 4 root root 4.0K Jan  7 17:34 AppData
+092510.277: [09:25:10]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Documents
+092510.277: [09:25:10]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Downloads
+092510.277: [09:25:10]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Gallery
+092510.277: [09:25:10]drwxrwxrwx 6 root root 4.0K Jan  7 18:49 Media
+092512.347: [09:25:12][root@10-253-0-3 /DATA]# cd Media/
+092513.009: [09:25:13][root@10-253-0-3 /DATA/Media]# ll
+092513.009: [09:25:13]total 28K
+092513.009: [09:25:13]drwxr-xr-x 4 moo  moo  4.0K May 22  2024 AppData
+092513.010: [09:25:13]drwxrwxrwx 3 moo  moo  4.0K Apr  1  2025 Documents
+092513.010: [09:25:13]drwx---rwx 2 root root  16K Jul 28  2023 lost+found
+092513.010: [09:25:13]drwxrwxrwx 4 moo  moo  4.0K Mar  3 09:13 XTV-BACKUP
+092520.154: [09:25:20][root@10-253-0-3 /DATA/Media]# cd XTV-BACKUP/
+092520.765: [09:25:20][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# ll
+092520.765: [09:25:20]total 4.0K
+092520.765: [09:25:20]drwxrwxr-x 5 moo moo 4.0K May 22  2024 xiaomi_camera_videos
+092522.382: [09:25:22][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# pwd
+092522.382: [09:25:22]/DATA/Media/XTV-BACKUP
+092649.802: [09:26:49][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# ll
+092649.820: [09:26:49]total 4.0K
+092649.820: [09:26:49]drwxrwxr-x 5 moo moo 4.0K May 22  2024 xiaomi_camera_videos
+092651.056: [09:26:51][root@10-253-0-3 /DATA/Media/XTV-BACKUP]# cd ..
+092651.631: [09:26:51][root@10-253-0-3 /DATA/Media]# ll
+092651.650: [09:26:51]total 28K
+092651.650: [09:26:51]drwxr-xr-x 4 moo  moo  4.0K May 22  2024 AppData
+092651.650: [09:26:51]drwxrwxrwx 3 moo  moo  4.0K Apr  1  2025 Documents
+092651.650: [09:26:51]drwx---rwx 2 root root  16K Jul 28  2023 lost+found
+092651.650: [09:26:51]drwxrwxrwx 5 moo  moo  4.0K Mar  3 09:25 XTV-BACKUP
+092653.782: [09:26:53][root@10-253-0-3 /DATA/Media]# cd ..
+092654.484: [09:26:54][root@10-253-0-3 /DATA]# ll
+092654.484: [09:26:54]total 20K
+092654.485: [09:26:54]drwxrwxrwx 4 root root 4.0K Jan  7 17:34 AppData
+092654.485: [09:26:54]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Documents
+092654.486: [09:26:54]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Downloads
+092654.486: [09:26:54]drwxrwxrwx 2 root root 4.0K Jul 28  2023 Gallery
+092654.486: [09:26:54]drwxrwxrwx 6 root root 4.0K Jan  7 18:49 Media
+092656.578: [09:26:56][root@10-253-0-3 /DATA]# cd ..
+092657.104: [09:26:57][root@10-253-0-3 /]# ll
+092657.104: [09:26:57]total 88K
+092657.105: [09:26:57]lrwxrwxrwx   1 root root    7 Sep  2  2021  bin -> usr/bin
+092657.105: [09:26:57]drwxr-xr-x   3 root root 4.0K Jul 28  2023  boot
+092657.106: [09:26:57]drwxr-xr-x   7 root root 4.0K Sep 14  2021  CloudResetPwdUpdateAgent
+092657.106: [09:26:57]drwxr-xr-x   7 root root 4.0K Sep 14  2021  CloudrResetPwdAgent
+092657.106: [09:26:57]drwxrwxrwx   7 root root 4.0K Jul 28  2023  DATA
+092657.106: [09:26:57]drwxr-xr-x  18 root root 3.3K May 22  2024  dev
+092657.107: [09:26:57]-rw-r--r--   1 root root    0 Dec 19  2023  errors
+092657.107: [09:26:57]-rw-r--r--   1 root root  822 Sep  2  2021 'ervice cloud-final status'
+092657.107: [09:26:57]-rw-r--r--   1 root root  829 Sep  2  2021 'ervice cloud-init status'
+092657.107: [09:26:57]drwxr-xr-x 108 root root  12K Nov 21 18:42  etc
+092657.107: [09:26:57]drwxr-xr-x   4 root root 4.0K Sep  2  2021  home
+092657.107: [09:26:57]lrwxrwxrwx   1 root root   31 Jul 28  2023  initrd.img -> boot/initrd.img-5.10.0-23-amd64
+092657.108: [09:26:57]lrwxrwxrwx   1 root root   31 Sep  2  2021  initrd.img.old -> boot/initrd.img-4.19.0-17-amd64
+092657.108: [09:26:57]lrwxrwxrwx   1 root root    7 Sep  2  2021  lib -> usr/lib
+092657.122: [09:26:57]lrwxrwxrwx   1 root root    9 Sep  2  2021  lib32 -> usr/lib32
+092657.122: [09:26:57]lrwxrwxrwx   1 root root    9 Sep  2  2021  lib64 -> usr/lib64
+092657.122: [09:26:57]lrwxrwxrwx   1 root root   10 Sep  2  2021  libx32 -> usr/libx32
+092657.123: [09:26:57]drwx------   2 root root  16K Sep  2  2021  lost+found
+092657.123: [09:26:57]drwxr-xr-x   4 root root 4.0K Jan  7 17:31  media
+092657.123: [09:26:57]drwxr-xr-x   2 root root 4.0K Sep  2  2021  mnt
+092657.123: [09:26:57]drwxr-xr-x   4 root root 4.0K Feb 27 15:04  opt
+092657.123: [09:26:57]dr-xr-xr-x 187 root root    0 May 22  2024  proc
+092657.123: [09:26:57]drwx------   7 root root 4.0K Feb 27 15:06  root
+092657.123: [09:26:57]drwxr-xr-x  27 root root  800 Feb 27 15:06  run
+092657.124: [09:26:57]lrwxrwxrwx   1 root root    8 Sep  2  2021  sbin -> usr/sbin
+092657.124: [09:26:57]drwxr-xr-x   2 root root 4.0K Sep  2  2021  srv
+092657.124: [09:26:57]dr-xr-xr-x  13 root root    0 May 22  2024  sys
+092657.124: [09:26:57]drwxrwxrwt  11 root root 4.0K Mar  3 00:00  tmp
+092657.124: [09:26:57]drwxr-xr-x  14 root root 4.0K Jul 28  2023  usr
+092657.124: [09:26:57]drwxr-xr-x  11 root root 4.0K Sep  2  2021  var
+092657.124: [09:26:57]lrwxrwxrwx   1 root root   28 Jul 28  2023  vmlinuz -> boot/vmlinuz-5.10.0-23-amd64
+092657.124: [09:26:57]lrwxrwxrwx   1 root root   28 Sep  2  2021  vmlinuz.old -> boot/vmlinuz-4.19.0-17-amd64
+092659.602: [09:26:59][root@10-253-0-3 /]# clear
+093544.390: [09:35:44][root@10-253-0-3 /]# ps -ef | grep syncthing | grep -v grep
+093544.533: [09:35:44]root      527530  527477  0 Jan07 ?        00:00:00 s6-supervise svc-syncthing
+093544.534: [09:35:44]moo       527637  527530  0 Jan07 ?        00:03:19 syncthing -home=/config -no-browser -no-restart --gui-address=0.0.0.0:8384
+093544.535: [09:35:44]moo       527659  527637  1 Jan07 ?        22:52:43 /usr/bin/syncthing -home=/config -no-browser -no-restart --gui-address=0.0.0.0:8384
+112505.762: [11:25:05][202603Ctyun3-11:25:05]
+112505.838: [11:25:05]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+112505.838: [11:25:05]
+112505.838: [11:25:05]The programs included with the Debian GNU/Linux system are free software;
+112505.839: [11:25:05]the exact distribution terms for each program are described in the
+112505.839: [11:25:05]individual files in /usr/share/doc/*/copyright.
+112505.839: [11:25:05]
+112505.839: [11:25:05]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+112505.839: [11:25:05]permitted by applicable law.
+112505.840: [11:25:05]Last login: Fri Feb 27 15:06:43 2026 from 223.107.68.194
+112509.361: [11:25:09][root@10-253-0-3 ~]# ip a
+112509.432: [11:25:09]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+112509.432: [11:25:09]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+112509.432: [11:25:09]    inet 127.0.0.1/8 scope host lo
+112509.433: [11:25:09]       valid_lft forever preferred_lft forever
+112509.433: [11:25:09]    inet6 ::1/128 scope host 
+112509.433: [11:25:09]       valid_lft forever preferred_lft forever
+112509.433: [11:25:09]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+112509.434: [11:25:09]    link/ether fa:16:3e:b3:0d:0d brd ff:ff:ff:ff:ff:ff
+112509.434: [11:25:09]    altname enp0s3
+112509.435: [11:25:09]    inet 192.168.2.2/24 brd 192.168.2.255 scope global dynamic ens3
+112509.435: [11:25:09]       valid_lft 59538sec preferred_lft 59538sec
+112509.435: [11:25:09]    inet6 fe80::f816:3eff:feb3:d0d/64 scope link 
+112509.435: [11:25:09]       valid_lft forever preferred_lft forever
+112509.435: [11:25:09]4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+112509.436: [11:25:09]    link/ether 02:42:25:cc:7c:2e brd ff:ff:ff:ff:ff:ff
+112509.436: [11:25:09]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+112509.436: [11:25:09]       valid_lft forever preferred_lft forever
+112509.436: [11:25:09]    inet6 fe80::42:25ff:fecc:7c2e/64 scope link 
+112509.437: [11:25:09]       valid_lft forever preferred_lft forever
+112509.437: [11:25:09]45: veth6dfa60e@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+112509.438: [11:25:09]    link/ether e6:d8:68:42:5c:94 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+112509.438: [11:25:09]    inet6 fe80::e4d8:68ff:fe42:5c94/64 scope link 
+112509.438: [11:25:09]       valid_lft forever preferred_lft forever
+112509.438: [11:25:09]46: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+112509.438: [11:25:09]    link/none 
+112509.439: [11:25:09]    inet 10.253.0.3/32 scope global wg0
+112509.439: [11:25:09]       valid_lft forever preferred_lft forever
+112509.439: [11:25:09]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:3/128 scope global 
+112509.439: [11:25:09]       valid_lft forever preferred_lft forever
+112522.394: [11:25:22][root@10-253-0-3 ~]# lsblk
+112522.410: [11:25:22]NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+112522.410: [11:25:22]vda       254:0    0   40G  0 disk 
+112522.410: [11:25:22]├─vda1    254:1    0  3.7G  0 part [SWAP]
+112522.410: [11:25:22]└─vda2    254:2    0 36.3G  0 part /
+112522.410: [11:25:22]vdb       254:16   0    1T  0 disk 
+112522.410: [11:25:22]└─vdb1    254:17   0 1024G  0 part 
+112522.410: [11:25:22]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+112522.410: [11:25:22]vdc       254:32   0    2T  0 disk 
+112522.410: [11:25:22]└─vdc1    254:33   0    2T  0 part 
+112522.410: [11:25:22]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+112522.411: [11:25:22]vdd       254:48   0    2T  0 disk 
+112522.411: [11:25:22]└─vdd1    254:49   0    2T  0 part 
+112522.411: [11:25:22]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+112522.411: [11:25:22]vde       254:64   0    2T  0 disk 
+112522.411: [11:25:22]└─vde1    254:65   0    2T  0 part 
+112522.411: [11:25:22]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+112522.411: [11:25:22]vdf       254:80   0    2T  0 disk 
+112522.411: [11:25:22]└─vdf1    254:81   0    2T  0 part 
+112522.411: [11:25:22]  └─vg-lv 253:0    0    9T  0 lvm  /DATA/Media
+115335.810: [11:53:35][202603Ctyun3-11:53:35]
+115335.885: [11:53:35]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+115335.885: [11:53:35]
+115335.885: [11:53:35]The programs included with the Debian GNU/Linux system are free software;
+115335.885: [11:53:35]the exact distribution terms for each program are described in the
+115335.885: [11:53:35]individual files in /usr/share/doc/*/copyright.
+115335.885: [11:53:35]
+115335.885: [11:53:35]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+115335.885: [11:53:35]permitted by applicable law.
+115335.885: [11:53:35]Last login: Tue Mar  3 11:25:05 2026 from 58.211.207.202
