@@ -1,0 +1,240 @@
+﻿115610.142: [11:56:10][root@172-16-208-2 ~]# 
+115610.246: [11:56:10][root@172-16-208-2 ~]# 
+115616.328: [11:56:16][root@172-16-208-2 ~]# aptitude install pdfcrack
+115619.346: [11:56:19]The following NEW packages will be installed:
+115619.346: [11:56:19]  pdfcrack 
+115619.347: [11:56:19]0 packages upgraded, 1 newly installed, 0 to remove and 410 not upgraded.
+115619.418: [11:56:19]Need to get 36.0 kB of archives. After unpacking 93.2 kB will be used.
+115620.240: [11:56:20]Get: 1 http://deb.debian.org/debian bullseye/main amd64 pdfcrack amd64 0.19-2 [36.0 kB]
+115620.264: [11:56:20]Fetched 36.0 kB in 0s (92.9 kB/s)   
+115623.177: [11:56:23]Selecting previously unselected package pdfcrack.
+115627.694: [11:56:27](Reading database ... 175756 files and directories currently installed.)
+115627.694: [11:56:27]Preparing to unpack .../pdfcrack_0.19-2_amd64.deb ...
+115627.694: [11:56:27]Unpacking pdfcrack (0.19-2) ...
+115627.776: [11:56:27]Setting up pdfcrack (0.19-2) ...
+115627.811: [11:56:27]Processing triggers for man-db (2.9.4-2) ...
+115629.938: [11:56:29]                                         
+115637.242: [11:56:37][root@172-16-208-2 ~]# cd /home
+115637.948: [11:56:37][root@172-16-208-2 /home]# ll
+115637.968: [11:56:37]total 8.0K
+115637.968: [11:56:37]drwxr-xr-x 16 vnc vnc 4.0K May  4  2023 vnc
+115637.968: [11:56:37]drwxr-xr-x 16 wyj wyj 4.0K Apr 23  2023 wyj
+115639.661: [11:56:39][root@172-16-208-2 /home]# cd wyj
+115640.281: [11:56:40][root@172-16-208-2 /home/wyj]# ll
+115640.302: [11:56:40]total 32K
+115640.302: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 下载
+115640.302: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 公共
+115640.302: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 图片
+115640.302: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 文档
+115640.303: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 桌面
+115640.303: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 模板
+115640.303: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 视频
+115640.303: [11:56:40]drwxr-xr-x 2 wyj wyj 4.0K Apr  6  2023 音乐
+115643.393: [11:56:43][root@172-16-208-2 /home/wyj]# cd ..
+115644.222: [11:56:44][root@172-16-208-2 /home]# ll
+115644.243: [11:56:44]total 8.0K
+115644.244: [11:56:44]drwxr-xr-x 16 vnc vnc 4.0K May  4  2023 vnc
+115644.244: [11:56:44]drwxr-xr-x 16 wyj wyj 4.0K Apr 23  2023 wyj
+115646.647: [11:56:46][root@172-16-208-2 /home]# cd tmp
+115646.647: [11:56:46]-bash: cd: tmp: No such file or directory
+115648.176: [11:56:48][root@172-16-208-2 /home]# ll
+115648.176: [11:56:48]total 8.0K
+115648.176: [11:56:48]drwxr-xr-x 16 vnc vnc 4.0K May  4  2023 vnc
+115648.177: [11:56:48]drwxr-xr-x 16 wyj wyj 4.0K Apr 23  2023 wyj
+115649.504: [11:56:49][root@172-16-208-2 /home]# cd /tmp
+115650.124: [11:56:50][root@172-16-208-2 /tmp]# ll
+115650.125: [11:56:50]total 24K
+115650.125: [11:56:50]srwxrwxrwx 1 telegraf  telegraf     0 Mar  3 10:54 dbus-SO9KZAQO5A
+115650.126: [11:56:50]drwx------ 3 root      root      4.0K Apr  3 10:10 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-fwupd.service-cPj9We
+115650.126: [11:56:50]drwx------ 3 root      root      4.0K Mar  3 10:54 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-ModemManager.service-piy6Dh
+115650.127: [11:56:50]drwx------ 3 root      root      4.0K Mar  3 10:54 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-logind.service-wkdIUe
+115650.127: [11:56:50]drwx------ 3 root      root      4.0K Mar  3 10:54 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-timesyncd.service-WtYI1e
+115650.128: [11:56:50]drwx------ 3 root      root      4.0K Mar  3 22:22 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-upower.service-3HIl1h
+115650.128: [11:56:50]drwx------ 2 sambauser sambauser 4.0K Mar  9 19:56 tracker-extract-files.1002
+133244.668: [13:32:44][root@172-16-208-2 /tmp]# ll
+133244.669: [13:32:44]total 532K
+133244.669: [13:32:44]-rw-r--r-- 1 root      root      172K Apr  3 11:37  -1196612282662107509_dec.pdf
+133244.669: [13:32:44]-rw-r--r-- 1 root      root      337K Apr  3 11:43 '-847412269829042664_dec - ??.pdf'
+133244.670: [13:32:44]srwxrwxrwx 1 telegraf  telegraf     0 Mar  3 10:54  dbus-SO9KZAQO5A
+133244.670: [13:32:44]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-ModemManager.service-piy6Dh
+133244.671: [13:32:44]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-logind.service-wkdIUe
+133244.671: [13:32:44]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-timesyncd.service-WtYI1e
+133244.671: [13:32:44]drwx------ 3 root      root      4.0K Mar  3 22:22  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-upower.service-3HIl1h
+133244.672: [13:32:44]drwx------ 2 sambauser sambauser 4.0K Mar  9 19:56  tracker-extract-files.1002
+133250.424: [13:32:50][root@172-16-208-2 /tmp]# 
+133250.579: [13:32:50][root@172-16-208-2 /tmp]# 
+133251.356: [13:32:51][root@172-16-208-2 /tmp]# ll
+133251.383: [13:32:51]total 532K
+133251.384: [13:32:51]-rw-r--r-- 1 root      root      172K Apr  3 11:37  -1196612282662107509_dec.pdf
+133251.384: [13:32:51]-rw-r--r-- 1 root      root      337K Apr  3 11:43 '-847412269829042664_dec - ??.pdf'
+133251.384: [13:32:51]srwxrwxrwx 1 telegraf  telegraf     0 Mar  3 10:54  dbus-SO9KZAQO5A
+133251.384: [13:32:51]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-ModemManager.service-piy6Dh
+133251.384: [13:32:51]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-logind.service-wkdIUe
+133251.385: [13:32:51]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-timesyncd.service-WtYI1e
+133251.385: [13:32:51]drwx------ 3 root      root      4.0K Mar  3 22:22  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-upower.service-3HIl1h
+133251.385: [13:32:51]drwx------ 2 sambauser sambauser 4.0K Mar  9 19:56  tracker-extract-files.1002
+133305.784: [13:33:05][root@172-16-208-2 /tmp]# ll
+133305.785: [13:33:05]total 532K
+133305.806: [13:33:05]-rw-r--r-- 1 root      root      172K Apr  3 11:37  -1196612282662107509_dec.pdf
+133305.806: [13:33:05]-rw-r--r-- 1 root      root      337K Apr  3 11:43 '-847412269829042664_dec - ??.pdf'
+133305.806: [13:33:05]srwxrwxrwx 1 telegraf  telegraf     0 Mar  3 10:54  dbus-SO9KZAQO5A
+133305.806: [13:33:05]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-ModemManager.service-piy6Dh
+133305.806: [13:33:05]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-logind.service-wkdIUe
+133305.806: [13:33:05]drwx------ 3 root      root      4.0K Mar  3 10:54  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-timesyncd.service-WtYI1e
+133305.807: [13:33:05]drwx------ 3 root      root      4.0K Mar  3 22:22  systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-upower.service-3HIl1h
+133305.807: [13:33:05]drwx------ 2 sambauser sambauser 4.0K Mar  9 19:56  tracker-extract-files.1002
+133314.054: [13:33:14][root@172-16-208-2 /tmp]# chmod +x 77 -1196612282662107509_dec.pdf 
+133314.055: [13:33:14]chmod: invalid mode: ‘-1196612282662107509_dec.pdf’
+133314.055: [13:33:14]Try 'chmod --help' for more information.
+133321.698: [13:33:21][root@172-16-208-2 /tmp]# chmod +777 -1196612282662107509_dec.pdf 
+133321.698: [13:33:21]chmod: invalid mode: ‘-1196612282662107509_dec.pdf’
+133321.699: [13:33:21]Try 'chmod --help' for more information.
+133412.090: [13:34:12][root@172-16-208-2 /tmp]# cll
+133412.091: [13:34:12]-bash: cll: command not found
+133413.644: [13:34:13][root@172-16-208-2 /tmp]# ll
+133413.674: [13:34:13]total 532K
+133413.674: [13:34:13]-rw-r--r-- 1 root      root      337K Apr  3 11:43 1.pdf
+133413.674: [13:34:13]-rw-r--r-- 1 root      root      172K Apr  3 11:37 2.pdf
+133413.674: [13:34:13]srwxrwxrwx 1 telegraf  telegraf     0 Mar  3 10:54 dbus-SO9KZAQO5A
+133413.674: [13:34:13]drwx------ 3 root      root      4.0K Mar  3 10:54 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-ModemManager.service-piy6Dh
+133413.674: [13:34:13]drwx------ 3 root      root      4.0K Mar  3 10:54 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-logind.service-wkdIUe
+133413.675: [13:34:13]drwx------ 3 root      root      4.0K Mar  3 10:54 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-systemd-timesyncd.service-WtYI1e
+133413.675: [13:34:13]drwx------ 3 root      root      4.0K Mar  3 22:22 systemd-private-525cf618f39f4ac991d18bea3d0ff6dd-upower.service-3HIl1h
+133413.675: [13:34:13]drwx------ 2 sambauser sambauser 4.0K Mar  9 19:56 tracker-extract-files.1002
+133431.366: [13:34:31][root@172-16-208-2 /tmp]# pdfcrack -n 4 -m 6 1.pdf
+133431.398: [13:34:31]PDF version 1.7
+133431.398: [13:34:31]Security Handler: Standard
+133431.398: [13:34:31]V: 4
+133431.398: [13:34:31]R: 4
+133431.398: [13:34:31]P: -3904
+133431.398: [13:34:31]Length: 128
+133431.398: [13:34:31]Encrypted Metadata: False
+133431.398: [13:34:31]FileID: 9afd2a832e704408b9b51db9d4000612
+133431.398: [13:34:31]U: 4d38ab54a663631c9d7f1a6c52eb96830b790afb64a083f68e83877642d02a82
+133431.399: [13:34:31]O: d727ecf8974441edc648646ad04528a6a1bf28d68f5110d4d0ae7f908791a65d
+133440.713: [13:34:40]
+133451.371: [13:34:51]Average Speed: 45924.7 w/s. Current Word: 'z60d'
+133511.373: [13:35:11]Average Speed: 46091.7 w/s. Current Word: 'QUSh'
+133531.378: [13:35:31]Average Speed: 45842.3 w/s. Current Word: 'HqJl'
+133551.373: [13:35:51]Average Speed: 47089.8 w/s. Current Word: 'YqGp'
+133611.378: [13:36:11]Average Speed: 46469.2 w/s. Current Word: '3cAt'
+133631.379: [13:36:31]Average Speed: 46785.7 w/s. Current Word: 'dDvx'
+133651.375: [13:36:51]Average Speed: 46197.7 w/s. Current Word: 'HZnB'
+133711.373: [13:37:11]Average Speed: 46098.1 w/s. Current Word: '3PfF'
+133731.438: [13:37:31]Average Speed: 47317.8 w/s. Current Word: 'S1dJ'
+133751.372: [13:37:51]Average Speed: 46361.2 w/s. Current Word: '5e7M'
+133811.471: [13:38:11]Average Speed: 46643.2 w/s. Current Word: 'iV1Q'
+133831.375: [13:38:31]Average Speed: 46451.6 w/s. Current Word: 'GBVU'
+133841.357: [13:38:41]^CCaught signal 2!
+133841.357: [13:38:41]Trying to save state...
+133841.357: [13:38:41]Successfully saved state to savedstate.sav!
+133848.922: [13:38:48][root@172-16-208-2 /tmp]# pdfcrack -c 0123456789-n 4 -m 6 1.pdf
+133848.948: [13:38:48]Error: file 4 not found
+133857.570: [13:38:57][root@172-16-208-2 /tmp]# pdfcrack -c0123456789 -n 4 -m 6 1.pdf
+133857.571: [13:38:57]PDF version 1.7
+133857.571: [13:38:57]Security Handler: Standard
+133857.571: [13:38:57]V: 4
+133857.571: [13:38:57]R: 4
+133857.571: [13:38:57]P: -3904
+133857.571: [13:38:57]Length: 128
+133857.571: [13:38:57]Encrypted Metadata: False
+133857.572: [13:38:57]FileID: 9afd2a832e704408b9b51db9d4000612
+133857.572: [13:38:57]U: 4d38ab54a663631c9d7f1a6c52eb96830b790afb64a083f68e83877642d02a82
+133857.572: [13:38:57]O: d727ecf8974441edc648646ad04528a6a1bf28d68f5110d4d0ae7f908791a65d
+133917.571: [13:39:17]Average Speed: 45636.7 w/s. Current Word: '237208'
+133921.813: [13:39:21]Could not find password
+133930.008: [13:39:30][root@172-16-208-2 /tmp]# pdfcrack -c0123456789 -n 4 -m 8 1.pdf
+133930.026: [13:39:30]PDF version 1.7
+133930.026: [13:39:30]Security Handler: Standard
+133930.027: [13:39:30]V: 4
+133930.027: [13:39:30]R: 4
+133930.027: [13:39:30]P: -3904
+133930.027: [13:39:30]Length: 128
+133930.027: [13:39:30]Encrypted Metadata: False
+133930.027: [13:39:30]FileID: 9afd2a832e704408b9b51db9d4000612
+133930.027: [13:39:30]U: 4d38ab54a663631c9d7f1a6c52eb96830b790afb64a083f68e83877642d02a82
+133930.027: [13:39:30]O: d727ecf8974441edc648646ad04528a6a1bf28d68f5110d4d0ae7f908791a65d
+133950.007: [13:39:50]Average Speed: 46405.9 w/s. Current Word: '711818'
+134010.051: [13:40:10]Average Speed: 46618.4 w/s. Current Word: '6840570'
+134030.002: [13:40:30]Average Speed: 46072.3 w/s. Current Word: '2391761'
+134046.748: [13:40:46][破涕为笑]
+134050.003: [13:40:50]Average Speed: 45955.3 w/s. Current Word: '8301952'
+134110.002: [13:41:10]Average Speed: 46331.5 w/s. Current Word: '8667153'
+134130.025: [13:41:30]Average Speed: 46950.1 w/s. Current Word: '0766544'
+134150.097: [13:41:50]Average Speed: 46511.9 w/s. Current Word: '8096835'
+134210.004: [13:42:10]Average Speed: 46475.8 w/s. Current Word: '3246136'
+134230.038: [13:42:30]Average Speed: 46376.2 w/s. Current Word: '8493427'
+134250.103: [13:42:50]Average Speed: 46735.3 w/s. Current Word: '4568718'
+134310.061: [13:43:10]Average Speed: 46656.1 w/s. Current Word: '5771119'
+134330.040: [13:43:30]Average Speed: 46320.3 w/s. Current Word: '18183000'
+134350.112: [13:43:50]Average Speed: 46288.2 w/s. Current Word: '54936900'
+134410.082: [13:44:10]Average Speed: 46569.0 w/s. Current Word: '52359810'
+134430.008: [13:44:30]Average Speed: 45966.2 w/s. Current Word: '05641820'
+134450.004: [13:44:50]Average Speed: 46861.3 w/s. Current Word: '77815730'
+134510.004: [13:45:10]Average Speed: 46175.4 w/s. Current Word: '58357640'
+134530.054: [13:45:30]Average Speed: 46268.2 w/s. Current Word: '84700650'
+134550.003: [13:45:50]Average Speed: 46635.3 w/s. Current Word: '45433560'
+134610.092: [13:46:10]Average Speed: 47207.5 w/s. Current Word: '40677470'
+134630.004: [13:46:30]Average Speed: 47094.1 w/s. Current Word: '68491480'
+134650.003: [13:46:50]Average Speed: 45697.8 w/s. Current Word: '14433390'
+134710.004: [13:47:10]Average Speed: 46065.2 w/s. Current Word: '44745201'
+134730.003: [13:47:30]Average Speed: 46627.4 w/s. Current Word: '29278111'
+134750.035: [13:47:50]Average Speed: 46654.6 w/s. Current Word: '38302121'
+134810.118: [13:48:10]Average Speed: 46231.3 w/s. Current Word: '90054031'
+134830.074: [13:48:30]Average Speed: 45624.8 w/s. Current Word: '60575931'
+134850.048: [13:48:50]Average Speed: 45988.3 w/s. Current Word: '27277841'
+134910.012: [13:49:10]Average Speed: 46583.6 w/s. Current Word: '44980851'
+134930.003: [13:49:30]Average Speed: 46850.6 w/s. Current Word: '55954761'
+134950.012: [13:49:50]Average Speed: 46559.5 w/s. Current Word: '54177671'
+135010.016: [13:50:10]Average Speed: 46824.5 w/s. Current Word: '53631681'
+135030.008: [13:50:30]Average Speed: 46257.7 w/s. Current Word: '88783591'
+135050.006: [13:50:50]Average Speed: 46207.7 w/s. Current Word: '14926402'
+135110.005: [13:51:10]Average Speed: 45005.2 w/s. Current Word: '64036312'
+135130.004: [13:51:30]Average Speed: 46412.3 w/s. Current Word: '29219222'
+135150.009: [13:51:50]Average Speed: 47069.7 w/s. Current Word: '58623232'
+135210.004: [13:52:10]Average Speed: 46942.0 w/s. Current Word: '52517142'
+135230.103: [13:52:30]Average Speed: 46302.4 w/s. Current Word: '47579052'
+135250.071: [13:52:50]Average Speed: 46794.1 w/s. Current Word: '55433062'
+135310.038: [13:53:10]Average Speed: 47077.3 w/s. Current Word: '20057962'
+135330.014: [13:53:30]Average Speed: 46477.3 w/s. Current Word: '84540972'
+135350.014: [13:53:50]Average Speed: 46693.8 w/s. Current Word: '32483882'
+135410.045: [13:54:10]Average Speed: 46786.8 w/s. Current Word: '06147792'
+135430.114: [13:54:30]Average Speed: 46753.9 w/s. Current Word: '93290703'
+135450.084: [13:54:50]Average Speed: 46772.9 w/s. Current Word: '79644613'
+135510.050: [13:55:10]Average Speed: 46305.4 w/s. Current Word: '60807523'
+135530.020: [13:55:30]Average Speed: 46361.2 w/s. Current Word: '03089433'
+135550.005: [13:55:50]Average Speed: 46342.0 w/s. Current Word: '07842443'
+135610.060: [13:56:10]Average Speed: 45390.2 w/s. Current Word: '47623353'
+135630.027: [13:56:30]Average Speed: 46586.2 w/s. Current Word: '79346263'
+135650.199: [13:56:50]Average Speed: 46745.4 w/s. Current Word: '60399173'
+135710.019: [13:57:10]Average Speed: 45544.3 w/s. Current Word: '39101183'
+135730.034: [13:57:30]Average Speed: 46356.5 w/s. Current Word: '32373093'
+135750.010: [13:57:50]Average Speed: 46713.2 w/s. Current Word: '68517993'
+135810.076: [13:58:10]Average Speed: 45224.2 w/s. Current Word: '96067804'
+135830.013: [13:58:30]Average Speed: 45794.9 w/s. Current Word: '86919714'
+135850.023: [13:58:50]Average Speed: 45828.8 w/s. Current Word: '34580724'
+135910.079: [13:59:10]Average Speed: 46180.5 w/s. Current Word: '35123634'
+135930.044: [13:59:30]Average Speed: 46088.0 w/s. Current Word: '31935544'
+135950.005: [13:59:50]Average Speed: 45956.6 w/s. Current Word: '54037454'
+140010.020: [14:00:10]Average Speed: 46241.1 w/s. Current Word: '76879364'
+140030.056: [14:00:30]Average Speed: 46563.5 w/s. Current Word: '73192374'
+140050.009: [14:00:50]Average Speed: 46349.8 w/s. Current Word: '43165284'
+140110.006: [14:01:10]Average Speed: 46291.9 w/s. Current Word: '37918194'
+140130.007: [14:01:30]Average Speed: 46526.7 w/s. Current Word: '60521105'
+140150.005: [14:01:50]Average Speed: 46252.7 w/s. Current Word: '06573015'
+140210.006: [14:02:10]Average Speed: 46323.1 w/s. Current Word: '22046915'
+140230.020: [14:02:30]Average Speed: 46627.4 w/s. Current Word: '17569825'
+140250.007: [14:02:50]Average Speed: 46494.9 w/s. Current Word: '07462835'
+140310.007: [14:03:10]Average Speed: 46675.8 w/s. Current Word: '78995745'
+140330.010: [14:03:30]Average Speed: 46560.4 w/s. Current Word: '69119655'
+140350.040: [14:03:50]Average Speed: 46662.2 w/s. Current Word: '04442665'
+140410.011: [14:04:10]Average Speed: 46237.7 w/s. Current Word: '49194575'
+140430.014: [14:04:30]Average Speed: 46248.2 w/s. Current Word: '75147485'
+140450.015: [14:04:50]Average Speed: 46977.9 w/s. Current Word: '51731495'
+140510.013: [14:05:10]Average Speed: 46903.2 w/s. Current Word: '87715306'
+140530.086: [14:05:30]Average Speed: 46521.9 w/s. Current Word: '71228216'
+140546.061: [14:05:46]found user-password: '20262026'
+140546.084: [14:05:46][root@172-16-208-2 /tmp]# [破涕为笑]
+140546.084: [14:05:46]-bash: [破涕为笑]: command not found
+154229.022: [15:42:29][root@172-16-208-2 /tmp]# 
+154229.130: [15:42:29][root@172-16-208-2 /tmp]# 

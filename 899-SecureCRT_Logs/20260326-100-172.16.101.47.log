@@ -1,0 +1,271 @@
+﻿114029.103: [11:40:29][202603100-172.16.101.47-11:40:29]
+114029.123: [11:40:29]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-31-generic x86_64)
+114029.123: [11:40:29]
+114029.124: [11:40:29] * Documentation:  https://help.ubuntu.com
+114029.124: [11:40:29] * Management:     https://landscape.canonical.com
+114029.124: [11:40:29] * Support:        https://ubuntu.com/pro
+114029.124: [11:40:29]
+114029.124: [11:40:29]扩展安全维护（ESM）Applications 未启用。
+114029.124: [11:40:29]
+114029.124: [11:40:29]321 更新可以立即应用。
+114029.124: [11:40:29]要查看这些附加更新，请运行：apt list --upgradable
+114029.124: [11:40:29]
+114029.124: [11:40:29]启用 ESM Apps 来获取未来的额外安全更新
+114029.124: [11:40:29]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+114029.124: [11:40:29]
+114029.125: [11:40:29]Last login: Wed Mar 25 09:50:10 2026 from 192.168.6.173
+114030.272: [11:40:30]root@user:~# ip a
+114030.280: [11:40:30]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+114030.281: [11:40:30]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+114030.281: [11:40:30]    inet 127.0.0.1/8 scope host lo
+114030.281: [11:40:30]       valid_lft forever preferred_lft forever
+114030.281: [11:40:30]    inet6 ::1/128 scope host noprefixroute 
+114030.281: [11:40:30]       valid_lft forever preferred_lft forever
+114030.281: [11:40:30]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114030.282: [11:40:30]    link/ether b8:59:9f:3b:2d:2e brd ff:ff:ff:ff:ff:ff
+114030.282: [11:40:30]    altname enp108s0f0np0
+114030.282: [11:40:30]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114030.282: [11:40:30]    link/ether b8:59:9f:3b:2d:2f brd ff:ff:ff:ff:ff:ff
+114030.282: [11:40:30]    altname enp108s0f1np1
+114030.283: [11:40:30]4: ens3f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114030.283: [11:40:30]    link/ether 1c:34:da:51:90:e8 brd ff:ff:ff:ff:ff:ff
+114030.283: [11:40:30]    altname enp109s0f0np0
+114030.283: [11:40:30]5: ens3f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114030.283: [11:40:30]    link/ether 1c:34:da:51:90:e9 brd ff:ff:ff:ff:ff:ff
+114030.283: [11:40:30]    altname enp109s0f1np1
+114030.283: [11:40:30]6: ens16f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+114030.284: [11:40:30]    link/ether 98:03:9b:77:6f:5a brd ff:ff:ff:ff:ff:ff
+114030.284: [11:40:30]    altname enp229s0f0np0
+114030.284: [11:40:30]    inet 172.16.101.47/24 brd 172.16.101.255 scope global ens16f0np0
+114030.284: [11:40:30]       valid_lft forever preferred_lft forever
+114030.284: [11:40:30]7: ens16f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+114030.284: [11:40:30]    link/ether 98:03:9b:77:6f:5b brd ff:ff:ff:ff:ff:ff
+114030.284: [11:40:30]    altname enp229s0f1np1
+114030.285: [11:40:30]    inet 10.0.0.47/24 brd 10.0.0.255 scope global ens16f1np1
+114030.285: [11:40:30]       valid_lft forever preferred_lft forever
+114030.285: [11:40:30]8: ens14f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114030.285: [11:40:30]    link/ether 98:03:9b:9c:bc:04 brd ff:ff:ff:ff:ff:ff
+114030.285: [11:40:30]    altname enp230s0f0np0
+114030.285: [11:40:30]9: ens14f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114030.286: [11:40:30]    link/ether 98:03:9b:9c:bc:05 brd ff:ff:ff:ff:ff:ff
+114030.286: [11:40:30]    altname enp230s0f1np1
+114315.331: [11:43:15]root@user:~# cat /etc/passwd
+114315.337: [11:43:15]root:x:0:0:root:/root:/bin/bash
+114315.337: [11:43:15]daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+114315.337: [11:43:15]bin:x:2:2:bin:/bin:/usr/sbin/nologin
+114315.338: [11:43:15]sys:x:3:3:sys:/dev:/usr/sbin/nologin
+114315.338: [11:43:15]sync:x:4:65534:sync:/bin:/bin/sync
+114315.338: [11:43:15]games:x:5:60:games:/usr/games:/usr/sbin/nologin
+114315.338: [11:43:15]man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+114315.338: [11:43:15]lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+114315.339: [11:43:15]mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+114315.339: [11:43:15]news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+114315.339: [11:43:15]uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+114315.339: [11:43:15]proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+114315.340: [11:43:15]www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+114315.340: [11:43:15]backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+114315.340: [11:43:15]list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+114315.340: [11:43:15]irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+114315.340: [11:43:15]_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+114315.340: [11:43:15]nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+114315.341: [11:43:15]systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+114315.341: [11:43:15]systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+114315.341: [11:43:15]dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+114315.341: [11:43:15]messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+114315.342: [11:43:15]syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+114315.342: [11:43:15]systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+114315.342: [11:43:15]uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+114315.342: [11:43:15]usbmux:x:104:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+114315.342: [11:43:15]tss:x:105:105:TPM software stack,,,:/var/lib/tpm:/bin/false
+114315.342: [11:43:15]systemd-oom:x:990:990:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+114315.342: [11:43:15]kernoops:x:106:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+114315.342: [11:43:15]whoopsie:x:107:109::/nonexistent:/bin/false
+114315.343: [11:43:15]dnsmasq:x:999:65534:dnsmasq:/var/lib/misc:/usr/sbin/nologin
+114315.343: [11:43:15]avahi:x:108:111:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+114315.343: [11:43:15]tcpdump:x:109:112::/nonexistent:/usr/sbin/nologin
+114315.343: [11:43:15]sssd:x:110:113:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+114315.343: [11:43:15]speech-dispatcher:x:111:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+114315.344: [11:43:15]cups-pk-helper:x:112:114:user for cups-pk-helper service,,,:/nonexistent:/usr/sbin/nologin
+114315.344: [11:43:15]fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+114315.344: [11:43:15]saned:x:113:116::/var/lib/saned:/usr/sbin/nologin
+114315.344: [11:43:15]geoclue:x:114:117::/var/lib/geoclue:/usr/sbin/nologin
+114315.344: [11:43:15]cups-browsed:x:115:114::/nonexistent:/usr/sbin/nologin
+114315.344: [11:43:15]hplip:x:116:7:HPLIP system user,,,:/run/hplip:/bin/false
+114315.344: [11:43:15]polkitd:x:988:988:User for polkitd:/:/usr/sbin/nologin
+114315.344: [11:43:15]rtkit:x:117:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+114315.344: [11:43:15]colord:x:118:120:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+114315.344: [11:43:15]gnome-initial-setup:x:119:65534::/run/gnome-initial-setup/:/bin/false
+114315.345: [11:43:15]gdm:x:120:121:Gnome Display Manager:/var/lib/gdm3:/bin/false
+114315.345: [11:43:15]nm-openvpn:x:121:122:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+114315.345: [11:43:15]gnome-remote-desktop:x:985:985:GNOME Remote Desktop:/var/lib/gnome-remote-desktop:/usr/sbin/nologin
+114315.345: [11:43:15]user:x:1000:1000:user:/home/user:/bin/bash
+114315.345: [11:43:15]sshd:x:122:65534::/run/sshd:/usr/sbin/nologin
+141007.405: [14:10:07]root@user:~# 
+141007.407: [14:10:07]root@user:~# 
+141012.312: [14:10:12]root@user:~# free -h
+141012.313: [14:10:12]               total        used        free      shared  buff/cache   available
+141012.313: [14:10:12]内存：         503Gi       9.8Gi       494Gi        23Mi       2.0Gi       493Gi
+141012.313: [14:10:12]交换：         8.0Gi          0B       8.0Gi
+141302.329: [14:13:02]root@user:~# lscpu
+141302.445: [14:13:02]架构：                    x86_64
+141302.445: [14:13:02]  CPU 运行模式：          32-bit, 64-bit
+141302.445: [14:13:02]  Address sizes:          46 bits physical, 57 bits virtual
+141302.445: [14:13:02]  字节序：                Little Endian
+141302.446: [14:13:02]CPU:                      152
+141302.446: [14:13:02]  在线 CPU 列表：         0-151
+141302.446: [14:13:02]厂商 ID：                 GenuineIntel
+141302.446: [14:13:02]  BIOS Vendor ID:         Intel(R) Corporation
+141302.446: [14:13:02]  型号名称：              Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz
+141302.447: [14:13:02]    BIOS Model name:      Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz  CPU @ 2.4GHz
+141302.447: [14:13:02]    BIOS CPU family:      179
+141302.447: [14:13:02]    CPU 系列：            6
+141302.447: [14:13:02]    型号：                106
+141302.447: [14:13:02]    每个核的线程数：      2
+141302.447: [14:13:02]    每个座的核数：        38
+141302.447: [14:13:02]    座：                  2
+141302.447: [14:13:02]    步进：                6
+141302.448: [14:13:02]    CPU(s) scaling MHz:   26%
+141302.448: [14:13:02]    CPU 最大 MHz：        3400.0000
+141302.448: [14:13:02]    CPU 最小 MHz：        800.0000
+141302.448: [14:13:02]    BogoMIPS：            4800.00
+141302.449: [14:13:02]    标记：                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts re
+141302.449: [14:13:02]                          p_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes
+141302.450: [14:13:02]                           xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2
+141302.451: [14:13:02]                           erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_to
+141302.451: [14:13:02]                          tal cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpi
+141302.451: [14:13:02]                          d fsrm md_clear pconfig flush_l1d arch_capabilities
+141302.451: [14:13:02]Virtualization features:  
+141302.452: [14:13:02]  虚拟化：                VT-x
+141302.452: [14:13:02]Caches (sum of all):      
+141302.452: [14:13:02]  L1d:                    3.6 MiB (76 instances)
+141302.452: [14:13:02]  L1i:                    2.4 MiB (76 instances)
+141302.452: [14:13:02]  L2:                     95 MiB (76 instances)
+141302.452: [14:13:02]  L3:                     114 MiB (2 instances)
+141302.465: [14:13:02]NUMA:                     
+141302.465: [14:13:02]  NUMA 节点：             2
+141302.465: [14:13:02]  NUMA 节点0 CPU：        0-37,76-113
+141302.465: [14:13:02]  NUMA 节点1 CPU：        38-75,114-151
+141302.465: [14:13:02]Vulnerabilities:          
+141302.465: [14:13:02]  Gather data sampling:   Mitigation; Microcode
+141302.465: [14:13:02]  Itlb multihit:          Not affected
+141302.465: [14:13:02]  L1tf:                   Not affected
+141302.465: [14:13:02]  Mds:                    Not affected
+141302.465: [14:13:02]  Meltdown:               Not affected
+141302.465: [14:13:02]  Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
+141302.465: [14:13:02]  Reg file data sampling: Not affected
+141302.465: [14:13:02]  Retbleed:               Not affected
+141302.465: [14:13:02]  Spec rstack overflow:   Not affected
+141302.465: [14:13:02]  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+141302.465: [14:13:02]  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+141302.465: [14:13:02]  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI Syscall hardening, KVM SW loop
+141302.466: [14:13:02]  Srbds:                  Not affected
+141302.466: [14:13:02]  Tsx async abort:        Not affected
+141407.214: [14:14:07]root@user:~# free -h
+141407.216: [14:14:07]               total        used        free      shared  buff/cache   available
+141407.238: [14:14:07]内存：         503Gi       9.8Gi       494Gi        23Mi       2.0Gi       493Gi
+141407.238: [14:14:07]交换：         8.0Gi          0B       8.0Gi
+141441.731: [14:14:41]root@user:~# lspci | grep -i vga
+141441.771: [14:14:41]01:00.0 VGA compatible controller: Huawei Technologies Co., Ltd. Hi171x Series [iBMC Intelligent Management system chip w/VGA support] (rev 01)
+141454.415: [14:14:54]root@user:~# lspci | grep -i nvidia
+141454.454: [14:14:54]67:00.0 3D controller: NVIDIA Corporation AD102GL [L20] (rev a1)
+141454.454: [14:14:54]68:00.0 3D controller: NVIDIA Corporation AD102GL [L20] (rev a1)
+141454.454: [14:14:54]e7:00.0 3D controller: NVIDIA Corporation AD102GL [L20] (rev a1)
+141454.454: [14:14:54]e8:00.0 3D controller: NVIDIA Corporation AD102GL [L20] (rev a1)
+142403.293: [14:24:03][202603100-172.16.101.47-14:24:03]
+142403.304: [14:24:03]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-31-generic x86_64)
+142403.304: [14:24:03]
+142403.304: [14:24:03] * Documentation:  https://help.ubuntu.com
+142403.304: [14:24:03] * Management:     https://landscape.canonical.com
+142403.304: [14:24:03] * Support:        https://ubuntu.com/pro
+142403.304: [14:24:03]
+142403.305: [14:24:03]扩展安全维护（ESM）Applications 未启用。
+142403.305: [14:24:03]
+142403.305: [14:24:03]321 更新可以立即应用。
+142403.305: [14:24:03]要查看这些附加更新，请运行：apt list --upgradable
+142403.305: [14:24:03]
+142403.305: [14:24:03]启用 ESM Apps 来获取未来的额外安全更新
+142403.305: [14:24:03]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+142403.305: [14:24:03]
+142403.305: [14:24:03]Last login: Thu Mar 26 11:40:29 2026 from 192.168.6.173
+142410.771: [14:24:10]root@user:~# lscpu
+142410.825: [14:24:10]架构：                    x86_64
+142410.825: [14:24:10]  CPU 运行模式：          32-bit, 64-bit
+142410.825: [14:24:10]  Address sizes:          46 bits physical, 57 bits virtual
+142410.826: [14:24:10]  字节序：                Little Endian
+142410.826: [14:24:10]CPU:                      152
+142410.826: [14:24:10]  在线 CPU 列表：         0-151
+142410.826: [14:24:10]厂商 ID：                 GenuineIntel
+142410.826: [14:24:10]  BIOS Vendor ID:         Intel(R) Corporation
+142410.827: [14:24:10]  型号名称：              Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz
+142410.827: [14:24:10]    BIOS Model name:      Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz  CPU @ 2.4GHz
+142410.827: [14:24:10]    BIOS CPU family:      179
+142410.827: [14:24:10]    CPU 系列：            6
+142410.827: [14:24:10]    型号：                106
+142410.827: [14:24:10]    每个核的线程数：      2
+142410.827: [14:24:10]    每个座的核数：        38
+142410.827: [14:24:10]    座：                  2
+142410.827: [14:24:10]    步进：                6
+142410.828: [14:24:10]    CPU(s) scaling MHz:   28%
+142410.828: [14:24:10]    CPU 最大 MHz：        3400.0000
+142410.828: [14:24:10]    CPU 最小 MHz：        800.0000
+142410.828: [14:24:10]    BogoMIPS：            4800.00
+142410.829: [14:24:10]    标记：                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid 
+142410.830: [14:24:10]                          aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 ssbd mba
+142410.830: [14:24:10]                           ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw av
+142410.831: [14:24:10]                          x512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg 
+142410.832: [14:24:10]                          tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+142410.832: [14:24:10]Virtualization features:  
+142410.832: [14:24:10]  虚拟化：                VT-x
+142410.832: [14:24:10]Caches (sum of all):      
+142410.832: [14:24:10]  L1d:                    3.6 MiB (76 instances)
+142410.832: [14:24:10]  L1i:                    2.4 MiB (76 instances)
+142410.832: [14:24:10]  L2:                     95 MiB (76 instances)
+142410.832: [14:24:10]  L3:                     114 MiB (2 instances)
+142410.832: [14:24:10]NUMA:                     
+142410.832: [14:24:10]  NUMA 节点：             2
+142410.833: [14:24:10]  NUMA 节点0 CPU：        0-37,76-113
+142410.833: [14:24:10]  NUMA 节点1 CPU：        38-75,114-151
+142410.833: [14:24:10]Vulnerabilities:          
+142410.833: [14:24:10]  Gather data sampling:   Mitigation; Microcode
+142410.833: [14:24:10]  Itlb multihit:          Not affected
+142410.833: [14:24:10]  L1tf:                   Not affected
+142410.833: [14:24:10]  Mds:                    Not affected
+142410.833: [14:24:10]  Meltdown:               Not affected
+142410.834: [14:24:10]  Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
+142410.834: [14:24:10]  Reg file data sampling: Not affected
+142410.834: [14:24:10]  Retbleed:               Not affected
+142410.834: [14:24:10]  Spec rstack overflow:   Not affected
+142410.834: [14:24:10]  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+142410.834: [14:24:10]  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+142410.835: [14:24:10]  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI Syscall hardening, KVM SW loop
+142410.835: [14:24:10]  Srbds:                  Not affected
+142410.835: [14:24:10]  Tsx async abort:        Not affected
+142851.704: [14:28:51]root@user:~# cat /proc/mdstat
+142851.710: [14:28:51]Personalities : 
+142851.710: [14:28:51]unused devices: <none>
+142925.784: [14:29:25]root@user:~# lspci | grep -i -E "raid|sas"
+142925.829: [14:29:25]31:00.0 RAID bus controller: Broadcom / LSI MegaRAID 12GSAS/PCIe Secure SAS39xx
+143242.539: [14:32:42]root@user:~# lsblk
+143242.548: [14:32:42]NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+143242.548: [14:32:42]loop0    7:0    0    74M  1 loop /snap/core22/2411
+143242.548: [14:32:42]loop1    7:1    0   476K  1 loop /snap/snapd-desktop-integration/157
+143242.548: [14:32:42]loop2    7:2    0  38.7M  1 loop /snap/snapd/21465
+143242.548: [14:32:42]loop3    7:3    0  10.7M  1 loop /snap/firmware-updater/127
+143242.549: [14:32:42]loop4    7:4    0  91.7M  1 loop /snap/gtk-common-themes/1535
+143242.549: [14:32:42]loop5    7:5    0  74.2M  1 loop /snap/core22/1380
+143242.549: [14:32:42]loop6    7:6    0 505.1M  1 loop /snap/gnome-42-2204/176
+143242.549: [14:32:42]loop7    7:7    0  10.3M  1 loop /snap/snap-store/1124
+143242.549: [14:32:42]loop8    7:8    0     4K  1 loop /snap/bare/5
+143242.549: [14:32:42]loop9    7:9    0 269.6M  1 loop /snap/firefox/4173
+143242.549: [14:32:42]loop10   7:10   0  12.2M  1 loop /snap/snap-store/1216
+143242.550: [14:32:42]sda      8:0    0  36.4T  0 disk 
+143242.550: [14:32:42]sdb      8:16   0   2.2T  0 disk 
+143242.550: [14:32:42]├─sdb1   8:17   0     1G  0 part /boot/efi
+143242.550: [14:32:42]└─sdb2   8:18   0   2.2T  0 part /var/snap/firefox/common/host-hunspell
+143242.550: [14:32:42]                                 /
+143408.758: [14:34:08]root@user:~# 
+143408.843: [14:34:08]root@user:~# 
+143410.009: [14:34:10]root@user:~# lsblk\
+143411.301: [14:34:11]> ^C
+144614.149: [14:46:14]root@user:~# dig @8.8.8.8 pt.zhixing.bjtu.edu.cn
+144619.254: [14:46:19];; communications error to 8.8.8.8#53: timed out

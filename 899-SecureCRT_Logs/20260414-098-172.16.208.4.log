@@ -1,0 +1,163 @@
+﻿081906.948: [08:19:06][root@172-16-208-4 ~]# ps -ef | grep node
+081906.970: [08:19:06]node_ex+  144201       1  0  2025 ?        07:41:28 /usr/local/bin/node_exporter
+081906.971: [08:19:06]root      325091  322388  0 20:19 pts/1    00:00:00 grep --color=auto node
+082041.990: [08:20:41][root@172-16-208-4 ~]# ps -eo pid,ppid,cmd | grep node
+082042.008: [08:20:42] 144201       1 /usr/local/bin/node_exporter
+082042.008: [08:20:42] 325093  322388 grep --color=auto node
+082133.042: [08:21:33][root@172-16-208-4 ~]# systemctl status node
+082133.058: [08:21:33]Unit node.service could not be found.
+082137.948: [08:21:37][root@172-16-208-4 ~]# systemctl status node_exporter
+082137.973: [08:21:37]● node_exporter.service - Node Exporter
+082137.973: [08:21:37]     Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; preset: enabled)
+082137.973: [08:21:37]     Active: active (running) since Sun 2025-09-28 22:51:36 EDT; 6 months 14 days ago
+082137.974: [08:21:37]   Main PID: 144201 (node_exporter)
+082137.974: [08:21:37]      Tasks: 5 (limit: 9482)
+082137.974: [08:21:37]     Memory: 13.0M
+082137.974: [08:21:37]        CPU: 7h 41min 28.274s
+082137.974: [08:21:37]     CGroup: /system.slice/node_exporter.service
+082137.974: [08:21:37]             └─144201 /usr/local/bin/node_exporter
+082137.974: [08:21:37]
+082137.975: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.940Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.975: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.976: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.976: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.977: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.978: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.978: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.979: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.980: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082137.980: [08:21:37]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.044: [08:21:49]...skipping...
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.044: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.045: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.070: [08:21:49]~
+082149.071: [08:21:49]~
+082149.071: [08:21:49]~
+082149.071: [08:21:49]~
+082149.071: [08:21:49]● node_exporter.service - Node Exporter
+082149.071: [08:21:49]     Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; preset: enabled)
+082149.072: [08:21:49]     Active: active (running) since Sun 2025-09-28 22:51:36 EDT; 6 months 14 days ago
+082149.072: [08:21:49]   Main PID: 144201 (node_exporter)
+082149.072: [08:21:49]      Tasks: 5 (limit: 9482)
+082149.072: [08:21:49]     Memory: 13.0M
+082149.072: [08:21:49]        CPU: 7h 41min 28.274s
+082149.072: [08:21:49]     CGroup: /system.slice/node_exporter.service
+082149.072: [08:21:49]             └─144201 /usr/local/bin/node_exporter
+082149.072: [08:21:49]
+082149.073: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.940Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.073: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.074: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.074: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.075: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.075: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.076: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.077: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.077: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082149.078: [08:21:49]Sep 28 22:57:49 172-16-208-4 node_exporter[144201]: time=2025-09-29T02:57:49.941Z level=ERROR source=http.go:219 msg="error encoding and sending metric family: write tcp 127.0.0.1:9100->127.0.0.1:37050:>
+082158.124: [08:21:58][root@172-16-208-4 ~]# cd /etc/systemd/system
+082158.935: [08:21:58][root@172-16-208-4 /etc/systemd/system]# ll
+082158.957: [08:21:58]total 32K
+082158.957: [08:21:58]lrwxrwxrwx 1 root root   45 Nov  5 00:49 dbus-org.freedesktop.timesync1.service -> /lib/systemd/system/systemd-timesyncd.service
+082158.957: [08:21:58]drwxr-xr-x 2 root root 4.0K Feb 28  2025 getty.target.wants
+082158.958: [08:21:58]lrwxrwxrwx 1 root root   48 Aug 14  2025 ip6tables.service -> /lib/systemd/system/netfilter-persistent.service
+082158.958: [08:21:58]lrwxrwxrwx 1 root root   48 Aug 14  2025 iptables.service -> /lib/systemd/system/netfilter-persistent.service
+082158.958: [08:21:58]drwxr-xr-x 2 root root 4.0K Nov  6 03:06 multi-user.target.wants
+082158.958: [08:21:58]drwxr-xr-x 2 root root 4.0K Feb 28  2025 network-online.target.wants
+082158.959: [08:21:58]-rw-r--r-- 1 root root  176 Sep 28  2025 node_exporter.service
+082158.959: [08:21:58]-rw-r--r-- 1 root root  890 Nov  4 07:02 singbox.service
+082158.959: [08:21:58]drwxr-xr-x 2 root root 4.0K Feb 28  2025 sockets.target.wants
+082158.959: [08:21:58]lrwxrwxrwx 1 root root   31 Feb 28  2025 sshd.service -> /lib/systemd/system/ssh.service
+082158.959: [08:21:58]drwxr-xr-x 2 root root 4.0K Nov  5 00:49 sysinit.target.wants
+082158.959: [08:21:58]drwxr-xr-x 2 root root 4.0K Feb 28  2025 timers.target.wants
+091818.135: [09:18:18][root@172-16-208-4 /etc/systemd/system]# ping www.google.com.hk
+091818.201: [09:18:18]PING www.google.com.hk (142.250.199.195) 56(84) bytes of data.
+091818.369: [09:18:18]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=1 ttl=111 time=59.7 ms
+091819.394: [09:18:19]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=2 ttl=111 time=47.7 ms
+091821.442: [09:18:21]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=4 ttl=111 time=85.5 ms
+091822.362: [09:18:22]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=5 ttl=111 time=51.4 ms
+091823.393: [09:18:23]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=6 ttl=111 time=46.0 ms
+091824.442: [09:18:24]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=7 ttl=111 time=77.5 ms
+091825.437: [09:18:25]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=8 ttl=111 time=49.0 ms
+091826.460: [09:18:26]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=9 ttl=111 time=66.5 ms
+091827.381: [09:18:27]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=10 ttl=111 time=90.9 ms
+091828.406: [09:18:28]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=11 ttl=111 time=76.7 ms
+091829.430: [09:18:29]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=12 ttl=111 time=73.9 ms
+091830.351: [09:18:30]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=13 ttl=111 time=45.0 ms
+091831.478: [09:18:31]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=14 ttl=111 time=82.7 ms
+091833.422: [09:18:33]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=16 ttl=111 time=88.0 ms
+091834.447: [09:18:34]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=17 ttl=111 time=54.8 ms
+091835.368: [09:18:35]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=18 ttl=111 time=38.4 ms
+091836.407: [09:18:36]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=19 ttl=111 time=42.4 ms
+091837.417: [09:18:37]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=20 ttl=111 time=42.2 ms
+091838.443: [09:18:38]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=21 ttl=111 time=36.8 ms
+091839.464: [09:18:39]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=22 ttl=111 time=44.9 ms
+091840.387: [09:18:40]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=23 ttl=111 time=42.4 ms
+091841.410: [09:18:41]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=24 ttl=111 time=42.5 ms
+091842.445: [09:18:42]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=25 ttl=111 time=46.1 ms
+091843.664: [09:18:43]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=26 ttl=111 time=132 ms
+091844.397: [09:18:44]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=27 ttl=111 time=36.5 ms
+091845.412: [09:18:45]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=28 ttl=111 time=38.7 ms
+091846.385: [09:18:46]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=29 ttl=111 time=58.0 ms
+091847.454: [09:18:47]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=30 ttl=111 time=51.4 ms
+091848.478: [09:18:48]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=31 ttl=111 time=46.5 ms
+091849.395: [09:18:49]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=32 ttl=111 time=47.7 ms
+091850.422: [09:18:50]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=33 ttl=111 time=37.3 ms
+091851.543: [09:18:51]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=34 ttl=111 time=45.6 ms
+091853.494: [09:18:53]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=36 ttl=111 time=57.9 ms
+091855.413: [09:18:55]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=38 ttl=111 time=55.4 ms
+091856.467: [09:18:56]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=39 ttl=111 time=34.7 ms
+091857.490: [09:18:57]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=40 ttl=111 time=55.3 ms
+091858.389: [09:18:58]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=41 ttl=111 time=41.0 ms
+091859.434: [09:18:59]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=42 ttl=111 time=56.0 ms
+091900.457: [09:19:00]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=43 ttl=111 time=61.1 ms
+091901.481: [09:19:01]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=44 ttl=111 time=50.8 ms
+091902.505: [09:19:02]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=45 ttl=111 time=37.9 ms
+091903.426: [09:19:03]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=46 ttl=111 time=48.3 ms
+091904.451: [09:19:04]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=47 ttl=111 time=57.4 ms
+091905.475: [09:19:05]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=48 ttl=111 time=59.3 ms
+091906.497: [09:19:06]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=49 ttl=111 time=43.3 ms
+091907.421: [09:19:07]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=50 ttl=111 time=43.8 ms
+091909.672: [09:19:09]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=52 ttl=111 time=47.3 ms
+091910.492: [09:19:10]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=53 ttl=111 time=50.2 ms
+091911.581: [09:19:11]64 bytes from nchkgb-am-in-f3.1e100.net (142.250.199.195): icmp_seq=54 ttl=111 time=39.8 ms
+091911.803: [09:19:11]^C
+091911.803: [09:19:11]--- www.google.com.hk ping statistics ---
+091911.803: [09:19:11]54 packets transmitted, 49 received, 9.25926% packet loss, time 53158ms
+091911.803: [09:19:11]rtt min/avg/max/mdev = 34.669/54.374/132.255/18.068 ms

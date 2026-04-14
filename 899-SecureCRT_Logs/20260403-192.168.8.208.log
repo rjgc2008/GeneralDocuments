@@ -1,0 +1,32 @@
+﻿004817.832: [00:48:17][202604192.168.8.208-00:48:17]
+004817.859: [00:48:17]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-71-generic x86_64)
+004817.859: [00:48:17]
+004817.859: [00:48:17] * Documentation:  https://help.ubuntu.com
+004817.859: [00:48:17] * Management:     https://landscape.canonical.com
+004817.859: [00:48:17] * Support:        https://ubuntu.com/pro
+004817.859: [00:48:17]
+004817.859: [00:48:17] System information as of Fri Apr  3 12:48:16 AM CST 2026
+004817.859: [00:48:17]
+004817.859: [00:48:17]  System load:    0.22             Temperature:                35.0 C
+004817.860: [00:48:17]  Usage of /home: 4.0% of 1.97TB   Processes:                  1235
+004817.860: [00:48:17]  Memory usage:   10%              Users logged in:            0
+004817.860: [00:48:17]  Swap usage:     0%               IPv4 address for enp33s0f1: 192.168.8.208
+004817.860: [00:48:17]
+004817.860: [00:48:17]  => There is 1 zombie process.
+004817.860: [00:48:17]
+004817.860: [00:48:17] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+004817.861: [00:48:17]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+004817.861: [00:48:17]
+004817.861: [00:48:17]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+004817.861: [00:48:17]
+004817.861: [00:48:17]Expanded Security Maintenance for Applications is not enabled.
+004817.861: [00:48:17]
+004817.861: [00:48:17]236 updates can be applied immediately.
+004817.861: [00:48:17]156 of these updates are standard security updates.
+004817.861: [00:48:17]To see these additional updates run: apt list --upgradable
+004817.861: [00:48:17]
+004817.862: [00:48:17]Enable ESM Apps to receive additional future security updates.
+004817.862: [00:48:17]See https://ubuntu.com/esm or run: sudo pro status
+004817.862: [00:48:17]
+004817.862: [00:48:17]
+004817.862: [00:48:17]Last login: Thu Apr  2 16:58:53 2026 from 192.168.6.173

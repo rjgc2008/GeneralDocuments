@@ -1,0 +1,107 @@
+﻿114520.409: [11:45:20][202604203-B-A08-管理-Hygon-10.60.0.100-iptables-11:45:20]
+114520.418: [11:45:20]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-64-generic x86_64)
+114520.418: [11:45:20]
+114520.419: [11:45:20] * Documentation:  https://help.ubuntu.com
+114520.419: [11:45:20] * Management:     https://landscape.canonical.com
+114520.419: [11:45:20] * Support:        https://ubuntu.com/pro
+114520.419: [11:45:20]
+114520.419: [11:45:20] System information as of Mon Apr 13 11:45:19 AM CST 2026
+114520.419: [11:45:20]
+114520.419: [11:45:20]  System load:    0.71               Temperature:            67.0 C
+114520.419: [11:45:20]  Usage of /home: 9.5% of 301.20GB   Processes:              1196
+114520.419: [11:45:20]  Memory usage:   14%                Users logged in:        1
+114520.419: [11:45:20]  Swap usage:     0%                 IPv4 address for bond0: 10.60.0.100
+114520.419: [11:45:20]
+114520.420: [11:45:20] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+114520.420: [11:45:20]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+114520.420: [11:45:20]
+114520.420: [11:45:20]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+114520.420: [11:45:20]
+114520.420: [11:45:20]Expanded Security Maintenance for Applications is not enabled.
+114520.420: [11:45:20]
+114520.420: [11:45:20]307 updates can be applied immediately.
+114520.421: [11:45:20]To see these additional updates run: apt list --upgradable
+114520.421: [11:45:20]
+114520.421: [11:45:20]3 additional security updates can be applied with ESM Apps.
+114520.421: [11:45:20]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+114520.421: [11:45:20]
+114520.421: [11:45:20]
+114520.421: [11:45:20]*** System restart required ***
+114520.421: [11:45:20]Last login: Thu Apr  9 10:57:08 2026 from 172.16.101.190
+114522.600: [11:45:22]root@suzhouprodb100:~# ip a
+114522.606: [11:45:22]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+114522.606: [11:45:22]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+114522.606: [11:45:22]    inet 127.0.0.1/8 scope host lo
+114522.606: [11:45:22]       valid_lft forever preferred_lft forever
+114522.606: [11:45:22]    inet6 ::1/128 scope host noprefixroute 
+114522.606: [11:45:22]       valid_lft forever preferred_lft forever
+114522.607: [11:45:22]2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114522.607: [11:45:22]    link/ether c8:b4:ab:02:bc:4f brd ff:ff:ff:ff:ff:ff
+114522.607: [11:45:22]    altname enp1s0f0
+114522.607: [11:45:22]3: eno2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+114522.607: [11:45:22]    link/ether c8:b4:ab:02:bc:50 brd ff:ff:ff:ff:ff:ff
+114522.607: [11:45:22]    altname enp1s0f1
+114522.607: [11:45:22]13: enp33s0f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+114522.607: [11:45:22]    link/ether 0e:e2:b1:94:fd:92 brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:b7:ec:1c
+114522.608: [11:45:22]14: enp33s0f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond2 state UP group default qlen 1000
+114522.608: [11:45:22]    link/ether 0e:e2:b1:94:fd:92 brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:b7:ec:1d
+114522.608: [11:45:22]15: enp129s0f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond1 state UP group default qlen 1000
+114522.608: [11:45:22]    link/ether 8a:c0:7e:70:91:c0 brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:94:1c:d6
+114522.609: [11:45:22]16: enp129s0f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond1 state UP group default qlen 1000
+114522.609: [11:45:22]    link/ether 8a:c0:7e:70:91:c0 brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:94:1c:d7
+114522.609: [11:45:22]17: enp161s0f0np0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+114522.610: [11:45:22]    link/ether 36:8d:10:04:7f:da brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:94:14:f6
+114522.610: [11:45:22]18: enp161s0f1np1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP group default qlen 1000
+114522.610: [11:45:22]    link/ether 36:8d:10:04:7f:da brd ff:ff:ff:ff:ff:ff permaddr b8:3f:d2:94:14:f7
+114522.610: [11:45:22]19: br-8a1f89966586: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+114522.610: [11:45:22]    link/ether 62:d3:93:11:a7:01 brd ff:ff:ff:ff:ff:ff
+114522.611: [11:45:22]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-8a1f89966586
+114522.611: [11:45:22]       valid_lft forever preferred_lft forever
+114522.611: [11:45:22]    inet6 fe80::60d3:93ff:fe11:a701/64 scope link 
+114522.611: [11:45:22]       valid_lft forever preferred_lft forever
+114522.611: [11:45:22]20: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+114522.611: [11:45:22]    link/ether 42:d9:ac:df:4e:61 brd ff:ff:ff:ff:ff:ff
+114522.612: [11:45:22]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+114522.612: [11:45:22]       valid_lft forever preferred_lft forever
+114522.622: [11:45:22]21: vethd5ac642@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-8a1f89966586 state UP group default 
+114522.622: [11:45:22]    link/ether be:21:fd:17:1f:c8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+114522.623: [11:45:22]    inet6 fe80::bc21:fdff:fe17:1fc8/64 scope link 
+114522.623: [11:45:22]       valid_lft forever preferred_lft forever
+114522.623: [11:45:22]22: veth50b995a@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-8a1f89966586 state UP group default 
+114522.623: [11:45:22]    link/ether 7e:56:12:4e:61:18 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+114522.623: [11:45:22]    inet6 fe80::7c56:12ff:fe4e:6118/64 scope link 
+114522.625: [11:45:22]       valid_lft forever preferred_lft forever
+114522.626: [11:45:22]26: bond2: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+114522.626: [11:45:22]    link/ether 0e:e2:b1:94:fd:92 brd ff:ff:ff:ff:ff:ff
+114522.626: [11:45:22]    inet 10.64.0.100/24 brd 10.64.0.255 scope global noprefixroute bond2
+114522.626: [11:45:22]       valid_lft forever preferred_lft forever
+114522.626: [11:45:22]    inet6 fe80::ce2:b1ff:fe94:fd92/64 scope link 
+114522.626: [11:45:22]       valid_lft forever preferred_lft forever
+114522.627: [11:45:22]27: bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+114522.627: [11:45:22]    link/ether 8a:c0:7e:70:91:c0 brd ff:ff:ff:ff:ff:ff
+114522.627: [11:45:22]    inet 10.62.0.100/24 brd 10.62.0.255 scope global noprefixroute bond1
+114522.627: [11:45:22]       valid_lft forever preferred_lft forever
+114522.627: [11:45:22]    inet6 fe80::88c0:7eff:fe70:91c0/64 scope link 
+114522.627: [11:45:22]       valid_lft forever preferred_lft forever
+114522.627: [11:45:22]28: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+114522.628: [11:45:22]    link/ether 36:8d:10:04:7f:da brd ff:ff:ff:ff:ff:ff
+114522.628: [11:45:22]    inet 10.60.0.100/24 brd 10.60.0.255 scope global noprefixroute bond0
+114522.628: [11:45:22]       valid_lft forever preferred_lft forever
+114522.628: [11:45:22]    inet6 fe80::348d:10ff:fe04:7fda/64 scope link 
+114522.628: [11:45:22]       valid_lft forever preferred_lft forever
+114542.465: [11:45:42]root@suzhouprodb100:~# ping 10.62.0.1 -c 10
+114542.481: [11:45:42]PING 10.62.0.1 (10.62.0.1) 56(84) bytes of data.
+114542.482: [11:45:42]64 bytes from 10.62.0.1: icmp_seq=1 ttl=64 time=0.357 ms
+114543.478: [11:45:43]64 bytes from 10.62.0.1: icmp_seq=2 ttl=64 time=0.354 ms
+114544.501: [11:45:44]64 bytes from 10.62.0.1: icmp_seq=3 ttl=64 time=0.193 ms
+114545.526: [11:45:45]64 bytes from 10.62.0.1: icmp_seq=4 ttl=64 time=0.671 ms
+114546.549: [11:45:46]64 bytes from 10.62.0.1: icmp_seq=5 ttl=64 time=0.268 ms
+114547.574: [11:45:47]64 bytes from 10.62.0.1: icmp_seq=6 ttl=64 time=0.348 ms
+114548.597: [11:45:48]64 bytes from 10.62.0.1: icmp_seq=7 ttl=64 time=0.219 ms
+114549.622: [11:45:49]64 bytes from 10.62.0.1: icmp_seq=8 ttl=64 time=0.376 ms
+114550.645: [11:45:50]64 bytes from 10.62.0.1: icmp_seq=9 ttl=64 time=0.183 ms
+114551.670: [11:45:51]64 bytes from 10.62.0.1: icmp_seq=10 ttl=64 time=0.234 ms
+114551.670: [11:45:51]
+114551.670: [11:45:51]--- 10.62.0.1 ping statistics ---
+114551.670: [11:45:51]10 packets transmitted, 10 received, 0% packet loss, time 9200ms
+114551.671: [11:45:51]rtt min/avg/max/mdev = 0.183/0.320/0.671/0.135 ms

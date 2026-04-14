@@ -1,0 +1,177 @@
+﻿081851.759: [08:18:51][202604Home-Dell--08:18:51]
+081851.785: [08:18:51]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+081851.785: [08:18:51]
+081851.785: [08:18:51]The programs included with the Debian GNU/Linux system are free software;
+081851.785: [08:18:51]the exact distribution terms for each program are described in the
+081851.786: [08:18:51]individual files in /usr/share/doc/*/copyright.
+081851.786: [08:18:51]
+081851.786: [08:18:51]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+081851.786: [08:18:51]permitted by applicable law.
+081851.786: [08:18:51]Last login: Sun Apr 12 19:45:05 2026 from 192.168.31.160
+081858.266: [08:18:58]root@anncara-computer:~# ps -ef | grep node
+081858.316: [08:18:58]root       75754   75750  0 08:18 pts/0    00:00:00 grep node
+081914.662: [08:19:14]root@anncara-computer:~# uptime
+081914.670: [08:19:14] 08:19:14 up 1 day, 12:51,  1 user,  load average: 1.12, 0.37, 0.18
+081922.787: [08:19:22]root@anncara-computer:~# cd /etc/
+081923.495: [08:19:23]root@anncara-computer:/etc# ll
+081923.509: [08:19:23]total 704K
+081923.510: [08:19:23]-rw-r--r-- 1 root root   3.9K May  7  2025 adduser.conf
+081923.510: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 alternatives
+081923.510: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 apparmor
+081923.510: [08:19:23]drwxr-xr-x 9 root root   4.0K Oct  9  2025 apparmor.d
+081923.510: [08:19:23]drwxr-xr-x 8 root root   4.0K Sep  2  2025 apt
+081923.511: [08:19:23]-rw-r--r-- 1 root root   2.0K Jul 31  2025 bash.bashrc
+081923.511: [08:19:23]-rw-r--r-- 1 root root     45 Jan 12  2025 bash_completion
+081923.511: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 29  2025 bash_completion.d
+081923.511: [08:19:23]-rw-r--r-- 1 root root    367 Jul 27  2025 bindresvport.blacklist
+081923.511: [08:19:23]drwxr-xr-x 2 root root   4.0K Jun 25  2025 binfmt.d
+081923.511: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 29  2025 ca-certificates
+081923.512: [08:19:23]-rw-r--r-- 1 root root   6.3K Aug 29  2025 ca-certificates.conf
+081923.512: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 console-setup
+081923.512: [08:19:23]drwx------ 2 root root   4.0K Jun 25  2025 credstore
+081923.512: [08:19:23]drwx------ 2 root root   4.0K Jun 25  2025 credstore.encrypted
+081923.512: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 cron.d
+081923.523: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 cron.daily
+081923.524: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 cron.hourly
+081923.524: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 cron.monthly
+081923.524: [08:19:23]-rw-r--r-- 1 root root   1.1K Jun 13  2025 crontab
+081923.524: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 cron.weekly
+081923.524: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 cron.yearly
+081923.525: [08:19:23]drwxr-xr-x 4 root root   4.0K Aug 28  2025 dbus-1
+081923.525: [08:19:23]-rw-r--r-- 1 root root   2.9K Mar 10  2025 debconf.conf
+081923.525: [08:19:23]-rw-r--r-- 1 root root      5 May 13  2025 debian_version
+081923.525: [08:19:23]drwxr-xr-x 3 root root   4.0K Jan 13 22:37 default
+081923.525: [08:19:23]-rw-r--r-- 1 root root   1.7K May  7  2025 deluser.conf
+081923.525: [08:19:23]drwxr-xr-x 2 root root   4.0K Apr 25  2025 depmod.d
+081923.525: [08:19:23]drwxr-xr-x 3 root root   4.0K Sep  2  2025 dhcp
+081923.526: [08:19:23]-rw-r--r-- 1 root root   1.3K May  9  2025 dhcpcd.conf
+081923.526: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 dictionaries-common
+081923.526: [08:19:23]drwxr-xr-x 4 root root   4.0K Aug 28  2025 dpkg
+081923.526: [08:19:23]-rw-r--r-- 1 root root    685 Jul 31  2025 e2scrub.conf
+081923.526: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 emacs
+081923.526: [08:19:23]-rw-r--r-- 1 root root      0 Aug 28  2025 environment
+081923.527: [08:19:23]-rw-r--r-- 1 root root   1.9K Mar 16  2025 ethertypes
+081923.527: [08:19:23]drwxr-xr-x 6 root root   4.0K Nov 19 21:18 fail2ban
+081923.527: [08:19:23]-rw-r--r-- 1 root root    917 Oct  9  2025 fstab
+081923.527: [08:19:23]-rw-r--r-- 1 root root    725 Jul 17  2025 fuse.conf
+081923.527: [08:19:23]-rw-r--r-- 1 root root   2.6K Jan 29  2025 gai.conf
+081923.527: [08:19:23]-rw-r--r-- 1 root root    770 Nov  6 22:08 group
+081923.527: [08:19:23]-rw-r--r-- 1 root root    747 Oct  9  2025 group-
+081923.528: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 grub.d
+081923.528: [08:19:23]-rw-r----- 1 root shadow  652 Nov  6 22:08 gshadow
+081923.528: [08:19:23]-rw-r----- 1 root shadow  631 Oct  9  2025 gshadow-
+081923.528: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 gss
+081923.528: [08:19:23]-rw-r--r-- 1 root root      9 May 13  2025 host.conf
+081923.528: [08:19:23]-rw-r--r-- 1 root root     17 Aug 28  2025 hostname
+081923.528: [08:19:23]-rw-r--r-- 1 root root    196 Aug 28  2025 hosts
+081923.529: [08:19:23]-rw-r--r-- 1 root root    411 Aug 28  2025 hosts.allow
+081923.529: [08:19:23]-rw-r--r-- 1 root root    711 Aug 28  2025 hosts.deny
+081923.529: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 ifplugd
+081923.529: [08:19:23]drwxr-xr-x 2 root root   4.0K Apr 12 18:53 init.d
+081923.529: [08:19:23]drwxr-xr-x 5 root root   4.0K Aug 28  2025 initramfs-tools
+081923.529: [08:19:23]-rw-r--r-- 1 root root   1.9K Dec 13  2024 inputrc
+081923.546: [08:19:23]drwxr-xr-x 2 root root   4.0K Sep 24  2025 iproute2
+081923.546: [08:19:23]-rw-r--r-- 1 root root     27 May 13  2025 issue
+081923.546: [08:19:23]-rw-r--r-- 1 root root     20 May 13  2025 issue.net
+081923.546: [08:19:23]drwxr-xr-x 6 root root   4.0K Aug 28  2025 kernel
+081923.546: [08:19:23]-rw-r--r-- 1 root root    144 Aug 28  2025 kernel-img.conf
+081923.546: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 29  2025 ldap
+081923.546: [08:19:23]-rw-r--r-- 1 root root    15K Jan 14 08:43 ld.so.cache
+081923.546: [08:19:23]-rw-r--r-- 1 root root     34 Jul 27  2025 ld.so.conf
+081923.546: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 ld.so.conf.d
+081923.547: [08:19:23]-rw-r--r-- 1 root root    191 Nov 15  2024 libaudit.conf
+081923.547: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 libnl-3
+081923.547: [08:19:23]-rw-r--r-- 1 root root   3.0K Aug  6  2025 locale.alias
+081923.547: [08:19:23]-rw-r--r-- 1 root root     74 Aug 28  2025 locale.conf
+081923.547: [08:19:23]-rw-r--r-- 1 root root   9.4K Aug 28  2025 locale.gen
+081923.547: [08:19:23]lrwxrwxrwx 1 root root     35 Sep  2  2025 localtime -> ../usr/share/zoneinfo/Asia/Shanghai
+081923.547: [08:19:23]drwxr-xr-x 3 root root   4.0K Oct  9  2025 logcheck
+081923.547: [08:19:23]-rw-r--r-- 1 root root   5.8K Apr 19  2025 login.defs
+081923.547: [08:19:23]-rw-r--r-- 1 root root    494 Jul 15  2024 logrotate.conf
+081923.547: [08:19:23]drwxr-xr-x 2 root root   4.0K Sep  2  2025 logrotate.d
+081923.547: [08:19:23]-r--r--r-- 1 root root     33 Aug 28  2025 machine-id
+081923.547: [08:19:23]-rw-r--r-- 1 root root    77K Mar  8  2025 mime.types
+081923.547: [08:19:23]-rw-r--r-- 1 root root    813 Jul 31  2025 mke2fs.conf
+081923.547: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 modprobe.d
+081923.547: [08:19:23]-rw-r--r-- 1 root root    212 Aug 28  2025 modules
+081923.547: [08:19:23]drwxr-xr-x 2 root root   4.0K Nov  6 22:08 modules-load.d
+081923.547: [08:19:23]drwxr-xr-x 4 root root   4.0K Sep  2  2025 monit
+081923.547: [08:19:23]-rw-r--r-- 1 root root    286 May 13  2025 motd
+081923.547: [08:19:23]lrwxrwxrwx 1 root root     19 Aug 28  2025 mtab -> ../proc/self/mounts
+081923.547: [08:19:23]-rw-r--r-- 1 root root    12K Apr  6  2025 nanorc
+081923.547: [08:19:23]-rw-r--r-- 1 root root    767 Mar 18  2025 netconfig
+081923.547: [08:19:23]drwxr-xr-x 7 root root   4.0K Apr 12 18:45 network
+081923.547: [08:19:23]-rw-r--r-- 1 root root     60 Aug 28  2025 networks
+081923.548: [08:19:23]-rwxr-xr-x 1 root root    243 Jun 11  2025 nftables.conf
+081923.548: [08:19:23]-rw-r--r-- 1 root root    547 Nov  6 22:08 nsswitch.conf
+081923.548: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 opt
+081923.548: [08:19:23]lrwxrwxrwx 1 root root     21 May 13  2025 os-release -> ../usr/lib/os-release
+081923.548: [08:19:23]-rw-r--r-- 1 root root    552 Jun 30  2025 pam.conf
+081923.548: [08:19:23]drwxr-xr-x 2 root root   4.0K Nov  6 22:08 pam.d
+081923.548: [08:19:23]-rw-r--r-- 1 root root   1.5K Nov  6 22:08 passwd
+081923.548: [08:19:23]-rw-r--r-- 1 root root   1.4K Oct  9  2025 passwd-
+081923.548: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 29  2025 perl
+081923.548: [08:19:23]-rw-r--r-- 1 root root    828 May 13  2025 profile
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Nov  6 22:08 profile.d
+081923.549: [08:19:23]-rw-r--r-- 1 root root   3.1K Oct 18  2022 protocols
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Sep  2  2025 python3
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Sep  2  2025 python3.13
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Oct  9  2025 rc0.d
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Oct  9  2025 rc1.d
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 rc2.d
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 rc3.d
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 rc4.d
+081923.549: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 rc5.d
+081923.550: [08:19:23]drwxr-xr-x 2 root root   4.0K Oct  9  2025 rc6.d
+081923.550: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 rcS.d
+081923.550: [08:19:23]lrwxrwxrwx 1 root root     39 Nov  6 22:08 resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+081923.550: [08:19:23]lrwxrwxrwx 1 root root     13 Dec 18  2024 rmt -> /usr/sbin/rmt
+081923.550: [08:19:23]-rw-r--r-- 1 root root    911 Oct 18  2022 rpc
+081923.550: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 runit
+081923.550: [08:19:23]drwxr-xr-x 2 root root   4.0K Dec 22 21:51 samba
+081923.550: [08:19:23]drwxr-xr-x 4 root root   4.0K Aug 28  2025 security
+081923.550: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 selinux
+081923.551: [08:19:23]-rw-r--r-- 1 root root    11K Apr 12  2025 sensors3.conf
+081923.551: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 sensors.d
+081923.551: [08:19:23]-rw-r--r-- 1 root root    13K Mar 16  2025 services
+081923.551: [08:19:23]-rw-r----- 1 root shadow  953 Nov  6 22:08 shadow
+081923.551: [08:19:23]-rw-r----- 1 root shadow  921 Oct  9  2025 shadow-
+081923.551: [08:19:23]-rw-r--r-- 1 root root    132 Jan 14 08:43 shells
+081923.551: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 skel
+081923.551: [08:19:23]drwxr-xr-x 4 root root   4.0K Aug 29  2025 ssh
+081923.551: [08:19:23]drwxr-xr-x 4 root root   4.0K Aug 28  2025 ssl
+081923.551: [08:19:23]-rw-r--r-- 1 root root     40 Oct  9  2025 subgid
+081923.552: [08:19:23]-rw-r--r-- 1 root root     17 Aug 28  2025 subgid-
+081923.552: [08:19:23]-rw-r--r-- 1 root root     40 Oct  9  2025 subuid
+081923.552: [08:19:23]-rw-r--r-- 1 root root     17 Aug 28  2025 subuid-
+081923.552: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 supercat
+081923.552: [08:19:23]drwxr-xr-x 3 root root   4.0K Sep  2  2025 supervisor
+081923.552: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 sv
+081923.552: [08:19:23]drwxr-xr-x 2 root root   4.0K Sep  2  2025 sysctl.d
+081923.552: [08:19:23]drwxr-xr-x 2 root root   4.0K Jan 13 22:37 sysstat
+081923.552: [08:19:23]drwxr-xr-x 5 root root   4.0K Nov 19 21:27 systemd
+081923.552: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 terminfo
+081923.552: [08:19:23]drwxr-xr-x 2 root root   4.0K Jun 25  2025 tmpfiles.d
+081923.552: [08:19:23]-rw-r--r-- 1 root root   1.3K May 19  2025 ucf.conf
+081923.553: [08:19:23]drwxr-xr-x 4 root root   4.0K Nov  6 22:08 udev
+081923.553: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 ufw
+081923.553: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 update-motd.d
+081923.553: [08:19:23]lrwxrwxrwx 1 root root     16 Aug 28  2025 vconsole.conf -> default/keyboard
+081923.553: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 vim
+081923.553: [08:19:23]-rw-r--r-- 1 root root   4.9K Mar  8  2025 wgetrc
+081923.553: [08:19:23]drwx------ 2 root root   4.0K Apr 12 19:46 wireguard
+081923.553: [08:19:23]drwxr-xr-x 2 root root   4.0K Aug 28  2025 wpa_supplicant
+081923.553: [08:19:23]drwxr-xr-x 4 root root   4.0K Aug 28  2025 X11
+081923.553: [08:19:23]-rw-r--r-- 1 root root    681 Feb 21  2025 xattr.conf
+081923.554: [08:19:23]drwxr-xr-x 3 root root   4.0K Aug 28  2025 xdg
+081924.906: [08:19:24]root@anncara-computer:/etc# cd /opt
+081925.507: [08:19:25]root@anncara-computer:/opt# ll
+081925.524: [08:19:25]total 12M
+081925.524: [08:19:25]drwxr-xr-x 2 sambauser sambauser 4.0K Apr  4 23:01 node_exporter-1.11.0.linux-amd64
+081925.524: [08:19:25]-rw-r--r-- 1 root      root       12M Apr  7 11:04 node_exporter-1.11.0.linux-amd64.tar.gz
+081928.440: [08:19:28]root@anncara-computer:/opt# cd node_exporter-1.11.0.linux-amd64/
+081929.170: [08:19:29]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ll
+081929.188: [08:19:29]total 23M
+081929.188: [08:19:29]-rw-r--r-- 1 sambauser sambauser 12K Apr  4 22:59 LICENSE
+081929.188: [08:19:29]-rwxr-xr-x 1 sambauser sambauser 23M Apr  4 20:44 node_exporter
+081929.188: [08:19:29]-rw-r--r-- 1 sambauser sambauser 463 Apr  4 22:59 NOTICE

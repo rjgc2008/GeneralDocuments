@@ -1,0 +1,53 @@
+﻿173539.527: [17:35:39][202604098-172.16.208.4-17:35:39]
+173539.551: [17:35:39]Linux 172-16-208-4 6.1.0-22-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21) x86_64
+173539.551: [17:35:39]
+173539.551: [17:35:39]The programs included with the Debian GNU/Linux system are free software;
+173539.551: [17:35:39]the exact distribution terms for each program are described in the
+173539.552: [17:35:39]individual files in /usr/share/doc/*/copyright.
+173539.552: [17:35:39]
+173539.552: [17:35:39]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+173539.552: [17:35:39]permitted by applicable law.
+173539.552: [17:35:39]Last login: Mon Mar  2 22:20:16 2026 from 192.168.4.222
+173542.375: [17:35:42][root@172-16-208-4 ~]# cat /etc/resolv.conf 
+173542.375: [17:35:42]nameserver 112.4.0.55
+173542.375: [17:35:42]nameserver 223.5.5.5
+173542.375: [17:35:42]
+173600.252: [17:36:00][root@172-16-208-4 ~]# ping www.google.com.hk
+173600.311: [17:36:00]PING www.google.com.hk (142.250.197.99) 56(84) bytes of data.
+173600.390: [17:36:00]64 bytes from nchkga-ai-in-f3.1e100.net (142.250.197.99): icmp_seq=1 ttl=112 time=36.0 ms
+173601.401: [17:36:01]c64 bytes from nchkga-ai-in-f3.1e100.net (142.250.197.99): icmp_seq=2 ttl=112 time=37.6 ms
+173602.399: [17:36:02]64 bytes from nchkga-ai-in-f3.1e100.net (142.250.197.99): icmp_seq=3 ttl=112 time=35.4 ms
+173602.459: [17:36:02]^C
+173602.459: [17:36:02]--- www.google.com.hk ping statistics ---
+173602.460: [17:36:02]3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+173602.460: [17:36:02]rtt min/avg/max/mdev = 35.369/36.343/37.628/0.948 ms
+173606.285: [17:36:06][root@172-16-208-4 ~]# vi /etc/resolv.conf 
+173606.343: [17:36:06]nameserver 112.4.0.55
+173615.007: [17:36:15]"/etc/resolv.conf" 3L, 45B written                                                                                                                                                                                         
+173617.079: [17:36:17][root@172-16-208-4 ~]# ping www.google.com.hk
+173617.152: [17:36:17]PING www.google.com.hk (142.250.197.99) 56(84) bytes of data.
+173617.239: [17:36:17]64 bytes from nchkga-ai-in-f3.1e100.net (142.250.197.99): icmp_seq=1 ttl=112 time=46.0 ms
+173618.270: [17:36:18]64 bytes from nchkga-ai-in-f3.1e100.net (142.250.197.99): icmp_seq=2 ttl=112 time=47.9 ms
+173618.773: [17:36:18]^C
+173618.773: [17:36:18]--- www.google.com.hk ping statistics ---
+173618.773: [17:36:18]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+173618.773: [17:36:18]rtt min/avg/max/mdev = 45.963/46.919/47.875/0.956 ms
+173624.442: [17:36:24][root@172-16-208-4 ~]# ping www.youtube.com
+173624.510: [17:36:24]PING youtube-ui.l.google.com (142.250.198.46) 56(84) bytes of data.
+173624.593: [17:36:24]64 bytes from nchkga-ap-in-f14.1e100.net (142.250.198.46): icmp_seq=1 ttl=112 time=36.2 ms
+173625.623: [17:36:25]64 bytes from nchkga-ap-in-f14.1e100.net (142.250.198.46): icmp_seq=2 ttl=112 time=60.0 ms
+173626.667: [17:36:26]64 bytes from nchkga-ap-in-f14.1e100.net (142.250.198.46): icmp_seq=3 ttl=112 time=37.8 ms
+173627.270: [17:36:27]^C
+173627.270: [17:36:27]--- youtube-ui.l.google.com ping statistics ---
+173627.270: [17:36:27]3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+173627.270: [17:36:27]rtt min/avg/max/mdev = 36.162/44.670/60.033/10.883 ms
+173635.093: [17:36:35][root@172-16-208-4 ~]# ping www.facebook.com
+173635.144: [17:36:35]PING star-mini.c10r.facebook.com (57.145.12.1) 56(84) bytes of data.
+173635.233: [17:36:35]64 bytes from 57.145.12.1 (57.145.12.1): icmp_seq=1 ttl=49 time=35.9 ms
+173636.293: [17:36:36]64 bytes from 57.145.12.1 (57.145.12.1): icmp_seq=2 ttl=49 time=44.0 ms
+173637.317: [17:36:37]64 bytes from 57.145.12.1 (57.145.12.1): icmp_seq=3 ttl=49 time=50.0 ms
+173638.342: [17:36:38]64 bytes from 57.145.12.1 (57.145.12.1): icmp_seq=4 ttl=49 time=68.9 ms
+173638.931: [17:36:38]^C
+173638.932: [17:36:38]--- star-mini.c10r.facebook.com ping statistics ---
+173638.932: [17:36:38]4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+173638.933: [17:36:38]rtt min/avg/max/mdev = 35.922/49.709/68.948/12.177 ms

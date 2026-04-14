@@ -1,0 +1,93 @@
+﻿141155.875: [14:11:55][202603101-A-A10-管理-Hygon-10.50.0.100-14:11:55]
+141155.885: [14:11:55]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-56-generic x86_64)
+141155.885: [14:11:55]
+141155.885: [14:11:55] * Documentation:  https://help.ubuntu.com
+141155.885: [14:11:55] * Management:     https://landscape.canonical.com
+141155.885: [14:11:55] * Support:        https://ubuntu.com/pro
+141155.886: [14:11:55]
+141155.886: [14:11:55] System information as of Thu Mar 26 02:11:55 PM CST 2026
+141155.886: [14:11:55]
+141155.886: [14:11:55]  System load:                    0.44
+141155.886: [14:11:55]  Usage of /home:                 8.3% of 301.20GB
+141155.886: [14:11:55]  Memory usage:                   5%
+141155.886: [14:11:55]  Swap usage:                     0%
+141155.886: [14:11:55]  Temperature:                    54.0 C
+141155.886: [14:11:55]  Processes:                      1416
+141155.886: [14:11:55]  Users logged in:                2
+141155.887: [14:11:55]  IPv4 address for enp161s0f0np0: 10.50.0.100
+141155.887: [14:11:55]
+141155.887: [14:11:55] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+141155.887: [14:11:55]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+141155.887: [14:11:55]
+141155.887: [14:11:55]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+141155.887: [14:11:55]
+141155.887: [14:11:55]Expanded Security Maintenance for Applications is not enabled.
+141155.887: [14:11:55]
+141155.887: [14:11:55]55 updates can be applied immediately.
+141155.887: [14:11:55]To see these additional updates run: apt list --upgradable
+141155.887: [14:11:55]
+141155.888: [14:11:55]1 additional security update can be applied with ESM Apps.
+141155.888: [14:11:55]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+141155.888: [14:11:55]
+141155.888: [14:11:55]
+141155.888: [14:11:55]Last login: Tue Mar 24 10:42:12 2026 from 172.16.101.190
+141200.540: [14:12:00]root@suzhouproda100:~# free -h
+141200.551: [14:12:00]               total        used        free      shared  buff/cache   available
+141200.551: [14:12:00]Mem:           251Gi        12Gi       208Gi       6.8Mi        32Gi       238Gi
+141200.551: [14:12:00]Swap:             0B          0B          0B
+141255.177: [14:12:55]root@suzhouproda100:~# lscpu
+141255.241: [14:12:55]Architecture:             x86_64
+141255.241: [14:12:55]  CPU op-mode(s):         32-bit, 64-bit
+141255.242: [14:12:55]  Address sizes:          48 bits physical, 48 bits virtual
+141255.242: [14:12:55]  Byte Order:             Little Endian
+141255.242: [14:12:55]CPU(s):                   96
+141255.242: [14:12:55]  On-line CPU(s) list:    0-95
+141255.242: [14:12:55]Vendor ID:                HygonGenuine
+141255.243: [14:12:55]  BIOS Vendor ID:         Chengdu Hygon
+141255.243: [14:12:55]  Model name:             Hygon C86-3G 7360 24-core Processor
+141255.243: [14:12:55]    BIOS Model name:      Hygon C86-3G 7360 24-core Processor   CPU @ 2.2GHz
+141255.243: [14:12:55]    BIOS CPU family:      1
+141255.243: [14:12:55]    CPU family:           24
+141255.243: [14:12:55]    Model:                2
+141255.243: [14:12:55]    Thread(s) per core:   2
+141255.244: [14:12:55]    Core(s) per socket:   24
+141255.244: [14:12:55]    Socket(s):            2
+141255.244: [14:12:55]    Stepping:             2
+141255.244: [14:12:55]    BogoMIPS:             4400.18
+141255.244: [14:12:55]    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid
+141255.245: [14:12:55]                           extd_apicid amd_dcm aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowp
+141255.246: [14:12:55]                          refetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 adx smap clflushopt sha_ni xsaveopt xsavec x
+141255.246: [14:12:55]                          getbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor
+141255.247: [14:12:55]                           smca sme sev sev_es
+141255.247: [14:12:55]Virtualization features:  
+141255.247: [14:12:55]  Virtualization:         AMD-V
+141255.247: [14:12:55]Caches (sum of all):      
+141255.247: [14:12:55]  L1d:                    1.5 MiB (48 instances)
+141255.247: [14:12:55]  L1i:                    3 MiB (48 instances)
+141255.257: [14:12:55]  L2:                     24 MiB (48 instances)
+141255.257: [14:12:55]  L3:                     128 MiB (16 instances)
+141255.257: [14:12:55]NUMA:                     
+141255.257: [14:12:55]  NUMA node(s):           8
+141255.257: [14:12:55]  NUMA node0 CPU(s):      0-5,48-53
+141255.257: [14:12:55]  NUMA node1 CPU(s):      6-11,54-59
+141255.257: [14:12:55]  NUMA node2 CPU(s):      12-17,60-65
+141255.257: [14:12:55]  NUMA node3 CPU(s):      18-23,66-71
+141255.257: [14:12:55]  NUMA node4 CPU(s):      24-29,72-77
+141255.257: [14:12:55]  NUMA node5 CPU(s):      30-35,78-83
+141255.257: [14:12:55]  NUMA node6 CPU(s):      36-41,84-89
+141255.258: [14:12:55]  NUMA node7 CPU(s):      42-47,90-95
+141255.258: [14:12:55]Vulnerabilities:          
+141255.258: [14:12:55]  Gather data sampling:   Not affected
+141255.258: [14:12:55]  Itlb multihit:          Not affected
+141255.258: [14:12:55]  L1tf:                   Not affected
+141255.258: [14:12:55]  Mds:                    Not affected
+141255.258: [14:12:55]  Meltdown:               Not affected
+141255.258: [14:12:55]  Mmio stale data:        Not affected
+141255.258: [14:12:55]  Reg file data sampling: Not affected
+141255.258: [14:12:55]  Retbleed:               Mitigation; untrained return thunk; SMT vulnerable
+141255.258: [14:12:55]  Spec rstack overflow:   Vulnerable: Safe RET, no microcode
+141255.258: [14:12:55]  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+141255.258: [14:12:55]  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+141255.258: [14:12:55]  Spectre v2:             Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+141255.258: [14:12:55]  Srbds:                  Not affected
+141255.258: [14:12:55]  Tsx async abort:        Not affected

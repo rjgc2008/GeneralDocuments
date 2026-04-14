@@ -1,0 +1,6 @@
+﻿152149.705: [15:21:49][202603203-计算-zstack-172.16.101.111-15:21:49]
+152149.720: [15:21:49]
+152149.720: [15:21:49]Authorized users only. All activities may be monitored and reported.
+152149.720: [15:21:49]Last login: Wed Aug 13 15:49:58 2025 from 192.168.15.253
+152159.716: [15:21:59][root@zstack-5 ~]# dmidecode -s system-serial-number
+152159.729: [15:21:59]9800183903508129

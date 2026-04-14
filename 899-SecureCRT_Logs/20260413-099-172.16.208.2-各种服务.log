@@ -1,0 +1,24 @@
+﻿103704.823: [10:37:04][root@172-16-208-2 ~]# ip r
+103704.832: [10:37:04]default via 172.16.208.1 dev ens3 proto dhcp metric 100 
+103704.832: [10:37:04]8.8.8.8 via 172.16.208.4 dev ens3 
+103704.832: [10:37:04]10.253.0.3 dev wg0 scope link 
+103704.832: [10:37:04]10.253.0.11 dev wg0 scope link 
+103704.832: [10:37:04]112.4.0.55 via 172.16.208.4 dev ens3 
+103704.832: [10:37:04]169.254.169.254 via 172.16.221.131 dev ens3 proto dhcp metric 100 
+103704.832: [10:37:04]172.16.208.0/20 dev ens3 proto kernel scope link src 172.16.208.2 metric 100 
+103704.832: [10:37:04]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+103704.832: [10:37:04]172.18.0.0/16 dev br-c2f8d78d6e11 proto kernel scope link src 172.18.0.1 
+103704.832: [10:37:04]192.168.31.0/24 dev wg0 scope link 
+103706.972: [10:37:06][root@172-16-208-2 ~]# ip rule
+103706.982: [10:37:06]0:      from all lookup local
+103706.982: [10:37:06]100:    from 10.253.0.2 lookup wg0table
+103706.982: [10:37:06]101:    from all fwmark 0xc8 lookup r_gw2
+103706.983: [10:37:06]5210:   from all fwmark 0x80000/0xff0000 lookup main
+103706.983: [10:37:06]5230:   from all fwmark 0x80000/0xff0000 lookup default
+103706.983: [10:37:06]5250:   from all fwmark 0x80000/0xff0000 unreachable
+103706.983: [10:37:06]5270:   from all lookup 52
+103706.983: [10:37:06]32766:  from all lookup main
+103706.983: [10:37:06]32767:  from all lookup default
+103716.109: [10:37:16][root@172-16-208-2 ~]# ip r show table r_gw2
+103716.115: [10:37:16]default via 172.16.208.4 dev ens3 
+103716.115: [10:37:16]172.16.208.0/24 dev ens3 scope link 

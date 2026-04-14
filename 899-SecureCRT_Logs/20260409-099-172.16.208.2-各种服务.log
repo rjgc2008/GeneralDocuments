@@ -1,0 +1,50 @@
+﻿102045.835: [10:20:45][202604099-172.16.208.2-各种服务-10:20:45]
+102045.866: [10:20:45]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+102045.866: [10:20:45]
+102045.866: [10:20:45]The programs included with the Debian GNU/Linux system are free software;
+102045.866: [10:20:45]the exact distribution terms for each program are described in the
+102045.870: [10:20:45]individual files in /usr/share/doc/*/copyright.
+102045.870: [10:20:45]
+102045.870: [10:20:45]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+102045.870: [10:20:45]permitted by applicable law.
+102045.870: [10:20:45]Last login: Wed Apr  8 08:41:39 2026 from 192.168.12.187
+102049.021: [10:20:49][root@172-16-208-2 ~]# crontab -l
+102049.028: [10:20:49]# Edit this file to introduce tasks to be run by cron.
+102049.028: [10:20:49]# 
+102049.028: [10:20:49]# Each task to run has to be defined through a single line
+102049.028: [10:20:49]# indicating with different fields when the task will be run
+102049.029: [10:20:49]# and what command to run for the task
+102049.029: [10:20:49]# 
+102049.029: [10:20:49]# To define the time you can provide concrete values for
+102049.029: [10:20:49]# minute (m), hour (h), day of month (dom), month (mon),
+102049.029: [10:20:49]# and day of week (dow) or use '*' in these fields (for 'any').
+102049.029: [10:20:49]# 
+102049.029: [10:20:49]# Notice that tasks will be started based on the cron's system
+102049.029: [10:20:49]# daemon's notion of time and timezones.
+102049.029: [10:20:49]# 
+102049.029: [10:20:49]# Output of the crontab jobs (including errors) is sent through
+102049.030: [10:20:49]# email to the user the crontab file belongs to (unless redirected).
+102049.030: [10:20:49]# 
+102049.030: [10:20:49]# For example, you can run a backup of all your user accounts
+102049.030: [10:20:49]# at 5 a.m every week with:
+102049.030: [10:20:49]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+102049.030: [10:20:49]# 
+102049.030: [10:20:49]# For more information see the manual pages of crontab(5) and cron(8)
+102049.030: [10:20:49]# 
+102049.030: [10:20:49]# m h  dom mon dow   command
+102049.031: [10:20:49]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+102049.031: [10:20:49]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+102049.031: [10:20:49]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+102049.032: [10:20:49]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+102049.032: [10:20:49]0 * * * * /usr/bin/bash /root/tmp.sh
+102049.032: [10:20:49]0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh ; sleep 3 ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+134836.125: [13:48:36][202604099-172.16.208.2-各种服务-13:48:36]
+134836.142: [13:48:36]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+134836.142: [13:48:36]
+134836.143: [13:48:36]The programs included with the Debian GNU/Linux system are free software;
+134836.143: [13:48:36]the exact distribution terms for each program are described in the
+134836.143: [13:48:36]individual files in /usr/share/doc/*/copyright.
+134836.143: [13:48:36]
+134836.143: [13:48:36]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+134836.143: [13:48:36]permitted by applicable law.
+134836.143: [13:48:36]Last login: Thu Apr  9 10:20:45 2026 from 192.168.12.187

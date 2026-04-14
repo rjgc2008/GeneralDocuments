@@ -1,0 +1,855 @@
+﻿092227.159: [09:22:27][202603102-A-A10-管理-Hygon-10.50.0.101-FRPC-09:22:27]
+092227.209: [09:22:27]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+092227.209: [09:22:27]
+092227.209: [09:22:27] * Documentation:  https://help.ubuntu.com
+092227.209: [09:22:27] * Management:     https://landscape.canonical.com
+092227.210: [09:22:27] * Support:        https://ubuntu.com/pro
+092227.210: [09:22:27]
+092227.210: [09:22:27] System information as of Tue Mar 24 11:16:44 AM CST 2026
+092227.210: [09:22:27]
+092227.210: [09:22:27]  System load:                    0.96
+092227.210: [09:22:27]  Usage of /home:                 1.1% of 301.20GB
+092227.210: [09:22:27]  Memory usage:                   53%
+092227.210: [09:22:27]  Swap usage:                     0%
+092227.210: [09:22:27]  Temperature:                    60.0 C
+092227.210: [09:22:27]  Processes:                      1748
+092227.210: [09:22:27]  Users logged in:                0
+092227.210: [09:22:27]  IPv4 address for enp161s0f0np0: 10.50.0.101
+092227.210: [09:22:27]
+092227.210: [09:22:27] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+092227.210: [09:22:27]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+092227.210: [09:22:27]
+092227.210: [09:22:27]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+092227.210: [09:22:27]
+092227.210: [09:22:27]Expanded Security Maintenance for Applications is not enabled.
+092227.210: [09:22:27]
+092227.210: [09:22:27]152 updates can be applied immediately.
+092227.210: [09:22:27]To see these additional updates run: apt list --upgradable
+092227.210: [09:22:27]
+092227.210: [09:22:27]5 additional security updates can be applied with ESM Apps.
+092227.211: [09:22:27]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+092227.211: [09:22:27]
+092227.211: [09:22:27]
+092227.211: [09:22:27]Last login: Fri Mar 27 09:35:40 2026 from 10.50.0.100
+092232.435: [09:22:32]root@suzhouproda101:~# ps -ef | grep frp
+092232.634: [09:22:32]root     1592261 1592210  0 09:22 pts/0    00:00:00 grep --color=auto frp
+092232.649: [09:22:32]root     2442253       1  0 Mar04 ?        00:17:12 /opt/frp_0.63.0_linux_amd64_03/frpc -c /opt/frp_0.63.0_linux_amd64_03/frpc.toml
+092232.650: [09:22:32]root     3226321       1  0 Mar05 ?        00:12:04 /opt/frp_0.63.0_linux_amd64_02/frpc -c /opt/frp_0.63.0_linux_amd64_02/frpc.toml
+092232.651: [09:22:32]root     3517356       1  0 Feb10 ?        01:39:56 /opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+092236.076: [09:22:36]root@suzhouproda101:~# cd /opt
+092238.236: [09:22:38]root@suzhouproda101:/opt# ll
+092238.243: [09:22:38]total 12972
+092238.244: [09:22:38]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+092238.244: [09:22:38]drwxr-xr-x 26 root      root       4096 Mar 29 23:59 ../
+092238.245: [09:22:38]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+092238.245: [09:22:38]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+092238.246: [09:22:38]drwxr-xr-x  3 klmy_test docker     4096 Mar 29 23:59 frp_0.63.0_linux_amd64/
+092238.259: [09:22:38]drwxr-xr-x  3 klmy_test docker     4096 Mar  5 09:21 frp_0.63.0_linux_amd64_02/
+092238.259: [09:22:38]drwxr-xr-x  3 klmy_test docker     4096 Mar  4 16:15 frp_0.63.0_linux_amd64_03/
+092238.259: [09:22:38]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+092238.259: [09:22:38]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+092238.259: [09:22:38]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+092238.260: [09:22:38]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+092238.260: [09:22:38]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+092242.754: [09:22:42]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64
+092243.396: [09:22:43]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ll
+092243.399: [09:22:43]total 34988
+092243.406: [09:22:43]drwxr-xr-x 3 klmy_test docker     4096 Mar 29 23:59 ./
+092243.406: [09:22:43]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+092243.407: [09:22:43]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+092243.407: [09:22:43]-rw------- 1 root      root     627268 Mar 27 13:44 frpc.20260328-000000.log
+092243.407: [09:22:43]-rw------- 1 root      root          0 Mar 28 00:00 frpc.20260329-000000.log
+092243.407: [09:22:43]-rw------- 1 root      root          0 Mar 29 00:00 frpc.20260330-000000.log
+092243.408: [09:22:43]-rw------- 1 root      root          0 Mar 29 23:59 frpc.log
+092243.408: [09:22:43]-rw-rw-rw- 1 root      root       4951 Jan  8 14:57 frpc.toml
+092243.408: [09:22:43]-rw-rw-rw- 1 root      root       4208 Sep 19  2025 frpc.toml-20250919
+092243.408: [09:22:43]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+092243.409: [09:22:43]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+092243.409: [09:22:43]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+092243.409: [09:22:43]drwxr-xr-x 2 root      root       4096 Sep  3  2025 ssl/
+092248.736: [09:22:48]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# vi frpc.toml
+092248.790: [09:22:48]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+092248.790: [09:22:48]# 日志配置
+092248.791: [09:22:48]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+092248.791: [09:22:48]log.level = "info"
+092248.791: [09:22:48]log.maxDays = 3
+092248.791: [09:22:48]
+092248.791: [09:22:48]# ------172.16.101.190------
+092248.791: [09:22:48]# 普罗米修斯监控
+092248.791: [09:22:48][[proxies]]
+092248.791: [09:22:48]name = "172-16-101-190-prometheus"
+092248.791: [09:22:48]type = "tcp"
+092248.791: [09:22:48]localIP = "172.16.101.190"
+092248.791: [09:22:48]localPort = 3000
+092248.791: [09:22:48]remotePort = 3000
+092248.791: [09:22:48]
+092248.791: [09:22:48]# ------192.168.12.134------
+092248.791: [09:22:48][[proxies]]
+092248.791: [09:22:48]name = "192-168-12-134-OpenAPI"
+092248.791: [09:22:48]type = "tcp"
+092248.791: [09:22:48]localIP = "192.168.12.134"
+092248.791: [09:22:48]localPort = 9999
+092248.791: [09:22:48]remotePort = 9999
+092248.791: [09:22:48]# 134-ssh
+092248.791: [09:22:48][[proxies]]
+092248.792: [09:22:48]name = "192-168-12-134-ssh"
+092248.792: [09:22:48]type = "tcp"
+092248.792: [09:22:48]localIP = "192.168.12.134"
+092248.792: [09:22:48]localPort = 22
+092248.792: [09:22:48]remotePort = 19443
+092248.792: [09:22:48]
+092248.792: [09:22:48]# 平台测试环境
+092248.792: [09:22:48]#[[proxies]]
+092248.792: [09:22:48]#name = "192-168-12-134-platform-test"
+092248.792: [09:22:48]#type = "tcp"
+092248.792: [09:22:48]#localIP = "192.168.12.134"
+092248.792: [09:22:48]#localPort = 80
+092248.792: [09:22:48]#remotePort = 8880
+092248.792: [09:22:48]
+092248.792: [09:22:48]# ------10.50.0.101------
+092248.792: [09:22:48][[proxies]]
+092248.792: [09:22:48]name = "10-50-0-101"
+092248.792: [09:22:48]type = "tcp"
+092248.792: [09:22:48]localIP = "10.50.0.101"
+092248.792: [09:22:48]localPort = 22
+092248.792: [09:22:48]remotePort = 10122
+092248.792: [09:22:48]
+092248.792: [09:22:48][[proxies]]
+092248.792: [09:22:48]name = "10-50-0-101-app"
+092248.792: [09:22:48]type = "tcp"
+092248.792: [09:22:48]localIP = "10.50.0.101"
+092248.792: [09:22:48]localPort = 9443
+092248.793: [09:22:48]remotePort = 9443
+092248.793: [09:22:48]
+092248.793: [09:22:48]# ------10.50.0.106------
+092248.793: [09:22:48][[proxies]]
+092248.793: [09:22:48]name = "10-50-0-106"
+092248.793: [09:22:48]type = "tcp"
+092248.793: [09:22:48]localIP = "10.50.0.106"
+092248.793: [09:22:48]localPort = 22
+092301.873: [09:23:01]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# cd ..
+092302.538: [09:23:02]root@suzhouproda101:/opt# ll
+092302.552: [09:23:02]total 12972
+092302.552: [09:23:02]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+092302.552: [09:23:02]drwxr-xr-x 26 root      root       4096 Mar 29 23:59 ../
+092302.553: [09:23:02]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+092302.553: [09:23:02]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+092302.553: [09:23:02]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 09:22 frp_0.63.0_linux_amd64/
+092302.553: [09:23:02]drwxr-xr-x  3 klmy_test docker     4096 Mar  5 09:21 frp_0.63.0_linux_amd64_02/
+092302.553: [09:23:02]drwxr-xr-x  3 klmy_test docker     4096 Mar  4 16:15 frp_0.63.0_linux_amd64_03/
+092302.553: [09:23:02]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+092302.553: [09:23:02]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+092302.554: [09:23:02]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+092302.554: [09:23:02]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+092302.554: [09:23:02]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+092306.198: [09:23:06]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_02/
+092306.842: [09:23:06]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# ll
+092306.850: [09:23:06]total 34364
+092306.850: [09:23:06]drwxr-xr-x 3 klmy_test docker     4096 Mar  5 09:21 ./
+092306.850: [09:23:06]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+092306.850: [09:23:06]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+092306.850: [09:23:06]-rw------- 1 root      root       3254 Sep  3  2025 frpc.log
+092306.850: [09:23:06]-rw-rw-rw- 1 root      root       1600 Mar  5 09:20 frpc.toml
+092306.850: [09:23:06]-rw-r--r-- 1 root      root       1276 Dec 23 11:16 frpc.toml-20251223
+092306.850: [09:23:06]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+092306.850: [09:23:06]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+092306.850: [09:23:06]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+092306.850: [09:23:06]drwxr-xr-x 2 root      root       4096 Oct 21 11:35 ssl/
+092311.935: [09:23:11]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# vi frpc.toml
+092311.975: [09:23:11]# 用于 https://guojiqe.tiangongqs.net/ 的映射，原因是只有该公网IP有未使用的443端口
+092311.975: [09:23:11]# 日志配置
+092311.976: [09:23:11]log.to = "./frpc.log"
+092311.976: [09:23:11]log.level = "info"
+092311.976: [09:23:11]log.maxDays = 3
+092311.976: [09:23:11]
+092311.976: [09:23:11]# ------10.70.0.128------
+092311.976: [09:23:11]#[[proxies]]
+092311.976: [09:23:11]#name = "10-70-0-128-https"
+092311.976: [09:23:11]#type = "tcp"
+092311.976: [09:23:11]#localIP = "10.70.0.128"
+092311.976: [09:23:11]#localPort = 3443
+092311.976: [09:23:11]#remotePort = 443
+092311.976: [09:23:11]
+092311.976: [09:23:11]# ------192.168.12.134------
+092311.976: [09:23:11]# 20251223原晨浩-将临时新增域名guojiqe-test.tiangongqs.net删除，将域名https://guojiqe.tiangongqs.net/映射到192.168.12.134的3443端口
+092311.976: [09:23:11][[proxies]]
+092311.976: [09:23:11]name = "192-168-12-134"
+092311.976: [09:23:11]type = "tcp"
+092311.976: [09:23:11]localIP = "192.168.12.134"
+092311.976: [09:23:11]localPort = 3443
+092311.976: [09:23:11]remotePort = 443
+092311.976: [09:23:11]# 曹博的后量子应用:https://pqc.tiangongqs.net:28443
+092311.976: [09:23:11][[proxies]]
+092311.977: [09:23:11]name = "10-70-0-128-pqc"
+092311.977: [09:23:11]type = "tcp"
+092311.977: [09:23:11]localIP = "10.70.0.128"
+092311.977: [09:23:11]localPort = 28443
+092311.977: [09:23:11]remotePort = 28443
+092311.977: [09:23:11]
+092311.977: [09:23:11]
+092311.977: [09:23:11]# ------192.168.12.134------
+092311.977: [09:23:11]# 新疆大屏:https://screen.tiangongqs.net:8020
+092311.977: [09:23:11][[proxies]]
+092311.977: [09:23:11]name = "192-168-12-134-klmyscreen-https"
+092311.977: [09:23:11]type = "tcp"
+092311.977: [09:23:11]#localIP = "10.70.0.128"
+092311.977: [09:23:11]localIP = "10.50.0.101"
+092311.977: [09:23:11]localPort = 8020
+092311.977: [09:23:11]remotePort = 8021
+092311.977: [09:23:11]
+092311.977: [09:23:11][[proxies]]
+092311.977: [09:23:11]name = "192-168-12-134-klmyscreen-http"
+092311.977: [09:23:11]type = "tcp"
+092311.977: [09:23:11]localIP = "192.168.12.134"
+092311.977: [09:23:11]localPort = 8020
+092311.977: [09:23:11]remotePort = 8020
+092311.977: [09:23:11]
+092311.977: [09:23:11]#[[proxies]]
+092311.978: [09:23:11]#name = "192-168-12-134-klmyscreen"
+092311.978: [09:23:11]#type = "https"
+092311.978: [09:23:11]#customDomains = ["screen.tiangongqs.net:8020"] #应该是不支持域名:端口形式,只支持域名的形式
+092311.978: [09:23:11]
+092311.978: [09:23:11]#[proxies.plugin]
+092311.978: [09:23:11]#type = "https2http"
+092311.978: [09:23:11]#localAddr = "192.168.12.134:8020"
+092311.978: [09:23:11]#crtPath = "./ssl/tiangongqs.net.crt"
+092311.978: [09:23:11]#keyPath = "./ssl/iangongqs.net.key"
+092311.978: [09:23:11]#hostHeaderRewrite = "192.168.12.134"
+092316.024: [09:23:16]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# ll
+092316.038: [09:23:16]total 34364
+092316.038: [09:23:16]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 09:23 ./
+092316.038: [09:23:16]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+092316.038: [09:23:16]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+092316.039: [09:23:16]-rw------- 1 root      root       3254 Sep  3  2025 frpc.log
+092316.039: [09:23:16]-rw-rw-rw- 1 root      root       1600 Mar  5 09:20 frpc.toml
+092316.039: [09:23:16]-rw-r--r-- 1 root      root       1276 Dec 23 11:16 frpc.toml-20251223
+092316.039: [09:23:16]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+092316.039: [09:23:16]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+092316.039: [09:23:16]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+092316.039: [09:23:16]drwxr-xr-x 2 root      root       4096 Oct 21 11:35 ssl/
+092318.567: [09:23:18]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# cd ..
+092323.705: [09:23:23]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_03/
+092324.437: [09:23:24]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+092324.444: [09:23:24]total 34364
+092324.445: [09:23:24]drwxr-xr-x 3 klmy_test docker     4096 Mar  4 16:15 ./
+092324.445: [09:23:24]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+092324.445: [09:23:24]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+092324.445: [09:23:24]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+092324.445: [09:23:24]-rw-rw-rw- 1 root      root        713 Mar  4 15:54 frpc.toml
+092324.446: [09:23:24]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+092324.446: [09:23:24]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+092324.446: [09:23:24]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+092324.446: [09:23:24]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+092327.352: [09:23:27]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# vi frpc.toml 
+092327.399: [09:23:27]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+092327.399: [09:23:27]# 日志配置
+092327.399: [09:23:27]log.to = "./frpc.log"
+092327.399: [09:23:27]log.level = "info"
+092327.399: [09:23:27]log.maxDays = 3
+092327.399: [09:23:27]
+092327.399: [09:23:27]# ------10.70.0.128------
+092327.399: [09:23:27]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+092327.399: [09:23:27]#[[proxies]]
+092327.399: [09:23:27]#name = "10-70-0-128-https"
+092327.399: [09:23:27]#type = "tcp"
+092327.399: [09:23:27]#localIP = "10.70.0.128"
+092327.399: [09:23:27]#localPort = 3443
+092327.399: [09:23:27]#remotePort = 443
+092327.399: [09:23:27]
+092327.399: [09:23:27]
+092327.399: [09:23:27]# ------10.50.0.101------
+092327.399: [09:23:27]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+092327.399: [09:23:27][[proxies]]
+092327.399: [09:23:27]name = "10-50-0-101-https"
+092327.399: [09:23:27]type = "tcp"
+092327.399: [09:23:27]localIP = "10.50.0.101"
+092327.400: [09:23:27]localPort = 3443
+092327.400: [09:23:27]remotePort = 443
+092343.742: [09:23:43]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ps -ef | grep frp
+092343.917: [09:23:43]root     1593195 1592210  0 09:23 pts/0    00:00:00 grep --color=auto frp
+092343.934: [09:23:43]root     2442253       1  0 Mar04 ?        00:17:12 /opt/frp_0.63.0_linux_amd64_03/frpc -c /opt/frp_0.63.0_linux_amd64_03/frpc.toml
+092343.941: [09:23:43]root     3226321       1  0 Mar05 ?        00:12:04 /opt/frp_0.63.0_linux_amd64_02/frpc -c /opt/frp_0.63.0_linux_amd64_02/frpc.toml
+092343.942: [09:23:43]root     3517356       1  0 Feb10 ?        01:39:56 /opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+092347.979: [09:23:47]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+092347.993: [09:23:47]total 34364
+092347.994: [09:23:47]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 09:23 ./
+092347.994: [09:23:47]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+092347.994: [09:23:47]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+092347.994: [09:23:47]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+092347.994: [09:23:47]-rw-rw-rw- 1 root      root        713 Mar  4 15:54 frpc.toml
+092347.994: [09:23:47]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+092347.994: [09:23:47]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+092347.994: [09:23:47]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+092347.994: [09:23:47]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+092407.871: [09:24:07]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cp frpc.toml frpc.toml_bak_20260330
+092408.848: [09:24:08]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+092408.864: [09:24:08]total 34368
+092408.864: [09:24:08]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 09:24 ./
+092408.864: [09:24:08]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+092408.864: [09:24:08]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+092408.864: [09:24:08]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+092408.864: [09:24:08]-rw-rw-rw- 1 root      root        713 Mar  4 15:54 frpc.toml
+092408.865: [09:24:08]-rw-r--r-- 1 root      root        713 Mar 30 09:24 frpc.toml_bak_20260330
+092408.865: [09:24:08]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+092408.865: [09:24:08]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+092408.865: [09:24:08]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+092408.865: [09:24:08]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+092412.639: [09:24:12]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# vi frpc.toml
+092412.685: [09:24:12]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+092412.685: [09:24:12]# 日志配置
+092412.685: [09:24:12]log.to = "./frpc.log"
+092412.685: [09:24:12]log.level = "info"
+092412.685: [09:24:12]log.maxDays = 3
+092412.686: [09:24:12]
+092412.686: [09:24:12]# ------10.70.0.128------
+092412.686: [09:24:12]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+092412.686: [09:24:12]#[[proxies]]
+092412.686: [09:24:12]#name = "10-70-0-128-https"
+092412.686: [09:24:12]#type = "tcp"
+092412.686: [09:24:12]#localIP = "10.70.0.128"
+092412.686: [09:24:12]#localPort = 3443
+092412.686: [09:24:12]#remotePort = 443
+092412.686: [09:24:12]
+092412.686: [09:24:12]
+092412.686: [09:24:12]# ------10.50.0.101------
+092412.686: [09:24:12]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+092412.686: [09:24:12][[proxies]]
+092412.686: [09:24:12]name = "10-50-0-101-https"
+092412.686: [09:24:12]type = "tcp"
+092412.686: [09:24:12]localIP = "10.50.0.101"
+092412.686: [09:24:12]localPort = 3443
+092412.686: [09:24:12]remotePort = 443
+092423.551: [09:24:23]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cat frpc.toml
+092423.567: [09:24:23]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+092423.567: [09:24:23]serverAddr = "139.224.61.203"
+092423.567: [09:24:23]serverPort = 7000
+092423.567: [09:24:23]
+092423.567: [09:24:23]# 日志配置
+092423.567: [09:24:23]log.to = "./frpc.log"
+092423.567: [09:24:23]log.level = "info"
+092423.568: [09:24:23]log.maxDays = 3
+092423.568: [09:24:23]
+092423.568: [09:24:23]# ------10.70.0.128------
+092423.568: [09:24:23]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+092423.568: [09:24:23]#[[proxies]]
+092423.568: [09:24:23]#name = "10-70-0-128-https"
+092423.568: [09:24:23]#type = "tcp"
+092423.568: [09:24:23]#localIP = "10.70.0.128"
+092423.568: [09:24:23]#localPort = 3443
+092423.568: [09:24:23]#remotePort = 443
+092423.568: [09:24:23]
+092423.568: [09:24:23]
+092423.568: [09:24:23]# ------10.50.0.101------
+092423.568: [09:24:23]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+092423.568: [09:24:23][[proxies]]
+092423.568: [09:24:23]name = "10-50-0-101-https"
+092423.568: [09:24:23]type = "tcp"
+092423.568: [09:24:23]localIP = "10.50.0.101"
+092423.568: [09:24:23]localPort = 3443
+092423.568: [09:24:23]remotePort = 443
+092431.404: [09:24:31]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# vi frpc.toml
+092431.458: [09:24:31]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+092431.459: [09:24:31]# 日志配置
+092431.459: [09:24:31]log.to = "./frpc.log"
+092431.459: [09:24:31]log.level = "info"
+092431.459: [09:24:31]log.maxDays = 3
+092431.459: [09:24:31]
+092431.459: [09:24:31]# ------10.70.0.128------
+092431.460: [09:24:31]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+092431.460: [09:24:31]#[[proxies]]
+092431.460: [09:24:31]#name = "10-70-0-128-https"
+092431.460: [09:24:31]#type = "tcp"
+092431.460: [09:24:31]#localIP = "10.70.0.128"
+092431.460: [09:24:31]#localPort = 3443
+092431.460: [09:24:31]#remotePort = 443
+092431.460: [09:24:31]
+092431.460: [09:24:31]
+092431.460: [09:24:31]# ------10.50.0.101------
+092431.460: [09:24:31]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+092431.460: [09:24:31][[proxies]]
+092431.460: [09:24:31]name = "10-50-0-101-https"
+092431.460: [09:24:31]type = "tcp"
+092431.460: [09:24:31]localIP = "10.50.0.101"
+092431.461: [09:24:31]localPort = 3443
+092431.461: [09:24:31]remotePort = 443
+092609.148: [09:26:09]"frpc.toml" 37L, 889B written                                                                                                     
+092615.795: [09:26:15]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc
+092615.795: [09:26:15]frpc_02.service  frpc_03.service  frpc.service     
+092618.418: [09:26:18]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc_03.service 
+133857.085: [13:38:57][202603102-A-A10-管理-Hygon-10.50.0.101-FRPC-13:38:57]
+133857.094: [13:38:57]Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-60-generic x86_64)
+133857.094: [13:38:57]
+133857.094: [13:38:57] * Documentation:  https://help.ubuntu.com
+133857.094: [13:38:57] * Management:     https://landscape.canonical.com
+133857.094: [13:38:57] * Support:        https://ubuntu.com/pro
+133857.094: [13:38:57]
+133857.094: [13:38:57] System information as of Mon Mar 30 12:29:38 PM CST 2026
+133857.094: [13:38:57]
+133857.094: [13:38:57]  System load:                    0.83
+133857.094: [13:38:57]  Usage of /home:                 1.0% of 301.20GB
+133857.094: [13:38:57]  Memory usage:                   60%
+133857.094: [13:38:57]  Swap usage:                     0%
+133857.094: [13:38:57]  Temperature:                    62.0 C
+133857.094: [13:38:57]  Processes:                      1721
+133857.094: [13:38:57]  Users logged in:                0
+133857.095: [13:38:57]  IPv4 address for enp161s0f0np0: 10.50.0.101
+133857.095: [13:38:57]
+133857.095: [13:38:57] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+133857.095: [13:38:57]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+133857.095: [13:38:57]
+133857.095: [13:38:57]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+133857.095: [13:38:57]
+133857.095: [13:38:57]Expanded Security Maintenance for Applications is not enabled.
+133857.095: [13:38:57]
+133857.095: [13:38:57]152 updates can be applied immediately.
+133857.095: [13:38:57]To see these additional updates run: apt list --upgradable
+133857.095: [13:38:57]
+133857.095: [13:38:57]5 additional security updates can be applied with ESM Apps.
+133857.095: [13:38:57]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+133857.095: [13:38:57]
+133857.096: [13:38:57]
+133857.096: [13:38:57]Last login: Mon Mar 30 09:22:27 2026 from 192.168.6.173
+133905.191: [13:39:05]root@suzhouproda101:~# ps -ef | grep frp
+133905.387: [13:39:05]root     1678318       1  0 11:08 ?        00:00:09 /opt/frp_0.63.0_linux_amd64/frpc -c /opt/frp_0.63.0_linux_amd64/frpc.toml
+133905.389: [13:39:05]root     1678331       1  0 11:08 ?        00:00:02 /opt/frp_0.63.0_linux_amd64_03/frpc -c /opt/frp_0.63.0_linux_amd64_03/frpc.toml
+133905.390: [13:39:05]root     1791444 1791423  0 13:39 pts/2    00:00:00 grep --color=auto frp
+133905.402: [13:39:05]root     3226321       1  0 Mar05 ?        00:12:09 /opt/frp_0.63.0_linux_amd64_02/frpc -c /opt/frp_0.63.0_linux_amd64_02/frpc.toml
+133907.312: [13:39:07]root@suzhouproda101:~# cd /opt
+133908.100: [13:39:08]root@suzhouproda101:/opt# ll
+133908.105: [13:39:08]total 12972
+133908.106: [13:39:08]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+133908.106: [13:39:08]drwxr-xr-x 26 root      root       4096 Mar 29 23:59 ../
+133908.106: [13:39:08]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+133908.106: [13:39:08]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+133908.107: [13:39:08]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 11:04 frp_0.63.0_linux_amd64/
+133908.107: [13:39:08]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 11:04 frp_0.63.0_linux_amd64_02/
+133908.116: [13:39:08]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 11:08 frp_0.63.0_linux_amd64_03/
+133908.116: [13:39:08]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+133908.116: [13:39:08]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+133908.116: [13:39:08]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+133908.116: [13:39:08]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+133908.117: [13:39:08]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+133911.815: [13:39:11]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_03/
+133912.688: [13:39:12]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+133912.693: [13:39:12]total 34368
+133912.693: [13:39:12]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 11:08 ./
+133912.693: [13:39:12]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+133912.694: [13:39:12]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+133912.694: [13:39:12]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+133912.694: [13:39:12]-rw-rw-rw- 1 root      root        889 Mar 30 11:08 frpc.toml
+133912.695: [13:39:12]-rw-r--r-- 1 root      root        713 Mar 30 09:24 frpc.toml_bak_20260330
+133912.695: [13:39:12]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+133912.696: [13:39:12]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+133912.696: [13:39:12]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+133912.696: [13:39:12]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+133919.615: [13:39:19]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# vi frpc.toml
+133919.663: [13:39:19]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+133919.663: [13:39:19]# 日志配置
+133919.663: [13:39:19]log.to = "./frpc.log"
+133919.663: [13:39:19]log.level = "info"
+133919.663: [13:39:19]log.maxDays = 3
+133919.663: [13:39:19]
+133919.663: [13:39:19]# ------10.70.0.128------
+133919.663: [13:39:19]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+133919.663: [13:39:19]#[[proxies]]
+133919.664: [13:39:19]#name = "10-70-0-128-https"
+133919.664: [13:39:19]#type = "tcp"
+133919.664: [13:39:19]#localIP = "10.70.0.128"
+133919.664: [13:39:19]#localPort = 3443
+133919.664: [13:39:19]#remotePort = 443
+133919.664: [13:39:19]
+133919.664: [13:39:19]
+133919.664: [13:39:19]# ------10.50.0.101------
+133919.664: [13:39:19]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+133919.664: [13:39:19][[proxies]]
+133919.664: [13:39:19]name = "10-50-0-101-https"
+133919.664: [13:39:19]type = "tcp"
+133919.664: [13:39:19]localIP = "10.50.0.101"
+133919.664: [13:39:19]localPort = 3443
+133919.664: [13:39:19]remotePort = 443
+133919.664: [13:39:19]
+133919.664: [13:39:19]
+133919.664: [13:39:19]# ------192.168.12.185------
+133919.664: [13:39:19]#20260330 原晨浩要求开通
+133919.664: [13:39:19][[proxies]]
+133919.664: [13:39:19]name = "192-168-12-185-tcp"
+133919.664: [13:39:19]type = "tcp"
+133919.664: [13:39:19]localIP = "192.168.12.185"
+133919.664: [13:39:19]localPort = 636
+133919.664: [13:39:19]remotePort = 636
+133932.498: [13:39:32]"frpc.toml" 37L, 891B written                                                                                                                                                                  
+133943.094: [13:39:43]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc_03.service 
+134012.546: [13:40:12]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+134012.563: [13:40:12]total 34368
+134012.563: [13:40:12]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 13:39 ./
+134012.563: [13:40:12]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+134012.563: [13:40:12]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+134012.563: [13:40:12]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+134012.564: [13:40:12]-rw-rw-rw- 1 root      root        891 Mar 30 13:39 frpc.toml
+134012.564: [13:40:12]-rw-r--r-- 1 root      root        713 Mar 30 09:24 frpc.toml_bak_20260330
+134012.564: [13:40:12]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+134012.564: [13:40:12]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+134012.564: [13:40:12]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+134012.564: [13:40:12]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+134032.775: [13:40:32]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# vi frpc.toml
+134032.824: [13:40:32]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+134032.824: [13:40:32]# 日志配置
+134032.825: [13:40:32]log.to = "./frpc.log"
+134032.825: [13:40:32]log.level = "info"
+134032.825: [13:40:32]log.maxDays = 3
+134032.825: [13:40:32]
+134032.825: [13:40:32]# ------10.70.0.128------
+134032.825: [13:40:32]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+134032.825: [13:40:32]#[[proxies]]
+134032.825: [13:40:32]#name = "10-70-0-128-https"
+134032.825: [13:40:32]#type = "tcp"
+134032.825: [13:40:32]#localIP = "10.70.0.128"
+134032.825: [13:40:32]#localPort = 3443
+134032.825: [13:40:32]#remotePort = 443
+134032.825: [13:40:32]
+134032.825: [13:40:32]
+134032.825: [13:40:32]# ------10.50.0.101------
+134032.825: [13:40:32]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+134032.825: [13:40:32][[proxies]]
+134032.825: [13:40:32]name = "10-50-0-101-https"
+134032.825: [13:40:32]type = "tcp"
+134032.825: [13:40:32]localIP = "10.50.0.101"
+134032.825: [13:40:32]localPort = 3443
+134032.825: [13:40:32]remotePort = 443
+134032.825: [13:40:32]
+134032.825: [13:40:32]
+134032.825: [13:40:32]# ------192.168.12.185------
+134032.825: [13:40:32]#20260330 原晨浩要求开通
+134032.825: [13:40:32][[proxies]]
+134032.826: [13:40:32]name = "192-168-12-185-tcp"
+134032.826: [13:40:32]type = "tcp"
+134032.826: [13:40:32]localIP = "192.168.12.185"
+134032.826: [13:40:32]localPort = 10636
+134032.826: [13:40:32]remotePort = 636
+134120.153: [13:41:20]"frpc.toml" 37L, 891B written                                                                                                                                                                  
+134123.475: [13:41:23]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# systemctl restart frpc_03.service 
+134144.053: [13:41:44]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+134144.053: [13:41:44]total 34368
+134144.053: [13:41:44]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 13:41 ./
+134144.053: [13:41:44]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+134144.053: [13:41:44]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+134144.054: [13:41:44]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+134144.054: [13:41:44]-rw-rw-rw- 1 root      root        891 Mar 30 13:41 frpc.toml
+134144.054: [13:41:44]-rw-r--r-- 1 root      root        713 Mar 30 09:24 frpc.toml_bak_20260330
+134144.054: [13:41:44]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+134144.054: [13:41:44]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+134144.054: [13:41:44]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+134144.054: [13:41:44]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+134145.166: [13:41:45]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# cd ..
+134145.830: [13:41:45]root@suzhouproda101:/opt# ll
+134145.848: [13:41:45]total 12972
+134145.848: [13:41:45]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+134145.848: [13:41:45]drwxr-xr-x 26 root      root       4096 Mar 29 23:59 ../
+134145.848: [13:41:45]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+134145.848: [13:41:45]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+134145.849: [13:41:45]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 11:04 frp_0.63.0_linux_amd64/
+134145.849: [13:41:45]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 11:04 frp_0.63.0_linux_amd64_02/
+134145.849: [13:41:45]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 13:41 frp_0.63.0_linux_amd64_03/
+134145.849: [13:41:45]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+134145.849: [13:41:45]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+134145.850: [13:41:45]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+134145.850: [13:41:45]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+134145.850: [13:41:45]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+134149.744: [13:41:49]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_02
+134151.347: [13:41:51]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# ll
+134151.361: [13:41:51]total 34364
+134151.361: [13:41:51]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 11:04 ./
+134151.361: [13:41:51]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+134151.362: [13:41:51]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+134151.362: [13:41:51]-rw------- 1 root      root       3254 Sep  3  2025 frpc.log
+134151.362: [13:41:51]-rw-rw-rw- 1 root      root       1600 Mar  5 09:20 frpc.toml
+134151.362: [13:41:51]-rw-r--r-- 1 root      root       1276 Dec 23 11:16 frpc.toml-20251223
+134151.362: [13:41:51]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+134151.362: [13:41:51]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+134151.362: [13:41:51]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+134151.363: [13:41:51]drwxr-xr-x 2 root      root       4096 Oct 21 11:35 ssl/
+134155.042: [13:41:55]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# vi frpc.toml
+134155.087: [13:41:55]# 用于 https://guojiqe.tiangongqs.net/ 的映射，原因是只有该公网IP有未使用的443端口
+134155.087: [13:41:55]# 日志配置
+134155.087: [13:41:55]log.to = "./frpc.log"
+134155.087: [13:41:55]log.level = "info"
+134155.087: [13:41:55]log.maxDays = 3
+134155.087: [13:41:55]
+134155.087: [13:41:55]# ------10.70.0.128------
+134155.087: [13:41:55]#[[proxies]]
+134155.087: [13:41:55]#name = "10-70-0-128-https"
+134155.087: [13:41:55]#type = "tcp"
+134155.087: [13:41:55]#localIP = "10.70.0.128"
+134155.088: [13:41:55]#localPort = 3443
+134155.088: [13:41:55]#remotePort = 443
+134155.088: [13:41:55]
+134155.088: [13:41:55]# ------192.168.12.134------
+134155.088: [13:41:55]# 20251223原晨浩-将临时新增域名guojiqe-test.tiangongqs.net删除，将域名https://guojiqe.tiangongqs.net/映射到192.168.12.134的3443端口
+134155.088: [13:41:55][[proxies]]
+134155.088: [13:41:55]name = "192-168-12-134"
+134155.088: [13:41:55]type = "tcp"
+134155.088: [13:41:55]localIP = "192.168.12.134"
+134155.088: [13:41:55]localPort = 3443
+134155.088: [13:41:55]remotePort = 443
+134155.088: [13:41:55]# 曹博的后量子应用:https://pqc.tiangongqs.net:28443
+134155.088: [13:41:55][[proxies]]
+134155.088: [13:41:55]name = "10-70-0-128-pqc"
+134155.088: [13:41:55]type = "tcp"
+134155.089: [13:41:55]localIP = "10.70.0.128"
+134155.089: [13:41:55]localPort = 28443
+134155.089: [13:41:55]remotePort = 28443
+134155.089: [13:41:55]
+134155.089: [13:41:55]
+134155.089: [13:41:55]# ------192.168.12.134------
+134155.089: [13:41:55]# 新疆大屏:https://screen.tiangongqs.net:8020
+134155.089: [13:41:55][[proxies]]
+134155.089: [13:41:55]name = "192-168-12-134-klmyscreen-https"
+134155.089: [13:41:55]type = "tcp"
+134155.089: [13:41:55]#localIP = "10.70.0.128"
+134155.089: [13:41:55]localIP = "10.50.0.101"
+134155.089: [13:41:55]localPort = 8020
+134155.089: [13:41:55]remotePort = 8021
+134155.089: [13:41:55]
+134155.089: [13:41:55][[proxies]]
+134155.089: [13:41:55]name = "192-168-12-134-klmyscreen-http"
+134155.089: [13:41:55]type = "tcp"
+134155.090: [13:41:55]localIP = "192.168.12.134"
+134155.090: [13:41:55]localPort = 8020
+134155.090: [13:41:55]remotePort = 8020
+134155.090: [13:41:55]
+134155.090: [13:41:55]#[[proxies]]
+134155.090: [13:41:55]#name = "192-168-12-134-klmyscreen"
+134155.090: [13:41:55]#type = "https"
+134155.090: [13:41:55]#customDomains = ["screen.tiangongqs.net:8020"] #应该是不支持域名:端口形式,只支持域名的形式
+134155.090: [13:41:55]
+134155.090: [13:41:55]#[proxies.plugin]
+134155.090: [13:41:55]#type = "https2http"
+134155.090: [13:41:55]#localAddr = "192.168.12.134:8020"
+134155.090: [13:41:55]#crtPath = "./ssl/tiangongqs.net.crt"
+134155.090: [13:41:55]#keyPath = "./ssl/iangongqs.net.key"
+134155.090: [13:41:55]#hostHeaderRewrite = "192.168.12.134"
+134209.309: [13:42:09]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_02# cd ..
+134210.013: [13:42:10]root@suzhouproda101:/opt# ll
+134210.028: [13:42:10]total 12972
+134210.028: [13:42:10]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+134210.028: [13:42:10]drwxr-xr-x 26 root      root       4096 Mar 29 23:59 ../
+134210.028: [13:42:10]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+134210.028: [13:42:10]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+134210.029: [13:42:10]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 11:04 frp_0.63.0_linux_amd64/
+134210.029: [13:42:10]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 13:42 frp_0.63.0_linux_amd64_02/
+134210.029: [13:42:10]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 13:41 frp_0.63.0_linux_amd64_03/
+134210.029: [13:42:10]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+134210.029: [13:42:10]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+134210.030: [13:42:10]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+134210.030: [13:42:10]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+134210.030: [13:42:10]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+134214.167: [13:42:14]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64
+134214.993: [13:42:14]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ll
+134215.014: [13:42:15]total 35048
+134215.014: [13:42:15]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 11:04 ./
+134215.014: [13:42:15]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+134215.014: [13:42:15]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+134215.014: [13:42:15]-rw------- 1 root      root     627268 Mar 27 13:44 frpc.20260328-000000.log
+134215.015: [13:42:15]-rw------- 1 root      root          0 Mar 28 00:00 frpc.20260329-000000.log
+134215.015: [13:42:15]-rw------- 1 root      root          0 Mar 29 00:00 frpc.20260330-000000.log
+134215.015: [13:42:15]-rw------- 1 root      root      55944 Mar 30 13:41 frpc.log
+134215.015: [13:42:15]-rw-rw-rw- 1 root      root       4951 Jan  8 14:57 frpc.toml
+134215.015: [13:42:15]-rw-rw-rw- 1 root      root       4208 Sep 19  2025 frpc.toml-20250919
+134215.015: [13:42:15]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+134215.015: [13:42:15]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+134215.016: [13:42:15]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+134215.016: [13:42:15]drwxr-xr-x 2 root      root       4096 Sep  3  2025 ssl/
+134217.776: [13:42:17]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# vi frpc.toml
+134217.828: [13:42:17]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+134217.828: [13:42:17]# 日志配置
+134217.828: [13:42:17]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+134217.828: [13:42:17]log.level = "info"
+134217.828: [13:42:17]log.maxDays = 3
+134217.828: [13:42:17]
+134217.828: [13:42:17]# ------172.16.101.190------
+134217.828: [13:42:17]# 普罗米修斯监控
+134217.828: [13:42:17][[proxies]]
+134217.828: [13:42:17]name = "172-16-101-190-prometheus"
+134217.828: [13:42:17]type = "tcp"
+134217.828: [13:42:17]localIP = "172.16.101.190"
+134217.828: [13:42:17]localPort = 3000
+134217.828: [13:42:17]remotePort = 3000
+134217.828: [13:42:17]
+134217.828: [13:42:17]# ------192.168.12.134------
+134217.828: [13:42:17][[proxies]]
+134217.828: [13:42:17]name = "192-168-12-134-OpenAPI"
+134217.828: [13:42:17]type = "tcp"
+134217.829: [13:42:17]localIP = "192.168.12.134"
+134217.829: [13:42:17]localPort = 9999
+134217.829: [13:42:17]remotePort = 9999
+134217.829: [13:42:17]# 134-ssh
+134217.829: [13:42:17][[proxies]]
+134217.829: [13:42:17]name = "192-168-12-134-ssh"
+134217.829: [13:42:17]type = "tcp"
+134217.829: [13:42:17]localIP = "192.168.12.134"
+134217.829: [13:42:17]localPort = 22
+134217.829: [13:42:17]remotePort = 19443
+134217.829: [13:42:17]
+134217.829: [13:42:17]# 平台测试环境
+134217.829: [13:42:17]#[[proxies]]
+134217.829: [13:42:17]#name = "192-168-12-134-platform-test"
+134217.829: [13:42:17]#type = "tcp"
+134217.829: [13:42:17]#localIP = "192.168.12.134"
+134217.829: [13:42:17]#localPort = 80
+134217.829: [13:42:17]#remotePort = 8880
+134217.829: [13:42:17]
+134217.829: [13:42:17]# ------10.50.0.101------
+134217.829: [13:42:17][[proxies]]
+134217.829: [13:42:17]name = "10-50-0-101"
+134217.830: [13:42:17]type = "tcp"
+134217.830: [13:42:17]localIP = "10.50.0.101"
+134217.830: [13:42:17]localPort = 22
+134217.830: [13:42:17]remotePort = 10122
+134217.830: [13:42:17]
+134217.830: [13:42:17][[proxies]]
+134217.830: [13:42:17]name = "10-50-0-101-app"
+134217.830: [13:42:17]type = "tcp"
+134217.830: [13:42:17]localIP = "10.50.0.101"
+134217.830: [13:42:17]localPort = 9443
+134217.830: [13:42:17]remotePort = 9443
+134217.830: [13:42:17]
+134217.830: [13:42:17]# ------10.50.0.106------
+134217.830: [13:42:17][[proxies]]
+134217.830: [13:42:17]name = "10-50-0-106"
+134217.830: [13:42:17]type = "tcp"
+134217.830: [13:42:17]localIP = "10.50.0.106"
+134217.830: [13:42:17]localPort = 22
+134220.228: [13:42:20]#localIP = "10.60.0.109"
+134220.228: [13:42:20]#localPort = 22
+134220.228: [13:42:20]# 20250919 wangdonglin give this host back,then cancel this ssh login way
+134220.228: [13:42:20]#name = "10-60-0-110-SSH"
+134220.229: [13:42:20]#localIP = "10.60.0.110"
+134220.229: [13:42:20]#localPort = 22
+134220.229: [13:42:20]# 20250918 借给吴庆前的主机映射端口
+134220.229: [13:42:20]name = "10-60-0-102-SSH"
+134220.229: [13:42:20]type = "tcp"
+134220.230: [13:42:20]localPort = 22
+134220.230: [13:42:20]#name = "guojiqe_platform_https2http"
+134220.230: [13:42:20]#type = "https"
+134220.231: [13:42:20]#[proxies.plugin]
+134220.231: [13:42:20]#localAddr = "10.70.0.128:80"
+134220.231: [13:42:20]#crtPath = "/opt/frp_0.63.0_linux_amd64/ssl/tiangongqs.net.crt"
+134220.231: [13:42:20]#keyPath = "/opt/frp_0.63.0_linux_amd64/ssl/tiangongqs.net.key"
+134220.232: [13:42:20]#hostHeaderRewrite = "10.70.0.128"
+134220.232: [13:42:20]#name = "guojiqe-platform_web_service_https"
+134220.232: [13:42:20]#type = "https"
+134220.232: [13:42:20]#customDomains = ["guoji.tiangongqs.com"]
+134220.232: [13:42:20]#localIP = "127.0.0.1"
+134220.233: [13:42:20]# HTTP代理配置（重定向到HTTPS）
+134220.233: [13:42:20]#name = "guojiqe-platform_web_service_http"
+134220.233: [13:42:20]#customDomains = ["guojiqe.com"]  
+134220.233: [13:42:20]#localIP = "127.0.0.1"
+134220.233: [13:42:20]#name = "10-70-0-128"
+134220.233: [13:42:20]#localIP = "10.70.0.128"
+134220.248: [13:42:20]#[[proxies]]
+134220.248: [13:42:20]#name = "10-70-0-128-guojiqe-platform"
+134220.248: [13:42:20]#type = "https"
+134220.519: [13:42:20]# 该公网IP是"借用"信息化的，最初我们是通过非443端口访问https的原型网站的，后来逐渐增加了另外2个公网IP，后来这个主要是对外开放一些SSH端口，用于定位 问题等
+134220.519: [13:42:20]serverAddr = "118.31.115.234"
+134220.520: [13:42:20]log.to = "/opt/frp_0.63.0_linux_amd64/frpc.log"
+134220.520: [13:42:20]# ------172.16.101.190------
+134220.521: [13:42:20]name = "172-16-101-190-prometheus"
+134220.521: [13:42:20]type = "tcp"
+134220.521: [13:42:20]localPort = 3000
+134220.521: [13:42:20]# ------192.168.12.134------
+134220.522: [13:42:20]name = "192-168-12-134-OpenAPI"
+134220.522: [13:42:20]type = "tcp"
+134220.522: [13:42:20]localIP = "192.168.12.134"
+134220.522: [13:42:20]localPort = 9999
+134220.523: [13:42:20]name = "192-168-12-134-ssh"
+134220.523: [13:42:20]localIP = "192.168.12.134"
+134220.524: [13:42:20]#name = "192-168-12-134-platform-test"
+134220.524: [13:42:20]#type = "tcp"
+134220.524: [13:42:20]#localIP = "192.168.12.134"
+134220.524: [13:42:20]#localPort = 80
+134220.524: [13:42:20]name = "10-50-0-101"
+134220.525: [13:42:20]localIP = "10.50.0.101"
+134220.539: [13:42:20]name = "10-50-0-101-app"
+134220.539: [13:42:20]type = "tcp"
+134220.539: [13:42:20]localIP = "10.50.0.101"
+134220.539: [13:42:20]# ------10.50.0.106------
+134220.540: [13:42:20]name = "10-50-0-106"
+134220.540: [13:42:20]type = "tcp"
+134241.754: [13:42:41]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# ll
+134241.773: [13:42:41]total 35048
+134241.773: [13:42:41]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 13:42 ./
+134241.773: [13:42:41]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+134241.773: [13:42:41]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+134241.774: [13:42:41]-rw------- 1 root      root     627268 Mar 27 13:44 frpc.20260328-000000.log
+134241.774: [13:42:41]-rw------- 1 root      root          0 Mar 28 00:00 frpc.20260329-000000.log
+134241.774: [13:42:41]-rw------- 1 root      root          0 Mar 29 00:00 frpc.20260330-000000.log
+134241.774: [13:42:41]-rw------- 1 root      root      56067 Mar 30 13:42 frpc.log
+134241.774: [13:42:41]-rw-rw-rw- 1 root      root       4951 Jan  8 14:57 frpc.toml
+134241.774: [13:42:41]-rw-rw-rw- 1 root      root       4208 Sep 19  2025 frpc.toml-20250919
+134241.774: [13:42:41]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+134241.775: [13:42:41]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+134241.775: [13:42:41]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+134241.775: [13:42:41]drwxr-xr-x 2 root      root       4096 Sep  3  2025 ssl/
+134243.935: [13:42:43]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64# cd ..
+134244.739: [13:42:44]root@suzhouproda101:/opt# ll
+134244.758: [13:42:44]total 12972
+134244.758: [13:42:44]drwxr-xr-x  7 root      root       4096 Dec 10 09:48 ./
+134244.758: [13:42:44]drwxr-xr-x 26 root      root       4096 Mar 29 23:59 ../
+134244.758: [13:42:44]drwx--x--x  4 root      root       4096 Jun 18  2025 containerd/
+134244.758: [13:42:44]-rwxr-xr-x  1 root      root       1097 Jun 18  2025 docker.sh*
+134244.759: [13:42:44]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 13:42 frp_0.63.0_linux_amd64/
+134244.759: [13:42:44]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 13:42 frp_0.63.0_linux_amd64_02/
+134244.759: [13:42:44]drwxr-xr-x  3 klmy_test docker     4096 Mar 30 13:41 frp_0.63.0_linux_amd64_03/
+134244.760: [13:42:44]-rw-r--r--  1 root      root   13235609 Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+134244.760: [13:42:44]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total1.html*
+134244.760: [13:42:44]-rwxr-xr-x  1 root      root       1981 Jul  4  2025 total2.html*
+134244.760: [13:42:44]-rwxr-xr-x  1 root      root       1211 Jul  4  2025 total.html*
+134244.760: [13:42:44]drwxr-xr-x  5 root      root       4096 Dec 10 09:48 TurboVNC/
+134249.160: [13:42:49]root@suzhouproda101:/opt# cd frp_0.63.0_linux_amd64_03/
+134250.024: [13:42:50]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# ll
+134250.047: [13:42:50]total 34368
+134250.047: [13:42:50]drwxr-xr-x 3 klmy_test docker     4096 Mar 30 13:41 ./
+134250.047: [13:42:50]drwxr-xr-x 7 root      root       4096 Dec 10 09:48 ../
+134250.047: [13:42:50]-rwxr-xr-x 1 klmy_test docker 15425688 Jun 25  2025 frpc*
+134250.047: [13:42:50]-rw------- 1 root      root       4763 Dec 26 08:32 frpc.log
+134250.047: [13:42:50]-rw-rw-rw- 1 root      root        891 Mar 30 13:41 frpc.toml
+134250.047: [13:42:50]-rw-r--r-- 1 root      root        713 Mar 30 09:24 frpc.toml_bak_20260330
+134250.048: [13:42:50]-rwxr-xr-x 1 klmy_test docker 19714200 Jun 25  2025 frps*
+134250.048: [13:42:50]-rw-r--r-- 1 klmy_test docker       16 Jul 23  2025 frps.toml
+134250.048: [13:42:50]-rw-r--r-- 1 klmy_test docker    11358 Jun 25  2025 LICENSE
+134250.048: [13:42:50]drwxr-xr-x 2 root      root       4096 Jul 25  2025 ssl/
+134253.151: [13:42:53]root@suzhouproda101:/opt/frp_0.63.0_linux_amd64_03# vi frpc.toml
+134253.196: [13:42:53]# 用于https://www.guojiquantum.cn/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+134253.196: [13:42:53]# 日志配置
+134253.196: [13:42:53]log.to = "./frpc.log"
+134253.196: [13:42:53]log.level = "info"
+134253.197: [13:42:53]log.maxDays = 3
+134253.197: [13:42:53]
+134253.197: [13:42:53]# ------10.70.0.128------
+134253.197: [13:42:53]#集群1搬迁, 暂时不将流量转发到128 nginx 3443
+134253.197: [13:42:53]#[[proxies]]
+134253.197: [13:42:53]#name = "10-70-0-128-https"
+134253.197: [13:42:53]#type = "tcp"
+134253.197: [13:42:53]#localIP = "10.70.0.128"
+134253.197: [13:42:53]#localPort = 3443
+134253.197: [13:42:53]#remotePort = 443
+134253.197: [13:42:53]
+134253.197: [13:42:53]
+134253.197: [13:42:53]# ------10.50.0.101------
+134253.197: [13:42:53]#集群1搬迁, 10.50.0.101 nginx 3443 监听平台https流量
+134253.197: [13:42:53][[proxies]]
+134253.197: [13:42:53]name = "10-50-0-101-https"
+134253.197: [13:42:53]type = "tcp"
+134253.197: [13:42:53]localIP = "10.50.0.101"
+134253.197: [13:42:53]localPort = 3443
+134253.198: [13:42:53]remotePort = 443
+134253.198: [13:42:53]
+134253.198: [13:42:53]
+134253.198: [13:42:53]# ------192.168.12.185------
+134253.198: [13:42:53]#20260330 原晨浩要求开通
+134253.198: [13:42:53][[proxies]]
+134253.198: [13:42:53]name = "192-168-12-185-tcp"
+134253.198: [13:42:53]type = "tcp"
+134253.198: [13:42:53]localIP = "192.168.12.185"
+134253.198: [13:42:53]localPort = 636
+134253.198: [13:42:53]remotePort = 10636

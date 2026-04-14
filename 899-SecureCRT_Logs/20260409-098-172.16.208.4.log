@@ -1,0 +1,51 @@
+﻿084601.468: [08:46:01][202604098-172.16.208.4-08:46:01]
+084601.490: [08:46:01]Linux 172-16-208-4 6.1.0-22-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21) x86_64
+084601.490: [08:46:01]
+084601.490: [08:46:01]The programs included with the Debian GNU/Linux system are free software;
+084601.490: [08:46:01]the exact distribution terms for each program are described in the
+084601.490: [08:46:01]individual files in /usr/share/doc/*/copyright.
+084601.490: [08:46:01]
+084601.490: [08:46:01]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+084601.490: [08:46:01]permitted by applicable law.
+084601.490: [08:46:01]Last login: Mon Apr  6 22:14:29 2026 from 192.168.4.5
+084612.267: [08:46:12][root@172-16-208-4 ~]# bash -c 'dig +short "$1" | grep -Eo "([0-9]{1,3}.){3}[0-9]{1,3}" | head -n1 | xargs -r -I{} curl ipinfo.io/{}' _ myip.opendns.com
+084615.216: [08:46:15][root@172-16-208-4 ~]# bash -c 'dig +short "$1" | grep -Eo "([0-9]{1,3}.){3}[0-9]{1,3}" | head -n1 | xargs -r -I{} curl ipinfo.io/{}' _ myip.opendns.com
+084631.810: [08:46:31][root@172-16-208-4 ~]# ss -tn state established | awk '{print $4}' | grep -v Address | awk -F: '{ ip=$1; port=$2; a[ip]=a[ip] ? a[ip] "," port : port }     END { for (i in a) print i " -> [" a[i] "]" }' | sort -t. -k1,1n 
+084631.822: [08:46:31][ -> []
+084631.822: [08:46:31]192.168.12.187 -> [62856]
+084710.511: [08:47:10][root@172-16-208-4 ~]# curl ipinfo.io/54.169.145.57
+084711.923: [08:47:11][root@172-16-208-4 ~]# curl ipinfo.io/54.169.145.57
+084711.923: [08:47:11]wangyanjiang@wangyanjiangdeMac-mi
+084712.289: [08:47:12]{
+084712.289: [08:47:12]  "ip": "54.169.145.57",
+084712.290: [08:47:12]  "hostname": "ec2-54-169-145-57.ap-southeast-1.compute.amazonaws.com",
+084712.290: [08:47:12]  "city": "Singapore",
+084712.290: [08:47:12]  "region": "Singapore",
+084712.290: [08:47:12]  "country": "SG",
+084712.290: [08:47:12]  "loc": "1.2897,103.8501",
+084712.291: [08:47:12]  "org": "AS16509 Amazon.com, Inc.",
+084712.291: [08:47:12]  "postal": "018989",
+084712.291: [08:47:12]  "timezone": "Asia/Singapore",
+084712.291: [08:47:12]  "readme": "https://ipinfo.io/missingauth"
+084712.300: [08:47:12]}-bash: wangyanjiang@wangyanjiangdeMac-mi: command not found
+084754.671: [08:47:54][root@172-16-208-4 ~]# curl ipinfo.io/163.227.14.41
+084755.002: [08:47:55]{
+084755.002: [08:47:55]  "ip": "163.227.14.41",
+084755.003: [08:47:55]  "city": "Tung Chung",
+084755.003: [08:47:55]  "region": "Islands",
+084755.005: [08:47:55]  "country": "HK",
+084755.012: [08:47:55]  "loc": "22.2878,113.9424",
+084755.012: [08:47:55]  "org": "AS153766 One Link (HK) Technology Co., Limited",
+084755.012: [08:47:55]  "postal": "999077",
+084755.012: [08:47:55]  "timezone": "Asia/Hong_Kong",
+084755.013: [08:47:55]  "readme": "https://ipinfo.io/missingauth"
+134812.266: [13:48:12][202604098-172.16.208.4-13:48:12]
+134812.283: [13:48:12]Linux 172-16-208-4 6.1.0-22-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21) x86_64
+134812.283: [13:48:12]
+134812.284: [13:48:12]The programs included with the Debian GNU/Linux system are free software;
+134812.284: [13:48:12]the exact distribution terms for each program are described in the
+134812.284: [13:48:12]individual files in /usr/share/doc/*/copyright.
+134812.284: [13:48:12]
+134812.285: [13:48:12]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+134812.285: [13:48:12]permitted by applicable law.
+134812.285: [13:48:12]Last login: Wed Apr  8 20:46:01 2026 from 192.168.12.187

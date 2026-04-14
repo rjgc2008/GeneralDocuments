@@ -1,0 +1,786 @@
+﻿150201.106: [15:02:01][202604负一楼的浪潮交换机-15:02:01]
+150201.460: [15:02:01]
+150202.872: [15:02:02]SCN9300H-01# 
+150202.958: [15:02:02]SCN9300H-01# 
+150209.198: [15:02:09]SCN9300H-01# show arp ?
+150209.198: [15:02:09]  source-suppression  Source Mac Suppression
+150209.198: [15:02:09]
+150214.261: [15:02:14]SCN9300H-01# show ?
+150214.262: [15:02:14]  aaa                     Authentication, authorization, and accounting
+150214.262: [15:02:14]  access-list             Access-list
+150214.262: [15:02:14]  arp                     ARP table
+150214.262: [15:02:14]  bfd                     Bidirectional Forwarding Detection (BFD)
+150214.273: [15:02:14]  bgp                     Border Gateway Protocol (BGP)
+150214.273: [15:02:14]  bmr-info                Display bmr-info
+150214.273: [15:02:14]  boot                    Show boot parameters
+150214.273: [15:02:14]  channel-group           LACP etherchannel
+150214.273: [15:02:14]  class-map               Class map entry
+150214.273: [15:02:14]  clns                    Connectionless-Mode Network Service (CLNS)
+150214.274: [15:02:14]  clock                   Display the system clock
+150214.274: [15:02:14]  cpu                     CPU
+150214.274: [15:02:14]  cspf                    CSPF Information
+150214.274: [15:02:14]  cut-through-forwarding  Cut through forwarding mode
+150214.274: [15:02:14]  debugging               Debugging functions (see also 'undebug')
+150214.274: [15:02:14]  device                  Device
+150214.274: [15:02:14]  dhcp                    Dynamic Host Configuration Protocol status
+150214.274: [15:02:14]  dhcp-server             Show DHCP server group configuration
+150214.274: [15:02:14]  dhcpv6                  Dynamic Host Configuration Protocol status
+150214.275: [15:02:14]  dhcpv6-server           Show DHCPv6 server group configuration
+150214.275: [15:02:14]  diagnostic-information  Show information
+150214.275: [15:02:14]  dns                     DNS configuration
+150214.275: [15:02:14]  dot1q                   802.1Q configuration
+150214.275: [15:02:14]  dot1x                   IEEE 802.1X Port-Based Access Control
+150214.275: [15:02:14]  ecc                     ecc
+150214.275: [15:02:14]  ecmp                    Equal cost multi-path routing
+150214.275: [15:02:14]  eee                     Energy efficient ethernet
+150214.275: [15:02:14]  environment             Display environment
+150214.276: [15:02:14]  errdisable              Error disable
+150214.276: [15:02:14]  ethernet                Configure layer-2
+150214.276: [15:02:14]  file                    Show filesystem information
+150214.276: [15:02:14]  flowcontrol             Show flow control information
+150214.276: [15:02:14]  ftp                     FTP parameters
+150214.276: [15:02:14]  global                  global
+150214.276: [15:02:14]  hal                     Hal
+150214.276: [15:02:14]  hardware                Hardware
+150214.276: [15:02:14]  heart-beat-monitor      Heart beat monitor function
+150214.277: [15:02:14]  history                 Display the session command history
+150214.277: [15:02:14]  hsrv                    Hal server
+150214.277: [15:02:14]  interface               Interface status and configuration
+150214.277: [15:02:14]  ip                      Internet Protocol (IP)
+150214.277: [15:02:14]  ip-intercept            DDoS Prevent
+150214.277: [15:02:14]  ipfix                   IP Information Export(IPFIX)
+150214.277: [15:02:14]  ipv6                    Internet Protocol version 6 (IPv6)
+150214.277: [15:02:14]  isis                    Intermediate System - Intermediate System (IS-IS)
+150214.277: [15:02:14]  key                     Show key information
+150214.278: [15:02:14]  l2ping                  L2 ping
+150214.278: [15:02:14]  l2protocol              Show Layer2 Protocol configure
+150214.278: [15:02:14]  lacp                    LACP
+150214.278: [15:02:14]  license                 License
+150214.278: [15:02:14]  lldp                    Link Layer Discovery Protocol
+150214.278: [15:02:14]  logging                 Logging parameter
+150214.278: [15:02:14]  loopback-detect         Loopback Detect Function
+150214.278: [15:02:14]  mac                     Display forwarding information
+150214.278: [15:02:14]  mac-filter              Mac filter information
+150214.278: [15:02:14]  management              Management configuration
+150214.278: [15:02:14]  memory                  Memory information
+150214.279: [15:02:14]  mlag                    Multi-Chassis Link Aggregation
+150214.279: [15:02:14]  monitor                 Monitoring system traffic
+150214.279: [15:02:14]  monitor-link            Monitor link function
+150214.279: [15:02:14]  mpls                    Multi-Protocol Label Switching (MPLS)
+150214.279: [15:02:14]  multi-link              Multi-Link
+150214.279: [15:02:14]  mvr                     Enable/Disable MVR on the switch
+150214.279: [15:02:14]  mvr6                    Enable/Disable MVR6 on the switch
+150214.279: [15:02:14]  nat                     Nat
+150214.280: [15:02:14]  nd                      IPv6 interface Neighbor Discovery subcommands
+150214.280: [15:02:14]  netconf                 netconf
+150214.280: [15:02:14]  network                 Networking running information
+150214.280: [15:02:14]  nsm                     Network Service Module (NSM)
+150214.280: [15:02:14]  ntp                     Configuration of NTP
+150214.280: [15:02:14]  phy                     L2 ping
+150214.280: [15:02:14]  policy-map              Policy map entry
+150214.280: [15:02:14]  port-block              Port port block
+150214.280: [15:02:14]  port-isolate            Port isolate
+150214.281: [15:02:14]  port-security           Secure information
+150215.270: [15:02:15]  power-info              Display power-info
+150215.270: [15:02:15]  priority-flow-control   Priority-Flow-Control
+150215.270: [15:02:15]  private-vlan            Private-vlan
+150215.270: [15:02:15]  privilege               Show current privilege level
+150215.290: [15:02:15]  processes               Active process statistics
+150215.290: [15:02:15]  qos                     Quality of Service.
+150215.290: [15:02:15]  radius                  Shows radius server statistics
+150215.290: [15:02:15]  radius-server           RADIUS server configuration commands
+150215.290: [15:02:15]  reboot-info             Reboot information
+150215.291: [15:02:15]  resource                Resource info
+150215.291: [15:02:15]  rmon                    Remote Monitoring Protocol (RMON)
+150215.291: [15:02:15]  route-map               Route-map information
+150215.291: [15:02:15]  router-id               Router ID
+150215.291: [15:02:15]  rsa                     RSA
+150215.291: [15:02:15]  running-config          Current operating configuration
+150215.291: [15:02:15]  schedule                Schedule parameters
+150215.291: [15:02:15]  services                Show service configuration
+150215.291: [15:02:15]  sflow                   Sampled flow
+150215.291: [15:02:15]  smart-link              Smart-Link
+150215.291: [15:02:15]  snmp                    Show snmp
+150215.291: [15:02:15]  snmp-server             Show snmp settings
+150215.292: [15:02:15]  spanning-tree           Display spanning-tree information
+150215.292: [15:02:15]  startup-config          Contents of startup configuration
+150215.292: [15:02:15]  stm                     Switch table management
+150215.292: [15:02:15]  storm-control           Display rate limit
+150215.292: [15:02:15]  sysmon                  System monitor
+150215.292: [15:02:15]  tacacs                  Shows tacacs+ server statistics
+150215.292: [15:02:15]  time-range              Time range list information
+150215.292: [15:02:15]  timezones               Timezone information
+150215.292: [15:02:15]  track                   Track information
+150215.292: [15:02:15]  transceiver             Transceiver
+150215.292: [15:02:15]  tunnel                  Interface tunnel info
+150215.292: [15:02:15]  udld                    UniDirectional Link Detectional
+150215.293: [15:02:15]  username                User name
+150215.293: [15:02:15]  usernames               User names
+150215.293: [15:02:15]  users                   Display information about terminal lines
+150215.293: [15:02:15]  varp                    VARP
+150215.293: [15:02:15]  version                 Display version
+150215.293: [15:02:15]  virtual-cable-test      Virtual cable test
+150215.293: [15:02:15]  vlan                    Display VLAN information
+150215.293: [15:02:15]  vlan-security           Vlan security
+150215.293: [15:02:15]  vm                      Virtual machine
+150215.293: [15:02:15]  voice                   Voice vlan
+150215.293: [15:02:15]  vrrp                    VRRP information
+150215.293: [15:02:15]  warp-span               warp-span
+150215.293: [15:02:15]  web                     CLI for web
+150215.293: [15:02:15]
+150246.162: [15:02:46]SCN9300H-01# show amc
+150247.524: [15:02:47]SCN9300H-01# show mac
+150247.524: [15:02:47]mac         mac-filter  
+150247.806: [15:02:47]SCN9300H-01# show mac
+150247.806: [15:02:47]mac         mac-filter  
+150247.985: [15:02:47]SCN9300H-01# show mac
+150247.985: [15:02:47]mac         mac-filter  
+150250.033: [15:02:50]SCN9300H-01# show mac ?
+150250.034: [15:02:50]  address-table  Forwarding information of bridge
+150250.034: [15:02:50]
+150251.652: [15:02:51]SCN9300H-01# show mac address-table ?
+150251.653: [15:02:51]  add-fdb-fail  FDB not in hardware for no resources
+150251.653: [15:02:51]  address       Query by address
+150251.653: [15:02:51]  ageing-time   Time a learned MAC address will persist after last update
+150251.653: [15:02:51]  count         Count of MAC address-table entries
+150251.654: [15:02:51]  dynamic       Dynamic MAC address
+150251.654: [15:02:51]  hardware      MAC address in hardware table
+150251.654: [15:02:51]  interface     Query by interface
+150251.656: [15:02:51]  multicast     Multicast MAC address
+150251.656: [15:02:51]  static        Static MAC address
+150251.656: [15:02:51]  vlan          Query by VLAN
+150251.656: [15:02:51]  vpls          Virtual Private Lan Service
+150251.656: [15:02:51]  |             Output modifiers
+150251.656: [15:02:51]  >             Output redirection
+150251.656: [15:02:51]  <cr>
+150251.656: [15:02:51]
+150252.946: [15:02:52]SCN9300H-01# show mac address-table 
+150252.989: [15:02:52]          Mac Address Table
+150252.989: [15:02:52]-------------------------------------------
+150252.989: [15:02:52](*)  - Security Entry     (M)  - MLAG Entry
+150252.989: [15:02:52](MO) - MLAG Output Entry  (MI) - MLAG Input Entry
+150252.989: [15:02:52]Vlan    Mac Address       Type        Ports
+150252.990: [15:02:52]----    -----------       --------    -----
+150252.990: [15:02:52]101     9803.9b7c.c6d6    dynamic     eth-0-47
+150252.990: [15:02:52]101     9803.9b7d.3f32    dynamic     eth-0-47
+150252.990: [15:02:52]101     0c42.a145.5ff4    dynamic     eth-0-47
+150252.990: [15:02:52]101     9cc2.c43f.d4c1    dynamic     eth-0-9
+150252.990: [15:02:52]101     9cc2.c43f.f4bb    dynamic     eth-0-8
+150252.990: [15:02:52]101     90f9.70a5.8dd5    dynamic     eth-0-47
+150252.990: [15:02:52]101     9cc2.c440.0994    dynamic     eth-0-4
+150252.990: [15:02:52]101     90f9.70a5.8dd1    dynamic     eth-0-47
+150252.990: [15:02:52]101     5254.0099.c63b    dynamic     eth-0-5
+150252.990: [15:02:52]101     5254.008c.0991    dynamic     eth-0-5
+150252.990: [15:02:52]101     5254.0053.14d3    dynamic     eth-0-5
+150252.990: [15:02:52]101     0442.1a1a.e000    dynamic     eth-0-48
+150252.990: [15:02:52]101     9cc2.c443.979e    dynamic     eth-0-15
+150252.991: [15:02:52]101     f02f.7494.142e    dynamic     eth-0-48
+150252.991: [15:02:52]101     9cc2.c440.1c66    dynamic     eth-0-13
+150252.991: [15:02:52]101     9cc2.c440.1408    dynamic     eth-0-14
+150252.991: [15:02:52]101     e861.1f40.235d    dynamic     eth-0-48
+150252.991: [15:02:52]101     78d7.5299.8ca9    dynamic     eth-0-48
+150252.991: [15:02:52]101     e861.1f40.1edf    dynamic     eth-0-48
+150252.991: [15:02:52]101     d45d.6408.c371    dynamic     eth-0-48
+150252.991: [15:02:52]101     9009.d06f.a660    dynamic     eth-0-48
+150252.991: [15:02:52]101     f02f.7496.34df    dynamic     eth-0-48
+150252.991: [15:02:52]101     0442.1a1b.4ba8    dynamic     eth-0-48
+150252.991: [15:02:52]101     4e27.dd9e.c434    dynamic     eth-0-48
+150252.998: [15:02:52]101     a2d8.9cac.a92d    dynamic     eth-0-48
+150252.998: [15:02:52]101     e861.1f40.1ce3    dynamic     eth-0-48
+150252.998: [15:02:52]101     c470.abfc.a59b    dynamic     eth-0-48
+150252.998: [15:02:52]101     f02f.7494.1956    dynamic     eth-0-48
+150252.998: [15:02:52]101     9cc2.c43f.dacc    dynamic     eth-0-11
+150252.998: [15:02:52]101     9cc2.c43f.da23    dynamic     eth-0-5
+150252.998: [15:02:52]101     9cc2.c43f.d3d5    dynamic     eth-0-10
+150252.998: [15:02:52]101     9cc2.c440.13d6    dynamic     eth-0-2
+150252.998: [15:02:52]101     9cc2.c43f.f6df    dynamic     eth-0-1
+150252.999: [15:02:52]101     9cc2.c43f.f491    dynamic     eth-0-6
+150252.999: [15:02:52]101     9cc2.c440.094e    dynamic     eth-0-7
+150252.999: [15:02:52]101     9cc2.c43f.d978    dynamic     eth-0-3
+150302.396: [15:03:02]SCN9300H-01#    show ?
+150302.397: [15:03:02]  aaa                     Authentication, authorization, and accounting
+150302.397: [15:03:02]  access-list             Access-list
+150302.397: [15:03:02]  arp                     ARP table
+150302.397: [15:03:02]  bfd                     Bidirectional Forwarding Detection (BFD)
+150302.397: [15:03:02]  bgp                     Border Gateway Protocol (BGP)
+150302.398: [15:03:02]  bmr-info                Display bmr-info
+150302.398: [15:03:02]  boot                    Show boot parameters
+150302.398: [15:03:02]  channel-group           LACP etherchannel
+150302.398: [15:03:02]  class-map               Class map entry
+150302.398: [15:03:02]  clns                    Connectionless-Mode Network Service (CLNS)
+150302.398: [15:03:02]  clock                   Display the system clock
+150302.398: [15:03:02]  cpu                     CPU
+150302.398: [15:03:02]  cspf                    CSPF Information
+150302.399: [15:03:02]  cut-through-forwarding  Cut through forwarding mode
+150302.399: [15:03:02]  debugging               Debugging functions (see also 'undebug')
+150302.399: [15:03:02]  device                  Device
+150302.399: [15:03:02]  dhcp                    Dynamic Host Configuration Protocol status
+150302.399: [15:03:02]  dhcp-server             Show DHCP server group configuration
+150302.399: [15:03:02]  dhcpv6                  Dynamic Host Configuration Protocol status
+150302.399: [15:03:02]  dhcpv6-server           Show DHCPv6 server group configuration
+150302.400: [15:03:02]  diagnostic-information  Show information
+150302.400: [15:03:02]  dns                     DNS configuration
+150302.400: [15:03:02]  dot1q                   802.1Q configuration
+150302.400: [15:03:02]  dot1x                   IEEE 802.1X Port-Based Access Control
+150302.400: [15:03:02]  ecc                     ecc
+150302.400: [15:03:02]  ecmp                    Equal cost multi-path routing
+150302.400: [15:03:02]  eee                     Energy efficient ethernet
+150302.400: [15:03:02]  environment             Display environment
+150302.401: [15:03:02]  errdisable              Error disable
+150302.401: [15:03:02]  ethernet                Configure layer-2
+150302.401: [15:03:02]  file                    Show filesystem information
+150302.401: [15:03:02]  flowcontrol             Show flow control information
+150302.401: [15:03:02]  ftp                     FTP parameters
+150302.401: [15:03:02]  global                  global
+150302.401: [15:03:02]  hal                     Hal
+150302.401: [15:03:02]  hardware                Hardware
+150302.402: [15:03:02]  heart-beat-monitor      Heart beat monitor function
+150302.419: [15:03:02]  history                 Display the session command history
+150302.419: [15:03:02]  hsrv                    Hal server
+150302.419: [15:03:02]  interface               Interface status and configuration
+150302.419: [15:03:02]  ip                      Internet Protocol (IP)
+150302.419: [15:03:02]  ip-intercept            DDoS Prevent
+150302.419: [15:03:02]  ipfix                   IP Information Export(IPFIX)
+150302.419: [15:03:02]  ipv6                    Internet Protocol version 6 (IPv6)
+150302.419: [15:03:02]  isis                    Intermediate System - Intermediate System (IS-IS)
+150302.419: [15:03:02]  key                     Show key information
+150302.419: [15:03:02]  l2ping                  L2 ping
+150302.419: [15:03:02]  l2protocol              Show Layer2 Protocol configure
+150302.419: [15:03:02]  lacp                    LACP
+150302.420: [15:03:02]  license                 License
+150302.420: [15:03:02]  lldp                    Link Layer Discovery Protocol
+150302.420: [15:03:02]  logging                 Logging parameter
+150302.420: [15:03:02]  loopback-detect         Loopback Detect Function
+150302.420: [15:03:02]  mac                     Display forwarding information
+150302.420: [15:03:02]  mac-filter              Mac filter information
+150302.420: [15:03:02]  management              Management configuration
+150302.420: [15:03:02]  memory                  Memory information
+150302.420: [15:03:02]  mlag                    Multi-Chassis Link Aggregation
+150302.420: [15:03:02]  monitor                 Monitoring system traffic
+150302.420: [15:03:02]  monitor-link            Monitor link function
+150302.421: [15:03:02]  mpls                    Multi-Protocol Label Switching (MPLS)
+150302.421: [15:03:02]  multi-link              Multi-Link
+150302.421: [15:03:02]  mvr                     Enable/Disable MVR on the switch
+150302.421: [15:03:02]  mvr6                    Enable/Disable MVR6 on the switch
+150302.421: [15:03:02]  nat                     Nat
+150302.421: [15:03:02]  nd                      IPv6 interface Neighbor Discovery subcommands
+150302.421: [15:03:02]  netconf                 netconf
+150302.421: [15:03:02]  network                 Networking running information
+150302.421: [15:03:02]  nsm                     Network Service Module (NSM)
+150302.421: [15:03:02]  ntp                     Configuration of NTP
+150302.421: [15:03:02]  phy                     L2 ping
+150302.421: [15:03:02]  policy-map              Policy map entry
+150302.422: [15:03:02]  port-block              Port port block
+150302.422: [15:03:02]  port-isolate            Port isolate
+150302.422: [15:03:02]  port-security           Secure information
+150306.982: [15:03:06]SCN9300H-01#    show ip ?
+150306.983: [15:03:06]  arp                  IP ARP table
+150306.983: [15:03:06]  as-path-access-list  List AS path access lists
+150306.983: [15:03:06]  bgp                  Border Gateway Protocol (BGP)
+150306.983: [15:03:06]  community-list       List community-list
+150306.983: [15:03:06]  dns                  Configure DNS server
+150306.983: [15:03:06]  extcommunity-list    List extended-community list
+150306.983: [15:03:06]  forwarding           IP forwarding status
+150306.983: [15:03:06]  host                 Static dns host-ip pairs
+150306.983: [15:03:06]  igmp                 IGMP information
+150306.983: [15:03:06]  interface            IP interface status and configuration
+150306.984: [15:03:06]  isis                 Intermediate System - Intermediate System (IS-IS)
+150306.984: [15:03:06]  mroute               IP multicast routing table
+150306.984: [15:03:06]  mroute-rpf           Display RPF information for multicast source
+150306.984: [15:03:06]  multicast            Multicast information
+150306.984: [15:03:06]  mvif                 IP multicast interface
+150306.984: [15:03:06]  nat                  Network Address Translation
+150306.984: [15:03:06]  ospf                 OSPF information
+150306.984: [15:03:06]  pim                  Protocol Independent Multicast (PIM)
+150306.984: [15:03:06]  policy               Policy based routing
+150306.984: [15:03:06]  prefix-list          Build a prefix list
+150306.985: [15:03:06]  protocols            IP routing protocol process parameters and statistics
+150306.985: [15:03:06]  rip                  IP RIP show commands
+150306.985: [15:03:06]  route                Route info
+150306.985: [15:03:06]  sla                  IP Service Level Agreement
+150306.985: [15:03:06]  source               Ip source guard configuration
+150306.985: [15:03:06]  ssh                  Configure SSH (secure shell)
+150306.985: [15:03:06]  vrf                  VPN Routing/Forwarding instance
+150306.985: [15:03:06]
+150309.130: [15:03:09]SCN9300H-01#    show ip arp ?
+150309.130: [15:03:09]  inspection  Status of ARP inspection
+150309.130: [15:03:09]  interface   Show the entire ARP cache on the interface
+150309.130: [15:03:09]  summary     IP ARP table summary
+150309.130: [15:03:09]  vrf         VPN Routing/Forwarding instance
+150309.130: [15:03:09]  |           Output modifiers
+150309.130: [15:03:09]  >           Output redirection
+150309.130: [15:03:09]  <cr>
+150309.130: [15:03:09]
+150310.103: [15:03:10]SCN9300H-01#    show ip arp 
+150310.151: [15:03:10] Protocol    Address          Age (min)  Hardware Addr   Interface 
+150311.655: [15:03:11]SCN9300H-01# 
+150311.826: [15:03:11]SCN9300H-01# 
+150311.959: [15:03:11]SCN9300H-01# 
+150318.565: [15:03:18]SCN9300H-01# show arp ?
+150318.565: [15:03:18]  source-suppression  Source Mac Suppression
+150318.565: [15:03:18]
+150319.982: [15:03:19]SCN9300H-01# show arp source-suppression ?
+150319.982: [15:03:19]  info  Statistic info
+150319.982: [15:03:19]
+150321.533: [15:03:21]SCN9300H-01# show arp source-suppression info ?
+150321.533: [15:03:21]  src-mac  The source Mac address
+150321.533: [15:03:21]  |        Output modifiers
+150321.534: [15:03:21]  >        Output redirection
+150321.534: [15:03:21]  <cr>
+150321.534: [15:03:21]
+150322.478: [15:03:22]SCN9300H-01# show arp source-suppression info 
+150322.518: [15:03:22]--------------------------------------------------------------------
+150322.518: [15:03:22]arp source suppression: disable
+150322.518: [15:03:22]--------------------------------------------------------------------
+150322.518: [15:03:22]src-mac            limit-rate(pps)   real-rate(pps)   count(packets)
+150322.519: [15:03:22]--------------------------------------------------------------------
+150401.308: [15:04:01]SCN9300H-01# show arp ?
+150401.309: [15:04:01]  source-suppression  Source Mac Suppression
+150401.309: [15:04:01]
+150403.066: [15:04:03]SCN9300H-01# show arp 
+150403.066: [15:04:03]% Incomplete command
+150403.066: [15:04:03]
+150409.919: [15:04:09]SCN9300H-01# te
+150409.919: [15:04:09]telnet    terminal  
+150412.419: [15:04:12]SCN9300H-01# terminal ?
+150412.419: [15:04:12]  length   Set number of lines on a screen
+150412.419: [15:04:12]  monitor  Copy debug output to the current terminal line
+150412.419: [15:04:12]  no       Negate a command or set its defaults
+150412.419: [15:04:12]
+150414.971: [15:04:14]SCN9300H-01# terminal 
+150414.971: [15:04:14]% Incomplete command
+150414.971: [15:04:14]
+150419.805: [15:04:19]SCN9300H-01# ten
+150422.568: [15:04:22]SCN9300H-01# enable te
+150428.666: [15:04:28]SCN9300H-01# terminal ?
+150428.668: [15:04:28]  length   Set number of lines on a screen
+150428.668: [15:04:28]  monitor  Copy debug output to the current terminal line
+150428.668: [15:04:28]  no       Negate a command or set its defaults
+150428.668: [15:04:28]
+150429.203: [15:04:29]SCN9300H-01# terminal 
+150429.203: [15:04:29]% Incomplete command
+150429.203: [15:04:29]
+150435.760: [15:04:35]SCN9300H-01# show ip inte bri
+150435.802: [15:04:35]Interface             IP-Address      Status                  Protocol
+150435.802: [15:04:35]vlan1                 192.168.1.1     down                    down
+150500.992: [15:05:00]SCN9300H-01# configure terminal 
+150501.031: [15:05:01]Enter configuration commands, one per line.  End with CNTL/Z.
+150503.163: [15:05:03]SCN9300H-01(config)# show ip in b
+150503.929: [15:05:03]SCN9300H-01(config)# show ip in 
+150505.354: [15:05:05]SCN9300H-01(config)# show ip 
+150506.458: [15:05:06]SCN9300H-01(config)# show ip ?
+150506.458: [15:05:06]% Unrecognized command
+150509.056: [15:05:09]SCN9300H-01(config)# 
+150509.176: [15:05:09]SCN9300H-01(config)# 
+150510.412: [15:05:10]SCN9300H-01(config)# show ?
+150510.412: [15:05:10]  running-config  Current operating configuration
+150510.412: [15:05:10]
+150513.899: [15:05:13]SCN9300H-01(config)# show running-config 
+150513.944: [15:05:13]Building configuration...
+150513.955: [15:05:13]version 10.011.003.24
+150513.955: [15:05:13]!
+150513.955: [15:05:13]no service password-encryption
+150513.955: [15:05:13]!
+150513.955: [15:05:13]!
+150513.955: [15:05:13]!
+150513.955: [15:05:13]hostname SCN9300H-01
+150513.955: [15:05:13]!
+150513.955: [15:05:13]!
+150513.955: [15:05:13]username admin privilege 4 password inspur@123
+150513.955: [15:05:13]!
+150513.956: [15:05:13]!
+150513.956: [15:05:13]ipv6 enable
+150513.956: [15:05:13]management ip address 172.16.100.11/24
+150513.956: [15:05:13]ip ssh server enable
+150513.956: [15:05:13]!
+150513.956: [15:05:13]!
+150513.956: [15:05:13]vlan database
+150513.956: [15:05:13] vlan 101
+150513.956: [15:05:13]!
+150513.956: [15:05:13]
+150513.956: [15:05:13]interface eth-0-1
+150513.956: [15:05:13] speed 25G
+150513.956: [15:05:13] duplex full
+150513.956: [15:05:13] switchport access vlan 101
+150513.956: [15:05:13]!
+150513.956: [15:05:13]interface eth-0-2
+150513.956: [15:05:13] speed 25G
+150513.956: [15:05:13] duplex full
+150513.956: [15:05:13] switchport access vlan 101
+150513.957: [15:05:13]!
+150513.957: [15:05:13]interface eth-0-3
+150513.957: [15:05:13] speed 25G
+150513.957: [15:05:13] duplex full
+150513.957: [15:05:13] switchport access vlan 101
+150513.957: [15:05:13]!
+150513.957: [15:05:13]interface eth-0-4
+150513.957: [15:05:13] speed 25G
+150513.957: [15:05:13] duplex full
+150513.957: [15:05:13] switchport access vlan 101
+150513.957: [15:05:13]!
+150513.957: [15:05:13]interface eth-0-5
+150513.957: [15:05:13] speed 25G
+150513.957: [15:05:13] duplex full
+150513.957: [15:05:13] switchport access vlan 101
+150513.957: [15:05:13]!
+150513.957: [15:05:13]interface eth-0-6
+150513.957: [15:05:13] speed 25G
+150513.957: [15:05:13] duplex full
+150513.958: [15:05:13] switchport access vlan 101
+150513.958: [15:05:13]!
+150513.958: [15:05:13]interface eth-0-7
+150513.958: [15:05:13] speed 25G
+150513.958: [15:05:13] duplex full
+150513.958: [15:05:13] switchport access vlan 101
+150513.958: [15:05:13]!
+150513.958: [15:05:13]interface eth-0-8
+150513.958: [15:05:13] speed 25G
+150513.958: [15:05:13] duplex full
+150513.958: [15:05:13] switchport access vlan 101
+150513.958: [15:05:13]!
+150513.958: [15:05:13]interface eth-0-9
+150513.958: [15:05:13] speed 25G
+150513.958: [15:05:13] duplex full
+150513.958: [15:05:13] switchport access vlan 101
+150513.958: [15:05:13]!
+150513.958: [15:05:13]interface eth-0-10
+150513.958: [15:05:13] speed 25G
+150513.958: [15:05:13] duplex full
+150513.958: [15:05:13] switchport access vlan 101
+150513.958: [15:05:13]!
+150513.958: [15:05:13]interface eth-0-11
+150513.958: [15:05:13] speed 25G
+150513.958: [15:05:13] duplex full
+150513.958: [15:05:13] switchport access vlan 101
+150514.394: [15:05:14]!
+150514.394: [15:05:14]interface eth-0-12
+150514.395: [15:05:14] speed 25G
+150514.395: [15:05:14] duplex full
+150514.395: [15:05:14] switchport access vlan 101
+150514.395: [15:05:14]!
+150514.395: [15:05:14]interface eth-0-13
+150514.395: [15:05:14] speed 25G
+150514.395: [15:05:14] duplex full
+150514.395: [15:05:14] switchport access vlan 101
+150514.395: [15:05:14]!
+150514.395: [15:05:14]interface eth-0-14
+150514.395: [15:05:14] speed 25G
+150514.395: [15:05:14] duplex full
+150514.395: [15:05:14] switchport access vlan 101
+150514.395: [15:05:14]!
+150514.395: [15:05:14]interface eth-0-15
+150514.395: [15:05:14] speed 25G
+150514.395: [15:05:14] duplex full
+150514.395: [15:05:14] switchport access vlan 101
+150514.395: [15:05:14]!
+150514.395: [15:05:14]interface eth-0-16
+150514.395: [15:05:14] speed 25G
+150514.396: [15:05:14] duplex full
+150514.396: [15:05:14] fec rs-fec
+150514.396: [15:05:14] switchport mode trunk
+150514.396: [15:05:14] switchport trunk native vlan 101
+150514.396: [15:05:14] switchport trunk allowed vlan add 1,101,300
+150514.396: [15:05:14]!
+150514.396: [15:05:14]interface eth-0-17
+150514.396: [15:05:14] speed 25G
+150514.396: [15:05:14] duplex full
+150514.396: [15:05:14] switchport access vlan 101
+150514.396: [15:05:14]!
+150514.396: [15:05:14]interface eth-0-18
+150514.396: [15:05:14] speed 25G
+150514.396: [15:05:14] duplex full
+150514.396: [15:05:14] switchport access vlan 101
+150514.396: [15:05:14]!
+150514.396: [15:05:14]interface eth-0-19
+150514.396: [15:05:14] speed 25G
+150514.397: [15:05:14] duplex full
+150514.397: [15:05:14] switchport access vlan 101
+150514.397: [15:05:14]!
+150514.397: [15:05:14]interface eth-0-20
+150514.397: [15:05:14] speed 25G
+150514.397: [15:05:14] duplex full
+150514.397: [15:05:14] switchport access vlan 101
+150514.397: [15:05:14]!
+150514.397: [15:05:14]interface eth-0-21
+150514.398: [15:05:14] speed 25G
+150514.398: [15:05:14] duplex full
+150514.398: [15:05:14] switchport access vlan 101
+150514.398: [15:05:14]!
+150514.398: [15:05:14]interface eth-0-22
+150514.398: [15:05:14] speed 25G
+150514.398: [15:05:14] duplex full
+150514.398: [15:05:14] switchport access vlan 101
+150514.398: [15:05:14]!
+150514.398: [15:05:14]interface eth-0-23
+150514.398: [15:05:14] speed 25G
+150514.398: [15:05:14] duplex full
+150514.398: [15:05:14] switchport access vlan 101
+150514.398: [15:05:14]!
+150514.398: [15:05:14]interface eth-0-24
+150514.398: [15:05:14] speed 25G
+150514.398: [15:05:14] duplex full
+150514.398: [15:05:14] switchport access vlan 101
+150514.398: [15:05:14]!
+150514.398: [15:05:14]interface eth-0-25
+150514.398: [15:05:14] speed 1000
+150514.398: [15:05:14] duplex full
+150514.398: [15:05:14] switchport access vlan 101
+150514.398: [15:05:14]!
+150514.399: [15:05:14]interface eth-0-26
+150514.399: [15:05:14] speed 25G
+150514.845: [15:05:14] duplex full
+150514.845: [15:05:14] switchport access vlan 101
+150514.845: [15:05:14]!
+150514.845: [15:05:14]interface eth-0-27
+150514.845: [15:05:14] speed 25G
+150514.845: [15:05:14] duplex full
+150514.846: [15:05:14] switchport access vlan 101
+150514.846: [15:05:14]!
+150514.846: [15:05:14]interface eth-0-28
+150514.846: [15:05:14] speed 25G
+150514.846: [15:05:14] duplex full
+150514.846: [15:05:14] switchport access vlan 101
+150514.846: [15:05:14]!
+150514.846: [15:05:14]interface eth-0-29
+150514.846: [15:05:14] speed 10G
+150514.846: [15:05:14] duplex full
+150514.846: [15:05:14] switchport access vlan 101
+150514.846: [15:05:14] channel-group 1 mode active
+150514.846: [15:05:14]!
+150514.846: [15:05:14]interface eth-0-30
+150514.846: [15:05:14] speed 10G
+150514.846: [15:05:14] duplex full
+150514.846: [15:05:14] switchport access vlan 101
+150514.846: [15:05:14] channel-group 1 mode active
+150514.846: [15:05:14]!
+150514.846: [15:05:14]interface eth-0-31
+150514.846: [15:05:14] speed 10G
+150514.846: [15:05:14] duplex full
+150514.847: [15:05:14] switchport access vlan 101
+150514.847: [15:05:14] channel-group 2 mode active
+150514.847: [15:05:14]!
+150514.847: [15:05:14]interface eth-0-32
+150514.847: [15:05:14] speed 10G
+150514.847: [15:05:14] duplex full
+150514.847: [15:05:14] switchport access vlan 101
+150514.847: [15:05:14] channel-group 2 mode active
+150514.847: [15:05:14]!
+150514.847: [15:05:14]interface eth-0-33
+150514.847: [15:05:14] speed 10G
+150514.847: [15:05:14] duplex full
+150514.847: [15:05:14] switchport access vlan 101
+150514.847: [15:05:14] channel-group 3 mode active
+150514.847: [15:05:14]!
+150514.847: [15:05:14]interface eth-0-34
+150514.847: [15:05:14] speed 10G
+150514.847: [15:05:14] duplex full
+150514.847: [15:05:14] switchport access vlan 101
+150514.847: [15:05:14] channel-group 3 mode active
+150514.847: [15:05:14]!
+150514.848: [15:05:14]interface eth-0-35
+150514.848: [15:05:14] speed 10G
+150514.848: [15:05:14] duplex full
+150514.848: [15:05:14] switchport access vlan 101
+150514.848: [15:05:14] channel-group 4 mode active
+150514.848: [15:05:14]!
+150514.848: [15:05:14]interface eth-0-36
+150514.848: [15:05:14] speed 10G
+150514.848: [15:05:14] duplex full
+150514.848: [15:05:14] switchport access vlan 101
+150514.848: [15:05:14] channel-group 4 mode active
+150514.848: [15:05:14]!
+150514.848: [15:05:14]interface eth-0-37
+150514.848: [15:05:14] speed 10G
+150514.848: [15:05:14] duplex full
+150514.848: [15:05:14] switchport access vlan 101
+150514.848: [15:05:14] channel-group 5 mode active
+150514.848: [15:05:14]!
+150514.862: [15:05:14]interface eth-0-38
+150514.863: [15:05:14] speed 10G
+150514.863: [15:05:14] duplex full
+150514.863: [15:05:14] switchport access vlan 101
+150514.863: [15:05:14] channel-group 5 mode active
+150514.863: [15:05:14]!
+150514.863: [15:05:14]interface eth-0-39
+150514.863: [15:05:14] speed 10G
+150514.863: [15:05:14] duplex full
+150515.026: [15:05:15] switchport access vlan 101
+150515.026: [15:05:15] channel-group 6 mode active
+150515.026: [15:05:15]!
+150515.026: [15:05:15]interface eth-0-40
+150515.026: [15:05:15] speed 10G
+150515.026: [15:05:15] duplex full
+150515.026: [15:05:15] switchport access vlan 101
+150515.026: [15:05:15] channel-group 6 mode active
+150515.026: [15:05:15]!
+150515.026: [15:05:15]interface eth-0-41
+150515.027: [15:05:15] speed 25G
+150515.027: [15:05:15] duplex full
+150515.027: [15:05:15] switchport access vlan 101
+150515.027: [15:05:15]!
+150515.027: [15:05:15]interface eth-0-42
+150515.027: [15:05:15] speed 25G
+150515.027: [15:05:15] duplex full
+150515.027: [15:05:15] switchport access vlan 101
+150515.027: [15:05:15]!
+150515.027: [15:05:15]interface eth-0-43
+150515.027: [15:05:15] speed 25G
+150515.027: [15:05:15] duplex full
+150515.027: [15:05:15] switchport access vlan 101
+150515.027: [15:05:15]!
+150515.027: [15:05:15]interface eth-0-44
+150515.027: [15:05:15] speed 25G
+150515.027: [15:05:15] duplex full
+150515.027: [15:05:15] switchport access vlan 101
+150515.027: [15:05:15]!
+150515.027: [15:05:15]interface eth-0-45
+150515.027: [15:05:15] speed 25G
+150515.027: [15:05:15] duplex full
+150515.027: [15:05:15] switchport access vlan 101
+150515.027: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-46
+150515.028: [15:05:15] speed 25G
+150515.028: [15:05:15] duplex full
+150515.028: [15:05:15] switchport access vlan 101
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-47
+150515.028: [15:05:15] speed 25G
+150515.028: [15:05:15] duplex full
+150515.028: [15:05:15] fec rs-fec
+150515.028: [15:05:15] switchport access vlan 101
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-48
+150515.028: [15:05:15] speed 10G
+150515.028: [15:05:15] duplex full
+150515.028: [15:05:15] switchport access vlan 101
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-49
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-50
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-51
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-52
+150515.028: [15:05:15]!
+150515.028: [15:05:15]interface eth-0-53
+150515.028: [15:05:15]!
+150515.029: [15:05:15]interface eth-0-54
+150515.029: [15:05:15]!
+150515.029: [15:05:15]interface eth-0-55
+150515.029: [15:05:15]!
+150515.029: [15:05:15]interface eth-0-56
+150515.029: [15:05:15]!
+150515.029: [15:05:15]interface agg1
+150515.029: [15:05:15] switchport access vlan 101
+150515.029: [15:05:15]!
+150515.029: [15:05:15]interface agg2
+150515.029: [15:05:15] switchport access vlan 101
+150515.029: [15:05:15]!
+150515.029: [15:05:15]interface agg3
+150515.029: [15:05:15] switchport access vlan 101
+150515.029: [15:05:15]!
+150515.029: [15:05:15]interface agg4
+150515.195: [15:05:15] switchport access vlan 101
+150515.196: [15:05:15]!
+150515.196: [15:05:15]interface agg5
+150515.196: [15:05:15] switchport access vlan 101
+150515.196: [15:05:15]!
+150515.196: [15:05:15]interface agg6
+150515.196: [15:05:15] switchport access vlan 101
+150515.196: [15:05:15]!
+150515.196: [15:05:15]interface vlan1
+150515.196: [15:05:15] ip address dhcp
+150515.196: [15:05:15]!
+150515.196: [15:05:15]!
+150515.196: [15:05:15]!
+150515.196: [15:05:15]!
+150515.196: [15:05:15]line con 0
+150515.196: [15:05:15] no line-password
+150515.196: [15:05:15] no login
+150515.196: [15:05:15]line vty 0 4
+150515.196: [15:05:15] exec-timeout 35791 0
+150515.196: [15:05:15] privilege level 3
+150515.196: [15:05:15] transport input ssh 
+150515.196: [15:05:15] no line-password
+150515.196: [15:05:15] login local
+150515.196: [15:05:15]line vty 5 7
+150515.197: [15:05:15] exec-timeout 35791 0
+150515.197: [15:05:15] privilege level 4
+150515.197: [15:05:15] no line-password
+150515.197: [15:05:15] no login
+150515.197: [15:05:15]!
+150515.197: [15:05:15]!
+150515.197: [15:05:15]end
+150515.197: [15:05:15]
+150518.043: [15:05:18]SCN9300H-01(config)#  exit
+150520.685: [15:05:20]SCN9300H-01# show ip ?
+150520.686: [15:05:20]  arp                  IP ARP table
+150520.686: [15:05:20]  as-path-access-list  List AS path access lists
+150520.686: [15:05:20]  bgp                  Border Gateway Protocol (BGP)
+150520.686: [15:05:20]  community-list       List community-list
+150520.686: [15:05:20]  dns                  Configure DNS server
+150520.687: [15:05:20]  extcommunity-list    List extended-community list
+150520.687: [15:05:20]  forwarding           IP forwarding status
+150520.687: [15:05:20]  host                 Static dns host-ip pairs
+150520.687: [15:05:20]  igmp                 IGMP information
+150520.687: [15:05:20]  interface            IP interface status and configuration
+150520.687: [15:05:20]  isis                 Intermediate System - Intermediate System (IS-IS)
+150520.687: [15:05:20]  mroute               IP multicast routing table
+150520.688: [15:05:20]  mroute-rpf           Display RPF information for multicast source
+150520.688: [15:05:20]  multicast            Multicast information
+150520.688: [15:05:20]  mvif                 IP multicast interface
+150520.688: [15:05:20]  nat                  Network Address Translation
+150520.688: [15:05:20]  ospf                 OSPF information
+150520.688: [15:05:20]  pim                  Protocol Independent Multicast (PIM)
+150520.688: [15:05:20]  policy               Policy based routing
+150520.688: [15:05:20]  prefix-list          Build a prefix list
+150520.689: [15:05:20]  protocols            IP routing protocol process parameters and statistics
+150520.689: [15:05:20]  rip                  IP RIP show commands
+150520.689: [15:05:20]  route                Route info
+150520.689: [15:05:20]  sla                  IP Service Level Agreement
+150520.689: [15:05:20]  source               Ip source guard configuration
+150520.689: [15:05:20]  ssh                  Configure SSH (secure shell)
+150520.689: [15:05:20]  vrf                  VPN Routing/Forwarding instance
+150520.689: [15:05:20]
+150524.945: [15:05:24]SCN9300H-01# show ip interface ?
+150524.945: [15:05:24]  eth-      Physical interface
+150524.945: [15:05:24]  agg       Aggregation interface
+150524.945: [15:05:24]  loopback  Loopback interface
+150524.945: [15:05:24]  vlan      Vlan interface
+150524.945: [15:05:24]  tunnel    Tunnel interface
+150524.945: [15:05:24]  vxlan     Vxlan interface
+150524.946: [15:05:24]  brief     Brief summary of IP status and configuration
+150524.946: [15:05:24]  |         Output modifiers
+150524.946: [15:05:24]  >         Output redirection
+150524.946: [15:05:24]  <cr>
+150524.946: [15:05:24]
+150528.728: [15:05:28]SCN9300H-01# show ip interface 
+150528.763: [15:05:28]Interface vlan1
+150528.764: [15:05:28]  Interface current state: DOWN
+150528.764: [15:05:28]  Internet address(es):
+150528.764: [15:05:28]    192.168.1.1/24 broadcast 192.168.1.255
+150528.764: [15:05:28]  The maximum transmit unit is 1500 bytes
+150528.764: [15:05:28]  ICMP error messages limited to one every 1000 milliseconds
+150528.764: [15:05:28]  ICMP redirects are always sent
+150528.764: [15:05:28]  ICMP unreachables are always sent
+150528.764: [15:05:28]  ICMP mask replies are always sent
+150528.764: [15:05:28]  ARP timeout 01:00:00,  ARP retry interval 10s
+150528.764: [15:05:28]  ARP Proxy is disabled, Local ARP Proxy is disabled
+150528.765: [15:05:28]  VRRP master of :  VRRP is not configured on this interface
+150528.765: [15:05:28]  VRRP Master of :  VRRP is not configured on this interface.
+150528.765: [15:05:28]
+152424.483: [15:24:24]SCN9300H-01# SCN9300H-01# show ip interface 
+152424.519: [15:24:24]Interface vlan1
+152424.519: [15:24:24]  Interface current state: DOWN
+152424.519: [15:24:24]  Internet address(es):
+152424.519: [15:24:24]    192.168.1.1/24 broadcast 192.168.1.255
+152424.519: [15:24:24]  The maximum transmit unit is 1500 bytes
+152424.519: [15:24:24]  ICMP error messages limited to one every 1000 milliseconds
+152424.519: [15:24:24]  ICMP redirects are always sent
+152424.520: [15:24:24]  ICMP unreachables are always sent
+152424.520: [15:24:24]  ICMP mask replies are always sent
+152424.520: [15:24:24]  ARP timeout 01:00:00,  ARP retry interval 10s
+152424.520: [15:24:24]  ARP Proxy is disabled, Local ARP Proxy is disabled
+152424.520: [15:24:24]  VRRP master of :  VRRP is not configured on this interface
+152424.520: [15:24:24]  VRRP Master of :  VRRP is not configured on this interface.
+152424.520: [15:24:24]

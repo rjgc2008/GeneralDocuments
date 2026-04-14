@@ -1,0 +1,24 @@
+﻿092205.357: [09:22:05][20260347.102.101.163-阿里云-FRPS-陈伟-09:22:05]
+092205.427: [09:22:05]Linux quantum 6.1.0-33-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.133-1 (2025-04-10) x86_64
+092205.428: [09:22:05]
+092205.428: [09:22:05]Welcome to Alibaba Cloud Elastic Compute Service !
+092205.428: [09:22:05]
+092205.428: [09:22:05]Last login: Tue Feb  3 14:14:26 2026 from 223.107.68.194
+092208.405: [09:22:08][root@quantum ~]# ip a
+092208.410: [09:22:08]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+092208.410: [09:22:08]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+092208.410: [09:22:08]    inet 127.0.0.1/8 scope host lo
+092208.410: [09:22:08]       valid_lft forever preferred_lft forever
+092208.410: [09:22:08]    inet6 ::1/128 scope host noprefixroute 
+092208.410: [09:22:08]       valid_lft forever preferred_lft forever
+092208.411: [09:22:08]2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+092208.411: [09:22:08]    link/ether 00:16:3e:16:e9:50 brd ff:ff:ff:ff:ff:ff
+092208.411: [09:22:08]    altname enp0s6
+092208.411: [09:22:08]    altname ens6
+092208.411: [09:22:08]    inet 172.24.48.15/18 metric 100 brd 172.24.63.255 scope global dynamic eth0
+092208.411: [09:22:08]       valid_lft 1874209298sec preferred_lft 1874209298sec
+092208.412: [09:22:08]    inet6 fe80::216:3eff:fe16:e950/64 scope link 
+092208.412: [09:22:08]       valid_lft forever preferred_lft forever
+092212.571: [09:22:12][root@quantum ~]# ps -ef | grep frp
+092212.584: [09:22:12]root        3292       1  0  2025 ?        00:32:58 /opt/frp_0.63.0_linux_amd64/frps -c /opt/frp_0.63.0_linux_amd64/frps.toml
+092212.584: [09:22:12]root      400299  400294  0 09:22 pts/0    00:00:00 grep frp

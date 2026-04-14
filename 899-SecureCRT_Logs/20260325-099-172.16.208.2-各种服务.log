@@ -1,0 +1,97 @@
+﻿141127.384: [14:11:27][202603099-172.16.208.2-各种服务-14:11:27]
+141127.438: [14:11:27]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+141127.438: [14:11:27]
+141127.439: [14:11:27]The programs included with the Debian GNU/Linux system are free software;
+141127.439: [14:11:27]the exact distribution terms for each program are described in the
+141127.439: [14:11:27]individual files in /usr/share/doc/*/copyright.
+141127.439: [14:11:27]
+141127.439: [14:11:27]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+141127.439: [14:11:27]permitted by applicable law.
+141127.439: [14:11:27]Last login: Tue Mar 24 16:19:20 2026 from 192.168.6.173
+141133.046: [14:11:33][root@172-16-208-2 ~]# ip -6 r
+141133.054: [14:11:33]::1 dev lo proto kernel metric 256 pref medium
+141133.054: [14:11:33]2a05:d014:926:ffaa:87dd:ffff:0:2 dev wg0 proto kernel metric 256 pref medium
+141133.054: [14:11:33]fd7a:115c:a1e0::1a01:64a7 dev tailscale0 proto kernel metric 256 pref medium
+141133.054: [14:11:33]fe80::/64 dev ens3 proto kernel metric 100 pref medium
+141133.054: [14:11:33]fe80::/64 dev tailscale0 proto kernel metric 256 pref medium
+141133.055: [14:11:33]fe80::/64 dev docker0 proto kernel metric 256 pref medium
+141133.055: [14:11:33]fe80::/64 dev br-c2f8d78d6e11 proto kernel metric 256 pref medium
+141133.055: [14:11:33]fe80::/64 dev veth0d8b609 proto kernel metric 256 pref medium
+141133.055: [14:11:33]fe80::/64 dev veth6b03248 proto kernel metric 256 pref medium
+141133.055: [14:11:33]fe80::/64 dev veth7349c5b proto kernel metric 256 pref medium
+141133.056: [14:11:33]fe80::/64 dev veth5031693 proto kernel metric 256 pref medium
+141133.056: [14:11:33]fe80::/64 dev veth60c1e34 proto kernel metric 256 pref medium
+141133.056: [14:11:33]fe80::/64 dev veth271af5a proto kernel metric 256 pref medium
+141133.056: [14:11:33]fe80::/64 dev vetha44ef53 proto kernel metric 256 pref medium
+141133.056: [14:11:33]fe80::/64 dev vethc92584d proto kernel metric 256 pref medium
+141133.056: [14:11:33]fe80::/64 dev veth8feb8ac proto kernel metric 256 pref medium
+141133.057: [14:11:33]fe80::/64 dev veth8d73358 proto kernel metric 256 pref medium
+141133.057: [14:11:33]fe80::/64 dev vethc3b152c proto kernel metric 256 pref medium
+141133.057: [14:11:33]fe80::/64 dev vethf5423ba proto kernel metric 256 pref medium
+141133.057: [14:11:33]fe80::/64 dev veth9c71130 proto kernel metric 256 pref medium
+141133.057: [14:11:33]fe80::/64 dev vetha7af7d0 proto kernel metric 256 pref medium
+141133.058: [14:11:33]fe80::/64 dev veth57e9582 proto kernel metric 256 pref medium
+141145.238: [14:11:45][root@172-16-208-2 ~]# ip rule
+141145.238: [14:11:45]0:      from all lookup local
+141145.238: [14:11:45]100:    from 10.253.0.2 lookup wg0table
+141145.239: [14:11:45]101:    from all fwmark 0xc8 lookup r_gw2
+141145.239: [14:11:45]5210:   from all fwmark 0x80000/0xff0000 lookup main
+141145.239: [14:11:45]5230:   from all fwmark 0x80000/0xff0000 lookup default
+141145.240: [14:11:45]5250:   from all fwmark 0x80000/0xff0000 unreachable
+141145.240: [14:11:45]5270:   from all lookup 52
+141145.240: [14:11:45]32766:  from all lookup main
+141145.240: [14:11:45]32767:  from all lookup default
+141151.929: [14:11:51][root@172-16-208-2 ~]# ip -y rule
+141151.929: [14:11:51]Option "-y" is unknown, try "ip -help".
+141210.293: [14:12:10][root@172-16-208-2 ~]# ping pt.zhixing.bjtu.edu.cn
+141210.452: [14:12:10]PING pt.zhixing.bjtu.edu.cn(2001:da8:205::100 (2001:da8:205::100)) 56 data bytes
+141211.447: [14:12:11]From 172-16-208-2 (2a05:d014:926:ffaa:87dd:ffff:0:2) icmp_seq=1 Destination unreachable: Address unreachable
+141211.447: [14:12:11]ping: sendmsg: Destination address required
+141212.763: [14:12:12]From 172-16-208-2 (2a05:d014:926:ffaa:87dd:ffff:0:2) icmp_seq=2 Destination unreachable: Address unreachable
+141212.763: [14:12:12]ping: sendmsg: Destination address required
+141213.786: [14:12:13]From 172-16-208-2 (2a05:d014:926:ffaa:87dd:ffff:0:2) icmp_seq=3 Destination unreachable: Address unreachable
+141213.786: [14:12:13]ping: sendmsg: Destination address required
+141214.787: [14:12:14]From 172-16-208-2 (2a05:d014:926:ffaa:87dd:ffff:0:2) icmp_seq=4 Destination unreachable: Address unreachable
+141214.787: [14:12:14]ping: sendmsg: Destination address required
+141215.546: [14:12:15]^C
+141215.547: [14:12:15]--- pt.zhixing.bjtu.edu.cn ping statistics ---
+141215.547: [14:12:15]4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 4318ms
+141215.547: [14:12:15]
+141227.377: [14:12:27][root@172-16-208-2 ~]# ping 10.253.0.11
+141227.385: [14:12:27]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+141227.385: [14:12:27]From 10.253.0.2 icmp_seq=1 Destination Host Unreachable
+141227.385: [14:12:27]ping: sendmsg: Destination address required
+141228.404: [14:12:28]From 10.253.0.2 icmp_seq=2 Destination Host Unreachable
+141228.404: [14:12:28]ping: sendmsg: Destination address required
+141229.426: [14:12:29]From 10.253.0.2 icmp_seq=3 Destination Host Unreachable
+141229.474: [14:12:29]^C
+141229.474: [14:12:29]--- 10.253.0.11 ping statistics ---
+141229.474: [14:12:29]3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2047ms
+141229.474: [14:12:29]
+141244.210: [14:12:44][root@172-16-208-2 ~]# ssh 10.253.0.3
+141245.180: [14:12:45]Linux 10-253-0-3 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64
+141245.180: [14:12:45]
+141245.180: [14:12:45]The programs included with the Debian GNU/Linux system are free software;
+141245.180: [14:12:45]the exact distribution terms for each program are described in the
+141245.180: [14:12:45]individual files in /usr/share/doc/*/copyright.
+141245.180: [14:12:45]
+141245.181: [14:12:45]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+141245.181: [14:12:45]permitted by applicable law.
+141245.181: [14:12:45]Last login: Tue Mar  3 11:53:35 2026 from 58.211.207.202
+141246.327: [14:12:46][root@10-253-0-3 ~]# 
+141246.581: [14:12:46][root@10-253-0-3 ~]# 
+141249.900: [14:12:49][root@10-253-0-3 ~]# ping 10.253.0.11
+141249.922: [14:12:49]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+141252.794: [14:12:52]^C
+141252.794: [14:12:52]--- 10.253.0.11 ping statistics ---
+141252.794: [14:12:52]3 packets transmitted, 0 received, 100% packet loss, time 2052ms
+141252.794: [14:12:52]
+141747.938: [14:17:47][root@10-253-0-3 ~]# 
+141747.940: [14:17:47]logout
+141747.961: [14:17:47]Connection to 10.253.0.3 closed.
+141751.770: [14:17:51][root@172-16-208-2 ~]# ping 192.168.232.11
+141751.792: [14:17:51]PING 192.168.232.11 (192.168.232.11) 56(84) bytes of data.
+141951.462: [14:19:51]^C
+141951.463: [14:19:51]--- 192.168.232.11 ping statistics ---
+141951.463: [14:19:51]118 packets transmitted, 0 received, 100% packet loss, time 119478ms
+141951.463: [14:19:51]

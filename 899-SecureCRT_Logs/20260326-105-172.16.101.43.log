@@ -1,0 +1,111 @@
+﻿141535.793: [14:15:35][202603105-172.16.101.43-14:15:35]
+141535.807: [14:15:35]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+141535.807: [14:15:35]
+141535.807: [14:15:35] * Documentation:  https://help.ubuntu.com
+141535.807: [14:15:35] * Management:     https://landscape.canonical.com
+141535.807: [14:15:35] * Support:        https://ubuntu.com/pro
+141535.807: [14:15:35]
+141535.807: [14:15:35]扩展安全维护（ESM）Applications 未启用。
+141535.807: [14:15:35]
+141535.808: [14:15:35]199 更新可以立即应用。
+141535.808: [14:15:35]这些更新中有 3 个是标准安全更新。
+141535.808: [14:15:35]要查看这些附加更新，请运行：apt list --upgradable
+141535.808: [14:15:35]
+141535.808: [14:15:35]启用 ESM Apps 来获取未来的额外安全更新
+141535.808: [14:15:35]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+141535.808: [14:15:35]
+141535.808: [14:15:35]*** 需要重启系统 ***
+141535.808: [14:15:35]Last login: Tue Mar 24 16:45:46 2026 from 172.16.208.2
+141538.738: [14:15:38]root@user:~# lscpu
+141538.781: [14:15:38]架构：                    x86_64
+141538.782: [14:15:38]  CPU 运行模式：          32-bit, 64-bit
+141538.782: [14:15:38]  Address sizes:          46 bits physical, 57 bits virtual
+141538.782: [14:15:38]  字节序：                Little Endian
+141538.782: [14:15:38]CPU:                      152
+141538.783: [14:15:38]  在线 CPU 列表：         0-151
+141538.783: [14:15:38]厂商 ID：                 GenuineIntel
+141538.783: [14:15:38]  BIOS Vendor ID:         Intel(R) Corporation
+141538.783: [14:15:38]  型号名称：              Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz
+141538.784: [14:15:38]    BIOS Model name:      Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz  CPU @ 2.4GHz
+141538.784: [14:15:38]    BIOS CPU family:      179
+141538.784: [14:15:38]    CPU 系列：            6
+141538.784: [14:15:38]    型号：                106
+141538.784: [14:15:38]    每个核的线程数：      2
+141538.784: [14:15:38]    每个座的核数：        38
+141538.784: [14:15:38]    座：                  2
+141538.784: [14:15:38]    步进：                6
+141538.784: [14:15:38]    CPU(s) scaling MHz:   31%
+141538.785: [14:15:38]    CPU 最大 MHz：        3400.0000
+141538.785: [14:15:38]    CPU 最小 MHz：        800.0000
+141538.785: [14:15:38]    BogoMIPS：            4800.00
+141538.786: [14:15:38]    标记：                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid 
+141538.786: [14:15:38]                          aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 ssbd mba
+141538.787: [14:15:38]                           ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw av
+141538.788: [14:15:38]                          x512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg 
+141538.788: [14:15:38]                          avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+141538.788: [14:15:38]Virtualization features:  
+141538.788: [14:15:38]  虚拟化：                VT-x
+141538.788: [14:15:38]Caches (sum of all):      
+141538.789: [14:15:38]  L1d:                    3.6 MiB (76 instances)
+141538.789: [14:15:38]  L1i:                    2.4 MiB (76 instances)
+141538.789: [14:15:38]  L2:                     95 MiB (76 instances)
+141538.808: [14:15:38]  L3:                     114 MiB (2 instances)
+141538.808: [14:15:38]NUMA:                     
+141538.808: [14:15:38]  NUMA 节点：             2
+141538.808: [14:15:38]  NUMA 节点0 CPU：        0-37,76-113
+141538.808: [14:15:38]  NUMA 节点1 CPU：        38-75,114-151
+141538.808: [14:15:38]Vulnerabilities:          
+141538.808: [14:15:38]  Gather data sampling:   Mitigation; Microcode
+141538.809: [14:15:38]  Itlb multihit:          Not affected
+141538.809: [14:15:38]  L1tf:                   Not affected
+141538.809: [14:15:38]  Mds:                    Not affected
+141538.809: [14:15:38]  Meltdown:               Not affected
+141538.809: [14:15:38]  Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
+141538.809: [14:15:38]  Reg file data sampling: Not affected
+141538.809: [14:15:38]  Retbleed:               Not affected
+141538.809: [14:15:38]  Spec rstack overflow:   Not affected
+141538.809: [14:15:38]  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+141538.809: [14:15:38]  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+141538.810: [14:15:38]  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+141538.810: [14:15:38]  Srbds:                  Not affected
+141538.810: [14:15:38]  Tsx async abort:        Not affected
+141543.640: [14:15:43]root@user:~# free -h
+141543.652: [14:15:43]               total        used        free      shared  buff/cache   available
+141543.653: [14:15:43]内存：         503Gi       9.3Gi       492Gi        16Mi       4.8Gi       494Gi
+141543.653: [14:15:43]交换：         8.0Gi          0B       8.0Gi
+150352.846: [15:03:52][202603105-172.16.101.43-15:03:52]
+150352.859: [15:03:52]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+150352.859: [15:03:52]
+150352.859: [15:03:52] * Documentation:  https://help.ubuntu.com
+150352.859: [15:03:52] * Management:     https://landscape.canonical.com
+150352.859: [15:03:52] * Support:        https://ubuntu.com/pro
+150352.859: [15:03:52]
+150352.860: [15:03:52]扩展安全维护（ESM）Applications 未启用。
+150352.860: [15:03:52]
+150352.860: [15:03:52]199 更新可以立即应用。
+150352.860: [15:03:52]这些更新中有 3 个是标准安全更新。
+150352.860: [15:03:52]要查看这些附加更新，请运行：apt list --upgradable
+150352.860: [15:03:52]
+150352.861: [15:03:52]启用 ESM Apps 来获取未来的额外安全更新
+150352.861: [15:03:52]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+150352.861: [15:03:52]
+150352.861: [15:03:52]*** 需要重启系统 ***
+150352.862: [15:03:52]Last login: Thu Mar 26 14:15:35 2026 from 172.16.208.2
+152042.826: [15:20:42][202603105-172.16.101.43-15:20:42]
+152042.840: [15:20:42]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+152042.841: [15:20:42]
+152042.841: [15:20:42] * Documentation:  https://help.ubuntu.com
+152042.841: [15:20:42] * Management:     https://landscape.canonical.com
+152042.841: [15:20:42] * Support:        https://ubuntu.com/pro
+152042.841: [15:20:42]
+152042.841: [15:20:42]扩展安全维护（ESM）Applications 未启用。
+152042.841: [15:20:42]
+152042.841: [15:20:42]199 更新可以立即应用。
+152042.841: [15:20:42]这些更新中有 3 个是标准安全更新。
+152042.841: [15:20:42]要查看这些附加更新，请运行：apt list --upgradable
+152042.841: [15:20:42]
+152042.841: [15:20:42]启用 ESM Apps 来获取未来的额外安全更新
+152042.841: [15:20:42]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+152042.841: [15:20:42]
+152042.841: [15:20:42]*** 需要重启系统 ***
+152042.841: [15:20:42]Last login: Thu Mar 26 15:03:52 2026 from 172.16.208.2

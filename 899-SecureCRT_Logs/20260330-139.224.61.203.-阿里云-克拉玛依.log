@@ -1,0 +1,76 @@
+﻿092101.394: [09:21:01][202603139.224.61.203.-阿里云-克拉玛依-09:21:01]
+092101.458: [09:21:01]Linux iZuf6drivybtuws2hzlhefZ 6.1.0-33-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.133-1 (2025-04-10) x86_64
+092101.459: [09:21:01]
+092101.459: [09:21:01]Welcome to Alibaba Cloud Elastic Compute Service !
+092101.459: [09:21:01]
+092101.459: [09:21:01]Last login: Tue Feb  3 14:14:26 2026 from 223.107.68.194
+092109.745: [09:21:09][root@iZuf6drivybtuws2hzlhefZ ~]# ps -ef | grep frp
+092109.751: [09:21:09]root       13664       1  0  2025 ?        00:46:48 /opt/frp_0.63.0_linux_amd64/frps -c /opt/frp_0.63.0_linux_amd64/frps.toml
+092109.751: [09:21:09]root      707418  707414  0 09:21 pts/0    00:00:00 grep --color=auto frp
+092114.655: [09:21:14][root@iZuf6drivybtuws2hzlhefZ ~]# cd /opt/frp_0.63.0_linux_amd64/
+092115.360: [09:21:15][root@iZuf6drivybtuws2hzlhefZ /opt/frp_0.63.0_linux_amd64]# ll
+092115.360: [09:21:15]total 34M
+092115.361: [09:21:15]-rwxr-xr-x 1 root root 15M Sep 19  2025 frpc
+092115.361: [09:21:15]-rw-r--r-- 1 root root 142 Sep 19  2025 frpc.toml
+092115.361: [09:21:15]-rwxr-xr-x 1 root root 19M Sep 19  2025 frps
+092115.361: [09:21:15]-rw-r--r-- 1 root root  16 Sep 19  2025 frps.toml
+092115.362: [09:21:15]-rw-r--r-- 1 root root 12K Sep 19  2025 LICENSE
+133957.299: [13:39:57][202603139.224.61.203.-阿里云-克拉玛依-13:39:57]
+133957.354: [13:39:57]Linux iZuf6drivybtuws2hzlhefZ 6.1.0-33-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.133-1 (2025-04-10) x86_64
+133957.354: [13:39:57]
+133957.354: [13:39:57]Welcome to Alibaba Cloud Elastic Compute Service !
+133957.354: [13:39:57]
+133957.354: [13:39:57]Last login: Mon Mar 30 09:27:16 2026 from 223.107.68.194
+134002.855: [13:40:02][root@iZuf6drivybtuws2hzlhefZ ~]# ss -tlnp
+134002.863: [13:40:02]State                     Recv-Q                    Send-Q                                        Local Address:Port                                         Peer Address:Port                    Process                                                       
+134002.864: [13:40:02]LISTEN                    0                         4096                                             127.0.0.54:53                                                0.0.0.0:*                        users:(("systemd-resolve",pid=584,fd=21))                    
+134002.865: [13:40:02]LISTEN                    0                         128                                                 0.0.0.0:22                                                0.0.0.0:*                        users:(("sshd",pid=13455,fd=3))                              
+134002.865: [13:40:02]LISTEN                    0                         4096                                                0.0.0.0:5355                                              0.0.0.0:*                        users:(("systemd-resolve",pid=584,fd=12))                    
+134002.866: [13:40:02]LISTEN                    0                         4096                                          127.0.0.53%lo:53                                                0.0.0.0:*                        users:(("systemd-resolve",pid=584,fd=19))                    
+134002.867: [13:40:02]LISTEN                    0                         128                                                    [::]:22                                                   [::]:*                        users:(("sshd",pid=13455,fd=4))                              
+134002.868: [13:40:02]LISTEN                    0                         4096                                                      *:443                                                     *:*                        users:(("frps",pid=13664,fd=10))                             
+134002.868: [13:40:02]LISTEN                    0                         4096                                                      *:636                                                     *:*                        users:(("frps",pid=13664,fd=8))                              
+134002.869: [13:40:02]LISTEN                    0                         4096                                                      *:637                                                     *:*                        users:(("frps",pid=13664,fd=7))                              
+134002.869: [13:40:02]LISTEN                    0                         4096                                                      *:7000                                                    *:*                        users:(("frps",pid=13664,fd=3))                              
+134002.870: [13:40:02]LISTEN                    0                         4096                                                   [::]:5355                                                 [::]:*                        users:(("systemd-resolve",pid=584,fd=14))                    
+134008.862: [13:40:08][root@iZuf6drivybtuws2hzlhefZ ~]# 
+134008.984: [13:40:08][root@iZuf6drivybtuws2hzlhefZ ~]# 
+134126.817: [13:41:26][root@iZuf6drivybtuws2hzlhefZ ~]# ss -tlnp
+134126.829: [13:41:26]State                Recv-Q                Send-Q                               Local Address:Port                                Peer Address:Port               Process                                                  
+134126.829: [13:41:26]LISTEN               0                     4096                                    127.0.0.54:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=21))               
+134126.830: [13:41:26]LISTEN               0                     128                                        0.0.0.0:22                                       0.0.0.0:*                   users:(("sshd",pid=13455,fd=3))                         
+134126.830: [13:41:26]LISTEN               0                     4096                                       0.0.0.0:5355                                     0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=12))               
+134126.830: [13:41:26]LISTEN               0                     4096                                 127.0.0.53%lo:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=19))               
+134126.830: [13:41:26]LISTEN               0                     128                                           [::]:22                                          [::]:*                   users:(("sshd",pid=13455,fd=4))                         
+134126.831: [13:41:26]LISTEN               0                     4096                                             *:443                                            *:*                   users:(("frps",pid=13664,fd=11))                        
+134126.831: [13:41:26]LISTEN               0                     4096                                             *:10636                                          *:*                   users:(("frps",pid=13664,fd=10))                        
+134126.831: [13:41:26]LISTEN               0                     4096                                             *:636                                            *:*                   users:(("frps",pid=13664,fd=8))                         
+134126.831: [13:41:26]LISTEN               0                     4096                                             *:637                                            *:*                   users:(("frps",pid=13664,fd=7))                         
+134126.831: [13:41:26]LISTEN               0                     4096                                             *:7000                                           *:*                   users:(("frps",pid=13664,fd=3))                         
+134126.832: [13:41:26]LISTEN               0                     4096                                          [::]:5355                                        [::]:*                   users:(("systemd-resolve",pid=584,fd=14))               
+134133.207: [13:41:33][root@iZuf6drivybtuws2hzlhefZ ~]# ss -tlnp
+134133.215: [13:41:33]State                Recv-Q                Send-Q                               Local Address:Port                                Peer Address:Port               Process                                                  
+134133.216: [13:41:33]LISTEN               0                     4096                                    127.0.0.54:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=21))               
+134133.216: [13:41:33]LISTEN               0                     128                                        0.0.0.0:22                                       0.0.0.0:*                   users:(("sshd",pid=13455,fd=3))                         
+134133.217: [13:41:33]LISTEN               0                     4096                                       0.0.0.0:5355                                     0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=12))               
+134133.218: [13:41:33]LISTEN               0                     4096                                 127.0.0.53%lo:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=19))               
+134133.218: [13:41:33]LISTEN               0                     128                                           [::]:22                                          [::]:*                   users:(("sshd",pid=13455,fd=4))                         
+134133.219: [13:41:33]LISTEN               0                     4096                                             *:443                                            *:*                   users:(("frps",pid=13664,fd=11))                        
+134133.220: [13:41:33]LISTEN               0                     4096                                             *:10636                                          *:*                   users:(("frps",pid=13664,fd=10))                        
+134133.220: [13:41:33]LISTEN               0                     4096                                             *:636                                            *:*                   users:(("frps",pid=13664,fd=8))                         
+134133.221: [13:41:33]LISTEN               0                     4096                                             *:637                                            *:*                   users:(("frps",pid=13664,fd=7))                         
+134133.221: [13:41:33]LISTEN               0                     4096                                             *:7000                                           *:*                   users:(("frps",pid=13664,fd=3))                         
+134133.222: [13:41:33]LISTEN               0                     4096                                          [::]:5355                                        [::]:*                   users:(("systemd-resolve",pid=584,fd=14))               
+134232.136: [13:42:32][root@iZuf6drivybtuws2hzlhefZ ~]# ss -tlnp
+134232.143: [13:42:32]State                Recv-Q                Send-Q                               Local Address:Port                                Peer Address:Port               Process                                                  
+134232.144: [13:42:32]LISTEN               0                     4096                                    127.0.0.54:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=21))               
+134232.145: [13:42:32]LISTEN               0                     128                                        0.0.0.0:22                                       0.0.0.0:*                   users:(("sshd",pid=13455,fd=3))                         
+134232.145: [13:42:32]LISTEN               0                     4096                                       0.0.0.0:5355                                     0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=12))               
+134232.146: [13:42:32]LISTEN               0                     4096                                 127.0.0.53%lo:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=584,fd=19))               
+134232.147: [13:42:32]LISTEN               0                     128                                           [::]:22                                          [::]:*                   users:(("sshd",pid=13455,fd=4))                         
+134232.147: [13:42:32]LISTEN               0                     4096                                             *:443                                            *:*                   users:(("frps",pid=13664,fd=11))                        
+134232.148: [13:42:32]LISTEN               0                     4096                                             *:10636                                          *:*                   users:(("frps",pid=13664,fd=10))                        
+134232.148: [13:42:32]LISTEN               0                     4096                                             *:636                                            *:*                   users:(("frps",pid=13664,fd=8))                         
+134232.149: [13:42:32]LISTEN               0                     4096                                             *:637                                            *:*                   users:(("frps",pid=13664,fd=7))                         
+134232.149: [13:42:32]LISTEN               0                     4096                                             *:7000                                           *:*                   users:(("frps",pid=13664,fd=3))                         
+134232.150: [13:42:32]LISTEN               0                     4096                                          [::]:5355                                        [::]:*                   users:(("systemd-resolve",pid=584,fd=14))               

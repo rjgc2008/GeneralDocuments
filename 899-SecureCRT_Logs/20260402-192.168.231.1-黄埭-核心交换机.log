@@ -1,0 +1,1309 @@
+﻿113451.381: [11:34:51][202604192.168.231.1-黄埭-核心交换机-11:34:51]
+113451.447: [11:34:51]
+113451.453: [11:34:51]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+113451.501: [11:34:51]      The current login time is 2026-01-05 18:46:46.
+113456.609: [11:34:56]<Core-SW>disp
+113457.526: [11:34:57]<Core-SW>display int
+113457.893: [11:34:57]<Core-SW>display interface  br
+113458.079: [11:34:58]<Core-SW>display interface  brief 
+113458.220: [11:34:58]PHY: Physical
+113458.220: [11:34:58]*down: administratively down
+113458.220: [11:34:58]^down: standby
+113458.220: [11:34:58](l): loopback
+113458.220: [11:34:58](s): spoofing
+113458.220: [11:34:58](b): BFD down
+113458.220: [11:34:58](e): ETHOAM down
+113458.221: [11:34:58](d): Dampening Suppressed
+113458.221: [11:34:58](p): port alarm down
+113458.221: [11:34:58](dl): DLDP down
+113458.221: [11:34:58](c): CFM down
+113458.221: [11:34:58](sd): STP instance discarding
+113458.221: [11:34:58](ms): MACsec down
+113458.221: [11:34:58](ed): error down
+113458.222: [11:34:58](lb): LBDT block
+113458.222: [11:34:58]InUti/OutUti: input utility rate/output utility rate
+113458.222: [11:34:58]Interface                  PHY      Protocol  InUti OutUti   inErrors  outErrors
+113458.222: [11:34:58]10GE1/0/1                  down     down         0%     0%          0          0
+113458.231: [11:34:58]10GE1/0/2                  up       up        0.04%  0.02%          0          0
+113458.231: [11:34:58]10GE1/0/3                  down     down         0%     0%          0          0
+113458.231: [11:34:58]10GE1/0/4                  down     down         0%     0%          0          0
+113458.333: [11:34:58]GE1/0/1                    up       up        0.01%  0.01%          0          0
+113458.334: [11:34:58]GE1/0/2                    up       up        0.01%  0.01%          0          0
+113500.443: [11:35:00]GE1/0/3                    up       up        0.01%  0.01%          0          0
+113500.444: [11:35:00]GE1/0/4                    down     down         0%     0%          0          0
+113500.444: [11:35:00]GE1/0/5                    down     down         0%     0%          0          0
+113500.452: [11:35:00]GE1/0/6                    down     down         0%     0%          0          0
+113500.452: [11:35:00]GE1/0/7                    down     down         0%     0%          0          0
+113500.452: [11:35:00]GE1/0/8                    down     down         0%     0%          0          0
+113500.453: [11:35:00]GE1/0/9                    down     down         0%     0%          0          0
+113500.453: [11:35:00]GE1/0/10                   down     down         0%     0%          0          0
+113500.462: [11:35:00]GE1/0/11                   down     down         0%     0%          0          0
+113500.462: [11:35:00]GE1/0/12                   down     down         0%     0%          0          0
+113500.463: [11:35:00]GE1/0/13                   down     down         0%     0%          0          0
+113500.463: [11:35:00]GE1/0/14                   up       up        0.15%  3.26%          0          0
+113500.463: [11:35:00]GE1/0/15                   down     down         0%     0%          0          0
+113500.475: [11:35:00]GE1/0/16                   down     down         0%     0%          0          0
+113500.475: [11:35:00]GE1/0/17                   up       up        0.01%  0.01%          0          0
+113500.475: [11:35:00]GE1/0/18                   up       up        0.01%  0.01%          0          0
+113500.475: [11:35:00]GE1/0/19                   down     down         0%     0%          0          0
+113500.475: [11:35:00]GE1/0/20                   up       up        0.01%  0.01%          0          0
+113500.547: [11:35:00]GE1/0/21                   up       up        3.17%  0.14%          0          0
+113500.547: [11:35:00]GE1/0/22                   down     down         0%     0%          0          0
+113500.548: [11:35:00]GE1/0/23                   down     down         0%     0%          0          0
+113500.548: [11:35:00]GE1/0/24                   down     down         0%     0%          0          0
+113500.610: [11:35:00]MEth0/0/0                  down     down         0%     0%          0          0
+113503.711: [11:35:03]NULL0                      up       up(s)        0%     0%          0          0
+113503.730: [11:35:03]Vlanif10                   up       up           --     --          0          0
+113503.730: [11:35:03]Vlanif222                  up       up           --     --          0          0
+113503.730: [11:35:03]Vlanif229                  up       up           --     --          0          0
+113503.730: [11:35:03]Vlanif230                  up       up           --     --          0          0
+113503.730: [11:35:03]Vlanif231                  up       up           --     --          0          0
+113503.737: [11:35:03]Vlanif232                  up       up           --     --          0          0
+113503.737: [11:35:03]Vlanif242                  up       up           --     --          0          0
+113540.556: [11:35:40]<Core-SW>int
+113543.747: [11:35:43]<Core-SW>disp
+113544.937: [11:35:44]<Core-SW>display int
+113547.000: [11:35:47]<Core-SW>display interface ge
+113548.755: [11:35:48]<Core-SW>display interface GE 1/0/1
+113548.881: [11:35:48]GE1/0/1 current state : UP (ifindex: 2)
+113548.895: [11:35:48]Line protocol current state : UP 
+113548.895: [11:35:48]Description: 
+113548.904: [11:35:48]Switch Port, PVID :    1, TPID : 8100(Hex), The Maximum Frame Length is 9216
+113548.904: [11:35:48]Internet protocol processing : disabled
+113548.913: [11:35:48]IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 1024-07c5-5762
+113549.033: [11:35:49]Port Mode:     COMMON FIBER,     Port Split/Aggregate:               -
+113549.034: [11:35:49]Speed:                 1000,     Loopback:                        NONE
+113549.034: [11:35:49]Duplex:                FULL,     Negotiation:                   ENABLE
+113549.034: [11:35:49]Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+113549.034: [11:35:49]Mdi:                      -,     Fec:                                -
+113549.045: [11:35:49]Last physical up time   : 2025-12-20 17:21:33
+113549.045: [11:35:49]Last physical down time : 2025-12-20 17:21:30
+113549.050: [11:35:49]Current system time: 2026-01-05 18:47:44
+113549.059: [11:35:49]Statistics last cleared:never
+113549.059: [11:35:49]    Last 300 seconds input rate: 499 bits/sec, 0 packets/sec
+113549.059: [11:35:49]    Last 300 seconds output rate: 2128 bits/sec, 1 packets/sec
+113549.059: [11:35:49]    Input peak rate 35540906 bits/sec, Record time: 2026-01-03 23:36:53
+113549.059: [11:35:49]    Output peak rate 64651482 bits/sec, Record time: 2025-12-16 20:07:03
+113549.086: [11:35:49]    Input :         4477802338 bytes,           10134386 packets
+113549.086: [11:35:49]    Output:        19243699893 bytes,           25520770 packets
+113549.110: [11:35:49]    Input:
+113549.111: [11:35:49]      Unicast:                9591890,   Multicast:                  538459
+113556.209: [11:35:56]      Broadcast:                 4037,   Jumbo:                      928274
+113556.210: [11:35:56]      Discard:                      0,   Frames:                         --
+113556.210: [11:35:56]      Pause:                        0,   Ignoreds:                        0
+113556.210: [11:35:56]
+113556.210: [11:35:56]      Total Error:                  0
+113556.210: [11:35:56]      CRC:                          0,   Giants:                          0
+113556.210: [11:35:56]      Jabbers:                     --,   Fragments:                       0
+113556.210: [11:35:56]      Runts:                        0,   DropEvents:                      0
+113556.210: [11:35:56]      Alignments:                   0,   Symbols:                         0
+113556.210: [11:35:56]
+113556.210: [11:35:56]    Output:
+113556.210: [11:35:56]      Unicast:               15140999,   Multicast:                 4952925
+113556.211: [11:35:56]      Broadcast:              5426846,   Jumbo:                     1309854
+113556.211: [11:35:56]      Discard:                      0,   Buffers Purged:                  0
+113556.211: [11:35:56]      Pause:                        0
+113556.211: [11:35:56]
+113556.211: [11:35:56]      Total Error:                  0
+113556.211: [11:35:56]
+113556.211: [11:35:56]    FEC:
+113556.211: [11:35:56]      FEC Corrected Errors:                      0
+113556.211: [11:35:56]      FEC Uncorrected Errors:                    0
+113556.224: [11:35:56]
+113556.224: [11:35:56]    Input bandwidth utilization threshold : 90.00%
+113557.633: [11:35:57]    Output bandwidth utilization threshold: 90.00%
+113557.772: [11:35:57]    Last 300 seconds input utility rate:  0.01%
+113557.772: [11:35:57]    Last 300 seconds output utility rate: 0.01%
+113557.787: [11:35:57]
+113731.008: [11:37:31]<Core-SW>display interface GE 1/0/17
+113731.115: [11:37:31]GE1/0/17 current state : UP (ifindex: 18)
+113731.129: [11:37:31]Line protocol current state : UP 
+113731.129: [11:37:31]Description: 
+113731.137: [11:37:31]Switch Port, PVID :  242, TPID : 8100(Hex), The Maximum Frame Length is 9216
+113731.137: [11:37:31]Internet protocol processing : disabled
+113731.159: [11:37:31]IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 1024-07c5-5762
+113731.187: [11:37:31]Port Mode:    COMMON COPPER,     Port Split:                         -
+113731.187: [11:37:31]Speed:                 1000,     Loopback:                        NONE
+113731.188: [11:37:31]Duplex:                FULL,     Negotiation:                   ENABLE
+113731.188: [11:37:31]Input Flow-control: DISABLE,     Output Flow-control:          DISABLE
+113731.193: [11:37:31]Mdi:                   AUTO
+113731.193: [11:37:31]Last physical up time   : 2025-12-20 17:08:58
+113731.193: [11:37:31]Last physical down time : 2025-12-20 17:08:55
+113731.205: [11:37:31]Current system time: 2026-01-05 18:49:26
+113731.213: [11:37:31]Statistics last cleared:never
+113731.213: [11:37:31]    Last 300 seconds input rate: 45 bits/sec, 0 packets/sec
+113731.213: [11:37:31]    Last 300 seconds output rate: 458 bits/sec, 0 packets/sec
+113731.213: [11:37:31]    Input peak rate 280427 bits/sec, Record time: 2025-12-20 20:29:33
+113731.213: [11:37:31]    Output peak rate 205379 bits/sec, Record time: 2025-12-20 20:28:42
+113731.220: [11:37:31]    Input :           49086575 bytes,             259349 packets
+113731.220: [11:37:31]    Output:         1107853263 bytes,            7479001 packets
+113731.253: [11:37:31]    Input:
+113731.253: [11:37:31]      Unicast:                  87420,   Multicast:                  171558
+113731.253: [11:37:31]      Broadcast:                  371,   Jumbo:                           0
+113733.597: [11:37:33]      Discard:                      0,   Frames:                         --
+113733.597: [11:37:33]      Pause:                        0,   Ignoreds:                        0
+113733.597: [11:37:33]
+113733.597: [11:37:33]      Total Error:                  0
+113733.598: [11:37:33]      CRC:                          0,   Giants:                          0
+113733.598: [11:37:33]      Jabbers:                     --,   Fragments:                       0
+113733.598: [11:37:33]      Runts:                        0,   DropEvents:                      0
+113733.598: [11:37:33]      Alignments:                   0,   Symbols:                         0
+113733.598: [11:37:33]
+113733.598: [11:37:33]    Output:
+113733.599: [11:37:33]      Unicast:                  72322,   Multicast:                 3635415
+113733.599: [11:37:33]      Broadcast:              3771264,   Jumbo:                           0
+113733.599: [11:37:33]      Discard:                      0,   Buffers Purged:                  0
+113733.599: [11:37:33]      Pause:                        0
+113733.599: [11:37:33]
+113733.599: [11:37:33]      Total Error:                  0
+113733.599: [11:37:33]
+113733.599: [11:37:33]    FEC:
+113733.600: [11:37:33]      FEC Corrected Errors:                      0
+113733.600: [11:37:33]      FEC Uncorrected Errors:                    0
+113733.609: [11:37:33]
+113733.609: [11:37:33]    Input bandwidth utilization threshold : 90.00%
+113733.610: [11:37:33]    Output bandwidth utilization threshold: 90.00%
+114733.613: [11:47:33]  ---- More ----
+114739.595: [11:47:39][202604192.168.231.1-黄埭-核心交换机-11:47:39]
+114739.639: [11:47:39]
+114739.648: [11:47:39]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+114739.691: [11:47:39]      The current login time is 2026-01-05 18:59:34.
+115145.407: [11:51:45]<Core-SW>
+115145.507: [11:51:45]<Core-SW>
+115148.919: [11:51:48]<Core-SW>disp ip in bri
+115149.004: [11:51:49]*down: administratively down
+115149.006: [11:51:49]!down: FIB overload down
+115149.006: [11:51:49]^down: standby
+115149.006: [11:51:49](l): loopback
+115149.006: [11:51:49](s): spoofing
+115149.006: [11:51:49](d): Dampening Suppressed
+115149.006: [11:51:49](ed): error down
+115149.006: [11:51:49]The number of interface that is UP in Physical is 8
+115149.006: [11:51:49]The number of interface that is DOWN in Physical is 1
+115149.006: [11:51:49]The number of interface that is UP in Protocol is 8
+115149.006: [11:51:49]The number of interface that is DOWN in Protocol is 1
+115149.025: [11:51:49]Interface                   IP Address/Mask    Physical Protocol VPN           
+115149.025: [11:51:49]MEth0/0/0                   unassigned         down     down     --            
+115149.025: [11:51:49]NULL0                       unassigned         up       up(s)    --            
+115149.025: [11:51:49]Vlanif10                    172.16.0.1/24      up       up       --            
+115149.026: [11:51:49]Vlanif222                   192.168.222.1/24   up       up       --            
+115149.026: [11:51:49]Vlanif229                   10.0.1.2/30        up       up       --            
+115149.035: [11:51:49]Vlanif230                   192.168.230.1/30   up       up       --            
+115149.035: [11:51:49]Vlanif231                   192.168.231.1/30   up       up       --            
+115149.036: [11:51:49]Vlanif232                   192.168.232.1/24   up       up       --            
+115149.036: [11:51:49]Vlanif242                   192.168.242.1/24   up       up       --            
+115700.461: [11:57:00]<Core-SW>ping 172.16.0.2
+115700.698: [11:57:00]  PING 172.16.0.2: 56  data bytes, press CTRL_C to break
+115701.241: [11:57:01]    Reply from 172.16.0.2: bytes=56 Sequence=1 ttl=255 time=1 ms
+115701.747: [11:57:01]    Reply from 172.16.0.2: bytes=56 Sequence=2 ttl=255 time=1 ms
+115702.301: [11:57:02]    Reply from 172.16.0.2: bytes=56 Sequence=3 ttl=255 time=1 ms
+115702.309: [11:57:02]    Reply from 172.16.0.2: bytes=56 Sequence=4 ttl=255 time=1 ms
+115702.309: [11:57:02]
+115702.309: [11:57:02]  --- 172.16.0.2 ping statistics ---
+115702.310: [11:57:02]    4 packet(s) transmitted
+115702.310: [11:57:02]    4 packet(s) received
+115702.310: [11:57:02]    0.00% packet loss
+115702.310: [11:57:02]    round-trip min/avg/max = 1/1/1 ms
+115702.315: [11:57:02] 
+115709.423: [11:57:09]<Core-SW>ping 172.16.0.3
+115709.662: [11:57:09]  PING 172.16.0.3: 56  data bytes, press CTRL_C to break
+115710.237: [11:57:10]    Reply from 172.16.0.3: bytes=56 Sequence=1 ttl=255 time=1 ms
+115710.774: [11:57:10]    Reply from 172.16.0.3: bytes=56 Sequence=2 ttl=255 time=1 ms
+115711.377: [11:57:11]    Reply from 172.16.0.3: bytes=56 Sequence=3 ttl=255 time=1 ms
+115711.804: [11:57:11]    Reply from 172.16.0.3: bytes=56 Sequence=4 ttl=255 time=1 ms
+115711.816: [11:57:11]    Reply from 172.16.0.3: bytes=56 Sequence=5 ttl=255 time=1 ms
+115711.816: [11:57:11]
+115711.816: [11:57:11]  --- 172.16.0.3 ping statistics ---
+115711.816: [11:57:11]    5 packet(s) transmitted
+115711.817: [11:57:11]    5 packet(s) received
+115711.817: [11:57:11]    0.00% packet loss
+115711.817: [11:57:11]    round-trip min/avg/max = 1/1/1 ms
+115711.817: [11:57:11] 
+115713.177: [11:57:13]<Core-SW>ping 172.16.0.4
+115713.422: [11:57:13]  PING 172.16.0.4: 56  data bytes, press CTRL_C to break
+115713.962: [11:57:13]    Reply from 172.16.0.4: bytes=56 Sequence=1 ttl=255 time=1 ms
+115714.550: [11:57:14]    Reply from 172.16.0.4: bytes=56 Sequence=2 ttl=255 time=1 ms
+115715.067: [11:57:15]    Reply from 172.16.0.4: bytes=56 Sequence=3 ttl=255 time=1 ms
+115715.553: [11:57:15]    Reply from 172.16.0.4: bytes=56 Sequence=4 ttl=255 time=1 ms
+115715.566: [11:57:15]    Reply from 172.16.0.4: bytes=56 Sequence=5 ttl=255 time=1 ms
+115715.566: [11:57:15]
+115715.566: [11:57:15]  --- 172.16.0.4 ping statistics ---
+115715.566: [11:57:15]    5 packet(s) transmitted
+115715.566: [11:57:15]    5 packet(s) received
+115715.566: [11:57:15]    0.00% packet loss
+115715.566: [11:57:15]    round-trip min/avg/max = 1/1/1 ms
+115715.566: [11:57:15] 
+115716.684: [11:57:16]<Core-SW>ping 172.16.0.5
+115719.260: [11:57:19]  PING 172.16.0.5: 56  data bytes, press CTRL_C to break
+115721.315: [11:57:21]    Request time out
+115723.427: [11:57:23]    Request time out
+115723.427: [11:57:23]    Request time out
+115723.428: [11:57:23]
+115723.428: [11:57:23]  --- 172.16.0.5 ping statistics ---
+115723.428: [11:57:23]    3 packet(s) transmitted
+115723.428: [11:57:23]    0 packet(s) received
+115723.444: [11:57:23]    100.00% packet loss
+115728.913: [11:57:28]<Core-SW>d l n b 
+115729.006: [11:57:29]Local Interface         Exptime(s) Neighbor Interface            Neighbor Device     
+115729.007: [11:57:29]-------------------------------------------------------------------------------------
+115729.024: [11:57:29]GE1/0/1                        98  10GE1/0/1                     2FBGW-001
+115729.031: [11:57:29]GE1/0/2                       112  10GE1/0/1                     2FBGW-002
+115729.037: [11:57:29]GE1/0/3                        91  10GE1/0/1                     2FBGW-003
+115729.049: [11:57:29]GE1/0/14                       95  Ten-GigabitEthernet1/0/36     H3C
+115729.055: [11:57:29]GE1/0/17                      106  GE1/0/24                      HUAWEI
+115729.062: [11:57:29]GE1/0/18                       95  GE1/0/24                      HUAWEI
+120749.600: [12:07:49]<Core-SW>ping 172.16.0.5
+120755.598: [12:07:55][202604192.168.231.1-黄埭-核心交换机-12:07:55]
+120755.654: [12:07:55]
+120755.661: [12:07:55]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+120755.693: [12:07:55]      The current login time is 2026-01-05 19:19:50.
+121755.838: [12:17:55]<Core-SW>
+121802.011: [12:18:02][202604192.168.231.1-黄埭-核心交换机-12:18:02]
+121802.061: [12:18:02]
+121802.069: [12:18:02]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+121802.106: [12:18:02]      The current login time is 2026-01-05 19:29:57.
+122802.167: [12:28:02]<Core-SW>
+122808.027: [12:28:08][202604192.168.231.1-黄埭-核心交换机-12:28:08]
+122808.079: [12:28:08]
+122808.087: [12:28:08]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+122808.112: [12:28:08]      The current login time is 2026-01-05 19:40:03.
+123808.182: [12:38:08]<Core-SW>
+123813.968: [12:38:13][202604192.168.231.1-黄埭-核心交换机-12:38:13]
+123814.029: [12:38:14]
+123814.041: [12:38:14]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+123814.073: [12:38:14]      The current login time is 2026-01-05 19:50:09.
+124814.186: [12:48:14]<Core-SW>
+124820.649: [12:48:20][202604192.168.231.1-黄埭-核心交换机-12:48:20]
+124820.699: [12:48:20]
+124820.709: [12:48:20]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+124820.734: [12:48:20]      The current login time is 2026-01-05 20:00:15.
+125820.800: [12:58:20]<Core-SW>
+125827.167: [12:58:27][202604192.168.231.1-黄埭-核心交换机-12:58:27]
+125827.215: [12:58:27]
+125827.231: [12:58:27]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+125827.283: [12:58:27]      The current login time is 2026-01-05 20:10:22.
+130827.423: [13:08:27]<Core-SW>
+130833.485: [13:08:33][202604192.168.231.1-黄埭-核心交换机-13:08:33]
+130833.529: [13:08:33]
+130833.536: [13:08:33]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+130833.568: [13:08:33]      The current login time is 2026-01-05 20:20:28.
+131833.619: [13:18:33]<Core-SW>
+131839.595: [13:18:39][202604192.168.231.1-黄埭-核心交换机-13:18:39]
+131839.651: [13:18:39]
+131839.659: [13:18:39]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+131839.702: [13:18:39]      The current login time is 2026-01-05 20:30:34.
+132839.746: [13:28:39]<Core-SW>
+132846.008: [13:28:46][202604192.168.231.1-黄埭-核心交换机-13:28:46]
+132846.064: [13:28:46]
+132846.072: [13:28:46]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+132846.123: [13:28:46]      The current login time is 2026-01-05 20:40:41.
+133106.277: [13:31:06]<Core-SW>
+133106.385: [13:31:06]<Core-SW>
+133108.049: [13:31:08]<Core-SW>disp cu
+133108.663: [13:31:08]<Core-SW>disp current-configuration 
+133108.976: [13:31:08]!Software Version V600R024C00SPC500
+133108.977: [13:31:08]!Last configuration was updated at 2026-01-05 18:45:02+00:00 by admin
+133108.977: [13:31:08]!Last configuration was saved at 2025-12-20 22:56:01+00:00 by huawei123
+133108.977: [13:31:08]#
+133108.977: [13:31:08]pki realm default
+133108.977: [13:31:08]#
+133108.977: [13:31:08]sysname Core-SW
+133108.977: [13:31:08]#
+133108.977: [13:31:08]dhcp enable
+133108.977: [13:31:08]#
+133108.977: [13:31:08]undo ftp server source all-interface
+133108.977: [13:31:08]undo ftp ipv6 server source all-interface
+133108.977: [13:31:08]#
+133108.978: [13:31:08]ssl policy default
+133108.978: [13:31:08] pki-domain default
+133108.978: [13:31:08] ssl minimum version tls1.2
+133108.978: [13:31:08] cipher-suite exclude key-exchange rsa
+133108.978: [13:31:08] cipher-suite exclude cipher mode cbc
+133108.979: [13:31:08] cipher-suite exclude hmac sha1
+133108.979: [13:31:08] diffie-hellman modulus 3072
+133108.979: [13:31:08] ecdh group nist curve brainpool
+133108.979: [13:31:08] signature algorithm-list ed25519 ed448 rsa-pss-pss-sha256 rsa-pss-pss-sha384 rsa-pss-pss-sha512 rsa-pss-rsae-sha256 rsa-pss-rsae-sha384 rsa-pss-rsae-sha512
+133108.979: [13:31:08]#
+133109.928: [13:31:09]info-center logfile compression lzma
+133109.989: [13:31:09]#
+133109.989: [13:31:09]device board 1 board-type S310-24ST4X
+133110.018: [13:31:10]#
+133110.018: [13:31:10]authentication-profile name default_authen_profile
+133110.018: [13:31:10]authentication-profile name dot1x_authen_profile
+133110.018: [13:31:10]authentication-profile name dot1xmac_authen_profile
+133110.019: [13:31:10]authentication-profile name mac_authen_profile
+133110.019: [13:31:10]authentication-profile name multi_authen_profile
+133110.019: [13:31:10]authentication-profile name portal_authen_profile
+133110.276: [13:31:10]#
+133110.276: [13:31:10]drop-profile default
+133110.276: [13:31:10]#
+133110.276: [13:31:10]ntp server source-interface all disable
+133110.277: [13:31:10]ntp ipv6 server source-interface all disable
+133110.277: [13:31:10]#
+133110.277: [13:31:10]vlan batch 10 222 229 to 232 242 1000
+133110.277: [13:31:10]#
+133110.277: [13:31:10]error-down auto-recovery cause link-flap interval 60
+133110.277: [13:31:10]#
+133110.277: [13:31:10]telnet server enable
+133110.277: [13:31:10]telnet server-source all-interface
+133110.278: [13:31:10]undo telnet ipv6 server-source all-interface
+133110.574: [13:31:10]#               
+133110.574: [13:31:10]qos schedule-profile default
+133110.574: [13:31:10]#
+133110.574: [13:31:10]diffserv domain default
+133110.574: [13:31:10]#
+133110.575: [13:31:10]ip vpn-instance _management_vpn_
+133110.575: [13:31:10] ipv4-family
+133110.575: [13:31:10]#
+133110.575: [13:31:10]vlan 10
+133110.575: [13:31:10]#
+133110.575: [13:31:10]vlan 222
+133110.575: [13:31:10] description 222
+133110.575: [13:31:10]#
+133110.575: [13:31:10]vlan 229
+133110.575: [13:31:10] description VLAN229
+133110.575: [13:31:10]#
+133110.575: [13:31:10]vlan 230
+133110.575: [13:31:10] description 230
+133110.575: [13:31:10]#
+133110.575: [13:31:10]vlan 231
+133110.576: [13:31:10] description 231
+133110.576: [13:31:10]#
+133110.576: [13:31:10]vlan 1000
+133111.734: [13:31:11]#               
+133111.736: [13:31:11]aaa
+133111.736: [13:31:11] authentication-scheme default
+133111.736: [13:31:11]  authentication-mode local
+133111.736: [13:31:11] authentication-scheme radius
+133111.736: [13:31:11]  authentication-mode radius
+133111.736: [13:31:11] authorization-scheme default
+133111.736: [13:31:11]  authorization-mode local
+133111.736: [13:31:11] accounting-scheme default
+133111.736: [13:31:11]  accounting-mode none
+133111.736: [13:31:11] local-aaa-user password policy administrator
+133111.736: [13:31:11]  password history record number 0
+133111.736: [13:31:11]  undo password alert original
+133111.736: [13:31:11]  password expire 0
+133111.736: [13:31:11]  password complexity two-of-kinds
+133111.736: [13:31:11] domain default
+133111.736: [13:31:11]  authentication-scheme default
+133111.736: [13:31:11]  accounting-scheme default
+133111.736: [13:31:11] domain default_admin
+133111.736: [13:31:11]  authentication-scheme default
+133111.736: [13:31:11]  accounting-scheme default
+133111.736: [13:31:11] local-aaa-user user-name complexity-check disable
+133111.736: [13:31:11] local-user admin password irreversible-cipher $1d$Wqac7p:W68$qPH#F$"Q8:BB>z[9DWY"M8R<r881D&$&=j2+>9O](O2wu6$
+133111.949: [13:31:11] local-user admin privilege level 3
+133111.949: [13:31:11] local-user admin service-type telnet ssh http
+133111.950: [13:31:11] local-user huawei password irreversible-cipher $1d$L!U_*j^eN@BX#|9j$\9yhE7\]2E2~WkKtcy<ORGeR6x-"o<wm!p%*D>,M$
+133111.950: [13:31:11] local-user huawei privilege level 1
+133111.950: [13:31:11] local-user huawei service-type terminal
+133111.951: [13:31:11] local-user huawei123 password irreversible-cipher $1d$bYhlFlI>IMWN*EM8$Z%~)&%u(kV3Gxj/MW.2;>GU~~R^v]N48_#&@(<6H$
+133111.951: [13:31:11] local-user huawei123 privilege level 3
+133111.951: [13:31:11] local-user huawei123 service-type terminal
+133112.015: [13:31:12]#
+133112.015: [13:31:12]free-rule-template name default_free_rule
+133112.067: [13:31:12]#
+133112.068: [13:31:12]dot1x-access-profile name dot1x_access_profile
+133112.093: [13:31:12]#
+133112.093: [13:31:12]mac-access-profile name mac_access_profile
+133112.421: [13:31:12]#
+133112.421: [13:31:12]stack
+133112.421: [13:31:12]#
+133112.421: [13:31:12]license
+133112.421: [13:31:12]#
+133112.421: [13:31:12]warranty
+133112.421: [13:31:12]#
+133112.421: [13:31:12]interface Vlanif10
+133112.421: [13:31:12] description GuanLi
+133112.611: [13:31:12] ip address 172.16.0.1 255.255.255.0
+133112.611: [13:31:12]#
+133112.611: [13:31:12]interface Vlanif222
+133112.611: [13:31:12] ip address 192.168.222.1 255.255.255.0
+133112.611: [13:31:12]#
+133112.611: [13:31:12]interface Vlanif229
+133112.611: [13:31:12] ip address 10.0.1.2 255.255.255.252
+133112.611: [13:31:12]#
+133112.611: [13:31:12]interface Vlanif230
+133112.612: [13:31:12] ip address 192.168.230.1 255.255.255.252
+133112.612: [13:31:12]#
+133112.612: [13:31:12]interface Vlanif231
+133112.612: [13:31:12] ip address 192.168.231.1 255.255.255.252
+133112.612: [13:31:12]#
+133112.612: [13:31:12]interface Vlanif232
+133112.612: [13:31:12] ip address 192.168.232.1 255.255.255.0
+133112.612: [13:31:12]#
+133112.612: [13:31:12]interface Vlanif242
+133112.612: [13:31:12] ip address 192.168.242.1 255.255.255.0
+133112.612: [13:31:12] dhcp select interface
+133112.612: [13:31:12] dhcp server dns-list 112.4.0.55 223.5.5.5 
+133112.612: [13:31:12]#
+133112.612: [13:31:12]interface MEth0/0/0
+133113.190: [13:31:13]#               
+133113.190: [13:31:13]interface GE1/0/1
+133113.190: [13:31:13] port link-type trunk
+133113.190: [13:31:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133113.191: [13:31:13] device transceiver 1000BASE-X
+133113.191: [13:31:13]#
+133113.191: [13:31:13]interface GE1/0/2
+133113.191: [13:31:13] port link-type trunk
+133113.191: [13:31:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133113.191: [13:31:13] device transceiver 1000BASE-X
+133113.191: [13:31:13]#
+133113.191: [13:31:13]interface GE1/0/3
+133113.191: [13:31:13] port link-type trunk
+133113.191: [13:31:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133113.192: [13:31:13] device transceiver 1000BASE-X
+133113.192: [13:31:13]#
+133113.192: [13:31:13]interface GE1/0/4
+133113.192: [13:31:13] port link-type trunk
+133113.192: [13:31:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133113.192: [13:31:13] device transceiver 1000BASE-X
+133113.192: [13:31:13]#
+133113.192: [13:31:13]interface GE1/0/5
+133113.192: [13:31:13] port link-type trunk
+133113.987: [13:31:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133113.987: [13:31:13] device transceiver 1000BASE-X
+133113.988: [13:31:13]#
+133113.988: [13:31:13]interface GE1/0/6
+133113.988: [13:31:13] port link-type trunk
+133113.988: [13:31:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133113.988: [13:31:13]#
+133113.988: [13:31:13]interface GE1/0/7
+133113.988: [13:31:13] port link-type access
+133113.988: [13:31:13] port default vlan 242
+133113.988: [13:31:13]#
+133113.988: [13:31:13]interface GE1/0/8
+133113.988: [13:31:13] port link-type access
+133113.988: [13:31:13] port default vlan 242
+133113.988: [13:31:13]#
+133113.989: [13:31:13]interface GE1/0/9
+133113.989: [13:31:13] port link-type access
+133113.989: [13:31:13] port default vlan 242
+133113.989: [13:31:13]#
+133113.989: [13:31:13]interface GE1/0/10
+133113.989: [13:31:13] port link-type access
+133113.989: [13:31:13] port default vlan 242
+133113.989: [13:31:13]#
+133114.269: [13:31:14]interface GE1/0/11
+133114.269: [13:31:14] port link-type access
+133114.269: [13:31:14] port default vlan 242
+133114.269: [13:31:14]#
+133114.269: [13:31:14]interface GE1/0/12
+133114.270: [13:31:14] port link-type access
+133114.270: [13:31:14] port default vlan 242
+133114.270: [13:31:14]#
+133114.270: [13:31:14]interface GE1/0/13
+133114.270: [13:31:14] port link-type access
+133114.270: [13:31:14] port default vlan 242
+133114.270: [13:31:14]#
+133114.270: [13:31:14]interface GE1/0/14
+133114.270: [13:31:14] port link-type access
+133114.271: [13:31:14] port default vlan 231
+133114.271: [13:31:14] device transceiver 1000BASE-X
+133114.271: [13:31:14]#
+133114.271: [13:31:14]interface GE1/0/15
+133114.271: [13:31:14] port link-type access
+133114.271: [13:31:14] port default vlan 242
+133114.271: [13:31:14]#
+133114.271: [13:31:14]interface GE1/0/16
+133114.272: [13:31:14] port link-type access
+133114.681: [13:31:14] port default vlan 242
+133114.681: [13:31:14]#
+133114.681: [13:31:14]interface GE1/0/17
+133114.681: [13:31:14] port link-type access
+133114.681: [13:31:14] port default vlan 242
+133114.681: [13:31:14]#
+133114.681: [13:31:14]interface GE1/0/18
+133114.682: [13:31:14] description SBW
+133114.682: [13:31:14] port link-type access
+133114.682: [13:31:14] port default vlan 232
+133114.682: [13:31:14]#
+133114.682: [13:31:14]interface GE1/0/19
+133114.682: [13:31:14] port link-type access
+133114.682: [13:31:14] port default vlan 242
+133114.682: [13:31:14]#
+133114.683: [13:31:14]interface GE1/0/20
+133114.683: [13:31:14] port link-type access
+133114.683: [13:31:14] port default vlan 222
+133114.683: [13:31:14]#
+133114.683: [13:31:14]interface GE1/0/21
+133114.683: [13:31:14] port link-type access
+133114.683: [13:31:14] port default vlan 230
+133114.683: [13:31:14]#
+133114.924: [13:31:14]interface GE1/0/22
+133114.924: [13:31:14] port link-type access
+133114.925: [13:31:14] port default vlan 242
+133114.925: [13:31:14]#
+133114.925: [13:31:14]interface GE1/0/23
+133114.925: [13:31:14] port link-type access
+133114.925: [13:31:14] port default vlan 242
+133114.925: [13:31:14]#
+133114.925: [13:31:14]interface GE1/0/24
+133114.925: [13:31:14] port link-type access
+133114.925: [13:31:14] port default vlan 242
+133114.926: [13:31:14]#
+133114.926: [13:31:14]interface 10GE1/0/1
+133114.926: [13:31:14] description to AR
+133114.926: [13:31:14] port link-type access
+133114.926: [13:31:14] port default vlan 10
+133114.926: [13:31:14] device transceiver 1000BASE-X
+133114.926: [13:31:14]#
+133114.926: [13:31:14]interface 10GE1/0/2
+133114.926: [13:31:14] port link-type access
+133114.926: [13:31:14] port default vlan 229
+133114.926: [13:31:14] device transceiver 1000BASE-X
+133114.926: [13:31:14]#
+133115.138: [13:31:15]interface 10GE1/0/3
+133115.138: [13:31:15] port link-type trunk
+133115.138: [13:31:15] port trunk allow-pass vlan 2 to 238 240 to 4094
+133115.138: [13:31:15]#
+133115.138: [13:31:15]interface 10GE1/0/4
+133115.138: [13:31:15] port link-type access
+133115.138: [13:31:15] port default vlan 230
+133115.138: [13:31:15] device transceiver 1000BASE-X
+133115.138: [13:31:15]#
+133115.139: [13:31:15]interface NULL0
+133115.139: [13:31:15]#
+133115.139: [13:31:15]ip route-static 0.0.0.0 0.0.0.0 Vlanif231 192.168.231.2 preference 59
+133115.139: [13:31:15]ip route-static 10.50.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.139: [13:31:15]ip route-static 10.52.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.139: [13:31:15]ip route-static 10.60.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.139: [13:31:15]ip route-static 10.62.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.140: [13:31:15]ip route-static 10.70.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.140: [13:31:15]ip route-static 10.72.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.140: [13:31:15]ip route-static 10.80.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.140: [13:31:15]ip route-static 10.82.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133115.140: [13:31:15]ip route-static 172.16.101.0 255.255.255.0 Vlanif231 192.168.231.2
+133115.140: [13:31:15]ip route-static 172.16.208.0 255.255.240.0 Vlanif231 192.168.231.2
+133115.141: [13:31:15]ip route-static 192.168.1.0 255.255.255.0 Vlanif10 10.0.1.1
+133115.347: [13:31:15]ip route-static 192.168.2.0 255.255.255.0 Vlanif231 192.168.231.2
+133115.347: [13:31:15]ip route-static 192.168.3.0 255.255.255.0 Vlanif231 192.168.231.2
+133115.347: [13:31:15]ip route-static 192.168.4.0 255.255.252.0 Vlanif231 192.168.231.2 preference 59
+133115.347: [13:31:15]ip route-static 192.168.12.0 255.255.252.0 Vlanif231 192.168.231.2
+133115.347: [13:31:15]ip route-static 192.168.100.0 255.255.252.0 Vlanif230 192.168.230.2
+133115.348: [13:31:15]ip route-static 192.168.200.0 255.255.255.0 Vlanif10 10.0.1.1
+133115.348: [13:31:15]#
+133115.348: [13:31:15]snmp-agent local-engineid 800007DB03102407C55762
+133115.348: [13:31:15]#
+133115.348: [13:31:15]snmp-agent sys-info version v3
+133115.348: [13:31:15]#
+133115.348: [13:31:15]undo snmp-agent protocol source-status all-interface
+133115.348: [13:31:15]undo snmp-agent protocol source-status ipv6 all-interface
+133115.348: [13:31:15]#
+133115.348: [13:31:15]undo snmp-agent proxy protocol source-status all-interface
+133115.348: [13:31:15]undo snmp-agent proxy protocol source-status ipv6 all-interface
+133115.348: [13:31:15]#
+133115.348: [13:31:15]#
+133115.348: [13:31:15]stelnet server enable
+133115.348: [13:31:15]ssh server rsa-key min-length 3072
+133115.348: [13:31:15]ssh server-source all-interface
+133115.348: [13:31:15]undo ssh ipv6 server-source all-interface
+133115.348: [13:31:15]ssh authorization-type default aaa
+133115.565: [13:31:15]#               
+133115.566: [13:31:15]ssh server cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+133115.566: [13:31:15]ssh server hmac sha2_512 sha2_256
+133115.566: [13:31:15]ssh server key-exchange dh_group_exchange_sha256 dh_group16_sha512 curve25519_sha256
+133115.566: [13:31:15]#
+133115.566: [13:31:15]ssh server publickey rsa_sha2_256 rsa_sha2_512
+133115.567: [13:31:15]#
+133115.567: [13:31:15]ssh server dh-exchange min-len 3072
+133115.567: [13:31:15]#
+133115.567: [13:31:15]ssh client publickey rsa_sha2_256 rsa_sha2_512
+133115.567: [13:31:15]#
+133115.567: [13:31:15]ssh client cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+133115.567: [13:31:15]ssh client hmac sha2_512 sha2_256
+133115.568: [13:31:15]ssh client key-exchange dh_group_exchange_sha256 dh_group16_sha512 curve25519_sha256
+133115.568: [13:31:15]#
+133115.568: [13:31:15]user-interface maximum-vty 5
+133115.568: [13:31:15]#
+133115.568: [13:31:15]user-interface con 0
+133115.568: [13:31:15] authentication-mode aaa
+133115.568: [13:31:15]#
+133115.568: [13:31:15]user-interface vty 0 4
+133115.568: [13:31:15] authentication-mode aaa
+133115.568: [13:31:15]#
+133116.369: [13:31:16]ztp domain-type registration-center domain register.naas.huawei.com port 10020
+133116.370: [13:31:16]#
+133116.370: [13:31:16]http
+133116.370: [13:31:16] service restconf
+133116.370: [13:31:16]  server-source Vlanif1
+133116.370: [13:31:16]#
+133116.370: [13:31:16]smart-upgrade
+133116.371: [13:31:16] http url houp.huawei.com
+133116.394: [13:31:16]#
+133116.394: [13:31:16]web-manager enable port 8443
+133116.394: [13:31:16]web-manager http forward enable
+133116.394: [13:31:16]web-manager server-source -i Vlanif1
+133116.394: [13:31:16]web-manager server-source all-interface
+133116.406: [13:31:16]#
+133116.406: [13:31:16]return
+133235.822: [13:32:35]<Core-SW>disp
+133237.201: [13:32:37]<Core-SW>display verson
+133237.483: [13:32:37]<Core-SW>display verson
+133237.522: [13:32:37]                 ^
+133237.522: [13:32:37]Error: Unrecognized command found at '^' position.
+133240.234: [13:32:40]<Core-SW>display ver   
+133240.979: [13:32:40]<Core-SW>display version 
+133241.509: [13:32:41]Huawei YunShan OS
+133241.510: [13:32:41]Version 1.24.0.1 (S310 V600R024C00SPC500)
+133241.510: [13:32:41]Copyright (C) 2021-2024 Huawei Technologies Co., Ltd.
+133241.510: [13:32:41]HUAWEI eKitEngine S310 uptime is 58 days, 19 hours, 44 minutes
+133241.510: [13:32:41]Patch Version: V600R024SPH120
+133241.654: [13:32:41]
+133241.655: [13:32:41]S310-24ST4X(Master) 1 : uptime is  58 days, 19 hours, 43 minutes
+133241.655: [13:32:41]        StartupTime 2025/11/08   01:01:23
+133241.655: [13:32:41]Memory      Size    : 2048 M bytes
+133241.656: [13:32:41]Flash       Size    : 1024 M bytes
+133241.656: [13:32:41]S310-24ST4X version information:
+133241.656: [13:32:41]1.PCB       Version : ES5D2S30S000 VER A
+133241.656: [13:32:41]2.MAB       Version : 2
+133241.656: [13:32:41]3.Board     Type    : S310-24ST4X
+133241.656: [13:32:41]4.BIOS      Version : 1390
+133241.656: [13:32:41]5.CPLD      Version : 273
+133645.201: [13:36:45]<Core-SW>display version | incl database
+133645.734: [13:36:45]Huawei YunShan OS
+133645.735: [13:36:45]Version 1.24.0.1 (S310 V600R024C00SPC500)
+133645.735: [13:36:45]Copyright (C) 2021-2024 Huawei Technologies Co., Ltd.
+133645.735: [13:36:45]HUAWEI eKitEngine S310 uptime is 58 days, 19 hours, 48 minutes
+133657.398: [13:36:57]<Core-SW>display version | incl database
+133657.819: [13:36:57]Huawei YunShan OS
+133657.820: [13:36:57]Version 1.24.0.1 (S310 V600R024C00SPC500)
+133657.820: [13:36:57]Copyright (C) 2021-2024 Huawei Technologies Co., Ltd.
+133657.820: [13:36:57]HUAWEI eKitEngine S310 uptime is 58 days, 19 hours, 48 minutes
+133702.460: [13:37:02]<Core-SW>display version | include database
+133702.836: [13:37:02]Huawei YunShan OS
+133702.836: [13:37:02]Version 1.24.0.1 (S310 V600R024C00SPC500)
+133702.836: [13:37:02]Copyright (C) 2021-2024 Huawei Technologies Co., Ltd.
+133702.837: [13:37:02]HUAWEI eKitEngine S310 uptime is 58 days, 19 hours, 48 minutes
+133705.279: [13:37:05]<Core-SW>
+133705.780: [13:37:05]<Core-SW>
+133705.854: [13:37:05]<Core-SW>
+133705.941: [13:37:05]<Core-SW>
+133706.023: [13:37:06]<Core-SW>
+133706.116: [13:37:06]<Core-SW>
+133706.191: [13:37:06]<Core-SW>
+133706.277: [13:37:06]<Core-SW>
+133709.302: [13:37:09]<Core-SW>disp cu
+133710.006: [13:37:10]<Core-SW>disp current-configuration 
+133710.103: [13:37:10]!Software Version V600R024C00SPC500
+133710.103: [13:37:10]!Last configuration was updated at 2026-01-05 18:45:02+00:00 by admin
+133710.104: [13:37:10]!Last configuration was saved at 2025-12-20 22:56:01+00:00 by huawei123
+133710.104: [13:37:10]#
+133710.104: [13:37:10]pki realm default
+133710.104: [13:37:10]#
+133710.104: [13:37:10]sysname Core-SW
+133710.104: [13:37:10]#
+133710.104: [13:37:10]dhcp enable
+133710.104: [13:37:10]#
+133710.104: [13:37:10]undo ftp server source all-interface
+133710.105: [13:37:10]undo ftp ipv6 server source all-interface
+133710.105: [13:37:10]#
+133710.105: [13:37:10]ssl policy default
+133710.105: [13:37:10] pki-domain default
+133710.105: [13:37:10] ssl minimum version tls1.2
+133710.105: [13:37:10] cipher-suite exclude key-exchange rsa
+133710.105: [13:37:10] cipher-suite exclude cipher mode cbc
+133710.105: [13:37:10] cipher-suite exclude hmac sha1
+133710.105: [13:37:10] diffie-hellman modulus 3072
+133710.106: [13:37:10] ecdh group nist curve brainpool
+133710.106: [13:37:10] signature algorithm-list ed25519 ed448 rsa-pss-pss-sha256 rsa-pss-pss-sha384 rsa-pss-pss-sha512 rsa-pss-rsae-sha256 rsa-pss-rsae-sha384 rsa-pss-rsae-sha512
+133710.106: [13:37:10]#
+133711.810: [13:37:11]info-center logfile compression lzma
+133711.845: [13:37:11]#
+133711.845: [13:37:11]device board 1 board-type S310-24ST4X
+133711.859: [13:37:11]#
+133711.859: [13:37:11]authentication-profile name default_authen_profile
+133711.859: [13:37:11]authentication-profile name dot1x_authen_profile
+133711.859: [13:37:11]authentication-profile name dot1xmac_authen_profile
+133711.859: [13:37:11]authentication-profile name mac_authen_profile
+133711.859: [13:37:11]authentication-profile name multi_authen_profile
+133711.859: [13:37:11]authentication-profile name portal_authen_profile
+133711.903: [13:37:11]#
+133711.903: [13:37:11]drop-profile default
+133711.903: [13:37:11]#
+133711.903: [13:37:11]ntp server source-interface all disable
+133711.903: [13:37:11]ntp ipv6 server source-interface all disable
+133711.903: [13:37:11]#
+133711.904: [13:37:11]vlan batch 10 222 229 to 232 242 1000
+133711.904: [13:37:11]#
+133711.904: [13:37:11]error-down auto-recovery cause link-flap interval 60
+133711.904: [13:37:11]#
+133711.904: [13:37:11]telnet server enable
+133711.904: [13:37:11]telnet server-source all-interface
+133711.904: [13:37:11]undo telnet ipv6 server-source all-interface
+133712.304: [13:37:12]#               
+133712.304: [13:37:12]qos schedule-profile default
+133712.304: [13:37:12]#
+133712.304: [13:37:12]diffserv domain default
+133712.304: [13:37:12]#
+133712.304: [13:37:12]ip vpn-instance _management_vpn_
+133712.304: [13:37:12] ipv4-family
+133712.305: [13:37:12]#
+133712.305: [13:37:12]vlan 10
+133712.305: [13:37:12]#
+133712.305: [13:37:12]vlan 222
+133712.305: [13:37:12] description 222
+133712.305: [13:37:12]#
+133712.305: [13:37:12]vlan 229
+133712.305: [13:37:12] description VLAN229
+133712.305: [13:37:12]#
+133712.305: [13:37:12]vlan 230
+133712.305: [13:37:12] description 230
+133712.305: [13:37:12]#
+133712.305: [13:37:12]vlan 231
+133712.305: [13:37:12] description 231
+133712.305: [13:37:12]#
+133712.305: [13:37:12]vlan 1000
+133712.418: [13:37:12]#               
+133712.418: [13:37:12]aaa
+133712.418: [13:37:12] authentication-scheme default
+133712.418: [13:37:12]  authentication-mode local
+133712.418: [13:37:12] authentication-scheme radius
+133712.418: [13:37:12]  authentication-mode radius
+133712.418: [13:37:12] authorization-scheme default
+133712.418: [13:37:12]  authorization-mode local
+133712.419: [13:37:12] accounting-scheme default
+133712.419: [13:37:12]  accounting-mode none
+133712.419: [13:37:12] local-aaa-user password policy administrator
+133712.419: [13:37:12]  password history record number 0
+133712.419: [13:37:12]  undo password alert original
+133712.419: [13:37:12]  password expire 0
+133712.419: [13:37:12]  password complexity two-of-kinds
+133712.419: [13:37:12] domain default
+133712.419: [13:37:12]  authentication-scheme default
+133712.419: [13:37:12]  accounting-scheme default
+133712.420: [13:37:12] domain default_admin
+133712.420: [13:37:12]  authentication-scheme default
+133712.420: [13:37:12]  accounting-scheme default
+133712.420: [13:37:12] local-aaa-user user-name complexity-check disable
+133712.420: [13:37:12] local-user admin password irreversible-cipher $1d$Wqac7p:W68$qPH#F$"Q8:BB>z[9DWY"M8R<r881D&$&=j2+>9O](O2wu6$
+133712.483: [13:37:12] local-user admin privilege level 3
+133712.483: [13:37:12] local-user admin service-type telnet ssh http
+133712.484: [13:37:12] local-user huawei password irreversible-cipher $1d$L!U_*j^eN@BX#|9j$\9yhE7\]2E2~WkKtcy<ORGeR6x-"o<wm!p%*D>,M$
+133712.484: [13:37:12] local-user huawei privilege level 1
+133712.484: [13:37:12] local-user huawei service-type terminal
+133712.484: [13:37:12] local-user huawei123 password irreversible-cipher $1d$bYhlFlI>IMWN*EM8$Z%~)&%u(kV3Gxj/MW.2;>GU~~R^v]N48_#&@(<6H$
+133712.484: [13:37:12] local-user huawei123 privilege level 3
+133712.484: [13:37:12] local-user huawei123 service-type terminal
+133712.590: [13:37:12]#
+133712.591: [13:37:12]free-rule-template name default_free_rule
+133712.655: [13:37:12]#
+133712.655: [13:37:12]dot1x-access-profile name dot1x_access_profile
+133712.700: [13:37:12]#
+133712.701: [13:37:12]mac-access-profile name mac_access_profile
+133712.756: [13:37:12]#
+133712.756: [13:37:12]stack
+133712.756: [13:37:12]#
+133712.756: [13:37:12]license
+133712.756: [13:37:12]#
+133712.756: [13:37:12]warranty
+133712.756: [13:37:12]#
+133712.756: [13:37:12]interface Vlanif10
+133712.757: [13:37:12] description GuanLi
+133712.769: [13:37:12] ip address 172.16.0.1 255.255.255.0
+133712.769: [13:37:12]#
+133712.769: [13:37:12]interface Vlanif222
+133712.769: [13:37:12] ip address 192.168.222.1 255.255.255.0
+133712.769: [13:37:12]#
+133712.769: [13:37:12]interface Vlanif229
+133712.769: [13:37:12] ip address 10.0.1.2 255.255.255.252
+133712.769: [13:37:12]#
+133712.769: [13:37:12]interface Vlanif230
+133712.769: [13:37:12] ip address 192.168.230.1 255.255.255.252
+133712.769: [13:37:12]#
+133712.769: [13:37:12]interface Vlanif231
+133712.770: [13:37:12] ip address 192.168.231.1 255.255.255.252
+133712.770: [13:37:12]#
+133712.770: [13:37:12]interface Vlanif232
+133712.770: [13:37:12] ip address 192.168.232.1 255.255.255.0
+133712.770: [13:37:12]#
+133712.770: [13:37:12]interface Vlanif242
+133712.770: [13:37:12] ip address 192.168.242.1 255.255.255.0
+133712.770: [13:37:12] dhcp select interface
+133712.770: [13:37:12] dhcp server dns-list 112.4.0.55 223.5.5.5 
+133712.770: [13:37:12]#
+133712.770: [13:37:12]interface MEth0/0/0
+133712.792: [13:37:12]#               
+133712.792: [13:37:12]interface GE1/0/1
+133712.792: [13:37:12] port link-type trunk
+133712.792: [13:37:12] port trunk allow-pass vlan 2 to 238 240 to 4094
+133712.792: [13:37:12] device transceiver 1000BASE-X
+133712.792: [13:37:12]#
+133712.792: [13:37:12]interface GE1/0/2
+133712.792: [13:37:12] port link-type trunk
+133712.792: [13:37:12] port trunk allow-pass vlan 2 to 238 240 to 4094
+133712.792: [13:37:12] device transceiver 1000BASE-X
+133712.792: [13:37:12]#
+133712.792: [13:37:12]interface GE1/0/3
+133712.792: [13:37:12] port link-type trunk
+133712.793: [13:37:12] port trunk allow-pass vlan 2 to 238 240 to 4094
+133712.793: [13:37:12] device transceiver 1000BASE-X
+133712.793: [13:37:12]#
+133712.793: [13:37:12]interface GE1/0/4
+133712.793: [13:37:12] port link-type trunk
+133712.793: [13:37:12] port trunk allow-pass vlan 2 to 238 240 to 4094
+133712.793: [13:37:12] device transceiver 1000BASE-X
+133712.793: [13:37:12]#
+133712.793: [13:37:12]interface GE1/0/5
+133712.793: [13:37:12] port link-type trunk
+133712.793: [13:37:12] port trunk allow-pass vlan 2 to 238 240 to 4094
+133712.793: [13:37:12] device transceiver 1000BASE-X
+133712.793: [13:37:12]#
+133712.793: [13:37:12]interface GE1/0/6
+133712.793: [13:37:12] port link-type trunk
+133712.794: [13:37:12] port trunk allow-pass vlan 2 to 238 240 to 4094
+133712.794: [13:37:12]#
+133712.794: [13:37:12]interface GE1/0/7
+133712.794: [13:37:12] port link-type access
+133712.794: [13:37:12] port default vlan 242
+133712.794: [13:37:12]#
+133712.794: [13:37:12]interface GE1/0/8
+133712.794: [13:37:12] port link-type access
+133712.794: [13:37:12] port default vlan 242
+133712.794: [13:37:12]#
+133712.794: [13:37:12]interface GE1/0/9
+133712.794: [13:37:12] port link-type access
+133712.794: [13:37:12] port default vlan 242
+133712.794: [13:37:12]#
+133712.794: [13:37:12]interface GE1/0/10
+133712.794: [13:37:12] port link-type access
+133712.794: [13:37:12] port default vlan 242
+133712.794: [13:37:12]#
+133712.805: [13:37:12]interface GE1/0/11
+133712.805: [13:37:12] port link-type access
+133712.805: [13:37:12] port default vlan 242
+133712.805: [13:37:12]#
+133712.805: [13:37:12]interface GE1/0/12
+133712.805: [13:37:12] port link-type access
+133712.805: [13:37:12] port default vlan 242
+133712.805: [13:37:12]#
+133712.805: [13:37:12]interface GE1/0/13
+133712.805: [13:37:12] port link-type access
+133712.805: [13:37:12] port default vlan 242
+133712.805: [13:37:12]#
+133712.805: [13:37:12]interface GE1/0/14
+133712.805: [13:37:12] port link-type access
+133712.805: [13:37:12] port default vlan 231
+133712.805: [13:37:12] device transceiver 1000BASE-X
+133712.806: [13:37:12]#
+133712.806: [13:37:12]interface GE1/0/15
+133712.806: [13:37:12] port link-type access
+133712.806: [13:37:12] port default vlan 242
+133712.806: [13:37:12]#
+133712.806: [13:37:12]interface GE1/0/16
+133712.806: [13:37:12] port link-type access
+133712.883: [13:37:12] port default vlan 242
+133712.883: [13:37:12]#
+133712.883: [13:37:12]interface GE1/0/17
+133712.883: [13:37:12] port link-type access
+133712.883: [13:37:12] port default vlan 242
+133712.883: [13:37:12]#
+133712.883: [13:37:12]interface GE1/0/18
+133712.883: [13:37:12] description SBW
+133712.883: [13:37:12] port link-type access
+133712.883: [13:37:12] port default vlan 232
+133712.883: [13:37:12]#
+133712.883: [13:37:12]interface GE1/0/19
+133712.883: [13:37:12] port link-type access
+133712.883: [13:37:12] port default vlan 242
+133712.883: [13:37:12]#
+133712.884: [13:37:12]interface GE1/0/20
+133712.884: [13:37:12] port link-type access
+133712.884: [13:37:12] port default vlan 222
+133712.884: [13:37:12]#
+133712.884: [13:37:12]interface GE1/0/21
+133712.884: [13:37:12] port link-type access
+133712.884: [13:37:12] port default vlan 230
+133712.884: [13:37:12]#
+133712.992: [13:37:12]interface GE1/0/22
+133712.992: [13:37:12] port link-type access
+133712.992: [13:37:12] port default vlan 242
+133712.992: [13:37:12]#
+133712.992: [13:37:12]interface GE1/0/23
+133712.992: [13:37:12] port link-type access
+133712.992: [13:37:12] port default vlan 242
+133712.993: [13:37:12]#
+133712.993: [13:37:12]interface GE1/0/24
+133712.993: [13:37:12] port link-type access
+133712.993: [13:37:12] port default vlan 242
+133712.993: [13:37:12]#
+133712.993: [13:37:12]interface 10GE1/0/1
+133712.993: [13:37:12] description to AR
+133712.993: [13:37:12] port link-type access
+133712.993: [13:37:12] port default vlan 10
+133712.993: [13:37:12] device transceiver 1000BASE-X
+133712.993: [13:37:12]#
+133712.993: [13:37:12]interface 10GE1/0/2
+133712.993: [13:37:12] port link-type access
+133712.993: [13:37:12] port default vlan 229
+133712.993: [13:37:12] device transceiver 1000BASE-X
+133712.993: [13:37:12]#
+133713.058: [13:37:13]interface 10GE1/0/3
+133713.058: [13:37:13] port link-type trunk
+133713.058: [13:37:13] port trunk allow-pass vlan 2 to 238 240 to 4094
+133713.058: [13:37:13]#
+133713.058: [13:37:13]interface 10GE1/0/4
+133713.058: [13:37:13] port link-type access
+133713.058: [13:37:13] port default vlan 230
+133713.058: [13:37:13] device transceiver 1000BASE-X
+133713.058: [13:37:13]#
+133713.058: [13:37:13]interface NULL0
+133713.058: [13:37:13]#
+133713.058: [13:37:13]ip route-static 0.0.0.0 0.0.0.0 Vlanif231 192.168.231.2 preference 59
+133713.058: [13:37:13]ip route-static 10.50.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.52.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.60.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.62.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.70.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.72.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.80.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 10.82.0.0 255.255.255.0 Vlanif230 192.168.230.2
+133713.059: [13:37:13]ip route-static 172.16.101.0 255.255.255.0 Vlanif231 192.168.231.2
+133713.059: [13:37:13]ip route-static 172.16.208.0 255.255.240.0 Vlanif231 192.168.231.2
+133713.060: [13:37:13]ip route-static 192.168.1.0 255.255.255.0 Vlanif10 10.0.1.1
+133713.136: [13:37:13]ip route-static 192.168.2.0 255.255.255.0 Vlanif231 192.168.231.2
+133713.136: [13:37:13]ip route-static 192.168.3.0 255.255.255.0 Vlanif231 192.168.231.2
+133713.136: [13:37:13]ip route-static 192.168.4.0 255.255.252.0 Vlanif231 192.168.231.2 preference 59
+133713.137: [13:37:13]ip route-static 192.168.12.0 255.255.252.0 Vlanif231 192.168.231.2
+133713.137: [13:37:13]ip route-static 192.168.100.0 255.255.252.0 Vlanif230 192.168.230.2
+133713.137: [13:37:13]ip route-static 192.168.200.0 255.255.255.0 Vlanif10 10.0.1.1
+133713.137: [13:37:13]#
+133713.137: [13:37:13]snmp-agent local-engineid 800007DB03102407C55762
+133713.137: [13:37:13]#
+133713.137: [13:37:13]snmp-agent sys-info version v3
+133713.137: [13:37:13]#
+133713.137: [13:37:13]undo snmp-agent protocol source-status all-interface
+133713.137: [13:37:13]undo snmp-agent protocol source-status ipv6 all-interface
+133713.137: [13:37:13]#
+133713.137: [13:37:13]undo snmp-agent proxy protocol source-status all-interface
+133713.137: [13:37:13]undo snmp-agent proxy protocol source-status ipv6 all-interface
+133713.137: [13:37:13]#
+133713.138: [13:37:13]#
+133713.138: [13:37:13]stelnet server enable
+133713.138: [13:37:13]ssh server rsa-key min-length 3072
+133713.138: [13:37:13]ssh server-source all-interface
+133713.138: [13:37:13]undo ssh ipv6 server-source all-interface
+133713.138: [13:37:13]ssh authorization-type default aaa
+133713.222: [13:37:13]#               
+133713.222: [13:37:13]ssh server cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+133713.222: [13:37:13]ssh server hmac sha2_512 sha2_256
+133713.223: [13:37:13]ssh server key-exchange dh_group_exchange_sha256 dh_group16_sha512 curve25519_sha256
+133713.223: [13:37:13]#
+133713.223: [13:37:13]ssh server publickey rsa_sha2_256 rsa_sha2_512
+133713.223: [13:37:13]#
+133713.223: [13:37:13]ssh server dh-exchange min-len 3072
+133713.223: [13:37:13]#
+133713.223: [13:37:13]ssh client publickey rsa_sha2_256 rsa_sha2_512
+133713.223: [13:37:13]#
+133713.223: [13:37:13]ssh client cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+133713.223: [13:37:13]ssh client hmac sha2_512 sha2_256
+133713.224: [13:37:13]ssh client key-exchange dh_group_exchange_sha256 dh_group16_sha512 curve25519_sha256
+133713.224: [13:37:13]#
+133713.224: [13:37:13]user-interface maximum-vty 5
+133713.224: [13:37:13]#
+133713.224: [13:37:13]user-interface con 0
+133713.224: [13:37:13] authentication-mode aaa
+133713.224: [13:37:13]#
+133713.224: [13:37:13]user-interface vty 0 4
+133713.224: [13:37:13] authentication-mode aaa
+133713.224: [13:37:13]#
+133713.314: [13:37:13]ztp domain-type registration-center domain register.naas.huawei.com port 10020
+133713.314: [13:37:13]#
+133713.314: [13:37:13]http
+133713.314: [13:37:13] service restconf
+133713.314: [13:37:13]  server-source Vlanif1
+133713.314: [13:37:13]#
+133713.314: [13:37:13]smart-upgrade
+133713.315: [13:37:13] http url houp.huawei.com
+133713.328: [13:37:13]#
+133713.329: [13:37:13]web-manager enable port 8443
+133713.329: [13:37:13]web-manager http forward enable
+133713.329: [13:37:13]web-manager server-source -i Vlanif1
+133713.329: [13:37:13]web-manager server-source all-interface
+133713.346: [13:37:13]#
+133713.346: [13:37:13]return
+133824.906: [13:38:24]<Core-SW>    dsip
+133827.955: [13:38:27]<Core-SW>disp     
+133828.660: [13:38:28]<Core-SW>display dh
+133830.809: [13:38:30]<Core-SW>display dhcp i
+133833.348: [13:38:33]<Core-SW>display dhcp ?
+133833.391: [13:38:33]  client         DHCP client
+133833.391: [13:38:33]  configuration  DHCP configuration
+133833.391: [13:38:33]  option82       DHCP option82
+133833.391: [13:38:33]  relay          DHCP relay
+133833.391: [13:38:33]  server         DHCP server
+133833.391: [13:38:33]  snooping       DHCP snooping
+133833.391: [13:38:33]  statistics     Statistics
+133833.391: [13:38:33]
+133850.052: [13:38:50]<Core-SW>display ip poo
+133851.840: [13:38:51]<Core-SW>display ip pool int
+133852.631: [13:38:52]<Core-SW>display ip pool interface vl
+133854.557: [13:38:54]<Core-SW>display ip pool interface Vlanif242 ?
+133854.601: [13:38:54]  X.X.X.X   Start IP address
+133854.601: [13:38:54]  all       Detail information
+133854.601: [13:38:54]  conflict  Information of conflict IP address
+133854.601: [13:38:54]  expired   Information of expired IP address
+133854.601: [13:38:54]  used      Information of used IP address
+133854.601: [13:38:54]  |         Matching output
+133854.601: [13:38:54]  >         Redirect the output to a file
+133854.601: [13:38:54]  >>        Redirect the output to a file in append mode
+133854.602: [13:38:54]  <cr>      
+133854.602: [13:38:54]
+133856.252: [13:38:56]<Core-SW>display ip pool interface Vlanif242 
+133856.427: [13:38:56] 
+133856.427: [13:38:56]  Pool-name        : Vlanif242
+133856.427: [13:38:56]  Pool-No          : 0
+133856.428: [13:38:56]  Lease            : 1 Days 0 Hours 0 Minutes
+133856.428: [13:38:56]  Domain-name      : -
+133856.428: [13:38:56]  DNS-server0      : 112.4.0.55      
+133856.428: [13:38:56]  DNS-server1      : 223.5.5.5       
+133856.428: [13:38:56]  NBNS-server0     : -               
+133856.429: [13:38:56]  Netbios-type     : -               
+133856.429: [13:38:56]  Position         : Interface       
+133856.429: [13:38:56]  Status           : Unlocked
+133856.429: [13:38:56]  Gateway-0        : -               
+133856.429: [13:38:56]  Network          : 192.168.242.0
+133856.429: [13:38:56]  Mask             : 255.255.255.0
+133856.430: [13:38:56]  VPN instance     : --
+133856.430: [13:38:56]  Logging          : Disable
+133856.430: [13:38:56]  Conflicted address recycle interval: -
+133856.430: [13:38:56]  Address Statistic: Total       :254       Used        :3          
+133856.430: [13:38:56]                     Idle        :251       Expired     :3          
+133856.430: [13:38:56]                     Conflict    :0         Disabled    :0      
+133856.430: [13:38:56]
+133856.431: [13:38:56] -------------------------------------------------------------------------------------
+133856.431: [13:38:56]  Network section 
+133900.843: [13:39:00]<Core-SW>display ip pool interface Vlanif242 ?
+133900.891: [13:39:00]  X.X.X.X   Start IP address
+133900.892: [13:39:00]  all       Detail information
+133900.892: [13:39:00]  conflict  Information of conflict IP address
+133900.892: [13:39:00]  expired   Information of expired IP address
+133900.892: [13:39:00]  used      Information of used IP address
+133900.892: [13:39:00]  |         Matching output
+133900.892: [13:39:00]  >         Redirect the output to a file
+133900.892: [13:39:00]  >>        Redirect the output to a file in append mode
+133900.892: [13:39:00]  <cr>      
+133900.892: [13:39:00]
+133903.924: [13:39:03]<Core-SW>display ip pool interface Vlanif242 us
+133904.444: [13:39:04]<Core-SW>display ip pool interface Vlanif242 used 
+133904.623: [13:39:04] 
+133904.623: [13:39:04]  Pool-name        : Vlanif242
+133904.623: [13:39:04]  Pool-No          : 0
+133904.623: [13:39:04]  Lease            : 1 Days 0 Hours 0 Minutes
+133904.623: [13:39:04]  Domain-name      : -
+133904.624: [13:39:04]  DNS-server0      : 112.4.0.55      
+133904.624: [13:39:04]  DNS-server1      : 223.5.5.5       
+133904.624: [13:39:04]  NBNS-server0     : -               
+133904.624: [13:39:04]  Netbios-type     : -               
+133904.624: [13:39:04]  Position         : Interface       
+133904.624: [13:39:04]  Status           : Unlocked
+133904.625: [13:39:04]  Gateway-0        : -               
+133904.625: [13:39:04]  Network          : 192.168.242.0
+133904.625: [13:39:04]  Mask             : 255.255.255.0
+133904.625: [13:39:04]  VPN instance     : --
+133904.625: [13:39:04]  Logging          : Disable
+133904.625: [13:39:04]  Conflicted address recycle interval: -
+133904.625: [13:39:04]  Address Statistic: Total       :254       Used        :3          
+133904.625: [13:39:04]                     Idle        :251       Expired     :3          
+133904.625: [13:39:04]                     Conflict    :0         Disabled    :0      
+133904.626: [13:39:04]
+133904.626: [13:39:04] -------------------------------------------------------------------------------------
+133904.626: [13:39:04]  Network section 
+133906.479: [13:39:06]         Start           End       Total    Used Idle(Expired) Conflict Disabled
+133906.480: [13:39:06] -------------------------------------------------------------------------------------
+133906.480: [13:39:06]   192.168.242.1 192.168.242.254     254       3        251(3)       0     0
+133906.480: [13:39:06] -------------------------------------------------------------------------------------
+133906.480: [13:39:06] Client-ID format as follows:            
+133906.480: [13:39:06]   DHCP    : mac-address            
+133906.481: [13:39:06]   IPSec   : user-id/portnumber/vrf            
+133906.481: [13:39:06]   SSL-VPN : user-id/session-id
+133906.481: [13:39:06] -------------------------------------------------------------------------------------
+133906.481: [13:39:06]  Index              IP             Client-ID    Type       Left   Status           
+133906.481: [13:39:06] -------------------------------------------------------------------------------------
+133906.482: [13:39:06]     68  192.168.242.69        905e-44b2-eb32    DHCP      82282   Used             
+133906.482: [13:39:06]    153 192.168.242.154        d843-aee6-5efe    DHCP      57438   Used             
+133906.482: [13:39:06]    179 192.168.242.180        2053-8d07-97a3    DHCP      85793   Used             
+133906.482: [13:39:06] -------------------------------------------------------------------------------------
+133915.511: [13:39:15]<Core-SW>sy
+133915.528: [13:39:15]Enter system view, return user view with return command.
+133916.044: [13:39:16][Core-SW]int
+133916.604: [13:39:16][Core-SW]interface v
+133917.114: [13:39:17][Core-SW]interface Vlanif 
+133917.320: [13:39:17][Core-SW]interface Vlanif 
+133918.046: [13:39:18][Core-SW]interface Vlanif 24
+133918.346: [13:39:18][Core-SW]interface Vlanif 24
+133918.409: [13:39:18]Error: The VLAN does not exist.
+133919.669: [13:39:19][Core-SW]interface Vlanif 242
+133921.310: [13:39:21][Core-SW-Vlanif242]d this
+133921.388: [13:39:21]#
+133921.388: [13:39:21]interface Vlanif242
+133921.389: [13:39:21] ip address 192.168.242.1 255.255.255.0
+133921.389: [13:39:21] dhcp select interface
+133921.389: [13:39:21] dhcp server dns-list 112.4.0.55 223.5.5.5 
+133921.389: [13:39:21]#
+133921.389: [13:39:21]return
+133923.533: [13:39:23][Core-SW-Vlanif242]dhp
+133925.051: [13:39:25][Core-SW-Vlanif242]dhc
+133926.080: [13:39:26][Core-SW-Vlanif242]dhcp ?
+133926.096: [13:39:26]  client    DHCP client
+133926.096: [13:39:26]  option82  DHCP option82
+133926.096: [13:39:26]  relay     DHCP relay
+133926.096: [13:39:26]  select    Select
+133926.096: [13:39:26]  server    DHCP server 
+133926.096: [13:39:26]
+133930.153: [13:39:30][Core-SW-Vlanif242]dhcp c
+133930.663: [13:39:30][Core-SW-Vlanif242]dhcp client ?
+133930.680: [13:39:30]  class-id         Class identifier
+133930.681: [13:39:30]  client-id        Client identifier
+133930.681: [13:39:30]  default-ip       Bind the default IP after the DHCP interaction fails
+133930.681: [13:39:30]  default-route    Specifies default route preference
+133930.681: [13:39:30]  expected-lease   Client expected lease
+133930.681: [13:39:30]  gateway-detect   Gateway detect
+133930.681: [13:39:30]  hostname         Host name
+133930.681: [13:39:30]  renew            DHCP client renew
+133930.681: [13:39:30]  request          Request
+133930.681: [13:39:30]  vendor-specific  The vendor-specific sub-option
+133930.681: [13:39:30]
+133942.736: [13:39:42][Core-SW-Vlanif242]dhcp client exp
+133943.608: [13:39:43][Core-SW-Vlanif242]dhcp client expected-lease ?
+133943.623: [13:39:43]  INTEGER<60-864000>  Expected lease time(seconds)
+133943.623: [13:39:43]
+134129.410: [13:41:29][Core-SW-Vlanif242]?                          
+134129.518: [13:41:29]Current view commands:
+134129.518: [13:41:29]  arp                     ARP protocol
+134129.518: [13:41:29]  authentication-profile  Authentication profile
+134129.519: [13:41:29]  bandwidth               Specify MIB-referenced bandwidth of the interface
+134129.519: [13:41:29]  clear                   Clear the current setting
+134129.519: [13:41:29]  commit                  Commit the configuration to the system
+134129.519: [13:41:29]  configuration           Configuration
+134129.519: [13:41:29]  damping                 Set delay-time for VLANIF to go down when all ports in
+134129.520: [13:41:29]                          VLAN turn down
+134129.520: [13:41:29]  description             Specify interface description
+134129.520: [13:41:29]  dhcp                    Dynamic host configure protocol
+134129.520: [13:41:29]  dhcpv6                  Dynamic host configure protocol for IPv6
+134129.520: [13:41:29]  direct-route            Direct route
+134129.520: [13:41:29]  display                 Display current system information
+134129.520: [13:41:29]  icmp                    ICMP protocol
+134129.520: [13:41:29]  ip                      IP information
+134129.520: [13:41:29]  ipv6                    IPv6 configuration commands
+134129.520: [13:41:29]  monitor                 Monitor
+134129.521: [13:41:29]  mtu                     Specify Maximum Transmission Unit(MTU) of the
+134129.521: [13:41:29]                          interface
+134129.521: [13:41:29]  ntp                     Specify NTP(Network Time Protocol) configuration
+134129.521: [13:41:29]                          information
+134129.521: [13:41:29]  ping                    Ping function
+134134.401: [13:41:34]  pki                     Configure Public Key Infrastructure (PKI) module
+134134.401: [13:41:34]                          information
+134134.401: [13:41:34]  protocol                Set protocol time
+134134.402: [13:41:34]  quit                    Exit from the current command view
+134134.402: [13:41:34]  reset                   Reset operation
+134134.402: [13:41:34]  restart                 Restart the specified interface
+134134.402: [13:41:34]  return                  Exit to user view
+134134.402: [13:41:34]  run                     Execute command of user view
+134134.402: [13:41:34]  set                     Set operation
+134134.402: [13:41:34]  shutdown                Shutdown the specified interface
+134134.402: [13:41:34]  stack                   Stack
+134134.402: [13:41:34]  statistics              Statistics information
+134134.402: [13:41:34]  test-aaa                Accounts test
+134134.402: [13:41:34]  trace                   Trace route (switch) to host at the data link layer
+134134.403: [13:41:34]  tracert                 Trace route to host
+134134.403: [13:41:34]  traffic-policy          Apply specific traffic policy
+134134.403: [13:41:34]  undo                    Cancel the current setting
+134134.403: [13:41:34]  vrrp                    Specify configuration information of VRRP
+134134.404: [13:41:34]  vrrp6                   Specify configuration information of VRRP6
+134134.404: [13:41:34]
+134136.743: [13:41:36][Core-SW-Vlanif242]qex
+134137.726: [13:41:37][Core-SW-Vlanif242]e  
+134138.528: [13:41:38][Core-SW-Vlanif242]e?
+134138.641: [13:41:38]                   ^
+134138.641: [13:41:38]Error: Unrecognized command found at '^' position.
+134147.396: [13:41:47][Core-SW-Vlanif242]dhcp
+134148.044: [13:41:48][Core-SW-Vlanif242]dhcpv6se
+134150.183: [13:41:50][Core-SW-Vlanif242]dhcp    
+134151.757: [13:41:51][Core-SW-Vlanif242]dhcp ?
+134151.771: [13:41:51]  client    DHCP client
+134151.771: [13:41:51]  option82  DHCP option82
+134151.771: [13:41:51]  relay     DHCP relay
+134151.771: [13:41:51]  select    Select
+134151.771: [13:41:51]  server    DHCP server 
+134151.771: [13:41:51]
+134152.921: [13:41:52][Core-SW-Vlanif242]dhcp se
+134154.025: [13:41:54][Core-SW-Vlanif242]dhcp select
+134154.907: [13:41:54][Core-SW-Vlanif242]dhcp server ?
+134154.925: [13:41:54]  alarm                Alarm
+134154.925: [13:41:54]  bootfile             Configure Bootfile Name
+134154.925: [13:41:54]  conflict             Information of conflict IP address
+134154.926: [13:41:54]  dns-list             Configure DNS servers
+134154.926: [13:41:54]  domain-name          Configure domain name 
+134154.926: [13:41:54]  excluded-ip-address  Mark disable IP addresses 
+134154.926: [13:41:54]  force                Force to insert option in DHCP reply messages
+134154.926: [13:41:54]  gateway-list         Configure the gateway
+134154.926: [13:41:54]  ip-range             Range of addresses
+134154.926: [13:41:54]  lease                Configure the lease of the IP pool
+134154.926: [13:41:54]  logging              Log the information of assigning IP addresses
+134154.926: [13:41:54]  mask                 Mask
+134154.927: [13:41:54]  nbns-list            Configure the windows's netbios name servers 
+134154.927: [13:41:54]  netbios-type         Netbios node type
+134154.927: [13:41:54]  next-server          The address of the server to use in the next step of the
+134154.927: [13:41:54]                       client's bootstrap process
+134154.927: [13:41:54]  option               Configure the DHCP options
+134154.927: [13:41:54]  option121            DHCP option 121 
+134154.927: [13:41:54]  option184            DHCP option 184
+134154.927: [13:41:54]  reserved             Reserved
+134154.927: [13:41:54]  sip-server           SIP server
+134154.928: [13:41:54]  sname                Configure Server Name
+134154.928: [13:41:54]  static-bind          Static bind
+134159.893: [13:41:59][Core-SW-Vlanif242]dhcp server ex
+134540.855: [13:45:40][Core-SW-Vlanif242]dhcp server excluded-ip-address ?
+134540.872: [13:45:40]  X.X.X.X  The start IP address of the excluded IP network section
+134540.872: [13:45:40]
+134550.775: [13:45:50][Core-SW-Vlanif242]dhcp server excluded-ip-address 192.168.242.1 ?
+134550.791: [13:45:50]  X.X.X.X  The end IP address of the excluded IP network section
+134550.792: [13:45:50]  <cr>     
+134550.792: [13:45:50]
+134603.658: [13:46:03][Core-SW-Vlanif242]dhcp server excluded-ip-address 192.168.242.1 192.168.242.29 ?
+134603.674: [13:46:03]  <cr>  
+134603.674: [13:46:03]
+134605.588: [13:46:05][Core-SW-Vlanif242]dhcp server excluded-ip-address 192.168.242.1 192.168.242.29 
+134609.334: [13:46:09][Core-SW-Vlanif242]d this
+134609.387: [13:46:09]#
+134609.387: [13:46:09]interface Vlanif242
+134609.387: [13:46:09] ip address 192.168.242.1 255.255.255.0
+134609.387: [13:46:09] dhcp select interface
+134609.388: [13:46:09] dhcp server dns-list 112.4.0.55 223.5.5.5 
+134609.388: [13:46:09] dhcp server excluded-ip-address 192.168.242.1 192.168.242.29
+134609.388: [13:46:09]#
+134609.388: [13:46:09]return
+134652.937: [13:46:52][Core-SW-Vlanif242]quit
+134654.439: [13:46:54][Core-SW]quit
+134656.016: [13:46:56]<Core-SW>save
+134656.875: [13:46:56]Warning: The current configuration will be written to the device. Continue? [Y/N]:y
+134702.119: [13:47:02]Now saving the current configuration to the slot 1 .....
+134702.129: [13:47:02]Info: Save the configuration successfully.
+135702.562: [13:57:02]<Core-SW>
+135708.505: [13:57:08][202604192.168.231.1-黄埭-核心交换机-13:57:08]
+135708.538: [13:57:08]
+135708.545: [13:57:08]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+135708.599: [13:57:08]      The current login time is 2026-01-05 21:09:03.
+140708.730: [14:07:08]<Core-SW>
+140715.042: [14:07:15][202604192.168.231.1-黄埭-核心交换机-14:07:15]
+140715.085: [14:07:15]
+140715.091: [14:07:15]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+140715.121: [14:07:15]      The current login time is 2026-01-05 21:19:10.
+141715.188: [14:17:15]<Core-SW>
+141720.987: [14:17:20][202604192.168.231.1-黄埭-核心交换机-14:17:20]
+141721.044: [14:17:21]
+141721.051: [14:17:21]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+141721.086: [14:17:21]      The current login time is 2026-01-05 21:29:16.
+142721.131: [14:27:21]<Core-SW>
+142727.125: [14:27:27][202604192.168.231.1-黄埭-核心交换机-14:27:27]
+142727.188: [14:27:27]
+142727.195: [14:27:27]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+142727.229: [14:27:27]      The current login time is 2026-01-05 21:39:22.
+143727.287: [14:37:27]<Core-SW>
+143733.786: [14:37:33][202604192.168.231.1-黄埭-核心交换机-14:37:33]
+143733.842: [14:37:33]
+143733.842: [14:37:33]Info: The max number of VTY users is 5, the number of current VTY users online is 1, and total number of terminal users online is 1.
+143733.883: [14:37:33]      The current login time is 2026-01-05 21:49:29.
+144734.038: [14:47:34]<Core-SW>

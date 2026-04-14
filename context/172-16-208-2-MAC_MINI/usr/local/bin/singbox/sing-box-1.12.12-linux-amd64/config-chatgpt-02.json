@@ -50,6 +50,13 @@
                 ],
                 "action": "route",
                 "server": "china"
+            },
+            {
+                "domain": [
+                    "pt.zhixing.bjtu.edu.cn"
+                ],
+                "server": "china",
+                "strategy": "ipv6_only"
             }
         ],
         "final": "google",
@@ -1200,7 +1207,7 @@
                 ],
                 "outbound": "Chatgpt_Group_URLTest"
             },
-             {
+            {
                 "domain_suffix": [
                     "github.com",
                     "reddit.com"
@@ -1221,6 +1228,12 @@
             },
             {
                 "ip_is_private": true,
+                "outbound": "direct"
+            },
+            {
+                "domain": [
+                    "pt.zhixing.bjtu.edu.cn"
+                ],
                 "outbound": "direct"
             },
             {

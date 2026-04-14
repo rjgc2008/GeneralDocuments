@@ -1,0 +1,18 @@
+﻿092716.493: [09:27:16][202603139.224.61.203.-阿里云-克拉玛依-09:27:16]
+092716.557: [09:27:16]Linux iZuf6drivybtuws2hzlhefZ 6.1.0-33-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.133-1 (2025-04-10) x86_64
+092716.557: [09:27:16]
+092716.557: [09:27:16]Welcome to Alibaba Cloud Elastic Compute Service !
+092716.557: [09:27:16]
+092716.557: [09:27:16]Last login: Mon Mar 30 09:21:01 2026 from 223.107.68.194
+092718.858: [09:27:18][root@iZuf6drivybtuws2hzlhefZ ~]# ss -tlnp | sort -k 6  
+092718.869: [09:27:18]State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+092718.869: [09:27:18]LISTEN 0      4096               *:443             *:*    users:(("frps",pid=13664,fd=10))         
+092718.870: [09:27:18]LISTEN 0      4096               *:7000            *:*    users:(("frps",pid=13664,fd=3))          
+092718.870: [09:27:18]LISTEN 0      4096               *:637             *:*    users:(("frps",pid=13664,fd=7))          
+092718.870: [09:27:18]LISTEN 0      4096               *:636             *:*    users:(("frps",pid=13664,fd=8))          
+092718.871: [09:27:18]LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=13455,fd=3))          
+092718.871: [09:27:18]LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=13455,fd=4))          
+092718.871: [09:27:18]LISTEN 0      4096         0.0.0.0:5355      0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=12))
+092718.872: [09:27:18]LISTEN 0      4096            [::]:5355         [::]:*    users:(("systemd-resolve",pid=584,fd=14))
+092718.872: [09:27:18]LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=19))
+092718.872: [09:27:18]LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=584,fd=21))

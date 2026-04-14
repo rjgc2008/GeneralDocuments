@@ -1,0 +1,161 @@
+﻿165853.596: [16:58:53][202604192.168.8.208-16:58:53]
+165853.615: [16:58:53]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-71-generic x86_64)
+165853.615: [16:58:53]
+165853.615: [16:58:53] * Documentation:  https://help.ubuntu.com
+165853.615: [16:58:53] * Management:     https://landscape.canonical.com
+165853.615: [16:58:53] * Support:        https://ubuntu.com/pro
+165853.615: [16:58:53]
+165853.615: [16:58:53] System information as of Thu Apr  2 04:58:53 PM CST 2026
+165853.615: [16:58:53]
+165853.615: [16:58:53]  System load:    0.37             Temperature:                35.0 C
+165853.615: [16:58:53]  Usage of /home: 4.0% of 1.97TB   Processes:                  1232
+165853.615: [16:58:53]  Memory usage:   10%              Users logged in:            1
+165853.615: [16:58:53]  Swap usage:     0%               IPv4 address for enp33s0f1: 192.168.8.208
+165853.615: [16:58:53]
+165853.615: [16:58:53]  => There is 1 zombie process.
+165853.615: [16:58:53]
+165853.615: [16:58:53] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+165853.616: [16:58:53]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+165853.616: [16:58:53]
+165853.616: [16:58:53]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+165853.616: [16:58:53]
+165853.616: [16:58:53]Expanded Security Maintenance for Applications is not enabled.
+165853.616: [16:58:53]
+165853.616: [16:58:53]64 updates can be applied immediately.
+165853.616: [16:58:53]To see these additional updates run: apt list --upgradable
+165853.616: [16:58:53]
+165853.616: [16:58:53]Enable ESM Apps to receive additional future security updates.
+165853.616: [16:58:53]See https://ubuntu.com/esm or run: sudo pro status
+165853.616: [16:58:53]
+165853.616: [16:58:53]
+165853.616: [16:58:53]The list of available updates is more than a week old.
+165853.616: [16:58:53]To check for new updates run: sudo apt update
+165853.616: [16:58:53]
+165853.616: [16:58:53]Last login: Thu Apr  2 16:51:42 2026 from 172.16.101.190
+165854.305: [16:58:54]root@tgq208:~# 
+165856.778: [16:58:56]root@tgq208:~# ip ne
+165856.787: [16:58:56]192.168.11.245 dev enp33s0f1 lladdr cc:28:aa:35:96:ed STALE 
+165856.787: [16:58:56]192.168.8.1 dev enp33s0f1 lladdr 30:29:52:a0:52:92 REACHABLE 
+165856.787: [16:58:56]192.168.11.252 dev enp33s0f1 lladdr 3c:06:a7:b5:cf:c3 STALE 
+165856.788: [16:58:56]192.168.11.251 dev enp33s0f1 lladdr 28:54:71:db:70:0f STALE 
+165856.788: [16:58:56]192.168.11.226 dev enp33s0f1 lladdr 9c:c2:c4:31:7d:ab STALE 
+165856.788: [16:58:56]192.168.11.233 dev enp33s0f1 lladdr 94:37:f7:1f:98:5e STALE 
+165856.788: [16:58:56]192.168.11.208 dev enp33s0f1 lladdr f4:b7:8d:ee:f5:00 STALE 
+165856.788: [16:58:56]192.168.11.223 dev enp33s0f1 lladdr 28:54:71:db:f1:e1 STALE 
+165856.789: [16:58:56]192.168.11.198 dev enp33s0f1 lladdr dc:36:43:92:8f:88 STALE 
+165856.789: [16:58:56]192.168.11.205 dev enp33s0f1 lladdr 7c:4d:8f:80:a2:a4 STALE 
+165856.789: [16:58:56]192.168.11.240 dev enp33s0f1 lladdr 30:56:0f:01:bf:cc STALE 
+165856.789: [16:58:56]192.168.11.230 dev enp33s0f1 lladdr d8:32:14:48:87:40 STALE 
+165856.789: [16:58:56]192.168.11.237 dev enp33s0f1 lladdr f4:b7:8d:ee:f6:6c STALE 
+165856.789: [16:58:56]192.168.11.212 dev enp33s0f1 lladdr 94:37:f7:1f:9b:d3 STALE 
+165856.790: [16:58:56]192.168.11.211 dev enp33s0f1 lladdr 1c:83:41:7f:aa:3e STALE 
+165856.790: [16:58:56]192.168.11.218 dev enp33s0f1 lladdr 78:a3:51:56:21:f5 STALE 
+165856.790: [16:58:56]192.168.11.200 dev enp33s0f1 lladdr f4:b7:8d:ee:f4:bf STALE 
+165856.790: [16:58:56]192.168.11.244 dev enp33s0f1 lladdr 08:8f:c3:a5:7f:22 STALE 
+165856.790: [16:58:56]192.168.8.15 dev enp33s0f1 lladdr 8c:32:23:3e:55:8d STALE 
+165856.790: [16:58:56]192.168.11.243 dev enp33s0f1 lladdr e4:83:26:42:d7:c6 STALE 
+165856.791: [16:58:56]192.168.11.250 dev enp33s0f1 lladdr 94:37:f7:1f:e4:db STALE 
+165856.791: [16:58:56]192.168.11.225 dev enp33s0f1 lladdr f4:ee:08:25:6e:5c STALE 
+165856.791: [16:58:56]192.168.11.232 dev enp33s0f1 lladdr 24:32:ae:4c:35:4e STALE 
+165856.791: [16:58:56]192.168.11.215 dev enp33s0f1 lladdr f4:b7:8d:ee:f4:cf STALE 
+165856.791: [16:58:56]192.168.11.222 dev enp33s0f1 lladdr f4:b7:8d:ee:f4:cf STALE 
+165856.792: [16:58:56]192.168.11.197 dev enp33s0f1 lladdr f4:ee:08:25:6e:1a STALE 
+165856.792: [16:58:56]192.168.11.204 dev enp33s0f1 lladdr 94:37:f7:1f:95:4f STALE 
+165856.792: [16:58:56]192.168.8.88 dev enp33s0f1 lladdr c4:70:ab:fc:a5:9b REACHABLE 
+165856.792: [16:58:56]192.168.11.203 dev enp33s0f1 lladdr f4:b7:8d:ee:f4:e0 STALE 
+165856.792: [16:58:56]192.168.11.247 dev enp33s0f1 lladdr 28:54:71:db:90:a9 STALE 
+165856.792: [16:58:56]192.168.11.254 dev enp33s0f1 lladdr 70:8c:b6:78:32:b2 STALE 
+165856.804: [16:58:56]192.168.11.229 dev enp33s0f1 lladdr 40:11:75:83:51:5b STALE 
+165856.804: [16:58:56]192.168.11.236 dev enp33s0f1 lladdr a0:42:3f:3d:75:c3 STALE 
+165856.804: [16:58:56]192.168.11.235 dev enp33s0f1 lladdr 1c:83:41:7f:67:96 STALE 
+165856.804: [16:58:56]192.168.11.210 dev enp33s0f1 lladdr 30:56:0f:01:c0:12 STALE 
+165856.804: [16:58:56]192.168.11.217 dev enp33s0f1 lladdr 20:f4:78:00:f7:df STALE 
+165856.805: [16:58:56]192.168.11.192 dev enp33s0f1 lladdr 9c:c2:c4:31:6f:99 STALE 
+165856.805: [16:58:56]192.168.11.207 dev enp33s0f1 lladdr 30:56:0f:01:c0:20 STALE 
+165856.805: [16:58:56]192.168.8.207 dev enp33s0f1 lladdr 80:61:5f:1e:4b:9b REACHABLE 
+165856.805: [16:58:56]192.168.11.242 dev enp33s0f1 lladdr c4:ef:bb:4c:85:da STALE 
+165856.805: [16:58:56]192.168.11.249 dev enp33s0f1 lladdr 1c:83:41:7f:b1:0b STALE 
+165856.805: [16:58:56]192.168.11.224 dev enp33s0f1 lladdr f4:b7:8d:ee:f5:00 STALE 
+165856.805: [16:58:56]192.168.11.239 dev enp33s0f1 lladdr 70:3a:a6:19:8e:d0 STALE 
+165856.806: [16:58:56]192.168.11.214 dev enp33s0f1 lladdr 94:37:f7:1f:a7:0f STALE 
+165856.806: [16:58:56]192.168.11.221 dev enp33s0f1 lladdr 30:56:0f:01:bf:ec STALE 
+165856.806: [16:58:56]192.168.11.195 dev enp33s0f1 lladdr 04:7c:16:1f:6b:74 STALE 
+165856.806: [16:58:56]192.168.11.202 dev enp33s0f1 lladdr c4:ef:bb:42:7c:8c STALE 
+165856.806: [16:58:56]192.168.11.246 dev enp33s0f1 lladdr c4:ff:99:79:36:69 STALE 
+165856.806: [16:58:56]192.168.11.253 dev enp33s0f1 lladdr c8:cd:55:e2:14:5f STALE 
+165856.806: [16:58:56]192.168.11.228 dev enp33s0f1 lladdr f4:b7:8d:ee:f6:6c STALE 
+165856.807: [16:58:56]192.168.11.227 dev enp33s0f1 lladdr a8:c9:8a:ea:d8:94 STALE 
+165856.807: [16:58:56]192.168.11.234 dev enp33s0f1 lladdr cc:28:aa:35:96:d2 STALE 
+165856.807: [16:58:56]192.168.11.209 dev enp33s0f1 lladdr c4:ef:bb:4c:85:d8 STALE 
+165856.807: [16:58:56]192.168.11.216 dev enp33s0f1 lladdr 28:54:71:dc:1d:b8 STALE 
+165856.807: [16:58:56]192.168.11.206 dev enp33s0f1 lladdr cc:28:aa:35:26:04 STALE 
+165856.807: [16:58:56]192.168.8.209 dev enp33s0f1 lladdr 80:61:5f:1e:88:27 REACHABLE 
+165856.807: [16:58:56]192.168.8.199 dev enp33s0f1 lladdr 3c:c7:86:9d:f6:bf STALE 
+165856.807: [16:58:56]192.168.11.241 dev enp33s0f1 lladdr e0:be:03:6d:c4:07 STALE 
+165856.808: [16:58:56]192.168.11.248 dev enp33s0f1 lladdr f4:ee:08:25:6d:d8 STALE 
+165856.808: [16:58:56]192.168.11.231 dev enp33s0f1 lladdr f4:e4:51:79:ce:42 STALE 
+165856.808: [16:58:56]192.168.11.238 dev enp33s0f1 lladdr cc:96:e5:41:07:8e STALE 
+165856.808: [16:58:56]192.168.11.213 dev enp33s0f1 lladdr 30:56:0f:01:c0:11 STALE 
+165856.808: [16:58:56]192.168.11.220 dev enp33s0f1 lladdr c4:b2:5b:25:69:f9 STALE 
+165856.808: [16:58:56]192.168.11.219 dev enp33s0f1 lladdr 50:46:4a:3a:d5:ae STALE 
+165856.808: [16:58:56]192.168.11.194 dev enp33s0f1 lladdr 1c:83:41:7f:69:11 STALE 
+165856.808: [16:58:56]192.168.11.201 dev enp33s0f1 lladdr 1c:83:41:7f:68:7f STALE 
+165907.650: [16:59:07]root@tgq208:~#  ping 192.168.11.246
+165907.651: [16:59:07]PING 192.168.11.246 (192.168.11.246) 56(84) bytes of data.
+165916.149: [16:59:16]^C
+165916.150: [16:59:16]--- 192.168.11.246 ping statistics ---
+165916.150: [16:59:16]9 packets transmitted, 0 received, 100% packet loss, time 8176ms
+165916.150: [16:59:16]
+165952.864: [16:59:52]root@tgq208:~# ping 192.168.8.243
+165952.865: [16:59:52]PING 192.168.8.243 (192.168.8.243) 56(84) bytes of data.
+165956.016: [16:59:56]From 192.168.8.208 icmp_seq=1 Destination Host Unreachable
+165956.017: [16:59:56]From 192.168.8.208 icmp_seq=2 Destination Host Unreachable
+165956.017: [16:59:56]From 192.168.8.208 icmp_seq=3 Destination Host Unreachable
+165956.269: [16:59:56]^C
+165956.270: [16:59:56]--- 192.168.8.243 ping statistics ---
+165956.270: [16:59:56]4 packets transmitted, 0 received, +3 errors, 100% packet loss, time 3091ms
+165956.270: [16:59:56]pipe 4
+165958.570: [16:59:58]root@tgq208:~# ping 192.168.11.243
+165958.593: [16:59:58]PING 192.168.11.243 (192.168.11.243) 56(84) bytes of data.
+170010.969: [17:00:10]From 192.168.8.208 icmp_seq=10 Destination Host Unreachable
+170010.970: [17:00:10]From 192.168.8.208 icmp_seq=11 Destination Host Unreachable
+170010.970: [17:00:10]From 192.168.8.208 icmp_seq=12 Destination Host Unreachable
+170013.938: [17:00:13]From 192.168.8.208 icmp_seq=13 Destination Host Unreachable
+170013.938: [17:00:13]From 192.168.8.208 icmp_seq=14 Destination Host Unreachable
+170013.938: [17:00:13]From 192.168.8.208 icmp_seq=15 Destination Host Unreachable
+170017.111: [17:00:17]From 192.168.8.208 icmp_seq=16 Destination Host Unreachable
+170017.112: [17:00:17]From 192.168.8.208 icmp_seq=17 Destination Host Unreachable
+170017.112: [17:00:17]From 192.168.8.208 icmp_seq=18 Destination Host Unreachable
+170020.183: [17:00:20]From 192.168.8.208 icmp_seq=19 Destination Host Unreachable
+170020.184: [17:00:20]From 192.168.8.208 icmp_seq=20 Destination Host Unreachable
+170020.184: [17:00:20]From 192.168.8.208 icmp_seq=21 Destination Host Unreachable
+170023.154: [17:00:23]From 192.168.8.208 icmp_seq=22 Destination Host Unreachable
+170023.154: [17:00:23]From 192.168.8.208 icmp_seq=23 Destination Host Unreachable
+170023.155: [17:00:23]From 192.168.8.208 icmp_seq=24 Destination Host Unreachable
+170026.225: [17:00:26]From 192.168.8.208 icmp_seq=25 Destination Host Unreachable
+170026.226: [17:00:26]From 192.168.8.208 icmp_seq=26 Destination Host Unreachable
+170026.226: [17:00:26]From 192.168.8.208 icmp_seq=27 Destination Host Unreachable
+170029.299: [17:00:29]From 192.168.8.208 icmp_seq=29 Destination Host Unreachable
+170029.300: [17:00:29]From 192.168.8.208 icmp_seq=30 Destination Host Unreachable
+170032.475: [17:00:32]From 192.168.8.208 icmp_seq=31 Destination Host Unreachable
+170032.475: [17:00:32]From 192.168.8.208 icmp_seq=32 Destination Host Unreachable
+170032.476: [17:00:32]From 192.168.8.208 icmp_seq=33 Destination Host Unreachable
+170035.542: [17:00:35]From 192.168.8.208 icmp_seq=34 Destination Host Unreachable
+170035.542: [17:00:35]From 192.168.8.208 icmp_seq=35 Destination Host Unreachable
+170035.542: [17:00:35]From 192.168.8.208 icmp_seq=36 Destination Host Unreachable
+170038.518: [17:00:38]From 192.168.8.208 icmp_seq=37 Destination Host Unreachable
+170038.519: [17:00:38]From 192.168.8.208 icmp_seq=38 Destination Host Unreachable
+170038.519: [17:00:38]From 192.168.8.208 icmp_seq=39 Destination Host Unreachable
+170041.594: [17:00:41]From 192.168.8.208 icmp_seq=40 Destination Host Unreachable
+170041.595: [17:00:41]From 192.168.8.208 icmp_seq=41 Destination Host Unreachable
+170041.595: [17:00:41]From 192.168.8.208 icmp_seq=42 Destination Host Unreachable
+170044.662: [17:00:44]From 192.168.8.208 icmp_seq=43 Destination Host Unreachable
+170044.663: [17:00:44]From 192.168.8.208 icmp_seq=44 Destination Host Unreachable
+170044.663: [17:00:44]From 192.168.8.208 icmp_seq=45 Destination Host Unreachable
+170047.728: [17:00:47]From 192.168.8.208 icmp_seq=46 Destination Host Unreachable
+170047.729: [17:00:47]From 192.168.8.208 icmp_seq=47 Destination Host Unreachable
+170047.729: [17:00:47]From 192.168.8.208 icmp_seq=48 Destination Host Unreachable
+170049.242: [17:00:49]^C
+170049.242: [17:00:49]--- 192.168.11.243 ping statistics ---
+170049.242: [17:00:49]50 packets transmitted, 0 received, +38 errors, 100% packet loss, time 50180ms
+170049.242: [17:00:49]pipe 4

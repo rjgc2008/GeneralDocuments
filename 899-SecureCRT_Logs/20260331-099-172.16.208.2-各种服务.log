@@ -1,0 +1,53 @@
+﻿115717.349: [11:57:17][root@172-16-208-2 ~]# 
+115717.444: [11:57:17][root@172-16-208-2 ~]# 
+115717.544: [11:57:17][root@172-16-208-2 ~]# 
+115721.146: [11:57:21][root@172-16-208-2 ~]# ping 192.168.31.101
+115721.173: [11:57:21]PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.
+115726.046: [11:57:26]^C
+115726.047: [11:57:26]--- 192.168.31.101 ping statistics ---
+115726.047: [11:57:26]5 packets transmitted, 0 received, 100% packet loss, time 4073ms
+115726.047: [11:57:26]
+115729.975: [11:57:29][root@172-16-208-2 ~]# ping 10.253.0.111
+115729.997: [11:57:29]PING 10.253.0.111 (10.253.0.111) 56(84) bytes of data.
+115730.892: [11:57:30]^C
+115730.892: [11:57:30]--- 10.253.0.111 ping statistics ---
+115730.892: [11:57:30]1 packets transmitted, 0 received, 100% packet loss, time 0ms
+115730.892: [11:57:30]
+115733.984: [11:57:33][root@172-16-208-2 ~]# ping 10.253.0.11
+115734.003: [11:57:34]PING 10.253.0.11 (10.253.0.11) 56(84) bytes of data.
+120140.287: [12:01:40]^C
+120140.288: [12:01:40]--- 10.253.0.11 ping statistics ---
+120140.288: [12:01:40]241 packets transmitted, 0 received, 100% packet loss, time 245670ms
+120140.288: [12:01:40]
+120142.256: [12:01:42][root@172-16-208-2 ~]# 
+133524.636: [13:35:24][root@172-16-208-2 ~]# 
+133524.712: [13:35:24][root@172-16-208-2 ~]# 
+133526.275: [13:35:26][root@172-16-208-2 ~]# df -lh
+133526.295: [13:35:26]Filesystem                 Size  Used Avail Use% Mounted on
+133526.295: [13:35:26]udev                       7.8G     0  7.8G   0% /dev
+133526.295: [13:35:26]tmpfs                      1.6G  7.5M  1.6G   1% /run
+133526.295: [13:35:26]/dev/vda1                   97G   56G   37G  61% /
+133526.295: [13:35:26]tmpfs                      7.9G     0  7.9G   0% /dev/shm
+133526.295: [13:35:26]tmpfs                      5.0M  4.0K  5.0M   1% /run/lock
+133526.295: [13:35:26]/dev/mapper/data-datalv     14T   12T  1.3T  91% /DATA/Media
+133526.295: [13:35:26]/dev/mapper/data2-data2lv  6.0T  4.6T  1.2T  81% /DATA/Media/Tmp
+133526.296: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/dacbbc4d8f73512eb46f2f5bc074bd8f9bc9af6f98f9996453ce2ad991047648/merged
+133526.296: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/2f49a0b0a668bff5faf4dddb0155e717bd2b04ec9c9f20fe51e72f1ab1105a8f/merged
+133526.296: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/71d44c3a74f497939dcb09d15573f69259b0c2eca3db98f2d88f5a884a267421/merged
+133526.296: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/f37c98d6612fb3445962d77333799e9ee020f70c98f21e43e0994121521ad3ec/merged
+133526.296: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/ad7464f3b04db576d0308e3e0102cf3480ddb32ac242dec4bff57a6f0bc5405e/merged
+133526.296: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/5f32f1dfa35af8ea78a9fcbabe0d06d9c5a8c112a2a4c5650ff68840a3fbc08f/merged
+133526.297: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/1a835e6ae66574f532450791d550153247cab4f273b9926649b1d64f1c49855e/merged
+133526.297: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/3c8085ec6d162a2b244810b100e39faeac6766771c1129fe19110608e72ab0e8/merged
+133526.297: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/c256c651b3606a2b0bd97265904e73b9b5d427605bbfb113c26b91412671a8dc/merged
+133526.297: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/4bf80f043542c0b5db8d4f0bc877655d7246a8c975cc750175031f24c8db0123/merged
+133526.297: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/5c1772a6815275737ab4729520d6485e9eb228dca950c5ca9480821afd23c331/merged
+133526.297: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/df8ccd0a058968ad982529d4e6520e74389d512c5cbb9c2ee650d920840b6962/merged
+133526.298: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/5b179abe593fe6023b70f00a8b8fa8870af0f65a9d257a93c8674b46187d02b3/merged
+133526.298: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/e9e83947222cf159696283b563d55f1c03a8784d5c2f09dd6f092c600a297f5b/merged
+133526.298: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/cab1dec8f98e168f6ebd0890c23c563d6b1ffcff414f28e3d8a1bf6c2761033d/merged
+133526.298: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/f27db95fc6a187109e4902ee10a92a822a4a0a6664acc4333c92c404c5a7d9eb/merged
+133526.299: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/178aee37071729ca261883335d47ab495214a98830b72e42324b7c090e0c60ea/merged
+133526.299: [13:35:26]tmpfs                      1.6G   76K  1.6G   1% /run/user/0
+133526.299: [13:35:26]overlay                     97G   56G   37G  61% /var/lib/docker/overlay2/fec9b9e1cb387fee7500d060d0703f2c0573ff37107c3dfcb6be047c62960bba/merged
+133526.299: [13:35:26]/dev/mapper/video-videolv  4.0T  1.7T  2.2T  44% /DATA/Media/XTV-BACKUP

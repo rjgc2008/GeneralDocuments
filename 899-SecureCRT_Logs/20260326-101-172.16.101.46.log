@@ -1,0 +1,147 @@
+﻿141535.777: [14:15:35][202603101-172.16.101.46-14:15:35]
+141535.794: [14:15:35]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+141535.794: [14:15:35]
+141535.794: [14:15:35] * Documentation:  https://help.ubuntu.com
+141535.795: [14:15:35] * Management:     https://landscape.canonical.com
+141535.795: [14:15:35] * Support:        https://ubuntu.com/pro
+141535.795: [14:15:35]
+141535.795: [14:15:35]扩展安全维护（ESM）Applications 未启用。
+141535.795: [14:15:35]
+141535.795: [14:15:35]9 更新可以立即应用。
+141535.795: [14:15:35]这些更新中有 3 个是标准安全更新。
+141535.795: [14:15:35]要查看这些附加更新，请运行：apt list --upgradable
+141535.795: [14:15:35]
+141535.795: [14:15:35]启用 ESM Apps 来获取未来的额外安全更新
+141535.795: [14:15:35]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+141535.795: [14:15:35]
+141535.795: [14:15:35]*** 需要重启系统 ***
+141535.796: [14:15:35]Last login: Wed Mar 25 09:49:59 2026 from 192.168.6.173
+141607.441: [14:16:07]root@user:~# lscpu
+141607.491: [14:16:07]架构：                    x86_64
+141607.492: [14:16:07]  CPU 运行模式：          32-bit, 64-bit
+141607.492: [14:16:07]  Address sizes:          46 bits physical, 57 bits virtual
+141607.492: [14:16:07]  字节序：                Little Endian
+141607.492: [14:16:07]CPU:                      152
+141607.492: [14:16:07]  在线 CPU 列表：         0-151
+141607.493: [14:16:07]厂商 ID：                 GenuineIntel
+141607.493: [14:16:07]  BIOS 厂商 ID：          Intel(R) Corporation
+141607.493: [14:16:07]  型号名称：              Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz
+141607.493: [14:16:07]    BIOS 型号名称：       Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz  CPU @ 2.4GHz
+141607.493: [14:16:07]    BIOS CPU family:      179
+141607.494: [14:16:07]    CPU 系列：            6
+141607.494: [14:16:07]    型号：                106
+141607.494: [14:16:07]    每个核的线程数：      2
+141607.494: [14:16:07]    每个座的核数：        38
+141607.494: [14:16:07]    座：                  2
+141607.494: [14:16:07]    步进：                6
+141607.494: [14:16:07]    CPU(s) scaling MHz:   25%
+141607.494: [14:16:07]    CPU 最大 MHz：        3400.0000
+141607.494: [14:16:07]    CPU 最小 MHz：        800.0000
+141607.494: [14:16:07]    BogoMIPS：            4800.00
+141607.495: [14:16:07]    标记：                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid 
+141607.496: [14:16:07]                          aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 ssbd mba
+141607.497: [14:16:07]                           ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw av
+141607.497: [14:16:07]                          x512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg 
+141607.498: [14:16:07]                          avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+141607.506: [14:16:07]Virtualization features:  
+141607.506: [14:16:07]  虚拟化：                VT-x
+141607.506: [14:16:07]Caches (sum of all):      
+141607.506: [14:16:07]  L1d:                    3.6 MiB (76 instances)
+141607.506: [14:16:07]  L1i:                    2.4 MiB (76 instances)
+141607.507: [14:16:07]  L2:                     95 MiB (76 instances)
+141607.507: [14:16:07]  L3:                     114 MiB (2 instances)
+141607.507: [14:16:07]NUMA:                     
+141607.507: [14:16:07]  NUMA 节点：             2
+141607.507: [14:16:07]  NUMA 节点0 CPU：        0-37,76-113
+141607.507: [14:16:07]  NUMA 节点1 CPU：        38-75,114-151
+141607.507: [14:16:07]Vulnerabilities:          
+141607.507: [14:16:07]  Gather data sampling:   Mitigation; Microcode
+141607.507: [14:16:07]  Itlb multihit:          Not affected
+141607.507: [14:16:07]  L1tf:                   Not affected
+141607.507: [14:16:07]  Mds:                    Not affected
+141607.507: [14:16:07]  Meltdown:               Not affected
+141607.507: [14:16:07]  Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
+141607.507: [14:16:07]  Reg file data sampling: Not affected
+141607.507: [14:16:07]  Retbleed:               Not affected
+141607.507: [14:16:07]  Spec rstack overflow:   Not affected
+141607.507: [14:16:07]  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+141607.507: [14:16:07]  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+141607.507: [14:16:07]  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+141607.508: [14:16:07]  Srbds:                  Not affected
+141607.508: [14:16:07]  Tsx async abort:        Not affected
+141609.838: [14:16:09]root@user:~# free -h
+141609.848: [14:16:09]               total        used        free      shared  buff/cache   available
+141609.848: [14:16:09]内存：         503Gi       9.3Gi       492Gi        15Mi       4.1Gi       494Gi
+141609.848: [14:16:09]交换：         8.0Gi          0B       8.0Gi
+141750.994: [14:17:50]root@user:~# lsblk -d -o NAME,TYPE,SIZE,MODEL
+141751.010: [14:17:51]NAME   TYPE   SIZE MODEL
+141751.010: [14:17:51]loop0  loop  11.1M 
+141751.010: [14:17:51]loop1  loop  73.9M 
+141751.010: [14:17:51]loop2  loop     4K 
+141751.010: [14:17:51]loop3  loop   258M 
+141751.011: [14:17:51]loop4  loop  10.8M 
+141751.011: [14:17:51]loop5  loop   568K 
+141751.011: [14:17:51]loop6  loop  91.7M 
+141751.011: [14:17:51]loop7  loop   516M 
+141751.011: [14:17:51]loop8  loop  44.4M 
+141751.011: [14:17:51]loop9  loop  48.4M 
+141751.011: [14:17:51]loop10 loop    74M 
+141751.011: [14:17:51]loop11 loop   576K 
+141751.011: [14:17:51]loop12 loop  66.8M 
+141751.011: [14:17:51]loop13 loop  16.4M 
+141751.011: [14:17:51]loop14 loop   395M 
+141751.012: [14:17:51]loop15 loop 606.1M 
+141751.012: [14:17:51]sda    disk   2.2T MR9361-8i
+141751.012: [14:17:51]sdb    disk  36.4T MR9361-8i
+141853.483: [14:18:53]root@user:~# lsblk -d -n -o TYPE | grep disk | wc -l
+141853.503: [14:18:53]2
+142545.747: [14:25:45]root@user:~# lsblk -d -o
+142545.770: [14:25:45]lsblk: 选项需要一个参数 -- "o"
+142545.770: [14:25:45]请尝试执行“lsblk --help”了解更多信息。
+142621.513: [14:26:21]root@user:~# lsblk -d -o NAME,TYPE,SIZE,MODEL
+142621.531: [14:26:21]NAME   TYPE   SIZE MODEL
+142621.531: [14:26:21]loop0  loop  11.1M 
+142621.531: [14:26:21]loop1  loop  73.9M 
+142621.532: [14:26:21]loop2  loop     4K 
+142621.533: [14:26:21]loop3  loop   258M 
+142621.533: [14:26:21]loop4  loop  10.8M 
+142621.533: [14:26:21]loop5  loop   568K 
+142621.533: [14:26:21]loop6  loop  91.7M 
+142621.533: [14:26:21]loop7  loop   516M 
+142621.533: [14:26:21]loop8  loop  44.4M 
+142621.533: [14:26:21]loop9  loop  48.4M 
+142621.533: [14:26:21]loop10 loop    74M 
+142621.533: [14:26:21]loop11 loop   576K 
+142621.533: [14:26:21]loop12 loop  66.8M 
+142621.533: [14:26:21]loop13 loop  16.4M 
+142621.533: [14:26:21]loop14 loop   395M 
+142621.533: [14:26:21]loop15 loop 606.1M 
+142621.533: [14:26:21]sda    disk   2.2T MR9361-8i
+142621.533: [14:26:21]sdb    disk  36.4T MR9361-8i
+142817.671: [14:28:17]root@user:~# storcli /c0 /vall show
+142817.950: [14:28:17]storcli：未找到命令
+142845.684: [14:28:45]root@user:~# cat /proc/mdstat
+142845.684: [14:28:45]Personalities : 
+142845.684: [14:28:45]unused devices: <none>
+143303.724: [14:33:03]root@user:~# lsblk
+143303.745: [14:33:03]NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+143303.745: [14:33:03]loop0    7:0    0  11.1M  1 loop /snap/firmware-updater/167
+143303.746: [14:33:03]loop1    7:1    0  73.9M  1 loop /snap/core22/1748
+143303.746: [14:33:03]loop2    7:2    0     4K  1 loop /snap/bare/5
+143303.746: [14:33:03]loop3    7:3    0   258M  1 loop /snap/firefox/5751
+143303.746: [14:33:03]loop4    7:4    0  10.8M  1 loop /snap/snap-store/1248
+143303.746: [14:33:03]loop5    7:5    0   568K  1 loop /snap/snapd-desktop-integration/253
+143303.746: [14:33:03]loop6    7:6    0  91.7M  1 loop /snap/gtk-common-themes/1535
+143303.746: [14:33:03]loop7    7:7    0   516M  1 loop /snap/gnome-42-2204/202
+143303.747: [14:33:03]loop8    7:8    0  44.4M  1 loop /snap/snapd/23545
+143303.747: [14:33:03]loop9    7:9    0  48.4M  1 loop /snap/snapd/26382
+143303.747: [14:33:03]loop10   7:10   0    74M  1 loop /snap/core22/2411
+143303.747: [14:33:03]loop11   7:11   0   576K  1 loop /snap/snapd-desktop-integration/343
+143303.747: [14:33:03]loop12   7:12   0  66.8M  1 loop /snap/core24/1499
+143303.747: [14:33:03]loop13   7:13   0  16.4M  1 loop /snap/firmware-updater/223
+143303.747: [14:33:03]loop14   7:14   0   395M  1 loop /snap/mesa-2404/1165
+143303.747: [14:33:03]loop15   7:15   0 606.1M  1 loop /snap/gnome-46-2404/153
+143303.747: [14:33:03]sda      8:0    0   2.2T  0 disk 
+143303.747: [14:33:03]├─sda1   8:1    0     1G  0 part /boot/efi
+143303.747: [14:33:03]└─sda2   8:2    0   2.2T  0 part /
+143303.747: [14:33:03]sdb      8:16   0  36.4T  0 disk 

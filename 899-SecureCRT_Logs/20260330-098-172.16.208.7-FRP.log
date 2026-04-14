@@ -1,0 +1,60 @@
+﻿134318.563: [13:43:18][202603098-172.16.208.7-FRP-13:43:18]
+134318.575: [13:43:18]Linux Share 5.10.0-20-amd64 #1 SMP Debian 5.10.158-2 (2022-12-13) x86_64
+134318.575: [13:43:18]
+134318.575: [13:43:18]The programs included with the Debian GNU/Linux system are free software;
+134318.575: [13:43:18]the exact distribution terms for each program are described in the
+134318.575: [13:43:18]individual files in /usr/share/doc/*/copyright.
+134318.575: [13:43:18]
+134318.575: [13:43:18]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+134318.575: [13:43:18]permitted by applicable law.
+134318.576: [13:43:18]Last login: Thu Jan 22 09:32:06 2026 from 192.168.15.253
+134325.349: [13:43:25]root@Share:~# ps -ef | grep frp
+134325.372: [13:43:25]root     1585893       1  0  2025 ?        00:15:09 /usr/local/bin/frp/frp_0.63.0_linux_amd64/frpc -c /usr/local/bin/frp/frp_0.63.0_linux_amd64/frpc.toml
+134325.372: [13:43:25]root     1726568 1726550  0 13:43 pts/0    00:00:00 grep frp
+134331.489: [13:43:31]root@Share:~# cd /usr/local/bin/
+134332.759: [13:43:32]root@Share:/usr/local/bin# ll
+134332.763: [13:43:32]total 4.0K
+134332.763: [13:43:32]drwxr-xr-x 4 root root 4.0K Dec 17 16:08 frp
+134334.285: [13:43:34]root@Share:/usr/local/bin# cd frp/
+134334.950: [13:43:34]root@Share:/usr/local/bin/frp# ll
+134334.957: [13:43:34]total 23M
+134334.957: [13:43:34]drwxr-xr-x 2 1001 geoclue 4.0K Dec 17 16:03 frp_0.48.0_linux_amd64
+134334.957: [13:43:34]-rw-r--r-- 1 wyj  wyj      11M Apr 20  2023 frp_0.48.0_linux_amd64.tar.gz
+134334.958: [13:43:34]drwxr-xr-x 2 1001 pulse   4.0K Mar 29 23:59 frp_0.63.0_linux_amd64
+134334.958: [13:43:34]-rw-r--r-- 1 wyj  wyj      13M Jul 15  2025 frp_0.63.0_linux_amd64.tar.gz
+134341.217: [13:43:41]root@Share:/usr/local/bin/frp# cd frp_0.63.0_linux_amd64/
+134341.369: [13:43:41]root@Share:/usr/local/bin/frp/frp_0.63.0_linux_amd64# 
+134342.122: [13:43:42]root@Share:/usr/local/bin/frp/frp_0.63.0_linux_amd64# ll
+134342.122: [13:43:42]total 34M
+134342.122: [13:43:42]-rwxr-xr-x 1 1001 pulse 15M Jun 25  2025 frpc
+134342.123: [13:43:42]-rw------- 1 root root    0 Mar 26 23:59 frpc.20260328-000000.log
+134342.123: [13:43:42]-rw------- 1 root root    0 Mar 27 23:59 frpc.20260329-000000.log
+134342.123: [13:43:42]-rw------- 1 root root    0 Mar 28 23:59 frpc.20260330-000000.log
+134342.124: [13:43:42]-rw------- 1 root root    0 Mar 29 23:59 frpc.log
+134342.124: [13:43:42]-rw-r--r-- 1 1001 pulse 601 Dec 26 08:32 frpc.toml
+134342.124: [13:43:42]-rw-r--r-- 1 1001 pulse 142 Jun 25  2025 frpc.toml-20251218
+134342.124: [13:43:42]-rw-r--r-- 1 1001 pulse 506 Dec 18 10:46 frpc.toml-20251226
+134342.124: [13:43:42]-rwxr-xr-x 1 1001 pulse 19M Jun 25  2025 frps
+134342.125: [13:43:42]-rw-r--r-- 1 1001 pulse  16 Jun 25  2025 frps.toml
+134342.125: [13:43:42]-rw-r--r-- 1 1001 pulse 12K Jun 25  2025 LICENSE
+134348.095: [13:43:48]root@Share:/usr/local/bin/frp/frp_0.63.0_linux_amd64# vi frpc.toml
+134348.132: [13:43:48]# 用于https://ldap.tiangqongqs.net/ 的映射，原因是单独购买了新的应用服务器、新的域名、新的域名证书，新的公网IP，通过克拉玛依项目使用新域名
+134348.132: [13:43:48]# 日志配置
+134348.132: [13:43:48]log.to = "./frpc.log"
+134348.132: [13:43:48]log.level = "info"
+134348.132: [13:43:48]log.maxDays = 3
+134348.132: [13:43:48]
+134348.132: [13:43:48]# ------192.168.12.134------
+134348.133: [13:43:48][[proxies]]
+134348.133: [13:43:48]name = "192-168-12-134-https"
+134348.133: [13:43:48]type = "tcp"
+134348.133: [13:43:48]localIP = "192.168.12.134"
+134348.133: [13:43:48]localPort = 636
+134348.133: [13:43:48]remotePort = 636
+134348.133: [13:43:48]# ------192.168.12.135------
+134348.133: [13:43:48][[proxies]]
+134348.133: [13:43:48]name = "192-168-12-135-https"
+134348.133: [13:43:48]type = "tcp"
+134348.133: [13:43:48]localIP = "192.168.12.135"
+134348.133: [13:43:48]localPort = 636
+134348.133: [13:43:48]remotePort = 637

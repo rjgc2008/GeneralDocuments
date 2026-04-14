@@ -1,0 +1,633 @@
+﻿102102.439: [10:21:02][202604Home-Dell-Public-10:21:02]
+102102.505: [10:21:02]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+102102.505: [10:21:02]
+102102.505: [10:21:02]The programs included with the Debian GNU/Linux system are free software;
+102102.505: [10:21:02]the exact distribution terms for each program are described in the
+102102.505: [10:21:02]individual files in /usr/share/doc/*/copyright.
+102102.505: [10:21:02]
+102102.506: [10:21:02]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+102102.506: [10:21:02]permitted by applicable law.
+102102.506: [10:21:02]Last login: Sat Mar 28 06:55:48 2026 from 192.168.31.160
+102107.468: [10:21:07]root@anncara-computer:~# nft list ruleset
+102107.483: [10:21:07]table inet f2b-table {
+102107.483: [10:21:07]        set addr-set-sshd {
+102107.483: [10:21:07]                type ipv4_addr
+102107.484: [10:21:07]                elements = { 27.79.5.224, 36.132.36.49,
+102107.484: [10:21:07]                             45.153.34.15, 59.185.230.105,
+102107.484: [10:21:07]                             80.66.66.70, 80.94.92.182,
+102107.484: [10:21:07]                             87.249.164.52, 87.251.64.145,
+102107.484: [10:21:07]                             87.251.64.147, 96.43.20.162,
+102107.484: [10:21:07]                             101.96.202.228, 130.12.181.254,
+102107.484: [10:21:07]                             157.148.121.170, 172.237.38.18,
+102107.484: [10:21:07]                             175.6.5.200, 175.12.109.63,
+102107.484: [10:21:07]                             180.76.225.49, 180.130.116.182,
+102107.490: [10:21:07]                             185.246.130.20, 221.231.140.137 }
+102107.490: [10:21:07]        }
+102107.490: [10:21:07]
+102107.490: [10:21:07]        chain f2b-chain {
+102107.490: [10:21:07]                type filter hook input priority filter - 1; policy accept;
+102107.491: [10:21:07]                tcp dport 22 ip saddr @addr-set-sshd reject with icmp port-unreachable
+102107.491: [10:21:07]        }
+102107.491: [10:21:07]}
+102107.491: [10:21:07]table inet svc_guard {
+102107.491: [10:21:07]        set whitelist_v4 {
+102107.491: [10:21:07]                type ipv4_addr
+102107.491: [10:21:07]                flags interval
+102107.491: [10:21:07]                elements = { 10.253.0.0/24, 58.211.207.202,
+102107.491: [10:21:07]                             113.125.155.62, 127.0.0.1,
+102107.491: [10:21:07]                             172.16.208.0/20, 190.92.240.125,
+102107.491: [10:21:07]                             192.168.0.0/16, 218.94.233.66,
+102107.492: [10:21:07]                             223.107.68.194 }
+102107.492: [10:21:07]        }
+102107.492: [10:21:07]
+102107.492: [10:21:07]        set svc_ports {
+102107.492: [10:21:07]                type inet_service
+102107.492: [10:21:07]                elements = { 53, 1235, 6000, 7500 }
+102107.492: [10:21:07]        }
+102107.492: [10:21:07]
+102107.492: [10:21:07]        chain prerouting_nat {
+102107.492: [10:21:07]                type nat hook prerouting priority dstnat; policy accept;
+102107.492: [10:21:07]                ip daddr 192.168.31.101 tcp dport 1235 dnat ip to 172.16.208.2:1235
+102107.492: [10:21:07]                ip daddr 192.168.31.101 udp dport 1235 dnat ip to 172.16.208.2:1235
+102107.493: [10:21:07]                ip saddr { 113.125.155.62, 192.168.31.0/24 } ip daddr 192.168.31.101 tcp dport 7890 dnat ip to 172.16.208.2:7890
+102107.493: [10:21:07]                ip saddr { 113.125.155.62, 192.168.31.0/24 } ip daddr 192.168.31.101 udp dport 7890 dnat ip to 172.16.208.2:7890
+102107.493: [10:21:07]        }
+102107.493: [10:21:07]
+102107.493: [10:21:07]        chain postrouting_nat {
+102107.493: [10:21:07]                type nat hook postrouting priority srcnat; policy accept;
+102107.493: [10:21:07]                ip daddr 172.16.208.2 tcp dport 1235 snat ip to 192.168.31.101
+102107.493: [10:21:07]                ip daddr 172.16.208.2 udp dport 1235 snat ip to 192.168.31.101
+102107.494: [10:21:07]                ip daddr 172.16.208.2 tcp dport 7890 snat ip to 192.168.31.101
+102107.494: [10:21:07]                ip daddr 172.16.208.2 udp dport 7890 snat ip to 192.168.31.101
+102107.494: [10:21:07]        }
+102107.494: [10:21:07]
+102107.494: [10:21:07]        chain input {
+102107.494: [10:21:07]                type filter hook input priority filter; policy accept;
+102107.494: [10:21:07]                iif "lo" counter packets 16385 bytes 1596096 accept comment "loopback"
+102107.494: [10:21:07]                ct state established,related counter packets 31828039 bytes 22198452956 accept comment "ct-keep"
+102107.507: [10:21:07]                ip saddr @whitelist_v4 counter packets 81196 bytes 26775958 accept comment "allow-whitelist-src"
+102107.507: [10:21:07]                tcp dport @svc_ports counter packets 149040 bytes 8941496 accept comment "allow-svc-ports-tcp"
+102107.507: [10:21:07]                udp dport @svc_ports counter packets 0 bytes 0 accept comment "allow-svc-ports-udp"
+102107.507: [10:21:07]        }
+102107.507: [10:21:07]}
+102107.507: [10:21:07]table inet wg-nat {
+102107.507: [10:21:07]        chain prerouting {
+102107.507: [10:21:07]                type nat hook prerouting priority filter; policy accept;
+102107.507: [10:21:07]                ip daddr 192.168.31.101 tcp dport 37778 dnat ip to 10.253.0.2:37778
+102107.507: [10:21:07]                ip daddr 192.168.31.101 udp dport 37778 dnat ip to 10.253.0.2:37778
+102107.507: [10:21:07]        }
+102107.508: [10:21:07]
+102107.508: [10:21:07]        chain postrouting {
+102107.508: [10:21:07]                type nat hook postrouting priority srcnat; policy accept;
+102107.516: [10:21:07]                oifname "wlp2s0" masquerade
+102107.516: [10:21:07]                meta nfproto ipv6 oifname "wlp2s0" masquerade
+102107.516: [10:21:07]        }
+102107.516: [10:21:07]
+102107.516: [10:21:07]        chain forward {
+102107.516: [10:21:07]                type filter hook forward priority filter; policy accept;
+102107.516: [10:21:07]                iifname "wg0" accept
+102107.516: [10:21:07]                oifname "wg0" accept
+102107.516: [10:21:07]        }
+102107.516: [10:21:07]}
+105022.862: [10:50:22]root@anncara-computer:~# 
+105022.964: [10:50:22]root@anncara-computer:~# 
+105023.086: [10:50:23]root@anncara-computer:~# 
+105024.386: [10:50:24]root@anncara-computer:~# ll
+105024.404: [10:50:24]total 4.0K
+105024.404: [10:50:24]-rw-r--r-- 1 root root 43 Apr  7 04:00 ip_list.txt
+105035.071: [10:50:35]root@anncara-computer:~# 
+105035.229: [10:50:35]root@anncara-computer:~# 
+105037.504: [10:50:37]root@anncara-computer:~# wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105037.520: [10:50:37]-bash: wget: command not found
+105043.545: [10:50:43]root@anncara-computer:~# aptitude install weget
+105044.975: [10:50:44]^C                                       
+105047.624: [10:50:47]root@anncara-computer:~# aptitude install wget
+105048.729: [10:50:48]The following NEW packages will be installed:
+105048.730: [10:50:48]  wget 
+105048.730: [10:50:48]0 packages upgraded, 1 newly installed, 0 to remove and 12 not upgraded.
+105048.764: [10:50:48]Need to get 984 kB of archives. After unpacking 3,875 kB will be used.
+105049.106: [10:50:49]Get: 1 http://deb.debian.org/debian trixie/main amd64 wget amd64 1.25.0-2 [984 kB]
+105049.342: [10:50:49]Fetched 984 kB in 0s (2,418 kB/s)
+105049.916: [10:50:49]Selecting previously unselected package wget.
+105049.995: [10:50:49](Reading database ... 39516 files and directories currently installed.)
+105050.010: [10:50:50]Preparing to unpack .../wget_1.25.0-2_amd64.deb ...
+105050.010: [10:50:50]Unpacking wget (1.25.0-2) ...
+105050.181: [10:50:50]Setting up wget (1.25.0-2) ...
+105051.030: [10:50:51]                                         
+105052.257: [10:50:52]root@anncara-computer:~# 
+105052.410: [10:50:52]root@anncara-computer:~# 
+105055.307: [10:50:55]root@anncara-computer:~# wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105055.328: [10:50:55]Warning: wildcards not supported in HTTP.
+105055.329: [10:50:55]--2026-04-07 10:50:55--  https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105055.360: [10:50:55]Resolving github.com (github.com)... 20.205.243.166
+105055.462: [10:50:55]Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+105117.215: [10:51:17]HTTP request sent, awaiting response... 
+105125.448: [10:51:25]^C
+105222.072: [10:52:22]root@anncara-computer:~# echo $HTTP_PROXY
+105222.073: [10:52:22]
+105238.569: [10:52:38]root@anncara-computer:~# curl www.google.com.hk
+105245.411: [10:52:45]^C
+105246.603: [10:52:46]root@anncara-computer:~# ip a
+105246.622: [10:52:46]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+105246.622: [10:52:46]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+105246.622: [10:52:46]    inet 127.0.0.1/8 scope host lo
+105246.622: [10:52:46]       valid_lft forever preferred_lft forever
+105246.622: [10:52:46]    inet6 ::1/128 scope host noprefixroute 
+105246.622: [10:52:46]       valid_lft forever preferred_lft forever
+105246.623: [10:52:46]2: enp0s31f6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+105246.623: [10:52:46]    link/ether 14:b3:1f:02:64:44 brd ff:ff:ff:ff:ff:ff
+105246.623: [10:52:46]    altname enx14b31f026444
+105246.623: [10:52:46]3: wlp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+105246.624: [10:52:46]    link/ether f4:8c:50:4f:0c:36 brd ff:ff:ff:ff:ff:ff
+105246.624: [10:52:46]    altname wlxf48c504f0c36
+105246.624: [10:52:46]    inet 192.168.31.101/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp2s0
+105246.624: [10:52:46]       valid_lft 58139sec preferred_lft 47339sec
+105246.624: [10:52:46]    inet6 240e:3a1:4cc5:c50:4688:21bc:3085:c9a2/64 scope global dynamic mngtmpaddr noprefixroute 
+105246.624: [10:52:46]       valid_lft 592sec preferred_lft 592sec
+105246.624: [10:52:46]    inet6 fe80::6f9c:f6aa:a874:b424/64 scope link 
+105246.625: [10:52:46]       valid_lft forever preferred_lft forever
+105246.625: [10:52:46]7: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+105246.625: [10:52:46]    link/none 
+105246.625: [10:52:46]    inet 10.253.0.11/32 scope global wg0
+105246.625: [10:52:46]       valid_lft forever preferred_lft forever
+105246.625: [10:52:46]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:11/128 scope global 
+105246.625: [10:52:46]       valid_lft forever preferred_lft forever
+105351.426: [10:53:51]root@anncara-computer:~# export HTTP_PROXY=http://172.16.208.2:7890
+105351.988: [10:53:51]root@anncara-computer:~# export HTTP_PROXY=http://172.16.208.2:7890
+105351.989: [10:53:51]export HTTPS_PROXY=http://172.16.208.2:7890
+105352.620: [10:53:52]root@anncara-computer:~# 
+105352.825: [10:53:52]root@anncara-computer:~# 
+105356.640: [10:53:56]root@anncara-computer:~# curl www.google.com.hk
+105402.263: [10:54:02]^C
+105404.925: [10:54:04]root@anncara-computer:~# wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105404.946: [10:54:04]Warning: wildcards not supported in HTTP.
+105404.946: [10:54:04]--2026-04-07 10:54:04--  https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105404.957: [10:54:04]Resolving github.com (github.com)... 20.205.243.166
+105405.049: [10:54:05]Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+105409.899: [10:54:09]HTTP request sent, awaiting response... ^C
+105413.274: [10:54:13]root@anncara-computer:~# ping 172.16.208.2
+105413.296: [10:54:13]PING 172.16.208.2 (172.16.208.2) 56(84) bytes of data.
+105413.307: [10:54:13]64 bytes from 172.16.208.2: icmp_seq=1 ttl=64 time=13.2 ms
+105414.285: [10:54:14]64 bytes from 172.16.208.2: icmp_seq=2 ttl=64 time=5.33 ms
+105414.794: [10:54:14]^C
+105414.794: [10:54:14]--- 172.16.208.2 ping statistics ---
+105414.795: [10:54:14]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+105414.795: [10:54:14]rtt min/avg/max/mdev = 5.326/9.243/13.161/3.917 ms
+105416.753: [10:54:16]root@anncara-computer:~# wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105416.773: [10:54:16]Warning: wildcards not supported in HTTP.
+105416.773: [10:54:16]--2026-04-07 10:54:16--  https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+105416.805: [10:54:16]Resolving github.com (github.com)... 20.205.243.166
+105616.309: [10:56:16]Connecting to github.com (github.com)|20.205.243.166|:443... ^C
+105620.765: [10:56:20]root@anncara-computer:~# echo $$
+105620.787: [10:56:20]68186
+105630.628: [10:56:30]root@anncara-computer:~# echo $env
+105630.648: [10:56:30]
+105632.048: [10:56:32]root@anncara-computer:~# env
+105632.066: [10:56:32]SHELL=/bin/bash
+105632.066: [10:56:32]LANGUAGE=en_HK:en
+105632.066: [10:56:32]EDITOR=vim
+105632.066: [10:56:32]PWD=/root
+105632.066: [10:56:32]LOGNAME=root
+105632.066: [10:56:32]XDG_SESSION_TYPE=tty
+105632.066: [10:56:32]MOTD_SHOWN=pam
+105632.066: [10:56:32]HOME=/root
+105632.066: [10:56:32]LANG=en_HK.UTF-8
+105632.066: [10:56:32]SSH_CONNECTION=223.107.68.194 43656 192.168.31.101 22
+105632.066: [10:56:32]SYSTEMD_EDITOR=vim
+105632.066: [10:56:32]XDG_SESSION_CLASS=user
+105632.066: [10:56:32]TERM=xterm-256color
+105632.066: [10:56:32]USER=root
+105632.066: [10:56:32]VISUAL=vim
+105632.066: [10:56:32]SHLVL=1
+105632.067: [10:56:32]HTTPS_PROXY=http://172.16.208.2:7890
+105632.067: [10:56:32]HTTP_PROXY=http://172.16.208.2:7890
+105632.067: [10:56:32]XDG_SESSION_ID=257
+105632.067: [10:56:32]XDG_RUNTIME_DIR=/run/user/0
+105632.067: [10:56:32]PS1=\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]# 
+105632.067: [10:56:32]SSH_CLIENT=223.107.68.194 43656 22
+105632.067: [10:56:32]PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+105632.067: [10:56:32]DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+105632.067: [10:56:32]SSH_TTY=/dev/pts/0
+105632.067: [10:56:32]_=/usr/bin/env
+105647.626: [10:56:47]root@anncara-computer:~# curl www.google.com.hk
+105703.271: [10:57:03]^C
+105715.609: [10:57:15]root@anncara-computer:~# cat /etc/apt/apt.conf
+105715.629: [10:57:15]#Acquire::http::Proxy "http://192.168.31.100:7890";
+105715.629: [10:57:15]Acquire::http::Proxy "http://172.16.208.2:7890";
+105723.978: [10:57:23]root@anncara-computer:~# apt-get update
+105724.170: [10:57:24]Get:1 http://security.debian.org/debian-security trixie-security InRelease [43.4 kB]
+105724.171: [10:57:24]Get:2 http://deb.debian.org/debian trixie InRelease [140 kB]
+105724.376: [10:57:24]Get:3 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+105724.393: [10:57:24]Get:4 http://security.debian.org/debian-security trixie-security/main Sources [125 kB]
+105724.560: [10:57:24]Get:5 http://deb.debian.org/debian trixie/main Sources [10.5 MB]                           
+105724.644: [10:57:24]Get:6 http://security.debian.org/debian-security trixie-security/non-free-firmware Sources [696 B]
+105724.774: [10:57:24]Get:7 http://security.debian.org/debian-security trixie-security/main amd64 Packages [119 kB]      
+105725.057: [10:57:25]Get:8 http://security.debian.org/debian-security trixie-security/main Translation-en [74.9 kB]         
+105725.331: [10:57:25]Get:9 http://security.debian.org/debian-security trixie-security/non-free-firmware amd64 Packages [544 B]    
+105725.477: [10:57:25]Get:10 http://security.debian.org/debian-security trixie-security/non-free-firmware Translation-en [352 B]
+105727.296: [10:57:27]Get:11 http://deb.debian.org/debian trixie/non-free-firmware Sources [6,552 B]  
+105727.428: [10:57:27]Get:12 http://deb.debian.org/debian trixie/main amd64 Packages [9,671 kB]
+105730.621: [10:57:30]Get:13 http://deb.debian.org/debian trixie/main Translation-en [6,484 kB]                                                                                                                                              
+105732.063: [10:57:32]Get:14 http://deb.debian.org/debian trixie/non-free-firmware amd64 Packages [6,884 B]                                                                                                                                  
+105732.394: [10:57:32]Fetched 27.2 MB in 8s (3,253 kB/s)                                                                                                                                                                                     
+105733.077: [10:57:33]Reading package lists... Done
+105733.092: [10:57:33]N: Repository 'http://deb.debian.org/debian trixie InRelease' changed its 'Version' value from '13.1' to '13.4'
+105816.876: [10:58:16]root@anncara-computer:~# 
+105817.086: [10:58:17]root@anncara-computer:~# 
+110022.738: [11:00:22]root@anncara-computer:~# wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+110022.757: [11:00:22]Warning: wildcards not supported in HTTP.
+110022.758: [11:00:22]--2026-04-07 11:00:22--  https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-*.tar.gz
+110022.767: [11:00:22]Resolving github.com (github.com)... 20.205.243.166
+110022.875: [11:00:22]Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+110023.677: [11:00:23]HTTP request sent, awaiting response... 302 Found
+110023.696: [11:00:23]Location: https://github.com/prometheus/node_exporter/releases/download/v1.11.0/node_exporter-*.tar.gz [following]
+110023.696: [11:00:23]Warning: wildcards not supported in HTTP.
+110023.697: [11:00:23]--2026-04-07 11:00:23--  https://github.com/prometheus/node_exporter/releases/download/v1.11.0/node_exporter-*.tar.gz
+110023.697: [11:00:23]Reusing existing connection to github.com:443.
+110024.185: [11:00:24]HTTP request sent, awaiting response... 404 Not Found
+110024.186: [11:00:24]2026-04-07 11:00:24 ERROR 404: Not Found.
+110024.186: [11:00:24]
+110221.053: [11:02:21]root@anncara-computer:~# wget 
+110233.447: [11:02:33]root@anncara-computer:~# z
+110237.110: [11:02:37]root@anncara-computer:~# 
+110237.216: [11:02:37]root@anncara-computer:~# 
+110240.313: [11:02:40]root@anncara-computer:~# wget https://github.com/prometheus/node_exporter/releases/download/v1.11.0/node_exporter-1.11.0.linux-amd64.tar.gz
+110240.333: [11:02:40]--2026-04-07 11:02:40--  https://github.com/prometheus/node_exporter/releases/download/v1.11.0/node_exporter-1.11.0.linux-amd64.tar.gz
+110240.341: [11:02:40]Resolving github.com (github.com)... 20.205.243.166
+110240.441: [11:02:40]Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+110241.060: [11:02:41]HTTP request sent, awaiting response... 302 Found
+110241.062: [11:02:41]Location: https://release-assets.githubusercontent.com/github-production-release-asset/9524057/3bcbe608-bf5f-43e5-9c77-989d263295a5?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-04-07T04%3A03%3A12Z&rscd=attachment%3B+fil110241.063: ename%3Dnode_exporter-1.11.0.linux-amd64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-04-07T03%3A02%3A15Z&ske=2026-04-07T04%3A0110241.064: 3%3A12Z&sks=b&skv=2018-11-09&sig=86l4HxgvSVQZWYEtmDkchof%2FucQ2t5gnUI9AAd6cClM%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5I110241.065: joia2V5MSIsImV4cCI6MTc3NTUzMjc2MCwibmJmIjoxNzc1NTMwOTYwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.nU2l9L9-AIWI8WmOz_aIrG9YhphUMaYJwa6Z_BCfvfc&response-content-disposition=attachment%3B110241.065: %20filename%3Dnode_exporter-1.11.0.linux-amd64.tar.gz&response-content-type=application%2Foctet-stream [following]
+110241.084: [11:02:41]--2026-04-07 11:02:41--  https://release-assets.githubusercontent.com/github-production-release-asset/9524057/3bcbe608-bf5f-43e5-9c77-989d263295a5?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-04-07T04%3A03%3A12Z&rscd=at110241.084: tachment%3B+filename%3Dnode_exporter-1.11.0.linux-amd64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-04-07T03%3A02%3A15Z&ske=20110241.085: 26-04-07T04%3A03%3A12Z&sks=b&skv=2018-11-09&sig=86l4HxgvSVQZWYEtmDkchof%2FucQ2t5gnUI9AAd6cClM%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbn110241.085: QuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3NTUzMjc2MCwibmJmIjoxNzc1NTMwOTYwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.nU2l9L9-AIWI8WmOz_aIrG9YhphUMaYJwa6Z_BCfvfc&response-content-dispositio110241.085: n=attachment%3B%20filename%3Dnode_exporter-1.11.0.linux-amd64.tar.gz&response-content-type=application%2Foctet-stream
+110241.098: [11:02:41]Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
+110242.201: [11:02:42]Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+110245.161: [11:02:45]HTTP request sent, awaiting response... 200 OK
+110245.162: [11:02:45]Length: 12084581 (12M) [application/octet-stream]
+110245.181: [11:02:45]Saving to: ‘node_exporter-1.11.0.linux-amd64.tar.gz’
+110245.181: [11:02:45]
+110423.129: [11:04:23]node_exporter-1.11.0.linux-amd64.tar.gz                10%[============>                                                                                                             ]   1.23M  --.-KB/s    eta 13m 37s^110423.150: C
+110424.430: [11:04:24]root@anncara-computer:~# ll
+110424.453: [11:04:24]total 1.3M
+110424.454: [11:04:24]-rw-r--r-- 1 root root   43 Apr  7 04:00 ip_list.txt
+110424.454: [11:04:24]-rw-r--r-- 1 root root 1.3M Apr  7 11:04 node_exporter-1.11.0.linux-amd64.tar.gz
+110427.863: [11:04:27]root@anncara-computer:~# rm node_exporter-1.11.0.linux-amd64.tar.gz 
+110428.905: [11:04:28]root@anncara-computer:~# ll
+110428.930: [11:04:28]total 4.0K
+110428.930: [11:04:28]-rw-r--r-- 1 root root 43 Apr  7 04:00 ip_list.txt
+110438.481: [11:04:38]root@anncara-computer:~# pwd
+110438.503: [11:04:38]/root
+110441.666: [11:04:41]root@anncara-computer:~# cd /opt
+110442.219: [11:04:42]root@anncara-computer:/opt# ll
+110442.241: [11:04:42]total 4.0K
+110442.241: [11:04:42]drwxr-xr-x 2 root root 4.0K Oct 24 21:35 tmp
+110445.295: [11:04:45]root@anncara-computer:/opt# cd tmp
+110445.876: [11:04:45]root@anncara-computer:/opt/tmp# ll
+110445.897: [11:04:45]total 0
+110447.231: [11:04:47]root@anncara-computer:/opt/tmp# cd ..
+110450.676: [11:04:50]root@anncara-computer:/opt# rmdir tmp
+110451.250: [11:04:51]root@anncara-computer:/opt# ll
+110451.273: [11:04:51]total 0
+110603.461: [11:06:03]root@anncara-computer:/opt# ll
+110603.484: [11:06:03]total 12M
+110603.485: [11:06:03]-rw-r--r-- 1 root root 12M Apr  7 11:04 node_exporter-1.11.0.linux-amd64.tar.gz
+110612.308: [11:06:12]root@anncara-computer:/opt# tar -xvf node_exporter-1.11.0.linux-amd64.tar.gz 
+110612.334: [11:06:12]node_exporter-1.11.0.linux-amd64/
+110612.334: [11:06:12]node_exporter-1.11.0.linux-amd64/LICENSE
+110612.335: [11:06:12]node_exporter-1.11.0.linux-amd64/node_exporter
+110612.553: [11:06:12]node_exporter-1.11.0.linux-amd64/NOTICE
+110613.475: [11:06:13]root@anncara-computer:/opt# ll
+110613.496: [11:06:13]total 12M
+110613.496: [11:06:13]drwxr-xr-x 2 sambauser sambauser 4.0K Apr  4 23:01 node_exporter-1.11.0.linux-amd64
+110613.497: [11:06:13]-rw-r--r-- 1 root      root       12M Apr  7 11:04 node_exporter-1.11.0.linux-amd64.tar.gz
+110615.122: [11:06:15]root@anncara-computer:/opt# cd node_exporter-1.11.0.linux-amd64/
+110615.791: [11:06:15]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ll
+110615.811: [11:06:15]total 23M
+110615.811: [11:06:15]-rw-r--r-- 1 sambauser sambauser 12K Apr  4 22:59 LICENSE
+110615.811: [11:06:15]-rwxr-xr-x 1 sambauser sambauser 23M Apr  4 20:44 node_exporter
+110615.811: [11:06:15]-rw-r--r-- 1 sambauser sambauser 463 Apr  4 22:59 NOTICE
+110623.133: [11:06:23]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ./node_exporter &
+110623.133: [11:06:23][1] 69988
+110623.157: [11:06:23]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:06:23.162+08:00 level=INFO source=node_exporter.go:217 msg="Starting node_exporter" version="(version=1.11.0, branch=HEAD, revision=14fd110623.157: dfc75281ab900df5945fb3dd7fcea14d7801)"
+110623.158: [11:06:23]time=2026-04-07T11:06:23.162+08:00 level=INFO source=node_exporter.go:218 msg="Build context" build_context="(go=go1.26.1, platform=linux/amd64, user=root@db37f0a252bf, date=20260404-12:44:16, tags=unknown)"
+110623.158: [11:06:23]time=2026-04-07T11:06:23.163+08:00 level=WARN source=node_exporter.go:220 msg="Node Exporter is running as root user. This exporter is designed to run as unprivileged user, root is not required."
+110623.159: [11:06:23]time=2026-04-07T11:06:23.165+08:00 level=INFO source=filesystem_common.go:263 msg="Parsed flag --collector.filesystem.mount-points-exclude" collector=filesystem flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/110623.159: .+|var/lib/containers/storage/.+)($|/)
+110623.159: [11:06:23]time=2026-04-07T11:06:23.165+08:00 level=INFO source=filesystem_common.go:292 msg="Parsed flag --collector.filesystem.fs-types-exclude" collector=filesystem flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|dev110623.160: pts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|erofs|sysfs|tracefs)$
+110623.160: [11:06:23]time=2026-04-07T11:06:23.165+08:00 level=INFO source=diskstats_common.go:110 msg="Parsed flag --collector.diskstats.device-exclude" collector=diskstats flag=^(z?ram|loop|fd|(h|s|v|xv)d[a-z]|nvme\d+n\d+p)\d+$
+110623.173: [11:06:23]time=2026-04-07T11:06:23.168+08:00 level=INFO source=node_exporter.go:136 msg="Enabled collectors"
+110623.173: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=arp
+110623.173: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=bcache
+110623.173: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=bcachefs
+110623.173: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=bonding
+110623.173: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=btrfs
+110623.174: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=conntrack
+110623.174: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=cpu
+110623.174: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=cpufreq
+110623.174: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=diskstats
+110623.174: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=dmi
+110623.174: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=edac
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=entropy
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=fibrechannel
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=filefd
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=filesystem
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=hwmon
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=infiniband
+110623.175: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=ipvs
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=kernel_hung
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=loadavg
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=mdadm
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=meminfo
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=netclass
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=netdev
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=netstat
+110623.176: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=nfs
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=nfsd
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=nvme
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=os
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=powersupplyclass
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=pressure
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=rapl
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=schedstat
+110623.177: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=selinux
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=sockstat
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=softnet
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=stat
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=tapestats
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=textfile
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=thermal_zone
+110623.178: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=time
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=timex
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=udp_queues
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=uname
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=vmstat
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=watchdog
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=xfs
+110623.179: [11:06:23]time=2026-04-07T11:06:23.169+08:00 level=INFO source=node_exporter.go:142 msg=zfs
+110623.180: [11:06:23]time=2026-04-07T11:06:23.171+08:00 level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9100
+110623.180: [11:06:23]time=2026-04-07T11:06:23.171+08:00 level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9100
+110625.690: [11:06:25]
+110626.230: [11:06:26]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# 
+110630.537: [11:06:30]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ps -ef | grep node
+110630.578: [11:06:30]root       69988   68186  0 11:06 pts/0    00:00:00 ./node_exporter
+110630.578: [11:06:30]root       69999   68186  0 11:06 pts/0    00:00:00 grep node
+110633.222: [11:06:33]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ss -tlnp
+110633.288: [11:06:33]State                Recv-Q               Send-Q                              Local Address:Port                               Peer Address:Port               Process                                                  
+110633.289: [11:06:33]LISTEN               0                    4096                                   127.0.0.54:53                                      0.0.0.0:*                   users:(("systemd-resolve",pid=337,fd=21))               
+110633.289: [11:06:33]LISTEN               0                    4096                                127.0.0.53%lo:53                                      0.0.0.0:*                   users:(("systemd-resolve",pid=337,fd=19))               
+110633.290: [11:06:33]LISTEN               0                    4096                                      0.0.0.0:5355                                    0.0.0.0:*                   users:(("systemd-resolve",pid=337,fd=12))               
+110633.290: [11:06:33]LISTEN               0                    4096                               192.168.31.101:20407                                   0.0.0.0:*                   users:(("frps",pid=54743,fd=3))                         
+110633.291: [11:06:33]LISTEN               0                    4096                               192.168.31.101:6000                                    0.0.0.0:*                   users:(("frps",pid=54743,fd=9))                         
+110633.291: [11:06:33]LISTEN               0                    50                                        0.0.0.0:445                                     0.0.0.0:*                   users:(("smbd",pid=981,fd=30))                          
+110633.292: [11:06:33]LISTEN               0                    4096                               192.168.31.101:10020                                   0.0.0.0:*                   users:(("frps",pid=54743,fd=10))                        
+110633.292: [11:06:33]LISTEN               0                    128                                       0.0.0.0:22                                      0.0.0.0:*                   users:(("sshd",pid=751,fd=6))                           
+110633.293: [11:06:33]LISTEN               0                    50                                        0.0.0.0:139                                     0.0.0.0:*                   users:(("smbd",pid=981,fd=31))                          
+110633.293: [11:06:33]LISTEN               0                    4096                                            *:7500                                          *:*                   users:(("frps",pid=54743,fd=7))                         
+110633.294: [11:06:33]LISTEN               0                    4096                                         [::]:5355                                       [::]:*                   users:(("systemd-resolve",pid=337,fd=14))               
+110633.294: [11:06:33]LISTEN               0                    4096                                            *:9100                                          *:*                   users:(("node_exporter",pid=69988,fd=4))                
+110633.295: [11:06:33]LISTEN               0                    50                                           [::]:445                                        [::]:*                   users:(("smbd",pid=981,fd=28))                          
+110633.295: [11:06:33]LISTEN               0                    128                                          [::]:22                                         [::]:*                   users:(("sshd",pid=751,fd=7))                           
+110633.296: [11:06:33]LISTEN               0                    50                                           [::]:139                                        [::]:*                   users:(("smbd",pid=981,fd=29))                          
+113847.388: [11:38:47][202604Home-Dell-Public-11:38:47]
+113847.485: [11:38:47]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+113847.486: [11:38:47]
+113847.486: [11:38:47]The programs included with the Debian GNU/Linux system are free software;
+113847.486: [11:38:47]the exact distribution terms for each program are described in the
+113847.486: [11:38:47]individual files in /usr/share/doc/*/copyright.
+113847.486: [11:38:47]
+113847.487: [11:38:47]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+113847.487: [11:38:47]permitted by applicable law.
+113847.487: [11:38:47]Last login: Tue Apr  7 10:21:02 2026 from 223.107.68.194
+113852.708: [11:38:52]root@anncara-computer:~# ss -tlnp
+113852.747: [11:38:52]State                   Recv-Q                  Send-Q                                    Local Address:Port                                    Peer Address:Port                 Process                                                    
+113852.748: [11:38:52]LISTEN                  0                       4096                                         127.0.0.54:53                                           0.0.0.0:*                     users:(("systemd-resolve",pid=337,fd=21))                 
+113852.749: [11:38:52]LISTEN                  0                       4096                                      127.0.0.53%lo:53                                           0.0.0.0:*                     users:(("systemd-resolve",pid=337,fd=19))                 
+113852.749: [11:38:52]LISTEN                  0                       4096                                            0.0.0.0:5355                                         0.0.0.0:*                     users:(("systemd-resolve",pid=337,fd=12))                 
+113852.750: [11:38:52]LISTEN                  0                       4096                                     192.168.31.101:20407                                        0.0.0.0:*                     users:(("frps",pid=54743,fd=3))                           
+113852.751: [11:38:52]LISTEN                  0                       4096                                     192.168.31.101:6000                                         0.0.0.0:*                     users:(("frps",pid=54743,fd=9))                           
+113852.751: [11:38:52]LISTEN                  0                       50                                              0.0.0.0:445                                          0.0.0.0:*                     users:(("smbd",pid=981,fd=30))                            
+113852.752: [11:38:52]LISTEN                  0                       4096                                     192.168.31.101:10020                                        0.0.0.0:*                     users:(("frps",pid=54743,fd=11))                          
+113852.753: [11:38:52]LISTEN                  0                       128                                             0.0.0.0:22                                           0.0.0.0:*                     users:(("sshd",pid=751,fd=6))                             
+113852.754: [11:38:52]LISTEN                  0                       50                                              0.0.0.0:139                                          0.0.0.0:*                     users:(("smbd",pid=981,fd=31))                            
+113852.754: [11:38:52]LISTEN                  0                       4096                                                  *:7500                                               *:*                     users:(("frps",pid=54743,fd=7))                           
+113852.755: [11:38:52]LISTEN                  0                       4096                                               [::]:5355                                            [::]:*                     users:(("systemd-resolve",pid=337,fd=14))                 
+113852.755: [11:38:52]LISTEN                  0                       50                                                 [::]:445                                             [::]:*                     users:(("smbd",pid=981,fd=28))                            
+113852.756: [11:38:52]LISTEN                  0                       128                                                [::]:22                                              [::]:*                     users:(("sshd",pid=751,fd=7))                             
+113852.756: [11:38:52]LISTEN                  0                       50                                                 [::]:139                                             [::]:*                     users:(("smbd",pid=981,fd=29))                            
+113902.554: [11:39:02]root@anncara-computer:~# ./node_exporter &
+113902.562: [11:39:02][1] 71227
+113902.562: [11:39:02]root@anncara-computer:~# -bash: ./node_exporter: No such file or directory
+113908.275: [11:39:08]cd /opt
+113908.281: [11:39:08][1]+  Exit 127                ./node_exporter  (wd: ~)
+113908.282: [11:39:08](wd now: /opt)
+113908.903: [11:39:08]root@anncara-computer:/opt# ll
+113908.911: [11:39:08]total 12M
+113908.912: [11:39:08]drwxr-xr-x 2 sambauser sambauser 4.0K Apr  4 23:01 node_exporter-1.11.0.linux-amd64
+113908.912: [11:39:08]-rw-r--r-- 1 root      root       12M Apr  7 11:04 node_exporter-1.11.0.linux-amd64.tar.gz
+113910.018: [11:39:10]root@anncara-computer:/opt# cd node_exporter-1.11.0.linux-amd64/
+113910.621: [11:39:10]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ll
+113910.628: [11:39:10]total 23M
+113910.628: [11:39:10]-rw-r--r-- 1 sambauser sambauser 12K Apr  4 22:59 LICENSE
+113910.628: [11:39:10]-rwxr-xr-x 1 sambauser sambauser 23M Apr  4 20:44 node_exporter
+113910.629: [11:39:10]-rw-r--r-- 1 sambauser sambauser 463 Apr  4 22:59 NOTICE
+113939.045: [11:39:39]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ./node_exporter &
+113939.051: [11:39:39][1] 71256
+113939.061: [11:39:39]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:39:39.075+08:00 level=INFO source=node_exporter.go:217 msg="Starting node_exporter" version="(version=1.11.0, branch=HEAD, revision=14fddfc113939.061: 75281ab900df5945fb3dd7fcea14d7801)"
+113939.062: [11:39:39]time=2026-04-07T11:39:39.075+08:00 level=INFO source=node_exporter.go:218 msg="Build context" build_context="(go=go1.26.1, platform=linux/amd64, user=root@db37f0a252bf, date=20260404-12:44:16, tags=unknown)"
+113939.063: [11:39:39]time=2026-04-07T11:39:39.076+08:00 level=WARN source=node_exporter.go:220 msg="Node Exporter is running as root user. This exporter is designed to run as unprivileged user, root is not required."
+113939.070: [11:39:39]time=2026-04-07T11:39:39.076+08:00 level=INFO source=diskstats_common.go:110 msg="Parsed flag --collector.diskstats.device-exclude" collector=diskstats flag=^(z?ram|loop|fd|(h|s|v|xv)d[a-z]|nvme\d+n\d+p)\d+$
+113939.070: [11:39:39]time=2026-04-07T11:39:39.076+08:00 level=INFO source=filesystem_common.go:263 msg="Parsed flag --collector.filesystem.mount-points-exclude" collector=filesystem flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+|113939.071: var/lib/containers/storage/.+)($|/)
+113939.071: [11:39:39]time=2026-04-07T11:39:39.076+08:00 level=INFO source=filesystem_common.go:292 msg="Parsed flag --collector.filesystem.fs-types-exclude" collector=filesystem flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts113939.072: |devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|erofs|sysfs|tracefs)$
+113939.077: [11:39:39]time=2026-04-07T11:39:39.077+08:00 level=INFO source=node_exporter.go:136 msg="Enabled collectors"
+113939.078: [11:39:39]time=2026-04-07T11:39:39.077+08:00 level=INFO source=node_exporter.go:142 msg=arp
+113939.078: [11:39:39]time=2026-04-07T11:39:39.077+08:00 level=INFO source=node_exporter.go:142 msg=bcache
+113939.078: [11:39:39]time=2026-04-07T11:39:39.077+08:00 level=INFO source=node_exporter.go:142 msg=bcachefs
+113939.078: [11:39:39]time=2026-04-07T11:39:39.077+08:00 level=INFO source=node_exporter.go:142 msg=bonding
+113939.078: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=btrfs
+113939.079: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=conntrack
+113939.079: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=cpu
+113939.079: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=cpufreq
+113939.079: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=diskstats
+113939.079: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=dmi
+113939.080: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=edac
+113939.080: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=entropy
+113939.080: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=fibrechannel
+113939.080: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=filefd
+113939.081: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=filesystem
+113939.081: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=hwmon
+113939.081: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=infiniband
+113939.081: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=ipvs
+113939.081: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=kernel_hung
+113939.081: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=loadavg
+113939.082: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=mdadm
+113939.082: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=meminfo
+113939.082: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=netclass
+113939.082: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=netdev
+113939.082: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=netstat
+113939.082: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=nfs
+113939.083: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=nfsd
+113939.083: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=nvme
+113939.083: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=os
+113939.083: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=powersupplyclass
+113939.083: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=pressure
+113939.083: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=rapl
+113939.084: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=schedstat
+113939.084: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=selinux
+113939.084: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=sockstat
+113939.084: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=softnet
+113939.084: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=stat
+113939.085: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=tapestats
+113939.085: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=textfile
+113939.085: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=thermal_zone
+113939.085: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=time
+113939.085: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=timex
+113939.085: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=udp_queues
+113939.086: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=uname
+113939.086: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=vmstat
+113939.086: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=watchdog
+113939.086: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=xfs
+113939.086: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=node_exporter.go:142 msg=zfs
+113939.086: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9100
+113939.087: [11:39:39]time=2026-04-07T11:39:39.078+08:00 level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9100
+113939.751: [11:39:39]
+113939.947: [11:39:39]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# 
+113951.929: [11:39:51]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:39:51.946+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=8.487e-05 err="open /proc/sys/113951.930: kernel/hung_task_detect_count: no such file or directory"
+113953.446: [11:39:53]
+113953.610: [11:39:53]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# 
+113956.208: [11:39:56]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# ss -tlnp
+113956.232: [11:39:56]State                Recv-Q               Send-Q                                Local Address:Port                                Peer Address:Port               Process                                                  
+113956.233: [11:39:56]LISTEN               0                    4096                                     127.0.0.54:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=337,fd=21))               
+113956.233: [11:39:56]LISTEN               0                    4096                                  127.0.0.53%lo:53                                       0.0.0.0:*                   users:(("systemd-resolve",pid=337,fd=19))               
+113956.234: [11:39:56]LISTEN               0                    4096                                        0.0.0.0:5355                                     0.0.0.0:*                   users:(("systemd-resolve",pid=337,fd=12))               
+113956.234: [11:39:56]LISTEN               0                    4096                                 192.168.31.101:20407                                    0.0.0.0:*                   users:(("frps",pid=54743,fd=3))                         
+113956.235: [11:39:56]LISTEN               0                    4096                                 192.168.31.101:6000                                     0.0.0.0:*                   users:(("frps",pid=54743,fd=9))                         
+113956.235: [11:39:56]LISTEN               0                    50                                          0.0.0.0:445                                      0.0.0.0:*                   users:(("smbd",pid=981,fd=30))                          
+113956.235: [11:39:56]LISTEN               0                    4096                                 192.168.31.101:10020                                    0.0.0.0:*                   users:(("frps",pid=54743,fd=11))                        
+113956.236: [11:39:56]LISTEN               0                    128                                         0.0.0.0:22                                       0.0.0.0:*                   users:(("sshd",pid=751,fd=6))                           
+113956.236: [11:39:56]LISTEN               0                    50                                          0.0.0.0:139                                      0.0.0.0:*                   users:(("smbd",pid=981,fd=31))                          
+113956.237: [11:39:56]LISTEN               0                    4096                                              *:7500                                           *:*                   users:(("frps",pid=54743,fd=7))                         
+113956.237: [11:39:56]LISTEN               0                    4096                                           [::]:5355                                        [::]:*                   users:(("systemd-resolve",pid=337,fd=14))               
+113956.237: [11:39:56]LISTEN               0                    4096                                              *:9100                                           *:*                   users:(("node_exporter",pid=71256,fd=4))                
+113956.238: [11:39:56]LISTEN               0                    50                                             [::]:445                                         [::]:*                   users:(("smbd",pid=981,fd=28))                          
+113956.238: [11:39:56]LISTEN               0                    128                                            [::]:22                                          [::]:*                   users:(("sshd",pid=751,fd=7))                           
+113956.239: [11:39:56]LISTEN               0                    50                                             [::]:139                                         [::]:*                   users:(("smbd",pid=981,fd=29))                          
+114006.928: [11:40:06]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:40:06.942+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=3.4163e-05 err="open /proc/sys114006.929: /kernel/hung_task_detect_count: no such file or directory"
+114021.903: [11:40:21]time=2026-04-07T11:40:21.919+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.3225e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114036.921: [11:40:36]time=2026-04-07T11:40:36.935+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.4473e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114052.002: [11:40:52]time=2026-04-07T11:40:51.926+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3879e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114106.934: [11:41:06]time=2026-04-07T11:41:06.950+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.0558e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114117.254: [11:41:17]
+114122.004: [11:41:22]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:41:21.940+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.186e-05 err="open /proc/sys/114122.004: kernel/hung_task_detect_count: no such file or directory"
+114134.819: [11:41:34]
+114136.923: [11:41:36]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:41:36.938+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.0276e-05 err="open /proc/sys114136.924: /kernel/hung_task_detect_count: no such file or directory"
+114151.905: [11:41:51]time=2026-04-07T11:41:51.921+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4542e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114206.913: [11:42:06]time=2026-04-07T11:42:06.928+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.6067e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114221.901: [11:42:21]time=2026-04-07T11:42:21.916+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5225e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114236.906: [11:42:36]time=2026-04-07T11:42:36.910+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.9337e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114251.901: [11:42:51]time=2026-04-07T11:42:51.914+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.118e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114306.908: [11:43:06]time=2026-04-07T11:43:06.923+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.6565e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114321.915: [11:43:21]time=2026-04-07T11:43:21.915+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3756e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114336.907: [11:43:36]time=2026-04-07T11:43:36.921+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=2.6483e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114352.329: [11:43:52]time=2026-04-07T11:43:51.918+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.205e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114407.079: [11:44:07]time=2026-04-07T11:44:06.929+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.605e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114421.922: [11:44:21]time=2026-04-07T11:44:21.925+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5232e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114436.975: [11:44:36]time=2026-04-07T11:44:36.938+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.1399e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114451.903: [11:44:51]time=2026-04-07T11:44:51.918+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.1843e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114506.910: [11:45:06]time=2026-04-07T11:45:06.925+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4972e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114521.917: [11:45:21]time=2026-04-07T11:45:21.933+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4052e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114536.925: [11:45:36]time=2026-04-07T11:45:36.911+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.6616e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114551.901: [11:45:51]time=2026-04-07T11:45:51.918+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.656e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114606.985: [11:46:06]time=2026-04-07T11:46:06.915+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.6493e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114621.909: [11:46:21]time=2026-04-07T11:46:21.924+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5123e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114636.933: [11:46:36]time=2026-04-07T11:46:36.911+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.2134e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114651.911: [11:46:51]time=2026-04-07T11:46:51.926+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5284e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114707.082: [11:47:07]time=2026-04-07T11:47:06.931+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4903e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114721.943: [11:47:21]time=2026-04-07T11:47:21.920+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.8258e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114736.756: [11:47:36]time=2026-04-07T11:47:36.773+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4168e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114736.921: [11:47:36]time=2026-04-07T11:47:36.936+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.049e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114751.948: [11:47:51]time=2026-04-07T11:47:51.953+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.9753e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114807.000: [11:48:07]time=2026-04-07T11:48:06.913+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.3744e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114822.085: [11:48:22]time=2026-04-07T11:48:21.914+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.0959e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114836.904: [11:48:36]time=2026-04-07T11:48:36.917+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.5906e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114851.912: [11:48:51]time=2026-04-07T11:48:51.927+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.1647e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114906.906: [11:49:06]time=2026-04-07T11:49:06.921+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4733e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114922.163: [11:49:22]time=2026-04-07T11:49:21.926+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4816e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114937.008: [11:49:37]time=2026-04-07T11:49:36.927+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.6486e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+114951.960: [11:49:51]time=2026-04-07T11:49:51.938+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=3.9855e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115006.953: [11:50:06]time=2026-04-07T11:50:06.944+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.0483e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115021.913: [11:50:21]time=2026-04-07T11:50:21.928+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3866e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115036.921: [11:50:36]time=2026-04-07T11:50:36.937+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5159e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115051.919: [11:50:51]time=2026-04-07T11:50:51.934+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3746e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115106.925: [11:51:06]time=2026-04-07T11:51:06.935+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.429e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115121.926: [11:51:21]time=2026-04-07T11:51:21.940+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=3.9301e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115137.022: [11:51:37]time=2026-04-07T11:51:36.944+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.3355e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115151.974: [11:51:51]time=2026-04-07T11:51:51.939+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.8166e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115207.087: [11:52:07]time=2026-04-07T11:52:06.931+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.809e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115221.913: [11:52:21]time=2026-04-07T11:52:21.928+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4539e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115237.337: [11:52:37]time=2026-04-07T11:52:36.922+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5894e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115252.092: [11:52:52]time=2026-04-07T11:52:51.924+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4027e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115306.908: [11:53:06]time=2026-04-07T11:53:06.916+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.2053e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115321.909: [11:53:21]time=2026-04-07T11:53:21.925+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=6.2466e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115336.908: [11:53:36]time=2026-04-07T11:53:36.923+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4926e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115351.922: [11:53:51]time=2026-04-07T11:53:51.936+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.5171e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115406.920: [11:54:06]time=2026-04-07T11:54:06.935+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.6507e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115421.991: [11:54:21]time=2026-04-07T11:54:21.921+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.4651e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115436.942: [11:54:36]time=2026-04-07T11:54:36.926+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.7568e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115451.994: [11:54:51]time=2026-04-07T11:54:51.923+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.486e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115506.944: [11:55:06]time=2026-04-07T11:55:06.925+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3203e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115521.996: [11:55:21]time=2026-04-07T11:55:21.930+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4228e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115537.050: [11:55:37]time=2026-04-07T11:55:36.935+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.6078e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115552.000: [11:55:52]time=2026-04-07T11:55:51.939+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3849e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115606.952: [11:56:06]time=2026-04-07T11:56:06.927+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.3808e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115621.914: [11:56:21]time=2026-04-07T11:56:21.930+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4101e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115637.058: [11:56:37]time=2026-04-07T11:56:36.925+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4259e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115651.921: [11:56:51]time=2026-04-07T11:56:51.936+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.6177e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115706.930: [11:57:06]time=2026-04-07T11:57:06.945+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=4.2004e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115710.784: [11:57:10]^C
+115712.516: [11:57:12]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# free -h
+115712.551: [11:57:12]               total        used        free      shared  buff/cache   available
+115712.552: [11:57:12]Mem:           3.7Gi       582Mi       132Mi       8.1Mi       3.3Gi       3.2Gi
+115712.552: [11:57:12]Swap:          3.9Gi       256Ki       3.9Gi
+115721.928: [11:57:21]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# time=2026-04-07T11:57:21.943+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=5.1518e-05 err="open /proc/sys115721.929: /kernel/hung_task_detect_count: no such file or directory"
+115736.962: [11:57:36]time=2026-04-07T11:57:36.929+08:00 level=ERROR source=collector.go:168 msg="collector failed" name=kernel_hung duration_seconds=1.4602e-05 err="open /proc/sys/kernel/hung_task_detect_count: no such file or directory"
+115749.602: [11:57:49]root@anncara-computer:/opt/node_exporter-1.11.0.linux-amd64# 
+115749.603: [11:57:49]logout
+115751.099: [11:57:51][202604Home-Dell-Public-11:57:51]
+115751.181: [11:57:51]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+115751.181: [11:57:51]
+115751.182: [11:57:51]The programs included with the Debian GNU/Linux system are free software;
+115751.182: [11:57:51]the exact distribution terms for each program are described in the
+115751.182: [11:57:51]individual files in /usr/share/doc/*/copyright.
+115751.182: [11:57:51]
+115751.182: [11:57:51]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+115751.182: [11:57:51]permitted by applicable law.
+115751.183: [11:57:51]Last login: Tue Apr  7 11:38:47 2026 from 223.107.68.194
+115754.683: [11:57:54]root@anncara-computer:~# ps -ef | grep node
+115754.716: [11:57:54]root       71256       1  0 11:39 ?        00:00:02 ./node_exporter
+115754.716: [11:57:54]root       71925   71921  0 11:57 pts/1    00:00:00 grep node
+115757.576: [11:57:57]root@anncara-computer:~# ss t-lnp
+115758.994: [11:57:58]^C
+115800.964: [11:58:00]root@anncara-computer:~# ss -tlnp
+115801.002: [11:58:01]State              Recv-Q             Send-Q                          Local Address:Port                           Peer Address:Port             Process                                                
+115801.003: [11:58:01]LISTEN             0                  4096                               127.0.0.54:53                                  0.0.0.0:*                 users:(("systemd-resolve",pid=337,fd=21))             
+115801.004: [11:58:01]LISTEN             0                  4096                            127.0.0.53%lo:53                                  0.0.0.0:*                 users:(("systemd-resolve",pid=337,fd=19))             
+115801.005: [11:58:01]LISTEN             0                  4096                                  0.0.0.0:5355                                0.0.0.0:*                 users:(("systemd-resolve",pid=337,fd=12))             
+115801.005: [11:58:01]LISTEN             0                  4096                           192.168.31.101:20407                               0.0.0.0:*                 users:(("frps",pid=54743,fd=3))                       
+115801.006: [11:58:01]LISTEN             0                  4096                           192.168.31.101:6000                                0.0.0.0:*                 users:(("frps",pid=54743,fd=9))                       
+115801.006: [11:58:01]LISTEN             0                  50                                    0.0.0.0:445                                 0.0.0.0:*                 users:(("smbd",pid=981,fd=30))                        
+115801.007: [11:58:01]LISTEN             0                  4096                           192.168.31.101:10020                               0.0.0.0:*                 users:(("frps",pid=54743,fd=11))                      
+115801.008: [11:58:01]LISTEN             0                  128                                   0.0.0.0:22                                  0.0.0.0:*                 users:(("sshd",pid=751,fd=6))                         
+115801.008: [11:58:01]LISTEN             0                  50                                    0.0.0.0:139                                 0.0.0.0:*                 users:(("smbd",pid=981,fd=31))                        
+115801.009: [11:58:01]LISTEN             0                  4096                                        *:7500                                      *:*                 users:(("frps",pid=54743,fd=7))                       
+115801.009: [11:58:01]LISTEN             0                  4096                                     [::]:5355                                   [::]:*                 users:(("systemd-resolve",pid=337,fd=14))             
+115801.010: [11:58:01]LISTEN             0                  4096                                        *:9100                                      *:*                 users:(("node_exporter",pid=71256,fd=4))              
+115801.010: [11:58:01]LISTEN             0                  50                                       [::]:445                                    [::]:*                 users:(("smbd",pid=981,fd=28))                        
+115801.011: [11:58:01]LISTEN             0                  128                                      [::]:22                                     [::]:*                 users:(("sshd",pid=751,fd=7))                         
+115801.011: [11:58:01]LISTEN             0                  50                                       [::]:139                                    [::]:*                 users:(("smbd",pid=981,fd=29))                        
+200155.756: [20:01:55][202604Home-Dell-Public-20:01:55]
+200155.876: [20:01:55]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+200155.876: [20:01:55]
+200155.876: [20:01:55]The programs included with the Debian GNU/Linux system are free software;
+200155.877: [20:01:55]the exact distribution terms for each program are described in the
+200155.877: [20:01:55]individual files in /usr/share/doc/*/copyright.
+200155.877: [20:01:55]
+200155.877: [20:01:55]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+200155.878: [20:01:55]permitted by applicable law.
+200155.878: [20:01:55]Last login: Tue Apr  7 11:57:51 2026 from 223.107.68.194

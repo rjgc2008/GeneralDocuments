@@ -1,0 +1,1261 @@
+﻿144740.199: [14:47:40][202604192.168.11.243-14:47:40]
+144740.220: [14:47:40]
+144740.221: [14:47:40]Info: The max number of VTY users is 10, and the number
+144740.225: [14:47:40]      of current VTY users on line is 1.
+144740.225: [14:47:40]      The current login time is 2026-04-02 14:44:09+08:00.
+144740.228: [14:47:40]Info: Lastest accessed IP: 172.16.208.2  Time: 2026-04-02 14:43:43+08:00  Failed: 0
+144740.228: [14:47:40]
+144740.228: [14:47:40]Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+144744.774: [14:47:44]<9C-2F-CORE>disp ip inte bri
+144744.774: [14:47:44]*down: administratively down
+144744.774: [14:47:44]^down: standby
+144744.774: [14:47:44](l): loopback
+144744.774: [14:47:44](s): spoofing
+144744.774: [14:47:44](E): E-Trunk down
+144744.775: [14:47:44]The number of interface that is UP in Physical is 2
+144744.784: [14:47:44]The number of interface that is DOWN in Physical is 1
+144744.784: [14:47:44]The number of interface that is UP in Protocol is 2
+144744.784: [14:47:44]The number of interface that is DOWN in Protocol is 1
+144744.784: [14:47:44]
+144744.785: [14:47:44]Interface                         IP Address/Mask      Physical   Protocol  
+144744.785: [14:47:44]MEth0/0/1                         192.168.1.253/24     down       down      
+144744.785: [14:47:44]NULL0                             unassigned           up         up(s)     
+144744.785: [14:47:44]Vlanif1                           192.168.11.243/22    up         up        
+144744.785: [14:47:44]
+144749.083: [14:47:49]<9C-2F-CORE>sy
+144749.083: [14:47:49]Enter system view, return user view with Ctrl+Z.
+144750.853: [14:47:50][9C-2F-CORE]cd int
+144755.754: [14:47:55][9C-2F-CORE]int    
+144756.219: [14:47:56][9C-2F-CORE]interface v
+144800.099: [14:48:00][9C-2F-CORE]interface Vl              
+144801.497: [14:48:01][9C-2F-CORE]interface Vlanif 1
+144802.364: [14:48:02][9C-2F-CORE-Vlanif1]d this
+144802.364: [14:48:02]#
+144802.364: [14:48:02]interface Vlanif1
+144802.373: [14:48:02] ip address dhcp-alloc unicast
+144802.373: [14:48:02]#
+144802.373: [14:48:02]return
+144808.078: [14:48:08][9C-2F-CORE-Vlanif1]d l n b
+144808.078: [14:48:08]Local Intf       Neighbor Dev             Neighbor Intf             Exptime(s)
+144808.085: [14:48:08]GE0/0/12         HUAWEI                   GE0/0/14                  119    
+144808.085: [14:48:08]GE0/0/23         Ruijie                   c4b2-5b25-69f9            92     
+144808.085: [14:48:08]GE0/0/24         WangXun_EM_firmware      6cb3-1167-cafc            100    
+144808.086: [14:48:08]XGE0/0/1         3F-WIRE-JIERU            GE0/0/25                  108    
+144808.086: [14:48:08]XGE0/0/2         HUAWEI                   GE0/0/25                  100    
+144808.092: [14:48:08]XGE0/0/3         HUAWEI                   GE0/0/25                  90     
+144808.092: [14:48:08]XGE0/0/4         HUAWEI                   GE0/0/28                  102    
+144820.292: [14:48:20][9C-2F-CORE-Vlanif1]disp mac
+144820.674: [14:48:20][9C-2F-CORE-Vlanif1]disp mac-
+144820.877: [14:48:20][9C-2F-CORE-Vlanif1]disp mac-vlan
+144822.365: [14:48:22][9C-2F-CORE-Vlanif1]disp mac-address ?
+144822.365: [14:48:22]  GigabitEthernet   GigabitEthernet interface
+144822.365: [14:48:22]  H-H-H             MAC address
+144822.365: [14:48:22]  XGigabitEthernet  XGigabitEthernet interface
+144822.365: [14:48:22]  aging-time        Aging-time
+144822.375: [14:48:22]  authen            Authenticated user item
+144822.375: [14:48:22]  blackhole         Black hole item
+144822.375: [14:48:22]  bridge-domain     Bridge domain 
+144822.375: [14:48:22]  dynamic           Dynamic item
+144822.375: [14:48:22]  evpn              Evpn MAC address
+144822.375: [14:48:22]  flapping          Flapping
+144822.375: [14:48:22]  multicast         Multicast item
+144822.383: [14:48:22]  multiport         Multiport item
+144822.383: [14:48:22]  mux               Mux MAC address
+144822.383: [14:48:22]  pre-authen        Guest user item
+144822.383: [14:48:22]  sec-config        Secure-configured MAC address
+144822.383: [14:48:22]  security          Secure-dynamic MAC address
+144822.391: [14:48:22]  snooping          DHCP snooping sticky MAC address
+144822.391: [14:48:22]  static            Static item
+144822.391: [14:48:22]  sticky            Sticky MAC address
+144822.391: [14:48:22]  summary           Summary of MAC address
+144822.391: [14:48:22]  total-number      Total number of MAC address
+144822.391: [14:48:22]  verbose           Verbose information
+144822.401: [14:48:22]  vlan              Virtual LAN
+144822.401: [14:48:22]  |                 Matching output
+144824.283: [14:48:24]  <cr>                                    
+144824.296: [14:48:24]
+144826.404: [14:48:26][9C-2F-CORE-Vlanif1]disp mac-address 
+144826.405: [14:48:26]-------------------------------------------------------------------------------
+144826.405: [14:48:26]MAC Address    VLAN/VSI/BD                       Learned-From        Type      
+144826.406: [14:48:26]-------------------------------------------------------------------------------
+144826.598: [14:48:26]0004-a32d-3bd9 1/-/-                             XGE0/0/4            dynamic   
+144826.599: [14:48:26]0017-6110-5d8c 1/-/-                             GE0/0/7             dynamic   
+144826.599: [14:48:26]0017-6110-5e6a 1/-/-                             GE0/0/3             dynamic   
+144826.599: [14:48:26]0020-6b06-d411 1/-/-                             XGE0/0/2            dynamic   
+144826.600: [14:48:26]0020-6bf8-c962 1/-/-                             XGE0/0/3            dynamic   
+144826.600: [14:48:26]00e0-4c36-2b16 1/-/-                             XGE0/0/4            dynamic   
+144826.600: [14:48:26]047b-cb50-b700 1/-/-                             XGE0/0/1            dynamic   
+144826.601: [14:48:26]047c-161f-6b74 1/-/-                             GE0/0/12            dynamic   
+144826.601: [14:48:26]088f-c3a5-7f22 1/-/-                             GE0/0/12            dynamic   
+144826.601: [14:48:26]08a1-8919-b3fd 1/-/-                             GE0/0/12            dynamic   
+144826.601: [14:48:26]08a1-89ac-e2b2 1/-/-                             GE0/0/12            dynamic   
+144826.601: [14:48:26]08a1-89ac-e2c4 1/-/-                             GE0/0/12            dynamic   
+144826.615: [14:48:26]08a1-89ac-e2d1 1/-/-                             GE0/0/12            dynamic   
+144826.615: [14:48:26]08a1-89ac-e2d3 1/-/-                             GE0/0/12            dynamic   
+144826.615: [14:48:26]08a1-89ac-e2d4 1/-/-                             GE0/0/12            dynamic   
+144826.616: [14:48:26]08a1-89ac-e2f7 1/-/-                             GE0/0/12            dynamic   
+144826.616: [14:48:26]08a1-89ac-e2ff 1/-/-                             GE0/0/12            dynamic   
+144826.616: [14:48:26]08a1-89ac-e308 1/-/-                             GE0/0/12            dynamic   
+144826.616: [14:48:26]08a1-89ac-e313 1/-/-                             GE0/0/12            dynamic   
+144826.616: [14:48:26]08a1-89ac-e325 1/-/-                             GE0/0/12            dynamic   
+144826.617: [14:48:26]08a1-89ac-e32b 1/-/-                             GE0/0/12            dynamic   
+144826.617: [14:48:26]08a1-89ac-e333 1/-/-                             GE0/0/12            dynamic   
+144826.617: [14:48:26]08a1-89ac-e35a 1/-/-                             GE0/0/12            dynamic   
+144826.617: [14:48:26]08a1-89ac-e367 1/-/-                             GE0/0/12            dynamic   
+144828.047: [14:48:28]08a1-89ac-e36b 1/-/-                             GE0/0/12            dynamic   
+144828.047: [14:48:28]08a1-89ac-e36d 1/-/-                             GE0/0/12            dynamic   
+144828.048: [14:48:28]08a1-89ac-e3b7 1/-/-                             GE0/0/12            dynamic   
+144828.048: [14:48:28]10ff-e0e7-e00e 1/-/-                             XGE0/0/2            dynamic   
+144828.049: [14:48:28]10ff-e0e7-e184 1/-/-                             XGE0/0/2            dynamic   
+144828.049: [14:48:28]189e-2c49-2ed2 1/-/-                             XGE0/0/1            dynamic   
+144828.049: [14:48:28]1c83-417f-6796 1/-/-                             XGE0/0/2            dynamic   
+144828.049: [14:48:28]1c83-417f-67d0 1/-/-                             XGE0/0/2            dynamic   
+144828.049: [14:48:28]1c83-417f-687f 1/-/-                             XGE0/0/3            dynamic   
+144828.050: [14:48:28]1c83-417f-6911 1/-/-                             XGE0/0/2            dynamic   
+144828.050: [14:48:28]1c83-417f-aa3e 1/-/-                             XGE0/0/3            dynamic   
+144828.050: [14:48:28]1c83-417f-aaa8 1/-/-                             XGE0/0/2            dynamic   
+144828.050: [14:48:28]1c83-417f-b10b 1/-/-                             XGE0/0/3            dynamic   
+144828.051: [14:48:28]1c83-418b-5963 1/-/-                             XGE0/0/1            dynamic   
+144828.051: [14:48:28]20f4-7800-f7df 1/-/-                             GE0/0/23            dynamic   
+144828.051: [14:48:28]2432-ae4c-354e 1/-/-                             GE0/0/12            dynamic   
+144828.051: [14:48:28]2854-71db-700f 1/-/-                             XGE0/0/3            dynamic   
+144828.051: [14:48:28]2854-71db-90a9 1/-/-                             XGE0/0/1            dynamic   
+144828.052: [14:48:28]2854-71db-f1e1 1/-/-                             XGE0/0/3            dynamic   
+144828.052: [14:48:28]2854-71dc-1db8 1/-/-                             XGE0/0/3            dynamic   
+144828.052: [14:48:28]3029-52a0-5292 1/-/-                             GE0/0/2             dynamic   
+144828.052: [14:48:28]3056-0f01-bfcc 1/-/-                             XGE0/0/2            dynamic   
+144828.052: [14:48:28]3056-0f01-bfec 1/-/-                             XGE0/0/2            dynamic   
+144828.053: [14:48:28]3056-0f01-c011 1/-/-                             XGE0/0/2            dynamic   
+144830.266: [14:48:30]3056-0f01-c012 1/-/-                             XGE0/0/2            dynamic   
+144830.267: [14:48:30]3056-0f01-c020 1/-/-                             XGE0/0/2            dynamic   
+144830.267: [14:48:30]3c06-a7b5-cfc3 1/-/-                             GE0/0/12            dynamic   
+144830.267: [14:48:30]3cc7-869d-f6bf 1/-/-                             XGE0/0/4            dynamic   
+144830.268: [14:48:30]4011-7583-515b 1/-/-                             GE0/0/6             dynamic   
+144830.268: [14:48:30]5046-4a3a-d5ae 1/-/-                             GE0/0/12            dynamic   
+144830.268: [14:48:30]5803-fbbf-ea19 1/-/-                             GE0/0/12            dynamic   
+144830.268: [14:48:30]703a-a619-8ed0 1/-/-                             GE0/0/12            dynamic   
+144830.268: [14:48:30]78a3-5156-21f5 1/-/-                             XGE0/0/1            dynamic   
+144830.269: [14:48:30]7c4d-8f80-a2a4 1/-/-                             XGE0/0/3            dynamic   
+144830.269: [14:48:30]8061-5f1e-4b9b 1/-/-                             XGE0/0/4            dynamic   
+144830.269: [14:48:30]8061-5f1e-56c5 1/-/-                             XGE0/0/4            dynamic   
+144830.415: [14:48:30]8061-5f1e-8827 1/-/-                             XGE0/0/4            dynamic   
+144830.415: [14:48:30]807c-623d-dea3 1/-/-                             XGE0/0/4            dynamic   
+144830.416: [14:48:30]8c32-233e-558d 1/-/-                             GE0/0/1             dynamic   
+144830.416: [14:48:30]9009-d014-98c1 1/-/-                             XGE0/0/3            dynamic   
+144830.416: [14:48:30]908d-6ec4-122c 1/-/-                             XGE0/0/4            dynamic   
+144830.416: [14:48:30]908d-6ec4-fe1c 1/-/-                             XGE0/0/4            dynamic   
+144830.416: [14:48:30]908d-6ec5-02f4 1/-/-                             XGE0/0/4            dynamic   
+144830.417: [14:48:30]9409-d312-0050 1/-/-                             GE0/0/12            dynamic   
+144830.417: [14:48:30]9437-f71f-954f 1/-/-                             XGE0/0/1            dynamic   
+144830.417: [14:48:30]9437-f71f-985e 1/-/-                             XGE0/0/3            dynamic   
+144830.417: [14:48:30]9437-f71f-9bd3 1/-/-                             XGE0/0/1            dynamic   
+144830.417: [14:48:30]9437-f71f-a70f 1/-/-                             XGE0/0/1            dynamic   
+144830.985: [14:48:30]9437-f71f-e4db 1/-/-                             XGE0/0/3            dynamic   
+144830.985: [14:48:30]98f1-12c4-3483 1/-/-                             XGE0/0/4            dynamic   
+144830.986: [14:48:30]98f1-12c4-3492 1/-/-                             XGE0/0/4            dynamic   
+144830.986: [14:48:30]9cc2-c431-6f99 1/-/-                             XGE0/0/4            dynamic   
+144830.986: [14:48:30]9cc2-c431-7dab 1/-/-                             XGE0/0/4            dynamic   
+144830.987: [14:48:30]9cc2-c44e-0325 1/-/-                             XGE0/0/4            dynamic   
+144830.987: [14:48:30]9cc2-c44f-286c 1/-/-                             XGE0/0/1            dynamic   
+144830.987: [14:48:30]a042-3f3d-75c3 1/-/-                             XGE0/0/4            dynamic   
+144830.987: [14:48:30]a4d5-c208-360e 1/-/-                             GE0/0/9             dynamic   
+144830.987: [14:48:30]a8c9-8aea-d894 1/-/-                             XGE0/0/4            dynamic   
+144830.988: [14:48:30]b04f-a638-7628 1/-/-                             XGE0/0/4            dynamic   
+144830.988: [14:48:30]b04f-a638-762a 1/-/-                             XGE0/0/4            dynamic   
+144831.003: [14:48:31]b46e-0890-7585 1/-/-                             GE0/0/12            dynamic   
+144831.003: [14:48:31]bc5e-33b3-f4b4 1/-/-                             XGE0/0/4            dynamic   
+144831.004: [14:48:31]bc5e-33b3-f5da 1/-/-                             XGE0/0/4            dynamic   
+144831.004: [14:48:31]bc5e-33b3-f779 1/-/-                             XGE0/0/4            dynamic   
+144831.004: [14:48:31]bc5e-33b3-f7cd 1/-/-                             XGE0/0/4            dynamic   
+144831.004: [14:48:31]bc9b-5e14-156c 1/-/-                             GE0/0/5             dynamic   
+144831.004: [14:48:31]c051-7e1a-0e6a 1/-/-                             GE0/0/12            dynamic   
+144831.004: [14:48:31]c051-7e1a-0e6e 1/-/-                             GE0/0/12            dynamic   
+144831.005: [14:48:31]c051-7e1a-0e71 1/-/-                             GE0/0/12            dynamic   
+144831.005: [14:48:31]c051-7e1a-0e74 1/-/-                             GE0/0/12            dynamic   
+144831.005: [14:48:31]c051-7e1a-0e75 1/-/-                             GE0/0/12            dynamic   
+144831.005: [14:48:31]c06d-ed9c-7841 1/-/-                             XGE0/0/4            dynamic   
+144831.327: [14:48:31]c06d-ed9c-7853 1/-/-                             XGE0/0/4            dynamic   
+144831.328: [14:48:31]c470-abfc-a59b 1/-/-                             XGE0/0/4            dynamic   
+144831.328: [14:48:31]c4b2-5b25-69f9 1/-/-                             GE0/0/23            dynamic   
+144831.328: [14:48:31]c4ef-bb42-7c8c 1/-/-                             XGE0/0/2            dynamic   
+144831.328: [14:48:31]c4ef-bb4c-85d8 1/-/-                             XGE0/0/2            dynamic   
+144831.328: [14:48:31]c4ef-bb4c-85da 1/-/-                             XGE0/0/1            dynamic   
+144831.328: [14:48:31]c4ff-9979-3669 1/-/-                             GE0/0/23            dynamic   
+144831.329: [14:48:31]c8cd-55e2-145f 1/-/-                             GE0/0/23            dynamic   
+144831.329: [14:48:31]cc28-aa35-2604 1/-/-                             XGE0/0/2            dynamic   
+144831.329: [14:48:31]cc28-aa35-2618 1/-/-                             XGE0/0/2            dynamic   
+144831.329: [14:48:31]cc28-aa35-96d2 1/-/-                             XGE0/0/2            dynamic   
+144831.329: [14:48:31]cc28-aa35-96ed 1/-/-                             XGE0/0/2            dynamic   
+144831.329: [14:48:31]cc28-aa35-974f 1/-/-                             XGE0/0/2            dynamic   
+144831.330: [14:48:31]cc96-e541-078e 1/-/-                             XGE0/0/2            dynamic   
+144831.330: [14:48:31]d832-1448-8740 1/-/-                             XGE0/0/3            dynamic   
+144831.330: [14:48:31]dc36-4392-8f88 1/-/-                             XGE0/0/3            dynamic   
+144831.330: [14:48:31]e0be-036d-c407 1/-/-                             XGE0/0/2            dynamic   
+144831.331: [14:48:31]e483-2642-d7c6 1/-/-                             XGE0/0/2            dynamic   
+144831.331: [14:48:31]f4b7-8dee-f4bf 1/-/-                             XGE0/0/3            dynamic   
+144831.331: [14:48:31]f4b7-8dee-f4cf 1/-/-                             XGE0/0/3            dynamic   
+144831.331: [14:48:31]f4b7-8dee-f4d1 1/-/-                             GE0/0/12            dynamic   
+144831.332: [14:48:31]f4b7-8dee-f4e0 1/-/-                             XGE0/0/4            dynamic   
+144831.332: [14:48:31]f4b7-8dee-f4e5 1/-/-                             XGE0/0/1            dynamic   
+144831.332: [14:48:31]f4b7-8dee-f500 1/-/-                             GE0/0/12            dynamic   
+144831.823: [14:48:31]f4b7-8dee-f506 1/-/-                             XGE0/0/2            dynamic   
+144831.825: [14:48:31]f4b7-8dee-f584 1/-/-                             XGE0/0/1            dynamic   
+144831.825: [14:48:31]f4b7-8dee-f586 1/-/-                             XGE0/0/1            dynamic   
+144831.825: [14:48:31]f4b7-8dee-f66c 1/-/-                             XGE0/0/3            dynamic   
+144831.825: [14:48:31]f4e4-5179-ce40 1/-/-                             XGE0/0/1            dynamic   
+144831.826: [14:48:31]f4e4-5179-ce42 1/-/-                             XGE0/0/1            dynamic   
+144831.826: [14:48:31]f4ee-0825-6dd8 1/-/-                             XGE0/0/4            dynamic   
+144831.826: [14:48:31]f4ee-0825-6e1a 1/-/-                             XGE0/0/4            dynamic   
+144831.826: [14:48:31]f4ee-0825-6e5c 1/-/-                             XGE0/0/4            dynamic   
+144831.826: [14:48:31]
+144831.827: [14:48:31]-------------------------------------------------------------------------------
+144831.827: [14:48:31]Total items displayed = 129 
+144831.845: [14:48:31]
+145108.039: [14:51:08][9C-2F-CORE-Vlanif1]
+145108.141: [14:51:08][9C-2F-CORE-Vlanif1]
+145110.632: [14:51:10][9C-2F-CORE-Vlanif1]disp cu
+145110.967: [14:51:10][9C-2F-CORE-Vlanif1]disp current-configuration 
+145110.968: [14:51:10]!Software Version V200R019C00SPC500
+145110.968: [14:51:10]#
+145110.988: [14:51:10]sysname 9C-2F-CORE
+145110.988: [14:51:10]#
+145110.988: [14:51:10]dns resolve
+145110.988: [14:51:10]dns server 114.114.114.114
+145110.988: [14:51:10]#
+145110.988: [14:51:10]authentication-profile name default_authen_profile
+145110.988: [14:51:10]authentication-profile name dot1x_authen_profile
+145110.988: [14:51:10]authentication-profile name dot1xmac_authen_profile
+145110.989: [14:51:10]authentication-profile name mac_authen_profile
+145110.989: [14:51:10]authentication-profile name multi_authen_profile
+145110.989: [14:51:10]authentication-profile name portal_authen_profile
+145110.989: [14:51:10]#
+145110.999: [14:51:10]observe-port 1 interface GigabitEthernet0/0/24
+145110.999: [14:51:10]#
+145110.999: [14:51:10]diffserv domain default
+145110.999: [14:51:10]#
+145110.999: [14:51:10]radius-server template default
+145110.999: [14:51:10]#
+145110.999: [14:51:10]pki realm default
+145111.007: [14:51:11] certificate-check none
+145111.007: [14:51:11]#
+145111.007: [14:51:11]free-rule-template name default_free_rule
+145111.280: [14:51:11]#                                         
+145111.280: [14:51:11]portal-access-profile name portal_access_profile
+145111.280: [14:51:11]#
+145113.475: [14:51:13]drop-profile default
+145113.475: [14:51:13]#
+145113.475: [14:51:13]aaa
+145113.475: [14:51:13] authentication-scheme default
+145113.475: [14:51:13]  authentication-mode local
+145113.475: [14:51:13] authentication-scheme radius
+145113.476: [14:51:13]  authentication-mode radius
+145113.476: [14:51:13] authorization-scheme default
+145113.476: [14:51:13]  authorization-mode local
+145113.492: [14:51:13] accounting-scheme default
+145113.492: [14:51:13]  accounting-mode none
+145113.492: [14:51:13] local-aaa-user password policy administrator
+145113.492: [14:51:13]  password history record number 0
+145113.492: [14:51:13]  password expire 0
+145113.492: [14:51:13] domain default
+145113.492: [14:51:13]  authentication-scheme radius
+145113.492: [14:51:13]  accounting-scheme default
+145113.502: [14:51:13]  radius-server default
+145113.503: [14:51:13] domain default_admin
+145113.503: [14:51:13]  authentication-scheme default
+145113.503: [14:51:13]  accounting-scheme default
+145118.821: [14:51:18] local-user wyj password irreversible-cipher $1c$1XD[KY4*\($,N/W-ESyq0BK^kE[XaL$EX\yYOT=10x@KLPEpK<=$
+145118.822: [14:51:18] local-user wyj privilege level 15
+145118.822: [14:51:18] local-user wyj service-type ssh
+145118.822: [14:51:18] local-user admin password irreversible-cipher $1c$Ft=&"-SC5J$.7T#GJCfZH&s;>M%'~(3GUW&8aqfpLRxf=SVpHF;$
+145118.822: [14:51:18] local-user admin privilege level 15
+145118.822: [14:51:18] local-user admin service-type terminal ssh http
+145118.822: [14:51:18]#
+145118.822: [14:51:18]interface Vlanif1
+145118.822: [14:51:18] ip address dhcp-alloc unicast
+145118.822: [14:51:18]#
+145118.822: [14:51:18]interface MEth0/0/1
+145118.832: [14:51:18] ip address 192.168.1.253 255.255.255.0
+145118.832: [14:51:18]#
+145118.832: [14:51:18]interface GigabitEthernet0/0/1
+145118.832: [14:51:18] port-mirroring to observe-port 1 inbound
+145118.832: [14:51:18] port-mirroring to observe-port 1 outbound
+145118.832: [14:51:18]#
+145118.832: [14:51:18]interface GigabitEthernet0/0/2
+145118.832: [14:51:18] port-mirroring to observe-port 1 inbound
+145118.832: [14:51:18] port-mirroring to observe-port 1 outbound
+145118.832: [14:51:18]#
+145118.832: [14:51:18]interface GigabitEthernet0/0/3
+145118.832: [14:51:18] port-mirroring to observe-port 1 inbound
+145118.832: [14:51:18] port-mirroring to observe-port 1 outbound
+145134.160: [14:51:34]#                                         
+145134.161: [14:51:34]interface GigabitEthernet0/0/4
+145134.161: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.181: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.181: [14:51:34]#
+145134.181: [14:51:34]interface GigabitEthernet0/0/5
+145134.181: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.181: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.181: [14:51:34]#
+145134.181: [14:51:34]interface GigabitEthernet0/0/6
+145134.181: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.181: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.182: [14:51:34]#
+145134.182: [14:51:34]interface GigabitEthernet0/0/7
+145134.182: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.182: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.182: [14:51:34]#
+145134.182: [14:51:34]interface GigabitEthernet0/0/8
+145134.182: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.182: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.182: [14:51:34]#
+145134.182: [14:51:34]interface GigabitEthernet0/0/9
+145134.182: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.182: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.771: [14:51:34]#                                         
+145134.772: [14:51:34]interface GigabitEthernet0/0/10
+145134.772: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.772: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.772: [14:51:34]#
+145134.772: [14:51:34]interface GigabitEthernet0/0/11
+145134.772: [14:51:34] port-mirroring to observe-port 1 inbound
+145134.772: [14:51:34] port-mirroring to observe-port 1 outbound
+145134.772: [14:51:34]#
+145134.772: [14:51:34]interface GigabitEthernet0/0/12
+145134.772: [14:51:34]#
+145134.772: [14:51:34]interface GigabitEthernet0/0/13
+145134.785: [14:51:34]#
+145134.786: [14:51:34]interface GigabitEthernet0/0/14
+145134.786: [14:51:34]#
+145134.786: [14:51:34]interface GigabitEthernet0/0/15
+145134.786: [14:51:34]#
+145134.786: [14:51:34]interface GigabitEthernet0/0/16
+145134.786: [14:51:34]#
+145134.786: [14:51:34]interface GigabitEthernet0/0/17
+145134.793: [14:51:34]#
+145134.793: [14:51:34]interface GigabitEthernet0/0/18
+145134.793: [14:51:34]#
+145134.793: [14:51:34]interface GigabitEthernet0/0/19
+145135.017: [14:51:35]#                                         
+145135.017: [14:51:35]interface GigabitEthernet0/0/20
+145135.017: [14:51:35]#
+145135.017: [14:51:35]interface GigabitEthernet0/0/21
+145135.017: [14:51:35] port link-type access
+145135.018: [14:51:35]#
+145135.018: [14:51:35]interface GigabitEthernet0/0/22
+145135.018: [14:51:35]#
+145135.032: [14:51:35]interface GigabitEthernet0/0/23
+145135.032: [14:51:35]#
+145135.032: [14:51:35]interface GigabitEthernet0/0/24
+145135.032: [14:51:35] port link-type access
+145135.040: [14:51:35]#
+145135.040: [14:51:35]interface XGigabitEthernet0/0/1
+145135.040: [14:51:35]#
+145135.040: [14:51:35]interface XGigabitEthernet0/0/2
+145135.040: [14:51:35]#
+145135.040: [14:51:35]interface XGigabitEthernet0/0/3
+145135.040: [14:51:35]#
+145135.041: [14:51:35]interface XGigabitEthernet0/0/4
+145135.041: [14:51:35]#
+145135.051: [14:51:35]interface NULL0
+145135.051: [14:51:35]#
+145135.051: [14:51:35]stelnet server enable
+145135.260: [14:51:35]ssh user admin                            
+145135.274: [14:51:35]ssh user admin authentication-type password
+145135.274: [14:51:35]ssh user admin service-type all
+145135.274: [14:51:35]ssh user wyj
+145135.274: [14:51:35]ssh user wyj authentication-type password
+145135.274: [14:51:35]ssh user wyj service-type stelnet
+145135.274: [14:51:35]ssh server cipher aes256_ctr aes128_ctr
+145135.274: [14:51:35]ssh server hmac sha2_256
+145135.274: [14:51:35]ssh client cipher aes256_ctr aes128_ctr
+145135.274: [14:51:35]ssh client hmac sha2_256
+145135.274: [14:51:35]ssh server dh-exchange min-len 2048
+145135.274: [14:51:35]#
+145135.274: [14:51:35]user-interface con 0
+145135.274: [14:51:35] authentication-mode aaa
+145135.274: [14:51:35]user-interface vty 0 4
+145135.274: [14:51:35] authentication-mode aaa
+145135.275: [14:51:35]user-interface vty 16 20
+145135.275: [14:51:35]#
+145135.275: [14:51:35]dot1x-access-profile name dot1x_access_profile
+145135.275: [14:51:35]#
+145135.275: [14:51:35]mac-access-profile name mac_access_profile
+145135.275: [14:51:35]#
+145135.275: [14:51:35]ops
+145135.284: [14:51:35]#
+145135.528: [14:51:35]return                                    
+145218.217: [14:52:18][9C-2F-CORE-Vlanif1] disp ll n b
+145218.219: [14:52:18]Local Intf       Neighbor Dev             Neighbor Intf             Exptime(s)
+145218.219: [14:52:18]GE0/0/12         HUAWEI                   GE0/0/14                  95     
+145218.234: [14:52:18]GE0/0/23         Ruijie                   c4b2-5b25-69f9            112    
+145218.234: [14:52:18]GE0/0/24         WangXun_EM_firmware      6cb3-1167-cafc            90     
+145218.234: [14:52:18]XGE0/0/1         3F-WIRE-JIERU            GE0/0/25                  100    
+145218.234: [14:52:18]XGE0/0/2         HUAWEI                   GE0/0/25                  93     
+145218.235: [14:52:18]XGE0/0/3         HUAWEI                   GE0/0/25                  113    
+145218.244: [14:52:18]XGE0/0/4         HUAWEI                   GE0/0/28                  95     
+145358.546: [14:53:58][9C-2F-CORE-Vlanif1]disp arp
+145358.546: [14:53:58]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+145358.547: [14:53:58]                                    VLAN/CEVLAN(SIP/DIP)
+145358.547: [14:53:58]------------------------------------------------------------------------------
+145358.548: [14:53:58]192.168.1.253   708c-b678-32b0            I -         MEth0/0/1      
+145358.548: [14:53:58]192.168.11.243  708c-b678-32b2            I -         Vlanif1        
+145358.548: [14:53:58]192.168.11.237  f4b7-8dee-f500  20        D-0         GE0/0/12       
+145358.548: [14:53:58]                                             1/-      
+145358.549: [14:53:58]192.168.11.254  f4b7-8dee-f4e0  17        D-0         XGE0/0/4       
+145358.549: [14:53:58]                                             1/-      
+145358.549: [14:53:58]192.168.11.222  5046-4a3a-d5ae  19        D-0         GE0/0/12       
+145358.549: [14:53:58]                                             1/-      
+145358.549: [14:53:58]192.168.11.215  b46e-0890-7585  14        D-0         GE0/0/12       
+145358.549: [14:53:58]                                             1/-      
+145358.550: [14:53:58]192.168.11.242  c4ef-bb4c-85da  17        D-0         XGE0/0/1       
+145358.550: [14:53:58]                                             1/-      
+145358.550: [14:53:58]192.168.8.1     3029-52a0-5292  17        D-0         GE0/0/2        
+145358.550: [14:53:58]                                             1/-      
+145358.550: [14:53:58]192.168.11.208  e483-2642-d7c6  20        D-0         XGE0/0/2       
+145358.550: [14:53:58]                                             1/-      
+145358.550: [14:53:58]192.168.11.203  f4b7-8dee-f4cf  20        D-0         XGE0/0/3       
+145358.551: [14:53:58]                                             1/-      
+145358.551: [14:53:58]192.168.11.219  f4b7-8dee-f500  19        D-0         GE0/0/12       
+145358.551: [14:53:58]                                             1/-      
+145358.551: [14:53:58]192.168.11.200  f4b7-8dee-f506  20        D-0         XGE0/0/2       
+145358.551: [14:53:58]                                             1/-      
+145358.551: [14:53:58]192.168.11.202  f4b7-8dee-f4bf  19        D-0         XGE0/0/3       
+145358.552: [14:53:58]                                             1/-      
+145401.703: [14:54:01]192.168.11.231  f4e4-5179-ce42  11        D-0         XGE0/0/1       
+145401.703: [14:54:01]                                             1/-      
+145401.704: [14:54:01]192.168.8.199   3cc7-869d-f6bf  17        D-0         XGE0/0/4       
+145401.719: [14:54:01]                                             1/-      
+145401.719: [14:54:01]------------------------------------------------------------------------------
+145401.719: [14:54:01]Total:15        Dynamic:13      Static:0     Interface:2    
+145707.488: [14:57:07][9C-2F-CORE-Vlanif1]disp arp
+145707.490: [14:57:07]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+145707.490: [14:57:07]                                    VLAN/CEVLAN(SIP/DIP)
+145707.490: [14:57:07]------------------------------------------------------------------------------
+145707.490: [14:57:07]192.168.1.253   708c-b678-32b0            I -         MEth0/0/1      
+145707.490: [14:57:07]192.168.11.243  708c-b678-32b2            I -         Vlanif1        
+145707.491: [14:57:07]192.168.11.237  5046-4a3a-d5ae  18        D-0         GE0/0/12       
+145707.491: [14:57:07]                                             1/-      
+145707.491: [14:57:07]192.168.11.254  f4b7-8dee-f4e0  14        D-0         XGE0/0/4       
+145707.491: [14:57:07]                                             1/-      
+145707.491: [14:57:07]192.168.11.222  e483-2642-d7c6  18        D-0         XGE0/0/2       
+145707.491: [14:57:07]                                             1/-      
+145707.492: [14:57:07]192.168.11.215  f4b7-8dee-f4cf  18        D-0         XGE0/0/3       
+145707.492: [14:57:07]                                             1/-      
+145707.492: [14:57:07]192.168.11.242  c4ef-bb4c-85da  14        D-0         XGE0/0/1       
+145707.492: [14:57:07]                                             1/-      
+145707.492: [14:57:07]192.168.8.1     3029-52a0-5292  14        D-0         GE0/0/2        
+145707.492: [14:57:07]                                             1/-      
+145707.492: [14:57:07]192.168.11.208  b46e-0890-7585  19        D-0         GE0/0/12       
+145707.493: [14:57:07]                                             1/-      
+145707.493: [14:57:07]192.168.11.203  f4b7-8dee-f66c  20        D-0         XGE0/0/3       
+145707.493: [14:57:07]                                             1/-      
+145707.493: [14:57:07]192.168.11.219  f4b7-8dee-f4bf  17        D-0         XGE0/0/3       
+145707.493: [14:57:07]                                             1/-      
+145707.493: [14:57:07]192.168.11.200  f4b7-8dee-f506  17        D-0         XGE0/0/2       
+145707.494: [14:57:07]                                             1/-      
+145707.494: [14:57:07]192.168.11.202  f4b7-8dee-f4bf  15        D-0         XGE0/0/3       
+145707.494: [14:57:07]                                             1/-      
+145807.622: [14:58:07]192.168.11.231  f4e4-5179-ce42  8         D-0         XGE0/0/1       
+145807.622: [14:58:07]                                             1/-      
+145807.622: [14:58:07]192.168.8.199   3cc7-869d-f6bf  14        D-0         XGE0/0/4       
+145807.622: [14:58:07]                                             1/-      
+145807.622: [14:58:07]192.168.11.228  f4b7-8dee-f500  18        D-0         GE0/0/12       
+145807.622: [14:58:07]                                             1/-      
+145807.622: [14:58:07]------------------------------------------------------------------------------
+145807.622: [14:58:07]Total:16        Dynamic:14      Static:0     Interface:2    
+150010.605: [15:00:10][9C-2F-CORE-Vlanif1]
+150010.721: [15:00:10][9C-2F-CORE-Vlanif1]
+150010.858: [15:00:10][9C-2F-CORE-Vlanif1]
+150010.988: [15:00:10][9C-2F-CORE-Vlanif1]
+150012.148: [15:00:12][9C-2F-CORE-Vlanif1]disp arp
+150012.149: [15:00:12]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+150012.149: [15:00:12]                                    VLAN/CEVLAN(SIP/DIP)
+150012.150: [15:00:12]------------------------------------------------------------------------------
+150012.150: [15:00:12]192.168.1.253   708c-b678-32b0            I -         MEth0/0/1      
+150012.150: [15:00:12]192.168.11.243  708c-b678-32b2            I -         Vlanif1        
+150012.151: [15:00:12]192.168.11.237  5046-4a3a-d5ae  15        D-0         GE0/0/12       
+150012.151: [15:00:12]                                             1/-      
+150012.151: [15:00:12]192.168.11.254  f4b7-8dee-f4e0  20        D-0         XGE0/0/4       
+150012.151: [15:00:12]                                             1/-      
+150012.151: [15:00:12]192.168.11.222  f4b7-8dee-f66c  20        D-0         XGE0/0/3       
+150012.151: [15:00:12]                                             1/-      
+150012.152: [15:00:12]192.168.11.215  f4b7-8dee-f4cf  15        D-0         XGE0/0/3       
+150012.152: [15:00:12]                                             1/-      
+150012.152: [15:00:12]192.168.11.242  c4ef-bb4c-85da  11        D-0         XGE0/0/1       
+150012.152: [15:00:12]                                             1/-      
+150012.152: [15:00:12]192.168.8.1     3029-52a0-5292  11        D-0         GE0/0/2        
+150012.152: [15:00:12]                                             1/-      
+150012.153: [15:00:12]192.168.11.208  e483-2642-d7c6  20        D-0         XGE0/0/2       
+150012.153: [15:00:12]                                             1/-      
+150012.153: [15:00:12]192.168.11.203  e483-2642-d7c6  19        D-0         XGE0/0/2       
+150012.153: [15:00:12]                                             1/-      
+150012.153: [15:00:12]192.168.11.219  f4b7-8dee-f4bf  14        D-0         XGE0/0/3       
+150012.153: [15:00:12]                                             1/-      
+150012.154: [15:00:12]192.168.11.200  f4b7-8dee-f506  14        D-0         XGE0/0/2       
+150012.154: [15:00:12]                                             1/-      
+150012.154: [15:00:12]192.168.11.202  f4b7-8dee-f4bf  12        D-0         XGE0/0/3       
+150012.154: [15:00:12]                                             1/-      
+150013.324: [15:00:13]192.168.11.231  f4e4-5179-ce42  5         D-0         XGE0/0/1       
+150013.324: [15:00:13]                                             1/-      
+150013.324: [15:00:13]192.168.8.199   3cc7-869d-f6bf  11        D-0         XGE0/0/4       
+150013.325: [15:00:13]                                             1/-      
+150013.326: [15:00:13]192.168.11.228  f4b7-8dee-f500  15        D-0         GE0/0/12       
+150013.326: [15:00:13]                                             1/-      
+150013.326: [15:00:13]192.168.8.88    c470-abfc-a59b  20        D-0         XGE0/0/4       
+150013.326: [15:00:13]                                             1/-      
+150013.327: [15:00:13]------------------------------------------------------------------------------
+150013.327: [15:00:13]Total:17        Dynamic:15      Static:0     Interface:2    
+150019.098: [15:00:19][9C-2F-CORE-Vlanif1]ping 192.168.22.248
+150021.113: [15:00:21]  PING 192.168.22.248: 56  data bytes, press CTRL_C to break
+150023.162: [15:00:23]    Request time out
+150025.122: [15:00:25]    Request time out
+150027.153: [15:00:27]    Request time out
+150029.141: [15:00:29]    Request time out
+150029.158: [15:00:29]    Request time out
+150029.158: [15:00:29]
+150029.159: [15:00:29]  --- 192.168.22.248 ping statistics ---
+150029.159: [15:00:29]    5 packet(s) transmitted
+150029.159: [15:00:29]    0 packet(s) received
+150029.159: [15:00:29]    100.00% packet loss
+150029.159: [15:00:29]
+150032.148: [15:00:32][9C-2F-CORE-Vlanif1]
+150032.261: [15:00:32][9C-2F-CORE-Vlanif1]
+150034.417: [15:00:34][9C-2F-CORE-Vlanif1]disp ip int br
+150034.609: [15:00:34][9C-2F-CORE-Vlanif1]disp ip int brief 
+150034.609: [15:00:34]*down: administratively down
+150034.609: [15:00:34]^down: standby
+150034.609: [15:00:34](l): loopback
+150034.610: [15:00:34](s): spoofing
+150034.610: [15:00:34](E): E-Trunk down
+150034.610: [15:00:34]The number of interface that is UP in Physical is 2
+150034.610: [15:00:34]The number of interface that is DOWN in Physical is 1
+150034.611: [15:00:34]The number of interface that is UP in Protocol is 2
+150034.611: [15:00:34]The number of interface that is DOWN in Protocol is 1
+150034.611: [15:00:34]
+150034.611: [15:00:34]Interface                         IP Address/Mask      Physical   Protocol  
+150034.612: [15:00:34]MEth0/0/1                         192.168.1.253/24     down       down      
+150034.627: [15:00:34]NULL0                             unassigned           up         up(s)     
+150034.628: [15:00:34]Vlanif1                           192.168.11.243/22    up         up        
+150034.628: [15:00:34]
+150045.770: [15:00:45][9C-2F-CORE-Vlanif1]ping 192.168.11.248 
+150045.857: [15:00:45]  PING 192.168.11.248: 56  data bytes, press CTRL_C to break
+150046.281: [15:00:46]    Reply from 192.168.11.248: bytes=56 Sequence=1 ttl=64 time=1 ms
+150046.777: [15:00:46]    Reply from 192.168.11.248: bytes=56 Sequence=2 ttl=64 time=1 ms
+150047.281: [15:00:47]    Reply from 192.168.11.248: bytes=56 Sequence=3 ttl=64 time=1 ms
+150047.780: [15:00:47]    Reply from 192.168.11.248: bytes=56 Sequence=4 ttl=64 time=1 ms
+150047.795: [15:00:47]    Reply from 192.168.11.248: bytes=56 Sequence=5 ttl=64 time=1 ms
+150047.795: [15:00:47]
+150047.795: [15:00:47]  --- 192.168.11.248 ping statistics ---
+150047.795: [15:00:47]    5 packet(s) transmitted
+150047.795: [15:00:47]    5 packet(s) received
+150047.795: [15:00:47]    0.00% packet loss
+150047.795: [15:00:47]    round-trip min/avg/max = 1/1/1 ms
+150047.795: [15:00:47]
+150049.494: [15:00:49][9C-2F-CORE-Vlanif1]disp arp
+150049.494: [15:00:49]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+150049.495: [15:00:49]                                    VLAN/CEVLAN(SIP/DIP)
+150049.495: [15:00:49]------------------------------------------------------------------------------
+150049.496: [15:00:49]192.168.1.253   708c-b678-32b0            I -         MEth0/0/1      
+150049.496: [15:00:49]192.168.11.243  708c-b678-32b2            I -         Vlanif1        
+150049.496: [15:00:49]192.168.11.237  5046-4a3a-d5ae  15        D-0         GE0/0/12       
+150049.497: [15:00:49]                                             1/-      
+150049.497: [15:00:49]192.168.11.254  f4b7-8dee-f4e0  20        D-0         XGE0/0/4       
+150049.497: [15:00:49]                                             1/-      
+150049.497: [15:00:49]192.168.11.222  f4b7-8dee-f66c  19        D-0         XGE0/0/3       
+150049.497: [15:00:49]                                             1/-      
+150049.498: [15:00:49]192.168.11.215  f4b7-8dee-f4cf  14        D-0         XGE0/0/3       
+150049.498: [15:00:49]                                             1/-      
+150049.498: [15:00:49]192.168.11.242  c4ef-bb4c-85da  10        D-0         XGE0/0/1       
+150049.498: [15:00:49]                                             1/-      
+150049.498: [15:00:49]192.168.8.1     3029-52a0-5292  11        D-0         GE0/0/2        
+150049.498: [15:00:49]                                             1/-      
+150049.498: [15:00:49]192.168.11.208  e483-2642-d7c6  19        D-0         XGE0/0/2       
+150049.499: [15:00:49]                                             1/-      
+150049.499: [15:00:49]192.168.11.203  e483-2642-d7c6  18        D-0         XGE0/0/2       
+150049.499: [15:00:49]                                             1/-      
+150049.499: [15:00:49]192.168.11.219  f4b7-8dee-f4bf  14        D-0         XGE0/0/3       
+150049.515: [15:00:49]                                             1/-      
+150049.515: [15:00:49]192.168.11.200  f4b7-8dee-f506  13        D-0         XGE0/0/2       
+150049.515: [15:00:49]                                             1/-      
+150049.515: [15:00:49]192.168.11.202  f4b7-8dee-f4bf  12        D-0         XGE0/0/3       
+150049.515: [15:00:49]                                             1/-      
+150050.235: [15:00:50]192.168.11.231  f4e4-5179-ce42  5         D-0         XGE0/0/1       
+150050.235: [15:00:50]                                             1/-      
+150050.236: [15:00:50]192.168.8.199   3cc7-869d-f6bf  10        D-0         XGE0/0/4       
+150050.236: [15:00:50]                                             1/-      
+150050.236: [15:00:50]192.168.11.228  f4b7-8dee-f500  15        D-0         GE0/0/12       
+150050.236: [15:00:50]                                             1/-      
+150050.236: [15:00:50]192.168.8.88    c470-abfc-a59b  20        D-0         XGE0/0/4       
+150050.236: [15:00:50]                                             1/-      
+150050.237: [15:00:50]192.168.11.248  f4ee-0825-6dd8  20        D-0         XGE0/0/4       
+150050.252: [15:00:50]                                             1/-      
+150050.252: [15:00:50]------------------------------------------------------------------------------
+150050.253: [15:00:50]Total:18        Dynamic:16      Static:0     Interface:2    
+151056.371: [15:10:56][202604192.168.11.243-15:10:56]
+151056.391: [15:10:56]
+151056.391: [15:10:56]Info: The max number of VTY users is 10, and the number
+151056.391: [15:10:56]      of current VTY users on line is 1.
+151056.392: [15:10:56]      The current login time is 2026-04-02 15:07:26+08:00.
+151056.392: [15:10:56]Info: Lastest accessed IP: 192.168.6.173  Time: 2026-04-02 14:44:09+08:00  Failed: 0
+151056.392: [15:10:56]
+151056.392: [15:10:56]Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+151728.148: [15:17:28]<9C-2F-CORE>
+151728.210: [15:17:28]<9C-2F-CORE>
+151730.568: [15:17:30]<9C-2F-CORE>di
+151732.385: [15:17:32]<9C-2F-CORE>disp
+151733.252: [15:17:33]<9C-2F-CORE>display arp
+151733.939: [15:17:33]<9C-2F-CORE>display arp-limit
+151736.389: [15:17:36]<9C-2F-CORE>display ip      
+151737.120: [15:17:37]<9C-2F-CORE>display ipv6
+151737.808: [15:17:37]<9C-2F-CORE>display ip-subnet-vlan
+151739.835: [15:17:39]<9C-2F-CORE>display ip a 
+151744.363: [15:17:44]<9C-2F-CORE>display arp               
+151744.364: [15:17:44]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+151744.364: [15:17:44]                                    VLAN/CEVLAN(SIP/DIP)
+151744.369: [15:17:44]------------------------------------------------------------------------------
+151744.371: [15:17:44]192.168.1.253   708c-b678-32b0            I -         MEth0/0/1      
+151744.371: [15:17:44]192.168.11.243  708c-b678-32b2            I -         Vlanif1        
+151744.371: [15:17:44]192.168.11.237  f4b7-8dee-f506  18        D-0         XGE0/0/2       
+151744.372: [15:17:44]                                             1/-      
+151744.372: [15:17:44]192.168.11.254  f4b7-8dee-f4cf  17        D-0         XGE0/0/3       
+151744.372: [15:17:44]                                             1/-      
+151744.372: [15:17:44]192.168.11.222  5046-4a3a-d5ae  18        D-0         GE0/0/12       
+151744.372: [15:17:44]                                             1/-      
+151744.373: [15:17:44]192.168.11.215  f4b7-8dee-f4e0  18        D-0         XGE0/0/4       
+151744.373: [15:17:44]                                             1/-      
+151744.373: [15:17:44]192.168.11.242  c4ef-bb4c-85da  13        D-0         XGE0/0/1       
+151744.373: [15:17:44]                                             1/-      
+151744.373: [15:17:44]192.168.8.1     3029-52a0-5292  14        D-0         GE0/0/2        
+151744.373: [15:17:44]                                             1/-      
+151744.373: [15:17:44]192.168.11.208  f4b7-8dee-f500  20        D-0         GE0/0/12       
+151744.380: [15:17:44]                                             1/-      
+151744.380: [15:17:44]192.168.11.203  f4b7-8dee-f4bf  20        D-0         XGE0/0/3       
+151744.380: [15:17:44]                                             1/-      
+151744.380: [15:17:44]192.168.11.219  e483-2642-d7c6  15        D-0         XGE0/0/2       
+151744.380: [15:17:44]                                             1/-      
+151744.380: [15:17:44]192.168.11.202  f4b7-8dee-f66c  9         D-0         XGE0/0/3       
+151744.380: [15:17:44]                                             1/-      
+151744.381: [15:17:44]192.168.11.231  f4e4-5179-ce42  8         D-0         XGE0/0/1       
+151744.381: [15:17:44]                                             1/-      
+151746.591: [15:17:46]192.168.8.199   3cc7-869d-f6bf  13        D-0         XGE0/0/4       
+151746.591: [15:17:46]                                             1/-      
+151746.592: [15:17:46]192.168.11.228  b46e-0890-7585  19        D-0         GE0/0/12       
+151746.592: [15:17:46]                                             1/-      
+151746.592: [15:17:46]192.168.8.88    c470-abfc-a59b  3         D-0         XGE0/0/4       
+151746.593: [15:17:46]                                             1/-      
+151746.593: [15:17:46]192.168.11.248  f4ee-0825-6dd8  4         D-0         XGE0/0/4       
+151746.593: [15:17:46]                                             1/-      
+151746.593: [15:17:46]192.168.11.224  f4b7-8dee-f66c  17        D-0         XGE0/0/3       
+151746.593: [15:17:46]                                             1/-      
+151746.593: [15:17:46]------------------------------------------------------------------------------
+151746.600: [15:17:46]Total:18        Dynamic:16      Static:0     Interface:2    
+151752.967: [15:17:52]<9C-2F-CORE>disp 
+151753.855: [15:17:53]<9C-2F-CORE>display ?
+151753.859: [15:17:53]  aaa                       AAA
+151753.859: [15:17:53]  aaa-quiet                 AAA quiet
+151753.859: [15:17:53]  access-author             Access user author
+151753.860: [15:17:53]  access-context            Access user context
+151753.864: [15:17:53]  access-user               User access
+151753.864: [15:17:53]  accounting-scheme         Accounting scheme
+151753.873: [15:17:53]  acl                       Specify ACL configuration information
+151753.874: [15:17:53]  alarm                     Alarm
+151753.874: [15:17:53]  als                       Set automatic laser shutdown 
+151753.874: [15:17:53]  anti-attack               Specify anti-attack configurations
+151753.885: [15:17:53]  arp                       Display ARP entries
+151753.885: [15:17:53]  arp-limit                 Display the number of limitation
+151753.885: [15:17:53]  arp-miss                  ARP Miss 
+151753.885: [15:17:53]  as                        Access switch
+151753.885: [15:17:53]  assistant                 Assistant
+151753.885: [15:17:53]  associate-user            Associate user
+151753.885: [15:17:53]  authentication            Authentication unified-mode
+151753.885: [15:17:53]  authentication-profile    Authentication profile
+151753.886: [15:17:53]  authentication-scheme     Authentication scheme
+151753.886: [15:17:53]  authorization-scheme      Display AAA authorization scheme 
+151753.886: [15:17:53]  auto-defend               Auto defend
+151753.894: [15:17:53]  auto-port-defend          Auto port defend
+151753.894: [15:17:53]  bfd                       Specify BFD(Bidirectional Forwarding Detection)
+151753.894: [15:17:53]                            configuration information
+151754.739: [15:17:54]                                          
+151754.739: [15:17:54]
+151756.151: [15:17:56]<9C-2F-CORE>display ar
+151756.591: [15:17:56]<9C-2F-CORE>display arp?
+151756.602: [15:17:56]  arp                                     arp-limit
+151756.602: [15:17:56]  arp-miss                                
+151757.211: [15:17:57]<9C-2F-CORE>display arp ?
+151757.211: [15:17:57]  all                 Display ARP entries or statistics of all slots
+151757.211: [15:17:57]  anti-attack         Anti attack 
+151757.211: [15:17:57]  broadcast-suppress  ARP broadcast packet suppress 
+151757.211: [15:17:57]  dynamic             Display dynamic ARP entry
+151757.225: [15:17:57]  error               Error debugging functions
+151757.226: [15:17:57]  interface           Specify interface
+151757.226: [15:17:57]  ip-conflict         ARP conflict detect information
+151757.226: [15:17:57]  learning            ARP learning
+151757.226: [15:17:57]  network             Specify network number and mask
+151757.226: [15:17:57]  optimized-passby    Optimize passby packet 
+151757.226: [15:17:57]  optimized-reply     Optimized replying ARP request packets 
+151757.226: [15:17:57]  packet              ARP packet
+151757.226: [15:17:57]  snooping            ARP Snooping 
+151757.226: [15:17:57]  static              Display static ARP entry
+151757.226: [15:17:57]  statistics          Display statistics about arp entries
+151757.226: [15:17:57]  status              ARP status
+151757.226: [15:17:57]  track               Track
+151757.226: [15:17:57]  vpn-instance        Specify VPN-Instance
+151757.233: [15:17:57]  |                   Matching output
+151757.233: [15:17:57]  <cr>                
+151757.233: [15:17:57]
+151803.308: [15:18:03]<9C-2F-CORE>display arp in
+151803.755: [15:18:03]<9C-2F-CORE>display arp interface ?
+151803.755: [15:18:03]  GigabitEthernet   GigabitEthernet interface
+151803.772: [15:18:03]  MEth              MEth interface
+151803.772: [15:18:03]  Vlanif            Vlan interface
+151803.772: [15:18:03]  XGigabitEthernet  XGigabitEthernet interface
+151803.772: [15:18:03]
+151805.051: [15:18:05]<9C-2F-CORE>display arp interface g
+151805.549: [15:18:05]<9C-2F-CORE>display arp interface GigabitEthernet ?
+151805.561: [15:18:05]  <0-0>  Slot number
+151805.570: [15:18:05]
+151808.337: [15:18:08]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/?
+151808.337: [15:18:08]  <1-24>                                  
+151811.568: [15:18:11]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+151811.568: [15:18:11]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+151811.568: [15:18:11]                                    VLAN/CEVLAN(SIP/DIP)
+151811.585: [15:18:11]------------------------------------------------------------------------------
+151811.586: [15:18:11]------------------------------------------------------------------------------
+151811.586: [15:18:11]Total:0         Dynamic:0       Static:0     Interface:0    
+151814.494: [15:18:14]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+151814.494: [15:18:14]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+151814.495: [15:18:14]                                    VLAN/CEVLAN(SIP/DIP)
+151814.495: [15:18:14]------------------------------------------------------------------------------
+151814.496: [15:18:14]------------------------------------------------------------------------------
+151814.496: [15:18:14]Total:0         Dynamic:0       Static:0     Interface:0    
+151911.557: [15:19:11]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+151911.558: [15:19:11]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+151911.558: [15:19:11]                                    VLAN/CEVLAN(SIP/DIP)
+151911.559: [15:19:11]------------------------------------------------------------------------------
+151911.559: [15:19:11]------------------------------------------------------------------------------
+151911.559: [15:19:11]Total:0         Dynamic:0       Static:0     Interface:0    
+151925.056: [15:19:25]<9C-2F-CORE>disp
+151926.049: [15:19:26]<9C-2F-CORE>display ar
+151926.724: [15:19:26]<9C-2F-CORE>display arp?
+151926.745: [15:19:26]  arp                                     arp-limit
+151926.745: [15:19:26]  arp-miss                                
+151928.476: [15:19:28]<9C-2F-CORE>display ma 
+151929.553: [15:19:29]<9C-2F-CORE>display mac-vlan
+151931.470: [15:19:31]<9C-2F-CORE>display mac-address ?
+151931.470: [15:19:31]  GigabitEthernet   GigabitEthernet interface
+151931.470: [15:19:31]  H-H-H             MAC address
+151931.470: [15:19:31]  XGigabitEthernet  XGigabitEthernet interface
+151931.471: [15:19:31]  aging-time        Aging-time
+151931.488: [15:19:31]  authen            Authenticated user item
+151931.488: [15:19:31]  blackhole         Black hole item
+151931.488: [15:19:31]  bridge-domain     Bridge domain 
+151931.488: [15:19:31]  dynamic           Dynamic item
+151931.488: [15:19:31]  evpn              Evpn MAC address
+151931.488: [15:19:31]  flapping          Flapping
+151931.488: [15:19:31]  multicast         Multicast item
+151931.489: [15:19:31]  multiport         Multiport item
+151931.489: [15:19:31]  mux               Mux MAC address
+151931.489: [15:19:31]  pre-authen        Guest user item
+151931.489: [15:19:31]  sec-config        Secure-configured MAC address
+151931.489: [15:19:31]  security          Secure-dynamic MAC address
+151931.489: [15:19:31]  snooping          DHCP snooping sticky MAC address
+151931.489: [15:19:31]  static            Static item
+151931.489: [15:19:31]  sticky            Sticky MAC address
+151931.489: [15:19:31]  summary           Summary of MAC address
+151931.489: [15:19:31]  total-number      Total number of MAC address
+151931.489: [15:19:31]  verbose           Verbose information
+151931.498: [15:19:31]  vlan              Virtual LAN
+151931.498: [15:19:31]  |                 Matching output
+151933.058: [15:19:33]                                          
+151933.058: [15:19:33]
+151933.231: [15:19:33]<9C-2F-CORE>display mac-address 
+151935.110: [15:19:35]<9C-2F-CORE>display mac-address gi
+151935.839: [15:19:35]<9C-2F-CORE>display mac-address GigabitEthernet ?
+151935.839: [15:19:35]  <0-0>  Slot number
+151935.839: [15:19:35]
+151938.384: [15:19:38]<9C-2F-CORE>display mac-address GigabitEthernet 0/0/7 ?
+151938.385: [15:19:38]  verbose  Verbose information
+151938.385: [15:19:38]  vlan     Virtual LAN
+151938.399: [15:19:38]  |        Matching output
+151938.400: [15:19:38]  <cr>     
+151938.400: [15:19:38]
+151940.232: [15:19:40]<9C-2F-CORE>display mac-address GigabitEthernet 0/0/7 
+151940.232: [15:19:40]-------------------------------------------------------------------------------
+151940.233: [15:19:40]MAC Address    VLAN/VSI/BD                       Learned-From        Type      
+151940.233: [15:19:40]-------------------------------------------------------------------------------
+151940.252: [15:19:40]0017-6110-5d8c 1/-/-                             GE0/0/7             dynamic   
+151940.252: [15:19:40]
+151940.252: [15:19:40]-------------------------------------------------------------------------------
+151940.252: [15:19:40]Total items displayed = 1 
+151940.252: [15:19:40]
+152213.789: [15:22:13]<9C-2F-CORE>display mac-address GigabitEthernet 0/0/7 
+152213.789: [15:22:13]-------------------------------------------------------------------------------
+152213.789: [15:22:13]MAC Address    VLAN/VSI/BD                       Learned-From        Type      
+152213.789: [15:22:13]-------------------------------------------------------------------------------
+152213.806: [15:22:13]0017-6110-5d8c 1/-/-                             GE0/0/7             dynamic   
+152213.806: [15:22:13]
+152213.806: [15:22:13]-------------------------------------------------------------------------------
+152213.806: [15:22:13]Total items displayed = 1 
+152213.806: [15:22:13]
+152250.354: [15:22:50]<9C-2F-CORE>display mac-address GigabitEthernet 0/0/7 
+152250.355: [15:22:50]-------------------------------------------------------------------------------
+152250.355: [15:22:50]MAC Address    VLAN/VSI/BD                       Learned-From        Type      
+152250.355: [15:22:50]-------------------------------------------------------------------------------
+152250.368: [15:22:50]0017-6110-5d8c 1/-/-                             GE0/0/7             dynamic   
+152250.368: [15:22:50]
+152250.368: [15:22:50]-------------------------------------------------------------------------------
+152250.369: [15:22:50]Total items displayed = 1 
+152250.369: [15:22:50]
+152252.782: [15:22:52]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+152252.783: [15:22:52]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+152252.783: [15:22:52]                                    VLAN/CEVLAN(SIP/DIP)
+152252.784: [15:22:52]------------------------------------------------------------------------------
+152252.785: [15:22:52]------------------------------------------------------------------------------
+152252.800: [15:22:52]Total:0         Dynamic:0       Static:0     Interface:0    
+152431.833: [15:24:31]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+152431.834: [15:24:31]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+152431.834: [15:24:31]                                    VLAN/CEVLAN(SIP/DIP)
+152431.834: [15:24:31]------------------------------------------------------------------------------
+152431.834: [15:24:31]------------------------------------------------------------------------------
+152431.835: [15:24:31]Total:0         Dynamic:0       Static:0     Interface:0    
+152534.358: [15:25:34]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+152534.360: [15:25:34]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+152534.360: [15:25:34]                                    VLAN/CEVLAN(SIP/DIP)
+152534.360: [15:25:34]------------------------------------------------------------------------------
+152534.360: [15:25:34]------------------------------------------------------------------------------
+152534.360: [15:25:34]Total:0         Dynamic:0       Static:0     Interface:0    
+152535.771: [15:25:35]<9C-2F-CORE>display arp interface GigabitEthernet 0/0/7
+152535.771: [15:25:35]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+152535.772: [15:25:35]                                    VLAN/CEVLAN(SIP/DIP)
+152535.772: [15:25:35]------------------------------------------------------------------------------
+152535.773: [15:25:35]------------------------------------------------------------------------------
+152535.773: [15:25:35]Total:0         Dynamic:0       Static:0     Interface:0    
+152554.543: [15:25:54]<9C-2F-CORE>disp arp
+152554.544: [15:25:54]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+152554.544: [15:25:54]                                    VLAN/CEVLAN(SIP/DIP)
+152554.544: [15:25:54]------------------------------------------------------------------------------
+152554.544: [15:25:54]192.168.1.253   708c-b678-32b0            I -         MEth0/0/1      
+152554.544: [15:25:54]192.168.11.243  708c-b678-32b2            I -         Vlanif1        
+152554.544: [15:25:54]192.168.11.237  f4b7-8dee-f500  20        D-0         GE0/0/12       
+152554.545: [15:25:54]                                             1/-      
+152554.545: [15:25:54]192.168.11.254  e483-2642-d7c6  17        D-0         XGE0/0/2       
+152554.545: [15:25:54]                                             1/-      
+152554.545: [15:25:54]192.168.11.222  f4b7-8dee-f4bf  20        D-0         XGE0/0/3       
+152554.545: [15:25:54]                                             1/-      
+152554.545: [15:25:54]192.168.11.215  d2bd-e9c5-e86a  17        D-0         GE0/0/23       
+152554.545: [15:25:54]                                             1/-      
+152554.546: [15:25:54]192.168.11.242  c4ef-bb4c-85da  5         D-0         XGE0/0/1       
+152554.546: [15:25:54]                                             1/-      
+152554.546: [15:25:54]192.168.8.1     3029-52a0-5292  6         D-0         GE0/0/2        
+152554.546: [15:25:54]                                             1/-      
+152554.546: [15:25:54]192.168.11.208  5046-4a3a-d5ae  19        D-0         GE0/0/12       
+152554.546: [15:25:54]                                             1/-      
+152554.547: [15:25:54]192.168.11.203  b46e-0890-7585  20        D-0         GE0/0/12       
+152554.547: [15:25:54]                                             1/-      
+152554.547: [15:25:54]192.168.11.219  f4b7-8dee-f4e0  19        D-0         XGE0/0/4       
+152554.547: [15:25:54]                                             1/-      
+152554.547: [15:25:54]192.168.11.202  f4b7-8dee-f66c  1         D-0         XGE0/0/3       
+152554.547: [15:25:54]                                             1/-      
+152554.547: [15:25:54]192.168.11.231  f4e4-5179-ce42  19        D-0         XGE0/0/1       
+152554.548: [15:25:54]                                             1/-      
+152555.507: [15:25:55]192.168.8.199   3cc7-869d-f6bf  5         D-0         XGE0/0/4       
+152555.507: [15:25:55]                                             1/-      
+152555.507: [15:25:55]192.168.11.228  f4b7-8dee-f4cf  16        D-0         XGE0/0/3       
+152555.508: [15:25:55]                                             1/-      
+152555.508: [15:25:55]192.168.8.88    c470-abfc-a59b  14        D-0         XGE0/0/4       
+152555.508: [15:25:55]                                             1/-      
+152555.508: [15:25:55]192.168.11.248  f4ee-0825-6dd8  15        D-0         XGE0/0/4       
+152555.509: [15:25:55]                                             1/-      
+152555.509: [15:25:55]192.168.11.224  f4b7-8dee-f506  16        D-0         XGE0/0/2       
+152555.509: [15:25:55]                                             1/-      
+152555.509: [15:25:55]192.168.11.204  9437-f71f-954f  15        D-0         XGE0/0/1       
+152555.509: [15:25:55]                                             1/-      
+152555.510: [15:25:55]------------------------------------------------------------------------------
+152555.510: [15:25:55]Total:19        Dynamic:17      Static:0     Interface:2    
+153601.908: [15:36:01][202604192.168.11.243-15:36:01]
+153601.929: [15:36:01]
+153601.929: [15:36:01]Info: The max number of VTY users is 10, and the number
+153601.929: [15:36:01]      of current VTY users on line is 1.
+153601.929: [15:36:01]      The current login time is 2026-04-02 15:32:31+08:00.
+153601.929: [15:36:01]Info: Lastest accessed IP: 172.16.208.2  Time: 2026-04-02 15:30:19+08:00  Failed: 0
+153601.929: [15:36:01]
+153601.930: [15:36:01]Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+153658.131: [15:36:58]<9C-2F-CORE>
+153658.196: [15:36:58]<9C-2F-CORE>
+153701.272: [15:37:01]<9C-2F-CORE>disp arp
+153705.215: [15:37:05]<9C-2F-CORE>disp arp ?    
+153705.215: [15:37:05]  all                 Display ARP entries or statistics of all slots
+153705.215: [15:37:05]  anti-attack         Anti attack 
+153705.215: [15:37:05]  broadcast-suppress  ARP broadcast packet suppress 
+153705.219: [15:37:05]  dynamic             Display dynamic ARP entry
+153705.220: [15:37:05]  error               Error debugging functions
+153705.220: [15:37:05]  interface           Specify interface
+153705.220: [15:37:05]  ip-conflict         ARP conflict detect information
+153705.220: [15:37:05]  learning            ARP learning
+153705.225: [15:37:05]  network             Specify network number and mask
+153705.225: [15:37:05]  optimized-passby    Optimize passby packet 
+153705.225: [15:37:05]  optimized-reply     Optimized replying ARP request packets 
+153705.225: [15:37:05]  packet              ARP packet
+153705.225: [15:37:05]  snooping            ARP Snooping 
+153705.280: [15:37:05]  static              Display static ARP entry
+153705.280: [15:37:05]  statistics          Display statistics about arp entries
+153705.280: [15:37:05]  status              ARP status
+153705.280: [15:37:05]  track               Track
+153705.280: [15:37:05]  vpn-instance        Specify VPN-Instance
+153705.280: [15:37:05]  |                   Matching output
+153705.280: [15:37:05]  <cr>                
+153705.280: [15:37:05]
+153712.837: [15:37:12]<9C-2F-CORE>disp arp ?  
+153712.838: [15:37:12]  all                 Display ARP entries or statistics of all slots
+153712.838: [15:37:12]  anti-attack         Anti attack 
+153712.838: [15:37:12]  broadcast-suppress  ARP broadcast packet suppress 
+153712.838: [15:37:12]  dynamic             Display dynamic ARP entry
+153712.838: [15:37:12]  error               Error debugging functions
+153712.838: [15:37:12]  interface           Specify interface
+153712.845: [15:37:12]  ip-conflict         ARP conflict detect information
+153712.845: [15:37:12]  learning            ARP learning
+153712.846: [15:37:12]  network             Specify network number and mask
+153712.846: [15:37:12]  optimized-passby    Optimize passby packet 
+153712.846: [15:37:12]  optimized-reply     Optimized replying ARP request packets 
+153712.846: [15:37:12]  packet              ARP packet
+153712.846: [15:37:12]  snooping            ARP Snooping 
+153712.851: [15:37:12]  static              Display static ARP entry
+153712.851: [15:37:12]  statistics          Display statistics about arp entries
+153712.855: [15:37:12]  status              ARP status
+153712.855: [15:37:12]  track               Track
+153712.855: [15:37:12]  vpn-instance        Specify VPN-Instance
+153712.856: [15:37:12]  |                   Matching output
+153712.856: [15:37:12]  <cr>                
+153712.856: [15:37:12]
+153714.907: [15:37:14]<9C-2F-CORE>disp arp int
+153715.524: [15:37:15]<9C-2F-CORE>disp arp interface g
+153718.460: [15:37:18]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 ?
+153718.468: [15:37:18]  |     Matching output
+153718.468: [15:37:18]  <cr>  
+153718.468: [15:37:18]
+153719.356: [15:37:19]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153719.357: [15:37:19]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153719.357: [15:37:19]                                    VLAN/CEVLAN(SIP/DIP)
+153719.357: [15:37:19]------------------------------------------------------------------------------
+153719.357: [15:37:19]------------------------------------------------------------------------------
+153719.357: [15:37:19]Total:0         Dynamic:0       Static:0     Interface:0    
+153728.219: [15:37:28]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153728.220: [15:37:28]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153728.220: [15:37:28]                                    VLAN/CEVLAN(SIP/DIP)
+153728.221: [15:37:28]------------------------------------------------------------------------------
+153728.222: [15:37:28]------------------------------------------------------------------------------
+153728.222: [15:37:28]Total:0         Dynamic:0       Static:0     Interface:0    
+153729.155: [15:37:29]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153729.155: [15:37:29]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153729.156: [15:37:29]                                    VLAN/CEVLAN(SIP/DIP)
+153729.157: [15:37:29]------------------------------------------------------------------------------
+153729.157: [15:37:29]------------------------------------------------------------------------------
+153729.157: [15:37:29]Total:0         Dynamic:0       Static:0     Interface:0    
+153730.552: [15:37:30]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153730.552: [15:37:30]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153730.552: [15:37:30]                                    VLAN/CEVLAN(SIP/DIP)
+153730.552: [15:37:30]------------------------------------------------------------------------------
+153730.553: [15:37:30]------------------------------------------------------------------------------
+153730.553: [15:37:30]Total:0         Dynamic:0       Static:0     Interface:0    
+153731.214: [15:37:31]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153731.214: [15:37:31]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153731.214: [15:37:31]                                    VLAN/CEVLAN(SIP/DIP)
+153731.215: [15:37:31]------------------------------------------------------------------------------
+153731.215: [15:37:31]------------------------------------------------------------------------------
+153731.232: [15:37:31]Total:0         Dynamic:0       Static:0     Interface:0    
+153731.887: [15:37:31]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153731.887: [15:37:31]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153731.888: [15:37:31]                                    VLAN/CEVLAN(SIP/DIP)
+153731.888: [15:37:31]------------------------------------------------------------------------------
+153731.889: [15:37:31]------------------------------------------------------------------------------
+153731.890: [15:37:31]Total:0         Dynamic:0       Static:0     Interface:0    
+153732.532: [15:37:32]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153732.533: [15:37:32]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153732.533: [15:37:32]                                    VLAN/CEVLAN(SIP/DIP)
+153732.533: [15:37:32]------------------------------------------------------------------------------
+153732.533: [15:37:32]------------------------------------------------------------------------------
+153732.533: [15:37:32]Total:0         Dynamic:0       Static:0     Interface:0    
+153733.192: [15:37:33]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153733.192: [15:37:33]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153733.193: [15:37:33]                                    VLAN/CEVLAN(SIP/DIP)
+153733.193: [15:37:33]------------------------------------------------------------------------------
+153733.194: [15:37:33]------------------------------------------------------------------------------
+153733.194: [15:37:33]Total:0         Dynamic:0       Static:0     Interface:0    
+153733.840: [15:37:33]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153733.840: [15:37:33]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153733.841: [15:37:33]                                    VLAN/CEVLAN(SIP/DIP)
+153733.841: [15:37:33]------------------------------------------------------------------------------
+153733.842: [15:37:33]------------------------------------------------------------------------------
+153733.858: [15:37:33]Total:0         Dynamic:0       Static:0     Interface:0    
+153734.793: [15:37:34]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153734.793: [15:37:34]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153734.794: [15:37:34]                                    VLAN/CEVLAN(SIP/DIP)
+153734.814: [15:37:34]------------------------------------------------------------------------------
+153734.815: [15:37:34]------------------------------------------------------------------------------
+153734.815: [15:37:34]Total:0         Dynamic:0       Static:0     Interface:0    
+153735.545: [15:37:35]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153735.546: [15:37:35]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153735.546: [15:37:35]                                    VLAN/CEVLAN(SIP/DIP)
+153735.546: [15:37:35]------------------------------------------------------------------------------
+153735.546: [15:37:35]------------------------------------------------------------------------------
+153735.546: [15:37:35]Total:0         Dynamic:0       Static:0     Interface:0    
+153741.512: [15:37:41]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153741.512: [15:37:41]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153741.513: [15:37:41]                                    VLAN/CEVLAN(SIP/DIP)
+153741.513: [15:37:41]------------------------------------------------------------------------------
+153741.513: [15:37:41]------------------------------------------------------------------------------
+153741.528: [15:37:41]Total:0         Dynamic:0       Static:0     Interface:0    
+153817.784: [15:38:17]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153817.785: [15:38:17]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153817.785: [15:38:17]                                    VLAN/CEVLAN(SIP/DIP)
+153817.785: [15:38:17]------------------------------------------------------------------------------
+153817.786: [15:38:17]------------------------------------------------------------------------------
+153817.786: [15:38:17]Total:0         Dynamic:0       Static:0     Interface:0    
+153917.729: [15:39:17]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+153917.730: [15:39:17]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+153917.730: [15:39:17]                                    VLAN/CEVLAN(SIP/DIP)
+153917.730: [15:39:17]------------------------------------------------------------------------------
+153917.730: [15:39:17]------------------------------------------------------------------------------
+153917.730: [15:39:17]Total:0         Dynamic:0       Static:0     Interface:0    
+154243.963: [15:42:43]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154243.964: [15:42:43]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154243.964: [15:42:43]                                    VLAN/CEVLAN(SIP/DIP)
+154243.982: [15:42:43]------------------------------------------------------------------------------
+154243.982: [15:42:43]------------------------------------------------------------------------------
+154243.983: [15:42:43]Total:0         Dynamic:0       Static:0     Interface:0    
+154245.357: [15:42:45]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154245.358: [15:42:45]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154245.358: [15:42:45]                                    VLAN/CEVLAN(SIP/DIP)
+154245.359: [15:42:45]------------------------------------------------------------------------------
+154245.359: [15:42:45]------------------------------------------------------------------------------
+154245.360: [15:42:45]Total:0         Dynamic:0       Static:0     Interface:0    
+154246.863: [15:42:46]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154246.864: [15:42:46]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154246.864: [15:42:46]                                    VLAN/CEVLAN(SIP/DIP)
+154246.883: [15:42:46]------------------------------------------------------------------------------
+154246.884: [15:42:46]------------------------------------------------------------------------------
+154246.884: [15:42:46]Total:0         Dynamic:0       Static:0     Interface:0    
+154604.068: [15:46:04]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154604.070: [15:46:04]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154604.070: [15:46:04]                                    VLAN/CEVLAN(SIP/DIP)
+154604.070: [15:46:04]------------------------------------------------------------------------------
+154604.071: [15:46:04]------------------------------------------------------------------------------
+154604.089: [15:46:04]Total:0         Dynamic:0       Static:0     Interface:0    
+154613.387: [15:46:13]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154613.389: [15:46:13]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154613.389: [15:46:13]                                    VLAN/CEVLAN(SIP/DIP)
+154613.389: [15:46:13]------------------------------------------------------------------------------
+154613.390: [15:46:13]------------------------------------------------------------------------------
+154613.390: [15:46:13]Total:0         Dynamic:0       Static:0     Interface:0    
+154614.657: [15:46:14]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154614.658: [15:46:14]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154614.658: [15:46:14]                                    VLAN/CEVLAN(SIP/DIP)
+154614.679: [15:46:14]------------------------------------------------------------------------------
+154614.679: [15:46:14]------------------------------------------------------------------------------
+154614.679: [15:46:14]Total:0         Dynamic:0       Static:0     Interface:0    
+154618.872: [15:46:18]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154618.872: [15:46:18]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154618.873: [15:46:18]                                    VLAN/CEVLAN(SIP/DIP)
+154618.873: [15:46:18]------------------------------------------------------------------------------
+154618.873: [15:46:18]------------------------------------------------------------------------------
+154618.892: [15:46:18]Total:0         Dynamic:0       Static:0     Interface:0    
+154620.949: [15:46:20]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154620.949: [15:46:20]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154620.949: [15:46:20]                                    VLAN/CEVLAN(SIP/DIP)
+154620.949: [15:46:20]------------------------------------------------------------------------------
+154620.949: [15:46:20]------------------------------------------------------------------------------
+154620.949: [15:46:20]Total:0         Dynamic:0       Static:0     Interface:0    
+154647.677: [15:46:47]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154647.678: [15:46:47]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154647.678: [15:46:47]                                    VLAN/CEVLAN(SIP/DIP)
+154647.678: [15:46:47]------------------------------------------------------------------------------
+154647.679: [15:46:47]------------------------------------------------------------------------------
+154647.679: [15:46:47]Total:0         Dynamic:0       Static:0     Interface:0    
+154648.639: [15:46:48]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154648.639: [15:46:48]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154648.639: [15:46:48]                                    VLAN/CEVLAN(SIP/DIP)
+154648.640: [15:46:48]------------------------------------------------------------------------------
+154648.640: [15:46:48]------------------------------------------------------------------------------
+154648.640: [15:46:48]Total:0         Dynamic:0       Static:0     Interface:0    
+154655.563: [15:46:55]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154655.563: [15:46:55]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154655.564: [15:46:55]                                    VLAN/CEVLAN(SIP/DIP)
+154655.581: [15:46:55]------------------------------------------------------------------------------
+154655.581: [15:46:55]------------------------------------------------------------------------------
+154655.581: [15:46:55]Total:0         Dynamic:0       Static:0     Interface:0    
+154737.042: [15:47:37]<9C-2F-CORE>
+154737.179: [15:47:37]<9C-2F-CORE>
+154737.806: [15:47:37]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154737.806: [15:47:37]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154737.807: [15:47:37]                                    VLAN/CEVLAN(SIP/DIP)
+154737.807: [15:47:37]------------------------------------------------------------------------------
+154737.807: [15:47:37]------------------------------------------------------------------------------
+154737.808: [15:47:37]Total:0         Dynamic:0       Static:0     Interface:0    
+154739.051: [15:47:39]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154739.052: [15:47:39]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154739.052: [15:47:39]                                    VLAN/CEVLAN(SIP/DIP)
+154739.053: [15:47:39]------------------------------------------------------------------------------
+154739.053: [15:47:39]------------------------------------------------------------------------------
+154739.053: [15:47:39]Total:0         Dynamic:0       Static:0     Interface:0    
+154744.822: [15:47:44]<9C-2F-CORE>
+154747.077: [15:47:47]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154747.077: [15:47:47]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154747.078: [15:47:47]                                    VLAN/CEVLAN(SIP/DIP)
+154747.078: [15:47:47]------------------------------------------------------------------------------
+154747.079: [15:47:47]------------------------------------------------------------------------------
+154747.079: [15:47:47]Total:0         Dynamic:0       Static:0     Interface:0    
+154748.181: [15:47:48]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154748.181: [15:47:48]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154748.182: [15:47:48]                                    VLAN/CEVLAN(SIP/DIP)
+154748.182: [15:47:48]------------------------------------------------------------------------------
+154748.183: [15:47:48]------------------------------------------------------------------------------
+154748.183: [15:47:48]Total:0         Dynamic:0       Static:0     Interface:0    
+154818.010: [15:48:18]<9C-2F-CORE>
+154818.969: [15:48:18]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154818.970: [15:48:18]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154818.970: [15:48:18]                                    VLAN/CEVLAN(SIP/DIP)
+154818.970: [15:48:18]------------------------------------------------------------------------------
+154818.971: [15:48:18]------------------------------------------------------------------------------
+154818.971: [15:48:18]Total:0         Dynamic:0       Static:0     Interface:0    
+154819.923: [15:48:19]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154819.923: [15:48:19]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154819.924: [15:48:19]                                    VLAN/CEVLAN(SIP/DIP)
+154819.940: [15:48:19]------------------------------------------------------------------------------
+154819.940: [15:48:19]------------------------------------------------------------------------------
+154819.940: [15:48:19]Total:0         Dynamic:0       Static:0     Interface:0    
+154829.101: [15:48:29]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154829.101: [15:48:29]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154829.101: [15:48:29]                                    VLAN/CEVLAN(SIP/DIP)
+154829.102: [15:48:29]------------------------------------------------------------------------------
+154829.103: [15:48:29]------------------------------------------------------------------------------
+154829.103: [15:48:29]Total:0         Dynamic:0       Static:0     Interface:0    
+154829.957: [15:48:29]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154829.957: [15:48:29]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154829.958: [15:48:29]                                    VLAN/CEVLAN(SIP/DIP)
+154829.958: [15:48:29]------------------------------------------------------------------------------
+154829.959: [15:48:29]------------------------------------------------------------------------------
+154829.959: [15:48:29]Total:0         Dynamic:0       Static:0     Interface:0    
+154831.306: [15:48:31]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154831.307: [15:48:31]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154831.307: [15:48:31]                                    VLAN/CEVLAN(SIP/DIP)
+154831.307: [15:48:31]------------------------------------------------------------------------------
+154831.308: [15:48:31]------------------------------------------------------------------------------
+154831.330: [15:48:31]Total:0         Dynamic:0       Static:0     Interface:0    
+154832.256: [15:48:32]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154832.256: [15:48:32]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154832.257: [15:48:32]                                    VLAN/CEVLAN(SIP/DIP)
+154832.257: [15:48:32]------------------------------------------------------------------------------
+154832.258: [15:48:32]------------------------------------------------------------------------------
+154832.258: [15:48:32]Total:0         Dynamic:0       Static:0     Interface:0    
+154833.116: [15:48:33]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154833.116: [15:48:33]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154833.117: [15:48:33]                                    VLAN/CEVLAN(SIP/DIP)
+154833.134: [15:48:33]------------------------------------------------------------------------------
+154833.134: [15:48:33]------------------------------------------------------------------------------
+154833.135: [15:48:33]Total:0         Dynamic:0       Static:0     Interface:0    
+154833.894: [15:48:33]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154833.894: [15:48:33]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154833.895: [15:48:33]                                    VLAN/CEVLAN(SIP/DIP)
+154833.895: [15:48:33]------------------------------------------------------------------------------
+154833.895: [15:48:33]------------------------------------------------------------------------------
+154833.896: [15:48:33]Total:0         Dynamic:0       Static:0     Interface:0    
+154834.720: [15:48:34]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154834.721: [15:48:34]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154834.721: [15:48:34]                                    VLAN/CEVLAN(SIP/DIP)
+154834.722: [15:48:34]------------------------------------------------------------------------------
+154834.722: [15:48:34]------------------------------------------------------------------------------
+154834.723: [15:48:34]Total:0         Dynamic:0       Static:0     Interface:0    
+154835.495: [15:48:35]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154835.496: [15:48:35]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154835.496: [15:48:35]                                    VLAN/CEVLAN(SIP/DIP)
+154835.496: [15:48:35]------------------------------------------------------------------------------
+154835.496: [15:48:35]------------------------------------------------------------------------------
+154835.497: [15:48:35]Total:0         Dynamic:0       Static:0     Interface:0    
+154837.065: [15:48:37]<9C-2F-CORE>
+154842.772: [15:48:42]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154842.772: [15:48:42]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154842.773: [15:48:42]                                    VLAN/CEVLAN(SIP/DIP)
+154842.773: [15:48:42]------------------------------------------------------------------------------
+154842.774: [15:48:42]------------------------------------------------------------------------------
+154842.774: [15:48:42]Total:0         Dynamic:0       Static:0     Interface:0    
+154844.238: [15:48:44]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154844.239: [15:48:44]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154844.239: [15:48:44]                                    VLAN/CEVLAN(SIP/DIP)
+154844.259: [15:48:44]------------------------------------------------------------------------------
+154844.259: [15:48:44]------------------------------------------------------------------------------
+154844.259: [15:48:44]Total:0         Dynamic:0       Static:0     Interface:0    
+154845.726: [15:48:45]<9C-2F-CORE>disp arp interface GigabitEthernet 0/0/7 
+154845.727: [15:48:45]IP ADDRESS      MAC ADDRESS     EXPIRE(M) TYPE        INTERFACE   VPN-INSTANCE 
+154845.727: [15:48:45]                                    VLAN/CEVLAN(SIP/DIP)
+154845.728: [15:48:45]------------------------------------------------------------------------------
+154845.728: [15:48:45]------------------------------------------------------------------------------
+154845.728: [15:48:45]Total:0         Dynamic:0       Static:0     Interface:0    
+154914.864: [15:49:14]<9C-2F-CORE>ping 192.168.11.236
+154914.929: [15:49:14]  PING 192.168.11.236: 56  data bytes, press CTRL_C to break
+154915.362: [15:49:15]    Reply from 192.168.11.236: bytes=56 Sequence=1 ttl=64 time=1 ms
+154915.914: [15:49:15]    Reply from 192.168.11.236: bytes=56 Sequence=2 ttl=64 time=1 ms
+154916.365: [15:49:16]    Reply from 192.168.11.236: bytes=56 Sequence=3 ttl=64 time=1 ms
+154916.867: [15:49:16]    Reply from 192.168.11.236: bytes=56 Sequence=4 ttl=64 time=1 ms
+154916.883: [15:49:16]    Reply from 192.168.11.236: bytes=56 Sequence=5 ttl=64 time=1 ms
+154916.883: [15:49:16]
+154916.883: [15:49:16]  --- 192.168.11.236 ping statistics ---
+154916.883: [15:49:16]    5 packet(s) transmitted
+154916.883: [15:49:16]    5 packet(s) received
+154916.883: [15:49:16]    0.00% packet loss
+154916.884: [15:49:16]    round-trip min/avg/max = 1/1/1 ms
+154916.884: [15:49:16]
+154937.987: [15:49:37]<9C-2F-CORE>d l n b 
+154937.989: [15:49:37]Local Intf       Neighbor Dev             Neighbor Intf             Exptime(s)
+154937.989: [15:49:37]GE0/0/12         HUAWEI                   GE0/0/14                  113    
+154938.006: [15:49:38]GE0/0/23         Ruijie                   c4b2-5b25-69f9            95     
+154938.006: [15:49:38]GE0/0/24         WangXun_EM_firmware      6cb3-1167-cafc            90     
+154938.018: [15:49:38]XGE0/0/1         3F-WIRE-JIERU            GE0/0/25                  115    
+154938.018: [15:49:38]XGE0/0/2         HUAWEI                   GE0/0/25                  114    
+154938.018: [15:49:38]XGE0/0/3         HUAWEI                   GE0/0/25                  102    
+154938.018: [15:49:38]XGE0/0/4         HUAWEI                   GE0/0/28                  108    
+155011.597: [15:50:11]<9C-2F-CORE>d l n b 
+155011.619: [15:50:11]Local Intf       Neighbor Dev             Neighbor Intf             Exptime(s)
+155011.620: [15:50:11]GE0/0/12         HUAWEI                   GE0/0/14                  109    
+155011.620: [15:50:11]GE0/0/23         Ruijie                   c4b2-5b25-69f9            91     
+155011.620: [15:50:11]GE0/0/24         WangXun_EM_firmware      6cb3-1167-cafc            96     
+155011.620: [15:50:11]XGE0/0/1         3F-WIRE-JIERU            GE0/0/25                  111    
+155011.620: [15:50:11]XGE0/0/2         HUAWEI                   GE0/0/25                  110    
+155011.620: [15:50:11]XGE0/0/3         HUAWEI                   GE0/0/25                  98     
+155011.620: [15:50:11]XGE0/0/4         HUAWEI                   GE0/0/28                  104    
+155415.667: [15:54:15]<9C-2F-CORE>ping 192.168.8.21
+155417.695: [15:54:17]  PING 192.168.8.21: 56  data bytes, press CTRL_C to break
+155419.680: [15:54:19]    Request time out
+155421.691: [15:54:21]    Request time out
+155423.703: [15:54:23]    Request time out
+155425.714: [15:54:25]    Request time out
+155425.732: [15:54:25]    Request time out
+155425.732: [15:54:25]
+155425.733: [15:54:25]  --- 192.168.8.21 ping statistics ---
+155425.733: [15:54:25]    5 packet(s) transmitted
+155425.733: [15:54:25]    0 packet(s) received
+155425.733: [15:54:25]    100.00% packet loss
+155425.733: [15:54:25]
+160432.523: [16:04:32][202604192.168.11.243-16:04:32]
+160432.541: [16:04:32]
+160432.542: [16:04:32]Info: The max number of VTY users is 10, and the number
+160432.542: [16:04:32]      of current VTY users on line is 1.
+160432.544: [16:04:32]      The current login time is 2026-04-02 16:01:02+08:00.
+160432.544: [16:04:32]Info: Lastest accessed IP: 192.168.6.173  Time: 2026-04-02 15:32:31+08:00  Failed: 0
+160432.544: [16:04:32]
+160432.544: [16:04:32]Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+161438.758: [16:14:38][202604192.168.11.243-16:14:38]
+161438.772: [16:14:38]
+161438.772: [16:14:38]Info: The max number of VTY users is 10, and the number
+161438.773: [16:14:38]      of current VTY users on line is 1.
+161438.773: [16:14:38]      The current login time is 2026-04-02 16:11:08+08:00.
+161438.773: [16:14:38]Info: Lastest accessed IP: 192.168.6.173  Time: 2026-04-02 16:01:02+08:00  Failed: 0
+161438.773: [16:14:38]
+161438.773: [16:14:38]Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+162444.829: [16:24:44][202604192.168.11.243-16:24:44]
+162444.858: [16:24:44]
+162444.859: [16:24:44]Info: The max number of VTY users is 10, and the number
+162444.859: [16:24:44]      of current VTY users on line is 1.
+162444.859: [16:24:44]      The current login time is 2026-04-02 16:21:14+08:00.
+162444.860: [16:24:44]Info: Lastest accessed IP: 192.168.6.173  Time: 2026-04-02 16:11:08+08:00  Failed: 0
+162444.865: [16:24:44]
+162444.866: [16:24:44]Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.

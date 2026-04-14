@@ -1,0 +1,114 @@
+﻿095231.221: [09:52:31][202603099-172.16.208.2-各种服务-09:52:31]
+095231.256: [09:52:31]Linux 172-16-208-2 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+095231.256: [09:52:31]
+095231.256: [09:52:31]The programs included with the Debian GNU/Linux system are free software;
+095231.256: [09:52:31]the exact distribution terms for each program are described in the
+095231.256: [09:52:31]individual files in /usr/share/doc/*/copyright.
+095231.256: [09:52:31]
+095231.262: [09:52:31]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+095231.262: [09:52:31]permitted by applicable law.
+095231.262: [09:52:31]Last login: Thu Mar 26 14:22:10 2026 from 192.168.6.173
+095236.483: [09:52:36][root@172-16-208-2 ~]# ip a
+095236.494: [09:52:36]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+095236.494: [09:52:36]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+095236.494: [09:52:36]    inet 127.0.0.1/8 scope host lo
+095236.494: [09:52:36]       valid_lft forever preferred_lft forever
+095236.494: [09:52:36]    inet6 ::1/128 scope host 
+095236.494: [09:52:36]       valid_lft forever preferred_lft forever
+095236.495: [09:52:36]2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+095236.495: [09:52:36]    link/ether fa:c0:06:37:21:00 brd ff:ff:ff:ff:ff:ff
+095236.495: [09:52:36]    altname enp0s3
+095236.495: [09:52:36]    inet 172.16.208.2/20 brd 172.16.223.255 scope global noprefixroute ens3
+095236.496: [09:52:36]       valid_lft forever preferred_lft forever
+095236.496: [09:52:36]    inet6 fe80::f8c0:6ff:fe37:2100/64 scope link noprefixroute 
+095236.496: [09:52:36]       valid_lft forever preferred_lft forever
+095236.496: [09:52:36]4: tailscale0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc pfifo_fast state UNKNOWN group default qlen 500
+095236.496: [09:52:36]    link/none 
+095236.497: [09:52:36]    inet 100.92.100.90/32 scope global tailscale0
+095236.497: [09:52:36]       valid_lft forever preferred_lft forever
+095236.497: [09:52:36]    inet6 fd7a:115c:a1e0::1a01:64a7/128 scope global 
+095236.497: [09:52:36]       valid_lft forever preferred_lft forever
+095236.497: [09:52:36]    inet6 fe80::fe4a:ccdf:4c44:cdc8/64 scope link stable-privacy 
+095236.497: [09:52:36]       valid_lft forever preferred_lft forever
+095236.498: [09:52:36]5: br-c2f8d78d6e11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+095236.507: [09:52:36]    link/ether 02:42:5b:3f:a9:6b brd ff:ff:ff:ff:ff:ff
+095236.507: [09:52:36]    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c2f8d78d6e11
+095236.508: [09:52:36]       valid_lft forever preferred_lft forever
+095236.508: [09:52:36]    inet6 fe80::42:5bff:fe3f:a96b/64 scope link 
+095236.508: [09:52:36]       valid_lft forever preferred_lft forever
+095236.508: [09:52:36]6: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+095236.509: [09:52:36]    link/ether 02:42:33:92:ed:66 brd ff:ff:ff:ff:ff:ff
+095236.509: [09:52:36]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+095236.509: [09:52:36]       valid_lft forever preferred_lft forever
+095236.509: [09:52:36]    inet6 fe80::42:33ff:fe92:ed66/64 scope link 
+095236.509: [09:52:36]       valid_lft forever preferred_lft forever
+095236.510: [09:52:36]8: veth0d8b609@if7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+095236.510: [09:52:36]    link/ether 12:2e:08:cc:93:83 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+095236.510: [09:52:36]    inet6 fe80::102e:8ff:fecc:9383/64 scope link 
+095236.510: [09:52:36]       valid_lft forever preferred_lft forever
+095236.511: [09:52:36]10: veth7349c5b@if9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.511: [09:52:36]    link/ether 5a:c5:4d:5b:18:72 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+095236.511: [09:52:36]    inet6 fe80::58c5:4dff:fe5b:1872/64 scope link 
+095236.512: [09:52:36]       valid_lft forever preferred_lft forever
+095236.512: [09:52:36]12: veth5031693@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+095236.512: [09:52:36]    link/ether ba:d9:f2:bd:96:56 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+095236.513: [09:52:36]    inet6 fe80::b8d9:f2ff:febd:9656/64 scope link 
+095236.513: [09:52:36]       valid_lft forever preferred_lft forever
+095236.513: [09:52:36]14: veth6b03248@if13: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.514: [09:52:36]    link/ether be:45:df:8f:51:46 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+095236.514: [09:52:36]    inet6 fe80::bc45:dfff:fe8f:5146/64 scope link 
+095236.514: [09:52:36]       valid_lft forever preferred_lft forever
+095236.514: [09:52:36]16: veth271af5a@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+095236.524: [09:52:36]    link/ether 9e:3c:b8:e1:d4:55 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+095236.524: [09:52:36]    inet6 fe80::9c3c:b8ff:fee1:d455/64 scope link 
+095236.524: [09:52:36]       valid_lft forever preferred_lft forever
+095236.524: [09:52:36]18: veth60c1e34@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.525: [09:52:36]    link/ether be:5b:27:ce:71:53 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+095236.525: [09:52:36]    inet6 fe80::bc5b:27ff:fece:7153/64 scope link 
+095236.525: [09:52:36]       valid_lft forever preferred_lft forever
+095236.525: [09:52:36]20: vethc3b152c@if19: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-c2f8d78d6e11 state UP group default 
+095236.526: [09:52:36]    link/ether ae:ce:a4:49:f9:0a brd ff:ff:ff:ff:ff:ff link-netnsid 9
+095236.526: [09:52:36]    inet6 fe80::acce:a4ff:fe49:f90a/64 scope link 
+095236.526: [09:52:36]       valid_lft forever preferred_lft forever
+095236.526: [09:52:36]22: vetha44ef53@if21: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.526: [09:52:36]    link/ether 66:91:b2:cd:a4:14 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+095236.527: [09:52:36]    inet6 fe80::6491:b2ff:fecd:a414/64 scope link 
+095236.527: [09:52:36]       valid_lft forever preferred_lft forever
+095236.527: [09:52:36]24: vethc92584d@if23: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.527: [09:52:36]    link/ether d2:80:28:fe:99:59 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+095236.527: [09:52:36]    inet6 fe80::d080:28ff:fefe:9959/64 scope link 
+095236.527: [09:52:36]       valid_lft forever preferred_lft forever
+095236.528: [09:52:36]26: veth8feb8ac@if25: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.528: [09:52:36]    link/ether 76:27:ef:73:fa:fb brd ff:ff:ff:ff:ff:ff link-netnsid 8
+095236.528: [09:52:36]    inet6 fe80::7427:efff:fe73:fafb/64 scope link 
+095236.528: [09:52:36]       valid_lft forever preferred_lft forever
+095236.528: [09:52:36]30: veth8d73358@if29: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.529: [09:52:36]    link/ether ee:11:30:0c:2c:6a brd ff:ff:ff:ff:ff:ff link-netnsid 10
+095236.529: [09:52:36]    inet6 fe80::ec11:30ff:fe0c:2c6a/64 scope link 
+095236.529: [09:52:36]       valid_lft forever preferred_lft forever
+095236.529: [09:52:36]32: veth9c71130@if31: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.529: [09:52:36]    link/ether 5e:be:d2:72:c1:99 brd ff:ff:ff:ff:ff:ff link-netnsid 12
+095236.529: [09:52:36]    inet6 fe80::5cbe:d2ff:fe72:c199/64 scope link 
+095236.530: [09:52:36]       valid_lft forever preferred_lft forever
+095236.530: [09:52:36]34: veth57e9582@if33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.530: [09:52:36]    link/ether ce:ad:74:9f:3f:7b brd ff:ff:ff:ff:ff:ff link-netnsid 14
+095236.530: [09:52:36]    inet6 fe80::ccad:74ff:fe9f:3f7b/64 scope link 
+095236.530: [09:52:36]       valid_lft forever preferred_lft forever
+095236.531: [09:52:36]36: vethf5423ba@if35: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.531: [09:52:36]    link/ether b6:f4:88:36:00:26 brd ff:ff:ff:ff:ff:ff link-netnsid 11
+095236.531: [09:52:36]    inet6 fe80::b4f4:88ff:fe36:26/64 scope link 
+095236.531: [09:52:36]       valid_lft forever preferred_lft forever
+095236.531: [09:52:36]40: vetha7af7d0@if39: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+095236.531: [09:52:36]    link/ether 62:f3:b1:28:7d:32 brd ff:ff:ff:ff:ff:ff link-netnsid 13
+095236.532: [09:52:36]    inet6 fe80::60f3:b1ff:fe28:7d32/64 scope link 
+095236.532: [09:52:36]       valid_lft forever preferred_lft forever
+095236.532: [09:52:36]69: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+095236.532: [09:52:36]    link/none 
+095236.532: [09:52:36]    inet 10.253.0.2/32 scope global wg0
+095236.532: [09:52:36]       valid_lft forever preferred_lft forever
+095236.532: [09:52:36]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:2/128 scope global 
+095236.532: [09:52:36]       valid_lft forever preferred_lft forever
+095243.353: [09:52:43][root@172-16-208-2 ~]# ss -tlnp | grep sing
+095243.410: [09:52:43]LISTEN 0      4096                                  0.0.0.0:7890       0.0.0.0:*    users:(("sing-box",pid=1654768,fd=9))                   
+095243.411: [09:52:43]LISTEN 0      4096                             172.16.208.2:1235       0.0.0.0:*    users:(("sing-box",pid=1654768,fd=10))                  
+095243.412: [09:52:43]LISTEN 0      4096                                        *:9092             *:*    users:(("sing-box",pid=1654768,fd=12))                  

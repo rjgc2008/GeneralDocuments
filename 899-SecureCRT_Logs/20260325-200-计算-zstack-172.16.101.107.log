@@ -1,0 +1,20 @@
+﻿150510.252: [15:05:10][202603200-计算-zstack-172.16.101.107-15:05:10]
+150510.266: [15:05:10]
+150510.266: [15:05:10]Authorized users only. All activities may be monitored and reported.
+150510.266: [15:05:10]Last login: Wed Mar 25 15:05:05 2026 from 172.16.101.115
+150514.016: [15:05:14][root@zstack-1 ~]# cat /etc/os-release 
+150514.016: [15:05:14]NAME="Kylin Linux Advanced Server"
+150514.017: [15:05:14]VERSION="V10 (ZStack)"
+150514.017: [15:05:14]ID="kylin"
+150514.017: [15:05:14]VERSION_ID="V10"
+150514.017: [15:05:14]PRETTY_NAME="Kylin Linux Advanced Server V10 (ZStack)"
+150514.017: [15:05:14]ANSI_COLOR="0;31"
+150514.017: [15:05:14]
+152111.064: [15:21:11][root@zstack-1 ~]# dmidecode -s system-serial-number
+152111.065: [15:21:11]9800183903508134
+152149.681: [15:21:49][202603200-计算-zstack-172.16.101.107-15:21:49]
+152149.697: [15:21:49]
+152149.697: [15:21:49]Authorized users only. All activities may be monitored and reported.
+152149.697: [15:21:49]Last login: Wed Mar 25 15:21:44 2026 from 172.16.101.115
+152154.426: [15:21:54][root@zstack-1 ~]# dmidecode -s system-serial-number
+152154.427: [15:21:54]9800183903508134

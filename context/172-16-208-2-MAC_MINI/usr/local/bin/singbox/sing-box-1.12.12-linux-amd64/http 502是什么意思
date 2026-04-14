@@ -1,0 +1,97 @@
+http 502是什么意思
+
+我按照上述配置了，浏览器仍然无法访问 pt.zhixing.bjtu.edu.cn
+Linux主机可以ping通ipv6地址（pt.zhixing.bjtu.edu.cn解析的ipv6地址）
+
+
+
+yt-dlp -f "bv*+ba/b" \
+--merge-output-format mp4 \
+-o "%(title)s.%(ext)s" \
+--exec "ffmpeg -i {} -q:a 0 -map a \"%(title)s_audio.mp3\"" \
+https://x.com/FLMdongtianfudi/status/2036770172468601023?s=20
+
+
+
+
+
+
+url="https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+file=$(yt-dlp -f "bv*+ba/b" \
+--merge-output-format mp4 \
+-o "%(title)s.%(ext)s" \
+--print after_move:filepath \
+"$url")
+
+ffmpeg -i "$file" -q:a 0 -map a "${file%.*}.mp3"
+
+
+yt-dlp --cookies-from-browser safari "https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+
+yt-dlp --cookies-from-browser chrome "https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+
+yt-dlp --cookies-from-browser chromium "https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+
+yt-dlp "https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+
+yt-dlp -f "bv*+ba/b" "https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+
+yt-dlp -f "bestvideo+bestaudio/best" --merge-output-format mp4 "https://www.instagram.com/reel/DT-bY9uDOSG/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+
+
+yt-dlp "链接"
+
+
+
+
+
+
+url="https://www.instagram.com/reel/DP_fSLBkQPp/?igsh=bGx5eHF6aXQxdzh0"
+
+file=$(yt-dlp -f "bv*+ba/b" \
+--merge-output-format mp4 \
+-o "%(title)s.%(ext)s" \
+--print after_move:filepath \
+"$url")
+
+ffmpeg -i "$file" -q:a 0 -map a "${file%.*}.mp3"
+
+
+浪潮（Inspur）NF8260M6	24BC41566
+浪潮（Inspur）NF8260M6	24BC41567
+浪潮（Inspur）NF5280M6	24C131153
+浪潮（Inspur）CS5280H2	21AC10774
+浪潮（Inspur）CS5280H2	21AC10773
+浪潮（Inspur）CS5280H2	21AC10775
+浪潮（Inspur）NF5280M6	24BC37963
+浪潮（Inspur）NF5280M6	24C131152
+浪潮（Inspur）NF5280M6	24C134070
+浪潮（Inspur）NF5280M6	24C134069
+浪潮（Inspur）NF5280M6	24BC37962
+浪潮（Inspur）NF5280M6	24C131156
+浪潮（Inspur）NF5280M6	24C131154
+浪潮（Inspur）NF5280M6	24C131157
+浪潮（Inspur）NF5280M6	21B233105
+浪潮（Inspur）NF5280M6	24C131155
+浪潮（Inspur）NF5280M6	28C202079
+浪潮（Inspur）NF5280M6	24C134068
+浪潮（Inspur）NF5280M6	24C134067
+
+
+1、开发票
+
+2、要求如下：
+
+	浪潮（Inspur）NF5280M6 ，10  个3.5英寸大小的硬盘托架，硬盘为2.5英寸的SAS盘
+
+	浪潮（Inspur）NF8260M6 ， 2 个2.5英寸大小的硬盘托架，硬盘为2.5英寸的SAS盘
+
+	浪潮（Inspur）CS5280H2，3 个 3.5英寸大小的硬盘托架，硬盘为2.5英寸大小的SAS盘
+
+简介

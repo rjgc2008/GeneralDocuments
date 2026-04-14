@@ -1,0 +1,946 @@
+﻿170301.456: [17:03:01][root@172-16-208-2 ~]# 
+170301.547: [17:03:01][root@172-16-208-2 ~]# 
+170304.903: [17:03:04][root@172-16-208-2 ~]# nmap
+170304.928: [17:03:04]-bash: nmap: command not found
+170328.602: [17:03:28][root@172-16-208-2 ~]# aptitude install nmap
+170332.196: [17:03:32]The following NEW packages will be installed:
+170332.196: [17:03:32]  liblinear4{a} nmap nmap-common{a} 
+170332.196: [17:03:32]0 packages upgraded, 3 newly installed, 0 to remove and 410 not upgraded.
+170332.274: [17:03:32]Need to get 5,959 kB of archives. After unpacking 25.9 MB will be used.
+170333.315: [17:03:33]Do you want to continue? [Y/n/?] y
+170333.830: [17:03:33]Get: 1 http://deb.debian.org/debian bullseye/main amd64 liblinear4 amd64 2.3.0+dfsg-5 [43.6 kB]
+170333.989: [17:03:33]Get: 2 http://deb.debian.org/debian bullseye/main amd64 nmap-common all 7.91+dfsg1+really7.80+dfsg1-2 [4,017 kB]
+170334.985: [17:03:34]Get: 3 http://deb.debian.org/debian bullseye/main amd64 nmap amd64 7.91+dfsg1+really7.80+dfsg1-2 [1,899 kB]
+170335.630: [17:03:35]Fetched 5,959 kB in 2s (3,047 kB/s)
+170338.636: [17:03:38]Selecting previously unselected package liblinear4:amd64.
+170343.907: [17:03:43](Reading database ... 174906 files and directories currently installed.)
+170343.908: [17:03:43]Preparing to unpack .../liblinear4_2.3.0+dfsg-5_amd64.deb ...
+170343.929: [17:03:43]Unpacking liblinear4:amd64 (2.3.0+dfsg-5) ...
+170343.995: [17:03:43]Selecting previously unselected package nmap-common.
+170344.011: [17:03:44]Preparing to unpack .../nmap-common_7.91+dfsg1+really7.80+dfsg1-2_all.deb ...
+170344.021: [17:03:44]Unpacking nmap-common (7.91+dfsg1+really7.80+dfsg1-2) ...
+170344.885: [17:03:44]Selecting previously unselected package nmap.
+170344.885: [17:03:44]Preparing to unpack .../nmap_7.91+dfsg1+really7.80+dfsg1-2_amd64.deb ...
+170344.885: [17:03:44]Unpacking nmap (7.91+dfsg1+really7.80+dfsg1-2) ...
+170345.062: [17:03:45]Setting up liblinear4:amd64 (2.3.0+dfsg-5) ...
+170345.080: [17:03:45]Setting up nmap-common (7.91+dfsg1+really7.80+dfsg1-2) ...
+170345.107: [17:03:45]Setting up nmap (7.91+dfsg1+really7.80+dfsg1-2) ...
+170345.122: [17:03:45]Processing triggers for man-db (2.9.4-2) ...
+170346.416: [17:03:46]Processing triggers for libc-bin (2.31-13+deb11u5) ...
+170348.203: [17:03:48]                                         
+170417.994: [17:04:17][root@172-16-208-2 ~]# nmap -p- 192.168.8.246
+170418.031: [17:04:18]Starting Nmap 7.80 ( https://nmap.org ) at 2026-04-02 17:04 HKT
+170419.980: [17:04:19]
+170425.207: [17:04:25][root@172-16-208-2 ~]# nmap -p- 192.168.11.246
+170425.233: [17:04:25]Starting Nmap 7.80 ( https://nmap.org ) at 2026-04-02 17:04 HKT
+170428.400: [17:04:28]Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+170428.401: [17:04:28]Nmap done: 1 IP address (0 hosts up) scanned in 3.11 seconds
+170451.126: [17:04:51][root@172-16-208-2 ~]# nmap -p- 192.168.8.209
+170451.150: [17:04:51]Starting Nmap 7.80 ( https://nmap.org ) at 2026-04-02 17:04 HKT
+170636.222: [17:06:36]Nmap scan report for 192.168.8.209
+170636.224: [17:06:36]Host is up (0.0034s latency).
+170636.246: [17:06:36]Not shown: 65511 filtered ports
+170636.246: [17:06:36]PORT      STATE SERVICE
+170636.246: [17:06:36]22/tcp    open  ssh
+170636.246: [17:06:36]111/tcp   open  rpcbind
+170636.246: [17:06:36]4240/tcp  open  vrml-multi-use
+170636.246: [17:06:36]4244/tcp  open  vrml-multi-use
+170636.247: [17:06:36]6818/tcp  open  unknown
+170636.247: [17:06:36]9080/tcp  open  glrpc
+170636.247: [17:06:36]9100/tcp  open  jetdirect
+170636.247: [17:06:36]9964/tcp  open  unknown
+170636.247: [17:06:36]10250/tcp open  unknown
+170636.247: [17:06:36]10256/tcp open  unknown
+170636.247: [17:06:36]30000/tcp open  ndmps
+170636.247: [17:06:36]30091/tcp open  unknown
+170636.247: [17:06:36]30092/tcp open  unknown
+170636.247: [17:06:36]30093/tcp open  unknown
+170636.247: [17:06:36]30111/tcp open  unknown
+170636.247: [17:06:36]30198/tcp open  unknown
+170636.247: [17:06:36]31000/tcp open  unknown
+170636.247: [17:06:36]31109/tcp open  unknown
+170636.247: [17:06:36]31197/tcp open  unknown
+170636.247: [17:06:36]31786/tcp open  unknown
+170636.248: [17:06:36]31886/tcp open  unknown
+170636.248: [17:06:36]31986/tcp open  unknown
+170636.248: [17:06:36]32486/tcp open  unknown
+170636.248: [17:06:36]38165/tcp open  unknown
+170636.248: [17:06:36]
+170636.248: [17:06:36]Nmap done: 1 IP address (1 host up) scanned in 105.09 seconds
+170704.092: [17:07:04][root@172-16-208-2 ~]# curl www.google.com.hk
+170713.774: [17:07:13]^C
+171217.055: [17:12:17][root@172-16-208-2 ~]# nmap -O 192.168.8.209
+171217.497: [17:12:17]Starting Nmap 7.80 ( https://nmap.org ) at 2026-04-02 17:12 HKT
+171225.656: [17:12:25]Nmap scan report for 192.168.8.209
+171225.656: [17:12:25]Host is up (0.0041s latency).
+171225.656: [17:12:25]Not shown: 995 filtered ports
+171225.656: [17:12:25]PORT      STATE SERVICE
+171225.657: [17:12:25]22/tcp    open  ssh
+171225.657: [17:12:25]111/tcp   open  rpcbind
+171225.657: [17:12:25]9080/tcp  open  glrpc
+171225.657: [17:12:25]9100/tcp  open  jetdirect
+171225.657: [17:12:25]30000/tcp open  ndmps
+171225.657: [17:12:25]Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+171225.657: [17:12:25]Device type: general purpose|storage-misc
+171225.658: [17:12:25]Running (JUST GUESSING): Linux 2.6.X|3.X|4.X (93%), Synology DiskStation Manager 5.X (87%)
+171225.658: [17:12:25]OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:3.10 cpe:/o:linux:linux_kernel:4.4 cpe:/a:synology:diskstation_manager:5.2
+171225.676: [17:12:25]Aggressive OS guesses: Linux 2.6.32 (93%), Linux 2.6.32 or 3.10 (93%), Linux 4.4 (93%), Linux 2.6.32 - 2.6.35 (90%), Linux 2.6.32 - 2.6.39 (89%), Linux 2.6.32 - 3.0 (87%), Linux 3.10 - 4.11 (87%), Linux 3.11 - 4.1 (87%), Linux 3.2 - 3.8 (87%), Lin171225.677: ux 3.2 - 4.9 (87%)
+171225.677: [17:12:25]No exact OS matches for host (test conditions non-ideal).
+171225.677: [17:12:25]
+171225.677: [17:12:25]OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+171225.677: [17:12:25]Nmap done: 1 IP address (1 host up) scanned in 8.59 seconds
+171752.881: [17:17:52][root@172-16-208-2 ~]# man nmap
+171753.100: [17:17:53]NMAP(1)                                                                                                       Nmap Reference Guide                                                                                                       NMAP(1)
+171753.100: [17:17:53]
+171753.100: [17:17:53]NAME
+171753.101: [17:17:53]       nmap - Network exploration tool and security / port scanner
+171753.101: [17:17:53]
+171753.101: [17:17:53]SYNOPSIS
+171753.101: [17:17:53]       nmap [Scan Type...] [Options] {target specification}
+171753.101: [17:17:53]
+171753.101: [17:17:53]DESCRIPTION
+171753.102: [17:17:53]       Nmap (“Network Mapper”) is an open source tool for network exploration and security auditing. It was designed to rapidly scan large networks, although it works fine against single hosts. Nmap uses raw IP packets in novel ways to
+171753.103: [17:17:53]       determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use,
+171753.103: [17:17:53]       and dozens of other characteristics. While Nmap is commonly used for security audits, many systems and network administrators find it useful for routine tasks such as network inventory, managing service upgrade schedules, and
+171753.104: [17:17:53]       monitoring host or service uptime.
+171753.104: [17:17:53]
+171753.104: [17:17:53]       The output from Nmap is a list of scanned targets, with supplemental information on each depending on the options used. Key among that information is the “interesting ports table”.  That table lists the port number and protocol,
+171753.105: [17:17:53]       service name, and state. The state is either open, filtered, closed, or unfiltered.  Open means that an application on the target machine is listening for connections/packets on that port.  Filtered means that a firewall, filter, or
+171753.106: [17:17:53]       other network obstacle is blocking the port so that Nmap cannot tell whether it is open or closed.  Closed ports have no application listening on them, though they could open up at any time. Ports are classified as unfiltered when
+171753.106: [17:17:53]       they are responsive to Nmap's probes, but Nmap cannot determine whether they are open or closed. Nmap reports the state combinations open|filtered and closed|filtered when it cannot determine which of the two states describe a port.
+171753.107: [17:17:53]       The port table may also include software version details when version detection has been requested. When an IP protocol scan is requested (-sO), Nmap provides information on supported IP protocols rather than listening ports.
+171753.107: [17:17:53]
+171753.108: [17:17:53]       In addition to the interesting ports table, Nmap can provide further information on targets, including reverse DNS names, operating system guesses, device types, and MAC addresses.
+171753.108: [17:17:53]
+171753.109: [17:17:53]       A typical Nmap scan is shown in Example 1. The only Nmap arguments used in this example are -A, to enable OS and version detection, script scanning, and traceroute; -T4 for faster execution; and then the hostname.
+171753.109: [17:17:53]
+171753.109: [17:17:53]       Example 1. A representative Nmap scan
+171753.109: [17:17:53]
+171753.120: [17:17:53]           # nmap -A -T4 scanme.nmap.org
+171753.120: [17:17:53]
+171753.120: [17:17:53]           Nmap scan report for scanme.nmap.org (74.207.244.221)
+171753.120: [17:17:53]           Host is up (0.029s latency).
+171753.120: [17:17:53]           rDNS record for 74.207.244.221: li86-221.members.linode.com
+171753.120: [17:17:53]           Not shown: 995 closed ports
+171753.120: [17:17:53]           PORT     STATE    SERVICE     VERSION
+171753.120: [17:17:53]           22/tcp   open     ssh         OpenSSH 5.3p1 Debian 3ubuntu7 (protocol 2.0)
+171753.120: [17:17:53]           | ssh-hostkey: 1024 8d:60:f1:7c:ca:b7:3d:0a:d6:67:54:9d:69:d9:b9:dd (DSA)
+171753.121: [17:17:53]           |_2048 79:f8:09:ac:d4:e2:32:42:10:49:d3:bd:20:82:85:ec (RSA)
+171753.121: [17:17:53]           80/tcp   open     http        Apache httpd 2.2.14 ((Ubuntu))
+171753.121: [17:17:53]           |_http-title: Go ahead and ScanMe!
+171753.121: [17:17:53]           646/tcp  filtered ldp
+171753.121: [17:17:53]           1720/tcp filtered H.323/Q.931
+171753.121: [17:17:53]           9929/tcp open     nping-echo  Nping echo
+171753.121: [17:17:53]           Device type: general purpose
+171753.121: [17:17:53]           Running: Linux 2.6.X
+171753.121: [17:17:53]           OS CPE: cpe:/o:linux:linux_kernel:2.6.39
+171753.121: [17:17:53]           OS details: Linux 2.6.39
+171753.121: [17:17:53]           Network Distance: 11 hops
+171753.122: [17:17:53]           Service Info: OS: Linux; CPE: cpe:/o:linux:kernel
+171753.122: [17:17:53]
+171753.122: [17:17:53]           TRACEROUTE (using port 53/tcp)
+171753.122: [17:17:53]           HOP RTT      ADDRESS
+171753.122: [17:17:53]           [Cut first 10 hops for brevity]
+171753.122: [17:17:53]           11  17.65 ms li86-221.members.linode.com (74.207.244.221)
+171753.122: [17:17:53]
+171753.122: [17:17:53]           Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
+171753.122: [17:17:53]
+171753.122: [17:17:53]       The newest version of Nmap can be obtained from https://nmap.org. The newest version of this man page is available at https://nmap.org/book/man.html.  It is also included as a chapter of Nmap Network Scanning: The Official Nmap
+171753.123: [17:17:53]       Project Guide to Network Discovery and Security Scanning (see https://nmap.org/book/).
+171753.123: [17:17:53]
+171753.123: [17:17:53]OPTIONS SUMMARY
+171753.123: [17:17:53]       This options summary is printed when Nmap is run with no arguments, and the latest version is always available at https://svn.nmap.org/nmap/docs/nmap.usage.txt. It helps people remember the most common options, but is no substitute
+171753.123: [17:17:53]       for the in-depth documentation in the rest of this manual. Some obscure options aren't even included here.
+171753.123: [17:17:53]
+171753.123: [17:17:53]           Nmap 7.70SVN ( https://nmap.org )
+171753.123: [17:17:53]           Usage: nmap [Scan Type(s)] [Options] {target specification}
+171753.123: [17:17:53]           TARGET SPECIFICATION:
+171753.123: [17:17:53]             Can pass hostnames, IP addresses, networks, etc.
+171753.123: [17:17:53]             Ex: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
+171753.124: [17:17:53]             -iL <inputfilename>: Input from list of hosts/networks
+172311.096: [17:23:11]             -iR <num hosts>: Choose random targets
+172311.139: [17:23:11]             --exclude <host1[,host2][,host3],...>: Exclude hosts/networks
+172311.151: [17:23:11]             --excludefile <exclude_file>: Exclude list from file
+172311.180: [17:23:11]           HOST DISCOVERY:
+172311.214: [17:23:11]             -sL: List Scan - simply list targets to scan
+172311.260: [17:23:11]             -sn: Ping Scan - disable port scan
+172311.314: [17:23:11]             -Pn: Treat all hosts as online -- skip host discovery
+172311.336: [17:23:11]             -PS/PA/PU/PY[portlist]: TCP SYN/ACK, UDP or SCTP discovery to given ports
+172311.363: [17:23:11]             -PE/PP/PM: ICMP echo, timestamp, and netmask request discovery probes
+172311.390: [17:23:11]             -PO[protocol list]: IP Protocol Ping
+172311.435: [17:23:11]             -n/-R: Never do DNS resolution/Always resolve [default: sometimes]
+172311.462: [17:23:11]             --dns-servers <serv1[,serv2],...>: Specify custom DNS servers
+172311.532: [17:23:11]             --system-dns: Use OS's DNS resolver
+172311.619: [17:23:11]             --traceroute: Trace hop path to each host
+172311.643: [17:23:11]           SCAN TECHNIQUES:
+172311.661: [17:23:11]             -sS/sT/sA/sW/sM: TCP SYN/Connect()/ACK/Window/Maimon scans
+172311.686: [17:23:11]             -sU: UDP Scan
+172311.734: [17:23:11]             -sN/sF/sX: TCP Null, FIN, and Xmas scans
+172311.788: [17:23:11]             --scanflags <flags>: Customize TCP scan flags
+172311.966: [17:23:11]             -sI <zombie host[:probeport]>: Idle scan
+172312.176: [17:23:12]             -sY/sZ: SCTP INIT/COOKIE-ECHO scans
+172312.205: [17:23:12]             -sO: IP protocol scan
+172312.229: [17:23:12]             -b <FTP relay host>: FTP bounce scan
+172312.255: [17:23:12]           PORT SPECIFICATION AND SCAN ORDER:
+172312.312: [17:23:12]             -p <port ranges>: Only scan specified ports
+172312.346: [17:23:12]               Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
+172312.434: [17:23:12]             --exclude-ports <port ranges>: Exclude the specified ports from scanning
+172312.492: [17:23:12]             -F: Fast mode - Scan fewer ports than the default scan
+172312.557: [17:23:12]             -r: Scan ports consecutively - don't randomize
+172312.617: [17:23:12]             --top-ports <number>: Scan <number> most common ports
+172314.072: [17:23:14]             --port-ratio <ratio>: Scan ports more common than <ratio>
+172314.454: [17:23:14]           SERVICE/VERSION DETECTION:
+172314.722: [17:23:14]             -sV: Probe open ports to determine service/version info
+172316.711: [17:23:16]             --version-intensity <level>: Set from 0 (light) to 9 (try all probes)
+172316.939: [17:23:16]             --version-light: Limit to most likely probes (intensity 2)
+172317.582: [17:23:17]             --version-all: Try every single probe (intensity 9)
+172317.779: [17:23:17]             --version-trace: Show detailed version scan activity (for debugging)
+172318.034: [17:23:18]           SCRIPT SCAN:
+172318.230: [17:23:18]             -sC: equivalent to --script=default
+172318.291: [17:23:18]             --script=<Lua scripts>: <Lua scripts> is a comma separated list of
+172318.340: [17:23:18]                      directories, script-files or script-categories
+172318.390: [17:23:18]             --script-args=<n1=v1,[n2=v2,...]>: provide arguments to scripts
+172318.421: [17:23:18]             --script-args-file=filename: provide NSE script args in a file
+172318.450: [17:23:18]             --script-trace: Show all data sent and received
+172318.491: [17:23:18]             --script-updatedb: Update the script database.
+172318.524: [17:23:18]             --script-help=<Lua scripts>: Show help about scripts.
+172318.584: [17:23:18]                      <Lua scripts> is a comma-separated list of script-files or
+172318.642: [17:23:18]                      script-categories.
+172319.069: [17:23:19]           OS DETECTION:
+172319.558: [17:23:19]             -O: Enable OS detection
+172319.843: [17:23:19]             --osscan-limit: Limit OS detection to promising targets
+172320.056: [17:23:20]             --osscan-guess: Guess OS more aggressively
+172320.269: [17:23:20]           TIMING AND PERFORMANCE:
+172320.438: [17:23:20]             Options which take <time> are in seconds, or append 'ms' (milliseconds),
+172321.365: [17:23:21]             's' (seconds), 'm' (minutes), or 'h' (hours) to the value (e.g. 30m).
+172321.576: [17:23:21]             -T<0-5>: Set timing template (higher is faster)
+172321.805: [17:23:21]             --min-hostgroup/max-hostgroup <size>: Parallel host scan group sizes
+172321.901: [17:23:21]             --min-parallelism/max-parallelism <numprobes>: Probe parallelization
+172322.156: [17:23:22]             --min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time>: Specifies
+172324.336: [17:23:24]                 probe round trip time.
+172325.650: [17:23:25]             --max-retries <tries>: Caps number of port scan probe retransmissions.
+172326.248: [17:23:26]             --host-timeout <time>: Give up on target after this long
+172326.448: [17:23:26]             --scan-delay/--max-scan-delay <time>: Adjust delay between probes
+172327.050: [17:23:27]             --min-rate <number>: Send packets no slower than <number> per second
+172327.301: [17:23:27]             --max-rate <number>: Send packets no faster than <number> per second
+172327.513: [17:23:27]           FIREWALL/IDS EVASION AND SPOOFING:
+172329.711: [17:23:29]             -f; --mtu <val>: fragment packets (optionally w/given MTU)
+172329.904: [17:23:29]             -D <decoy1,decoy2[,ME],...>: Cloak a scan with decoys
+172329.949: [17:23:29]             -S <IP_Address>: Spoof source address
+172330.008: [17:23:30]             -e <iface>: Use specified interface
+172330.048: [17:23:30]             -g/--source-port <portnum>: Use given port number
+172330.068: [17:23:30]             --proxies <url1,[url2],...>: Relay connections through HTTP/SOCKS4 proxies
+172330.095: [17:23:30]             --data <hex string>: Append a custom payload to sent packets
+172330.115: [17:23:30]             --data-string <string>: Append a custom ASCII string to sent packets
+172330.135: [17:23:30]             --data-length <num>: Append random data to sent packets
+172330.152: [17:23:30]             --ip-options <options>: Send packets with specified ip options
+172330.178: [17:23:30]             --ttl <val>: Set IP time-to-live field
+172330.204: [17:23:30]             --spoof-mac <mac address/prefix/vendor name>: Spoof your MAC address
+172330.231: [17:23:30]             --badsum: Send packets with a bogus TCP/UDP/SCTP checksum
+172330.276: [17:23:30]           OUTPUT:
+172330.308: [17:23:30]             -oN/-oX/-oS/-oG <file>: Output scan in normal, XML, s|<rIpt kIddi3,
+172330.343: [17:23:30]                and Grepable format, respectively, to the given filename.
+172330.392: [17:23:30]             -oA <basename>: Output in the three major formats at once
+172330.464: [17:23:30]             -v: Increase verbosity level (use -vv or more for greater effect)
+172330.582: [17:23:30]             -d: Increase debugging level (use -dd or more for greater effect)
+172330.769: [17:23:30]             --reason: Display the reason a port is in a particular state
+172331.085: [17:23:31]             --open: Only show open (or possibly open) ports
+172331.122: [17:23:31]             --packet-trace: Show all packets sent and received
+172331.151: [17:23:31]             --iflist: Print host interfaces and routes (for debugging)
+172331.161: [17:23:31]             --append-output: Append to rather than clobber specified output files
+172331.182: [17:23:31]             --resume <filename>: Resume an aborted scan
+172331.183: [17:23:31]             --stylesheet <path/URL>: XSL stylesheet to transform XML output to HTML
+172331.205: [17:23:31]             --webxml: Reference stylesheet from Nmap.Org for more portable XML
+172331.211: [17:23:31]             --no-stylesheet: Prevent associating of XSL stylesheet w/XML output
+172331.229: [17:23:31]           MISC:
+172331.238: [17:23:31]             -6: Enable IPv6 scanning
+172331.248: [17:23:31]             -A: Enable OS detection, version detection, script scanning, and traceroute
+172331.263: [17:23:31]             --datadir <dirname>: Specify custom Nmap data file location
+172331.277: [17:23:31]             --send-eth/--send-ip: Send using raw ethernet frames or IP packets
+172331.291: [17:23:31]             --privileged: Assume that the user is fully privileged
+172331.312: [17:23:31]             --unprivileged: Assume the user lacks raw socket privileges
+172331.333: [17:23:31]             -V: Print version number
+172331.355: [17:23:31]             -h: Print this help summary page.
+172331.383: [17:23:31]           EXAMPLES:
+172331.422: [17:23:31]             nmap -v -A scanme.nmap.org
+172331.449: [17:23:31]             nmap -v -sn 192.168.0.0/16 10.0.0.0/8
+172331.475: [17:23:31]             nmap -v -iR 10000 -Pn -p 80
+172331.507: [17:23:31]           SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
+172331.562: [17:23:31]
+172331.919: [17:23:31]TARGET SPECIFICATION
+172331.949: [17:23:31]       Everything on the Nmap command-line that isn't an option (or option argument) is treated as a target host specification. The simplest case is to specify a target IP address or hostname for scanning.
+172331.959: [17:23:31]
+172331.988: [17:23:31]       When a hostname is given as a target, it is resolved via the Domain Name System (DNS) to determine the IP address to scan. If the name resolves to more than one IP address, only the first one will be scanned. To make Nmap scan all
+172331.989: [17:23:31]       the resolved addresses instead of only the first one, use the --resolve-all option.
+172331.997: [17:23:31]
+172332.011: [17:23:32]       Sometimes you wish to scan a whole network of adjacent hosts. For this, Nmap supports CIDR-style addressing. You can append /numbits to an IP address or hostname and Nmap will scan every IP address for which the first numbits are the
+172332.029: [17:23:32]       same as for the reference IP or hostname given. For example, 192.168.10.0/24 would scan the 256 hosts between 192.168.10.0 (binary: 11000000 10101000 00001010 00000000) and 192.168.10.255 (binary: 11000000 10101000 00001010
+172332.030: [17:23:32]       11111111), inclusive.  192.168.10.40/24 would scan exactly the same targets. Given that the host scanme.nmap.org is at the IP address 64.13.134.52, the specification scanme.nmap.org/16 would scan the 65,536 IP addresses between
+172332.041: [17:23:32]       64.13.0.0 and 64.13.255.255. The smallest allowed value is /0, which targets the whole Internet. The largest value for IPv4 is /32, which scans just the named host or IP address because all address bits are fixed. The largest value
+172332.048: [17:23:32]       for IPv6 is /128, which does the same thing.
+172332.070: [17:23:32]
+172332.070: [17:23:32]       CIDR notation is short but not always flexible enough. For example, you might want to scan 192.168.0.0/16 but skip any IPs ending with .0 or .255 because they may be used as subnet network and broadcast addresses. Nmap supports this
+172332.071: [17:23:32]       through octet range addressing. Rather than specify a normal IP address, you can specify a comma-separated list of numbers or ranges for each octet. For example, 192.168.0-255.1-254 will skip all addresses in the range that end in .0
+172332.078: [17:23:32]       or .255, and 192.168.3-5,7.1 will scan the four addresses 192.168.3.1, 192.168.4.1, 192.168.5.1, and 192.168.7.1. Either side of a range may be omitted; the default values are 0 on the left and 255 on the right. Using - by itself is
+172332.097: [17:23:32]       the same as 0-255, but remember to use 0- in the first octet so the target specification doesn't look like a command-line option. Ranges need not be limited to the final octets: the specifier 0-255.0-255.13.37 will perform an
+172332.097: [17:23:32]       Internet-wide scan for all IP addresses ending in 13.37. This sort of broad sampling can be useful for Internet surveys and research.
+172332.103: [17:23:32]
+172332.104: [17:23:32]       IPv6 addresses can be specified by their fully qualified IPv6 address or hostname or with CIDR notation for subnets. Octet ranges aren't yet supported for IPv6.
+172332.122: [17:23:32]
+172332.123: [17:23:32]       IPv6 addresses with non-global scope need to have a zone ID suffix. On Unix systems, this is a percent sign followed by an interface name; a complete address might be fe80::a8bb:ccff:fedd:eeff%eth0. On Windows, use an interface index
+172332.130: [17:23:32]       number in place of an interface name: fe80::a8bb:ccff:fedd:eeff%1. You can see a list of interface indexes by running the command netsh.exe interface ipv6 show interface.
+172332.138: [17:23:32]
+172332.149: [17:23:32]       Nmap accepts multiple host specifications on the command line, and they don't need to be the same type. The command nmap scanme.nmap.org 192.168.0.0/8 10.0.0,1,3-7.- does what you would expect.
+172332.149: [17:23:32]
+172332.155: [17:23:32]       While targets are usually specified on the command lines, the following options are also available to control target selection:
+172332.155: [17:23:32]
+172332.165: [17:23:32]       -iL inputfilename (Input from list)
+172332.171: [17:23:32]           Reads target specifications from inputfilename. Passing a huge list of hosts is often awkward on the command line, yet it is a common desire. For example, your DHCP server might export a list of 10,000 current leases that you
+172332.184: [17:23:32]           wish to scan. Or maybe you want to scan all IP addresses except for those to locate hosts using unauthorized static IP addresses. Simply generate the list of hosts to scan and pass that filename to Nmap as an argument to the -iL
+172332.195: [17:23:32]           option. Entries can be in any of the formats accepted by Nmap on the command line (IP address, hostname, CIDR, IPv6, or octet ranges). Each entry must be separated by one or more spaces, tabs, or newlines. You can specify a
+172332.209: [17:23:32]           hyphen (-) as the filename if you want Nmap to read hosts from standard input rather than an actual file.
+172332.221: [17:23:32]
+172332.236: [17:23:32]           The input file may contain comments that start with # and extend to the end of the line.
+172332.251: [17:23:32]
+172332.262: [17:23:32]       -iR num hosts (Choose random targets)
+172332.278: [17:23:32]           For Internet-wide surveys and other research, you may want to choose targets at random. The num hosts argument tells Nmap how many IPs to generate. Undesirable IPs such as those in certain private, multicast, or unallocated
+172332.296: [17:23:32]           address ranges are automatically skipped. The argument 0 can be specified for a never-ending scan. Keep in mind that some network administrators bristle at unauthorized scans of their networks and may complain. Use this option at
+172332.311: [17:23:32]           your own risk! If you find yourself really bored one rainy afternoon, try the command nmap -Pn -sS -p 80 -iR 0 --open to locate random web servers for browsing.
+172332.327: [17:23:32]
+172332.349: [17:23:32]       --exclude host1[,host2[,...]] (Exclude hosts/networks)
+172332.372: [17:23:32]           Specifies a comma-separated list of targets to be excluded from the scan even if they are part of the overall network range you specify. The list you pass in uses normal Nmap syntax, so it can include hostnames, CIDR netblocks,
+172332.407: [17:23:32]           octet ranges, etc. This can be useful when the network you wish to scan includes untouchable mission-critical servers, systems that are known to react adversely to port scans, or subnets administered by other people.
+172332.429: [17:23:32]
+172332.834: [17:23:32]       --excludefile exclude_file (Exclude list from file)
+172332.861: [17:23:32]           This offers the same functionality as the --exclude option, except that the excluded targets are provided in a newline-, space-, or tab-delimited exclude_file rather than on the command line.
+172332.881: [17:23:32]
+172332.897: [17:23:32]           The exclude file may contain comments that start with # and extend to the end of the line.
+172332.916: [17:23:32]
+172332.929: [17:23:32]HOST DISCOVERY
+172332.938: [17:23:32]       One of the very first steps in any network reconnaissance mission is to reduce a (sometimes huge) set of IP ranges into a list of active or interesting hosts. Scanning every port of every single IP address is slow and usually
+172332.950: [17:23:32]       unnecessary. Of course what makes a host interesting depends greatly on the scan purposes. Network administrators may only be interested in hosts running a certain service, while security auditors may care about every single device
+172332.958: [17:23:32]       with an IP address. An administrator may be comfortable using just an ICMP ping to locate hosts on his internal network, while an external penetration tester may use a diverse set of dozens of probes in an attempt to evade firewall
+172332.974: [17:23:32]       restrictions.
+172332.974: [17:23:32]
+172332.975: [17:23:32]       Because host discovery needs are so diverse, Nmap offers a wide variety of options for customizing the techniques used. Host discovery is sometimes called ping scan, but it goes well beyond the simple ICMP echo request packets
+172332.983: [17:23:32]       associated with the ubiquitous ping tool. Users can skip the ping step entirely with a list scan (-sL) or by disabling ping (-Pn), or engage the network with arbitrary combinations of multi-port TCP SYN/ACK, UDP, SCTP INIT and ICMP
+172332.998: [17:23:32]       probes. The goal of these probes is to solicit responses which demonstrate that an IP address is actually active (is being used by a host or network device). On many networks, only a small percentage of IP addresses are active at any
+172332.999: [17:23:32]       given time. This is particularly common with private address space such as 10.0.0.0/8. That network has 16 million IPs, but I have seen it used by companies with less than a thousand machines. Host discovery can find those machines
+172333.006: [17:23:33]       in a sparsely allocated sea of IP addresses.
+172333.027: [17:23:33]
+172333.028: [17:23:33]       If no host discovery options are given, Nmap sends an ICMP echo request, a TCP SYN packet to port 443, a TCP ACK packet to port 80, and an ICMP timestamp request. (For IPv6, the ICMP timestamp request is omitted because it is not
+172333.028: [17:23:33]       part of ICMPv6.) These defaults are equivalent to the -PE -PS443 -PA80 -PP options. The exceptions to this are the ARP (for IPv4) and Neighbor Discovery (for IPv6) scans which are used for any targets on a local ethernet network. For
+172333.036: [17:23:33]       unprivileged Unix shell users, the default probes are a SYN packet to ports 80 and 443 using the connect system call.  This host discovery is often sufficient when scanning local networks, but a more comprehensive set of discovery
+172333.057: [17:23:33]       probes is recommended for security auditing.
+172333.065: [17:23:33]
+172333.110: [17:23:33]       The -P* options (which select ping types) can be combined. You can increase your odds of penetrating strict firewalls by sending many probe types using different TCP ports/flags and ICMP codes. Also note that ARP/Neighbor Discovery
+172333.110: [17:23:33]       (-PR) is done by default against targets on a local ethernet network even if you specify other -P* options, because it is almost always faster and more effective.
+172333.111: [17:23:33]
+172333.123: [17:23:33]       By default, Nmap does host discovery and then performs a port scan against each host it determines is online. This is true even if you specify non-default host discovery types such as UDP probes (-PU). Read about the -sn option to
+172333.144: [17:23:33]       learn how to perform only host discovery, or use -Pn to skip host discovery and port scan all target hosts. The following options control host discovery:
+172333.158: [17:23:33]
+172333.183: [17:23:33]       -sL (List Scan)
+172333.207: [17:23:33]           The list scan is a degenerate form of host discovery that simply lists each host of the network(s) specified, without sending any packets to the target hosts. By default, Nmap still does reverse-DNS resolution on the hosts to
+172333.222: [17:23:33]           learn their names. It is often surprising how much useful information simple hostnames give out. For example, fw.chi is the name of one company's Chicago firewall.
+172333.254: [17:23:33]
+172333.280: [17:23:33]           Nmap also reports the total number of IP addresses at the end. The list scan is a good sanity check to ensure that you have proper IP addresses for your targets. If the hosts sport domain names you do not recognize, it is worth
+172333.426: [17:23:33]           investigating further to prevent scanning the wrong company's network.
+172333.453: [17:23:33]
+172333.454: [17:23:33]           Since the idea is to simply print a list of target hosts, options for higher level functionality such as port scanning, OS detection, or ping scanning cannot be combined with this. If you wish to disable ping scanning while still
+172333.483: [17:23:33]           performing such higher level functionality, read up on the -Pn (skip ping) option.
+172333.496: [17:23:33]
+172333.511: [17:23:33]       -sn (No port scan)
+172333.520: [17:23:33]           This option tells Nmap not to do a port scan after host discovery, and only print out the available hosts that responded to the host discovery probes. This is often known as a “ping scan”, but you can also request that traceroute
+172333.521: [17:23:33]           and NSE host scripts be run. This is by default one step more intrusive than the list scan, and can often be used for the same purposes. It allows light reconnaissance of a target network without attracting much attention.
+172333.521: [17:23:33]           Knowing how many hosts are up is more valuable to attackers than the list provided by list scan of every single IP and host name.
+172333.533: [17:23:33]
+172333.542: [17:23:33]           Systems administrators often find this option valuable as well. It can easily be used to count available machines on a network or monitor server availability. This is often called a ping sweep, and is more reliable than pinging
+172333.542: [17:23:33]           the broadcast address because many hosts do not reply to broadcast queries.
+172333.554: [17:23:33]
+172333.555: [17:23:33]           The default host discovery done with -sn consists of an ICMP echo request, TCP SYN to port 443, TCP ACK to port 80, and an ICMP timestamp request by default. When executed by an unprivileged user, only SYN packets are sent (using
+172333.563: [17:23:33]           a connect call) to ports 80 and 443 on the target. When a privileged user tries to scan targets on a local ethernet network, ARP requests are used unless --send-ip was specified. The -sn option can be combined with any of the
+172333.574: [17:23:33]           discovery probe types (the -P* options, excluding -Pn) for greater flexibility. If any of those probe type and port number options are used, the default probes are overridden. When strict firewalls are in place between the source
+172333.581: [17:23:33]           host running Nmap and the target network, using those advanced techniques is recommended. Otherwise hosts could be missed when the firewall drops probes or their responses.
+172333.581: [17:23:33]
+172333.592: [17:23:33]           In previous releases of Nmap, -sn was known as -sP.
+172333.599: [17:23:33]
+172333.609: [17:23:33]       -Pn (No ping)
+172333.625: [17:23:33]           This option skips the Nmap discovery stage altogether. Normally, Nmap uses this stage to determine active machines for heavier scanning. By default, Nmap only performs heavy probing such as port scans, version detection, or OS
+172333.633: [17:23:33]           detection against hosts that are found to be up. Disabling host discovery with -Pn causes Nmap to attempt the requested scanning functions against every target IP address specified. So if a class B target address space (/16) is
+172333.633: [17:23:33]           specified on the command line, all 65,536 IP addresses are scanned. Proper host discovery is skipped as with the list scan, but instead of stopping and printing the target list, Nmap continues to perform requested functions as if
+172333.648: [17:23:33]           each target IP is active. To skip ping scan and port scan, while still allowing NSE to run, use the two options -Pn -sn together.
+172333.655: [17:23:33]
+172333.656: [17:23:33]           For machines on a local ethernet network, ARP scanning will still be performed (unless --disable-arp-ping or --send-ip is specified) because Nmap needs MAC addresses to further scan target hosts. In previous versions of Nmap, -Pn
+172333.670: [17:23:33]           was -P0 and -PN.
+172333.670: [17:23:33]
+172333.671: [17:23:33]       -PS port list (TCP SYN Ping)
+172333.685: [17:23:33]           This option sends an empty TCP packet with the SYN flag set. The default destination port is 80 (configurable at compile time by changing DEFAULT_TCP_PROBE_PORT_SPEC in nmap.h).  Alternate ports can be specified as a parameter.
+172333.692: [17:23:33]           The syntax is the same as for the -p except that port type specifiers like T: are not allowed. Examples are -PS22 and -PS22-25,80,113,1050,35000. Note that there can be no space between -PS and the port list. If multiple probes
+172333.699: [17:23:33]           are specified they will be sent in parallel.
+172333.706: [17:23:33]
+172333.727: [17:23:33]           The SYN flag suggests to the remote system that you are attempting to establish a connection. Normally the destination port will be closed, and a RST (reset) packet sent back. If the port happens to be open, the target will take
+172333.734: [17:23:33]           the second step of a TCP three-way-handshake by responding with a SYN/ACK TCP packet. The machine running Nmap then tears down the nascent connection by responding with a RST rather than sending an ACK packet which would complete
+172333.747: [17:23:33]           the three-way-handshake and establish a full connection. The RST packet is sent by the kernel of the machine running Nmap in response to the unexpected SYN/ACK, not by Nmap itself.
+172333.754: [17:23:33]
+172333.778: [17:23:33]           Nmap does not care whether the port is open or closed. Either the RST or SYN/ACK response discussed previously tell Nmap that the host is available and responsive.
+172333.786: [17:23:33]
+172333.813: [17:23:33]           On Unix boxes, only the privileged user root is generally able to send and receive raw TCP packets.  For unprivileged users, a workaround is automatically employed whereby the connect system call is initiated against each target
+172333.821: [17:23:33]           port. This has the effect of sending a SYN packet to the target host, in an attempt to establish a connection. If connect returns with a quick success or an ECONNREFUSED failure, the underlying TCP stack must have received a
+172333.838: [17:23:33]           SYN/ACK or RST and the host is marked available. If the connection attempt is left hanging until a timeout is reached, the host is marked as down.
+172333.855: [17:23:33]
+172333.872: [17:23:33]       -PA port list (TCP ACK Ping)
+172333.975: [17:23:33]           The TCP ACK ping is quite similar to the just-discussed SYN ping. The difference, as you could likely guess, is that the TCP ACK flag is set instead of the SYN flag. Such an ACK packet purports to be acknowledging data over an
+172333.988: [17:23:33]           established TCP connection, but no such connection exists. So remote hosts should always respond with a RST packet, disclosing their existence in the process.
+172334.007: [17:23:34]
+172334.008: [17:23:34]           The -PA option uses the same default port as the SYN probe (80) and can also take a list of destination ports in the same format. If an unprivileged user tries this, the connect workaround discussed previously is used. This
+172334.024: [17:23:34]           workaround is imperfect because connect is actually sending a SYN packet rather than an ACK.
+172334.035: [17:23:34]
+172334.053: [17:23:34]           The reason for offering both SYN and ACK ping probes is to maximize the chances of bypassing firewalls. Many administrators configure routers and other simple firewalls to block incoming SYN packets except for those destined for
+172334.067: [17:23:34]           public services like the company web site or mail server. This prevents other incoming connections to the organization, while allowing users to make unobstructed outgoing connections to the Internet. This non-stateful approach
+172334.076: [17:23:34]           takes up few resources on the firewall/router and is widely supported by hardware and software filters. The Linux Netfilter/iptables firewall software offers the --syn convenience option to implement this stateless approach. When
+172334.076: [17:23:34]           stateless firewall rules such as this are in place, SYN ping probes (-PS) are likely to be blocked when sent to closed target ports. In such cases, the ACK probe shines as it cuts right through these rules.
+172334.090: [17:23:34]
+172334.091: [17:23:34]           Another common type of firewall uses stateful rules that drop unexpected packets. This feature was initially found mostly on high-end firewalls, though it has become much more common over the years. The Linux Netfilter/iptables
+172334.091: [17:23:34]           system supports this through the --state option, which categorizes packets based on connection state. A SYN probe is more likely to work against such a system, as unexpected ACK packets are generally recognized as bogus and
+172334.107: [17:23:34]           dropped. A solution to this quandary is to send both SYN and ACK probes by specifying -PS and -PA.
+172334.107: [17:23:34]
+172334.122: [17:23:34]       -PU port list (UDP Ping)
+172334.132: [17:23:34]           Another host discovery option is the UDP ping, which sends a UDP packet to the given ports. For most ports, the packet will be empty, though some use a protocol-specific payload that is more likely to elicit a response.  The
+172334.132: [17:23:34]           payload database is described at https://nmap.org/book/nmap-payloads.html.
+172334.140: [17:23:34]
+172334.165: [17:23:34]           . Packet content can also be affected with the --data, --data-string, and --data-length options.
+172334.166: [17:23:34]
+172334.174: [17:23:34]           The port list takes the same format as with the previously discussed -PS and -PA options. If no ports are specified, the default is 40125.  This default can be configured at compile-time by changing DEFAULT_UDP_PROBE_PORT_SPEC in
+172334.175: [17:23:34]           nmap.h.  A highly uncommon port is used by default because sending to open ports is often undesirable for this particular scan type.
+172334.196: [17:23:34]
+172334.197: [17:23:34]           Upon hitting a closed port on the target machine, the UDP probe should elicit an ICMP port unreachable packet in return. This signifies to Nmap that the machine is up and available. Many other types of ICMP errors, such as
+172334.197: [17:23:34]           host/network unreachables or TTL exceeded are indicative of a down or unreachable host. A lack of response is also interpreted this way. If an open port is reached, most services simply ignore the empty packet and fail to return
+172334.205: [17:23:34]           any response. This is why the default probe port is 40125, which is highly unlikely to be in use. A few services, such as the Character Generator (chargen) protocol, will respond to an empty UDP packet, and thus disclose to Nmap
+172334.205: [17:23:34]           that the machine is available.
+172334.227: [17:23:34]
+172334.228: [17:23:34]           The primary advantage of this scan type is that it bypasses firewalls and filters that only screen TCP. For example, I once owned a Linksys BEFW11S4 wireless broadband router. The external interface of this device filtered all
+172334.235: [17:23:34]           TCP ports by default, but UDP probes would still elicit port unreachable messages and thus give away the device.
+172334.252: [17:23:34]
+172334.264: [17:23:34]       -PY port list (SCTP INIT Ping)
+172334.277: [17:23:34]           This option sends an SCTP packet containing a minimal INIT chunk. The default destination port is 80 (configurable at compile time by changing DEFAULT_SCTP_PROBE_PORT_SPEC in nmap.h). Alternate ports can be specified as a
+172334.290: [17:23:34]           parameter. The syntax is the same as for the -p except that port type specifiers like S: are not allowed. Examples are -PY22 and -PY22,80,179,5060. Note that there can be no space between -PY and the port list. If multiple probes
+172334.303: [17:23:34]           are specified they will be sent in parallel.
+172334.463: [17:23:34]
+172334.494: [17:23:34]           The INIT chunk suggests to the remote system that you are attempting to establish an association. Normally the destination port will be closed, and an ABORT chunk will be sent back. If the port happens to be open, the target will
+172334.495: [17:23:34]           take the second step of an SCTP four-way-handshake by responding with an INIT-ACK chunk. If the machine running Nmap has a functional SCTP stack, then it tears down the nascent association by responding with an ABORT chunk rather
+172334.509: [17:23:34]           than sending a COOKIE-ECHO chunk which would be the next step in the four-way-handshake. The ABORT packet is sent by the kernel of the machine running Nmap in response to the unexpected INIT-ACK, not by Nmap itself.
+172334.509: [17:23:34]
+172334.524: [17:23:34]           Nmap does not care whether the port is open or closed. Either the ABORT or INIT-ACK response discussed previously tell Nmap that the host is available and responsive.
+172334.534: [17:23:34]
+172334.534: [17:23:34]           On Unix boxes, only the privileged user root is generally able to send and receive raw SCTP packets.  Using SCTP INIT Pings is currently not possible for unprivileged users.
+172334.553: [17:23:34]
+172334.553: [17:23:34]       -PE; -PP; -PM (ICMP Ping Types)
+172334.554: [17:23:34]           In addition to the unusual TCP, UDP and SCTP host discovery types discussed previously, Nmap can send the standard packets sent by the ubiquitous ping program. Nmap sends an ICMP type 8 (echo request) packet to the target IP
+172334.564: [17:23:34]           addresses, expecting a type 0 (echo reply) in return from available hosts.  Unfortunately for network explorers, many hosts and firewalls now block these packets, rather than responding as required by RFC 1122[2].  For this
+172334.575: [17:23:34]           reason, ICMP-only scans are rarely reliable enough against unknown targets over the Internet. But for system administrators monitoring an internal network, they can be a practical and efficient approach. Use the -PE option to
+172334.575: [17:23:34]           enable this echo request behavior.
+172334.582: [17:23:34]
+172334.600: [17:23:34]           While echo request is the standard ICMP ping query, Nmap does not stop there. The ICMP standards (RFC 792[3] and RFC 950[4] ) also specify timestamp request, information request, and address mask request packets as codes 13, 15,
+172334.601: [17:23:34]           and 17, respectively. While the ostensible purpose for these queries is to learn information such as address masks and current times, they can easily be used for host discovery. A system that replies is up and available. Nmap
+172334.610: [17:23:34]           does not currently implement information request packets, as they are not widely supported. RFC 1122 insists that “a host SHOULD NOT implement these messages”. Timestamp and address mask queries can be sent with the -PP and -PM
+172334.626: [17:23:34]           options, respectively. A timestamp reply (ICMP code 14) or address mask reply (code 18) discloses that the host is available. These two queries can be valuable when administrators specifically block echo request packets while
+172334.626: [17:23:34]           forgetting that other ICMP queries can be used for the same purpose.
+172334.635: [17:23:34]
+172334.636: [17:23:34]       -PO protocol list (IP Protocol Ping)
+172334.657: [17:23:34]           One of the newer host discovery options is the IP protocol ping, which sends IP packets with the specified protocol number set in their IP header. The protocol list takes the same format as do port lists in the previously
+172334.657: [17:23:34]           discussed TCP, UDP and SCTP host discovery options. If no protocols are specified, the default is to send multiple IP packets for ICMP (protocol 1), IGMP (protocol 2), and IP-in-IP (protocol 4). The default protocols can be
+172334.666: [17:23:34]           configured at compile-time by changing DEFAULT_PROTO_PROBE_PORT_SPEC in nmap.h. Note that for the ICMP, IGMP, TCP (protocol 6), UDP (protocol 17) and SCTP (protocol 132), the packets are sent with the proper protocol headers
+172334.667: [17:23:34]           while other protocols are sent with no additional data beyond the IP header (unless any of --data, --data-string, or --data-length options are specified).
+172334.674: [17:23:34]
+172334.682: [17:23:34]           This host discovery method looks for either responses using the same protocol as a probe, or ICMP protocol unreachable messages which signify that the given protocol isn't supported on the destination host. Either type of
+172334.691: [17:23:34]           response signifies that the target host is alive.
+172334.692: [17:23:34]
+172334.703: [17:23:34]       -PR (ARP Ping)
+172334.704: [17:23:34]           One of the most common Nmap usage scenarios is to scan an ethernet LAN. On most LANs, especially those using private address ranges specified by RFC 1918[5], the vast majority of IP addresses are unused at any given time. When
+172334.715: [17:23:34]           Nmap tries to send a raw IP packet such as an ICMP echo request, the operating system must determine the destination hardware (ARP) address corresponding to the target IP so that it can properly address the ethernet frame. This
+172334.722: [17:23:34]           is often slow and problematic, since operating systems weren't written with the expectation that they would need to do millions of ARP requests against unavailable hosts in a short time period.
+172334.735: [17:23:34]
+172334.735: [17:23:34]           ARP scan puts Nmap and its optimized algorithms in charge of ARP requests. And if it gets a response back, Nmap doesn't even need to worry about the IP-based ping packets since it already knows the host is up. This makes ARP scan
+172334.742: [17:23:34]           much faster and more reliable than IP-based scans. So it is done by default when scanning ethernet hosts that Nmap detects are on a local ethernet network. Even if different ping types (such as -PE or -PS) are specified, Nmap
+172334.755: [17:23:34]           uses ARP instead for any of the targets which are on the same LAN. If you absolutely don't want to do an ARP scan, specify --disable-arp-ping.
+172334.755: [17:23:34]
+172334.767: [17:23:34]           For IPv6 (-6 option), -PR uses ICMPv6 Neighbor Discovery instead of ARP. Neighbor Discovery, defined in RFC 4861, can be seen as the IPv6 equivalent of ARP.
+172334.778: [17:23:34]
+172334.790: [17:23:34]       --disable-arp-ping (No ARP or ND Ping)
+172335.199: [17:23:35]           Nmap normally does ARP or IPv6 Neighbor Discovery (ND) discovery of locally connected ethernet hosts, even if other host discovery options such as -Pn or -PE are used. To disable this implicit behavior, use the --disable-arp-ping
+172335.225: [17:23:35]           option.
+172335.240: [17:23:35]
+172335.256: [17:23:35]           The default behavior is normally faster, but this option is useful on networks using proxy ARP, in which a router speculatively replies to all ARP requests, making every target appear to be up according to ARP scan.
+172335.256: [17:23:35]
+172335.283: [17:23:35]       --traceroute (Trace path to host)
+172335.293: [17:23:35]           Traceroutes are performed post-scan using information from the scan results to determine the port and protocol most likely to reach the target. It works with all scan types except connect scans (-sT) and idle scans (-sI). All
+172335.306: [17:23:35]           traces use Nmap's dynamic timing model and are performed in parallel.
+172335.307: [17:23:35]
+172335.321: [17:23:35]           Traceroute works by sending packets with a low TTL (time-to-live) in an attempt to elicit ICMP Time Exceeded messages from intermediate hops between the scanner and the target host. Standard traceroute implementations start with
+172335.339: [17:23:35]           a TTL of 1 and increment the TTL until the destination host is reached. Nmap's traceroute starts with a high TTL and then decrements the TTL until it reaches zero. Doing it backwards lets Nmap employ clever caching algorithms to
+172335.362: [17:23:35]           speed up traces over multiple hosts. On average Nmap sends 5–10 fewer packets per host, depending on network conditions. If a single subnet is being scanned (i.e. 192.168.0.0/24) Nmap may only have to send two packets to most
+172335.362: [17:23:35]           hosts.
+172335.362: [17:23:35]
+172335.373: [17:23:35]       -n (No DNS resolution)
+172335.397: [17:23:35]           Tells Nmap to never do reverse DNS
+172335.397: [17:23:35]
+172335.398: [17:23:35]           resolution on the active IP addresses it finds. Since DNS can be slow even with Nmap's built-in parallel stub resolver, this option can slash scanning times.
+172335.406: [17:23:35]
+172335.413: [17:23:35]       -R (DNS resolution for all targets)
+172335.420: [17:23:35]           Tells Nmap to always do reverse DNS resolution on the target IP addresses. Normally reverse DNS is only performed against responsive (online) hosts.
+172335.427: [17:23:35]
+172335.434: [17:23:35]       --resolve-all (Scan each resolved address)
+172335.444: [17:23:35]           If a hostname target resolves to more than one address, scan all of them. The default behavior is to only scan the first resolved address. Regardless, only addresses in the appropriate address family will be scanned: IPv4 by
+172335.455: [17:23:35]           default, IPv6 with -6.
+172335.465: [17:23:35]
+172335.478: [17:23:35]       --system-dns (Use system DNS resolver)
+172335.492: [17:23:35]           By default, Nmap reverse-resolves IP addresses by sending queries directly to the name servers configured on your host and then listening for responses. Many requests (often dozens) are performed in parallel to improve
+172335.507: [17:23:35]           performance. Specify this option to use your system resolver instead (one IP at a time via the getnameinfo call). This is slower and rarely useful unless you find a bug in the Nmap parallel resolver (please let us know if you
+172335.529: [17:23:35]           do). The system resolver is always used for forward lookups (getting an IP address from a hostname).
+172335.543: [17:23:35]
+172335.564: [17:23:35]       --dns-servers server1[,server2[,...]]  (Servers to use for reverse DNS queries)
+172335.575: [17:23:35]           By default, Nmap determines your DNS servers (for rDNS resolution) from your resolv.conf file (Unix) or the Registry (Win32). Alternatively, you may use this option to specify alternate servers. This option is not honored if you
+172335.589: [17:23:35]           are using --system-dns. Using multiple DNS servers is often faster, especially if you choose authoritative servers for your target IP space. This option can also improve stealth, as your requests can be bounced off just about any
+172335.612: [17:23:35]           recursive DNS server on the Internet.
+172335.991: [17:23:35]
+172335.992: [17:23:35]           This option also comes in handy when scanning private networks. Sometimes only a few name servers provide proper rDNS information, and you may not even know where they are. You can scan the network for port 53 (perhaps with
+172336.014: [17:23:36]           version detection), then try Nmap list scans (-sL) specifying each name server one at a time with --dns-servers until you find one which works.
+172336.032: [17:23:36]
+172336.043: [17:23:36]           This option might not be honored if the DNS response exceeds the size of a UDP packet. In such a situation our DNS resolver will make the best effort to extract a response from the truncated packet, and if not successful it will
+172336.043: [17:23:36]           fall back to using the system resolver. Also, responses that contain CNAME aliases will fall back to the system resolver.
+172336.056: [17:23:36]
+172336.065: [17:23:36]PORT SCANNING BASICS
+172336.065: [17:23:36]       While Nmap has grown in functionality over the years, it began as an efficient port scanner, and that remains its core function. The simple command nmap target scans 1,000 TCP ports on the host target. While many port scanners have
+172336.078: [17:23:36]       traditionally lumped all ports into the open or closed states, Nmap is much more granular. It divides ports into six states: open, closed, filtered, unfiltered, open|filtered, or closed|filtered.
+172336.078: [17:23:36]
+172336.091: [17:23:36]       These states are not intrinsic properties of the port itself, but describe how Nmap sees them. For example, an Nmap scan from the same network as the target may show port 135/tcp as open, while a scan at the same time with the same
+172336.091: [17:23:36]       options from across the Internet might show that port as filtered.
+172336.108: [17:23:36]
+172336.108: [17:23:36]       The six port states recognized by Nmap
+172336.116: [17:23:36]
+172336.128: [17:23:36]       open
+172336.128: [17:23:36]           An application is actively accepting TCP connections, UDP datagrams or SCTP associations on this port. Finding these is often the primary goal of port scanning. Security-minded people know that each open port is an avenue for
+172336.135: [17:23:36]           attack. Attackers and pen-testers want to exploit the open ports, while administrators try to close or protect them with firewalls without thwarting legitimate users. Open ports are also interesting for non-security scans because
+172336.144: [17:23:36]           they show services available for use on the network.
+172336.151: [17:23:36]
+172336.161: [17:23:36]       closed
+172336.167: [17:23:36]           A closed port is accessible (it receives and responds to Nmap probe packets), but there is no application listening on it. They can be helpful in showing that a host is up on an IP address (host discovery, or ping scanning), and
+172336.177: [17:23:36]           as part of OS detection. Because closed ports are reachable, it may be worth scanning later in case some open up. Administrators may want to consider blocking such ports with a firewall. Then they would appear in the filtered
+172336.177: [17:23:36]           state, discussed next.
+172336.183: [17:23:36]
+172336.193: [17:23:36]       filtered
+172336.194: [17:23:36]           Nmap cannot determine whether the port is open because packet filtering prevents its probes from reaching the port. The filtering could be from a dedicated firewall device, router rules, or host-based firewall software. These
+172336.204: [17:23:36]           ports frustrate attackers because they provide so little information. Sometimes they respond with ICMP error messages such as type 3 code 13 (destination unreachable: communication administratively prohibited), but filters that
+172336.214: [17:23:36]           simply drop probes without responding are far more common. This forces Nmap to retry several times just in case the probe was dropped due to network congestion rather than filtering. This slows down the scan dramatically.
+172336.214: [17:23:36]
+172336.228: [17:23:36]       unfiltered
+172336.247: [17:23:36]           The unfiltered state means that a port is accessible, but Nmap is unable to determine whether it is open or closed. Only the ACK scan, which is used to map firewall rulesets, classifies ports into this state. Scanning unfiltered
+172336.258: [17:23:36]           ports with other scan types such as Window scan, SYN scan, or FIN scan, may help resolve whether the port is open.
+172336.269: [17:23:36]
+172336.284: [17:23:36]       open|filtered
+172336.309: [17:23:36]           Nmap places ports in this state when it is unable to determine whether a port is open or filtered. This occurs for scan types in which open ports give no response. The lack of response could also mean that a packet filter dropped
+172336.321: [17:23:36]           the probe or any response it elicited. So Nmap does not know for sure whether the port is open or being filtered. The UDP, IP protocol, FIN, NULL, and Xmas scans classify ports this way.
+172336.340: [17:23:36]
+172336.346: [17:23:36]       closed|filtered
+172336.357: [17:23:36]           This state is used when Nmap is unable to determine whether a port is closed or filtered. It is only used for the IP ID idle scan.
+172336.525: [17:23:36]
+172336.539: [17:23:36]PORT SCANNING TECHNIQUES
+172336.554: [17:23:36]       As a novice performing automotive repair, I can struggle for hours trying to fit my rudimentary tools (hammer, duct tape, wrench, etc.) to the task at hand. When I fail miserably and tow my jalopy to a real mechanic, he invariably
+172336.569: [17:23:36]       fishes around in a huge tool chest until pulling out the perfect gizmo which makes the job seem effortless. The art of port scanning is similar. Experts understand the dozens of scan techniques and choose the appropriate one (or
+172336.587: [17:23:36]       combination) for a given task. Inexperienced users and script kiddies, on the other hand, try to solve every problem with the default SYN scan. Since Nmap is free, the only barrier to port scanning mastery is knowledge. That
+172336.595: [17:23:36]       certainly beats the automotive world, where it may take great skill to determine that you need a strut spring compressor, then you still have to pay thousands of dollars for it.
+172336.595: [17:23:36]
+172336.606: [17:23:36]       Most of the scan types are only available to privileged users.  This is because they send and receive raw packets, which requires root access on Unix systems. Using an administrator account on Windows is recommended, though Nmap
+172336.613: [17:23:36]       sometimes works for unprivileged users on that platform when Npcap has already been loaded into the OS. Requiring root privileges was a serious limitation when Nmap was released in 1997, as many users only had access to shared shell
+172336.614: [17:23:36]       accounts. Now, the world is different. Computers are cheaper, far more people have always-on direct Internet access, and desktop Unix systems (including Linux and Mac OS X) are prevalent. A Windows version of Nmap is now available,
+172336.628: [17:23:36]       allowing it to run on even more desktops. For all these reasons, users have less need to run Nmap from limited shared shell accounts. This is fortunate, as the privileged options make Nmap far more powerful and flexible.
+172336.629: [17:23:36]
+172336.636: [17:23:36]       While Nmap attempts to produce accurate results, keep in mind that all of its insights are based on packets returned by the target machines (or firewalls in front of them). Such hosts may be untrustworthy and send responses intended
+172336.657: [17:23:36]       to confuse or mislead Nmap. Much more common are non-RFC-compliant hosts that do not respond as they should to Nmap probes. FIN, NULL, and Xmas scans are particularly susceptible to this problem. Such issues are specific to certain
+172336.657: [17:23:36]       scan types and so are discussed in the individual scan type entries.
+172336.664: [17:23:36]
+172336.671: [17:23:36]       This section documents the dozen or so port scan techniques supported by Nmap. Only one method may be used at a time, except that UDP scan (-sU) and any one of the SCTP scan types (-sY, -sZ) may be combined with any one of the TCP
+172336.681: [17:23:36]       scan types. As a memory aid, port scan type options are of the form -sC, where C is a prominent character in the scan name, usually the first. The one exception to this is the deprecated FTP bounce scan (-b). By default, Nmap
+172336.688: [17:23:36]       performs a SYN Scan, though it substitutes a connect scan if the user does not have proper privileges to send raw packets (requires root access on Unix). Of the scans listed in this section, unprivileged users can only execute
+172336.688: [17:23:36]       connect and FTP bounce scans.
+172336.701: [17:23:36]
+172336.702: [17:23:36]       -sS (TCP SYN scan)
+172336.717: [17:23:36]           SYN scan is the default and most popular scan option for good reasons. It can be performed quickly, scanning thousands of ports per second on a fast network not hampered by restrictive firewalls. It is also relatively unobtrusive
+172336.718: [17:23:36]           and stealthy since it never completes TCP connections. SYN scan works against any compliant TCP stack rather than depending on idiosyncrasies of specific platforms as Nmap's FIN/NULL/Xmas, Maimon and idle scans do. It also allows
+172336.728: [17:23:36]           clear, reliable differentiation between the open, closed, and filtered states.
+172336.728: [17:23:36]
+172336.738: [17:23:36]           This technique is often referred to as half-open scanning, because you don't open a full TCP connection. You send a SYN packet, as if you are going to open a real connection and then wait for a response. A SYN/ACK indicates the
+172336.758: [17:23:36]           port is listening (open), while a RST (reset) is indicative of a non-listener. If no response is received after several retransmissions, the port is marked as filtered. The port is also marked filtered if an ICMP unreachable
+172336.766: [17:23:36]           error (type 3, code 0, 1, 2, 3, 9, 10, or 13) is received. The port is also considered open if a SYN packet (without the ACK flag) is received in response. This can be due to an extremely rare TCP feature known as a simultaneous
+172336.773: [17:23:36]           open or split handshake connection (see https://nmap.org/misc/split-handshake.pdf).
+172336.783: [17:23:36]
+172336.789: [17:23:36]       -sT (TCP connect scan)
+172336.790: [17:23:36]           TCP connect scan is the default TCP scan type when SYN scan is not an option. This is the case when a user does not have raw packet privileges. Instead of writing raw packets as most other scan types do, Nmap asks the underlying
+172336.803: [17:23:36]           operating system to establish a connection with the target machine and port by issuing the connect system call. This is the same high-level system call that web browsers, P2P clients, and most other network-enabled applications
+172336.809: [17:23:36]           use to establish a connection. It is part of a programming interface known as the Berkeley Sockets API. Rather than read raw packet responses off the wire, Nmap uses this API to obtain status information on each connection
+172336.819: [17:23:36]           attempt.
+172336.836: [17:23:36]
+172336.855: [17:23:36]           When SYN scan is available, it is usually a better choice. Nmap has less control over the high level connect call than with raw packets, making it less efficient. The system call completes connections to open target ports rather
+172336.866: [17:23:36]           than performing the half-open reset that SYN scan does. Not only does this take longer and require more packets to obtain the same information, but target machines are more likely to log the connection. A decent IDS will catch
+172336.878: [17:23:36]           either, but most machines have no such alarm system. Many services on your average Unix system will add a note to syslog, and sometimes a cryptic error message, when Nmap connects and then closes the connection without sending
+172336.888: [17:23:36]           data. Truly pathetic services crash when this happens, though that is uncommon. An administrator who sees a bunch of connection attempts in her logs from a single system should know that she has been connect scanned.
+172336.996: [17:23:36]
+172337.031: [17:23:37]       -sU (UDP scans)
+172337.042: [17:23:37]           While most popular services on the Internet run over the TCP protocol, UDP[6] services are widely deployed. DNS, SNMP, and DHCP (registered ports 53, 161/162, and 67/68) are three of the most common. Because UDP scanning is
+172337.070: [17:23:37]           generally slower and more difficult than TCP, some security auditors ignore these ports. This is a mistake, as exploitable UDP services are quite common and attackers certainly don't ignore the whole protocol. Fortunately, Nmap
+172337.070: [17:23:37]           can help inventory UDP ports.
+172337.091: [17:23:37]
+172337.100: [17:23:37]           UDP scan is activated with the -sU option. It can be combined with a TCP scan type such as SYN scan (-sS) to check both protocols during the same run.
+172337.100: [17:23:37]
+172337.114: [17:23:37]           UDP scan works by sending a UDP packet to every targeted port. For some common ports such as 53 and 161, a protocol-specific payload is sent to increase response rate, but for most ports the packet is empty unless the --data,
+172337.122: [17:23:37]           --data-string, or --data-length options are specified. If an ICMP port unreachable error (type 3, code 3) is returned, the port is closed. Other ICMP unreachable errors (type 3, codes 0, 1, 2, 9, 10, or 13) mark the port as
+172337.123: [17:23:37]           filtered. Occasionally, a service will respond with a UDP packet, proving that it is open. If no response is received after retransmissions, the port is classified as open|filtered. This means that the port could be open, or
+172337.134: [17:23:37]           perhaps packet filters are blocking the communication. Version detection (-sV) can be used to help differentiate the truly open ports from the filtered ones.
+172337.134: [17:23:37]
+172337.142: [17:23:37]           A big challenge with UDP scanning is doing it quickly. Open and filtered ports rarely send any response, leaving Nmap to time out and then conduct retransmissions just in case the probe or response were lost. Closed ports are
+172337.150: [17:23:37]           often an even bigger problem. They usually send back an ICMP port unreachable error. But unlike the RST packets sent by closed TCP ports in response to a SYN or connect scan, many hosts rate limit ICMP port unreachable messages
+172337.158: [17:23:37]           by default. Linux and Solaris are particularly strict about this. For example, the Linux 2.4.20 kernel limits destination unreachable messages to one per second (in net/ipv4/icmp.c).
+172337.165: [17:23:37]
+172337.172: [17:23:37]           Nmap detects rate limiting and slows down accordingly to avoid flooding the network with useless packets that the target machine will drop. Unfortunately, a Linux-style limit of one packet per second makes a 65,536-port scan take
+172337.180: [17:23:37]           more than 18 hours. Ideas for speeding your UDP scans up include scanning more hosts in parallel, doing a quick scan of just the popular ports first, scanning from behind the firewall, and using --host-timeout to skip slow hosts.
+172337.187: [17:23:37]
+172337.194: [17:23:37]       -sY (SCTP INIT scan)
+172337.205: [17:23:37]           SCTP[7] is a relatively new alternative to the TCP and UDP protocols, combining most characteristics of TCP and UDP, and also adding new features like multi-homing and multi-streaming. It is mostly being used for SS7/SIGTRAN
+172337.215: [17:23:37]           related services but has the potential to be used for other applications as well. SCTP INIT scan is the SCTP equivalent of a TCP SYN scan. It can be performed quickly, scanning thousands of ports per second on a fast network not
+172337.222: [17:23:37]           hampered by restrictive firewalls. Like SYN scan, INIT scan is relatively unobtrusive and stealthy, since it never completes SCTP associations. It also allows clear, reliable differentiation between the open, closed, and filtered
+172337.222: [17:23:37]           states.
+172337.235: [17:23:37]
+172337.235: [17:23:37]           This technique is often referred to as half-open scanning, because you don't open a full SCTP association. You send an INIT chunk, as if you are going to open a real association and then wait for a response. An INIT-ACK chunk
+172337.243: [17:23:37]           indicates the port is listening (open), while an ABORT chunk is indicative of a non-listener. If no response is received after several retransmissions, the port is marked as filtered. The port is also marked filtered if an ICMP
+172337.256: [17:23:37]           unreachable error (type 3, code 0, 1, 2, 3, 9, 10, or 13) is received.
+172337.256: [17:23:37]
+172337.263: [17:23:37]       -sN; -sF; -sX (TCP NULL, FIN, and Xmas scans)
+172337.275: [17:23:37]           These three scan types (even more are possible with the --scanflags option described in the next section) exploit a subtle loophole in the TCP RFC[8] to differentiate between open and closed ports. Page 65 of RFC 793 says that
+172337.275: [17:23:37]           “if the [destination] port state is CLOSED .... an incoming segment not containing a RST causes a RST to be sent in response.”  Then the next page discusses packets sent to open ports without the SYN, RST, or ACK bits set,
+172337.282: [17:23:37]           stating that: “you are unlikely to get here, but if you do, drop the segment, and return.”
+172337.306: [17:23:37]
+172337.306: [17:23:37]           When scanning systems compliant with this RFC text, any packet not containing SYN, RST, or ACK bits will result in a returned RST if the port is closed and no response at all if the port is open. As long as none of those three
+172337.306: [17:23:37]           bits are included, any combination of the other three (FIN, PSH, and URG) are OK. Nmap exploits this with three scan types:
+172337.314: [17:23:37]
+172337.334: [17:23:37]           Null scan (-sN)
+172337.341: [17:23:37]               Does not set any bits (TCP flag header is 0)
+172337.352: [17:23:37]
+172337.363: [17:23:37]           FIN scan (-sF)
+172337.375: [17:23:37]               Sets just the TCP FIN bit.
+172918.409: [17:29:18][root@172-16-208-2 ~]# ip r
+172918.428: [17:29:18]default via 172.16.208.1 dev ens3 proto dhcp metric 100 
+172918.428: [17:29:18]3.0.58.66 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.0.94.38 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.0.180.83 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.0.181.117 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.1.50.165 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.35.78.29 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.35.194.150 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.36.102.123 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.37.16.32 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.38.40.81 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.38.42.23 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.38.216.87 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.38.218.76 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.38.218.215 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.38.219.211 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.112.172.186 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.112.212.220 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]3.113.29.82 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]8.8.8.8 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]10.253.0.3 dev wg0 scope link 
+172918.429: [17:29:18]10.253.0.11 dev wg0 scope link 
+172918.429: [17:29:18]13.115.137.18 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.158.140.187 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.192.232.166 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.213.48.122 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.213.51.145 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.213.53.225 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.213.63.105 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.213.72.21 via 172.16.208.4 dev ens3 
+172918.429: [17:29:18]13.213.73.181 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.215.160.181 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.215.190.44 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.215.250.227 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.229.103.137 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.229.113.148 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.229.198.206 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.229.224.81 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.230.10.49 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.230.94.203 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.230.223.183 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.230.253.59 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.231.106.132 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.250.46.240 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.250.97.96 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]13.250.99.45 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]16.163.141.149 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.136.193.101 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.136.204.31 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.136.206.142 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.138.248.92 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.139.2.71 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.139.225.61 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.140.50.228 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.140.52.94 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.140.66.176 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.140.68.82 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.140.69.61 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.140.72.242 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.141.140.120 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.141.144.240 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.141.175.12 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.141.180.137 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.141.186.35 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.141.207.59 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.142.47.69 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.142.254.144 via 172.16.208.4 dev ens3 
+172918.430: [17:29:18]18.142.255.251 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.47.5 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.48.196 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.50.30 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.53.81 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.54.21 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.54.88 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.54.182 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.112.18 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.124.168 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.130.233 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.154.0 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.154.77 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.167.91 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.168.76 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.169.153 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.178.86 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.230.86 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.243.48 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.243.64 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.162.246.126 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.182.54.150 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.183.143.61 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.183.170.195 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.183.172.244 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.183.232.17 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.183.235.141 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]18.183.238.232 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]35.72.8.247 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]35.72.14.48 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]35.77.104.11 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]35.78.219.98 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]35.166.68.224 via 172.16.208.4 dev ens3 
+172918.431: [17:29:18]43.198.4.203 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.16.197 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.17.38 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.18.50 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.81.220 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.82.222 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.84.193 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.85.251 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.86.0 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.86.175 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.86.248 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.87.235 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.97.168 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.198.98.37 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.29.31 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.30.114 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.32.239 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.34.225 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.35.182 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.36.52 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.36.110 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.41.60 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.41.120 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.42.8 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.44.39 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.45.114 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.45.172 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.46.193 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.62.95 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.62.137 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.62.205 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.65.41 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.67.131 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.71.65 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.73.131 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.74.81 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.76.16 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.116.173 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.147.87 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.194.110 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.195.154 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.201.244 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.231.75 via 172.16.208.4 dev ens3 
+172918.432: [17:29:18]43.199.252.81 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.199.252.141 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.199.252.254 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.206.209.102 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.206.221.162 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.206.223.144 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.207.114.93 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.207.157.218 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.212.116.205 via 172.16.208.4 dev ens3 
+172918.433: [17:29:18]43.212.191.9 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]43.212.252.169 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]47.128.251.1 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]47.129.58.159 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]47.129.222.20 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]47.129.246.54 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]47.130.0.253 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.68.183.176 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.69.211.135 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.69.215.81 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.194.212.197 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.195.209.158 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.195.218.57 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.221.182.220 via 172.16.208.4 dev ens3 
+172918.434: [17:29:18]52.221.199.223 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]52.221.241.82 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]52.221.249.50 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.95.70.20 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.95.160.168 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.116.40.156 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.116.41.203 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.150.216.155 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.150.241.130 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.151.222.137 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.151.229.238 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.169.62.249 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.169.156.116 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.169.184.46 via 172.16.208.4 dev ens3 
+172918.435: [17:29:18]54.169.223.69 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.178.28.142 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.178.59.188 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.178.183.125 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.249.21.42 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.249.41.202 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.250.169.44 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.251.139.181 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.254.128.42 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.254.161.166 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.254.202.135 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.255.154.202 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]54.255.243.29 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]57.180.7.221 via 172.16.208.4 dev ens3 
+172918.436: [17:29:18]57.180.62.176 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]57.180.243.199 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]57.181.36.223 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]95.40.92.185 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]103.45.234.158 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]104.18.38.89 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]104.18.43.89 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]112.4.0.55 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]120.232.153.120 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]122.248.226.126 via 172.16.208.4 dev ens3 
+172918.437: [17:29:18]169.254.169.254 via 172.16.221.131 dev ens3 proto dhcp metric 100 
+172918.437: [17:29:18]172.16.208.0/20 dev ens3 proto kernel scope link src 172.16.208.2 metric 100 
+172918.437: [17:29:18]172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+172918.438: [17:29:18]172.18.0.0/16 dev br-c2f8d78d6e11 proto kernel scope link src 172.18.0.1 
+172918.438: [17:29:18]192.168.31.0/24 dev wg0 scope link 
+172918.438: [17:29:18]198.144.180.4 via 172.16.208.4 dev ens3 
+172918.438: [17:29:18]198.144.180.5 via 172.16.208.4 dev ens3 
+172918.438: [17:29:18]198.144.180.6 via 172.16.208.4 dev ens3 
+173006.394: [17:30:06][root@172-16-208-2 ~]# crontab -l
+173006.415: [17:30:06]# Edit this file to introduce tasks to be run by cron.
+173006.416: [17:30:06]# 
+173006.416: [17:30:06]# Each task to run has to be defined through a single line
+173006.416: [17:30:06]# indicating with different fields when the task will be run
+173006.416: [17:30:06]# and what command to run for the task
+173006.416: [17:30:06]# 
+173006.416: [17:30:06]# To define the time you can provide concrete values for
+173006.416: [17:30:06]# minute (m), hour (h), day of month (dom), month (mon),
+173006.416: [17:30:06]# and day of week (dow) or use '*' in these fields (for 'any').
+173006.416: [17:30:06]# 
+173006.416: [17:30:06]# Notice that tasks will be started based on the cron's system
+173006.416: [17:30:06]# daemon's notion of time and timezones.
+173006.416: [17:30:06]# 
+173006.416: [17:30:06]# Output of the crontab jobs (including errors) is sent through
+173006.416: [17:30:06]# email to the user the crontab file belongs to (unless redirected).
+173006.416: [17:30:06]# 
+173006.416: [17:30:06]# For example, you can run a backup of all your user accounts
+173006.416: [17:30:06]# at 5 a.m every week with:
+173006.416: [17:30:06]# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+173006.416: [17:30:06]# 
+173006.416: [17:30:06]# For more information see the manual pages of crontab(5) and cron(8)
+173006.416: [17:30:06]# 
+173006.417: [17:30:06]# m h  dom mon dow   command
+173006.417: [17:30:06]#0 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters/ /DATA/Media/Picture/Photoprism/originals/Posters
+173006.417: [17:30:06]#30 */2 * * * rsync -avz --chmod=F777,D777 rsync://192.168.15.253:52326/posters_sis001_images/ /DATA/Media/Picture/Photoprism/originals/Posters
+173006.417: [17:30:06]10 8 * * * /usr/bin/bash /root/DNS/add_routes_from_file.sh
+173006.417: [17:30:06]0 8 * * * /usr/bin/bash /root/DNS/dns2.sh
+173006.417: [17:30:06]0 * * * * /usr/bin/bash /root/tmp.sh
+173006.417: [17:30:06]0 5 * * * /usr/bin/bash /etc/wireguard/StopWG1.sh ; sleep 3 ; /usr/bin/bash /etc/wireguard/StartWG1.sh
+173027.773: [17:30:27][root@172-16-208-2 ~]# cat  /root/DNS/dns2.sh
+173027.773: [17:30:27]#!/bin/bash
+173027.773: [17:30:27]# 从域名解析唯一 IPv4 地址 -> ip_list.txt
+173027.773: [17:30:27]# 一定包含 8.8.8.8；无子进程丢写问题
+173027.773: [17:30:27]
+173027.773: [17:30:27]set -euo pipefail
+173027.773: [17:30:27]IFS=$'\n\t'
+173027.773: [17:30:27]
+173027.774: [17:30:27]domains=(
+173027.774: [17:30:27]#  "hk-hgc.cdn-yx.buzz"
+173027.774: [17:30:27]#  "hk-hkbn.cdn-yx.buzz"
+173027.774: [17:30:27]#  "tw-taian.cdn-yx.buzz"
+173027.774: [17:30:27]#  "hinetiw0k.yooddns.stream"
+173027.774: [17:30:27]  "aws-link1.liangxin1.xyz"
+173027.774: [17:30:27]  "aws-link2.liangxin1.xyz"
+173027.774: [17:30:27]  "aws-link3.liangxin1.xyz"
+173027.774: [17:30:27]  "aws-link4.liangxin1.xyz"
+173027.774: [17:30:27]  "aws-link7.liangxin1.xyz"
+173027.774: [17:30:27]  "aws-link8.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link9.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link10.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link13.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link14.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link15.liangxin1.xyz"
+173027.775: [17:30:27]  "cfyes.lxy1015.top"
+173027.775: [17:30:27]  "aws-link19.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link25.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-link27.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-linkhy2.liangxin1.xyz"
+173027.775: [17:30:27]  "aws-linkhy3.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy10.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy11.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy15.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy16.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy17.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy21.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy23.liangxin1.xyz"
+173027.776: [17:30:27]  "aws-linkhy27.liangxin1.xyz"
+173027.776: [17:30:27])
+173027.776: [17:30:27]
+173027.776: [17:30:27]declare -A unique_ips
+173027.776: [17:30:27]
+173027.777: [17:30:27]# 解析函数：只取 A 记录，避免 IPv6 干扰；用进程替换避免子进程丢写
+173027.777: [17:30:27]resolve_ipv4() {
+173027.777: [17:30:27]  local d="$1"
+173027.777: [17:30:27]  # +short 只输出 IP；指定 A 记录；加 +time=2 +tries=1 降低卡顿
+173027.777: [17:30:27]  while read -r ip; do
+173027.777: [17:30:27]    # 简单 IPv4 校验
+173027.778: [17:30:27]    [[ "$ip" =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]] || continue
+173027.778: [17:30:27]    unique_ips["$ip"]=1
+173027.778: [17:30:27]  done < <(dig +short +time=2 +tries=1 "$d" A 2>/dev/null)
+173027.778: [17:30:27]}
+173027.778: [17:30:27]
+173027.778: [17:30:27]for domain in "${domains[@]}"; do
+173027.778: [17:30:27]  echo "Resolving: $domain ..."
+173027.778: [17:30:27]  resolve_ipv4 "$domain"
+173027.778: [17:30:27]done
+173027.778: [17:30:27]
+173027.778: [17:30:27]# 保证 8.8.8.8 存在
+173027.778: [17:30:27]unique_ips["8.8.8.8"]=1
+173027.779: [17:30:27]unique_ips["112.4.0.55"]=1
+173027.779: [17:30:27]unique_ips["120.232.153.120"]=1
+173027.779: [17:30:27]unique_ips["103.45.234.158"]=1
+173027.779: [17:30:27]
+173027.779: [17:30:27]# 输出去重排序后的列表
+173027.779: [17:30:27]output_file="ip_list.txt"
+173027.779: [17:30:27]{
+173027.779: [17:30:27]  for ip in "${!unique_ips[@]}"; do
+173027.779: [17:30:27]    echo "$ip"
+173027.779: [17:30:27]  done | sort -V
+173027.779: [17:30:27]} > "$output_file"
+173027.779: [17:30:27]
+173027.780: [17:30:27]echo "✅ Saved to $output_file, total ${#unique_ips[@]} unique IPv4(s)."
+173027.780: [17:30:27]

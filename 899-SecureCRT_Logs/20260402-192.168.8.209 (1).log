@@ -1,0 +1,29 @@
+﻿165830.389: [16:58:30][202604192.168.8.209 (1)-16:58:30]
+165830.400: [16:58:30]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-106-generic x86_64)
+165830.400: [16:58:30]
+165830.400: [16:58:30] * Documentation:  https://help.ubuntu.com
+165830.401: [16:58:30] * Management:     https://landscape.canonical.com
+165830.401: [16:58:30] * Support:        https://ubuntu.com/pro
+165830.401: [16:58:30]
+165830.401: [16:58:30] System information as of Thu Apr  2 04:57:41 PM CST 2026
+165830.401: [16:58:30]
+165830.401: [16:58:30]  System load:    0.07                Temperature:                36.0 C
+165830.401: [16:58:30]  Usage of /home: 8.1% of 1006.85GB   Processes:                  1180
+165830.401: [16:58:30]  Memory usage:   4%                  Users logged in:            1
+165830.401: [16:58:30]  Swap usage:     0%                  IPv4 address for enp33s0f1: 192.168.8.209
+165830.401: [16:58:30]
+165830.401: [16:58:30] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+165830.401: [16:58:30]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+165830.401: [16:58:30]
+165830.401: [16:58:30]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+165830.401: [16:58:30]
+165830.401: [16:58:30]Expanded Security Maintenance for Applications is not enabled.
+165830.401: [16:58:30]
+165830.401: [16:58:30]87 updates can be applied immediately.
+165830.401: [16:58:30]To see these additional updates run: apt list --upgradable
+165830.401: [16:58:30]
+165830.401: [16:58:30]Enable ESM Apps to receive additional future security updates.
+165830.402: [16:58:30]See https://ubuntu.com/esm or run: sudo pro status
+165830.402: [16:58:30]
+165830.402: [16:58:30]
+165830.402: [16:58:30]Last login: Thu Apr  2 16:57:47 2026 from 192.168.6.173

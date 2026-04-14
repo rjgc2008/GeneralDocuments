@@ -1,0 +1,80 @@
+﻿153514.077: [15:35:14][202604105-172.16.101.43-15:35:14]
+153514.093: [15:35:14]Last login: Thu Apr  2 14:23:54 2026 from 192.168.12.43
+153525.083: [15:35:25]root@master:~# ps -ef | grep bash
+153525.161: [15:35:25]root        4104    3898  0 14:23 pts/0    00:00:00 -bash
+153525.162: [15:35:25]root        5460    5388  0 14:23 pts/1    00:00:00 -bash
+153525.163: [15:35:25]root       11336    4104  0 15:24 pts/0    00:00:00 bash 1.bash
+153525.184: [15:35:25]root       11720    3898  0 15:35 pts/2    00:00:00 -bash
+153525.185: [15:35:25]root       11782   11720  0 15:35 pts/2    00:00:00 grep --color=auto bash
+153548.592: [15:35:48]root@master:~# kill -9 11336
+154404.740: [15:44:04]root@master:~# ipconfig
+154405.066: [15:44:05]找不到命令 “ipconfig”，您的意思是：
+154405.067: [15:44:05]  “iwconfig” 命令来自 Debian 软件包 wireless-tools (30~pre9-13.1ubuntu4)
+154405.067: [15:44:05]  “hipconfig” 命令来自 Debian 软件包 hipcc (5.2.3-12)
+154405.067: [15:44:05]  “iconfig” 命令来自 Debian 软件包 ipmiutil (3.1.9-3)
+154405.067: [15:44:05]  “ifconfig” 命令来自 Debian 软件包 net-tools (2.10-0.1ubuntu4.4)
+154405.067: [15:44:05]尝试 apt install <deb name>
+154408.069: [15:44:08]root@master:~# ip a
+154408.076: [15:44:08]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+154408.076: [15:44:08]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+154408.076: [15:44:08]    inet 127.0.0.1/8 scope host lo
+154408.076: [15:44:08]       valid_lft forever preferred_lft forever
+154408.076: [15:44:08]    inet6 ::1/128 scope host noprefixroute 
+154408.077: [15:44:08]       valid_lft forever preferred_lft forever
+154408.077: [15:44:08]2: ens1f0np0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+154408.077: [15:44:08]    link/ether b8:59:9f:3b:35:ae brd ff:ff:ff:ff:ff:ff
+154408.077: [15:44:08]    altname enp49s0f0np0
+154408.078: [15:44:08]3: ens1f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+154408.078: [15:44:08]    link/ether b8:59:9f:3b:35:af brd ff:ff:ff:ff:ff:ff
+154408.078: [15:44:08]    altname enp49s0f1np1
+154408.078: [15:44:08]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154408.078: [15:44:08]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+154408.078: [15:44:08]    altname enp152s0f0np0
+154408.079: [15:44:08]    inet 172.16.101.43/24 brd 172.16.101.255 scope global ens4f0np0
+154408.079: [15:44:08]       valid_lft forever preferred_lft forever
+154408.079: [15:44:08]    inet6 fe80::e42:a1ff:fe45:5ff4/64 scope link 
+154408.079: [15:44:08]       valid_lft forever preferred_lft forever
+154408.080: [15:44:08]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+154408.080: [15:44:08]    link/ether 0c:42:a1:45:5f:f5 brd ff:ff:ff:ff:ff:ff
+154408.080: [15:44:08]    altname enp152s0f1np1
+154408.080: [15:44:08]    inet 10.0.0.43/24 brd 10.0.0.255 scope global ens4f1np1
+154408.080: [15:44:08]       valid_lft forever preferred_lft forever
+154408.080: [15:44:08]    inet6 fe80::e42:a1ff:fe45:5ff5/64 scope link 
+154408.081: [15:44:08]       valid_lft forever preferred_lft forever
+154408.081: [15:44:08]6: ens5f0np0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+154408.081: [15:44:08]    link/ether 98:03:9b:7d:2f:96 brd ff:ff:ff:ff:ff:ff
+154408.081: [15:44:08]    altname enp177s0f0np0
+154408.081: [15:44:08]7: ens5f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+154408.081: [15:44:08]    link/ether 98:03:9b:7d:2f:97 brd ff:ff:ff:ff:ff:ff
+154408.081: [15:44:08]    altname enp177s0f1np1
+154408.082: [15:44:08]8: ens6f0np0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+154408.082: [15:44:08]    link/ether b8:59:9f:3b:33:ce brd ff:ff:ff:ff:ff:ff
+154408.082: [15:44:08]    altname enp178s0f0np0
+154408.082: [15:44:08]9: ens6f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+154408.082: [15:44:08]    link/ether b8:59:9f:3b:33:cf brd ff:ff:ff:ff:ff:ff
+154408.082: [15:44:08]    altname enp178s0f1np1
+154408.082: [15:44:08]10: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+154408.083: [15:44:08]    link/ether ca:0c:8a:df:41:01 brd ff:ff:ff:ff:ff:ff
+154408.083: [15:44:08]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+154408.083: [15:44:08]       valid_lft forever preferred_lft forever
+154408.083: [15:44:08]11: cilium_net@cilium_host: <BROADCAST,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+154408.084: [15:44:08]    link/ether 2a:c0:aa:e5:8e:99 brd ff:ff:ff:ff:ff:ff
+154408.084: [15:44:08]    inet6 fe80::28c0:aaff:fee5:8e99/64 scope link 
+154408.084: [15:44:08]       valid_lft forever preferred_lft forever
+154408.084: [15:44:08]12: cilium_host@cilium_net: <BROADCAST,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+154408.084: [15:44:08]    link/ether 3a:39:80:f3:8d:99 brd ff:ff:ff:ff:ff:ff
+154408.084: [15:44:08]    inet 10.0.3.204/32 scope global cilium_host
+154408.085: [15:44:08]       valid_lft forever preferred_lft forever
+154408.085: [15:44:08]    inet6 fe80::3839:80ff:fef3:8d99/64 scope link 
+154408.085: [15:44:08]       valid_lft forever preferred_lft forever
+154408.085: [15:44:08]13: cilium_vxlan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default 
+154408.085: [15:44:08]    link/ether 96:ae:e6:d6:3a:bb brd ff:ff:ff:ff:ff:ff
+154408.085: [15:44:08]    inet6 fe80::94ae:e6ff:fed6:3abb/64 scope link 
+154408.086: [15:44:08]       valid_lft forever preferred_lft forever
+154408.086: [15:44:08]17: lxc_health@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+154408.086: [15:44:08]    link/ether 5a:2c:07:f4:74:68 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+154408.086: [15:44:08]    inet6 fe80::582c:7ff:fef4:7468/64 scope link 
+154408.086: [15:44:08]       valid_lft forever preferred_lft forever
+154719.271: [15:47:19]root@master:~# 
+154719.419: [15:47:19]root@master:~# 
+154725.755: [15:47:25]root@master:~# 

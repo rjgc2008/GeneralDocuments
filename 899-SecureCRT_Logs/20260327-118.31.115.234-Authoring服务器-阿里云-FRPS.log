@@ -1,0 +1,417 @@
+﻿134356.137: [13:43:56][202603118.31.115.234-Authoring服务器-阿里云-FRPS-13:43:56]
+134356.242: [13:43:56]Last failed login: Fri Mar 27 00:14:52 CST 2026 from 182.93.7.194 on ssh:notty
+134356.242: [13:43:56]There were 315 failed login attempts since the last successful login.
+134356.243: [13:43:56]Last login: Thu Mar 12 08:50:23 2026 from 223.107.68.194
+134356.248: [13:43:56]
+134356.248: [13:43:56]Welcome to Alibaba Cloud Elastic Compute Service !
+134356.248: [13:43:56]
+134400.080: [13:44:00][root@iZbp1fvr0ojbaf96ys1erlZ ~]# lsblk
+134400.089: [13:44:00]NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+134400.089: [13:44:00]vda    253:0    0  60G  0 disk 
+134400.089: [13:44:00]└─vda1 253:1    0  60G  0 part /
+134402.375: [13:44:02][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ss -tlnp
+134402.382: [13:44:02]State       Recv-Q Send-Q                                                                         Local Address:Port                                                                                        Peer Address:Port              
+134402.397: [13:44:02]LISTEN      0      128                                                                                        *:111                                                                                                    *:*                   134402.397: users:(("rpcbind",pid=578,fd=8))
+134402.398: [13:44:02]LISTEN      0      128                                                                                        *:80                                                                                                     *:*                   134402.398: users:(("nginx",pid=941,fd=5),("nginx",pid=939,fd=5))
+134402.398: [13:44:02]LISTEN      0      128                                                                                        *:22                                                                                                     *:*                   134402.398: users:(("sshd",pid=1065,fd=3))
+134402.398: [13:44:02]LISTEN      0      100                                                                                127.0.0.1:25                                                                                                     *:*                   134402.398: users:(("master",pid=1040,fd=13))
+134402.399: [13:44:02]LISTEN      0      128                                                                                        *:443                                                                                                    *:*                   134402.399: users:(("nginx",pid=941,fd=6),("nginx",pid=939,fd=6))
+134402.399: [13:44:02]LISTEN      0      128                                                                                     [::]:111                                                                                                 [::]:*                   134402.399: users:(("rpcbind",pid=578,fd=11))
+134402.400: [13:44:02]LISTEN      0      128                                                                                     [::]:22                                                                                                  [::]:*                   134402.400: users:(("sshd",pid=1065,fd=4))
+134402.400: [13:44:02]LISTEN      0      100                                                                                    [::1]:25                                                                                                  [::]:*                   134402.400: users:(("master",pid=1040,fd=14))
+134412.732: [13:44:12][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ps -ef 
+134412.742: [13:44:12]UID        PID  PPID  C STIME TTY          TIME CMD
+134412.742: [13:44:12]root         1     0  0 Mar23 ?        00:00:05 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+134412.742: [13:44:12]root         2     0  0 Mar23 ?        00:00:00 [kthreadd]
+134412.743: [13:44:12]root         4     2  0 Mar23 ?        00:00:00 [kworker/0:0H]
+134412.743: [13:44:12]root         5     2  0 Mar23 ?        00:00:03 [kworker/u8:0]
+134412.743: [13:44:12]root         6     2  0 Mar23 ?        00:00:06 [ksoftirqd/0]
+134412.743: [13:44:12]root         7     2  0 Mar23 ?        00:00:00 [migration/0]
+134412.744: [13:44:12]root         8     2  0 Mar23 ?        00:00:00 [rcu_bh]
+134412.744: [13:44:12]root         9     2  0 Mar23 ?        00:01:21 [rcu_sched]
+134412.744: [13:44:12]root        10     2  0 Mar23 ?        00:00:00 [lru-add-drain]
+134412.744: [13:44:12]root        11     2  0 Mar23 ?        00:00:01 [watchdog/0]
+134412.744: [13:44:12]root        12     2  0 Mar23 ?        00:00:00 [watchdog/1]
+134412.744: [13:44:12]root        13     2  0 Mar23 ?        00:00:00 [migration/1]
+134412.744: [13:44:12]root        14     2  0 Mar23 ?        00:00:00 [ksoftirqd/1]
+134412.745: [13:44:12]root        16     2  0 Mar23 ?        00:00:00 [kworker/1:0H]
+134412.745: [13:44:12]root        17     2  0 Mar23 ?        00:00:00 [watchdog/2]
+134412.745: [13:44:12]root        18     2  0 Mar23 ?        00:00:00 [migration/2]
+134412.745: [13:44:12]root        19     2  0 Mar23 ?        00:00:00 [ksoftirqd/2]
+134412.745: [13:44:12]root        21     2  0 Mar23 ?        00:00:00 [kworker/2:0H]
+134412.745: [13:44:12]root        22     2  0 Mar23 ?        00:00:00 [watchdog/3]
+134412.746: [13:44:12]root        23     2  0 Mar23 ?        00:00:00 [migration/3]
+134412.746: [13:44:12]root        24     2  0 Mar23 ?        00:00:00 [ksoftirqd/3]
+134412.746: [13:44:12]root        26     2  0 Mar23 ?        00:00:00 [kworker/3:0H]
+134412.746: [13:44:12]root        28     2  0 Mar23 ?        00:00:00 [kdevtmpfs]
+134412.746: [13:44:12]root        29     2  0 Mar23 ?        00:00:00 [netns]
+134412.746: [13:44:12]root        30     2  0 Mar23 ?        00:00:00 [khungtaskd]
+134412.746: [13:44:12]root        31     2  0 Mar23 ?        00:00:00 [writeback]
+134412.747: [13:44:12]root        32     2  0 Mar23 ?        00:00:00 [kintegrityd]
+134412.747: [13:44:12]root        33     2  0 Mar23 ?        00:00:00 [bioset]
+134412.747: [13:44:12]root        34     2  0 Mar23 ?        00:00:00 [bioset]
+134412.747: [13:44:12]root        35     2  0 Mar23 ?        00:00:00 [bioset]
+134412.747: [13:44:12]root        36     2  0 Mar23 ?        00:00:00 [kblockd]
+134412.747: [13:44:12]root        37     2  0 Mar23 ?        00:00:00 [md]
+134412.747: [13:44:12]root        38     2  0 Mar23 ?        00:00:00 [edac-poller]
+134412.748: [13:44:12]root        39     2  0 Mar23 ?        00:00:00 [watchdogd]
+134412.748: [13:44:12]root        48     2  0 Mar23 ?        00:00:00 [kswapd0]
+134412.748: [13:44:12]root        49     2  0 Mar23 ?        00:00:00 [ksmd]
+134412.748: [13:44:12]root        50     2  0 Mar23 ?        00:00:06 [khugepaged]
+134412.748: [13:44:12]root        51     2  0 Mar23 ?        00:00:00 [crypto]
+134412.748: [13:44:12]root        59     2  0 Mar23 ?        00:00:00 [kthrotld]
+134412.748: [13:44:12]root        61     2  0 Mar23 ?        00:00:00 [kmpath_rdacd]
+134412.748: [13:44:12]root        62     2  0 Mar23 ?        00:00:00 [kaluad]
+134412.749: [13:44:12]root        63     2  0 Mar23 ?        00:00:00 [kpsmoused]
+134412.749: [13:44:12]root        64     2  0 Mar23 ?        00:00:00 [ipv6_addrconf]
+134412.749: [13:44:12]root        77     2  0 Mar23 ?        00:00:00 [deferwq]
+134412.749: [13:44:12]root       112     2  0 Mar23 ?        00:00:00 [kauditd]
+134412.749: [13:44:12]root       243     2  0 Mar23 ?        00:00:00 [kworker/u8:2]
+134412.749: [13:44:12]root       248     2  0 Mar23 ?        00:00:00 [ata_sff]
+134412.749: [13:44:12]root       256     2  0 Mar23 ?        00:00:00 [scsi_eh_0]
+134412.749: [13:44:12]root       257     2  0 Mar23 ?        00:00:00 [scsi_tmf_0]
+134412.749: [13:44:12]root       258     2  0 Mar23 ?        00:00:00 [scsi_eh_1]
+134412.749: [13:44:12]root       259     2  0 Mar23 ?        00:00:00 [scsi_tmf_1]
+134412.750: [13:44:12]root       265     2  0 Mar23 ?        00:00:00 [ttm_swap]
+134412.763: [13:44:12]root       273     2  0 Mar23 ?        00:00:00 [kworker/1:1H]
+134412.764: [13:44:12]root       278     2  0 Mar23 ?        00:00:00 [kworker/0:1H]
+134412.764: [13:44:12]root       285     2  0 Mar23 ?        00:00:00 [kworker/2:1H]
+134412.764: [13:44:12]root       286     2  0 Mar23 ?        00:00:02 [jbd2/vda1-8]
+134412.764: [13:44:12]root       287     2  0 Mar23 ?        00:00:00 [ext4-rsv-conver]
+134412.764: [13:44:12]root       353     2  0 Mar23 ?        00:00:00 [kworker/3:1H]
+134412.764: [13:44:12]root       386     1  0 Mar23 ?        00:00:02 /usr/lib/systemd/systemd-journald
+134412.764: [13:44:12]root       413     1  0 Mar23 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+134412.764: [13:44:12]root       516     2  0 Mar23 ?        00:00:00 [nfit]
+134412.764: [13:44:12]root       545     1  0 Mar23 ?        00:00:00 /sbin/auditd
+134412.764: [13:44:12]root       549     2  0 Mar23 ?        00:00:00 [rpciod]
+134412.765: [13:44:12]root       550     2  0 Mar23 ?        00:00:00 [xprtiod]
+134412.765: [13:44:12]root       573     1  0 Mar23 ?        00:00:02 /usr/lib/systemd/systemd-logind
+134412.765: [13:44:12]rpc        578     1  0 Mar23 ?        00:00:00 /sbin/rpcbind -w
+134412.765: [13:44:12]dbus       581     1  0 Mar23 ?        00:00:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+134412.765: [13:44:12]chrony     583     1  0 Mar23 ?        00:00:00 /usr/sbin/chronyd
+134412.765: [13:44:12]root       585     1  0 Mar23 ?        00:00:00 /usr/sbin/gssproxy -D
+134412.765: [13:44:12]polkitd    604     1  0 Mar23 ?        00:00:01 /usr/lib/polkit-1/polkitd --no-debug
+134412.766: [13:44:12]root       831     1  0 Mar23 ?        00:00:00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H iZbp1fvr0ojbaf96ys1erlZ eth0
+134412.766: [13:44:12]root       891     1  0 Mar23 ?        00:00:41 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+134412.766: [13:44:12]root       936     1  0 Mar23 ?        00:06:05 /usr/local/aegis/aegis_update/AliYunDunUpdate
+134412.766: [13:44:12]root       939     1  0 Mar23 ?        00:00:00 nginx: master process /usr/local/nginx/sbin/nginx
+134412.766: [13:44:12]nobody     941   939  0 Mar23 ?        00:06:01 nginx: worker process
+134412.766: [13:44:12]root       984     1  0 Mar23 ?        00:31:07 /usr/local/aegis/aegis_client/aegis_12_91/AliYunDun
+134412.766: [13:44:12]root      1040     1  0 Mar23 ?        00:00:01 /usr/libexec/postfix/master -w
+134412.766: [13:44:12]postfix   1042  1040  0 Mar23 ?        00:00:00 qmgr -l -t unix -u
+134412.767: [13:44:12]root      1065     1  0 Mar23 ?        00:00:00 /usr/sbin/sshd -D
+134412.767: [13:44:12]root      1068     1  0 Mar23 ?        00:09:34 /usr/local/share/aliyun-assist/aliyun-service.symlink
+134412.767: [13:44:12]root      1070     1  0 Mar23 ?        00:00:19 /usr/sbin/rsyslogd -n
+134412.767: [13:44:12]root      1071     1  0 Mar23 ?        00:00:00 /usr/sbin/atd -f
+134412.767: [13:44:12]root      1073     1  0 Mar23 ?        00:00:00 /usr/sbin/crond -n
+134412.767: [13:44:12]root      1078     1  0 Mar23 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+134412.767: [13:44:12]root      1079     1  0 Mar23 ttyS0    00:00:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+134412.768: [13:44:12]root      1148     1  0 Mar23 ?        00:57:34 /usr/local/aegis/aegis_client/aegis_12_91/AliYunDunMonitor
+134412.768: [13:44:12]root      8545     2  0 04:00 ?        00:00:01 [kworker/2:1]
+134412.768: [13:44:12]root      8685     2  0 05:40 ?        00:00:00 [kworker/3:0]
+134412.768: [13:44:12]root      8751     2  0 06:40 ?        00:00:00 [kworker/1:0]
+134412.768: [13:44:12]root      9173     2  0 12:00 ?        00:00:00 [kworker/0:0]
+134412.768: [13:44:12]root      9213     2  0 12:30 ?        00:00:00 [kworker/3:2]
+134412.768: [13:44:12]postfix   9221  1040  0 12:40 ?        00:00:00 pickup -l -t unix -u
+134412.768: [13:44:12]root      9253     2  0 13:00 ?        00:00:00 [kworker/0:2]
+134412.768: [13:44:12]root      9275     2  0 13:10 ?        00:00:00 [kworker/2:2]
+134412.768: [13:44:12]root      9298     2  0 13:30 ?        00:00:00 [kworker/1:2]
+134412.769: [13:44:12]root      9305     2  0 13:40 ?        00:00:00 [kworker/2:0]
+134412.769: [13:44:12]root      9308  1065  0 13:43 ?        00:00:00 sshd: root@pts/0
+134412.769: [13:44:12]root      9310  9308  0 13:43 pts/0    00:00:00 -bash
+134412.769: [13:44:12]root      9338  9310  0 13:44 pts/0    00:00:00 ps -ef
+134420.497: [13:44:20][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ps -ef | grep 9443
+134420.515: [13:44:20]root      9340  9310  0 13:44 pts/0    00:00:00 grep --color=auto 9443
+134424.186: [13:44:24][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ps -ef | grep frp
+134424.207: [13:44:24]root      9342  9310  0 13:44 pts/0    00:00:00 grep --color=auto frp
+134429.443: [13:44:29][root@iZbp1fvr0ojbaf96ys1erlZ ~]# systemctl status frps.service 
+134429.462: [13:44:29]● frps.service - FRP Server Service (frps)
+134429.462: [13:44:29]   Loaded: loaded (/etc/systemd/system/frps.service; disabled; vendor preset: disabled)
+134429.462: [13:44:29]   Active: inactive (dead)
+134432.323: [13:44:32]q[root@iZbp1fvr0ojbaf96ys1erlZ ~]# q^C
+134432.872: [13:44:32][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ^C
+134445.788: [13:44:45][root@iZbp1fvr0ojbaf96ys1erlZ ~]# systemctl restart frps.service 
+134448.816: [13:44:48][root@iZbp1fvr0ojbaf96ys1erlZ ~]# ss -tlnp
+134448.839: [13:44:48]State       Recv-Q Send-Q                                                                         Local Address:Port                                                                                        Peer Address:Port              
+134448.839: [13:44:48]LISTEN      0      128                                                                                        *:111                                                                                                    *:*                   134448.840: users:(("rpcbind",pid=578,fd=8))
+134448.840: [13:44:48]LISTEN      0      128                                                                                        *:80                                                                                                     *:*                   134448.840: users:(("nginx",pid=941,fd=5),("nginx",pid=939,fd=5))
+134448.840: [13:44:48]LISTEN      0      128                                                                                        *:22                                                                                                     *:*                   134448.840: users:(("sshd",pid=1065,fd=3))
+134448.841: [13:44:48]LISTEN      0      100                                                                                127.0.0.1:25                                                                                                     *:*                   134448.841: users:(("master",pid=1040,fd=13))
+134448.841: [13:44:48]LISTEN      0      128                                                                                        *:443                                                                                                    *:*                   134448.841: users:(("nginx",pid=941,fd=6),("nginx",pid=939,fd=6))
+134448.841: [13:44:48]LISTEN      0      128                                                                                     [::]:10443                                                                                               [::]:*                   134448.841: users:(("frps",pid=9370,fd=7))
+134448.842: [13:44:48]LISTEN      0      128                                                                                     [::]:111                                                                                                 [::]:*                   134448.842: users:(("rpcbind",pid=578,fd=11))
+134448.842: [13:44:48]LISTEN      0      128                                                                                     [::]:6000                                                                                                [::]:*                   134448.842: users:(("frps",pid=9370,fd=6))
+134448.842: [13:44:48]LISTEN      0      128                                                                                     [::]:22                                                                                                  [::]:*                   134448.842: users:(("sshd",pid=1065,fd=4))
+134448.843: [13:44:48]LISTEN      0      100                                                                                    [::1]:25                                                                                                  [::]:*                   134448.843: users:(("master",pid=1040,fd=14))
+134503.039: [13:45:03][root@iZbp1fvr0ojbaf96ys1erlZ ~]# cd /etc/systemd/
+134503.682: [13:45:03][root@iZbp1fvr0ojbaf96ys1erlZ systemd]# ll
+134503.704: [13:45:03]total 32
+134503.705: [13:45:03]-rw-r--r--   1 root root  720 Dec  7  2023 bootchart.conf
+134503.705: [13:45:03]-rw-r--r--   1 root root  615 Dec  7  2023 coredump.conf
+134503.705: [13:45:03]-rw-r--r--   1 root root  983 Dec  7  2023 journald.conf
+134503.705: [13:45:03]-rw-r--r--   1 root root  957 Dec  7  2023 logind.conf
+134503.705: [13:45:03]drwxr-xr-x. 13 root root 4096 Mar 21 00:30 system
+134503.705: [13:45:03]-rw-r--r--   1 root root 1552 Dec  7  2023 system.conf
+134503.705: [13:45:03]drwxr-xr-x.  2 root root 4096 Dec  7  2023 user
+134503.705: [13:45:03]-rw-r--r--   1 root root 1127 Dec  7  2023 user.conf
+134506.142: [13:45:06][root@iZbp1fvr0ojbaf96ys1erlZ systemd]# cd system/
+134507.009: [13:45:07][root@iZbp1fvr0ojbaf96ys1erlZ system]# ll
+134507.028: [13:45:07]total 60
+134507.028: [13:45:07]-rw-r--r--  1 root root  315 Mar 12  2025 aegis.service
+134507.028: [13:45:07]-rw-r--r--  1 root root  501 Mar 21 00:30 aliyun.service
+134507.029: [13:45:07]-rw-r--r--  1 root root  214 Jan 12 23:30 AssistDaemon.service
+134507.029: [13:45:07]drwxr-xr-x. 2 root root 4096 Jun 28  2024 basic.target.wants
+134507.029: [13:45:07]drwxr-xr-x  2 root root 4096 Jun 28  2024 cloud-init.target.wants
+134507.029: [13:45:07]lrwxrwxrwx. 1 root root   37 Jun 28  2024 default.target -> /lib/systemd/system/multi-user.target
+134507.029: [13:45:07]drwxr-xr-x. 2 root root 4096 Jun 28  2024 default.target.wants
+134507.029: [13:45:07]-rw-r--r--  1 root root  309 Jul 15  2025 frps.service
+134507.029: [13:45:07]drwxr-xr-x. 2 root root 4096 Jun 28  2024 getty.target.wants
+134507.030: [13:45:07]drwxr-xr-x  2 root root 4096 Mar 12  2025 graphical.target.wants
+134507.030: [13:45:07]drwxr-xr-x. 2 root root 4096 Jun 28  2024 local-fs.target.wants
+134507.030: [13:45:07]drwxr-xr-x. 2 root root 4096 Jan 12 23:30 multi-user.target.wants
+134507.030: [13:45:07]drwxr-xr-x  2 root root 4096 Jun 28  2024 remote-fs.target.wants
+134507.030: [13:45:07]drwxr-xr-x  2 root root 4096 Jun 28  2024 sockets.target.wants
+134507.030: [13:45:07]drwxr-xr-x. 2 root root 4096 Jun 28  2024 sysinit.target.wants
+134507.030: [13:45:07]drwxr-xr-x. 2 root root 4096 Jun 28  2024 system-update.target.wants
+134510.932: [13:45:10][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -tlnp
+134510.952: [13:45:10]State       Recv-Q Send-Q                                                                Local Address:Port                                                                               Peer Address:Port              
+134510.952: [13:45:10]LISTEN      0      128                                                                               *:111                                                                                           *:*                   134510.952: users:(("rpcbind",pid=578,fd=8))
+134510.952: [13:45:10]LISTEN      0      128                                                                               *:80                                                                                            *:*                   134510.952: users:(("nginx",pid=941,fd=5),("nginx",pid=939,fd=5))
+134510.953: [13:45:10]LISTEN      0      128                                                                               *:22                                                                                            *:*                   134510.953: users:(("sshd",pid=1065,fd=3))
+134510.953: [13:45:10]LISTEN      0      100                                                                       127.0.0.1:25                                                                                            *:*                   134510.953: users:(("master",pid=1040,fd=13))
+134510.953: [13:45:10]LISTEN      0      128                                                                               *:443                                                                                           *:*                   134510.953: users:(("nginx",pid=941,fd=6),("nginx",pid=939,fd=6))
+134510.954: [13:45:10]LISTEN      0      128                                                                            [::]:10622                                                                                      [::]:*                   134510.954: users:(("frps",pid=9370,fd=12))
+134510.954: [13:45:10]LISTEN      0      128                                                                            [::]:8800                                                                                       [::]:*                   134510.954: users:(("frps",pid=9370,fd=19))
+134510.954: [13:45:10]LISTEN      0      128                                                                            [::]:9090                                                                                       [::]:*                   134510.954: users:(("frps",pid=9370,fd=18))
+134510.955: [13:45:10]LISTEN      0      128                                                                            [::]:9443                                                                                       [::]:*                   134510.955: users:(("frps",pid=9370,fd=13))
+134510.955: [13:45:10]LISTEN      0      128                                                                            [::]:9000                                                                                       [::]:*                   134510.955: users:(("frps",pid=9370,fd=14))
+134510.955: [13:45:10]LISTEN      0      128                                                                            [::]:3306                                                                                       [::]:*                   134510.955: users:(("frps",pid=9370,fd=16))
+134510.956: [13:45:10]LISTEN      0      128                                                                            [::]:10122                                                                                      [::]:*                   134510.956: users:(("frps",pid=9370,fd=9))
+134510.956: [13:45:10]LISTEN      0      128                                                                            [::]:10443                                                                                      [::]:*                   134510.956: users:(("frps",pid=9370,fd=7))
+134510.956: [13:45:10]LISTEN      0      128                                                                            [::]:9999                                                                                       [::]:*                   134510.956: users:(("frps",pid=9370,fd=10))
+134510.957: [13:45:10]LISTEN      0      128                                                                            [::]:111                                                                                        [::]:*                   134510.957: users:(("rpcbind",pid=578,fd=11))
+134510.957: [13:45:10]LISTEN      0      128                                                                            [::]:6000                                                                                       [::]:*                   134510.957: users:(("frps",pid=9370,fd=6))
+134510.958: [13:45:10]LISTEN      0      128                                                                            [::]:1202                                                                                       [::]:*                   134510.958: users:(("frps",pid=9370,fd=15))
+134510.958: [13:45:10]LISTEN      0      128                                                                            [::]:19443                                                                                      [::]:*                   134510.958: users:(("frps",pid=9370,fd=20))
+134510.958: [13:45:10]LISTEN      0      128                                                                            [::]:1107                                                                                       [::]:*                   134510.958: users:(("frps",pid=9370,fd=17))
+134510.959: [13:45:10]LISTEN      0      128                                                                            [::]:22                                                                                         [::]:*                   134510.959: users:(("sshd",pid=1065,fd=4))
+134510.960: [13:45:10]LISTEN      0      128                                                                            [::]:3000                                                                                       [::]:*                   134510.960: users:(("frps",pid=9370,fd=11))
+134510.960: [13:45:10]LISTEN      0      100                                                                           [::1]:25                                                                                         [::]:*                   134510.960: users:(("master",pid=1040,fd=14))
+134547.159: [13:45:47][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134547.336: [13:45:47][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134547.488: [13:45:47][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134551.179: [13:45:51][root@iZbp1fvr0ojbaf96ys1erlZ system]# ll
+134551.200: [13:45:51]total 60
+134551.200: [13:45:51]-rw-r--r--  1 root root  315 Mar 12  2025 aegis.service
+134551.200: [13:45:51]-rw-r--r--  1 root root  501 Mar 21 00:30 aliyun.service
+134551.200: [13:45:51]-rw-r--r--  1 root root  214 Jan 12 23:30 AssistDaemon.service
+134551.200: [13:45:51]drwxr-xr-x. 2 root root 4096 Jun 28  2024 basic.target.wants
+134551.201: [13:45:51]drwxr-xr-x  2 root root 4096 Jun 28  2024 cloud-init.target.wants
+134551.201: [13:45:51]lrwxrwxrwx. 1 root root   37 Jun 28  2024 default.target -> /lib/systemd/system/multi-user.target
+134551.201: [13:45:51]drwxr-xr-x. 2 root root 4096 Jun 28  2024 default.target.wants
+134551.201: [13:45:51]-rw-r--r--  1 root root  309 Jul 15  2025 frps.service
+134551.201: [13:45:51]drwxr-xr-x. 2 root root 4096 Jun 28  2024 getty.target.wants
+134551.201: [13:45:51]drwxr-xr-x  2 root root 4096 Mar 12  2025 graphical.target.wants
+134551.202: [13:45:51]drwxr-xr-x. 2 root root 4096 Jun 28  2024 local-fs.target.wants
+134551.202: [13:45:51]drwxr-xr-x. 2 root root 4096 Jan 12 23:30 multi-user.target.wants
+134551.202: [13:45:51]drwxr-xr-x  2 root root 4096 Jun 28  2024 remote-fs.target.wants
+134551.202: [13:45:51]drwxr-xr-x  2 root root 4096 Jun 28  2024 sockets.target.wants
+134551.202: [13:45:51]drwxr-xr-x. 2 root root 4096 Jun 28  2024 sysinit.target.wants
+134551.202: [13:45:51]drwxr-xr-x. 2 root root 4096 Jun 28  2024 system-update.target.wants
+134733.446: [13:47:33][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134733.581: [13:47:33][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134733.699: [13:47:33][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134733.804: [13:47:33][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134736.236: [13:47:36][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -tlnp
+134736.258: [13:47:36]State       Recv-Q Send-Q                                                                Local Address:Port                                                                               Peer Address:Port              
+134736.258: [13:47:36]LISTEN      0      128                                                                               *:111                                                                                           *:*                   134736.259: users:(("rpcbind",pid=578,fd=8))
+134736.259: [13:47:36]LISTEN      0      128                                                                               *:80                                                                                            *:*                   134736.259: users:(("nginx",pid=941,fd=5),("nginx",pid=939,fd=5))
+134736.259: [13:47:36]LISTEN      0      128                                                                               *:22                                                                                            *:*                   134736.259: users:(("sshd",pid=1065,fd=3))
+134736.259: [13:47:36]LISTEN      0      100                                                                       127.0.0.1:25                                                                                            *:*                   134736.260: users:(("master",pid=1040,fd=13))
+134736.260: [13:47:36]LISTEN      0      128                                                                               *:443                                                                                           *:*                   134736.260: users:(("nginx",pid=941,fd=6),("nginx",pid=939,fd=6))
+134736.260: [13:47:36]LISTEN      0      128                                                                            [::]:10622                                                                                      [::]:*                   134736.261: users:(("frps",pid=9370,fd=12))
+134736.261: [13:47:36]LISTEN      0      128                                                                            [::]:8800                                                                                       [::]:*                   134736.261: users:(("frps",pid=9370,fd=19))
+134736.261: [13:47:36]LISTEN      0      128                                                                            [::]:9090                                                                                       [::]:*                   134736.261: users:(("frps",pid=9370,fd=18))
+134736.262: [13:47:36]LISTEN      0      128                                                                            [::]:9443                                                                                       [::]:*                   134736.262: users:(("frps",pid=9370,fd=13))
+134736.262: [13:47:36]LISTEN      0      128                                                                            [::]:9000                                                                                       [::]:*                   134736.262: users:(("frps",pid=9370,fd=14))
+134736.262: [13:47:36]LISTEN      0      128                                                                            [::]:3306                                                                                       [::]:*                   134736.263: users:(("frps",pid=9370,fd=16))
+134736.263: [13:47:36]LISTEN      0      128                                                                            [::]:10122                                                                                      [::]:*                   134736.263: users:(("frps",pid=9370,fd=9))
+134736.264: [13:47:36]LISTEN      0      128                                                                            [::]:10443                                                                                      [::]:*                   134736.264: users:(("frps",pid=9370,fd=7))
+134736.264: [13:47:36]LISTEN      0      128                                                                            [::]:9999                                                                                       [::]:*                   134736.264: users:(("frps",pid=9370,fd=10))
+134736.264: [13:47:36]LISTEN      0      128                                                                            [::]:111                                                                                        [::]:*                   134736.264: users:(("rpcbind",pid=578,fd=11))
+134736.264: [13:47:36]LISTEN      0      128                                                                            [::]:6000                                                                                       [::]:*                   134736.265: users:(("frps",pid=9370,fd=6))
+134736.265: [13:47:36]LISTEN      0      128                                                                            [::]:1202                                                                                       [::]:*                   134736.265: users:(("frps",pid=9370,fd=15))
+134736.265: [13:47:36]LISTEN      0      128                                                                            [::]:19443                                                                                      [::]:*                   134736.266: users:(("frps",pid=9370,fd=20))
+134736.266: [13:47:36]LISTEN      0      128                                                                            [::]:1107                                                                                       [::]:*                   134736.266: users:(("frps",pid=9370,fd=17))
+134736.266: [13:47:36]LISTEN      0      128                                                                            [::]:22                                                                                         [::]:*                   134736.266: users:(("sshd",pid=1065,fd=4))
+134736.267: [13:47:36]LISTEN      0      128                                                                            [::]:3000                                                                                       [::]:*                   134736.267: users:(("frps",pid=9370,fd=11))
+134736.267: [13:47:36]LISTEN      0      100                                                                           [::1]:25                                                                                         [::]:*                   134736.267: users:(("master",pid=1040,fd=14))
+134740.995: [13:47:40][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -lnp
+134741.015: [13:47:41]Netid State      Recv-Q Send-Q                                                              Local Address:Port                                                                             Peer Address:Port              
+134741.016: [13:47:41]nl    UNCONN     0      0                                                                               0:0                                                                                            *                   
+134741.016: [13:47:41]nl    UNCONN     768    0                                                                               4:0                                                                                            *                   
+134741.016: [13:47:41]nl    UNCONN     4352   0                                                                               4:9385                                                                                         *                   
+134741.017: [13:47:41]nl    UNCONN     0      0                                                                               6:0                                                                                            *                   
+134741.017: [13:47:41]nl    UNCONN     0      0                                                                               7:0                                                                                            *                   
+134741.017: [13:47:41]nl    UNCONN     0      0                                                                               9:545                                                                                          *                   
+134741.018: [13:47:41]nl    UNCONN     0      0                                                                               9:1                                                                                            *                   
+134741.018: [13:47:41]nl    UNCONN     0      0                                                                               9:0                                                                                            *                   
+134741.019: [13:47:41]nl    UNCONN     0      0                                                                              10:0                                                                                            *                   
+134741.019: [13:47:41]nl    UNCONN     0      0                                                                              11:0                                                                                            *                   
+134741.019: [13:47:41]nl    UNCONN     0      0                                                                              12:0                                                                                            *                   
+134741.019: [13:47:41]nl    UNCONN     0      0                                                                              15:-4113                                                                                        *                   
+134741.020: [13:47:41]nl    UNCONN     0      0                                                                              15:413                                                                                          *                   
+134741.020: [13:47:41]nl    UNCONN     0      0                                                                              15:-4131                                                                                        *                   
+134741.020: [13:47:41]nl    UNCONN     0      0                                                                              15:0                                                                                            *                   
+134741.021: [13:47:41]nl    UNCONN     0      0                                                                              15:-4130                                                                                        *                   
+134741.021: [13:47:41]nl    UNCONN     0      0                                                                              15:1                                                                                            *                   
+134741.021: [13:47:41]nl    UNCONN     0      0                                                                              15:573                                                                                          *                   
+134741.021: [13:47:41]nl    UNCONN     0      0                                                                              15:891                                                                                          *                   
+134741.022: [13:47:41]nl    UNCONN     0      0                                                                              15:-4129                                                                                        *                   
+134741.022: [13:47:41]nl    UNCONN     0      0                                                                              15:891                                                                                          *                   
+134741.022: [13:47:41]nl    UNCONN     0      0                                                                              15:-4131                                                                                        *                   
+134741.023: [13:47:41]nl    UNCONN     0      0                                                                              15:-4130                                                                                        *                   
+134741.023: [13:47:41]nl    UNCONN     0      0                                                                              15:-4129                                                                                        *                   
+134741.023: [13:47:41]nl    UNCONN     0      0                                                                              15:573                                                                                          *                   
+134741.023: [13:47:41]nl    UNCONN     0      0                                                                              15:-4113                                                                                        *                   
+134741.024: [13:47:41]nl    UNCONN     0      0                                                                              15:1                                                                                            *                   
+134741.024: [13:47:41]nl    UNCONN     0      0                                                                              16:0                                                                                            *                   
+134741.024: [13:47:41]nl    UNCONN     0      0                                                                              18:0                                                                                            *                   
+134741.034: [13:47:41]p_raw UNCONN     0      0                                                                               *:eth0                                                                                         *                   134741.034:  users:(("dhclient",pid=831,fd=5))
+134741.035: [13:47:41]u_dgr UNCONN     0      0                                                             /run/systemd/notify 789                                                                                         * 0                  134741.035:  users:(("systemd",pid=1,fd=23))
+134741.035: [13:47:41]u_dgr UNCONN     0      0                                                      /run/systemd/cgroups-agent 791                                                                                         * 0                  134741.035:  users:(("systemd",pid=1,fd=24))
+134741.035: [13:47:41]u_str LISTEN     0      128                                                   /run/systemd/journal/stdout 803                                                                                         * 0                  134741.035:  users:(("systemd-journal",pid=386,fd=3),("systemd",pid=1,fd=27))
+134741.035: [13:47:41]u_dgr UNCONN     0      0                                                     /run/systemd/journal/socket 806                                                                                         * 0                  134741.036:  users:(("systemd-journal",pid=386,fd=4),("systemd",pid=1,fd=28))
+134741.036: [13:47:41]u_dgr UNCONN     0      0                                                                        /dev/log 808                                                                                         * 0                  134741.036:  users:(("systemd-journal",pid=386,fd=5),("systemd",pid=1,fd=29))
+134741.036: [13:47:41]u_str LISTEN     0      100                                                                 public/pickup 14210                                                                                       * 0                  134741.036:  users:(("pickup",pid=9221,fd=6),("master",pid=1040,fd=18))
+134741.037: [13:47:41]u_str LISTEN     0      100                                                                public/cleanup 14214                                                                                       * 0                  134741.037:  users:(("master",pid=1040,fd=22))
+134741.037: [13:47:41]u_str LISTEN     0      100                                                                   public/qmgr 14217                                                                                       * 0                  134741.037:  users:(("qmgr",pid=1042,fd=6),("master",pid=1040,fd=25))
+134741.037: [13:47:41]u_str LISTEN     0      100                                                                private/tlsmgr 14221                                                                                       * 0                  134741.037:  users:(("master",pid=1040,fd=29))
+134741.037: [13:47:41]u_str LISTEN     0      100                                                               private/rewrite 14224                                                                                       * 0                  134741.037:  users:(("master",pid=1040,fd=32))
+134741.038: [13:47:41]u_str LISTEN     0      100                                                                private/bounce 14227                                                                                       * 0                  134741.038:  users:(("master",pid=1040,fd=35))
+134741.038: [13:47:41]u_str LISTEN     0      100                                                                 private/defer 14230                                                                                       * 0                  134741.038:  users:(("master",pid=1040,fd=38))
+134741.038: [13:47:41]u_str LISTEN     0      100                                                                 private/trace 14233                                                                                       * 0                  134741.038:  users:(("master",pid=1040,fd=41))
+134741.039: [13:47:41]u_str LISTEN     0      100                                                                private/verify 14236                                                                                       * 0                  134741.039:  users:(("master",pid=1040,fd=44))
+134741.039: [13:47:41]u_str LISTEN     0      100                                                                  public/flush 14239                                                                                       * 0                  134741.039:  users:(("master",pid=1040,fd=47))
+134741.039: [13:47:41]u_str LISTEN     0      100                                                              private/proxymap 14242                                                                                       * 0                  134741.039:  users:(("master",pid=1040,fd=50))
+134741.040: [13:47:41]u_str LISTEN     0      100                                                            private/proxywrite 14245                                                                                       * 0                  134741.040:  users:(("master",pid=1040,fd=53))
+134741.040: [13:47:41]u_str LISTEN     0      100                                                                  private/smtp 14248                                                                                       * 0                  134741.040:  users:(("master",pid=1040,fd=56))
+134741.040: [13:47:41]u_str LISTEN     0      100                                                                 private/relay 14251                                                                                       * 0                  134741.040:  users:(("master",pid=1040,fd=59))
+134741.040: [13:47:41]u_str LISTEN     0      100                                                                  public/showq 14254                                                                                       * 0                  134741.041:  users:(("master",pid=1040,fd=62))
+134741.041: [13:47:41]u_str LISTEN     0      100                                                                 private/error 14257                                                                                       * 0                  134741.041:  users:(("master",pid=1040,fd=65))
+134741.041: [13:47:41]u_str LISTEN     0      100                                                                 private/retry 14260                                                                                       * 0                  134741.041:  users:(("master",pid=1040,fd=68))
+134741.041: [13:47:41]u_str LISTEN     0      100                                                               private/discard 14263                                                                                       * 0                  134741.041:  users:(("master",pid=1040,fd=71))
+134741.042: [13:47:41]u_str LISTEN     0      100                                                                 private/local 14266                                                                                       * 0                  134741.042:  users:(("master",pid=1040,fd=74))
+134741.042: [13:47:41]u_str LISTEN     0      100                                                               private/virtual 14269                                                                                       * 0                  134741.042:  users:(("master",pid=1040,fd=77))
+134741.042: [13:47:41]u_str LISTEN     0      100                                                                  private/lmtp 14272                                                                                       * 0                  134741.042:  users:(("master",pid=1040,fd=80))
+134741.043: [13:47:41]u_str LISTEN     0      100                                                                 private/anvil 14275                                                                                       * 0                  134741.043:  users:(("master",pid=1040,fd=83))
+134741.043: [13:47:41]u_str LISTEN     0      100                                                                private/scache 14278                                                                                       * 0                  134741.043:  users:(("master",pid=1040,fd=86))
+134741.043: [13:47:41]u_str LISTEN     0      10                                                 /var/lib/gssproxy/default.sock 13467                                                                                       * 0                  134741.043:  users:(("gssproxy",pid=585,fd=8))
+134741.043: [13:47:41]u_str LISTEN     0      128                                                          /run/systemd/private 10846                                                                                       * 0                  134741.043:  users:(("systemd",pid=1,fd=12))
+134741.044: [13:47:41]u_seq LISTEN     0      128                                                             /run/udev/control 10876                                                                                       * 0                  134741.044:  users:(("systemd-udevd",pid=413,fd=4),("systemd",pid=1,fd=20))
+134741.044: [13:47:41]u_dgr UNCONN     0      0                                                          /run/systemd/shutdownd 10889                                                                                       * 0                  134741.044:  users:(("systemd",pid=1,fd=25))
+134741.044: [13:47:41]u_dgr UNCONN     0      0                                                    /var/run/chrony/chronyd.sock 13457                                                                                       * 0                  134741.044:  users:(("chronyd",pid=583,fd=7))
+134741.045: [13:47:41]u_str LISTEN     0      20            /usr/local/aegis/Aegis-<Guid(5A2C30A2-A87D-490A-9281-6765EDAD7CBA)> 14147                                                                                       * 0                  134741.045:  users:(("AliYunDun",pid=984,fd=10))
+134741.045: [13:47:41]u_str LISTEN     0      10                                                             /run/gssproxy.sock 13468                                                                                       * 0                  134741.045:  users:(("gssproxy",pid=585,fd=9))
+134741.045: [13:47:41]u_str LISTEN     0      128                                                   /run/dbus/system_bus_socket 12243                                                                                       * 0                  134741.045:  users:(("dbus-daemon",pid=581,fd=3),("systemd",pid=1,fd=34))
+134741.046: [13:47:41]u_str LISTEN     0      128                                                         /var/run/rpcbind.sock 12246                                                                                       * 0                  134741.046:  users:(("rpcbind",pid=578,fd=3),("systemd",pid=1,fd=35))
+134741.046: [13:47:41]u_str LISTEN     0      128                                               /tmp/aliyun_assist_service.sock 16987                                                                                       * 0                  134741.046:  users:(("aliyun-service.",pid=1068,fd=18))
+134741.046: [13:47:41]u_dgr UNCONN     0      0                                                                               * 10935                                                                                       * 789                134741.046:  users:(("systemd-journal",pid=386,fd=11))
+134741.046: [13:47:41]u_dgr UNCONN     0      0                                                                               * 18465                                                                                       * 808                134741.046:  users:(("rsyslogd",pid=1070,fd=4))
+134741.047: [13:47:41]u_dgr UNCONN     0      0                                                                               * 10025                                                                                       * 808                134741.047:  users:(("dbus-daemon",pid=581,fd=11))
+134741.047: [13:47:41]u_dgr UNCONN     0      0                                                                               * 9725                                                                                        * 9724               134741.047:  users:(("systemd-udevd",pid=413,fd=10))
+134741.047: [13:47:41]u_dgr UNCONN     0      0                                                                               * 12222                                                                                       * 808                134741.047:  users:(("auditd",pid=545,fd=8))
+134741.047: [13:47:41]u_dgr UNCONN     0      0                                                                               * 17525                                                                                       * 808                134741.048:  users:(("crond",pid=1073,fd=4))
+134741.048: [13:47:41]u_dgr UNCONN     0      0                                                                               * 11821                                                                                       * 806                134741.048:  users:(("systemd",pid=1,fd=32))
+134741.048: [13:47:41]u_dgr UNCONN     0      0                                                                               * 16074                                                                                       * 808                134741.048:  users:(("master",pid=1040,fd=3))
+134741.048: [13:47:41]u_dgr UNCONN     0      0                                                                               * 816757                                                                                      * 808                134741.048:  users:(("pickup",pid=9221,fd=7))
+134741.057: [13:47:41]u_dgr UNCONN     0      0                                                                               * 9724                                                                                        * 9725               134741.057:  users:(("systemd-udevd",pid=413,fd=9))
+134741.057: [13:47:41]u_dgr UNCONN     0      0                                                                               * 14463                                                                                       * 808                134741.057:  users:(("gssproxy",pid=585,fd=3))
+134741.057: [13:47:41]u_dgr UNCONN     0      0                                                                               * 13051                                                                                       * 808                134741.057:  users:(("chronyd",pid=583,fd=3))
+134741.058: [13:47:41]u_dgr UNCONN     0      0                                                                               * 12500                                                                                       * 806                134741.058:  users:(("systemd-udevd",pid=413,fd=5))
+134741.058: [13:47:41]u_dgr UNCONN     0      0                                                                               * 10093                                                                                       * 808                134741.058:  users:(("polkitd",pid=604,fd=11))
+134741.058: [13:47:41]u_dgr UNCONN     0      0                                                                               * 828111                                                                                      * 808                134741.058:  users:(("sshd",pid=9308,fd=4))
+134741.059: [13:47:41]u_dgr UNCONN     0      0                                                                               * 13429                                                                                       * 806                134741.059:  users:(("systemd-logind",pid=573,fd=3))
+134741.059: [13:47:41]u_dgr UNCONN     0      0                                                                               * 16085                                                                                       * 808                134741.059:  users:(("qmgr",pid=1042,fd=7))
+134741.059: [13:47:41]u_dgr UNCONN     0      0                                                                               * 15632                                                                                       * 808                134741.059:  users:(("dhclient",pid=831,fd=3))
+134741.060: [13:47:41]udp   UNCONN     0      0                                                                               *:68                                                                                          *:*                  134741.060:  users:(("dhclient",pid=831,fd=6))
+134741.060: [13:47:41]udp   UNCONN     0      0                                                                               *:111                                                                                         *:*                  134741.060:  users:(("rpcbind",pid=578,fd=6))
+134741.060: [13:47:41]udp   UNCONN     0      0                                                                       127.0.0.1:323                                                                                         *:*                  134741.060:  users:(("chronyd",pid=583,fd=5))
+134741.060: [13:47:41]udp   UNCONN     0      0                                                                               *:747                                                                                         *:*                  134741.060:  users:(("rpcbind",pid=578,fd=7))
+134741.061: [13:47:41]udp   UNCONN     0      0                                                                            [::]:111                                                                                      [::]:*                  134741.061:  users:(("rpcbind",pid=578,fd=9))
+134741.061: [13:47:41]udp   UNCONN     0      0                                                                           [::1]:323                                                                                      [::]:*                  134741.061:  users:(("chronyd",pid=583,fd=6))
+134741.061: [13:47:41]udp   UNCONN     0      0                                                                            [::]:747                                                                                      [::]:*                  134741.061:  users:(("rpcbind",pid=578,fd=10))
+134741.061: [13:47:41]tcp   LISTEN     0      128                                                                             *:111                                                                                         *:*                  134741.061:  users:(("rpcbind",pid=578,fd=8))
+134741.062: [13:47:41]tcp   LISTEN     0      128                                                                             *:80                                                                                          *:*                  134741.062:  users:(("nginx",pid=941,fd=5),("nginx",pid=939,fd=5))
+134741.062: [13:47:41]tcp   LISTEN     0      128                                                                             *:22                                                                                          *:*                  134741.062:  users:(("sshd",pid=1065,fd=3))
+134741.062: [13:47:41]tcp   LISTEN     0      100                                                                     127.0.0.1:25                                                                                          *:*                  134741.062:  users:(("master",pid=1040,fd=13))
+134741.062: [13:47:41]tcp   LISTEN     0      128                                                                             *:443                                                                                         *:*                  134741.062:  users:(("nginx",pid=941,fd=6),("nginx",pid=939,fd=6))
+134741.063: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:10622                                                                                    [::]:*                  134741.063:  users:(("frps",pid=9370,fd=12))
+134741.063: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:8800                                                                                     [::]:*                  134741.063:  users:(("frps",pid=9370,fd=19))
+134741.063: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:9090                                                                                     [::]:*                  134741.063:  users:(("frps",pid=9370,fd=18))
+134741.063: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:9443                                                                                     [::]:*                  134741.063:  users:(("frps",pid=9370,fd=13))
+134741.064: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:9000                                                                                     [::]:*                  134741.064:  users:(("frps",pid=9370,fd=14))
+134741.064: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:3306                                                                                     [::]:*                  134741.064:  users:(("frps",pid=9370,fd=16))
+134741.064: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:10122                                                                                    [::]:*                  134741.064:  users:(("frps",pid=9370,fd=9))
+134741.064: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:10443                                                                                    [::]:*                  134741.064:  users:(("frps",pid=9370,fd=7))
+134741.065: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:9999                                                                                     [::]:*                  134741.065:  users:(("frps",pid=9370,fd=10))
+134741.065: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:111                                                                                      [::]:*                  134741.065:  users:(("rpcbind",pid=578,fd=11))
+134741.065: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:6000                                                                                     [::]:*                  134741.065:  users:(("frps",pid=9370,fd=6))
+134741.065: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:1202                                                                                     [::]:*                  134741.065:  users:(("frps",pid=9370,fd=15))
+134741.066: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:19443                                                                                    [::]:*                  134741.066:  users:(("frps",pid=9370,fd=20))
+134741.066: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:1107                                                                                     [::]:*                  134741.066:  users:(("frps",pid=9370,fd=17))
+134741.066: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:22                                                                                       [::]:*                  134741.066:  users:(("sshd",pid=1065,fd=4))
+134741.066: [13:47:41]tcp   LISTEN     0      128                                                                          [::]:3000                                                                                     [::]:*                  134741.066:  users:(("frps",pid=9370,fd=11))
+134741.066: [13:47:41]tcp   LISTEN     0      100                                                                         [::1]:25                                                                                       [::]:*                  134741.067:  users:(("master",pid=1040,fd=14))
+134744.727: [13:47:44][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -lnp | grep 9443
+134744.749: [13:47:44]tcp    LISTEN     0      128    [::]:9443               [::]:*                   users:(("frps",pid=9370,fd=13))
+134744.749: [13:47:44]tcp    LISTEN     0      128    [::]:19443              [::]:*                   users:(("frps",pid=9370,fd=20))
+134750.249: [13:47:50][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -tlnp
+134750.271: [13:47:50]State       Recv-Q Send-Q                                                                Local Address:Port                                                                               Peer Address:Port              
+134750.272: [13:47:50]LISTEN      0      128                                                                               *:111                                                                                           *:*                   134750.272: users:(("rpcbind",pid=578,fd=8))
+134750.272: [13:47:50]LISTEN      0      128                                                                               *:80                                                                                            *:*                   134750.272: users:(("nginx",pid=941,fd=5),("nginx",pid=939,fd=5))
+134750.273: [13:47:50]LISTEN      0      128                                                                               *:22                                                                                            *:*                   134750.273: users:(("sshd",pid=1065,fd=3))
+134750.273: [13:47:50]LISTEN      0      100                                                                       127.0.0.1:25                                                                                            *:*                   134750.273: users:(("master",pid=1040,fd=13))
+134750.273: [13:47:50]LISTEN      0      128                                                                               *:443                                                                                           *:*                   134750.274: users:(("nginx",pid=941,fd=6),("nginx",pid=939,fd=6))
+134750.274: [13:47:50]LISTEN      0      128                                                                            [::]:10622                                                                                      [::]:*                   134750.274: users:(("frps",pid=9370,fd=12))
+134750.274: [13:47:50]LISTEN      0      128                                                                            [::]:8800                                                                                       [::]:*                   134750.274: users:(("frps",pid=9370,fd=19))
+134750.275: [13:47:50]LISTEN      0      128                                                                            [::]:9090                                                                                       [::]:*                   134750.275: users:(("frps",pid=9370,fd=18))
+134750.275: [13:47:50]LISTEN      0      128                                                                            [::]:9443                                                                                       [::]:*                   134750.275: users:(("frps",pid=9370,fd=13))
+134750.276: [13:47:50]LISTEN      0      128                                                                            [::]:9000                                                                                       [::]:*                   134750.276: users:(("frps",pid=9370,fd=14))
+134750.276: [13:47:50]LISTEN      0      128                                                                            [::]:3306                                                                                       [::]:*                   134750.276: users:(("frps",pid=9370,fd=16))
+134750.277: [13:47:50]LISTEN      0      128                                                                            [::]:10122                                                                                      [::]:*                   134750.277: users:(("frps",pid=9370,fd=9))
+134750.277: [13:47:50]LISTEN      0      128                                                                            [::]:10443                                                                                      [::]:*                   134750.277: users:(("frps",pid=9370,fd=7))
+134750.277: [13:47:50]LISTEN      0      128                                                                            [::]:9999                                                                                       [::]:*                   134750.277: users:(("frps",pid=9370,fd=10))
+134750.278: [13:47:50]LISTEN      0      128                                                                            [::]:111                                                                                        [::]:*                   134750.278: users:(("rpcbind",pid=578,fd=11))
+134750.278: [13:47:50]LISTEN      0      128                                                                            [::]:6000                                                                                       [::]:*                   134750.278: users:(("frps",pid=9370,fd=6))
+134750.279: [13:47:50]LISTEN      0      128                                                                            [::]:1202                                                                                       [::]:*                   134750.279: users:(("frps",pid=9370,fd=15))
+134750.279: [13:47:50]LISTEN      0      128                                                                            [::]:19443                                                                                      [::]:*                   134750.279: users:(("frps",pid=9370,fd=20))
+134750.279: [13:47:50]LISTEN      0      128                                                                            [::]:1107                                                                                       [::]:*                   134750.279: users:(("frps",pid=9370,fd=17))
+134750.280: [13:47:50]LISTEN      0      128                                                                            [::]:22                                                                                         [::]:*                   134750.280: users:(("sshd",pid=1065,fd=4))
+134750.280: [13:47:50]LISTEN      0      128                                                                            [::]:3000                                                                                       [::]:*                   134750.280: users:(("frps",pid=9370,fd=11))
+134750.280: [13:47:50]LISTEN      0      100                                                                           [::1]:25                                                                                         [::]:*                   134750.281: users:(("master",pid=1040,fd=14))
+134753.423: [13:47:53][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134753.607: [13:47:53][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134753.729: [13:47:53][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134758.295: [13:47:58][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -tlnp | grep 9443
+134758.318: [13:47:58]LISTEN     0      128       [::]:9443                  [::]:*                   users:(("frps",pid=9370,fd=13))
+134758.318: [13:47:58]LISTEN     0      128       [::]:19443                 [::]:*                   users:(("frps",pid=9370,fd=20))
+134809.376: [13:48:09][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134809.507: [13:48:09][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134809.675: [13:48:09][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134809.763: [13:48:09][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+134809.898: [13:48:09][root@iZbp1fvr0ojbaf96ys1erlZ system]# 
+135422.074: [13:54:22][root@iZbp1fvr0ojbaf96ys1erlZ system]# ss -tlnp | grep 19443
+135422.095: [13:54:22]LISTEN     0      128       [::]:19443                 [::]:*                   users:(("frps",pid=9370,fd=20))
+193315.036: [19:33:15][202603118.31.115.234-Authoring服务器-阿里云-FRPS-19:33:15]
+193315.133: [19:33:15]Last failed login: Fri Mar 27 15:06:51 CST 2026 from 8.222.180.151 on ssh:notty
+193315.133: [19:33:15]There was 1 failed login attempt since the last successful login.
+193315.134: [19:33:15]Last login: Fri Mar 27 13:43:56 2026 from 223.107.68.194
+193315.134: [19:33:15]
+193315.134: [19:33:15]Welcome to Alibaba Cloud Elastic Compute Service !
+193315.134: [19:33:15]
+203316.054: [20:33:16][202603118.31.115.234-Authoring服务器-阿里云-FRPS-20:33:16]
+203316.155: [20:33:16]Last login: Fri Mar 27 19:33:15 2026 from 223.107.68.194
+203316.155: [20:33:16]
+203316.156: [20:33:16]Welcome to Alibaba Cloud Elastic Compute Service !
+203316.156: [20:33:16]

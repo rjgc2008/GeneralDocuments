@@ -1,0 +1,85 @@
+﻿140004.842: [14:00:04][202604105-172.16.101.43-14:00:04]
+140004.865: [14:00:04]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+140004.865: [14:00:04]
+140004.865: [14:00:04] * Documentation:  https://help.ubuntu.com
+140004.865: [14:00:04] * Management:     https://landscape.canonical.com
+140004.865: [14:00:04] * Support:        https://ubuntu.com/pro
+140004.865: [14:00:04]
+140004.865: [14:00:04]扩展安全维护（ESM）Applications 未启用。
+140004.865: [14:00:04]
+140004.865: [14:00:04]196 更新可以立即应用。
+140004.865: [14:00:04]要查看这些附加更新，请运行：apt list --upgradable
+140004.865: [14:00:04]
+140004.865: [14:00:04]启用 ESM Apps 来获取未来的额外安全更新
+140004.865: [14:00:04]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+140004.865: [14:00:04]
+140004.865: [14:00:04]*** 需要重启系统 ***
+140004.866: [14:00:04]Last login: Wed Apr  1 11:51:45 2026 from 192.168.12.43
+140007.485: [14:00:07]root@user:~# ip a
+140007.485: [14:00:07]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+140007.485: [14:00:07]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+140007.485: [14:00:07]    inet 127.0.0.1/8 scope host lo
+140007.485: [14:00:07]       valid_lft forever preferred_lft forever
+140007.485: [14:00:07]    inet6 ::1/128 scope host noprefixroute 
+140007.485: [14:00:07]       valid_lft forever preferred_lft forever
+140007.485: [14:00:07]2: ens1f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+140007.485: [14:00:07]    link/ether b8:59:9f:3b:35:ae brd ff:ff:ff:ff:ff:ff
+140007.485: [14:00:07]    altname enp49s0f0np0
+140007.485: [14:00:07]3: ens1f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+140007.486: [14:00:07]    link/ether b8:59:9f:3b:35:af brd ff:ff:ff:ff:ff:ff
+140007.486: [14:00:07]    altname enp49s0f1np1
+140007.486: [14:00:07]4: ens4f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+140007.486: [14:00:07]    link/ether 0c:42:a1:45:5f:f4 brd ff:ff:ff:ff:ff:ff
+140007.493: [14:00:07]    altname enp152s0f0np0
+140007.493: [14:00:07]    inet 172.16.101.43/24 brd 172.16.101.255 scope global ens4f0np0
+140007.493: [14:00:07]       valid_lft forever preferred_lft forever
+140007.494: [14:00:07]    inet6 fe80::e42:a1ff:fe45:5ff4/64 scope link 
+140007.494: [14:00:07]       valid_lft forever preferred_lft forever
+140007.494: [14:00:07]    inet6 fe80::6789:ae7e:32bd:3d79/64 scope link noprefixroute 
+140007.494: [14:00:07]       valid_lft forever preferred_lft forever
+140007.494: [14:00:07]5: ens4f1np1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+140007.494: [14:00:07]    link/ether 0c:42:a1:45:5f:f5 brd ff:ff:ff:ff:ff:ff
+140007.495: [14:00:07]    altname enp152s0f1np1
+140007.495: [14:00:07]    inet 10.0.0.43/24 brd 10.0.0.255 scope global ens4f1np1
+140007.495: [14:00:07]       valid_lft forever preferred_lft forever
+140007.495: [14:00:07]    inet6 fe80::e42:a1ff:fe45:5ff5/64 scope link 
+140007.495: [14:00:07]       valid_lft forever preferred_lft forever
+140007.496: [14:00:07]    inet6 fe80::5bb7:a38e:3ccc:9b1e/64 scope link noprefixroute 
+140007.496: [14:00:07]       valid_lft forever preferred_lft forever
+140007.502: [14:00:07]6: ens5f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+140007.502: [14:00:07]    link/ether 98:03:9b:7d:2f:96 brd ff:ff:ff:ff:ff:ff
+140007.502: [14:00:07]    altname enp177s0f0np0
+140007.502: [14:00:07]7: ens5f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+140007.502: [14:00:07]    link/ether 98:03:9b:7d:2f:97 brd ff:ff:ff:ff:ff:ff
+140007.502: [14:00:07]    altname enp177s0f1np1
+140007.502: [14:00:07]8: ens6f0np0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+140007.502: [14:00:07]    link/ether b8:59:9f:3b:33:ce brd ff:ff:ff:ff:ff:ff
+140007.502: [14:00:07]    altname enp178s0f0np0
+140007.502: [14:00:07]9: ens6f1np1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+140007.502: [14:00:07]    link/ether b8:59:9f:3b:33:cf brd ff:ff:ff:ff:ff:ff
+140007.502: [14:00:07]    altname enp178s0f1np1
+140007.502: [14:00:07]10: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+140007.502: [14:00:07]    link/ether 22:2b:20:01:ba:26 brd ff:ff:ff:ff:ff:ff
+140007.503: [14:00:07]    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+140007.503: [14:00:07]       valid_lft forever preferred_lft forever
+152645.563: [15:26:45]root@user:~# 
+152645.566: [15:26:45]Broadcast message from root@user on pts/4 (Wed 2026-04-01 15:26:45 CST):
+152645.566: [15:26:45]
+152645.566: [15:26:45]The system will reboot now!
+152645.566: [15:26:45]
+152833.242: [15:28:33][202604105-172.16.101.43-15:28:33]
+152833.297: [15:28:33]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.17.0-19-generic x86_64)
+152833.297: [15:28:33]
+152833.297: [15:28:33] * Documentation:  https://help.ubuntu.com
+152833.297: [15:28:33] * Management:     https://landscape.canonical.com
+152833.298: [15:28:33] * Support:        https://ubuntu.com/pro
+152833.298: [15:28:33]
+152833.298: [15:28:33]扩展安全维护（ESM）Applications 未启用。
+152833.298: [15:28:33]
+152833.298: [15:28:33]196 更新可以立即应用。
+152833.298: [15:28:33]要查看这些附加更新，请运行：apt list --upgradable
+152833.298: [15:28:33]
+152833.299: [15:28:33]启用 ESM Apps 来获取未来的额外安全更新
+152833.299: [15:28:33]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+152833.299: [15:28:33]
+152833.299: [15:28:33]Last login: Wed Apr  1 15:19:59 2026 from 192.168.12.43

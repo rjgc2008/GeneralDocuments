@@ -1,0 +1,95 @@
+﻿141535.805: [14:15:35][202603104-172.16.101.44-14:15:35]
+141535.828: [14:15:35]Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.11.0-17-generic x86_64)
+141535.828: [14:15:35]
+141535.828: [14:15:35] * Documentation:  https://help.ubuntu.com
+141535.828: [14:15:35] * Management:     https://landscape.canonical.com
+141535.828: [14:15:35] * Support:        https://ubuntu.com/pro
+141535.828: [14:15:35]
+141535.828: [14:15:35]扩展安全维护（ESM）Applications 未启用。
+141535.828: [14:15:35]
+141535.828: [14:15:35]11 更新可以立即应用。
+141535.828: [14:15:35]这些更新中有 3 个是标准安全更新。
+141535.828: [14:15:35]要查看这些附加更新，请运行：apt list --upgradable
+141535.828: [14:15:35]
+141535.828: [14:15:35]启用 ESM Apps 来获取未来的额外安全更新
+141535.828: [14:15:35]请参见 https://ubuntu.com/esm 或者运行: sudo pro status
+141535.828: [14:15:35]
+141535.828: [14:15:35]*** 需要重启系统 ***
+141535.828: [14:15:35]Last login: Wed Mar 25 09:55:08 2026 from 192.168.6.173
+141549.351: [14:15:49]root@user:~# lscpu
+141549.399: [14:15:49]架构：                    x86_64
+141549.400: [14:15:49]  CPU 运行模式：          32-bit, 64-bit
+141549.400: [14:15:49]  Address sizes:          46 bits physical, 57 bits virtual
+141549.400: [14:15:49]  字节序：                Little Endian
+141549.401: [14:15:49]CPU:                      152
+141549.401: [14:15:49]  在线 CPU 列表：         0-151
+141549.401: [14:15:49]厂商 ID：                 GenuineIntel
+141549.401: [14:15:49]  BIOS 厂商 ID：          Intel(R) Corporation
+141549.402: [14:15:49]  型号名称：              Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz
+141549.402: [14:15:49]    BIOS 型号名称：       Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz  CPU @ 2.4GHz
+141549.402: [14:15:49]    BIOS CPU family:      179
+141549.402: [14:15:49]    CPU 系列：            6
+141549.402: [14:15:49]    型号：                106
+141549.402: [14:15:49]    每个核的线程数：      2
+141549.402: [14:15:49]    每个座的核数：        38
+141549.402: [14:15:49]    座：                  2
+141549.402: [14:15:49]    步进：                6
+141549.403: [14:15:49]    CPU(s) scaling MHz:   26%
+141549.403: [14:15:49]    CPU 最大 MHz：        3400.0000
+141549.403: [14:15:49]    CPU 最小 MHz：        800.0000
+141549.403: [14:15:49]    BogoMIPS：            4800.00
+141549.404: [14:15:49]    标记：                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid 
+141549.405: [14:15:49]                          aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 ssbd mba
+141549.405: [14:15:49]                           ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw av
+141549.406: [14:15:49]                          x512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg 
+141549.406: [14:15:49]                          avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+141549.407: [14:15:49]Virtualization features:  
+141549.407: [14:15:49]  虚拟化：                VT-x
+141549.407: [14:15:49]Caches (sum of all):      
+141549.407: [14:15:49]  L1d:                    3.6 MiB (76 instances)
+141549.407: [14:15:49]  L1i:                    2.4 MiB (76 instances)
+141549.407: [14:15:49]  L2:                     95 MiB (76 instances)
+141549.407: [14:15:49]  L3:                     114 MiB (2 instances)
+141549.407: [14:15:49]NUMA:                     
+141549.407: [14:15:49]  NUMA 节点：             2
+141549.408: [14:15:49]  NUMA 节点0 CPU：        0-37,76-113
+141549.408: [14:15:49]  NUMA 节点1 CPU：        38-75,114-151
+141549.408: [14:15:49]Vulnerabilities:          
+141549.408: [14:15:49]  Gather data sampling:   Mitigation; Microcode
+141549.408: [14:15:49]  Itlb multihit:          Not affected
+141549.408: [14:15:49]  L1tf:                   Not affected
+141549.408: [14:15:49]  Mds:                    Not affected
+141549.408: [14:15:49]  Meltdown:               Not affected
+141549.408: [14:15:49]  Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
+141549.408: [14:15:49]  Reg file data sampling: Not affected
+141549.408: [14:15:49]  Retbleed:               Not affected
+141549.409: [14:15:49]  Spec rstack overflow:   Not affected
+141549.409: [14:15:49]  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+141549.409: [14:15:49]  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+141549.421: [14:15:49]  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+141549.421: [14:15:49]  Srbds:                  Not affected
+141549.421: [14:15:49]  Tsx async abort:        Not affected
+141551.407: [14:15:51]root@user:~# free -h
+141551.415: [14:15:51]               total        used        free      shared  buff/cache   available
+141551.416: [14:15:51]内存：         503Gi       9.3Gi       492Gi        16Mi       4.0Gi       494Gi
+141551.416: [14:15:51]交换：         8.0Gi          0B       8.0Gi
+141905.248: [14:19:05]root@user:~# lsblk -d -o NAME,TYPE,SIZE,MODEL
+141905.277: [14:19:05]NAME   TYPE   SIZE MODEL
+141905.278: [14:19:05]loop0  loop   258M 
+141905.278: [14:19:05]loop1  loop  11.1M 
+141905.278: [14:19:05]loop2  loop  10.8M 
+141905.278: [14:19:05]loop3  loop  91.7M 
+141905.278: [14:19:05]loop4  loop   516M 
+141905.278: [14:19:05]loop5  loop   568K 
+141905.278: [14:19:05]loop6  loop  73.9M 
+141905.278: [14:19:05]loop7  loop  44.4M 
+141905.279: [14:19:05]loop8  loop     4K 
+141905.279: [14:19:05]loop9  loop  48.4M 
+141905.279: [14:19:05]loop10 loop    74M 
+141905.279: [14:19:05]loop11 loop  66.8M 
+141905.279: [14:19:05]loop12 loop  15.5M 
+141905.279: [14:19:05]loop13 loop   395M 
+141905.279: [14:19:05]loop14 loop 606.1M 
+141905.279: [14:19:05]loop15 loop  18.5M 
+141905.279: [14:19:05]sda    disk   2.2T MR9361-8i
+141905.279: [14:19:05]sdb    disk  36.4T MR9361-8i

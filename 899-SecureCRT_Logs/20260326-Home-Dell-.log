@@ -1,0 +1,129 @@
+﻿110848.563: [11:08:48][202603Home-Dell--11:08:48]
+110848.614: [11:08:48]Linux anncara-computer 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+110848.614: [11:08:48]
+110848.614: [11:08:48]The programs included with the Debian GNU/Linux system are free software;
+110848.615: [11:08:48]the exact distribution terms for each program are described in the
+110848.615: [11:08:48]individual files in /usr/share/doc/*/copyright.
+110848.615: [11:08:48]
+110848.615: [11:08:48]Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+110848.615: [11:08:48]permitted by applicable law.
+110848.615: [11:08:48]Last login: Wed Mar 25 23:00:42 2026 from 192.168.31.160
+110852.024: [11:08:52]root@anncara-computer:~# ip a
+110852.032: [11:08:52]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+110852.032: [11:08:52]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+110852.033: [11:08:52]    inet 127.0.0.1/8 scope host lo
+110852.033: [11:08:52]       valid_lft forever preferred_lft forever
+110852.033: [11:08:52]    inet6 ::1/128 scope host noprefixroute 
+110852.033: [11:08:52]       valid_lft forever preferred_lft forever
+110852.034: [11:08:52]2: enp0s31f6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+110852.034: [11:08:52]    link/ether 14:b3:1f:02:64:44 brd ff:ff:ff:ff:ff:ff
+110852.034: [11:08:52]    altname enx14b31f026444
+110852.034: [11:08:52]3: wlp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+110852.035: [11:08:52]    link/ether f4:8c:50:4f:0c:36 brd ff:ff:ff:ff:ff:ff
+110852.035: [11:08:52]    altname wlxf48c504f0c36
+110852.035: [11:08:52]    inet 192.168.31.101/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp2s0
+110852.035: [11:08:52]       valid_lft 57141sec preferred_lft 46341sec
+110852.036: [11:08:52]    inet6 240e:3a1:4cc5:e130:bf18:5f35:be29:2486/64 scope global dynamic mngtmpaddr noprefixroute 
+110852.036: [11:08:52]       valid_lft 598sec preferred_lft 598sec
+110852.036: [11:08:52]    inet6 fe80::6f9c:f6aa:a874:b424/64 scope link 
+110852.036: [11:08:52]       valid_lft forever preferred_lft forever
+110852.036: [11:08:52]104: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+110852.036: [11:08:52]    link/none 
+110852.037: [11:08:52]    inet 10.253.0.11/32 scope global wg0
+110852.037: [11:08:52]       valid_lft forever preferred_lft forever
+110852.037: [11:08:52]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:11/128 scope global 
+110852.037: [11:08:52]       valid_lft forever preferred_lft forever
+110902.062: [11:09:02]root@anncara-computer:~# ip a
+110902.073: [11:09:02]1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+110902.074: [11:09:02]    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+110902.074: [11:09:02]    inet 127.0.0.1/8 scope host lo
+110902.074: [11:09:02]       valid_lft forever preferred_lft forever
+110902.074: [11:09:02]    inet6 ::1/128 scope host noprefixroute 
+110902.074: [11:09:02]       valid_lft forever preferred_lft forever
+110902.075: [11:09:02]2: enp0s31f6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+110902.075: [11:09:02]    link/ether 14:b3:1f:02:64:44 brd ff:ff:ff:ff:ff:ff
+110902.075: [11:09:02]    altname enx14b31f026444
+110902.076: [11:09:02]3: wlp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+110902.076: [11:09:02]    link/ether f4:8c:50:4f:0c:36 brd ff:ff:ff:ff:ff:ff
+110902.076: [11:09:02]    altname wlxf48c504f0c36
+110902.076: [11:09:02]    inet 192.168.31.101/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp2s0
+110902.077: [11:09:02]       valid_lft 57131sec preferred_lft 46331sec
+110902.077: [11:09:02]    inet6 240e:3a1:4cc5:e130:bf18:5f35:be29:2486/64 scope global dynamic mngtmpaddr noprefixroute 
+110902.077: [11:09:02]       valid_lft 595sec preferred_lft 595sec
+110902.077: [11:09:02]    inet6 fe80::6f9c:f6aa:a874:b424/64 scope link 
+110902.077: [11:09:02]       valid_lft forever preferred_lft forever
+110902.078: [11:09:02]104: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+110902.078: [11:09:02]    link/none 
+110902.078: [11:09:02]    inet 10.253.0.11/32 scope global wg0
+110902.078: [11:09:02]       valid_lft forever preferred_lft forever
+110902.078: [11:09:02]    inet6 2a05:d014:926:ffaa:87dd:ffff:0:11/128 scope global 
+110902.078: [11:09:02]       valid_lft forever preferred_lft forever
+110933.708: [11:09:33]root@anncara-computer:~# cat /etc/rs
+110933.714: [11:09:33]cat: /etc/rs: No such file or directory
+110939.681: [11:09:39]root@anncara-computer:~# cat /etc/resolv.conf 
+110939.688: [11:09:39]# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+110939.688: [11:09:39]# Do not edit.
+110939.688: [11:09:39]#
+110939.688: [11:09:39]# This file might be symlinked as /etc/resolv.conf. If you're looking at
+110939.689: [11:09:39]# /etc/resolv.conf and seeing this text, you have followed the symlink.
+110939.689: [11:09:39]#
+110939.689: [11:09:39]# This is a dynamic resolv.conf file for connecting local clients to the
+110939.689: [11:09:39]# internal DNS stub resolver of systemd-resolved. This file lists all
+110939.689: [11:09:39]# configured search domains.
+110939.689: [11:09:39]#
+110939.689: [11:09:39]# Run "resolvectl status" to see details about the uplink DNS servers
+110939.689: [11:09:39]# currently in use.
+110939.689: [11:09:39]#
+110939.690: [11:09:39]# Third party programs should typically not access this file directly, but only
+110939.690: [11:09:39]# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+110939.690: [11:09:39]# different way, replace this symlink by a static file or a different symlink.
+110939.690: [11:09:39]#
+110939.690: [11:09:39]# See man:systemd-resolved.service(8) for details about the supported modes of
+110939.690: [11:09:39]# operation for /etc/resolv.conf.
+110939.690: [11:09:39]
+110939.690: [11:09:39]nameserver 127.0.0.53
+110939.690: [11:09:39]options edns0 trust-ad
+110939.690: [11:09:39]search .
+110945.154: [11:09:45]root@anncara-computer:~# cat /etc/hosts
+110945.155: [11:09:45]127.0.0.1       localhost
+110945.155: [11:09:45]127.0.1.1       anncara-computer
+110945.155: [11:09:45]
+110945.155: [11:09:45]# The following lines are desirable for IPv6 capable hosts
+110945.155: [11:09:45]::1     localhost ip6-localhost ip6-loopback
+110945.156: [11:09:45]ff02::1 ip6-allnodes
+110945.156: [11:09:45]ff02::2 ip6-allrouters
+115351.035: [11:53:51]root@anncara-computer:~# bash -c 'dig +short "$1" | grep -Eo "([0-9]{1,3}.){3}[0-9]{1,3}" | head -n1 | xargs -r -I{} 120047.807: curl ipinfo.io/{}' _ pt.zhixing.bjtu.edu.cn
+120049.298: [12:00:49]root@anncara-computer:~# bash -c 'dig +short "$1" | grep -Eo "([0-9]{1,3}.){3}[0-9]{1,3}" | head -n1 | xargs -r -I{} 120049.903: curl ipinfo.io/{}' _ pt.zhixing.bjtu.edu.cn
+120052.677: [12:00:52]root@anncara-computer:~# 
+120052.926: [12:00:52]root@anncara-computer:~# 
+120053.661: [12:00:53]root@anncara-computer:~# bash -c 'dig +short "$1" | grep -Eo "([0-9]{1,3}.){3}[0-9]{1,3}" | head -n1 | xargs -r -I{} 120059.103: curl ipinfo.io/{}' _ pt.zhixing.bjtu.edu.cn
+120100.846: [12:01:00]root@anncara-computer:~# bash -c 'dig +short "$1" | grep -Eo "([0-9]{1,3}.){3}[0-9]{1,3}" | head -n1 | xargs -r -I{} 120103.081: curl ipinfo.io/{}' _ pt.zhixing.bjtu.edu.cn
+120108.377: [12:01:08]root@anncara-computer:~# host pt.zhixing.bjtu.edu.cn
+120108.488: [12:01:08]pt.zhixing.bjtu.edu.cn has IPv6 address 2001:da8:205::100
+120123.186: [12:01:23]root@anncara-computer:~# dig +short pt.zhixing.bjtu.edu.cn
+120131.054: [12:01:31]root@anncara-computer:~# dig pt.zhixing.bjtu.edu.cn
+120131.074: [12:01:31]
+120131.074: [12:01:31]; <<>> DiG 9.20.11-4-Debian <<>> pt.zhixing.bjtu.edu.cn
+120131.074: [12:01:31];; global options: +cmd
+120131.074: [12:01:31];; Got answer:
+120131.074: [12:01:31];; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 49781
+120131.074: [12:01:31];; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+120131.074: [12:01:31]
+120131.075: [12:01:31];; OPT PSEUDOSECTION:
+120131.075: [12:01:31]; EDNS: version: 0, flags:; udp: 65494
+120131.075: [12:01:31];; QUESTION SECTION:
+120131.075: [12:01:31];pt.zhixing.bjtu.edu.cn.                IN      A
+120131.075: [12:01:31]
+120131.075: [12:01:31];; AUTHORITY SECTION:
+120131.075: [12:01:31]zhixing.bjtu.edu.cn.    568     IN      SOA     dns.zhixing.bjtu.edu.cn. zhixing.bjtu.edu.cn. 2013103001 900 900 1800120131.075:  900
+120131.075: [12:01:31]
+120131.075: [12:01:31];; Query time: 0 msec
+120131.076: [12:01:31];; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+120131.076: [12:01:31];; WHEN: Thu Mar 26 12:01:31 CST 2026
+120131.076: [12:01:31];; MSG SIZE  rcvd: 91
+120131.076: [12:01:31]
+120138.478: [12:01:38]root@anncara-computer:~# 
+120138.644: [12:01:38]root@anncara-computer:~# 
+120138.789: [12:01:38]root@anncara-computer:~# 
+120141.946: [12:01:41]root@anncara-computer:~# host pt.zhixing.bjtu.edu.cn
+120141.966: [12:01:41]pt.zhixing.bjtu.edu.cn has IPv6 address 2001:da8:205::100

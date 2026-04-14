@@ -1,0 +1,49 @@
+﻿165523.609: [16:55:23][202604100-192.168.8.88-负一楼-接入交换机-16:55:23]
+165523.887: [16:55:23]
+165523.887: [16:55:23]User Access Verification
+165523.895: [16:55:23]
+165523.914: [16:55:23]Password:
+165523.946: [16:55:23]Password:
+165523.957: [16:55:23]
+165524.015: [16:55:24]Last login: Mar 26 2026 11:26:54 from 192.168.6.173 through telnet.
+165527.867: [16:55:27]Ruijie>d l n b 
+165527.875: [16:55:27]             ^
+165527.897: [16:55:27]% Invalid input detected at '^' marker.
+165527.897: [16:55:27]
+165529.319: [16:55:29]Ruijie>disp
+165532.086: [16:55:32]Ruijie>show
+165533.133: [16:55:33]Ruijie>show ll
+165534.284: [16:55:34]Ruijie>show l 
+165535.512: [16:55:35]Ruijie>show ll
+165535.755: [16:55:35]Ruijie>show ll
+165539.302: [16:55:39]Ruijie>show ne
+165542.797: [16:55:42]Ruijie>show ll?     
+165542.812: [16:55:42]% Unrecognized command.
+165542.812: [16:55:42]
+165544.319: [16:55:44]Ruijie>show ? 
+165544.465: [16:55:44]  calendar      Manage the calendar clock
+165544.473: [16:55:44]  clock         Manage the system clock
+165544.473: [16:55:44]  dampening     Display dampening information
+165544.473: [16:55:44]  disk          Show disk information
+165544.473: [16:55:44]  file          Show file system information
+165544.473: [16:55:44]  global-vrf    Global VPN instance information
+165544.473: [16:55:44]  http-fpm      Http fastcgi progress manager
+165544.474: [16:55:44]  ipv6          IPv6 information
+165544.474: [16:55:44]  language      Show system language
+165544.492: [16:55:44]  logging       Show the contents of logging buffers
+165544.492: [16:55:44]  mount         Show mount information
+165544.492: [16:55:44]  netconf       Netconf show
+165544.492: [16:55:44]  password      Show password information
+165544.492: [16:55:44]  pci-bus       Show pci-bus
+165544.492: [16:55:44]  privilege     Show current privilege level
+165544.492: [16:55:44]  reload        Show reload
+165544.492: [16:55:44]  service       Show network management services
+165544.492: [16:55:44]  sessions      Information about Telnet connections
+165544.492: [16:55:44]  ssh-sessions  Information about SSH connections
+165544.492: [16:55:44]  tacacs        Shows tacacs+ server statistics
+165544.493: [16:55:44]  track         Tracking information
+165544.493: [16:55:44]  usb           Show usb information
+165544.493: [16:55:44]  usb-bus       Show usb-bus
+165544.493: [16:55:44]  version       System version
+165545.518: [16:55:45]  vrf           VPN Routing/Forwarding instance information
+165545.527: [16:55:45]

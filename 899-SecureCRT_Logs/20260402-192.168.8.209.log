@@ -1,0 +1,90 @@
+﻿165742.521: [16:57:42][202604192.168.8.209-16:57:42]
+165742.541: [16:57:42]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-106-generic x86_64)
+165742.541: [16:57:42]
+165742.541: [16:57:42] * Documentation:  https://help.ubuntu.com
+165742.541: [16:57:42] * Management:     https://landscape.canonical.com
+165742.541: [16:57:42] * Support:        https://ubuntu.com/pro
+165742.541: [16:57:42]
+165742.542: [16:57:42] System information as of Thu Apr  2 04:57:41 PM CST 2026
+165742.542: [16:57:42]
+165742.542: [16:57:42]  System load:    0.07                Temperature:                36.0 C
+165742.542: [16:57:42]  Usage of /home: 8.1% of 1006.85GB   Processes:                  1180
+165742.542: [16:57:42]  Memory usage:   4%                  Users logged in:            1
+165742.542: [16:57:42]  Swap usage:     0%                  IPv4 address for enp33s0f1: 192.168.8.209
+165742.542: [16:57:42]
+165742.542: [16:57:42] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+165742.542: [16:57:42]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+165742.542: [16:57:42]
+165742.542: [16:57:42]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+165742.542: [16:57:42]
+165742.542: [16:57:42]Expanded Security Maintenance for Applications is not enabled.
+165742.542: [16:57:42]
+165742.542: [16:57:42]87 updates can be applied immediately.
+165742.542: [16:57:42]To see these additional updates run: apt list --upgradable
+165742.542: [16:57:42]
+165742.542: [16:57:42]Enable ESM Apps to receive additional future security updates.
+165742.542: [16:57:42]See https://ubuntu.com/esm or run: sudo pro status
+165742.542: [16:57:42]
+165742.542: [16:57:42]
+165742.542: [16:57:42]Last login: Thu Apr  2 16:51:33 2026 from 172.16.101.190
+165747.673: [16:57:47][202604192.168.8.209-16:57:47]
+165747.700: [16:57:47]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-106-generic x86_64)
+165747.700: [16:57:47]
+165747.700: [16:57:47] * Documentation:  https://help.ubuntu.com
+165747.700: [16:57:47] * Management:     https://landscape.canonical.com
+165747.700: [16:57:47] * Support:        https://ubuntu.com/pro
+165747.700: [16:57:47]
+165747.700: [16:57:47] System information as of Thu Apr  2 04:57:41 PM CST 2026
+165747.700: [16:57:47]
+165747.700: [16:57:47]  System load:    0.07                Temperature:                36.0 C
+165747.700: [16:57:47]  Usage of /home: 8.1% of 1006.85GB   Processes:                  1180
+165747.700: [16:57:47]  Memory usage:   4%                  Users logged in:            1
+165747.701: [16:57:47]  Swap usage:     0%                  IPv4 address for enp33s0f1: 192.168.8.209
+165747.701: [16:57:47]
+165747.701: [16:57:47] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+165747.701: [16:57:47]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+165747.701: [16:57:47]
+165747.701: [16:57:47]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+165747.701: [16:57:47]
+165747.701: [16:57:47]Expanded Security Maintenance for Applications is not enabled.
+165747.701: [16:57:47]
+165747.701: [16:57:47]87 updates can be applied immediately.
+165747.701: [16:57:47]To see these additional updates run: apt list --upgradable
+165747.701: [16:57:47]
+165747.701: [16:57:47]Enable ESM Apps to receive additional future security updates.
+165747.701: [16:57:47]See https://ubuntu.com/esm or run: sudo pro status
+165747.702: [16:57:47]
+165747.702: [16:57:47]
+165747.702: [16:57:47]Last login: Thu Apr  2 16:57:42 2026 from 192.168.6.173
+165751.269: [16:57:51]root@tgq209:~# ip ne
+165751.275: [16:57:51]192.168.8.1 dev enp33s0f1 lladdr 30:29:52:a0:52:92 REACHABLE 
+165751.275: [16:57:51]192.168.8.207 dev enp33s0f1 lladdr 80:61:5f:1e:4b:9b REACHABLE 
+165751.275: [16:57:51]192.168.8.208 dev enp33s0f1 lladdr 80:61:5f:1e:56:c5 REACHABLE 
+165751.275: [16:57:51]192.168.8.88 dev enp33s0f1 lladdr c4:70:ab:fc:a5:9b REACHABLE 
+165801.405: [16:58:01]root@tgq209:~# ip ne
+165801.405: [16:58:01]192.168.8.1 dev enp33s0f1 lladdr 30:29:52:a0:52:92 REACHABLE 
+165801.406: [16:58:01]192.168.8.207 dev enp33s0f1 lladdr 80:61:5f:1e:4b:9b REACHABLE 
+165801.406: [16:58:01]192.168.8.208 dev enp33s0f1 lladdr 80:61:5f:1e:56:c5 REACHABLE 
+165801.406: [16:58:01]192.168.8.88 dev enp33s0f1 lladdr c4:70:ab:fc:a5:9b REACHABLE 
+165813.144: [16:58:13]root@tgq209:~# ping 192.168.8.21
+165813.153: [16:58:13]PING 192.168.8.21 (192.168.8.21) 56(84) bytes of data.
+165813.154: [16:58:13]64 bytes from 192.168.8.21: icmp_seq=1 ttl=64 time=4.02 ms
+165814.137: [16:58:14]64 bytes from 192.168.8.21: icmp_seq=2 ttl=64 time=0.426 ms
+165814.665: [16:58:14]^C
+165814.665: [16:58:14]--- 192.168.8.21 ping statistics ---
+165814.666: [16:58:14]2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+165814.666: [16:58:14]rtt min/avg/max/mdev = 0.426/2.221/4.017/1.795 ms
+165817.668: [16:58:17]root@tgq209:~# ping 192.168.8.21
+165817.669: [16:58:17]PING 192.168.8.21 (192.168.8.21) 56(84) bytes of data.
+165817.669: [16:58:17]64 bytes from 192.168.8.21: icmp_seq=1 ttl=64 time=0.474 ms
+165818.712: [16:58:18]^[[A64 bytes from 192.168.8.21: icmp_seq=2 ttl=64 time=0.433 ms
+165818.768: [16:58:18]^C
+165818.768: [16:58:18]--- 192.168.8.21 ping statistics ---
+165818.768: [16:58:18]2 packets transmitted, 2 received, 0% packet loss, time 1046ms
+165818.768: [16:58:18]rtt min/avg/max/mdev = 0.433/0.453/0.474/0.020 ms
+165819.769: [16:58:19]root@tgq209:~# ip ne
+165819.770: [16:58:19]192.168.8.1 dev enp33s0f1 lladdr 30:29:52:a0:52:92 REACHABLE 
+165819.770: [16:58:19]192.168.8.207 dev enp33s0f1 lladdr 80:61:5f:1e:4b:9b REACHABLE 
+165819.770: [16:58:19]192.168.8.208 dev enp33s0f1 lladdr 80:61:5f:1e:56:c5 REACHABLE 
+165819.771: [16:58:19]192.168.8.21 dev enp33s0f1 lladdr 9c:c2:c4:31:7f:ab REACHABLE 
+165819.771: [16:58:19]192.168.8.88 dev enp33s0f1 lladdr c4:70:ab:fc:a5:9b REACHABLE 

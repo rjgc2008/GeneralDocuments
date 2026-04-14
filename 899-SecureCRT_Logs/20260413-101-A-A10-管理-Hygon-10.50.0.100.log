@@ -1,0 +1,65 @@
+﻿114408.594: [11:44:08][202604101-A-A10-管理-Hygon-10.50.0.100-11:44:08]
+114408.607: [11:44:08]Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-56-generic x86_64)
+114408.607: [11:44:08]
+114408.607: [11:44:08] * Documentation:  https://help.ubuntu.com
+114408.607: [11:44:08] * Management:     https://landscape.canonical.com
+114408.607: [11:44:08] * Support:        https://ubuntu.com/pro
+114408.607: [11:44:08]
+114408.608: [11:44:08] System information as of Mon Apr 13 11:44:07 AM CST 2026
+114408.608: [11:44:08]
+114408.608: [11:44:08]  System load:                    0.01
+114408.608: [11:44:08]  Usage of /home:                 14.5% of 301.20GB
+114408.608: [11:44:08]  Memory usage:                   6%
+114408.608: [11:44:08]  Swap usage:                     0%
+114408.608: [11:44:08]  Temperature:                    56.0 C
+114408.608: [11:44:08]  Processes:                      1392
+114408.608: [11:44:08]  Users logged in:                1
+114408.608: [11:44:08]  IPv4 address for enp161s0f0np0: 10.50.0.100
+114408.608: [11:44:08]
+114408.608: [11:44:08] * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+114408.608: [11:44:08]   just raised the bar for easy, resilient and secure K8s cluster deployment.
+114408.609: [11:44:08]
+114408.609: [11:44:08]   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+114408.609: [11:44:08]
+114408.609: [11:44:08]Expanded Security Maintenance for Applications is not enabled.
+114408.609: [11:44:08]
+114408.609: [11:44:08]147 updates can be applied immediately.
+114408.609: [11:44:08]To see these additional updates run: apt list --upgradable
+114408.609: [11:44:08]
+114408.609: [11:44:08]1 additional security update can be applied with ESM Apps.
+114408.609: [11:44:08]Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+114408.609: [11:44:08]
+114408.609: [11:44:08]
+114408.609: [11:44:08]*** System restart required ***
+114408.609: [11:44:08]Last login: Tue Apr  7 09:01:04 2026 from 172.16.101.190
+114413.164: [11:44:13]root@suzhouproda100:~# ping 10.50.0.1
+114413.167: [11:44:13]PING 10.50.0.1 (10.50.0.1) 56(84) bytes of data.
+114413.177: [11:44:13]64 bytes from 10.50.0.1: icmp_seq=1 ttl=64 time=0.432 ms
+114414.220: [11:44:14]64 bytes from 10.50.0.1: icmp_seq=2 ttl=64 time=0.171 ms
+114415.244: [11:44:15]64 bytes from 10.50.0.1: icmp_seq=3 ttl=64 time=0.223 ms
+114416.269: [11:44:16]64 bytes from 10.50.0.1: icmp_seq=4 ttl=64 time=0.307 ms
+114417.292: [11:44:17]64 bytes from 10.50.0.1: icmp_seq=5 ttl=64 time=0.303 ms
+114418.316: [11:44:18]64 bytes from 10.50.0.1: icmp_seq=6 ttl=64 time=0.151 ms
+114419.341: [11:44:19]64 bytes from 10.50.0.1: icmp_seq=7 ttl=64 time=0.261 ms
+114420.364: [11:44:20]64 bytes from 10.50.0.1: icmp_seq=8 ttl=64 time=0.217 ms
+114421.387: [11:44:21]64 bytes from 10.50.0.1: icmp_seq=9 ttl=64 time=0.163 ms
+114421.603: [11:44:21]^C
+114421.603: [11:44:21]--- 10.50.0.1 ping statistics ---
+114421.603: [11:44:21]9 packets transmitted, 9 received, 0% packet loss, time 8220ms
+114421.603: [11:44:21]rtt min/avg/max/mdev = 0.151/0.247/0.432/0.084 ms
+114453.146: [11:44:53]root@suzhouproda100:~# ping 10.50.0.1 -c 10
+114453.151: [11:44:53]PING 10.50.0.1 (10.50.0.1) 56(84) bytes of data.
+114453.151: [11:44:53]64 bytes from 10.50.0.1: icmp_seq=1 ttl=64 time=0.373 ms
+114454.156: [11:44:54]64 bytes from 10.50.0.1: icmp_seq=2 ttl=64 time=0.178 ms
+114455.180: [11:44:55]64 bytes from 10.50.0.1: icmp_seq=3 ttl=64 time=0.387 ms
+114456.204: [11:44:56]64 bytes from 10.50.0.1: icmp_seq=4 ttl=64 time=0.239 ms
+114457.228: [11:44:57]64 bytes from 10.50.0.1: icmp_seq=5 ttl=64 time=0.179 ms
+114458.251: [11:44:58]64 bytes from 10.50.0.1: icmp_seq=6 ttl=64 time=0.321 ms
+114459.276: [11:44:59]64 bytes from 10.50.0.1: icmp_seq=7 ttl=64 time=0.306 ms
+114500.299: [11:45:00]64 bytes from 10.50.0.1: icmp_seq=8 ttl=64 time=0.231 ms
+114501.324: [11:45:01]64 bytes from 10.50.0.1: icmp_seq=9 ttl=64 time=0.328 ms
+114502.348: [11:45:02]64 bytes from 10.50.0.1: icmp_seq=10 ttl=64 time=0.449 ms
+114502.348: [11:45:02]
+114502.349: [11:45:02]--- 10.50.0.1 ping statistics ---
+114502.349: [11:45:02]10 packets transmitted, 10 received, 0% packet loss, time 9198ms
+114502.349: [11:45:02]rtt min/avg/max/mdev = 0.178/0.299/0.449/0.086 ms
